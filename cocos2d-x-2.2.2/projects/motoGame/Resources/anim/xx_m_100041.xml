@@ -1,0 +1,159 @@
+<skeleton frameRate="24" name="shan_xian" version="1.4">
+ <armatures>
+  <armature name="xx_m_100041">
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="6.71" kY="6.71" name="Rivers_and_lakes_001_MC_08" red="100" x="2.3" y="-73.8" z="0">
+    <d name="shan_xian_MC-shan_xian_MC_08" />
+   </b>
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="0" kY="0" name="&#22270;&#23618; 6" red="100" x="7.95" y="-13.9" z="1">
+    <d name="shan_xian_MC-shan_xian_MC_20" />
+   </b>
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="0" kY="0" name="&#22270;&#23618; 5" red="100" x="7.95" y="-11.25" z="1">
+    <d name="shan_xian_MC-shan_xian_MC_20" />
+   </b>
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="-18.73" kY="-18.73" name="Rivers_and_lakes_001_MC_07" red="100" x="1.05" y="-69.65" z="3">
+    <d name="shan_xian_MC-shan_xian_MC_07" />
+   </b>
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="0" kY="0" name="Rivers_and_lakes_001_MC_09" red="100" x="-8.15" y="-55.6" z="4">
+    <d name="shan_xian_MC-shan_xian_MC_09" />
+   </b>
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="0" kY="0" name="Rivers_and_lakes_001_MC_11" red="100" x="-16.75" y="-49.5" z="5">
+    <d name="shan_xian_MC-shan_xian_MC_11" />
+   </b>
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="0" kY="0" name="Rivers_and_lakes_001_MC_10" red="100" x="-12.05" y="-49.15" z="6">
+    <d name="shan_xian_MC-shan_xian_MC_10" />
+   </b>
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="0" kY="0" name="Rivers_and_lakes_001_MC_13" red="100" x="6" y="-52.5" z="7">
+    <d name="shan_xian_MC-shan_xian_MC_13" />
+   </b>
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="0" kY="0" name="Rivers_and_lakes_001_MC_12" red="100" x="2.95" y="-40.8" z="8">
+    <d name="shan_xian_MC-shan_xian_MC_12" />
+   </b>
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="0" kY="0" name="rivers_and_lakes_001_MC_15" red="100" x="-23.65" y="-34.65" z="9">
+    <d name="shan_xian_MC-shan_xian_MC_15" />
+   </b>
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="-15" kY="-15" name="rivers_and_lakes_001_MC_17" red="100" x="14.6" y="-20.95" z="10">
+    <d name="shan_xian_MC-shan_xian_MC_17" />
+   </b>
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="0" kY="0" name="Rivers_and_lakes_001_MC_120" red="100" x="-21.1" y="-42.45" z="11">
+    <d name="shan_xian_MC-shan_xian_MC_12" />
+   </b>
+   <b alpha="100" blue="100" cX="1.03" cY="1.03" green="100" kX="0" kY="0" name="Rivers_and_lakes_001_MC_06" red="100" x="-19.5" y="-91.25" z="12">
+    <d name="shan_xian_MC-shan_xian_MC_14" />
+   </b>
+   <b alpha="100" blue="100" cX="1" cY="1" green="100" kX="0" kY="0" name="&#22270;&#23618; 3" red="100" x="-37.45" y="-82.7" z="0">
+    <d name="shan_xian_MC-shan_xian_MC_21" />
+   </b>
+   <b alpha="100" blue="51" cX="1" cY="1" green="51" kX="0" kY="0" name="&#22270;&#23618; 4" red="51" x="-26.8" y="-93.3" z="0">
+    <d name="shan_xian_MC-shan_xian_MC_22" />
+   </b>
+   <b alpha="100" blue="100" cX="1" cY="1" green="100" kX="0" kY="0" name="&#22270;&#23618; 2" red="100" x="-23.65" y="-91.25" z="0">
+    <d name="shan_xian_MC-shan_xian_MC_30" />
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="xx_m_100041">
+   <mov dr="24" drTW="24" lp="1" name="walk" to="6" twE="NaN">
+    <b dl="0" name="Rivers_and_lakes_001_MC_08" sc="1">
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="11" green="100" kX="6.71" kY="6.71" red="100" twE="0" x="2.3" y="-73.8" z="0" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="12" green="100" kX="0" kY="0" red="100" twE="0" x="2.3" y="-77.4" z="0" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="6.71" kY="6.71" red="100" twE="0" x="2.3" y="-73.8" z="0" />
+    </b>
+    <b dl="0" name="&#22270;&#23618; 6" sc="1">
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="16" green="100" kX="0" kY="0" red="100" twE="0" x="7.95" y="-13.9" z="1" />
+     <f alpha="0" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="51.9" y="-13.9" z="1" />
+     <f dI="-1" dr="7" />
+    </b>
+    <b dl="0" name="&#22270;&#23618; 5" sc="1">
+     <f dI="-1" dr="5" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="15" green="100" kX="0" kY="0" red="100" twE="0" x="7.95" y="-11.25" z="1" />
+     <f alpha="0" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="51.9" y="-11.25" z="1" />
+     <f dI="-1" dr="3" />
+    </b>
+    <b dl="0" name="Rivers_and_lakes_001_MC_07" sc="1">
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="11" green="100" kX="-18.73" kY="-18.73" red="100" twE="0" x="1.05" y="-69.65" z="3" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="12" green="100" kX="0" kY="0" red="100" twE="0" x="2.95" y="-77.4" z="1" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="-18.73" kY="-18.73" red="100" twE="0" x="1.05" y="-69.65" z="1" />
+    </b>
+    <b dl="0" name="Rivers_and_lakes_001_MC_09" sc="1">
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="11" green="100" kX="0" kY="0" red="100" twE="0" x="-8.15" y="-55.6" z="4" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="12" green="100" kX="0" kY="0" red="100" twE="0" x="-8.15" y="-59.25" z="2" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="-8.15" y="-55.6" z="2" />
+    </b>
+    <b dl="0" name="Rivers_and_lakes_001_MC_11" sc="1">
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="11" green="100" kX="0" kY="0" red="100" twE="0" x="-16.75" y="-49.5" z="5" />
+     <f alpha="100" blue="100" cX="1.04" cY="1.03" dI="0" dr="12" green="100" kX="0" kY="-7.51" red="100" twE="0" x="-16.75" y="-51.85" z="3" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="-16.75" y="-49.5" z="3" />
+    </b>
+    <b dl="0" name="Rivers_and_lakes_001_MC_10" sc="1">
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="11" green="100" kX="0" kY="0" red="100" twE="0" x="-12.05" y="-49.15" z="6" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="12" green="100" kX="0" kY="0" red="100" twE="0" x="-12.05" y="-52.85" z="4" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="-12.05" y="-49.15" z="4" />
+    </b>
+    <b dl="0" name="Rivers_and_lakes_001_MC_13" sc="1">
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="11" green="100" kX="0" kY="0" red="100" twE="0" x="6" y="-52.5" z="7" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.04" dI="0" dr="12" green="100" kX="3.37" kY="0" red="100" twE="0" x="6" y="-56.1" z="5" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="6" y="-52.5" z="5" />
+    </b>
+    <b dl="0" name="Rivers_and_lakes_001_MC_12" sc="1">
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="11" green="100" kX="0" kY="0" red="100" twE="0" x="2.95" y="-40.8" z="8" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="12" green="100" kX="0" kY="0" red="100" twE="0" x="2.35" y="-45.6" z="6" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="2.95" y="-40.8" z="6" />
+    </b>
+    <b dl="0" name="rivers_and_lakes_001_MC_15" sc="1">
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="11" green="100" kX="0" kY="0" red="100" twE="0" x="-23.65" y="-34.65" z="9" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="12" green="100" kX="0" kY="0" red="100" twE="0" x="-23.65" y="-36.7" z="7" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="0" kY="0" red="100" x="-23.65" y="-34.65" z="7" />
+    </b>
+    <b dl="0" name="rivers_and_lakes_001_MC_17" sc="1">
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="11" green="100" kX="-15" kY="-15" red="100" twE="0" x="14.6" y="-20.95" z="10" />
+     <f alpha="100" blue="100" cX="1.08" cY="1.03" dI="0" dr="12" green="100" kX="-15" kY="2.6" red="100" twE="0" x="14.55" y="-23.25" z="8" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="-15" kY="-15" red="100" x="14.6" y="-20.95" z="8" />
+    </b>
+    <b dl="0" name="Rivers_and_lakes_001_MC_120" sc="1">
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="11" green="100" kX="0" kY="0" red="100" twE="0" x="-21.1" y="-42.45" z="11" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="12" green="100" kX="0" kY="0" red="100" twE="0" x="-20.5" y="-45.45" z="9" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="-21.1" y="-42.45" z="9" />
+    </b>
+    <b dl="0" name="Rivers_and_lakes_001_MC_06" sc="1">
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="11" green="100" kX="0" kY="0" red="100" twE="0" x="-19.5" y="-91.25" z="12" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="12" green="100" kX="0" kY="0" red="100" twE="0" x="-19.5" y="-94.85" z="10" />
+     <f alpha="100" blue="100" cX="1.03" cY="1.03" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="-19.5" y="-91.25" z="10" />
+    </b>
+   </mov>
+   <mov dr="17" drTW="17" lp="0" name="die" to="6" twE="NaN">
+    <b dl="0" name="&#22270;&#23618; 3" sc="1">
+     <f alpha="100" blue="100" cX="1" cY="1" dI="0" dr="1" green="100" kX="0" kY="0" red="100" x="-37.45" y="-82.7" z="0" />
+     <f alpha="100" blue="100" cX="1" cY="1" dI="0" dr="15" green="100" kX="0" kY="0" red="100" twE="0" x="-37.45" y="-82.7" z="0" />
+     <f alpha="0" blue="100" cX="1" cY="1" dI="0" dr="1" green="100" kX="0" kY="0" red="100" x="-37.45" y="-82.7" z="0" />
+    </b>
+   </mov>
+   <mov dr="4" drTW="4" lp="0" name="injured" to="6" twE="NaN">
+    <b dl="0" name="&#22270;&#23618; 4" sc="1">
+     <f alpha="100" blue="51" cX="1" cY="1" dI="0" dr="4" green="51" kX="0" kY="0" red="51" x="-26.8" y="-93.3" z="0" />
+    </b>
+   </mov>
+   <mov dr="2" drTW="10" lp="1" name="normal" to="6" twE="2">
+    <b dl="0" name="&#22270;&#23618; 2" sc="1">
+     <f alpha="100" blue="100" cX="1" cY="1" dI="0" dr="2" green="100" kX="0" kY="0" red="100" x="-23.65" y="-91.25" z="0" />
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas height="128" name="shan_xian" width="256">
+  <SubTexture height="89" name="shan_xian_MC-shan_xian_MC_30" pX="0" pY="0" width="74" x="0" y="0" />
+  <SubTexture height="92" name="shan_xian_MC-shan_xian_MC_22" pX="0.3" pY="0.3" width="70" x="76" y="0" />
+  <SubTexture height="51" name="shan_xian_MC-shan_xian_MC_21" pX="-0.7" pY="-36.2" width="84" x="148" y="0" />
+  <SubTexture height="46" name="shan_xian_MC-shan_xian_MC_14" pX="0" pY="0" width="39" x="148" y="53" />
+  <SubTexture height="9" name="shan_xian_MC-shan_xian_MC_17" pX="-0.8" pY="-0.15" width="18" x="234" y="23" />
+  <SubTexture height="32" name="shan_xian_MC-shan_xian_MC_15" pX="0" pY="0" width="41" x="189" y="53" />
+  <SubTexture height="7" name="shan_xian_MC-shan_xian_MC_12" pX="0" pY="0" width="7" x="245" y="0" />
+  <SubTexture height="21" name="shan_xian_MC-shan_xian_MC_13" pX="0" pY="0" width="9" x="234" y="0" />
+  <SubTexture height="23" name="shan_xian_MC-shan_xian_MC_10" pX="0" pY="0" width="23" x="231" y="87" />
+  <SubTexture height="16" name="shan_xian_MC-shan_xian_MC_11" pX="0" pY="0" width="10" x="234" y="34" />
+  <SubTexture height="21" name="shan_xian_MC-shan_xian_MC_09" pX="0" pY="0" width="35" x="40" y="94" />
+  <SubTexture height="31" name="shan_xian_MC-shan_xian_MC_07" pX="0" pY="0" width="40" x="189" y="87" />
+  <SubTexture height="6" name="shan_xian_MC-shan_xian_MC_20" pX="3.2" pY="2.6" width="7" x="245" y="9" />
+  <SubTexture height="27" name="shan_xian_MC-shan_xian_MC_08" pX="0" pY="0" width="38" x="0" y="91" />
+ </TextureAtlas>
+</skeleton>

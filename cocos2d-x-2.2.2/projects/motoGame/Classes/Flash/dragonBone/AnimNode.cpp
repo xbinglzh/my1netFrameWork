@@ -1,0 +1,208 @@
+//
+//  AnimNode.cpp
+//  iLostCity
+//
+//  Created by Ryan_Y on 13-6-6.
+//
+//
+
+#include "AnimNode.h"
+#include "ArmatureAnim.h"
+#include "SPConstValue.h"
+#include "GameUtils.h"
+
+USING_NS_CC;
+USING_NS_CC_EXT;
+
+SEL_MenuHandler AnimNodeDelegate::onResolveCCBCCMenuItemSelector(CCObject * pTarget,  const char* pSelectorName){
+	return NULL;
+	
+}
+
+SEL_CCControlHandler AnimNodeDelegate::onResolveCCBCCControlSelector(CCObject * pTarget, const char* pSelectorName){
+	return NULL;
+}
+
+bool AnimNodeDelegate::onAssignCCBMemberVariable(CCObject * pTarget, const char*  pMemberVariableName, CCNode * pNode){
+	return false;
+}
+
+void AnimNodeDelegate::onNodeLoaded(CCNode * pNode, CCNodeLoader * pNodeLoader){
+}
+
+void AnimNodeDelegate::notifyCompletedAnimationSequenceNamed(const char *name, const bool loopCompleted){
+}
+
+void AnimNodeDelegate::completedAnimationSequenceNamed(const char *name){
+    
+}
+
+void AnimNodeDelegate::animationSequenceFrameChanged(cocos2d::CCNode * animNode,
+                                                     const char *animName,
+                                                     const char *lastframeName,
+                                                     const char *newframeName){
+}
+
+#pragma mark AnimNode
+AnimNode::AnimNode():CCNodeRGBA()
+,_animationManager(NULL)
+,_animNodeDelegate(NULL)
+,_animNode(NULL)
+,_autoRemoveOnFinish(false)
+,_animScale(1.0f)
+,_currentCalll(NULL)
+,_autoUpdateFrame(true)
+{
+    setCascadeColorEnabled(true);
+    setCascadeOpacityEnabled(true);
+}
+
+AnimNode::~AnimNode(){
+    unscheduleUpdate();
+    CC_SAFE_RELEASE_NULL(_currentCalll);
+	CC_SAFE_RELEASE_NULL(_animationManager);
+}
+
+AnimNode* AnimNode::createFlashAnimNode(const char* pngFile, const char* plistFile, const char* xmlFile,
+                                        const char* runAnim, const char* skeleton) {
+    AnimNode * node = new AnimNode;
+    node->autorelease();
+    
+    ArmatureAnim * _animNode = ArmatureAnim::create();
+    _animNode->setAnimDelegateExt(node);
+    node->_animNode = _animNode;
+    
+    std::vector<sp::ImageInfo> list;
+    sp::ImageInfo inf;
+    inf.imagePath = pngFile;
+    inf.plistPath = plistFile;
+    list.push_back(inf);
+    
+    _animNode->load(skeleton, list, xmlFile, 1.0f);
+    node->addChild(_animNode);
+    
+    node->scheduleUpdate();
+    
+    return node;
+}
+
+void AnimNode::scaleAnim(float scale){
+    float scaleVal = 1;
+    if (_animNode->getScaleX() < 0) {
+        scaleVal = -1;
+    }
+    _animNode->setScale(scale);
+    _animNode->setScaleX(_animNode->getScaleX() * scaleVal);
+}
+
+void AnimNode::setAutoRemoveOnFinish(const bool autoRemoveOnFinish){
+    _autoRemoveOnFinish = autoRemoveOnFinish;
+}
+
+
+const bool  AnimNode::runAnimation(const std::string & name,
+                                   const float delay,
+                                   cocos2d::CCCallFuncO * calll){
+
+    _currentFrame = name;
+    _currentFrame.append("_0_0");
+    ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
+    
+    if (name.length() == 0) {
+        if(_defaultAnimation.length() > 0){
+            this->setCurrentCalll(calll);
+            return anim->runAnimation(_defaultAnimation);
+        }
+    }
+    else{
+        this->setCurrentCalll(calll);
+        return anim->runAnimation(name);
+    }
+    
+    return false;
+}
+
+
+void AnimNode::stopAnimation(){
+    
+    ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
+    anim->stopAnimation();
+    
+}
+
+void AnimNode::resumeAnimation(){
+    ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
+    anim->resumeAnimation();
+}
+
+void AnimNode::pauseAnimation(){
+    ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
+    anim->pauseAnimation();
+}
+
+void AnimNode::updateAnimFrame(float dt){
+    _animNode->update(dt);
+}
+
+void  AnimNode::update(float dt){
+    cocos2d::CCNodeRGBA::update(dt);
+    
+    if(_autoUpdateFrame)
+        updateAnimFrame(dt);
+}
+
+const cocos2d::CCSize & AnimNode::getContentSize(){
+    if (_animNode) {
+        _animNode->getContentSize();
+    }
+    return CCNode::getContentSize();
+}
+
+/**
+ 设置frameITScale
+ */
+void AnimNode::setFrameITScale(const float value){
+    if (_animNode) {
+        (static_cast<ArmatureAnim * >(_animNode))->setFrameITScale(value);
+    }
+}
+
+#pragma mark AnimNode AnimationDelegateExt
+void AnimNode::onAnimationEvent(void * animation, const char * eventType, const char * movementID){
+    std::string even =  eventType;
+    if ((_animNodeDelegate || _currentCalll) && _animNode == animation) {
+        ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
+        
+        bool completed = even.compare(sp::COMPLETE) == 0;
+        bool loopCompleted = even.compare(sp::LOOP_COMPLETE) == 0;
+        
+        if (completed || loopCompleted) {
+
+            if(_animNodeDelegate){
+                _animNodeDelegate->notifyCompletedAnimationSequenceNamed(movementID,loopCompleted);
+            }
+            
+            if (completed) {
+                if (_currentCalll) {
+                    _currentCalll->execute();
+                }
+                else if (_autoRemoveOnFinish) {
+                    this->stopAnimation();
+                    this->removeFromParentAndCleanup(true);
+                }
+            }
+        }
+        else if (even.compare(sp::MOVEMENT_RUNNING) == 0){
+            if (_currentFrame.compare(anim->currentFrame()) != 0) {
+                
+                if(_animNodeDelegate){
+                    _animNodeDelegate->animationSequenceFrameChanged(this,movementID,
+                                                                     _currentFrame.c_str(),
+                                                                     anim->currentFrame().c_str());
+                }
+                _currentFrame = anim->currentFrame();
+            }
+            
+        }
+    }
+}
