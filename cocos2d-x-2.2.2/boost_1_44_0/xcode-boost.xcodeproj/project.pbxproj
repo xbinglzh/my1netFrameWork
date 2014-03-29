@@ -2576,6 +2576,7 @@
 				PRODUCT_NAME = boost_all;
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "arm64 armv7 armv7s";
+				WARNING_CFLAGS = "-Wno-inline";
 			};
 			name = Debug;
 		};
@@ -2588,6 +2589,7 @@
 				PRODUCT_NAME = boost_all;
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "arm64 armv7 armv7s";
+				WARNING_CFLAGS = "-Wno-inline";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -3221,7 +3223,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				BOOST_ROOT = "$(SRCROOT)/../boost_1_44_0";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 1;
@@ -3251,7 +3253,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				BOOST_ROOT = "$(SRCROOT)/../boost_1_44_0";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
