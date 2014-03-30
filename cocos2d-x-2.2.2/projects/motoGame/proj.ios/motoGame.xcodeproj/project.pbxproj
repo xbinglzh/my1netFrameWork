@@ -226,6 +226,8 @@
 		379BB9D317F03F3700829B88 /* GUIReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99117F03F3700829B88 /* GUIReader.cpp */; };
 		379BB9D417F03F3700829B88 /* SceneReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99317F03F3700829B88 /* SceneReader.cpp */; };
 		46513EB1187BFBA200B5ABE1 /* UITouchGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46513EAF187BFBA200B5ABE1 /* UITouchGroup.cpp */; };
+		60926E3D18E7D70500B9ABAE /* SceneController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E3B18E7D70500B9ABAE /* SceneController.cpp */; };
+		60926E4018E7EB6E00B9ABAE /* AppLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E3E18E7EB6E00B9ABAE /* AppLauncher.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -941,6 +943,12 @@
 		379BB99417F03F3700829B88 /* SceneReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneReader.h; sourceTree = "<group>"; };
 		46513EAF187BFBA200B5ABE1 /* UITouchGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITouchGroup.cpp; sourceTree = "<group>"; };
 		46513EB0187BFBA200B5ABE1 /* UITouchGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITouchGroup.h; sourceTree = "<group>"; };
+		60926E3518E7D5BD00B9ABAE /* ConstansDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstansDef.h; sourceTree = "<group>"; };
+		60926E3618E7D5BD00B9ABAE /* NotifyMessageDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyMessageDef.h; sourceTree = "<group>"; };
+		60926E3B18E7D70500B9ABAE /* SceneController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneController.cpp; sourceTree = "<group>"; };
+		60926E3C18E7D70500B9ABAE /* SceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneController.h; sourceTree = "<group>"; };
+		60926E3E18E7EB6E00B9ABAE /* AppLauncher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppLauncher.cpp; sourceTree = "<group>"; };
+		60926E3F18E7EB6E00B9ABAE /* AppLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppLauncher.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -1644,6 +1652,8 @@
 			isa = PBXGroup;
 			children = (
 				CE7B9F8D18DFD1F700FD2DAE /* Audio */,
+				60926E3718E7D5E700B9ABAE /* Controller */,
+				60926E3418E7D5BD00B9ABAE /* Def */,
 				CE7B9F8E18DFD1F700FD2DAE /* Flash */,
 				CE7B9F8F18DFD1F700FD2DAE /* Localization */,
 				CE7B9F9018DFD1F700FD2DAE /* Model */,
@@ -2103,6 +2113,28 @@
 				379BB99017F03F3700829B88 /* Reader */,
 			);
 			path = CocoStudio;
+			sourceTree = "<group>";
+		};
+		60926E3418E7D5BD00B9ABAE /* Def */ = {
+			isa = PBXGroup;
+			children = (
+				60926E3518E7D5BD00B9ABAE /* ConstansDef.h */,
+				60926E3618E7D5BD00B9ABAE /* NotifyMessageDef.h */,
+			);
+			name = Def;
+			path = ../Classes/Def;
+			sourceTree = "<group>";
+		};
+		60926E3718E7D5E700B9ABAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				60926E3E18E7EB6E00B9ABAE /* AppLauncher.cpp */,
+				60926E3F18E7EB6E00B9ABAE /* AppLauncher.h */,
+				60926E3B18E7D70500B9ABAE /* SceneController.cpp */,
+				60926E3C18E7D70500B9ABAE /* SceneController.h */,
+			);
+			name = Controller;
+			path = ../Classes/Controller;
 			sourceTree = "<group>";
 		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
@@ -2936,6 +2968,7 @@
 				15A3D9A61682F7F9002FB0C5 /* cpBody.c in Sources */,
 				15A3D9A71682F7F9002FB0C5 /* cpCollision.c in Sources */,
 				CE7BA02818DFDA3400FD2DAE /* SPAnimation.cpp in Sources */,
+				60926E3D18E7D70500B9ABAE /* SceneController.cpp in Sources */,
 				15A3D9A81682F7F9002FB0C5 /* cpHashSet.c in Sources */,
 				15A3D9A91682F7F9002FB0C5 /* cpPolyShape.c in Sources */,
 				15A3D9AA1682F7F9002FB0C5 /* cpShape.c in Sources */,
@@ -2954,6 +2987,7 @@
 				15A3DA311682F826002FB0C5 /* CCBAnimationManager.cpp in Sources */,
 				15A3DA321682F826002FB0C5 /* CCBFileLoader.cpp in Sources */,
 				CE7BA03518DFDA3400FD2DAE /* SPJsonData.cpp in Sources */,
+				60926E4018E7EB6E00B9ABAE /* AppLauncher.cpp in Sources */,
 				15A3DA331682F826002FB0C5 /* CCBKeyframe.cpp in Sources */,
 				CE7BA07B18DFDE4D00FD2DAE /* GameUtils.cpp in Sources */,
 				15A3DA341682F826002FB0C5 /* CCBReader.cpp in Sources */,
@@ -3139,8 +3173,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jian Shen (49GJKGX42A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jian Shen (49GJKGX42A)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -3181,7 +3215,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "armv6 armv7 i386";
 			};
@@ -3191,8 +3225,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jian Shen (49GJKGX42A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jian Shen (49GJKGX42A)";
 				COPY_PHASE_STRIP = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -3230,7 +3264,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
