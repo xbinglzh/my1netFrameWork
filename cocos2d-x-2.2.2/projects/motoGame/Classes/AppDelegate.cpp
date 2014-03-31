@@ -8,6 +8,7 @@
 #include "NotifyMessageDef.h"
 #include <boost/bind.hpp>
 #include "AppLauncher.h"
+#include "MainLayer.h"
 
 USING_NS_CC;
 
@@ -51,14 +52,13 @@ bool AppDelegate::applicationDidFinishLaunching() {
     ccfilePath.push_back("xx_battle_ui");
     ccfilePath.push_back("ui_layout");
     ccfilePath.push_back("ui_layout/resources-iphonehd");
+    CCFileUtils::sharedFileUtils()->setSearchPaths(ccfilePath);
     
     // 启动游戏
     _launcher.reset(new AppLauncher(boost::bind(&AppDelegate::didFinishedLauchApp, this)));
 	_launcher->startup();
     
-//    CCFileUtils::sharedFileUtils()->setSearchPaths(ccfilePath);
-//    CCScene *pScene = UiLoadingView::scene();
-//
+//    CCScene *pScene = MainLayer::scene();
 //    pDirector->runWithScene(pScene);
 
     return true;

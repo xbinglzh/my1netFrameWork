@@ -228,6 +228,9 @@
 		46513EB1187BFBA200B5ABE1 /* UITouchGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46513EAF187BFBA200B5ABE1 /* UITouchGroup.cpp */; };
 		60926E3D18E7D70500B9ABAE /* SceneController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E3B18E7D70500B9ABAE /* SceneController.cpp */; };
 		60926E4018E7EB6E00B9ABAE /* AppLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E3E18E7EB6E00B9ABAE /* AppLauncher.cpp */; };
+		60926E4318E856E200B9ABAE /* MainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E4118E856E200B9ABAE /* MainLayer.cpp */; };
+		60926E4518E8571100B9ABAE /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60926E4418E8571100B9ABAE /* bg.jpg */; };
+		60926E4818E8747A00B9ABAE /* RollBgView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E4618E8747A00B9ABAE /* RollBgView.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -949,6 +952,11 @@
 		60926E3C18E7D70500B9ABAE /* SceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneController.h; sourceTree = "<group>"; };
 		60926E3E18E7EB6E00B9ABAE /* AppLauncher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppLauncher.cpp; sourceTree = "<group>"; };
 		60926E3F18E7EB6E00B9ABAE /* AppLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppLauncher.h; sourceTree = "<group>"; };
+		60926E4118E856E200B9ABAE /* MainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainLayer.cpp; sourceTree = "<group>"; };
+		60926E4218E856E200B9ABAE /* MainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLayer.h; sourceTree = "<group>"; };
+		60926E4418E8571100B9ABAE /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		60926E4618E8747A00B9ABAE /* RollBgView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RollBgView.cpp; sourceTree = "<group>"; };
+		60926E4718E8747A00B9ABAE /* RollBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollBgView.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -2173,8 +2181,12 @@
 		CE6C9B3218E05E2700B6711E /* UiView */ = {
 			isa = PBXGroup;
 			children = (
+				60926E4118E856E200B9ABAE /* MainLayer.cpp */,
+				60926E4218E856E200B9ABAE /* MainLayer.h */,
 				CE6C9B3318E05E4D00B6711E /* HelloView.cpp */,
 				CE6C9B3418E05E4D00B6711E /* HelloView.h */,
+				60926E4618E8747A00B9ABAE /* RollBgView.cpp */,
+				60926E4718E8747A00B9ABAE /* RollBgView.h */,
 			);
 			path = UiView;
 			sourceTree = "<group>";
@@ -2194,6 +2206,7 @@
 		CE6C9B3818E065D300B6711E /* resources-iphonehd */ = {
 			isa = PBXGroup;
 			children = (
+				60926E4418E8571100B9ABAE /* bg.jpg */,
 				CE6C9B3918E065D300B6711E /* XXUiLoginViewBg.plist */,
 				CE6C9B3A18E065D300B6711E /* XXUiLoginViewBg.png */,
 			);
@@ -2863,6 +2876,7 @@
 				CE7BA0DA18DFF7FB00FD2DAE /* xx_m_100041.plist in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
+				60926E4518E8571100B9ABAE /* bg.jpg in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
 				CE7BA0DB18DFF7FB00FD2DAE /* xx_m_100041.png in Resources */,
 				CE6C9B4018E065D300B6711E /* XXUiLoginViewBg.plist in Resources */,
@@ -3037,6 +3051,7 @@
 				375BD4C41868411B0024609E /* TriggerBase.cpp in Sources */,
 				15A3DA531682F826002FB0C5 /* CCInvocation.cpp in Sources */,
 				15A3DA541682F826002FB0C5 /* CCScale9Sprite.cpp in Sources */,
+				60926E4818E8747A00B9ABAE /* RollBgView.cpp in Sources */,
 				CE7BA03918DFDA3400FD2DAE /* SPNode.cpp in Sources */,
 				15A3DA551682F826002FB0C5 /* CCEditBox.cpp in Sources */,
 				15A3DA571682F826002FB0C5 /* CCEditBoxImplIOS.mm in Sources */,
@@ -3096,6 +3111,7 @@
 				1A8F3B80175E05DA00049216 /* Slot.cpp in Sources */,
 				1A8F3B81175E05DA00049216 /* SlotData.cpp in Sources */,
 				1A8F3B82175E05DA00049216 /* spine-cocos2dx.cpp in Sources */,
+				60926E4318E856E200B9ABAE /* MainLayer.cpp in Sources */,
 				1AB87035175E0A84005D39BF /* WebSocket.cpp in Sources */,
 				375BD4C51868411B0024609E /* TriggerMng.cpp in Sources */,
 				CE7BA07518DFDD8E00FD2DAE /* tinyxmlparser.cpp in Sources */,
