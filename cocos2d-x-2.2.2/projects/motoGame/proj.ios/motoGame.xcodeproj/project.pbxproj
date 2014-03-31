@@ -228,7 +228,6 @@
 		46513EB1187BFBA200B5ABE1 /* UITouchGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46513EAF187BFBA200B5ABE1 /* UITouchGroup.cpp */; };
 		60926E3D18E7D70500B9ABAE /* SceneController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E3B18E7D70500B9ABAE /* SceneController.cpp */; };
 		60926E4018E7EB6E00B9ABAE /* AppLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E3E18E7EB6E00B9ABAE /* AppLauncher.cpp */; };
-		60926E4318E856E200B9ABAE /* MainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E4118E856E200B9ABAE /* MainLayer.cpp */; };
 		60926E4518E8571100B9ABAE /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60926E4418E8571100B9ABAE /* bg.jpg */; };
 		60926E4818E8747A00B9ABAE /* RollBgView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E4618E8747A00B9ABAE /* RollBgView.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
@@ -952,8 +951,6 @@
 		60926E3C18E7D70500B9ABAE /* SceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneController.h; sourceTree = "<group>"; };
 		60926E3E18E7EB6E00B9ABAE /* AppLauncher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppLauncher.cpp; sourceTree = "<group>"; };
 		60926E3F18E7EB6E00B9ABAE /* AppLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppLauncher.h; sourceTree = "<group>"; };
-		60926E4118E856E200B9ABAE /* MainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainLayer.cpp; sourceTree = "<group>"; };
-		60926E4218E856E200B9ABAE /* MainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLayer.h; sourceTree = "<group>"; };
 		60926E4418E8571100B9ABAE /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		60926E4618E8747A00B9ABAE /* RollBgView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RollBgView.cpp; sourceTree = "<group>"; };
 		60926E4718E8747A00B9ABAE /* RollBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollBgView.h; sourceTree = "<group>"; };
@@ -2181,8 +2178,6 @@
 		CE6C9B3218E05E2700B6711E /* UiView */ = {
 			isa = PBXGroup;
 			children = (
-				60926E4118E856E200B9ABAE /* MainLayer.cpp */,
-				60926E4218E856E200B9ABAE /* MainLayer.h */,
 				CE6C9B3318E05E4D00B6711E /* HelloView.cpp */,
 				CE6C9B3418E05E4D00B6711E /* HelloView.h */,
 				60926E4618E8747A00B9ABAE /* RollBgView.cpp */,
@@ -3111,7 +3106,6 @@
 				1A8F3B80175E05DA00049216 /* Slot.cpp in Sources */,
 				1A8F3B81175E05DA00049216 /* SlotData.cpp in Sources */,
 				1A8F3B82175E05DA00049216 /* spine-cocos2dx.cpp in Sources */,
-				60926E4318E856E200B9ABAE /* MainLayer.cpp in Sources */,
 				1AB87035175E0A84005D39BF /* WebSocket.cpp in Sources */,
 				375BD4C51868411B0024609E /* TriggerMng.cpp in Sources */,
 				CE7BA07518DFDD8E00FD2DAE /* tinyxmlparser.cpp in Sources */,

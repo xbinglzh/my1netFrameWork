@@ -8,7 +8,6 @@
 #include "NotifyMessageDef.h"
 #include <boost/bind.hpp>
 #include "AppLauncher.h"
-#include "MainLayer.h"
 
 USING_NS_CC;
 
