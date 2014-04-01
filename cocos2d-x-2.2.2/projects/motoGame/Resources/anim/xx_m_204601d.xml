@@ -1,0 +1,240 @@
+<skeleton frameRate="24" name="1111" version="1.4">
+ <armatures>
+  <armature name="xx_m_204601d">
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_07" red="100" x="28.15" y="-85.95" z="0">
+    <d name="cheng_ying_MC-cheng_ying_MC_07" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_08" red="100" x="28.75" y="-69.95" z="1">
+    <d name="cheng_ying_MC-cheng_ying_MC_08" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_09" red="100" x="37.05" y="-62.2" z="2">
+    <d name="cheng_ying_MC-cheng_ying_MC_09" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_12" red="100" x="18.9" y="-45.75" z="3">
+    <d name="cheng_ying_MC-cheng_ying_MC_12" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_04" red="100" x="6.05" y="-136.3" z="4">
+    <d name="cheng_ying_MC-cheng_ying_MC_04" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.54" green="100" kX="11.34" kY="180" name="cheng_ying_MC_15" red="100" x="11.35" y="-45.2" z="5">
+    <d name="cheng_ying_MC-cheng_ying_MC_15" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.54" green="100" kX="21.04" kY="-170.3" name="cheng_ying_MC_16" red="100" x="6.75" y="-19.25" z="6">
+    <d name="cheng_ying_MC-cheng_ying_MC_16" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_02" red="100" x="41.25" y="-122.3" z="7">
+    <d name="cheng_ying_MC-cheng_ying_MC_02" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_03" red="100" x="47.95" y="-221.05" z="8">
+    <d name="cheng_ying_MC-cheng_ying_MC_03" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.53" green="100" kX="-9.23" kY="180" name="cheng_ying_MC_13" red="100" x="-2.4" y="-46.25" z="9">
+    <d name="cheng_ying_MC-cheng_ying_MC_13" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.53" green="100" kX="-9.23" kY="180" name="cheng_ying_MC_14" red="100" x="2.7" y="-19.85" z="10">
+    <d name="cheng_ying_MC-cheng_ying_MC_14" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_05" red="100" x="16" y="-87.9" z="11">
+    <d name="cheng_ying_MC-cheng_ying_MC_05" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_00" red="100" x="42.85" y="-195.1" z="12">
+    <d name="cheng_ying_MC-cheng_ying_MC_00" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_06" red="100" x="-14.35" y="-84.1" z="13">
+    <d name="cheng_ying_MC-cheng_ying_MC_06" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_10" red="100" x="-24.4" y="-69.15" z="14">
+    <d name="cheng_ying_MC-cheng_ying_MC_10" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_01" red="100" x="-29.75" y="-123.55" z="15">
+    <d name="cheng_ying_MC-cheng_ying_MC_01" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_11" red="100" x="-17.7" y="-60.7" z="16">
+    <d name="cheng_ying_MC-cheng_ying_MC_11" />
+   </b>
+   <b alpha="100" blue="100" cX="1.51" cY="1.51" green="100" kX="0" kY="180" name="cheng_ying_MC_090" red="100" x="-19.2" y="-57.95" z="17">
+    <d name="cheng_ying_MC-cheng_ying_MC_09" />
+   </b>
+   <b alpha="100" blue="100" cX="2.32" cY="2.32" green="100" kX="0" kY="180" name="&#22270;&#23618; 3" red="100" x="107.1" y="-170.9" z="0">
+    <d name="cheng_ying_MC-cheng_ying_MC_17" />
+   </b>
+   <b alpha="100" blue="51" cX="2.32" cY="2.32" green="51" kX="0" kY="180" name="&#22270;&#23618; 4" red="51" x="59.4" y="-220.35" z="0">
+    <d name="cheng_ying_MC-cheng_ying_MC_18" />
+   </b>
+   <b alpha="100" blue="100" cX="2.32" cY="2.32" green="100" kX="0" kY="180" name="&#22270;&#23618; 2" red="100" x="47.95" y="-221.05" z="0">
+    <d name="cheng_ying_MC-cheng_ying_MC_20" />
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="xx_m_204601d">
+   <mov dr="24" drTW="24" lp="1" name="walk" to="6" twE="NaN">
+    <b dl="0" name="cheng_ying_MC_07" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="28.15" y="-85.95" z="0" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="6.97" kY="-173.03" red="100" twE="0" x="28.25" y="-84.8" z="0" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="8.74" kY="-171.26" red="100" twE="0" x="27.9" y="-82.15" z="0" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="6.97" kY="-173.03" red="100" twE="0" x="28.25" y="-84.8" z="0" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="28.15" y="-85.95" z="0" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_08" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="28.75" y="-69.95" z="1" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="6.97" kY="-173.03" red="100" twE="0" x="27" y="-68.8" z="1" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="24.7" kY="-155.3" red="100" twE="0" x="25.25" y="-64.05" z="1" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="6.97" kY="-173.03" red="100" twE="0" x="27" y="-68.8" z="1" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="28.75" y="-69.95" z="1" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_09" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="37.05" y="-62.2" z="2" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="6.97" kY="-173.03" red="100" twE="0" x="34.4" y="-60.15" z="2" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="24.7" kY="-155.3" red="100" twE="0" x="29.65" y="-53.55" z="2" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="6.97" kY="-173.03" red="100" twE="0" x="34.4" y="-60.15" z="2" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="37.05" y="-62.2" z="2" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_12" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="18.9" y="-45.75" z="3" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="18.9" y="-47.65" z="3" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="18.9" y="-45.75" z="3" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="18.9" y="-47.65" z="3" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="18.9" y="-45.75" z="3" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_04" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="6.05" y="-136.3" z="4" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.52" dI="0" dr="6" green="100" kX="-5.59" kY="180" red="100" twE="0" x="6.05" y="-138.15" z="4" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="6.05" y="-136.3" z="4" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.52" dI="0" dr="6" green="100" kX="-5.59" kY="180" red="100" twE="0" x="6.05" y="-138.15" z="4" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="6.05" y="-136.3" z="4" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_15" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.54" dI="0" dr="5" green="100" kX="11.34" kY="180" red="100" twE="0" x="11.35" y="-45.2" z="5" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.54" dI="0" dr="6" green="100" kX="-17.65" kY="151.02" red="100" twE="0" x="5.45" y="-49.7" z="5" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.52" dI="0" dr="6" green="100" kX="-4.12" kY="180" red="100" twE="0" x="11.35" y="-46.35" z="5" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.52" dI="0" dr="6" green="100" kX="6.45" kY="180" red="100" twE="0" x="11.35" y="-46.35" z="5" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.54" dI="0" dr="1" green="100" kX="11.34" kY="180" red="100" x="11.35" y="-45.2" z="5" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_16" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.54" dI="0" dr="5" green="100" kX="21.04" kY="-170.3" red="100" twE="0" x="6.75" y="-19.25" z="6" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.54" dI="0" dr="6" green="100" kX="53.5" kY="-137.83" red="100" twE="0" x="11.35" y="-17.2" z="6" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.52" dI="0" dr="6" green="100" kX="-4.12" kY="180" red="100" twE="0" x="13.9" y="-20.4" z="6" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.52" dI="0" dr="6" green="100" kX="6.45" kY="180" red="100" twE="0" x="9.15" y="-20.4" z="6" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.54" dI="0" dr="1" green="100" kX="21.04" kY="-170.3" red="100" x="6.75" y="-19.25" z="6" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_02" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="41.25" y="-122.3" z="7" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="2.14" kY="180" red="100" twE="0" x="41.25" y="-124.15" z="7" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="41.25" y="-122.3" z="7" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="2.14" kY="180" red="100" twE="0" x="41.25" y="-124.15" z="7" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="41.25" y="-122.3" z="7" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_03" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="47.95" y="-221.05" z="8" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="47.95" y="-222.9" z="8" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="47.95" y="-221.05" z="8" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="47.95" y="-222.9" z="8" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="47.95" y="-221.05" z="8" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_13" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.53" dI="0" dr="5" green="100" kX="-9.23" kY="180" red="100" twE="0" x="-2.4" y="-46.25" z="9" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="2.15" kY="180" red="100" twE="0" x="-2.4" y="-46.25" z="9" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.53" dI="0" dr="6" green="100" kX="7.97" kY="180" red="100" twE="0" x="-2.4" y="-46.25" z="9" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-19.59" kY="158.27" red="100" twE="0" x="-4.15" y="-53.55" z="9" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.53" dI="0" dr="1" green="100" kX="-9.23" kY="180" red="100" x="-2.4" y="-46.25" z="9" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_14" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.53" dI="0" dr="5" green="100" kX="-9.23" kY="180" red="100" twE="0" x="2.7" y="-19.85" z="10" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="2.15" kY="180" red="100" twE="0" x="-2.55" y="-19.85" z="10" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.53" dI="0" dr="6" green="100" kX="7.97" kY="180" red="100" twE="0" x="-5.3" y="-19.85" z="10" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="38.6" kY="-143.55" red="100" twE="0" x="4.3" y="-22.15" z="10" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.53" dI="0" dr="1" green="100" kX="-9.23" kY="180" red="100" x="2.7" y="-19.85" z="10" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_05" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="16" y="-87.9" z="11" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="16" y="-89.75" z="11" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="16" y="-87.9" z="11" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="16" y="-89.75" z="11" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="16" y="-87.9" z="11" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_00" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="42.85" y="-195.1" z="12" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="42.85" y="-196.95" z="12" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="42.85" y="-195.1" z="12" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="42.85" y="-196.95" z="12" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="42.85" y="-195.1" z="12" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_06" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="-14.35" y="-84.1" z="13" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-7.94" kY="172.06" red="100" twE="0" x="-14.8" y="-87" z="13" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.54" dI="0" dr="6" green="100" kX="-9.03" kY="160.31" red="100" twE="0" x="-15.4" y="-85.7" z="13" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-7.94" kY="172.06" red="100" twE="0" x="-14.8" y="-87" z="13" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="-14.35" y="-84.1" z="13" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_10" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="-24.4" y="-69.15" z="14" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-16.9" kY="163.1" red="100" twE="0" x="-23.5" y="-72.05" z="14" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-37.93" kY="142.07" red="100" twE="0" x="-25.7" y="-70.2" z="14" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-16.9" kY="163.1" red="100" twE="0" x="-23.5" y="-72.05" z="14" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="-24.4" y="-69.15" z="14" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_01" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="-29.75" y="-123.55" z="15" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-1.09" kY="180" red="100" twE="0" x="-29.75" y="-125.4" z="15" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="0" kY="180" red="100" twE="0" x="-29.75" y="-123.55" z="15" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-1.09" kY="180" red="100" twE="0" x="-29.75" y="-125.4" z="15" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="-29.75" y="-123.55" z="15" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_11" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="-17.7" y="-60.7" z="16" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-16.9" kY="163.1" red="100" twE="0" x="-14.55" y="-65.9" z="16" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-37.93" kY="142.07" red="100" twE="0" x="-15.15" y="-67.65" z="16" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-16.9" kY="163.1" red="100" twE="0" x="-14.55" y="-65.9" z="16" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="-17.7" y="-60.7" z="16" />
+    </b>
+    <b dl="0" name="cheng_ying_MC_090" sc="1">
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="5" green="100" kX="0" kY="180" red="100" twE="0" x="-19.2" y="-57.95" z="17" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-16.9" kY="163.1" red="100" twE="0" x="-15.15" y="-62.8" z="17" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-37.93" kY="142.07" red="100" twE="0" x="-14.7" y="-64.65" z="17" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="6" green="100" kX="-16.9" kY="163.1" red="100" twE="0" x="-15.15" y="-62.8" z="17" />
+     <f alpha="100" blue="100" cX="1.51" cY="1.51" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="-19.2" y="-57.95" z="17" />
+    </b>
+   </mov>
+   <mov dr="17" drTW="17" lp="0" name="die" to="6" twE="NaN">
+    <b dl="0" name="&#22270;&#23618; 3" sc="1">
+     <f alpha="100" blue="100" cX="2.32" cY="2.32" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="107.1" y="-170.9" z="0" />
+     <f alpha="100" blue="100" cX="2.32" cY="2.32" dI="0" dr="15" green="100" kX="0" kY="180" red="100" twE="0" x="107.1" y="-170.9" z="0" />
+     <f alpha="0" blue="100" cX="2.32" cY="2.32" dI="0" dr="1" green="100" kX="0" kY="180" red="100" x="107.1" y="-170.9" z="0" />
+    </b>
+   </mov>
+   <mov dr="4" drTW="4" lp="0" name="injured" to="6" twE="NaN">
+    <b dl="0" name="&#22270;&#23618; 4" sc="1">
+     <f alpha="100" blue="51" cX="2.32" cY="2.32" dI="0" dr="4" green="51" kX="0" kY="180" red="51" x="59.4" y="-220.35" z="0" />
+    </b>
+   </mov>
+   <mov dr="2" drTW="10" lp="1" name="normal" to="6" twE="2">
+    <b dl="0" name="&#22270;&#23618; 2" sc="1">
+     <f alpha="100" blue="100" cX="2.32" cY="2.32" dI="0" dr="2" green="100" kX="0" kY="180" red="100" x="47.95" y="-221.05" z="0" />
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas height="256" name="1111" width="256">
+  <SubTexture height="96" name="cheng_ying_MC-cheng_ying_MC_20" pX="0" pY="0" width="63" x="160" y="0" />
+  <SubTexture height="96" name="cheng_ying_MC-cheng_ying_MC_18" pX="0.4" pY="0.35" width="68" x="90" y="0" />
+  <SubTexture height="89" name="cheng_ying_MC-cheng_ying_MC_17" pX="-1.9" pY="0.45" width="88" x="0" y="0" />
+  <SubTexture height="31" name="cheng_ying_MC-cheng_ying_MC_11" pX="-0.95" pY="16.95" width="43" x="205" y="108" />
+  <SubTexture height="32" name="cheng_ying_MC-cheng_ying_MC_01" pX="0" pY="0" width="12" x="225" y="0" />
+  <SubTexture height="27" name="cheng_ying_MC-cheng_ying_MC_10" pX="0" pY="0" width="16" x="238" y="56" />
+  <SubTexture height="24" name="cheng_ying_MC-cheng_ying_MC_06" pX="0" pY="0" width="15" x="239" y="30" />
+  <SubTexture height="73" name="cheng_ying_MC-cheng_ying_MC_00" pX="0" pY="0" width="71" x="0" y="91" />
+  <SubTexture height="52" name="cheng_ying_MC-cheng_ying_MC_05" pX="5.55" pY="0" width="41" x="152" y="98" />
+  <SubTexture height="14" name="cheng_ying_MC-cheng_ying_MC_14" pX="0" pY="0" width="10" x="140" y="98" />
+  <SubTexture height="21" name="cheng_ying_MC-cheng_ying_MC_13" pX="0" pY="0" width="8" x="225" y="63" />
+  <SubTexture height="36" name="cheng_ying_MC-cheng_ying_MC_03" pX="0" pY="0" width="96" x="140" y="169" />
+  <SubTexture height="27" name="cheng_ying_MC-cheng_ying_MC_02" pX="0" pY="0" width="11" x="225" y="34" />
+  <SubTexture height="13" name="cheng_ying_MC-cheng_ying_MC_16" pX="0" pY="0" width="8" x="195" y="98" />
+  <SubTexture height="20" name="cheng_ying_MC-cheng_ying_MC_15" pX="0" pY="0" width="8" x="225" y="86" />
+  <SubTexture height="76" name="cheng_ying_MC-cheng_ying_MC_04" pX="0" pY="0" width="51" x="87" y="98" />
+  <SubTexture height="26" name="cheng_ying_MC-cheng_ying_MC_12" pX="0" pY="0" width="37" x="195" y="141" />
+  <SubTexture height="12" name="cheng_ying_MC-cheng_ying_MC_09" pX="0" pY="0" width="12" x="73" y="91" />
+  <SubTexture height="28" name="cheng_ying_MC-cheng_ying_MC_08" pX="0" pY="0" width="12" x="239" y="0" />
+  <SubTexture height="18" name="cheng_ying_MC-cheng_ying_MC_07" pX="-5" pY="0" width="13" x="235" y="85" />
+ </TextureAtlas>
+</skeleton>

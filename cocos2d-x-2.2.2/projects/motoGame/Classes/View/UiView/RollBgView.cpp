@@ -34,12 +34,13 @@ bool RollBgView::init() {
     this->addChild(bg1, 0, KTagBgOne);
     LayoutUtil::layoutParentLeft(bg1);
     
-    AnimNode* anim = AnimNode::createFlashAnimNode("xx_m_100041.png", "xx_m_100041.plist", "xx_m_100041.xml",
-                                                   "walk", "xx_m_100041");
-    anim->setContentSize(CCSize(50, 50));
+    AnimNode* anim = AnimNode::createFlashAnimNode("xx_m_204601d.png", "xx_m_204601d.plist", "xx_m_204601d.xml",
+                                                   "walk", "xx_m_204601d");
+    anim->setContentSize(CCSize(256, 256));
     anim->runAnimation("walk");
+    anim->setAnchorPoint(CCPointZero);
     bg1->addChild(anim, 1001);
-    LayoutUtil::layoutParentRight(anim);
+    LayoutUtil::layoutParentLeft(anim, 800, 0);
     
     CCSprite * bg2 = CCSprite::create("bg.jpg");
     bg2->setAnchorPoint(CCPointZero);
