@@ -17,7 +17,7 @@
 const static int KTagBgOne = 1001;
 const static int KTagBgTwo = 1002;
 
-#define  X_MOVE_SPEED -0
+#define  X_MOVE_SPEED -2
 
 RollBgView::RollBgView() : _b2World(NULL), _levelHelper(NULL), _lhSprite(NULL){
     
@@ -122,9 +122,6 @@ void RollBgView::updateB2World(float dt) {
                 }
             }
         }
-        
-//        _lhSprite->setPosition(CCPointMake(_lhSprite->getBody()->GetPosition().x * PTM_RATIO,
-//                                           _lhSprite->getBody()->GetPosition().y * PTM_RATIO));
     }
 }
 
@@ -178,6 +175,7 @@ void RollBgView::configDebugBox2dDraw() {
 //	flags += b2Draw::e_pairBit;
 //    flags += b2Draw::e_centerOfMassBit;//物体质心
 	_debugDraw->SetFlags(flags);
+//    _b2World->DrawDebugData();
 }
 
 

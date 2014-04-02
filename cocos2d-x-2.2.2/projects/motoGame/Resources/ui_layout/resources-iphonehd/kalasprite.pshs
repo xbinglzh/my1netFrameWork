@@ -43,8 +43,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vaygDAAAAAAQQMAAAAJZHeZJD4I6MXVnF
-					6mu8xwEr7go5SQfVMEhuAegieyK7DAIAAAUA
+					Ym9vaygDAAAAAAQQMAAAACCmoO9lSWgI04LY
+					KFYFXaJpoexFuDpd53HYEaRaEOMRDAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UJAAAAAQEA
@@ -177,8 +177,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vaygDAAAAAAQQMAAAAMsOXLgfk3gWkMGJ
-					fmlDPRdnSxwqkcuR9ZDawohyzSGbDAIAAAUA
+					Ym9vaygDAAAAAAQQMAAAAOu1WTKBQAfB96hj
+					nEICXWx7guz7FcWZOYrESmPik6CIDAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UJAAAAAQEA
@@ -311,8 +311,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vazQDAAAAAAQQMAAAAHJc3f9IHo0da01C
-					gW8KJIvjEGY7fuLo/mWTjj48c3giGAIAAAUA
+					Ym9vazQDAAAAAAQQMAAAAABkp5y9eIILtcax
+					jQV/SSi7attDnLCrkLeOrayzkjuAGAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UVAAAAAQEA
@@ -373,18 +373,18 @@
 								<key>Category</key>
 								<integer>1</integer>
 								<key>Density</key>
-								<real>10</real>
+								<real>0.20000000298023224</real>
 								<key>Fixture</key>
 								<array>
 									<array>
 										<string>{-4, -4}</string>
-										<string>{3.9999999999999991, -4}</string>
+										<string>{4, -4}</string>
 										<string>{4, 4}</string>
 										<string>{-4, 4}</string>
 									</array>
 								</array>
 								<key>Friction</key>
-								<real>3</real>
+								<real>0.20000000298023224</real>
 								<key>Group</key>
 								<integer>5</integer>
 								<key>Height</key>
@@ -408,13 +408,13 @@
 								<key>Name</key>
 								<string>di</string>
 								<key>Restitution</key>
-								<real>0.5</real>
+								<real>0.20000000298023224</real>
 								<key>ShapePoints</key>
 								<array>
 									<string>{0, 0}</string>
-									<string>{9.7971743931788257e-16, 16}</string>
-									<string>{-15.999999999999998, 16}</string>
-									<string>{-16, 9.7971743931788257e-16}</string>
+									<string>{16, 0}</string>
+									<string>{16, 16}</string>
+									<string>{0, 16}</string>
 								</array>
 								<key>ShapePositionOffset</key>
 								<string>{0, 0}</string>
@@ -466,7 +466,7 @@
 						<key>IsDrawable</key>
 						<true/>
 						<key>IsRotated</key>
-						<true/>
+						<false/>
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
@@ -503,8 +503,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vazQDAAAAAAQQMAAAAHO9oKq5oY2EChsx
-					lJgNVsoypxmytAMcr5WOHJ2cklp8GAIAAAUA
+					Ym9vazQDAAAAAAQQMAAAAFl+DV82q4r8i0p3
+					DrVaDR8UoO0blFfJVJz23x+lxMOaGAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UWAAAAAQEA
@@ -578,7 +578,7 @@
 								<key>Friction</key>
 								<real>0.20000000298023224</real>
 								<key>Group</key>
-								<integer>5</integer>
+								<integer>0</integer>
 								<key>Height</key>
 								<real>16</real>
 								<key>HolesPoints</key>
@@ -695,8 +695,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vazQDAAAAAAQQMAAAAGdZuNmPLFKr5AHR
-					wk2r1G5nqZx0PHzpQsEsnB3I9CLJGAIAAAUA
+					Ym9vazQDAAAAAAQQMAAAAD+fBmt5gtlU6ldw
+					x7u+6r2A5dATTLwxtWmaEEwTr5ivGAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UYAAAAAQEA
@@ -830,8 +830,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vazADAAAAAAQQMAAAAAeU2EbUQp5Jk/4F
-					wU1FEJ7SAvqsFomE+bxWSzaoEQMiFAIAAAUA
+					Ym9vazADAAAAAAQQMAAAAAMObDBL0iWD5CzC
+					7zGn0nq+xc8D9XaZXtfPB860jtQ6FAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UUAAAAAQEA
@@ -965,8 +965,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vaygDAAAAAAQQMAAAAMarqUY1s59SKSVJ
-					Q+GDqLRnX22voPAcy61i9nL1YqduDAIAAAUA
+					Ym9vaygDAAAAAAQQMAAAADS7wRHey8Yw6lhy
+					dm3tGXaSwuaYkC3HyHkSbdGmXVD5DAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2ULAAAAAQEA
@@ -1156,8 +1156,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vaygDAAAAAAQQMAAAANYDjjVqD64hJS13
-					kX4uLMvZ3+WvA1mHMkRcqzo6Sb0hDAIAAAUA
+					Ym9vaygDAAAAAAQQMAAAAB/Z4UHwdlztYn+M
+					i0DCelToo13j3YO3o9xzmIJkr3TPDAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2ULAAAAAQEA
@@ -1347,8 +1347,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vayQDAAAAAAQQMAAAAPII6JA00Hz8QmcG
-					3msXNP9Is+cPthxkI9A00U7pOU/gCAIAAAUA
+					Ym9vayQDAAAAAAQQMAAAAMqqSGT2h3hNdAID
+					XQ7LQd4q+Xsvsb7UMZHm4gIMpFJZCAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UIAAAAAQEA
@@ -1538,8 +1538,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vaywDAAAAAAQQMAAAAHPIrmcBKHGKL5SZ
-					8ScesAYNzdpfJkQuq3yaIq8mf0a+EAIAAAUA
+					Ym9vaywDAAAAAAQQMAAAANi6TetbpAcpAyMI
+					hDqYiZg5Z2NJUuhLZiaz4vWl06b4EAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UPAAAAAQEA
@@ -1673,8 +1673,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vaywDAAAAAAQQMAAAAJjog4UbwmfOgRK4
-					gFs9VgbW9efPEh/425nqsfBinDg2EAIAAAUA
+					Ym9vaywDAAAAAAQQMAAAAIBReklZOowLaDKw
+					RRRgklAA0NeuYgBkgEuo2mujkQ2eEAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UNAAAAAQEA
@@ -1808,8 +1808,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vaygDAAAAAAQQMAAAAK5F+scI5Pn/K1jk
-					2kumau1Lqmt564O0Mb50+y+38Tc0DAIAAAUA
+					Ym9vaygDAAAAAAQQMAAAAA4/blQDBg60rmAv
+					wZLYjGFwSNIeSz+0284t6jraRBhdDAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UKAAAAAQEA
@@ -2037,8 +2037,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vaygDAAAAAAQQMAAAALhy0JH/TTGP8EZb
-					Y8ZXPZzPaZtyR+OUFA/yD1y7v6GCDAIAAAUA
+					Ym9vaygDAAAAAAQQMAAAAHQ/2LPEGGqFDNL5
+					JKFR6api/WgK4ArsTtmw79zIYsXzDAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UKAAAAAQEA
@@ -2248,8 +2248,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vaywDAAAAAAQQMAAAAHm7MVdbgujWpKNz
-					pa+elI7GE+Bc3HC0rvMCnblfMhdsEAIAAAUA
+					Ym9vaywDAAAAAAQQMAAAAIj1lJWYKDcqlsQR
+					gRYHT9HrE0b4FHTgMR3wdo/Y/zXWEAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UQAAAAAQEA
@@ -2440,8 +2440,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vazADAAAAAAQQMAAAAB9KFs3delNuyTEI
-					sF1aJDahzepgxxm9VgCJPPT73m1FFAIAAAUA
+					Ym9vazADAAAAAAQQMAAAAMTlZdx02IOtv6GX
+					IEypCI+oaSMVA4S/p6Yj0j47NcAFFAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2URAAAAAQEA
@@ -2632,8 +2632,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vazADAAAAAAQQMAAAAMAVrlA+xdmbEsHB
-					rcl930RclXs+b+ldtq2ZtBhD5REXFAIAAAUA
+					Ym9vazADAAAAAAQQMAAAAPe/wMX7uYjyxLCc
+					bkTzrba9ZAK0KDCLc+bMnDtTyIExFAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2URAAAAAQEA
@@ -2767,8 +2767,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vazADAAAAAAQQMAAAAGn0oY713gIdSx7x
-					cEFOOwsZEt7vEf9cBBjXqd6ib7waFAIAAAUA
+					Ym9vazADAAAAAAQQMAAAAABymjz/8Br76Kxm
+					QTE4aWRnCiTKIY+1vR6W8m3FrJiZFAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2URAAAAAQEA
@@ -2902,8 +2902,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vazADAAAAAAQQMAAAABLVIC3G50Jo19Qi
-					YaR38TRSgJWIbpcG+u7NNNCwGWs7FAIAAAUA
+					Ym9vazADAAAAAAQQMAAAAFHgvVpBY20mdW2t
+					VvyST2H/jZ/H8QEPy5HGB0SQLcc/FAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2URAAAAAQEA
@@ -3037,8 +3037,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vaygDAAAAAAQQMAAAAL2ENC+UZrIfkLr5
-					S4sJqrQOHFvo8J2N0DKxMd2Ds43PDAIAAAUA
+					Ym9vaygDAAAAAAQQMAAAABExELdL0XjTQfmQ
+					8lfB7cSC47JoKVwu+va7bNl17pxKDAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UKAAAAAQEA
@@ -3171,8 +3171,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vayQDAAAAAAQQMAAAAEzKi/8PHa7yemW8
-					83Oyffq0nmk2/wSxBcx5D71Sy9heCAIAAAUA
+					Ym9vayQDAAAAAAQQMAAAABpjANdZJk9B8qHT
+					JmUHuFVjO9eJ/bhALgWnDCuXPFHQCAIAAAUA
 					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIH
 					AAAAAQEAAERlc2t0b3AABgAAAAEBAABzcHJp
 					dGUAAAgAAAABAQAAcmVzb3Vyc2UIAAAAAQEA
