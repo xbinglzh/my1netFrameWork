@@ -51,6 +51,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     ccfilePath.push_back("xx_battle_ui");
     ccfilePath.push_back("ui_layout");
     ccfilePath.push_back("ui_layout/resources-iphonehd");
+    ccfilePath.push_back("ui_layout/resources-iphonehd/lpResourse");
+    
     CCFileUtils::sharedFileUtils()->setSearchPaths(ccfilePath);
     
     // 启动游戏

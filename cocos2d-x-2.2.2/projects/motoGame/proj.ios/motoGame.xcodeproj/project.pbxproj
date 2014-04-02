@@ -244,6 +244,7 @@
 		CE6C9B4218E065D300B6711E /* XXUiLoadingView.ccb in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3C18E065D300B6711E /* XXUiLoadingView.ccb */; };
 		CE6C9B4318E065D300B6711E /* ui.ccbproj in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3D18E065D300B6711E /* ui.ccbproj */; };
 		CE6C9B4418E065D300B6711E /* XXUiLoadingView.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3E18E065D300B6711E /* XXUiLoadingView.ccbi */; };
+		CE73522118EC09E30059BAA1 /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE73521F18EC09E30059BAA1 /* GLES-Render.cpp */; };
 		CE7B9F9618DFD23800FD2DAE /* LayoutUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7B9F9418DFD23800FD2DAE /* LayoutUtil.cpp */; };
 		CE7B9FA818DFD2D400FD2DAE /* CCShaderEffectSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7B9FA318DFD2D400FD2DAE /* CCShaderEffectSprite.cpp */; };
 		CE7B9FA918DFD2D400FD2DAE /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7B9FA518DFD2D400FD2DAE /* ShaderManager.cpp */; };
@@ -348,6 +349,11 @@
 		CEBCE56018EABE5100691E3B /* LHArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEBCE54518EABE5100691E3B /* LHArray.cpp */; };
 		CEBCE56118EABE5100691E3B /* LHDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEBCE54718EABE5100691E3B /* LHDictionary.cpp */; };
 		CEBCE56218EABE5100691E3B /* LHObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEBCE54918EABE5100691E3B /* LHObject.cpp */; };
+		CEBCE57E18EBB7F400691E3B /* kala_level.lhproject in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE57918EBB7F400691E3B /* kala_level.lhproject */; };
+		CEBCE57F18EBB7F400691E3B /* kala_level.plhs in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE57A18EBB7F400691E3B /* kala_level.plhs */; };
+		CEBCE58018EBB7F400691E3B /* kalasprite.pshs in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE57B18EBB7F400691E3B /* kalasprite.pshs */; };
+		CEBCE58118EBB7F400691E3B /* kalasprite_kalaSheet-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE57C18EBB7F400691E3B /* kalasprite_kalaSheet-hd.png */; };
+		CEBCE58218EBB7F400691E3B /* kalasprite_kalaSheet.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE57D18EBB7F400691E3B /* kalasprite_kalaSheet.png */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
@@ -986,8 +992,6 @@
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		CE6C9B1F18E052FD00B6711E /* NotifyMessageDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyMessageDef.h; sourceTree = "<group>"; };
-		CE6C9B2118E0538D00B6711E /* ConstansDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstansDef.h; sourceTree = "<group>"; };
 		CE6C9B2618E0552600B6711E /* RootUiLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RootUiLayer.cpp; sourceTree = "<group>"; };
 		CE6C9B2718E0552600B6711E /* RootUiLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootUiLayer.h; sourceTree = "<group>"; };
 		CE6C9B2918E0565A00B6711E /* UiUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UiUtils.cpp; sourceTree = "<group>"; };
@@ -1003,6 +1007,8 @@
 		CE6C9B3D18E065D300B6711E /* ui.ccbproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ui.ccbproj; sourceTree = "<group>"; };
 		CE6C9B3E18E065D300B6711E /* XXUiLoadingView.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = XXUiLoadingView.ccbi; sourceTree = "<group>"; };
 		CE6C9B4918E11C5B00B6711E /* FontStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontStyle.h; sourceTree = "<group>"; };
+		CE73521F18EC09E30059BAA1 /* GLES-Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "GLES-Render.cpp"; sourceTree = "<group>"; };
+		CE73522018EC09E30059BAA1 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		CE7B9F9418DFD23800FD2DAE /* LayoutUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayoutUtil.cpp; sourceTree = "<group>"; };
 		CE7B9F9518DFD23800FD2DAE /* LayoutUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutUtil.h; sourceTree = "<group>"; };
 		CE7B9FA318DFD2D400FD2DAE /* CCShaderEffectSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCShaderEffectSprite.cpp; sourceTree = "<group>"; };
@@ -1215,6 +1221,11 @@
 		CEBCE54818EABE5100691E3B /* LHDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHDictionary.h; sourceTree = "<group>"; };
 		CEBCE54918EABE5100691E3B /* LHObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LHObject.cpp; sourceTree = "<group>"; };
 		CEBCE54A18EABE5100691E3B /* LHObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHObject.h; sourceTree = "<group>"; };
+		CEBCE57918EBB7F400691E3B /* kala_level.lhproject */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = kala_level.lhproject; sourceTree = "<group>"; };
+		CEBCE57A18EBB7F400691E3B /* kala_level.plhs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = kala_level.plhs; sourceTree = "<group>"; };
+		CEBCE57B18EBB7F400691E3B /* kalasprite.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = kalasprite.pshs; sourceTree = "<group>"; };
+		CEBCE57C18EBB7F400691E3B /* kalasprite_kalaSheet-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kalasprite_kalaSheet-hd.png"; sourceTree = "<group>"; };
+		CEBCE57D18EBB7F400691E3B /* kalasprite_kalaSheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kalasprite_kalaSheet.png; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -2239,16 +2250,6 @@
 			path = ../Resources;
 			sourceTree = "<group>";
 		};
-		CE6C9B0818E052D900B6711E /* Def */ = {
-			isa = PBXGroup;
-			children = (
-				CE6C9B1F18E052FD00B6711E /* NotifyMessageDef.h */,
-				CE6C9B2118E0538D00B6711E /* ConstansDef.h */,
-			);
-			name = Def;
-			path = ../Def;
-			sourceTree = "<group>";
-		};
 		CE6C9B2518E0552600B6711E /* root */ = {
 			isa = PBXGroup;
 			children = (
@@ -2284,6 +2285,7 @@
 		CE6C9B3818E065D300B6711E /* resources-iphonehd */ = {
 			isa = PBXGroup;
 			children = (
+				CEBCE57818EBB7F400691E3B /* lpResourse */,
 				60926E4418E8571100B9ABAE /* bg.jpg */,
 				CE6C9B3918E065D300B6711E /* XXUiLoginViewBg.plist */,
 				CE6C9B3A18E065D300B6711E /* XXUiLoginViewBg.png */,
@@ -2304,6 +2306,15 @@
 			children = (
 			);
 			path = tween;
+			sourceTree = "<group>";
+		};
+		CE73521A18EC07F40059BAA1 /* GLESRender */ = {
+			isa = PBXGroup;
+			children = (
+				CE73521F18EC09E30059BAA1 /* GLES-Render.cpp */,
+				CE73522018EC09E30059BAA1 /* GLES-Render.h */,
+			);
+			path = GLESRender;
 			sourceTree = "<group>";
 		};
 		CE7B9F8D18DFD1F700FD2DAE /* Audio */ = {
@@ -2347,7 +2358,6 @@
 				CE71135818E2DE92008C5267 /* tween */,
 				CE6C9B2918E0565A00B6711E /* UiUtils.cpp */,
 				CE6C9B2A18E0565A00B6711E /* UiUtils.h */,
-				CE6C9B0818E052D900B6711E /* Def */,
 				CE7BA0BE18DFEA7600FD2DAE /* HMD5.cpp */,
 				CE7BA0BF18DFEA7600FD2DAE /* HMD5.h */,
 				CE7BA07918DFDE4D00FD2DAE /* GameUtils.cpp */,
@@ -2721,6 +2731,7 @@
 		CEBCE51418EABE5100691E3B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CE73521A18EC07F40059BAA1 /* GLESRender */,
 				CEBCE51518EABE5100691E3B /* LevelHelper */,
 			);
 			name = Extensions;
@@ -2806,6 +2817,18 @@
 				CEBCE54A18EABE5100691E3B /* LHObject.h */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CEBCE57818EBB7F400691E3B /* lpResourse */ = {
+			isa = PBXGroup;
+			children = (
+				CEBCE57918EBB7F400691E3B /* kala_level.lhproject */,
+				CEBCE57A18EBB7F400691E3B /* kala_level.plhs */,
+				CEBCE57B18EBB7F400691E3B /* kalasprite.pshs */,
+				CEBCE57C18EBB7F400691E3B /* kalasprite_kalaSheet-hd.png */,
+				CEBCE57D18EBB7F400691E3B /* kalasprite_kalaSheet.png */,
+			);
+			path = lpResourse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3031,6 +3054,7 @@
 				CE7BA0D018DFF72A00FD2DAE /* Icon-120.png in Resources */,
 				CE6C9B4118E065D300B6711E /* XXUiLoginViewBg.png in Resources */,
 				CE6C9B4218E065D300B6711E /* XXUiLoadingView.ccb in Resources */,
+				CEBCE57F18EBB7F400691E3B /* kala_level.plhs in Resources */,
 				CE7BA0CE18DFF72A00FD2DAE /* Default@2x.png in Resources */,
 				CE7BA04B18DFDA3400FD2DAE /* json_valueiterator.inl in Resources */,
 				CE7BA0CF18DFF72A00FD2DAE /* Icon-114.png in Resources */,
@@ -3043,12 +3067,15 @@
 				CE7BA04D18DFDA3400FD2DAE /* sconscript in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				CE7BA04818DFDA3400FD2DAE /* json_internalmap.inl in Resources */,
+				CEBCE58118EBB7F400691E3B /* kalasprite_kalaSheet-hd.png in Resources */,
 				CE6C9B4418E065D300B6711E /* XXUiLoadingView.ccbi in Resources */,
 				CE7BA0D418DFF72A00FD2DAE /* Icon-72.png in Resources */,
+				CEBCE57E18EBB7F400691E3B /* kala_level.lhproject in Resources */,
 				CE7BA0DA18DFF7FB00FD2DAE /* xx_m_100041.plist in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				60926E4518E8571100B9ABAE /* bg.jpg in Resources */,
+				CEBCE58218EBB7F400691E3B /* kalasprite_kalaSheet.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
 				CE7BA0DB18DFF7FB00FD2DAE /* xx_m_100041.png in Resources */,
 				CE6C9B4018E065D300B6711E /* XXUiLoginViewBg.plist in Resources */,
@@ -3061,6 +3088,7 @@
 				CEBCE54D18EABE5100691E3B /* LICENSE_LevelHelper.txt in Resources */,
 				CE7BA0D118DFF72A00FD2DAE /* Icon-144.png in Resources */,
 				CE7BA0CD18DFF72A00FD2DAE /* Default.png in Resources */,
+				CEBCE58018EBB7F400691E3B /* kalasprite.pshs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3119,6 +3147,7 @@
 				CE7BA05618DFDA3400FD2DAE /* SPTweenFunction.cpp in Sources */,
 				CE7BA02B18DFDA3400FD2DAE /* SPArmatureDisplayData.cpp in Sources */,
 				15A3D91E1682F7D5002FB0C5 /* b2PolygonAndCircleContact.cpp in Sources */,
+				CE73522118EC09E30059BAA1 /* GLES-Render.cpp in Sources */,
 				15A3D91F1682F7D5002FB0C5 /* b2PolygonContact.cpp in Sources */,
 				15A3D9201682F7D5002FB0C5 /* b2DistanceJoint.cpp in Sources */,
 				15A3D9211682F7D5002FB0C5 /* b2FrictionJoint.cpp in Sources */,

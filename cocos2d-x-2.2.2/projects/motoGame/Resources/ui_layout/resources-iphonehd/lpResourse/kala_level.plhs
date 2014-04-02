@@ -1,0 +1,2303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Bogdan Vladu</string>
+	<key>CreatedWith</key>
+	<string>LevelHelper</string>
+	<key>Gravity</key>
+	<string>{0, -10}</string>
+	<key>JOINTS_INFO</key>
+	<array/>
+	<key>LHVersion</key>
+	<string>1.4.988</string>
+	<key>NODES_INFO</key>
+	<array>
+		<dict>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>Children</key>
+					<array>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{20, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{60, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_1</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_1</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{100, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_2</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_2</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{140, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_3</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_3</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{180, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_4</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_4</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{220, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_5</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_5</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{260, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_6</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_6</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{300, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_7</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_7</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{340, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_8</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_8</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{380, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_9</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_9</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{420, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_10</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_10</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{460, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_11</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_11</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{500, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_12</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_12</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{540, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_13</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_13</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{580, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_14</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_14</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{620, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_15</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_15</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_green_brick</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{114, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{660, 308}</string>
+								<key>Scale</key>
+								<string>{5, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_green_brick_16</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_green_brick_16</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_grey_plain</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{98, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{148, 284}</string>
+								<key>Scale</key>
+								<string>{3, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_grey_plain</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_grey_plain</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
+								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>1</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array/>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<false/>
+										<key>IsSensor</key>
+										<false/>
+										<key>LHHeight</key>
+										<real>8</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>8</real>
+										<key>Mask</key>
+										<integer>65535</integer>
+										<key>Name</key>
+										<string>LH_Generic_Fixture</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>3</integer>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>block_grey_plain</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{98, 108}, {8, 8}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{172, 284}</string>
+								<key>Scale</key>
+								<string>{3, 3}</string>
+								<key>SpriteSize</key>
+								<string>{8, 8}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>block_grey_plain_1</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>block_grey_plain_1</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
+								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>1</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array>
+												<string>{-11.25, 4.5}</string>
+												<string>{-23.25, -8}</string>
+												<string>{-26.75, -17}</string>
+												<string>{26.25, -17}</string>
+												<string>{25.75, -15.5}</string>
+												<string>{20.25, -9}</string>
+											</array>
+											<array>
+												<string>{-11.25, 4.5}</string>
+												<string>{20.25, -9}</string>
+												<string>{18.25, -4}</string>
+											</array>
+											<array>
+												<string>{-9.25, 11.5}</string>
+												<string>{-11.25, 4.5}</string>
+												<string>{18.25, -4}</string>
+												<string>{18.25, -0.5}</string>
+												<string>{16.25, 3}</string>
+												<string>{8.25, 10.5}</string>
+												<string>{-4.75, 15.5}</string>
+											</array>
+											<array>
+												<string>{-4.75, 15.5}</string>
+												<string>{8.25, 10.5}</string>
+												<string>{3.75, 16}</string>
+												<string>{-1.75, 16.5}</string>
+											</array>
+											<array>
+												<string>{-1.25, 17}</string>
+												<string>{-1.75, 16.5}</string>
+												<string>{3.75, 16}</string>
+											</array>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>5</integer>
+										<key>IsCircle</key>
+										<false/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>35</real>
+										<key>LHShapePositionOffset</key>
+										<string>{-26.75, -17}</string>
+										<key>LHWidth</key>
+										<real>55.5</real>
+										<key>Mask</key>
+										<integer>65535</integer>
+										<key>Name</key>
+										<string>hill</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>hill_1</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{86, 4}, {53.5, 34.5}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<true/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{279.5, 259}</string>
+								<key>Scale</key>
+								<string>{2, 2}</string>
+								<key>SpriteSize</key>
+								<string>{55.5, 35}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0.25}</string>
+								<key>UniqueName</key>
+								<string>hill_1</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>hill_1</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
+								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>1</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array>
+												<string>{-0.5, -16}</string>
+												<string>{-4, -36.5}</string>
+												<string>{7, -36.5}</string>
+												<string>{8, -30.5}</string>
+												<string>{8, -8.5}</string>
+											</array>
+											<array>
+												<string>{-0.5, -9.5}</string>
+												<string>{-0.5, -16}</string>
+												<string>{8, -8.5}</string>
+												<string>{7, 3.5}</string>
+											</array>
+											<array>
+												<string>{-3.5, -6}</string>
+												<string>{-0.5, -9.5}</string>
+												<string>{7, 3.5}</string>
+												<string>{-5.5, -2}</string>
+											</array>
+											<array>
+												<string>{-11, 3.5}</string>
+												<string>{-14, 2}</string>
+												<string>{-13.5, 0}</string>
+												<string>{-11.5, -1}</string>
+												<string>{-8, -0.5}</string>
+												<string>{7, 3.5}</string>
+											</array>
+											<array>
+												<string>{8.5, 24}</string>
+												<string>{10, 27}</string>
+												<string>{7.5, 29.5}</string>
+												<string>{2, 22.5}</string>
+											</array>
+											<array>
+												<string>{-27.5, 11.5}</string>
+												<string>{-31.5, 10.5}</string>
+												<string>{-32, 8}</string>
+												<string>{-29.5, 6.5}</string>
+												<string>{-25, 6.5}</string>
+												<string>{-23.5, 7.5}</string>
+											</array>
+											<array>
+												<string>{-16, 13}</string>
+												<string>{-23.5, 14}</string>
+												<string>{-27.5, 11.5}</string>
+												<string>{-23.5, 7.5}</string>
+												<string>{-22, 6.5}</string>
+												<string>{-17.5, 7}</string>
+												<string>{-14.5, 10}</string>
+											</array>
+											<array>
+												<string>{-14.5, 10}</string>
+												<string>{-17.5, 7}</string>
+												<string>{-14.5, 6.5}</string>
+												<string>{-13, 10}</string>
+											</array>
+											<array>
+												<string>{-13, 10}</string>
+												<string>{-14.5, 6.5}</string>
+												<string>{-12.5, 5.5}</string>
+												<string>{7, 3.5}</string>
+											</array>
+											<array>
+												<string>{17.5, 10}</string>
+												<string>{12, 14.5}</string>
+												<string>{10.5, 13.5}</string>
+												<string>{11, 11}</string>
+												<string>{13, 6}</string>
+											</array>
+											<array>
+												<string>{29, 19}</string>
+												<string>{29.5, 20.5}</string>
+												<string>{28, 22}</string>
+												<string>{24, 22.5}</string>
+											</array>
+											<array>
+												<string>{7.5, 29.5}</string>
+												<string>{8, 32.5}</string>
+												<string>{7, 34.5}</string>
+												<string>{5, 34.5}</string>
+												<string>{2, 22.5}</string>
+											</array>
+											<array>
+												<string>{2, 22.5}</string>
+												<string>{5, 34.5}</string>
+												<string>{3, 36}</string>
+												<string>{-0.5, 36}</string>
+												<string>{-1, 35.5}</string>
+											</array>
+											<array>
+												<string>{2, 22.5}</string>
+												<string>{-1, 35.5}</string>
+												<string>{-3, 34}</string>
+												<string>{-3.5, 32.5}</string>
+											</array>
+											<array>
+												<string>{2, 22.5}</string>
+												<string>{-3.5, 32.5}</string>
+												<string>{-6, 31.5}</string>
+												<string>{-6.5, 30.5}</string>
+												<string>{-6, 29.5}</string>
+											</array>
+											<array>
+												<string>{2, 22.5}</string>
+												<string>{-6, 29.5}</string>
+												<string>{-8, 27.5}</string>
+											</array>
+											<array>
+												<string>{2.5, 12.5}</string>
+												<string>{8, 14}</string>
+												<string>{9, 16}</string>
+												<string>{7.5, 18}</string>
+												<string>{4.5, 19}</string>
+											</array>
+											<array>
+												<string>{-12.5, 12.5}</string>
+												<string>{2.5, 12.5}</string>
+												<string>{4.5, 19}</string>
+												<string>{2, 22.5}</string>
+												<string>{-8, 27.5}</string>
+												<string>{-9.5, 26.5}</string>
+												<string>{-13, 13}</string>
+											</array>
+											<array>
+												<string>{-8, -0.5}</string>
+												<string>{-5.5, -2}</string>
+												<string>{7, 3.5}</string>
+											</array>
+											<array>
+												<string>{-18, 24}</string>
+												<string>{-20, 22.5}</string>
+												<string>{-20, 21}</string>
+												<string>{-19, 20}</string>
+												<string>{-15, 24}</string>
+											</array>
+											<array>
+												<string>{-12.5, 5.5}</string>
+												<string>{-11, 3.5}</string>
+												<string>{7, 3.5}</string>
+											</array>
+											<array>
+												<string>{-12.5, 12.5}</string>
+												<string>{-13, 10}</string>
+												<string>{7, 3.5}</string>
+												<string>{4, 8.5}</string>
+												<string>{3, 9}</string>
+											</array>
+											<array>
+												<string>{27, 12.5}</string>
+												<string>{28.5, 12.5}</string>
+												<string>{31, 14.5}</string>
+												<string>{31, 17.5}</string>
+												<string>{29, 19}</string>
+												<string>{24, 22.5}</string>
+											</array>
+											<array>
+												<string>{24.5, 9}</string>
+												<string>{27, 12.5}</string>
+												<string>{24, 22.5}</string>
+											</array>
+											<array>
+												<string>{19.5, 8.5}</string>
+												<string>{24.5, 9}</string>
+												<string>{24, 22.5}</string>
+											</array>
+											<array>
+												<string>{17.5, 10}</string>
+												<string>{19.5, 8.5}</string>
+												<string>{24, 22.5}</string>
+											</array>
+											<array>
+												<string>{17, 23}</string>
+												<string>{17.5, 10}</string>
+												<string>{24, 22.5}</string>
+											</array>
+											<array>
+												<string>{17, 23}</string>
+												<string>{24, 22.5}</string>
+												<string>{22, 25}</string>
+											</array>
+											<array>
+												<string>{18, 24.5}</string>
+												<string>{17, 23}</string>
+												<string>{22, 25}</string>
+											</array>
+											<array>
+												<string>{18, 24.5}</string>
+												<string>{22, 25}</string>
+												<string>{20, 25.5}</string>
+											</array>
+											<array>
+												<string>{17.5, 10}</string>
+												<string>{17, 23}</string>
+												<string>{15, 23}</string>
+												<string>{12, 21.5}</string>
+												<string>{11.5, 20.5}</string>
+												<string>{12, 14.5}</string>
+											</array>
+											<array>
+												<string>{13, 6}</string>
+												<string>{11, 11}</string>
+												<string>{10.5, 10}</string>
+											</array>
+											<array>
+												<string>{7, 3.5}</string>
+												<string>{13, 6}</string>
+												<string>{10.5, 10}</string>
+												<string>{4, 8.5}</string>
+											</array>
+											<array>
+												<string>{-12.5, 12.5}</string>
+												<string>{3, 9}</string>
+												<string>{2.5, 12.5}</string>
+											</array>
+											<array>
+												<string>{-15.5, 14.5}</string>
+												<string>{-13, 13}</string>
+												<string>{-9.5, 26.5}</string>
+												<string>{-11.5, 26.5}</string>
+												<string>{-15, 24}</string>
+												<string>{-19, 20}</string>
+											</array>
+											<array>
+												<string>{-20, 16.5}</string>
+												<string>{-18.5, 15}</string>
+												<string>{-15.5, 14.5}</string>
+												<string>{-19, 20}</string>
+												<string>{-20, 18.5}</string>
+											</array>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>5</integer>
+										<key>IsCircle</key>
+										<false/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>74</real>
+										<key>LHShapePositionOffset</key>
+										<string>{-32, -36}</string>
+										<key>LHWidth</key>
+										<real>66</real>
+										<key>Mask</key>
+										<integer>65535</integer>
+										<key>Name</key>
+										<string>tree</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>tree</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{4, 4}, {63.5, 73}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<true/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{610, 226}</string>
+								<key>Scale</key>
+								<string>{2, 2}</string>
+								<key>SpriteSize</key>
+								<string>{66, 74}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{-0.25, -0.5}</string>
+								<key>UniqueName</key>
+								<string>tree</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>tree</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>kalaSheet</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>20</real>
+								<key>CanSleep</key>
+								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{5, 1}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>1</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array>
+												<string>{-4.5, -6}</string>
+												<string>{4, -6}</string>
+												<string>{4, 6.5}</string>
+												<string>{-4.5, 6.5}</string>
+											</array>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>4</integer>
+										<key>IsCircle</key>
+										<false/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>13</real>
+										<key>LHShapePositionOffset</key>
+										<string>{-4.5, -6.5}</string>
+										<key>LHWidth</key>
+										<real>9</real>
+										<key>Mask</key>
+										<integer>65535</integer>
+										<key>Name</key>
+										<string>kala_1</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>2</integer>
+							</dict>
+							<key>SHSceneName</key>
+							<string>kalasprite.pshs</string>
+							<key>SHSheetName</key>
+							<string>kalaSheet</string>
+							<key>SHSpriteName</key>
+							<string>kuwalio_stand</string>
+							<key>SheetImage</key>
+							<string>kalasprite_kalaSheet.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>38</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{58, 102}, {8.5, 12.5}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{55.052326645040765, 24.005451623062239}</string>
+								<key>Scale</key>
+								<string>{3.1183233261108398, 3}</string>
+								<key>SpriteSize</key>
+								<string>{9, 13}</string>
+								<key>Tag</key>
+								<integer>1</integer>
+								<key>TagName</key>
+								<string>HERO</string>
+								<key>TextureOffset</key>
+								<string>{-0.25, 0.25}</string>
+								<key>UniqueName</key>
+								<string>kuwalio_stand</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>kuwalio_stand</string>
+						</dict>
+					</array>
+					<key>CustomClassInfo</key>
+					<dict>
+						<key>ClassName</key>
+						<string>No Class</string>
+					</dict>
+					<key>NodeType</key>
+					<string>LHBatch</string>
+					<key>ParentClass</key>
+					<string>LHLayer</string>
+					<key>ParentName</key>
+					<string>MAIN_LAYER</string>
+					<key>SHScene</key>
+					<string>kalasprite.pshs</string>
+					<key>SheetImage</key>
+					<string>kalasprite_kalaSheet.png</string>
+					<key>SheetImageRelative</key>
+					<string>/kalasprite_kalaSheet.png</string>
+					<key>Tag</key>
+					<integer>0</integer>
+					<key>TagName</key>
+					<string>DEFAULT</string>
+					<key>UniqueName</key>
+					<string>kalaSheet</string>
+					<key>ZOrder</key>
+					<integer>0</integer>
+				</dict>
+			</array>
+			<key>CustomClassInfo</key>
+			<dict>
+				<key>ClassName</key>
+				<string>No Class</string>
+			</dict>
+			<key>NodeType</key>
+			<string>LHLayer</string>
+			<key>ParentClass</key>
+			<string></string>
+			<key>ParentName</key>
+			<string></string>
+			<key>Tag</key>
+			<integer>0</integer>
+			<key>TagName</key>
+			<string>DEFAULT</string>
+			<key>UniqueName</key>
+			<string>MAIN_LAYER</string>
+			<key>ZOrder</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>PARALLAX_INFO</key>
+	<array/>
+	<key>ScenePreference</key>
+	<dict>
+		<key>2HDSuffix</key>
+		<string>-ipadhd</string>
+		<key>BackgroundColor</key>
+		<string>{{0, 0}, {0, 0}}</string>
+		<key>BundleIdentifier</key>
+		<string></string>
+		<key>CustomClasses</key>
+		<array/>
+		<key>Device</key>
+		<integer>0</integer>
+		<key>GameWorld</key>
+		<string>{{0, 0}, {968, 320}}</string>
+		<key>HDSuffix</key>
+		<string>-hd</string>
+		<key>Orientation</key>
+		<integer>1</integer>
+		<key>PanValue</key>
+		<string>{0, 0}</string>
+		<key>ProjectName</key>
+		<string>kala_level</string>
+		<key>ProjectPath</key>
+		<string>/Users/user/Documents/Develop/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/lpResourse</string>
+		<key>SafeFrame</key>
+		<string>{480, 320}</string>
+		<key>Tags</key>
+		<array>
+			<string>DEFAULT</string>
+			<string>HERO</string>
+		</array>
+		<key>ZoomValue</key>
+		<real>0.0</real>
+	</dict>
+	<key>WBInfo</key>
+	<dict>
+		<key>AngularDamping</key>
+		<real>0.0</real>
+		<key>AngularVelocity</key>
+		<real>0.0</real>
+		<key>CanSleep</key>
+		<true/>
+		<key>Category</key>
+		<integer>1</integer>
+		<key>Density</key>
+		<real>0.20000000298023224</real>
+		<key>FixedRot</key>
+		<false/>
+		<key>Fixture</key>
+		<array/>
+		<key>Friction</key>
+		<real>0.20000000298023224</real>
+		<key>GravityScale</key>
+		<real>1</real>
+		<key>Group</key>
+		<integer>0</integer>
+		<key>HandledBySH</key>
+		<false/>
+		<key>IsBullet</key>
+		<false/>
+		<key>IsCircle</key>
+		<false/>
+		<key>IsSensor</key>
+		<false/>
+		<key>LHHeight</key>
+		<real>0.0</real>
+		<key>LHShapePositionOffset</key>
+		<string>{0, 0}</string>
+		<key>LHWidth</key>
+		<real>0.0</real>
+		<key>LinearDamping</key>
+		<real>0.0</real>
+		<key>LinearVelocity</key>
+		<string>{0, 0}</string>
+		<key>Mask</key>
+		<integer>65535</integer>
+		<key>Name</key>
+		<string>LH_Generic_Fixture</string>
+		<key>Restitution</key>
+		<real>0.20000000298023224</real>
+		<key>Tag</key>
+		<integer>0</integer>
+		<key>TagBottom</key>
+		<integer>0</integer>
+		<key>TagBottomName</key>
+		<string>DEFAULT</string>
+		<key>TagLeft</key>
+		<integer>0</integer>
+		<key>TagLeftName</key>
+		<string>DEFAULT</string>
+		<key>TagRight</key>
+		<integer>0</integer>
+		<key>TagRightName</key>
+		<string>DEFAULT</string>
+		<key>TagTop</key>
+		<integer>0</integer>
+		<key>TagTopName</key>
+		<string>DEFAULT</string>
+		<key>Type</key>
+		<integer>0</integer>
+		<key>WBRect</key>
+		<string>{{0, 0}, {480, 320}}</string>
+	</dict>
+</dict>
+</plist>
