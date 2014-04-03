@@ -45,6 +45,7 @@ bool RollBgView::init() {
     anim->setAnchorPoint(CCPointZero);
     bg1->addChild(anim, 1001);
     LayoutUtil::layoutParentLeft(anim, 800, 0);
+    anim->setVisible(false);
     
     CCSprite * bg2 = CCSprite::create("bg.jpg");
     bg2->setAnchorPoint(CCPointZero);
@@ -62,16 +63,13 @@ bool RollBgView::init() {
 
 void RollBgView::initLhWorld() {
     b2Vec2 gravity = b2Vec2(0.0f, 10.0f);
-    bool doSleep = true;
     
     _b2World = new b2World(gravity);
-    _b2World->SetAllowSleeping(doSleep);
+    _b2World->SetAllowSleeping(true);
     
     this->loadPhysicWorldWithLayer("kala_level.plhs", this);
-    
-//    _lhSprite = _levelHelper->createBatchSpriteWithUniqueName("kuwalio_stand");
     _lhSprite = _levelHelper->spriteWithUniqueName("kuwalio_stand");
-//    _lhSprite->getBody()->SetLinearVelocity(b2Vec2(20.0f,0.0));
+    
 }
 
 void RollBgView::update(float t) {
@@ -97,7 +95,6 @@ void RollBgView::update(float t) {
 
 void RollBgView::updateB2World(float dt) {
     if (_b2World) {
-		//物理节点刷新
         static double UPDATE_INTERVAL = 1.0f/60.0f;
         static double MAX_CYCLES_PER_FRAME = 5;
         static double timeAccumulator = 0;

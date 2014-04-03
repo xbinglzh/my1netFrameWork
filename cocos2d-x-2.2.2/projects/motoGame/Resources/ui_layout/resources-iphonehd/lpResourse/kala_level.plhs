@@ -260,7 +260,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{148, 284}</string>
+								<string>{52, 284}</string>
 								<key>Scale</key>
 								<string>{3, 3}</string>
 								<key>SpriteSize</key>
@@ -386,7 +386,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{172, 284}</string>
+								<string>{124, 284}</string>
 								<key>Scale</key>
 								<string>{3, 3}</string>
 								<key>SpriteSize</key>
@@ -546,7 +546,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{279.5, 259}</string>
+								<string>{239.5, 267}</string>
 								<key>Scale</key>
 								<string>{2, 2}</string>
 								<key>SpriteSize</key>
@@ -859,7 +859,7 @@
 										<key>LHWidth</key>
 										<real>66</real>
 										<key>Mask</key>
-										<integer>17</integer>
+										<integer>3</integer>
 										<key>Name</key>
 										<string>tree</string>
 										<key>Restitution</key>
@@ -902,7 +902,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{458, 218}</string>
+								<string>{418, 234}</string>
 								<key>Scale</key>
 								<string>{2, 2}</string>
 								<key>SpriteSize</key>
@@ -3606,11 +3606,11 @@
 								<key>AngularDamping</key>
 								<real>0.0</real>
 								<key>AngularVelocity</key>
-								<real>10</real>
+								<real>0.0</real>
 								<key>CanSleep</key>
 								<true/>
 								<key>FixedRot</key>
-								<false/>
+								<true/>
 								<key>GravityScale</key>
 								<real>1</real>
 								<key>HandledBySH</key>
@@ -3638,7 +3638,7 @@
 											</array>
 										</array>
 										<key>Friction</key>
-										<real>0.20000000298023224</real>
+										<real>0.89999997615814209</real>
 										<key>Group</key>
 										<integer>0</integer>
 										<key>IsCircle</key>
@@ -3695,7 +3695,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{70.032454967498779, 43.5}</string>
+								<string>{142.03245496749878, 83.5}</string>
 								<key>Scale</key>
 								<string>{3.1183233261108398, 3}</string>
 								<key>SpriteSize</key>
@@ -3788,7 +3788,7 @@
 		<key>ProjectName</key>
 		<string>kala_level</string>
 		<key>ProjectPath</key>
-		<string>/Users/user/Documents/Develop/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/lpResourse</string>
+		<string>/Users/xUanBing/Library/Containers/com.bogdanvladu.levelhelper/Data/file:/Users/xUanBing/Documents/Developer/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/lpResourse</string>
 		<key>SafeFrame</key>
 		<string>{480, 320}</string>
 		<key>Tags</key>
@@ -3866,7 +3866,7 @@
 		<key>Type</key>
 		<integer>0</integer>
 		<key>WBRect</key>
-		<string>{{0, 0}, {960, 320}}</string>
+		<string>{{0, 0}, {480, 320}}</string>
 	</dict>
 </dict>
 </plist>
