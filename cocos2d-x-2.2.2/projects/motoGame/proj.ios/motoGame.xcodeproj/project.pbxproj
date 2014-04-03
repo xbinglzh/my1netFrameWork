@@ -245,6 +245,7 @@
 		CE6C9B4318E065D300B6711E /* ui.ccbproj in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3D18E065D300B6711E /* ui.ccbproj */; };
 		CE6C9B4418E065D300B6711E /* XXUiLoadingView.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3E18E065D300B6711E /* XXUiLoadingView.ccbi */; };
 		CE73522118EC09E30059BAA1 /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE73521F18EC09E30059BAA1 /* GLES-Render.cpp */; };
+		CE73524218ED294F0059BAA1 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE73524018ED294F0059BAA1 /* GameObject.cpp */; };
 		CE7B9F9618DFD23800FD2DAE /* LayoutUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7B9F9418DFD23800FD2DAE /* LayoutUtil.cpp */; };
 		CE7B9FA818DFD2D400FD2DAE /* CCShaderEffectSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7B9FA318DFD2D400FD2DAE /* CCShaderEffectSprite.cpp */; };
 		CE7B9FA918DFD2D400FD2DAE /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7B9FA518DFD2D400FD2DAE /* ShaderManager.cpp */; };
@@ -1009,6 +1010,10 @@
 		CE6C9B4918E11C5B00B6711E /* FontStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontStyle.h; sourceTree = "<group>"; };
 		CE73521F18EC09E30059BAA1 /* GLES-Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "GLES-Render.cpp"; sourceTree = "<group>"; };
 		CE73522018EC09E30059BAA1 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
+		CE73524018ED294F0059BAA1 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		CE73524118ED294F0059BAA1 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		CE73524318ED2A4A0059BAA1 /* role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = role.h; sourceTree = "<group>"; };
+		CE73524418ED2A9E0059BAA1 /* hero.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hero.h; sourceTree = "<group>"; };
 		CE7B9F9418DFD23800FD2DAE /* LayoutUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayoutUtil.cpp; sourceTree = "<group>"; };
 		CE7B9F9518DFD23800FD2DAE /* LayoutUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutUtil.h; sourceTree = "<group>"; };
 		CE7B9FA318DFD2D400FD2DAE /* CCShaderEffectSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCShaderEffectSprite.cpp; sourceTree = "<group>"; };
@@ -2317,6 +2322,15 @@
 			path = GLESRender;
 			sourceTree = "<group>";
 		};
+		CE73522718ED28770059BAA1 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				CE73524318ED2A4A0059BAA1 /* role.h */,
+				CE73524418ED2A9E0059BAA1 /* hero.h */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
 		CE7B9F8D18DFD1F700FD2DAE /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -2345,6 +2359,9 @@
 		CE7B9F9018DFD1F700FD2DAE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE73524018ED294F0059BAA1 /* GameObject.cpp */,
+				CE73524118ED294F0059BAA1 /* GameObject.h */,
+				CE73522718ED28770059BAA1 /* entity */,
 				CE6C9B2C18E0583D00B6711E /* GameConfig.cpp */,
 				CE6C9B2D18E0583D00B6711E /* GameConfig.h */,
 			);
@@ -3257,6 +3274,7 @@
 				375BD50F1868454E0024609E /* CCActionFrame.cpp in Sources */,
 				CE7BA07218DFDD8E00FD2DAE /* tinyxml.cpp in Sources */,
 				CE7B9FA818DFD2D400FD2DAE /* CCShaderEffectSprite.cpp in Sources */,
+				CE73524218ED294F0059BAA1 /* GameObject.cpp in Sources */,
 				15A3DA4D1682F826002FB0C5 /* CCControlPotentiometer.cpp in Sources */,
 				CE7BA0E518DFFE1300FD2DAE /* AnimNode.cpp in Sources */,
 				15A3DA4E1682F826002FB0C5 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
