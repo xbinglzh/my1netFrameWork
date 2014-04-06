@@ -13,11 +13,12 @@
 #include "LevelHelperLoader.h"
 #include "b2World.h"
 #include "GLES-Render.h"
+#include "Box2dUtil.h"
 
 const static int KTagBgOne = 1001;
 const static int KTagBgTwo = 1002;
 
-#define  X_MOVE_SPEED -2
+#define  X_MOVE_SPEED -0
 
 RollBgView::RollBgView() : _b2World(NULL), _levelHelper(NULL), _lhSprite(NULL){
     
@@ -38,6 +39,14 @@ bool RollBgView::init() {
     this->addChild(bg1, 0, KTagBgOne);
     LayoutUtil::layoutParentLeft(bg1);
     
+    CCSprite * bg2 = CCSprite::create("bg.jpg");
+    bg2->setAnchorPoint(CCPointZero);
+    this->addChild(bg2, 0, KTagBgTwo);
+    LayoutUtil::layoutRight(bg2, bg1);
+    
+    bg1->setVisible(false);
+    bg2->setVisible(false);
+    
     AnimNode* anim = AnimNode::createFlashAnimNode("xx_m_204601d.png", "xx_m_204601d.plist", "xx_m_204601d.xml",
                                                    "walk", "xx_m_204601d");
     anim->setContentSize(CCSize(256, 256));
@@ -47,16 +56,29 @@ bool RollBgView::init() {
     LayoutUtil::layoutParentLeft(anim, 800, 0);
     anim->setVisible(false);
     
-    CCSprite * bg2 = CCSprite::create("bg.jpg");
-    bg2->setAnchorPoint(CCPointZero);
-    this->addChild(bg2, 0, KTagBgTwo);
-    LayoutUtil::layoutRight(bg2, bg1);
-
-    this->scheduleUpdate();
-    
     initLhWorld();
     
-    this->configDebugBox2dDraw();
+    CCSprite* coinSprite = CCSprite::create("res_crystal.png");
+    this->addChild(coinSprite, 1000);
+    LayoutUtil::layoutParentLeft(coinSprite, 100, 0);
+    
+    coinSprite->setTag(COIN);
+    
+    b2Filter filter;
+    filter.maskBits = 3;
+    filter.categoryBits = 32;
+    filter.groupIndex = 0;
+    
+    b2FixtureDef def;
+    def.density = 0.0f;
+    def.isSensor = false;
+    def.filter = filter;
+
+    Box2dUtil::addBoxBodyForSprite(_b2World, _levelHelper, coinSprite, def);
+    
+    this->scheduleUpdate();
+    
+    Box2dUtil::openDebugBox2dDraw(_b2World);
     
 	return true;
 }
@@ -69,7 +91,6 @@ void RollBgView::initLhWorld() {
     
     this->loadPhysicWorldWithLayer("kala_level.plhs", this);
     _lhSprite = _levelHelper->spriteWithUniqueName("kuwalio_stand");
-    
 }
 
 void RollBgView::update(float t) {
@@ -95,84 +116,45 @@ void RollBgView::update(float t) {
 
 void RollBgView::updateB2World(float dt) {
     if (_b2World) {
-        static double UPDATE_INTERVAL = 1.0f/60.0f;
-        static double MAX_CYCLES_PER_FRAME = 5;
-        static double timeAccumulator = 0;
-        timeAccumulator += dt;
-        
-        if (timeAccumulator > (MAX_CYCLES_PER_FRAME * UPDATE_INTERVAL)) {
-            timeAccumulator = UPDATE_INTERVAL;
-        }
-        
-		int velocityIterations = 1;
-		int positionIterations = 1;
-        
-        while (timeAccumulator >= UPDATE_INTERVAL) {
-            timeAccumulator -= UPDATE_INTERVAL;
-            _b2World->Step(UPDATE_INTERVAL, velocityIterations, positionIterations);
-            
-            for (b2Body* body = _b2World->GetBodyList(); body; body = body->GetNext()) {
-                if (body->GetUserData() != NULL) {
-                    CCSprite* sprite = (CCSprite*) body->GetUserData();
-                    sprite->setPosition(_levelHelper->metersToPoints(body->GetPosition()));
-                    sprite->setRotation( -1 * CC_RADIANS_TO_DEGREES(body->GetAngle()));
-                }
-            }
-        }
+        Box2dUtil::updateBox2dWorldInLevelHelp(_b2World, _levelHelper, dt);
     }
 }
 
 void RollBgView::loadPhysicWorldWithLayer(const char* levelFile, CCLayer *layer) {
     
-    //加载带有物理属性的层
     _levelHelper = new LevelHelperLoader(levelFile);
     _levelHelper->addObjectsToWorld(_b2World, layer);
     _levelHelper->createPhysicBoundaries(_b2World);
     _levelHelper->createGravity(_b2World);
     
-    //假如没有设置地面体
     if (!_levelHelper->hasPhysicBoundaries()) {
-        
-        CCSize s=_levelHelper->physicBoundariesRect().size;
-        
-        //创建一个地面体
-        b2BodyDef groundBodyDef;
-        groundBodyDef.position.Set(0, 0); // bottom-left corner
-        
-        b2Body* groundBody = _b2World->CreateBody(&groundBodyDef);
-        
-        // Define the ground box shape.
-        b2EdgeShape groundBox;
-        
-        // bottom
-        groundBox.Set(b2Vec2(0,0), b2Vec2(s.width,0));
-        groundBody->CreateFixture(&groundBox,0);
-        
-        // top
-        groundBox.Set(b2Vec2(0,s.height), b2Vec2(s.width,s.height));
-        groundBody->CreateFixture(&groundBox,0);
-        
-        // left
-        groundBox.Set(b2Vec2(0,s.height), b2Vec2(0,0));
-        groundBody->CreateFixture(&groundBox,0);
-        
-        // right
-        groundBox.Set(b2Vec2(s.width,s.height), b2Vec2(s.width,0));
-        groundBody->CreateFixture(&groundBox,0);
+        Box2dUtil::createPhysicBoundaries(_b2World, _levelHelper->physicBoundariesRect().size);
     }
+    
+    _levelHelper->useLevelHelperCollisionHandling();//这个方法是必要的，否则碰撞将不会执行
+    _levelHelper->registerPreCollisionCallbackBetweenTagA(COIN, HERO, this,
+                    callfuncO_selector(RollBgView::preCollisionBetweenHeroTreeAndCoin));
 }
 
-void RollBgView::configDebugBox2dDraw() {
-	GLESDebugDraw* _debugDraw = new GLESDebugDraw(PT_RATIO);
-	_b2World->SetDebugDraw(_debugDraw);
-	uint32 flags = 0;
-	flags += b2Draw::e_shapeBit;//形状
-//	flags += b2Draw::e_jointBit;//关节
-//	flags += b2Draw::e_aabbBit;//AABB块
-//	flags += b2Draw::e_pairBit;
-//    flags += b2Draw::e_centerOfMassBit;//物体质心
-	_debugDraw->SetFlags(flags);
-//    _b2World->DrawDebugData();
+
+void RollBgView::preCollisionBetweenHeroTreeAndCoin(LHContactInfo *contact) {
+    
+    CCLOG("%s", "coin hero collision");
+}
+
+
+void RollBgView::draw() {
+    CCLayer::draw();
+    
+    ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
+    
+    kmGLPushMatrix();
+    
+    _b2World->DrawDebugData();
+    
+    kmGLPopMatrix();
+    
+    CHECK_GL_ERROR_DEBUG();
 }
 
 

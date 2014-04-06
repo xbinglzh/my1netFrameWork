@@ -226,6 +226,8 @@
 		379BB9D317F03F3700829B88 /* GUIReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99117F03F3700829B88 /* GUIReader.cpp */; };
 		379BB9D417F03F3700829B88 /* SceneReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99317F03F3700829B88 /* SceneReader.cpp */; };
 		46513EB1187BFBA200B5ABE1 /* UITouchGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46513EAF187BFBA200B5ABE1 /* UITouchGroup.cpp */; };
+		60307E7418EFB1FF00A0F8B7 /* Box2dUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60307E7218EFB1FF00A0F8B7 /* Box2dUtil.cpp */; };
+		60307E7618EFB9AB00A0F8B7 /* res_crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = 60307E7518EFB9AB00A0F8B7 /* res_crystal.png */; };
 		60926E3D18E7D70500B9ABAE /* SceneController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E3B18E7D70500B9ABAE /* SceneController.cpp */; };
 		60926E4018E7EB6E00B9ABAE /* AppLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E3E18E7EB6E00B9ABAE /* AppLauncher.cpp */; };
 		60926E4518E8571100B9ABAE /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60926E4418E8571100B9ABAE /* bg.jpg */; };
@@ -980,6 +982,9 @@
 		379BB99417F03F3700829B88 /* SceneReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneReader.h; sourceTree = "<group>"; };
 		46513EAF187BFBA200B5ABE1 /* UITouchGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITouchGroup.cpp; sourceTree = "<group>"; };
 		46513EB0187BFBA200B5ABE1 /* UITouchGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITouchGroup.h; sourceTree = "<group>"; };
+		60307E7218EFB1FF00A0F8B7 /* Box2dUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Box2dUtil.cpp; sourceTree = "<group>"; };
+		60307E7318EFB1FF00A0F8B7 /* Box2dUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2dUtil.h; sourceTree = "<group>"; };
+		60307E7518EFB9AB00A0F8B7 /* res_crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = res_crystal.png; sourceTree = "<group>"; };
 		60926E3518E7D5BD00B9ABAE /* ConstansDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstansDef.h; sourceTree = "<group>"; };
 		60926E3618E7D5BD00B9ABAE /* NotifyMessageDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyMessageDef.h; sourceTree = "<group>"; };
 		60926E3B18E7D70500B9ABAE /* SceneController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneController.cpp; sourceTree = "<group>"; };
@@ -2290,6 +2295,7 @@
 		CE6C9B3818E065D300B6711E /* resources-iphonehd */ = {
 			isa = PBXGroup;
 			children = (
+				60307E7518EFB9AB00A0F8B7 /* res_crystal.png */,
 				CEBCE57818EBB7F400691E3B /* lpResourse */,
 				60926E4418E8571100B9ABAE /* bg.jpg */,
 				CE6C9B3918E065D300B6711E /* XXUiLoginViewBg.plist */,
@@ -2372,13 +2378,15 @@
 		CE7B9F9118DFD1F700FD2DAE /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				CE71135818E2DE92008C5267 /* tween */,
+				60307E7218EFB1FF00A0F8B7 /* Box2dUtil.cpp */,
+				60307E7318EFB1FF00A0F8B7 /* Box2dUtil.h */,
 				CE6C9B2918E0565A00B6711E /* UiUtils.cpp */,
 				CE6C9B2A18E0565A00B6711E /* UiUtils.h */,
 				CE7BA0BE18DFEA7600FD2DAE /* HMD5.cpp */,
 				CE7BA0BF18DFEA7600FD2DAE /* HMD5.h */,
 				CE7BA07918DFDE4D00FD2DAE /* GameUtils.cpp */,
 				CE7BA07A18DFDE4D00FD2DAE /* GameUtils.h */,
+				CE71135818E2DE92008C5267 /* tween */,
 				CE7BA06918DFDD8E00FD2DAE /* tinyxml */,
 				CE7BA05818DFDCF100FD2DAE /* rapidjson */,
 				CE7B9FAE18DFD58500FD2DAE /* resourse */,
@@ -3080,6 +3088,7 @@
 				CE7BA0D318DFF72A00FD2DAE /* Icon-57.png in Resources */,
 				CE7BA04718DFDA3400FD2DAE /* json_internalarray.inl in Resources */,
 				CE7BA0CC18DFF72A00FD2DAE /* Default-568h@2x.png in Resources */,
+				60307E7618EFB9AB00A0F8B7 /* res_crystal.png in Resources */,
 				CE6C9B3F18E065D300B6711E /* fileLookup.plist in Resources */,
 				CE7BA04D18DFDA3400FD2DAE /* sconscript in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
@@ -3203,6 +3212,7 @@
 				CEBCE56118EABE5100691E3B /* LHDictionary.cpp in Sources */,
 				15A3D9A01682F7F9002FB0C5 /* cpSimpleMotor.c in Sources */,
 				CE7B9F9618DFD23800FD2DAE /* LayoutUtil.cpp in Sources */,
+				60307E7418EFB1FF00A0F8B7 /* Box2dUtil.cpp in Sources */,
 				15A3D9A11682F7F9002FB0C5 /* cpSlideJoint.c in Sources */,
 				15A3D9A21682F7F9002FB0C5 /* cpArbiter.c in Sources */,
 				15A3D9A31682F7F9002FB0C5 /* cpArray.c in Sources */,
@@ -3445,7 +3455,7 @@
 					USE_FILE32API,
 					CC_TARGET_OS_IPHONE,
 					"COCOS2D_DEBUG=1",
-					CC_ENABLE_CHIPMUNK_INTEGRATION,
+					CC_ENABLE_BOX2D_INTEGRATION,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";

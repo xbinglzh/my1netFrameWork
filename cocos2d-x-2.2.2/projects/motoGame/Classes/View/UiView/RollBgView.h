@@ -16,6 +16,7 @@ USING_NS_CC;
 class b2World;
 class LevelHelperLoader;
 class LHSprite;
+class LHContactInfo;
 
 class RollBgView : public CCLayer {
 public:
@@ -24,14 +25,19 @@ public:
     
 	virtual bool init();
     void initLhWorld();
-    void configDebugBox2dDraw();
     
 	virtual void update(float t);
     void updateB2World(float dt);
     
+    virtual void draw();
+    
 	CREATE_FUNC(RollBgView);
     
     void loadPhysicWorldWithLayer(const char* levelFile, CCLayer *layer);
+    
+private: /*碰撞处理*/
+    void preCollisionBetweenHeroTreeAndCoin(LHContactInfo* contact);
+    
 private:
     b2World *_b2World;
     LevelHelperLoader *_levelHelper;

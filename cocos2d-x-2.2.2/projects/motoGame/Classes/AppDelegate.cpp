@@ -61,7 +61,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
 //    CCScene *pScene = MainLayer::scene();
 //    pDirector->runWithScene(pScene);
-
+    
+    pDirector->setDisplayStats(true);
+    
     return true;
 }
 

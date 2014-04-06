@@ -86,6 +86,7 @@
 	<array>
 		<string>DEFAULT</string>
 		<string>HERO</string>
+		<string>TREE</string>
 	</array>
 </dict>
 </plist>

@@ -27,4 +27,10 @@ enum ESceneId {
     K_SCENE_ROLLVIEW                = 103,//测试
 };
 
+enum BodyTag {
+    K_BodyTag_Default     = 0,
+    K_BodyTag_Hero        = 1,
+    K_BodyTag_Tree        = 2,
+};
+
 #endif
