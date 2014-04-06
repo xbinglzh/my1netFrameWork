@@ -18,9 +18,10 @@
 const static int KTagBgOne = 1001;
 const static int KTagBgTwo = 1002;
 
-#define  X_MOVE_SPEED -0
+#define  X_MOVE_SPEED     -0
+#define  X_Acceleration   0.1f
 
-RollBgView::RollBgView() : _b2World(NULL), _levelHelper(NULL), _lhSprite(NULL){
+RollBgView::RollBgView() : _b2World(NULL), _levelHelper(NULL), _lhSprite(NULL),_isNeedAcceleration(false){
     
 }
 
@@ -79,6 +80,7 @@ bool RollBgView::init() {
     this->scheduleUpdate();
     
     Box2dUtil::openDebugBox2dDraw(_b2World);
+    this->setTouchEnabled(true);
     
 	return true;
 }
@@ -118,6 +120,9 @@ void RollBgView::updateB2World(float dt) {
     if (_b2World) {
         Box2dUtil::updateBox2dWorldInLevelHelp(_b2World, _levelHelper, dt);
     }
+    
+    
+    
 }
 
 void RollBgView::loadPhysicWorldWithLayer(const char* levelFile, CCLayer *layer) {
@@ -156,5 +161,42 @@ void RollBgView::draw() {
     
     CHECK_GL_ERROR_DEBUG();
 }
+
+//control
+
+void RollBgView::registerWithTouchDispatcher() {
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, getTouchPriority(), false);
+}
+
+bool RollBgView::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+    if (!_isNeedAcceleration) {
+        
+        if (_lhSprite) {
+            
+            if (_lhSprite->getBody()->GetLinearVelocity().x < 10) {
+                b2Vec2 linearVec  = _lhSprite->getBody()->GetLinearVelocity();
+                linearVec.x = 10;
+                _lhSprite->getBody()->SetLinearVelocity(linearVec);
+            } else {
+                b2Vec2 linearVec  = _lhSprite->getBody()->GetLinearVelocity();
+                linearVec.x = 1 * X_Acceleration;
+                _lhSprite->getBody()->SetLinearVelocity(linearVec);
+            }
+            
+        }
+
+        _isNeedAcceleration = true;
+    }
+    
+    return true;
+}
+
+void RollBgView::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+    if (_isNeedAcceleration) {
+        
+        _isNeedAcceleration = false;
+    }
+}
+
 
 

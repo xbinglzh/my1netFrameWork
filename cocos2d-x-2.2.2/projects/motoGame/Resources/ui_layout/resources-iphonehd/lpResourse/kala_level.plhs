@@ -260,7 +260,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{52, 284}</string>
+								<string>{60, 172}</string>
 								<key>Scale</key>
 								<string>{3, 3}</string>
 								<key>SpriteSize</key>
@@ -386,7 +386,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{124, 284}</string>
+								<string>{124, 172}</string>
 								<key>Scale</key>
 								<string>{3, 3}</string>
 								<key>SpriteSize</key>
@@ -546,7 +546,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{239.5, 267}</string>
+								<string>{207.5, 283}</string>
 								<key>Scale</key>
 								<string>{2, 2}</string>
 								<key>SpriteSize</key>
@@ -902,7 +902,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{434, 226}</string>
+								<string>{522, 226}</string>
 								<key>Scale</key>
 								<string>{2, 2}</string>
 								<key>SpriteSize</key>
@@ -3620,7 +3620,7 @@
 								<key>LinearDamping</key>
 								<real>0.0</real>
 								<key>LinearVelocity</key>
-								<string>{10, 10}</string>
+								<string>{0, 0}</string>
 								<key>SH_ComplexShapes</key>
 								<array>
 									<dict>
@@ -3695,7 +3695,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{142.03245496749878, 83.5}</string>
+								<string>{22.032454967498779, 275.5}</string>
 								<key>Scale</key>
 								<string>{3.1183233261108398, 3}</string>
 								<key>SpriteSize</key>

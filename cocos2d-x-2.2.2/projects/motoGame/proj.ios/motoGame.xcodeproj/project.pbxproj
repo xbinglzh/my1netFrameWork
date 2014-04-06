@@ -228,6 +228,14 @@
 		46513EB1187BFBA200B5ABE1 /* UITouchGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46513EAF187BFBA200B5ABE1 /* UITouchGroup.cpp */; };
 		60307E7418EFB1FF00A0F8B7 /* Box2dUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60307E7218EFB1FF00A0F8B7 /* Box2dUtil.cpp */; };
 		60307E7618EFB9AB00A0F8B7 /* res_crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = 60307E7518EFB9AB00A0F8B7 /* res_crystal.png */; };
+		608ACBFF18F19AB6005BE5CA /* GameView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 608ACBFD18F19AB6005BE5CA /* GameView.cpp */; };
+		608ACC0718F19F5D005BE5CA /* level1.plhs in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0118F19F5D005BE5CA /* level1.plhs */; };
+		608ACC0818F19F5D005BE5CA /* level1pro.lhproject in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0218F19F5D005BE5CA /* level1pro.lhproject */; };
+		608ACC0918F19F5D005BE5CA /* levelbg1.pshs in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0318F19F5D005BE5CA /* levelbg1.pshs */; };
+		608ACC0A18F19F5D005BE5CA /* levelbg1_UntitledSheet-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0418F19F5D005BE5CA /* levelbg1_UntitledSheet-hd.png */; };
+		608ACC0B18F19F5D005BE5CA /* levelbg1_UntitledSheet-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0518F19F5D005BE5CA /* levelbg1_UntitledSheet-ipadhd.png */; };
+		608ACC0C18F19F5D005BE5CA /* levelbg1_UntitledSheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0618F19F5D005BE5CA /* levelbg1_UntitledSheet.png */; };
+		608ACC1218F1B410005BE5CA /* GameBgRollView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 608ACC1018F1B410005BE5CA /* GameBgRollView.cpp */; };
 		60926E3D18E7D70500B9ABAE /* SceneController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E3B18E7D70500B9ABAE /* SceneController.cpp */; };
 		60926E4018E7EB6E00B9ABAE /* AppLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E3E18E7EB6E00B9ABAE /* AppLauncher.cpp */; };
 		60926E4518E8571100B9ABAE /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60926E4418E8571100B9ABAE /* bg.jpg */; };
@@ -985,6 +993,16 @@
 		60307E7218EFB1FF00A0F8B7 /* Box2dUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Box2dUtil.cpp; sourceTree = "<group>"; };
 		60307E7318EFB1FF00A0F8B7 /* Box2dUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2dUtil.h; sourceTree = "<group>"; };
 		60307E7518EFB9AB00A0F8B7 /* res_crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = res_crystal.png; sourceTree = "<group>"; };
+		608ACBFD18F19AB6005BE5CA /* GameView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameView.cpp; sourceTree = "<group>"; };
+		608ACBFE18F19AB6005BE5CA /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		608ACC0118F19F5D005BE5CA /* level1.plhs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1.plhs; sourceTree = "<group>"; };
+		608ACC0218F19F5D005BE5CA /* level1pro.lhproject */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1pro.lhproject; sourceTree = "<group>"; };
+		608ACC0318F19F5D005BE5CA /* levelbg1.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = levelbg1.pshs; sourceTree = "<group>"; };
+		608ACC0418F19F5D005BE5CA /* levelbg1_UntitledSheet-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "levelbg1_UntitledSheet-hd.png"; sourceTree = "<group>"; };
+		608ACC0518F19F5D005BE5CA /* levelbg1_UntitledSheet-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "levelbg1_UntitledSheet-ipadhd.png"; sourceTree = "<group>"; };
+		608ACC0618F19F5D005BE5CA /* levelbg1_UntitledSheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelbg1_UntitledSheet.png; sourceTree = "<group>"; };
+		608ACC1018F1B410005BE5CA /* GameBgRollView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameBgRollView.cpp; sourceTree = "<group>"; };
+		608ACC1118F1B410005BE5CA /* GameBgRollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBgRollView.h; sourceTree = "<group>"; };
 		60926E3518E7D5BD00B9ABAE /* ConstansDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstansDef.h; sourceTree = "<group>"; };
 		60926E3618E7D5BD00B9ABAE /* NotifyMessageDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyMessageDef.h; sourceTree = "<group>"; };
 		60926E3B18E7D70500B9ABAE /* SceneController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneController.cpp; sourceTree = "<group>"; };
@@ -2224,6 +2242,19 @@
 			path = CocoStudio;
 			sourceTree = "<group>";
 		};
+		608ACC0018F19F5D005BE5CA /* level1 */ = {
+			isa = PBXGroup;
+			children = (
+				608ACC0118F19F5D005BE5CA /* level1.plhs */,
+				608ACC0218F19F5D005BE5CA /* level1pro.lhproject */,
+				608ACC0318F19F5D005BE5CA /* levelbg1.pshs */,
+				608ACC0418F19F5D005BE5CA /* levelbg1_UntitledSheet-hd.png */,
+				608ACC0518F19F5D005BE5CA /* levelbg1_UntitledSheet-ipadhd.png */,
+				608ACC0618F19F5D005BE5CA /* levelbg1_UntitledSheet.png */,
+			);
+			path = level1;
+			sourceTree = "<group>";
+		};
 		60926E3418E7D5BD00B9ABAE /* Def */ = {
 			isa = PBXGroup;
 			children = (
@@ -2276,6 +2307,10 @@
 				CE6C9B3418E05E4D00B6711E /* HelloView.h */,
 				60926E4618E8747A00B9ABAE /* RollBgView.cpp */,
 				60926E4718E8747A00B9ABAE /* RollBgView.h */,
+				608ACBFD18F19AB6005BE5CA /* GameView.cpp */,
+				608ACBFE18F19AB6005BE5CA /* GameView.h */,
+				608ACC1018F1B410005BE5CA /* GameBgRollView.cpp */,
+				608ACC1118F1B410005BE5CA /* GameBgRollView.h */,
 			);
 			path = UiView;
 			sourceTree = "<group>";
@@ -2847,6 +2882,7 @@
 		CEBCE57818EBB7F400691E3B /* lpResourse */ = {
 			isa = PBXGroup;
 			children = (
+				608ACC0018F19F5D005BE5CA /* level1 */,
 				CEBCE57918EBB7F400691E3B /* kala_level.lhproject */,
 				CEBCE57A18EBB7F400691E3B /* kala_level.plhs */,
 				CEBCE57B18EBB7F400691E3B /* kalasprite.pshs */,
@@ -3081,6 +3117,7 @@
 				CE6C9B4218E065D300B6711E /* XXUiLoadingView.ccb in Resources */,
 				CEBCE57F18EBB7F400691E3B /* kala_level.plhs in Resources */,
 				CE7BA0CE18DFF72A00FD2DAE /* Default@2x.png in Resources */,
+				608ACC0918F19F5D005BE5CA /* levelbg1.pshs in Resources */,
 				CE7BA04B18DFDA3400FD2DAE /* json_valueiterator.inl in Resources */,
 				CE7BA0CF18DFF72A00FD2DAE /* Icon-114.png in Resources */,
 				CEBCE4F618EA6D1800691E3B /* xx_m_204601d.plist in Resources */,
@@ -3093,8 +3130,11 @@
 				CE7BA04D18DFDA3400FD2DAE /* sconscript in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				CE7BA04818DFDA3400FD2DAE /* json_internalmap.inl in Resources */,
+				608ACC0A18F19F5D005BE5CA /* levelbg1_UntitledSheet-hd.png in Resources */,
+				608ACC0718F19F5D005BE5CA /* level1.plhs in Resources */,
 				CEBCE58118EBB7F400691E3B /* kalasprite_kalaSheet-hd.png in Resources */,
 				CE6C9B4418E065D300B6711E /* XXUiLoadingView.ccbi in Resources */,
+				608ACC0B18F19F5D005BE5CA /* levelbg1_UntitledSheet-ipadhd.png in Resources */,
 				CE7BA0D418DFF72A00FD2DAE /* Icon-72.png in Resources */,
 				CEBCE57E18EBB7F400691E3B /* kala_level.lhproject in Resources */,
 				CE7BA0DA18DFF7FB00FD2DAE /* xx_m_100041.plist in Resources */,
@@ -3103,12 +3143,14 @@
 				60926E4518E8571100B9ABAE /* bg.jpg in Resources */,
 				CEBCE58218EBB7F400691E3B /* kalasprite_kalaSheet.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
+				608ACC0818F19F5D005BE5CA /* level1pro.lhproject in Resources */,
 				CE7BA0DB18DFF7FB00FD2DAE /* xx_m_100041.png in Resources */,
 				CE6C9B4018E065D300B6711E /* XXUiLoginViewBg.plist in Resources */,
 				CE7BA0D218DFF72A00FD2DAE /* Icon-152.png in Resources */,
 				CEBCE4F718EA6D1800691E3B /* xx_m_204601d.png in Resources */,
 				CE7BA0D518DFF72A00FD2DAE /* Icon-76.png in Resources */,
 				CEBCE4F818EA6D1800691E3B /* xx_m_204601d.xml in Resources */,
+				608ACC0C18F19F5D005BE5CA /* levelbg1_UntitledSheet.png in Resources */,
 				CE6C9B4318E065D300B6711E /* ui.ccbproj in Resources */,
 				CE7BA0DC18DFF7FB00FD2DAE /* xx_m_100041.xml in Resources */,
 				CEBCE54D18EABE5100691E3B /* LICENSE_LevelHelper.txt in Resources */,
@@ -3163,6 +3205,7 @@
 				15A3D9181682F7D5002FB0C5 /* b2ChainAndPolygonContact.cpp in Sources */,
 				375BD5111868454E0024609E /* CCActionManager.cpp in Sources */,
 				15A3D9191682F7D5002FB0C5 /* b2CircleContact.cpp in Sources */,
+				608ACBFF18F19AB6005BE5CA /* GameView.cpp in Sources */,
 				15A3D91A1682F7D5002FB0C5 /* b2Contact.cpp in Sources */,
 				CE7BA05718DFDA3400FD2DAE /* SPUtilMath.cpp in Sources */,
 				15A3D91B1682F7D5002FB0C5 /* b2ContactSolver.cpp in Sources */,
@@ -3352,6 +3395,7 @@
 				1A8F3B79175E05DA00049216 /* extension.cpp in Sources */,
 				CEBCE55218EABE5100691E3B /* LHContactListener.cpp in Sources */,
 				1A8F3B7A175E05DA00049216 /* Json.cpp in Sources */,
+				608ACC1218F1B410005BE5CA /* GameBgRollView.cpp in Sources */,
 				1A8F3B7B175E05DA00049216 /* RegionAttachment.cpp in Sources */,
 				CE7B9FB118DFD64D00FD2DAE /* ResourceManager.cpp in Sources */,
 				CE7BA02A18DFDA3400FD2DAE /* SPTween.cpp in Sources */,

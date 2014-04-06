@@ -9,6 +9,7 @@
 #include "SceneController.h"
 #include "HelloWorldScene.h"
 #include "RollBgView.h"
+#include "GameView.h"
 
 static SceneController* _sharedInstance=NULL;
 
@@ -86,6 +87,9 @@ void SceneController::switchSence(const ESceneId sceneId, cocos2d::CCObject* par
 		}
         case K_SCENE_ROLLVIEW:
             layer = RollBgView::create();
+            break;
+        case K_SCENE_GAMEVIEW:
+            layer = GameView::create();
             break;
         default:
             CCAssert(false, "GameController::switchSence sceneId is invalid..");

@@ -10,6 +10,7 @@
 #define motoGame_ConstansDef_h
 
 #define PTM_RATIO 32.0f
+#define BASE_TAG  1000
 
 enum EUserState {
     K_User_State_Disable = -1,  //停用
@@ -25,6 +26,7 @@ enum ESceneId {
     K_SCENE_WELCOME                 = 101,//欢迎
     K_SCENE_LOGIN                   = 102,//登录
     K_SCENE_ROLLVIEW                = 103,//测试
+    K_SCENE_GAMEVIEW                = 201,//游戏场景
 };
 
 enum BodyTag {

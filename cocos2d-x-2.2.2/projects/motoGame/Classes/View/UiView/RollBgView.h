@@ -35,6 +35,13 @@ public:
     
     void loadPhysicWorldWithLayer(const char* levelFile, CCLayer *layer);
     
+    void updateHeroSpeed(float dt);
+    
+protected:
+    virtual void registerWithTouchDispatcher(void);
+    virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
+    virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
+    
 private: /*碰撞处理*/
     void preCollisionBetweenHeroTreeAndCoin(LHContactInfo* contact);
     
@@ -42,6 +49,8 @@ private:
     b2World *_b2World;
     LevelHelperLoader *_levelHelper;
     LHSprite *_lhSprite;
+    
+    bool _isNeedAcceleration;
 };
 
 #endif /* defined(__motoGame__RollBgView__) */
