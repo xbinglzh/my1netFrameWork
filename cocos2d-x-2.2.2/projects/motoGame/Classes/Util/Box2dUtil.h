@@ -20,6 +20,7 @@ class Box2dUtil {
     
 public:
     
+    static void addBodyForSprite(b2World *b2World, LevelHelperLoader *levelHelp, cocos2d::CCSprite* sprite, b2FixtureDef fixtureDef,b2BodyDef bodyDef);
     static void addBodyForSprite(b2World *b2World, LevelHelperLoader *levelHelp, cocos2d::CCSprite* sprite, b2FixtureDef fixtureDef);
     
     static void addBoxBodyForSprite(b2World *b2World, LevelHelperLoader *levelHelp, cocos2d::CCSprite* sprite, b2FixtureDef fixtureDef);

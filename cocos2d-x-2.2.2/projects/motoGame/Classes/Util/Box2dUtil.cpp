@@ -11,6 +11,13 @@
 #include "GLES-Render.h"
 #include "LevelHelperLoader.h"
 
+void Box2dUtil::addBodyForSprite(b2World *b2World, LevelHelperLoader *levelHelp, cocos2d::CCSprite *sprite, b2FixtureDef fixtureDef, b2BodyDef bodyDef) {
+    
+    b2Body* spriteBody = b2World->CreateBody(&bodyDef);
+    spriteBody->CreateFixture(&fixtureDef);
+    
+}
+
 void Box2dUtil::addBodyForSprite(b2World *b2World, LevelHelperLoader *levelHelp,cocos2d::CCSprite *sprite, b2FixtureDef fixtureDef) {
     
     b2BodyDef bd;
@@ -20,8 +27,7 @@ void Box2dUtil::addBodyForSprite(b2World *b2World, LevelHelperLoader *levelHelp,
     
     bd.userData = sprite;
     
-    b2Body* spriteBody = b2World->CreateBody(&bd);
-    spriteBody->CreateFixture(&fixtureDef);
+    addBodyForSprite(b2World, levelHelp, sprite, fixtureDef, bd);
 }
 
 void Box2dUtil::addBoxBodyForSprite(b2World *b2World,  LevelHelperLoader *levelHelp, cocos2d::CCSprite *sprite, b2FixtureDef fixtureDef) {

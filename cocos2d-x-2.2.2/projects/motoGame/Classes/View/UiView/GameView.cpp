@@ -12,6 +12,8 @@
 #include "GameBgRollView.h"
 #include "ConstansDef.h"
 
+#define IsOpenBox2dDebugDraw false
+
 const int TagBgView = BASE_TAG + 1;
 
 GameView::GameView() : _lhSprite(NULL), _levelHelper(NULL), _b2World(NULL) {
@@ -27,9 +29,9 @@ bool GameView::init() {
 		return false;
 	}
     
-    
     GameBgRollView* bgView = GameBgRollView::create();
     this->addChild(bgView, 0, TagBgView);
+    
     initPhysicalWorld();
     return true;
 }
@@ -49,6 +51,15 @@ void GameView::initPhysicalWorld() {
     }
     
 //    _levelHelper->useLevelHelperCollisionHandling();//这个方法是必要的，否则碰撞将不会执行
+    
+    if (IsOpenBox2dDebugDraw) {
+        Box2dUtil::openDebugBox2dDraw(_b2World);
+        this->getChildByTag(TagBgView)->setVisible(!IsOpenBox2dDebugDraw);
+    }else {
+        this->getChildByTag(TagBgView)->setVisible(!IsOpenBox2dDebugDraw);
+    }
+    
+   
 }
 
 void GameView::update(float dt) {
