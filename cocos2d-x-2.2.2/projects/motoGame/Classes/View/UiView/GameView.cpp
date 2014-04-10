@@ -58,7 +58,6 @@ void GameView::initPhysicalWorld() {
     }else {
         this->getChildByTag(TagBgView)->setVisible(!IsOpenBox2dDebugDraw);
     }
-    
    
 }
 
