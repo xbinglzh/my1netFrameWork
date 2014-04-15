@@ -11,6 +11,7 @@
 #include "Box2dUtil.h"
 #include "GameBgRollView.h"
 #include "ConstansDef.h"
+#include "ParticleEffect.h"
 
 #define IsOpenBox2dDebugDraw false
 
@@ -58,6 +59,10 @@ void GameView::initPhysicalWorld() {
     }else {
         this->getChildByTag(TagBgView)->setVisible(!IsOpenBox2dDebugDraw);
     }
+    
+    ParticleEffect* effect = ParticleEffect::create("fire.plist");
+    CCLOG("effect w : %f, h : %f", effect->getContentSize().width, effect->getContentSize().height);
+    this->addChild(effect, 10000, 10000);
    
 }
 

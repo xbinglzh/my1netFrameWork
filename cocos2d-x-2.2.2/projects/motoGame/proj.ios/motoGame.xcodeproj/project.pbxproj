@@ -246,6 +246,7 @@
 		60C18A8418FD718D00AC2464 /* fire1.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A8018FD718D00AC2464 /* fire1.png */; };
 		60C18A8518FD718D00AC2464 /* particle-fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A8118FD718D00AC2464 /* particle-fire.png */; };
 		60C18A8818FD729E00AC2464 /* ParticleEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C18A8618FD729E00AC2464 /* ParticleEffect.cpp */; };
+		60C18A8F18FD749000AC2464 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C18A8D18FD749000AC2464 /* GameObject.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -1025,6 +1026,8 @@
 		60C18A8118FD718D00AC2464 /* particle-fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "particle-fire.png"; sourceTree = "<group>"; };
 		60C18A8618FD729E00AC2464 /* ParticleEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleEffect.cpp; sourceTree = "<group>"; };
 		60C18A8718FD729E00AC2464 /* ParticleEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEffect.h; sourceTree = "<group>"; };
+		60C18A8D18FD749000AC2464 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		60C18A8E18FD749000AC2464 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -2310,6 +2313,15 @@
 			path = particle;
 			sourceTree = "<group>";
 		};
+		60C18A8918FD746600AC2464 /* object */ = {
+			isa = PBXGroup;
+			children = (
+				60C18A8D18FD749000AC2464 /* GameObject.cpp */,
+				60C18A8E18FD749000AC2464 /* GameObject.h */,
+			);
+			path = object;
+			sourceTree = "<group>";
+		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -2434,6 +2446,7 @@
 		CE7B9F9018DFD1F700FD2DAE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				60C18A8918FD746600AC2464 /* object */,
 				60C18A7018FD6C3800AC2464 /* Particles */,
 				CE73522718ED28770059BAA1 /* entity */,
 				CE6C9B2C18E0583D00B6711E /* GameConfig.cpp */,
@@ -3476,6 +3489,7 @@
 				379BB9AD17F03F3700829B88 /* CCComAttribute.cpp in Sources */,
 				379BB9AE17F03F3700829B88 /* CCComAudio.cpp in Sources */,
 				CE7B9FAD18DFD54500FD2DAE /* CCScale9ProgressBar.cpp in Sources */,
+				60C18A8F18FD749000AC2464 /* GameObject.cpp in Sources */,
 				CE7BA02718DFDA3400FD2DAE /* ArmatureAnim.cpp in Sources */,
 				379BB9AF17F03F3700829B88 /* CCComController.cpp in Sources */,
 				379BB9B017F03F3700829B88 /* CCComRender.cpp in Sources */,
