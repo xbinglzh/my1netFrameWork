@@ -240,6 +240,11 @@
 		60926E4018E7EB6E00B9ABAE /* AppLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E3E18E7EB6E00B9ABAE /* AppLauncher.cpp */; };
 		60926E4518E8571100B9ABAE /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60926E4418E8571100B9ABAE /* bg.jpg */; };
 		60926E4818E8747A00B9ABAE /* RollBgView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E4618E8747A00B9ABAE /* RollBgView.cpp */; };
+		60C18A7C18FD6CD900AC2464 /* SmallSoybeanParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C18A7A18FD6CD900AC2464 /* SmallSoybeanParticle.cpp */; };
+		60C18A8218FD718D00AC2464 /* fire.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A7E18FD718D00AC2464 /* fire.plist */; };
+		60C18A8318FD718D00AC2464 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A7F18FD718D00AC2464 /* fire.png */; };
+		60C18A8418FD718D00AC2464 /* fire1.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A8018FD718D00AC2464 /* fire1.png */; };
+		60C18A8518FD718D00AC2464 /* particle-fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A8118FD718D00AC2464 /* particle-fire.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -255,7 +260,6 @@
 		CE6C9B4318E065D300B6711E /* ui.ccbproj in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3D18E065D300B6711E /* ui.ccbproj */; };
 		CE6C9B4418E065D300B6711E /* XXUiLoadingView.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3E18E065D300B6711E /* XXUiLoadingView.ccbi */; };
 		CE73522118EC09E30059BAA1 /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE73521F18EC09E30059BAA1 /* GLES-Render.cpp */; };
-		CE73524218ED294F0059BAA1 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE73524018ED294F0059BAA1 /* GameObject.cpp */; };
 		CE7B9F9618DFD23800FD2DAE /* LayoutUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7B9F9418DFD23800FD2DAE /* LayoutUtil.cpp */; };
 		CE7B9FA818DFD2D400FD2DAE /* CCShaderEffectSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7B9FA318DFD2D400FD2DAE /* CCShaderEffectSprite.cpp */; };
 		CE7B9FA918DFD2D400FD2DAE /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7B9FA518DFD2D400FD2DAE /* ShaderManager.cpp */; };
@@ -1012,6 +1016,12 @@
 		60926E4418E8571100B9ABAE /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		60926E4618E8747A00B9ABAE /* RollBgView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RollBgView.cpp; sourceTree = "<group>"; };
 		60926E4718E8747A00B9ABAE /* RollBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollBgView.h; sourceTree = "<group>"; };
+		60C18A7A18FD6CD900AC2464 /* SmallSoybeanParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SmallSoybeanParticle.cpp; sourceTree = "<group>"; };
+		60C18A7B18FD6CD900AC2464 /* SmallSoybeanParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallSoybeanParticle.h; sourceTree = "<group>"; };
+		60C18A7E18FD718D00AC2464 /* fire.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fire.plist; sourceTree = "<group>"; };
+		60C18A7F18FD718D00AC2464 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		60C18A8018FD718D00AC2464 /* fire1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire1.png; sourceTree = "<group>"; };
+		60C18A8118FD718D00AC2464 /* particle-fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "particle-fire.png"; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -1033,8 +1043,6 @@
 		CE6C9B4918E11C5B00B6711E /* FontStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontStyle.h; sourceTree = "<group>"; };
 		CE73521F18EC09E30059BAA1 /* GLES-Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "GLES-Render.cpp"; sourceTree = "<group>"; };
 		CE73522018EC09E30059BAA1 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
-		CE73524018ED294F0059BAA1 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
-		CE73524118ED294F0059BAA1 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		CE73524318ED2A4A0059BAA1 /* role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = role.h; sourceTree = "<group>"; };
 		CE73524418ED2A9E0059BAA1 /* hero.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hero.h; sourceTree = "<group>"; };
 		CE7B9F9418DFD23800FD2DAE /* LayoutUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayoutUtil.cpp; sourceTree = "<group>"; };
@@ -2277,9 +2285,30 @@
 			path = ../Classes/Controller;
 			sourceTree = "<group>";
 		};
+		60C18A7018FD6C3800AC2464 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				60C18A7A18FD6CD900AC2464 /* SmallSoybeanParticle.cpp */,
+				60C18A7B18FD6CD900AC2464 /* SmallSoybeanParticle.h */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		60C18A7D18FD718D00AC2464 /* particle */ = {
+			isa = PBXGroup;
+			children = (
+				60C18A7E18FD718D00AC2464 /* fire.plist */,
+				60C18A7F18FD718D00AC2464 /* fire.png */,
+				60C18A8018FD718D00AC2464 /* fire1.png */,
+				60C18A8118FD718D00AC2464 /* particle-fire.png */,
+			);
+			path = particle;
+			sourceTree = "<group>";
+		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				60C18A7D18FD718D00AC2464 /* particle */,
 				CE6C9B3618E065D300B6711E /* ui_layout */,
 				CE7BA0D618DFF76E00FD2DAE /* anim */,
 				CE7BA0C118DFF72A00FD2DAE /* app */,
@@ -2400,8 +2429,7 @@
 		CE7B9F9018DFD1F700FD2DAE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CE73524018ED294F0059BAA1 /* GameObject.cpp */,
-				CE73524118ED294F0059BAA1 /* GameObject.h */,
+				60C18A7018FD6C3800AC2464 /* Particles */,
 				CE73522718ED28770059BAA1 /* entity */,
 				CE6C9B2C18E0583D00B6711E /* GameConfig.cpp */,
 				CE6C9B2D18E0583D00B6711E /* GameConfig.h */,
@@ -3115,7 +3143,9 @@
 				CE7BA0D018DFF72A00FD2DAE /* Icon-120.png in Resources */,
 				CE6C9B4118E065D300B6711E /* XXUiLoginViewBg.png in Resources */,
 				CE6C9B4218E065D300B6711E /* XXUiLoadingView.ccb in Resources */,
+				60C18A8418FD718D00AC2464 /* fire1.png in Resources */,
 				CEBCE57F18EBB7F400691E3B /* kala_level.plhs in Resources */,
+				60C18A8218FD718D00AC2464 /* fire.plist in Resources */,
 				CE7BA0CE18DFF72A00FD2DAE /* Default@2x.png in Resources */,
 				608ACC0918F19F5D005BE5CA /* levelbg1.pshs in Resources */,
 				CE7BA04B18DFDA3400FD2DAE /* json_valueiterator.inl in Resources */,
@@ -3130,6 +3160,8 @@
 				CE7BA04D18DFDA3400FD2DAE /* sconscript in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				CE7BA04818DFDA3400FD2DAE /* json_internalmap.inl in Resources */,
+				60C18A8518FD718D00AC2464 /* particle-fire.png in Resources */,
+				60C18A8318FD718D00AC2464 /* fire.png in Resources */,
 				608ACC0A18F19F5D005BE5CA /* levelbg1_UntitledSheet-hd.png in Resources */,
 				608ACC0718F19F5D005BE5CA /* level1.plhs in Resources */,
 				CEBCE58118EBB7F400691E3B /* kalasprite_kalaSheet-hd.png in Resources */,
@@ -3190,6 +3222,7 @@
 				15A3D90D1682F7D5002FB0C5 /* b2Math.cpp in Sources */,
 				15A3D90E1682F7D5002FB0C5 /* b2Settings.cpp in Sources */,
 				15A3D90F1682F7D5002FB0C5 /* b2StackAllocator.cpp in Sources */,
+				60C18A7C18FD6CD900AC2464 /* SmallSoybeanParticle.cpp in Sources */,
 				15A3D9101682F7D5002FB0C5 /* b2Timer.cpp in Sources */,
 				15A3D9111682F7D5002FB0C5 /* b2Body.cpp in Sources */,
 				15A3D9121682F7D5002FB0C5 /* b2ContactManager.cpp in Sources */,
@@ -3327,7 +3360,6 @@
 				375BD50F1868454E0024609E /* CCActionFrame.cpp in Sources */,
 				CE7BA07218DFDD8E00FD2DAE /* tinyxml.cpp in Sources */,
 				CE7B9FA818DFD2D400FD2DAE /* CCShaderEffectSprite.cpp in Sources */,
-				CE73524218ED294F0059BAA1 /* GameObject.cpp in Sources */,
 				15A3DA4D1682F826002FB0C5 /* CCControlPotentiometer.cpp in Sources */,
 				CE7BA0E518DFFE1300FD2DAE /* AnimNode.cpp in Sources */,
 				15A3DA4E1682F826002FB0C5 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
@@ -3486,10 +3518,11 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jian Shen (49GJKGX42A)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jian Shen (49GJKGX42A)";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -3508,15 +3541,16 @@
 					"\"$(SRCROOT)/../../../external/chipmunk/include/constraints\"",
 					"\"$(SRCROOT)/../../../external/chipmunk/include/chipmunk\"",
 					"\"$(SRCROOT)/../../../extensions\"",
+					"\"$(SRCROOT)/../../../cocos2dx\"",
 					"\"$(SRCROOT)/../../../cocos2dx/kazmath/include\"",
 					"\"$(SRCROOT)/../../../external\"",
-					"\"$(SRCROOT)/../../../cocos2dx\"",
 					"\"$(SRCROOT)/../../../cocos2dx/include\"",
 					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios\"",
 					"\"$(SRCROOT)/../../../cocos2dx/platform/ios\"",
 					"\"$(SRCROOT)/../../../cocos2dx/platform/ios/Simulation\"",
 					"\"$(SRCROOT)/../../../boost_1_44_0\"",
 					"\"$(SRCROOT)/../../../boost_1_44_0/boost\"",
+					"\"$(SRCROOT)/../../../cocos2dx/particle_nodes\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -3538,7 +3572,7 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jian Shen (49GJKGX42A)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jian Shen (49GJKGX42A)";
 				COPY_PHASE_STRIP = YES;
@@ -3558,15 +3592,16 @@
 					"\"$(SRCROOT)/../../../external/chipmunk/include/constraints\"",
 					"\"$(SRCROOT)/../../../external/chipmunk/include/chipmunk\"",
 					"\"$(SRCROOT)/../../../extensions\"",
+					"\"$(SRCROOT)/../../../cocos2dx\"",
 					"\"$(SRCROOT)/../../../cocos2dx/kazmath/include\"",
 					"\"$(SRCROOT)/../../../external\"",
-					"\"$(SRCROOT)/../../../cocos2dx\"",
 					"\"$(SRCROOT)/../../../cocos2dx/include\"",
 					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios\"",
 					"\"$(SRCROOT)/../../../cocos2dx/platform/ios\"",
 					"\"$(SRCROOT)/../../../cocos2dx/platform/ios/Simulation\"",
 					"\"$(SRCROOT)/../../../boost_1_44_0\"",
 					"\"$(SRCROOT)/../../../boost_1_44_0/boost\"",
+					"\"$(SRCROOT)/../../../cocos2dx/particle_nodes\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
