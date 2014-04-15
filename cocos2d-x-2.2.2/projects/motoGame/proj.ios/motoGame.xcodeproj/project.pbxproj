@@ -245,6 +245,7 @@
 		60C18A8318FD718D00AC2464 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A7F18FD718D00AC2464 /* fire.png */; };
 		60C18A8418FD718D00AC2464 /* fire1.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A8018FD718D00AC2464 /* fire1.png */; };
 		60C18A8518FD718D00AC2464 /* particle-fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A8118FD718D00AC2464 /* particle-fire.png */; };
+		60C18A8818FD729E00AC2464 /* ParticleEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C18A8618FD729E00AC2464 /* ParticleEffect.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -1022,6 +1023,8 @@
 		60C18A7F18FD718D00AC2464 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		60C18A8018FD718D00AC2464 /* fire1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire1.png; sourceTree = "<group>"; };
 		60C18A8118FD718D00AC2464 /* particle-fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "particle-fire.png"; sourceTree = "<group>"; };
+		60C18A8618FD729E00AC2464 /* ParticleEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleEffect.cpp; sourceTree = "<group>"; };
+		60C18A8718FD729E00AC2464 /* ParticleEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEffect.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -2290,6 +2293,8 @@
 			children = (
 				60C18A7A18FD6CD900AC2464 /* SmallSoybeanParticle.cpp */,
 				60C18A7B18FD6CD900AC2464 /* SmallSoybeanParticle.h */,
+				60C18A8618FD729E00AC2464 /* ParticleEffect.cpp */,
+				60C18A8718FD729E00AC2464 /* ParticleEffect.h */,
 			);
 			path = Particles;
 			sourceTree = "<group>";
@@ -3417,6 +3422,7 @@
 				1A8F3B74175E05DA00049216 /* AttachmentLoader.cpp in Sources */,
 				CE7BA03D18DFDA3400FD2DAE /* SPDisplayFactory.cpp in Sources */,
 				1A8F3B75175E05DA00049216 /* Bone.cpp in Sources */,
+				60C18A8818FD729E00AC2464 /* ParticleEffect.cpp in Sources */,
 				1A8F3B76175E05DA00049216 /* BoneData.cpp in Sources */,
 				CE7BA07418DFDD8E00FD2DAE /* tinyxmlerror.cpp in Sources */,
 				1A8F3B77175E05DA00049216 /* CCSkeleton.cpp in Sources */,
