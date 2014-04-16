@@ -1,14 +1,13 @@
 //
 //  TGSpriterNode.h
-//  motoGame
+//  MetalWar
 //
-//  Created by xUanBing on 14-4-16.
-//
+//  Created by Ryan Yuan on 12-8-2.
+//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#ifndef __motoGame__TGSpriterNode__
-#define __motoGame__TGSpriterNode__
-
+#ifndef MetalWar_TGSpriterNode_h
+#define MetalWar_TGSpriterNode_h
 
 #include "cocos2d.h"
 #include "platform/CCSAXParser.h"
@@ -79,7 +78,7 @@ private:
 
 // holds the frames for a given animation
 class SpriterAnimationDelegate{
-public:
+	public:
 	virtual void animationFinished(std::string name)=0;
 	virtual void animationFrameChanged(std::string anim_name,std::string lastframe,std::string name)=0;
 	
@@ -96,7 +95,6 @@ public:
 	double frameDurationsSum();
 	TGSpriterFrame * getCurFrame();
     void reset();
-    
 public:
 	CCArray * frames_;
 	CCArray * frameDurations_;
@@ -108,17 +106,14 @@ public:
 };
 
 class TGSpriterNode;
-
 class SpriterNodeDelegate{
-    
 public:
 	virtual void animationFinished(TGSpriterNode * spriterNode,std::string name)=0;
 	virtual void animationFrameChanged(TGSpriterNode * spriterNode
 									   ,std::string anim_name,std::string lastframe,std::string name)=0;
 };
 
-class TGSpriterNode : public CCNode, public CCSAXDelegator, public SpriterAnimationDelegate, public BaseEffect, public CCRGBAProtocol ,public AnimationDelegateExt {
-    
+class TGSpriterNode:public CCNode,public CCSAXDelegator,public SpriterAnimationDelegate, public BaseEffect, public CCRGBAProtocol ,public AnimationDelegateExt{
 public:
 	TGSpriterNode();
 	virtual ~TGSpriterNode();
@@ -136,6 +131,7 @@ public:
 	CCString * getCurFrameName()const;
     
 	bool runAnimation(CCString* animation,bool stopFirst=true);
+    
 	void showFrame(CCString* frameName);
 	void showFrameByIndex(int index);
     void setCurFrameFlipX(bool bFlipX);
@@ -173,8 +169,8 @@ public:
     virtual void startElement(void *ctx, const char *name, const char **atts);
     virtual void endElement(void *ctx, const char *name);
     virtual void textHandler(void *ctx, const char *s, int len);
-	void handleAutoRemoveOnFinish();
     
+	void handleAutoRemoveOnFinish();
 	bool initNodeWithSpriteFileName(CCString* sprite);
 	bool initNodeWithSpriteFrameName(CCString* sprite);
 	bool initNodeWithScmlFile(CCString* scmlFile);
@@ -185,10 +181,9 @@ public:
     bool initNodeWithArmatureAndSpriteFrame(CCDictionary2 * info,const float positionReadScale);
     
 	void update(float dt);
+    
 	virtual void stopAnimation();
 	virtual void setVisible(bool bVisible);
-    
-    //SpriterAnimationDelegate
 	virtual void animationFinished(std::string name);
 	virtual void animationFrameChanged(std::string anim_name,std::string lastframe,std::string name);
 	
@@ -209,20 +204,18 @@ private:
 	TGSpriterFrame *  curFrame_;
     bool useBatchNode_;
 	bool useAnimateEditor;
-    
     // parsing vars
     TGSpriterConfigNodeCC * configRoot_;
     TGSpriterConfigNodeCC * curConfigNode_;
-	CCDictionary2 * animationNames_; /*保存配置文件中动画名和实际animations_的名字的映射*/
-	CCDictionary2 * frameNames_; /*保存配置文件中frame名和实际animations_的名字的映射*/
+	CCDictionary2 * animationNames_;/*保存配置文件中动画名和实际animations_的名字的映射*/
+	CCDictionary2 * frameNames_;/*保存配置文件中frame名和实际animations_的名字的映射*/
     
     ArmatureAnim * armatureAnim_;
     std::string    armature_lastframe_;
-    
 protected:
     virtual void setShaderProgram(cocos2d::CCGLProgram *var);
     
-public: //CCRGBAProtocol
+public:
     virtual void setColor(const ccColor3B& color);
     virtual const ccColor3B& getColor(void);
     virtual GLubyte getOpacity(void);
@@ -233,7 +226,6 @@ public: //CCRGBAProtocol
 private:
     ccColor3B _color;
     GLubyte _opacity;
-    
 };
 
 typedef TGSpriterNode  AnimationEffect;
@@ -243,4 +235,5 @@ typedef TGSpriterNode  AnimationEffect;
 
 
 
-#endif /* defined(__motoGame__TGSpriterNode__) */
+
+#endif

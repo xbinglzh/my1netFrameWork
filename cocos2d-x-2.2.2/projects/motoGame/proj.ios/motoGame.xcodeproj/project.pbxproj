@@ -244,7 +244,7 @@
 		605A0B0F18FEC6DB001EA057 /* hero_1_pao.png in Resources */ = {isa = PBXBuildFile; fileRef = 605A0B0C18FEC6DB001EA057 /* hero_1_pao.png */; };
 		605A0B1018FEC6DB001EA057 /* hero_1_pao.xml in Resources */ = {isa = PBXBuildFile; fileRef = 605A0B0D18FEC6DB001EA057 /* hero_1_pao.xml */; };
 		605A0B1F18FED19A001EA057 /* CCDictionary2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A0B1C18FED19A001EA057 /* CCDictionary2.cpp */; };
-		605A0B2218FED941001EA057 /* TGSpriterNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A0B2018FED941001EA057 /* TGSpriterNode.cpp */; };
+		605A0B2518FEDE78001EA057 /* TGSpriterNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A0B2318FEDE78001EA057 /* TGSpriterNode.cpp */; };
 		608ACBFF18F19AB6005BE5CA /* GameView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 608ACBFD18F19AB6005BE5CA /* GameView.cpp */; };
 		608ACC0718F19F5D005BE5CA /* level1.plhs in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0118F19F5D005BE5CA /* level1.plhs */; };
 		608ACC0818F19F5D005BE5CA /* level1pro.lhproject in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0218F19F5D005BE5CA /* level1pro.lhproject */; };
@@ -1030,8 +1030,8 @@
 		605A0B1C18FED19A001EA057 /* CCDictionary2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCDictionary2.cpp; sourceTree = "<group>"; };
 		605A0B1D18FED19A001EA057 /* CCDictionary2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDictionary2.h; sourceTree = "<group>"; };
 		605A0B1E18FED19A001EA057 /* DoubleNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNumber.h; sourceTree = "<group>"; };
-		605A0B2018FED941001EA057 /* TGSpriterNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TGSpriterNode.cpp; sourceTree = "<group>"; };
-		605A0B2118FED941001EA057 /* TGSpriterNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSpriterNode.h; sourceTree = "<group>"; };
+		605A0B2318FEDE78001EA057 /* TGSpriterNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TGSpriterNode.cpp; sourceTree = "<group>"; };
+		605A0B2418FEDE78001EA057 /* TGSpriterNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSpriterNode.h; sourceTree = "<group>"; };
 		608ACBFD18F19AB6005BE5CA /* GameView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameView.cpp; sourceTree = "<group>"; };
 		608ACBFE18F19AB6005BE5CA /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
 		608ACC0118F19F5D005BE5CA /* level1.plhs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1.plhs; sourceTree = "<group>"; };
@@ -2288,8 +2288,8 @@
 		605A0B1118FECC0B001EA057 /* AnimationExt */ = {
 			isa = PBXGroup;
 			children = (
-				605A0B2018FED941001EA057 /* TGSpriterNode.cpp */,
-				605A0B2118FED941001EA057 /* TGSpriterNode.h */,
+				605A0B2318FEDE78001EA057 /* TGSpriterNode.cpp */,
+				605A0B2418FEDE78001EA057 /* TGSpriterNode.h */,
 			);
 			path = AnimationExt;
 			sourceTree = "<group>";
@@ -3385,7 +3385,7 @@
 				CEBCE55818EABE5100691E3B /* LHLayer.cpp in Sources */,
 				CEBCE56118EABE5100691E3B /* LHDictionary.cpp in Sources */,
 				15A3D9A01682F7F9002FB0C5 /* cpSimpleMotor.c in Sources */,
-				605A0B2218FED941001EA057 /* TGSpriterNode.cpp in Sources */,
+				605A0B2518FEDE78001EA057 /* TGSpriterNode.cpp in Sources */,
 				CE7B9F9618DFD23800FD2DAE /* LayoutUtil.cpp in Sources */,
 				60307E7418EFB1FF00A0F8B7 /* Box2dUtil.cpp in Sources */,
 				15A3D9A11682F7F9002FB0C5 /* cpSlideJoint.c in Sources */,

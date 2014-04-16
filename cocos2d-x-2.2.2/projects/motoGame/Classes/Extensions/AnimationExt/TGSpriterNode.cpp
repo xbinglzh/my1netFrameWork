@@ -1,25 +1,24 @@
 //
 //  TGSpriterNode.cpp
-//  motoGame
+//  MetalWar
 //
-//  Created by xUanBing on 14-4-16.
-//
+//  Created by Ryan Yuan on 12-8-2.
+//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
 #include "TGSpriterNode.h"
 #include "DoubleNumber.h"
-
 #include "tinyxml.h"
 #include "GameUtils.h"
 #include "SPConstValue.h"
-#include "CCDictionary2.h"
+
 
 #define KSpriterSCML         "spriter_scml"			/*表示节点采用一个图片文件和一个scml文件创建*/
 #define KSpriteWithSCMLFrame "spriter_scml_frame"	/*表示节点采用framecache中frame和一个scml文件创建*/
 #define KAnimateWithXML      "animate_editor_xml"			/*表示节点采用一个图片文件和一个xml文件创建*/
 #define KAnimateWithXMLFrame "animate_editor_xml_frame"	    /*表示节点采用framecache中frame和一个xml文件创建*/
 
-#define KAnimateWithArmatureFrame "animate_armature_frame"
+#define KAnimateWithArmatureFrame "animate_armature_frame"	 
 
 #pragma mark Support Classes
 
@@ -36,7 +35,7 @@ TGSpriterConfigNodeCC::~TGSpriterConfigNodeCC(){
 		delete *iter;
 	}
 	_children.clear();
-    
+
 }
 
 
@@ -68,7 +67,7 @@ TGSpriterConfigNodeDict * TGSpriterConfigNodeDictMap::objectForKey(const std::st
 }
 
 void  TGSpriterConfigNodeDictMap::setObject(TGSpriterConfigNodeDict *root,const std::string & key){
-    
+
 	_mapValue[key]=root;
 }
 
@@ -172,7 +171,7 @@ bool TGSpriterFrame::isFlipY() const {
 
 // holds the frames for a given animation
 TGSpriterAnimation::TGSpriterAnimation():CCObject(),name_(NULL){
-    
+
 	frames_ = CCArray::create();
 	frames_->retain();
 	frameDurations_ = CCArray::create();
@@ -180,17 +179,17 @@ TGSpriterAnimation::TGSpriterAnimation():CCObject(),name_(NULL){
 	frameIdx_ = 0;
 	frameDuration_ = 0;
 	animationDelegate_=NULL;
-    
+
 }
 
 TGSpriterAnimation::~TGSpriterAnimation(){
-    
+
 	if (frames_) {
 		frames_->removeAllObjects();
 		frames_->release();
 		frames_=NULL;
 	}
-    
+
 	if (frameDurations_) {
 		frameDurations_->removeAllObjects();
 		frameDurations_->release();
@@ -274,7 +273,7 @@ TGSpriterFrame * TGSpriterAnimation::getCurFrame(){
 }
 
 
-#pragma mark -------------------------------------TGSpriterNode--------------------------------------------
+#pragma mark TGSpriterNode
 
 
 TGSpriterNode::TGSpriterNode()
@@ -366,7 +365,7 @@ CCString * TGSpriterNode::getFrameNameByKey(const std::string & key){
 }
 
 void TGSpriterNode::setAnimationNameWithKey(CCString *name,const std::string & key){
-    
+
 	if (!name) {
 		return;
 	}
@@ -388,15 +387,15 @@ void TGSpriterNode::setFrameNameWithKey(CCString *name,const std::string & key){
 	frameNames_->setObject(name, key);
 }
 
-TGSpriterNode* TGSpriterNode::spriterNodeWithSpriteFileName(CCString* spriteFileName){
-    TGSpriterNode *node = new TGSpriterNode();
+TGSpriterNode * TGSpriterNode::spriterNodeWithSpriteFileName(CCString* spriteFileName){
+	TGSpriterNode * node = new TGSpriterNode;
 	node->initNodeWithSpriteFileName(spriteFileName);
 	node->autorelease();
     return node;
 }
 
 TGSpriterNode * TGSpriterNode::spriterNodeWithSpriteFrameName(CCString* spriteFrameName){
-	TGSpriterNode * node=new TGSpriterNode;
+	TGSpriterNode * node = new TGSpriterNode;
 	node->initNodeWithSpriteFrameName(spriteFrameName);
 	node->autorelease();
     return node;
@@ -404,7 +403,7 @@ TGSpriterNode * TGSpriterNode::spriterNodeWithSpriteFrameName(CCString* spriteFr
 
 TGSpriterNode * TGSpriterNode::spriterNodeWithScmlFile(CCString* scmlFile) {
 	
-	TGSpriterNode * node=new TGSpriterNode;
+	TGSpriterNode * node = new TGSpriterNode;
 	node->initNodeWithScmlFile(scmlFile);
 	node->autorelease();
     return node;
@@ -412,7 +411,7 @@ TGSpriterNode * TGSpriterNode::spriterNodeWithScmlFile(CCString* scmlFile) {
 
 TGSpriterNode * TGSpriterNode::spriterNodeWithScmlFileAndSpriteFrame(CCString * scmlFile) {
 	
-	TGSpriterNode * node=new TGSpriterNode;
+	TGSpriterNode * node = new TGSpriterNode;
 	node->initNodeWithScmlFileAndSpriteFrame(scmlFile);
 	node->autorelease();
     return node;
@@ -420,7 +419,7 @@ TGSpriterNode * TGSpriterNode::spriterNodeWithScmlFileAndSpriteFrame(CCString * 
 
 TGSpriterNode * TGSpriterNode::spriterNodeWithAnimateEidtorXml(CCString* scmlFile) {
 	
-	TGSpriterNode * node=new TGSpriterNode;
+	TGSpriterNode * node = new TGSpriterNode;
 	node->initNodeWithAnimateEidtorXml(scmlFile);
 	node->autorelease();
     return node;
@@ -428,7 +427,7 @@ TGSpriterNode * TGSpriterNode::spriterNodeWithAnimateEidtorXml(CCString* scmlFil
 
 TGSpriterNode * TGSpriterNode::spriterNodeWithAnimateEidtorXmlAndSpriteFrame(CCString * scmlFile) {
 	
-	TGSpriterNode * node=new TGSpriterNode;
+	TGSpriterNode * node = new TGSpriterNode;
 	node->initNodeWithAnimateEidtorXmlAndSpriteFrame(scmlFile);
 	node->autorelease();
     return node;
@@ -455,7 +454,7 @@ bool TGSpriterNode::initNodeWithSpriteFileName(CCString* sprite){
 	
 	showFrame(sprite);
 	
-    return true;
+    return true;  
 }
 
 bool TGSpriterNode::initNodeWithSpriteFrameName(CCString* sprite){
@@ -479,7 +478,7 @@ bool TGSpriterNode::initNodeWithSpriteFrameName(CCString* sprite){
 	frames_->setObject(spriterFrame,delfautFrameName);
 	this->setContentSize(_sprite->getContentSize());
 	showFrame(sprite);
-    return true;
+    return true;  
 }
 
 bool TGSpriterNode::initNodeWithScmlFile(CCString* scmlFile){
@@ -491,7 +490,7 @@ bool TGSpriterNode::initNodeWithScmlFile(CCString* scmlFile){
 	animations_->retain();
 	
 //	const char * path = CCFileUtils::sharedFileUtils()->fullPathFromRelativePath(scmlFile->getCString());
-    const char* path = CCFileUtils::sharedFileUtils()->fullPathForFilename(scmlFile->getCString()).c_str();
+    const char * path = CCFileUtils::sharedFileUtils()->fullPathForFilename(scmlFile->getCString()).c_str();
 	
 	CCSAXParser parser;
     if (false == parser.init("UTF-8") )
@@ -508,7 +507,7 @@ bool TGSpriterNode::initNodeWithScmlFile(CCString* scmlFile){
 	if (result) {
 		finishedinitNodeWithScmlFile();
 	}
-    return result;
+    return result;  
 }
 
 
@@ -519,7 +518,7 @@ bool TGSpriterNode::initNodeWithScmlFileAndSpriteFrame(CCString * scmlFile){
 	
 	animations_ = CCDictionary2::create();
 	animations_->retain();
-    
+
 	useBatchNode_ = true;
 	
 //	const char * path = CCFileUtils::sharedFileUtils()->fullPathFromRelativePath(scmlFile->getCString());
@@ -539,7 +538,7 @@ bool TGSpriterNode::initNodeWithScmlFileAndSpriteFrame(CCString * scmlFile){
 	if (result) {
 		finishedinitNodeWithScmlFile();
 	}
-    return result;
+    return result;  
 }
 
 
@@ -552,8 +551,8 @@ bool TGSpriterNode::initNodeWithAnimateEidtorXml(CCString* plistFile){
 	animations_->retain();
 	
 //	const char * path = CCFileUtils::sharedFileUtils()->fullPathFromRelativePath(plistFile->getCString());
-    const char* path = CCFileUtils::sharedFileUtils()->fullPathForFilename(plistFile->getCString()).c_str();
-
+    const char  *path = CCFileUtils::sharedFileUtils()->fullPathForFilename(plistFile->getCString()).c_str();
+	
 	CCSAXParser parser;
     if (false == parser.init("UTF-8") )
     {
@@ -569,7 +568,7 @@ bool TGSpriterNode::initNodeWithAnimateEidtorXml(CCString* plistFile){
 	if (result) {
 		finishedinitNodeWithAnimateEidtorXml();
 	}
-    return result;
+    return result;  
 }
 
 
@@ -584,9 +583,8 @@ bool TGSpriterNode::initNodeWithAnimateEidtorXmlAndSpriteFrame(CCString * plistF
 	useBatchNode_ = true;
 	
 //	const char * path = CCFileUtils::sharedFileUtils()->fullPathFromRelativePath(plistFile->getCString());
-	const char* path = CCFileUtils::sharedFileUtils()->fullPathForFilename(plistFile->getCString()).c_str();
-    
-    
+    const char* path = CCFileUtils::sharedFileUtils()->fullPathForFilename(plistFile->getCString()).c_str();
+	
 	CCSAXParser parser;
     if (false == parser.init("UTF-8") )
     {
@@ -601,7 +599,7 @@ bool TGSpriterNode::initNodeWithAnimateEidtorXmlAndSpriteFrame(CCString * plistF
 	if (result) {
 		finishedinitNodeWithAnimateEidtorXml();
 	}
-    return result;
+    return result;  
 }
 
 
@@ -610,7 +608,9 @@ TGSpriterConfigNodeDict* TGSpriterNode::loadWithScmlFileAndSpriteFrame(const std
 #if 0
 	
 	useBatchNode_ = true;
-	const char * path = CCFileUtils::sharedFileUtils()->fullPathFromRelativePath(scmlFile.c_str());
+//	const char * path = CCFileUtils::sharedFileUtils()->fullPathFromRelativePath(scmlFile.c_str());
+    const char *path  = CCFileUtils::sharedFi
+    
 	CCSAXParser parser;
     if (false == parser.init("UTF-8") )
     {
@@ -638,15 +638,15 @@ TGSpriterConfigNodeDict* TGSpriterNode::loadWithScmlFileAndSpriteFrame(const std
 	configRoot_=new TGSpriterConfigNodeCC;
 	configRoot_->_name="root";
 	curConfigNode_=configRoot_;
-    
+
 	
-	TGSpriterConfigNodeCC * rootTmp=new TGSpriterConfigNodeCC;
+	TGSpriterConfigNodeCC * rootTmp = new TGSpriterConfigNodeCC;
 	rootTmp->_name="spriterdata";
 	rootTmp->_parent=curConfigNode_;
 	curConfigNode_->_children.push_back(rootTmp);
 	
 //	const char * path = CCFileUtils::sharedFileUtils()->fullPathFromRelativePath(scmlFile.c_str());
-    const char* path = CCFileUtils::sharedFileUtils()->fullPathForFilename(scmlFile.c_str()).c_str();
+    const char *path  = CCFileUtils::sharedFileUtils()->fullPathForFilename(scmlFile.c_str()).c_str();
     
 	TiXmlDocument *document = new TiXmlDocument();
     if(document->LoadFile(path,TIXML_ENCODING_UTF8)){
@@ -689,10 +689,10 @@ TGSpriterConfigNodeDict* TGSpriterNode::loadWithScmlFileAndSpriteFrame(const std
 										
 										if (key.compare("frame") == 0){
 											
-                                            TGSpriterConfigNodeCC * frame=new TGSpriterConfigNodeCC;
-                                            frame->_name=key;
-                                            frame->_parent=anim;
-                                            anim->_children.push_back(frame);
+											 TGSpriterConfigNodeCC * frame=new TGSpriterConfigNodeCC;
+											 frame->_name=key;
+											 frame->_parent=anim;
+											 anim->_children.push_back(frame);
 											
 											for (TiXmlElement * t_text_node = text_node->FirstChildElement(); t_text_node; t_text_node=t_text_node->NextSiblingElement()){
 												
@@ -706,7 +706,7 @@ TGSpriterConfigNodeDict* TGSpriterNode::loadWithScmlFileAndSpriteFrame(const std
 														name->_name=key;
 														name->_value=t_text_node->GetText();
 														name->_parent=frame;
-														frame->_children.push_back(name);
+														frame->_children.push_back(name);	
 													}
 												}
 											}
@@ -755,12 +755,12 @@ TGSpriterConfigNodeDict* TGSpriterNode::loadWithScmlFileAndSpriteFrame(const std
 											key.compare("y") == 0 ||
 											key.compare("width") == 0 ||
 											key.compare("height") == 0 ||
-											key.compare("color") == 0||
+											key.compare("color") == 0|| 
 											key.compare("opacity") == 0||
-											key.compare("angle") == 0||
-											key.compare("xflip") == 0||
+											key.compare("angle") == 0|| 
+											key.compare("xflip") == 0|| 
 											key.compare("yflip") == 0) {
-                                            
+										
 											std::string value=t_text_node->GetText();
 											
 											TGSpriterConfigNodeCC * name=new TGSpriterConfigNodeCC;
@@ -788,7 +788,7 @@ TGSpriterConfigNodeDict* TGSpriterNode::loadWithScmlFileAndSpriteFrame(const std
 	}
 	delete document;
 	document=NULL;
-    
+
 	TGSpriterConfigNodeDict* dict=new TGSpriterConfigNodeDict;
 	dict->setRoot(configRoot_);
 	dict->_type=KSpriteWithSCMLFrame;
@@ -828,7 +828,7 @@ TGSpriterConfigNodeDict*  TGSpriterNode::loadWithAnimateEidtorXmlAndSpriteFrame(
 
 TGSpriterNode * TGSpriterNode::spriterNodeWithDictionaryFrameName(CCString* scmlFile,TGSpriterConfigNodeDict * dict) {
 	
-	TGSpriterNode * node=new TGSpriterNode;
+	TGSpriterNode * node = new TGSpriterNode;
 	node->initNodeWithDictionaryFrameName(scmlFile,dict);
 	node->autorelease();
     return node;
@@ -868,7 +868,7 @@ bool TGSpriterNode::initNodeWithDictionaryFrameName(CCString* scmlFile,TGSpriter
 					return false;
 				}
 				
-				return true;
+				return true;  
 			}
 		}
 	}
@@ -876,8 +876,7 @@ bool TGSpriterNode::initNodeWithDictionaryFrameName(CCString* scmlFile,TGSpriter
 }
 
 TGSpriterNode * TGSpriterNode::spriterNodeWithArmature(CCDictionary2 * info,const float positionReadScale){
-	TGSpriterNode * node=new TGSpriterNode;
-    
+	TGSpriterNode * node = new TGSpriterNode;
 	node->initNodeWithArmatureAndSpriteFrame(info,positionReadScale);
 	node->autorelease();
     return node;
@@ -966,7 +965,7 @@ bool TGSpriterNode::runAnimation(CCString* animation, bool stopFirst) {
         
 		curAnimation_=NULL;
 		curFrame_=NULL;
-        
+ 
         
 		if (animations_) {
 			curAnimation_ = (TGSpriterAnimation *)animations_->objectForKey(new_animation);
@@ -1204,7 +1203,7 @@ TGSpriterFrame* TGSpriterNode::getCurFrame() const {
 }
 
 void TGSpriterNode::Test(){
-    
+
 	if(curFrame_)
     {
 		CCObject* child;
@@ -1213,7 +1212,7 @@ void TGSpriterNode::Test(){
             CCNode* pChild = (CCNode*) child;
 			if (pChild->getTag()!=1000) {
 				if (pChild->isVisible()) {
-					CCLog("TGSpriterNode::Test() %x isVisible:true", pChild);
+					CCLog("TGSpriterNode::Test() %x isVisible:true",pChild);
 				}
 				else {
 					CCLog("TGSpriterNode::Test() %x isVisible:false",pChild);
@@ -1223,7 +1222,7 @@ void TGSpriterNode::Test(){
 			CCLog("TGSpriterNode::Test %x false",pChild->getParent()->getParent());
         }
     }
-    
+
 }
 
 void TGSpriterNode::animationFrameChanged(std::string anim_name,std::string lastframe,std::string name){
@@ -1234,7 +1233,7 @@ void TGSpriterNode::animationFrameChanged(std::string anim_name,std::string last
 }
 
 void TGSpriterNode::animationFinished(std::string name){
-    
+
 	if (spriterNodeDelegate_) {
 		spriterNodeDelegate_->animationFinished(this,name);
 	}
@@ -1246,8 +1245,8 @@ void TGSpriterNode::animationFinished(std::string name){
 	}
 }
 
-#pragma mark CCSAXDelegator ####################################################
-
+#pragma mark CCSAXDelegator
+  
 void TGSpriterNode::startElement(void *ctx, const char *name, const char **atts){
 	CC_UNUSED_PARAM(ctx);
 	TGSpriterConfigNodeCC * newNode=new TGSpriterConfigNodeCC;
@@ -1371,7 +1370,7 @@ void TGSpriterNode::finishedinitNodeWithAnimateEidtorXml(){
 		std::string c_name = c->_name;
 		if (c_name !="animations")
 			continue;
-        std::vector<TGSpriterConfigNodeCC *> &char_children=c->_children;
+			std::vector<TGSpriterConfigNodeCC *> &char_children=c->_children;
 		for (int char_index=0;char_index<char_children.size();char_index++) {
 			TGSpriterConfigNodeCC * charNodes=(TGSpriterConfigNodeCC *)char_children[char_index];
 			std::string char_name = charNodes->_name;
@@ -1421,7 +1420,7 @@ void TGSpriterNode::finishedinitNodeWithAnimateEidtorXml(){
 	if (delfautFrameName) {
 		this->showFrame(delfautFrameName);
 	}
-    
+
 }
 void TGSpriterNode::finishedinitNodeWithScmlFile()
 {
@@ -1518,20 +1517,20 @@ void TGSpriterNode::finishedinitNodeWithScmlFile()
 				CCSize contentSize = sprite->getContentSize();
 				
                 sprite->setAnchorPoint(CCPointMake(0.5f, 0.5f));
-                
+            
                 
                 if (width < 0) {
                     x += width * cos(CC_DEGREES_TO_RADIANS(angle));
                     y -= width * sin(CC_DEGREES_TO_RADIANS(angle));
-                }
+                } 
                 
                 if (height < 0) {
                     x += height * cos(CC_DEGREES_TO_RADIANS(90 + angle));
                     y -= height * sin(CC_DEGREES_TO_RADIANS(90 + angle));
                 }
-                
+
 				sprite->setPosition(CCPointMake(x, y));
-                
+               
 				sprite->setRotation(angle);
 				sprite->setFlipX(flipX);
 				sprite->setFlipY(flipY);
@@ -1592,7 +1591,7 @@ void TGSpriterNode::finishedinitNodeWithScmlFile()
 		//CCLog("%s--->maxSize(%f,%f)",spriterFrameName.c_str(),tempMaxSize.width,tempMaxSize.height);
 	}
 	
-    
+
 	
 	//获取所有的动画信息
 	std::vector<TGSpriterConfigNodeCC *> & c_children=configRoot_->_children[0]->_children;
@@ -1616,8 +1615,8 @@ void TGSpriterNode::finishedinitNodeWithScmlFile()
 				continue;
 			}
 			else if (char_name == "box"){
-                
-				std::vector<TGSpriterConfigNodeCC *> & f_children=charNodes->_children;
+
+				std::vector<TGSpriterConfigNodeCC *> & f_children=charNodes->_children;		
 				
 				CCPoint lefttop_pos;
 				CCPoint rightbottom_pos;
@@ -1627,7 +1626,7 @@ void TGSpriterNode::finishedinitNodeWithScmlFile()
 					TGSpriterConfigNodeCC * spriteProp=(TGSpriterConfigNodeCC *)f_children[f_index];
 					std::string name = spriteProp->_name;
 					std::string value = spriteProp->_value;
-                    
+
 					if (name == "bottom") {
 						rightbottom_pos.y = CCString::create(value)->doubleValue() * GameUtils::UiInterfaceScale();
 					}else if (name == "top") {
@@ -1636,7 +1635,7 @@ void TGSpriterNode::finishedinitNodeWithScmlFile()
 						rightbottom_pos.x = CCString::create(value)->doubleValue() * GameUtils::UiInterfaceScale();
 					} else if (name == "left") {
 						lefttop_pos.x = CCString::create(value)->doubleValue() * GameUtils::UiInterfaceScale();
-                        
+
 					}
 				}
 				
@@ -1647,7 +1646,7 @@ void TGSpriterNode::finishedinitNodeWithScmlFile()
 				TGSpriterAnimation * animation = TGSpriterAnimation::spriterAnimation();
 				
 				std::string animationName = "";
-				std::vector<TGSpriterConfigNodeCC *> & frame_children=charNodes->_children;
+				std::vector<TGSpriterConfigNodeCC *> & frame_children=charNodes->_children;	
 				for (int f_index=0;f_index<frame_children.size();f_index++) {
 					
 					TGSpriterConfigNodeCC * frames=frame_children[f_index];
@@ -1673,7 +1672,7 @@ void TGSpriterNode::finishedinitNodeWithScmlFile()
 								// milliseconds?? should be 1000，
 							    // ps:the spec stats milliseconds, but this doesn't match the reference implementation.
 								frameDuration =CCString::create(fp_value)->doubleValue() / 100.0;
-                                //                                frameDuration =CCString::create(fp_value)->doubleValue();
+//                                frameDuration =CCString::create(fp_value)->doubleValue();
 							}
 						}
 						animation->addFrame((TGSpriterFrame*)frames_->objectForKey(frameName),frameDuration);
@@ -1697,7 +1696,7 @@ void TGSpriterNode::finishedinitNodeWithScmlFile()
 }
 
 void TGSpriterNode::stopAnimation(){
-    
+
     if (armatureAnim_) {
         armatureAnim_->stopAnimation();
         return;
@@ -1717,7 +1716,7 @@ void TGSpriterNode::setVisible(bool bVisible)
 }
 
 void TGSpriterNode::showFrameByIndex(int index){
-    
+
 }
 
 void TGSpriterNode::setShaderProgram(cocos2d::CCGLProgram *var) {
@@ -1777,10 +1776,10 @@ bool TGSpriterNode::isOpacityModifyRGB(void)  {
 void TGSpriterNode::onAnimationEvent(void * animation, const char * eventType, const char * movementID){
     std::string even =  eventType;
     if (armatureAnim_ == animation) {
-        if (even.compare(COMPLETE) == 0) {
+        if (even.compare(sp::COMPLETE) == 0) {
 			if (spriterNodeDelegate_) spriterNodeDelegate_->animationFinished(this, armatureAnim_->currentAnimation());
         }
-        else if (even.compare(MOVEMENT_RUNNING) == 0){
+        else if (even.compare(sp::MOVEMENT_RUNNING) == 0){
             if (armature_lastframe_.compare(armatureAnim_->currentFrame()) != 0) {
                 std::string lastframe = armature_lastframe_;
                 armature_lastframe_ = armatureAnim_->currentFrame();
