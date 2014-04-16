@@ -137,8 +137,15 @@ public:
     const std::string string_rc4(const std::string &text, const std::string &rc4_token);
     
     static void changeOpacity(cocos2d::CCNode* node,GLubyte opacity);
+    
+    static float UiInterfaceScale();
+    
 private:
 //    static void encryptFileItem(unsigned char * aBuffer,int start,int len,const std::string & key);
+    
+    
+
+
 };
 
 #endif

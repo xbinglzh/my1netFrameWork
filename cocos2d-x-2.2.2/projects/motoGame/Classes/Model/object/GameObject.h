@@ -17,7 +17,7 @@
 USING_NS_CC;
 
 class GameObject : public CCNode, public EffectAutoRemoveOnFinishDelegate {
-  
+    
     
 };
 

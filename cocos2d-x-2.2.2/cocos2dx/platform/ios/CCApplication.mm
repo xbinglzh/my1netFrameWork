@@ -28,6 +28,7 @@
 
 #import "CCGeometry.h"
 #import "CCDirectorCaller.h"
+#include "cocos2d.h"
 
 NS_CC_BEGIN
 
@@ -134,5 +135,19 @@ TargetPlatform CCApplication::getTargetPlatform()
         return kTargetIphone;
     }
 }
+
+bool CCApplication::isIpad()
+{
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        if(CC_CONTENT_SCALE_FACTOR() == 2)
+            return false;
+        return true;
+    }
+    
+    return false;
+}
+
+
 
 NS_CC_END

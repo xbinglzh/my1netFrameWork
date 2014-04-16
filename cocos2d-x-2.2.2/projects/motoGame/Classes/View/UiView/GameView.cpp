@@ -12,6 +12,8 @@
 #include "GameBgRollView.h"
 #include "ConstansDef.h"
 #include "ParticleEffect.h"
+#include "AnimNode.h"
+#include "LayoutUtil.h"
 
 #define IsOpenBox2dDebugDraw false
 
@@ -63,7 +65,19 @@ void GameView::initPhysicalWorld() {
     ParticleEffect* effect = ParticleEffect::create("fire.plist");
     CCLOG("effect w : %f, h : %f", effect->getContentSize().width, effect->getContentSize().height);
     this->addChild(effect, 10000, 10000);
-   
+    
+    AnimNode* hero = AnimNode::createFlashAnimNode("hero_1_pao.png", "hero_1_pao.plist", "hero_1_pao.xml", "play", "hero_1_pao");
+    
+    
+//    AnimNode* hero = AnimNode::createFlashAnimNode("xx_m_100041.png", "xx_m_100041.plist", "xx_m_100041.xml",
+//                                                   "walk", "xx_m_100041");
+    
+    hero->runAnimation("play");
+    hero->setContentSize(CCSizeMake(139, 264));
+    this->addChild(hero, 10001, 0);
+//    hero->setPosition(ccp(100, 100));
+    
+    LayoutUtil::layoutParentCenter(hero);
 }
 
 void GameView::update(float dt) {

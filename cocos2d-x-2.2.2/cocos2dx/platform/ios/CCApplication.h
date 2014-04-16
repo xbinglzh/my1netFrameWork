@@ -73,6 +73,8 @@ public:
      @brief Get target platform
      */
     virtual TargetPlatform getTargetPlatform();
+    
+    virtual bool isIpad();
 
 protected:
     static CCApplication * sm_pSharedApplication;
