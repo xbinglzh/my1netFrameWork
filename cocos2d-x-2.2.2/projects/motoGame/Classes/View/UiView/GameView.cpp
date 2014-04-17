@@ -66,7 +66,7 @@ void GameView::initPhysicalWorld() {
     CCLOG("effect w : %f, h : %f", effect->getContentSize().width, effect->getContentSize().height);
     this->addChild(effect, 10000, 10000);
     
-    AnimNode* hero = AnimNode::createFlashAnimNode("hero_1_pao.png", "hero_1_pao.plist", "hero_1_pao.xml", "play", "hero_1_pao");
+    AnimNode* hero = AnimNode::createFlashAnimNode("hero_1.png", "hero_1.plist", "hero_1.xml", "play", "hero_1");
     
     
 //    AnimNode* hero = AnimNode::createFlashAnimNode("xx_m_100041.png", "xx_m_100041.plist", "xx_m_100041.xml",
@@ -77,7 +77,7 @@ void GameView::initPhysicalWorld() {
     this->addChild(hero, 10001, 0);
 //    hero->setPosition(ccp(100, 100));
     
-    LayoutUtil::layoutParentCenter(hero);
+    LayoutUtil::layoutParentBottom(hero);
 }
 
 void GameView::update(float dt) {

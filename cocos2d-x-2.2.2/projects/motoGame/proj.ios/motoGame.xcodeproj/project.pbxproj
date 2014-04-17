@@ -237,12 +237,6 @@
 		605A0B0218FEC4BF001EA057 /* xx_m_204601d.plist in Resources */ = {isa = PBXBuildFile; fileRef = 605A0AFC18FEC4BF001EA057 /* xx_m_204601d.plist */; };
 		605A0B0318FEC4BF001EA057 /* xx_m_204601d.png in Resources */ = {isa = PBXBuildFile; fileRef = 605A0AFD18FEC4BF001EA057 /* xx_m_204601d.png */; };
 		605A0B0418FEC4BF001EA057 /* xx_m_204601d.xml in Resources */ = {isa = PBXBuildFile; fileRef = 605A0AFE18FEC4BF001EA057 /* xx_m_204601d.xml */; };
-		605A0B0818FEC669001EA057 /* hero_1_double_jump.plist in Resources */ = {isa = PBXBuildFile; fileRef = 605A0B0518FEC669001EA057 /* hero_1_double_jump.plist */; };
-		605A0B0918FEC669001EA057 /* hero_1_double_jump.png in Resources */ = {isa = PBXBuildFile; fileRef = 605A0B0618FEC669001EA057 /* hero_1_double_jump.png */; };
-		605A0B0A18FEC669001EA057 /* hero_1_double_jump.xml in Resources */ = {isa = PBXBuildFile; fileRef = 605A0B0718FEC669001EA057 /* hero_1_double_jump.xml */; };
-		605A0B0E18FEC6DB001EA057 /* hero_1_pao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 605A0B0B18FEC6DB001EA057 /* hero_1_pao.plist */; };
-		605A0B0F18FEC6DB001EA057 /* hero_1_pao.png in Resources */ = {isa = PBXBuildFile; fileRef = 605A0B0C18FEC6DB001EA057 /* hero_1_pao.png */; };
-		605A0B1018FEC6DB001EA057 /* hero_1_pao.xml in Resources */ = {isa = PBXBuildFile; fileRef = 605A0B0D18FEC6DB001EA057 /* hero_1_pao.xml */; };
 		608ACBFF18F19AB6005BE5CA /* GameView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 608ACBFD18F19AB6005BE5CA /* GameView.cpp */; };
 		608ACC0718F19F5D005BE5CA /* level1.plhs in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0118F19F5D005BE5CA /* level1.plhs */; };
 		608ACC0818F19F5D005BE5CA /* level1pro.lhproject in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0218F19F5D005BE5CA /* level1pro.lhproject */; };
@@ -1019,12 +1013,6 @@
 		605A0AFC18FEC4BF001EA057 /* xx_m_204601d.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = xx_m_204601d.plist; sourceTree = "<group>"; };
 		605A0AFD18FEC4BF001EA057 /* xx_m_204601d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xx_m_204601d.png; sourceTree = "<group>"; };
 		605A0AFE18FEC4BF001EA057 /* xx_m_204601d.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = xx_m_204601d.xml; sourceTree = "<group>"; };
-		605A0B0518FEC669001EA057 /* hero_1_double_jump.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hero_1_double_jump.plist; sourceTree = "<group>"; };
-		605A0B0618FEC669001EA057 /* hero_1_double_jump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_1_double_jump.png; sourceTree = "<group>"; };
-		605A0B0718FEC669001EA057 /* hero_1_double_jump.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hero_1_double_jump.xml; sourceTree = "<group>"; };
-		605A0B0B18FEC6DB001EA057 /* hero_1_pao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hero_1_pao.plist; sourceTree = "<group>"; };
-		605A0B0C18FEC6DB001EA057 /* hero_1_pao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_1_pao.png; sourceTree = "<group>"; };
-		605A0B0D18FEC6DB001EA057 /* hero_1_pao.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hero_1_pao.xml; sourceTree = "<group>"; };
 		605A0B1E18FED19A001EA057 /* DoubleNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNumber.h; sourceTree = "<group>"; };
 		608ACBFD18F19AB6005BE5CA /* GameView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameView.cpp; sourceTree = "<group>"; };
 		608ACBFE18F19AB6005BE5CA /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
@@ -2872,12 +2860,6 @@
 		CE7BA0D618DFF76E00FD2DAE /* anim */ = {
 			isa = PBXGroup;
 			children = (
-				605A0B0B18FEC6DB001EA057 /* hero_1_pao.plist */,
-				605A0B0C18FEC6DB001EA057 /* hero_1_pao.png */,
-				605A0B0D18FEC6DB001EA057 /* hero_1_pao.xml */,
-				605A0B0518FEC669001EA057 /* hero_1_double_jump.plist */,
-				605A0B0618FEC669001EA057 /* hero_1_double_jump.png */,
-				605A0B0718FEC669001EA057 /* hero_1_double_jump.xml */,
 				605A0AF918FEC4BF001EA057 /* xx_m_100041.plist */,
 				605A0AFA18FEC4BF001EA057 /* xx_m_100041.png */,
 				605A0AFB18FEC4BF001EA057 /* xx_m_100041.xml */,
@@ -3226,7 +3208,6 @@
 				60C18A8418FD718D00AC2464 /* fire1.png in Resources */,
 				CEBCE57F18EBB7F400691E3B /* kala_level.plhs in Resources */,
 				60C18A8218FD718D00AC2464 /* fire.plist in Resources */,
-				605A0B0E18FEC6DB001EA057 /* hero_1_pao.plist in Resources */,
 				605A0AF818FEC214001EA057 /* hero_1.xml in Resources */,
 				CE7BA0CE18DFF72A00FD2DAE /* Default@2x.png in Resources */,
 				608ACC0918F19F5D005BE5CA /* levelbg1.pshs in Resources */,
@@ -3239,7 +3220,6 @@
 				60307E7618EFB9AB00A0F8B7 /* res_crystal.png in Resources */,
 				CE6C9B3F18E065D300B6711E /* fileLookup.plist in Resources */,
 				CE7BA04D18DFDA3400FD2DAE /* sconscript in Resources */,
-				605A0B0A18FEC669001EA057 /* hero_1_double_jump.xml in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				CE7BA04818DFDA3400FD2DAE /* json_internalmap.inl in Resources */,
 				60C18A8518FD718D00AC2464 /* particle-fire.png in Resources */,
@@ -3260,7 +3240,6 @@
 				CEBCE58218EBB7F400691E3B /* kalasprite_kalaSheet.png in Resources */,
 				605A0B0418FEC4BF001EA057 /* xx_m_204601d.xml in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
-				605A0B0F18FEC6DB001EA057 /* hero_1_pao.png in Resources */,
 				605A0B0318FEC4BF001EA057 /* xx_m_204601d.png in Resources */,
 				608ACC0818F19F5D005BE5CA /* level1pro.lhproject in Resources */,
 				CE6C9B4018E065D300B6711E /* XXUiLoginViewBg.plist in Resources */,
@@ -3268,12 +3247,9 @@
 				CE7BA0D518DFF72A00FD2DAE /* Icon-76.png in Resources */,
 				605A0B0218FEC4BF001EA057 /* xx_m_204601d.plist in Resources */,
 				608ACC0C18F19F5D005BE5CA /* levelbg1_UntitledSheet.png in Resources */,
-				605A0B0818FEC669001EA057 /* hero_1_double_jump.plist in Resources */,
 				CE6C9B4318E065D300B6711E /* ui.ccbproj in Resources */,
 				CEBCE54D18EABE5100691E3B /* LICENSE_LevelHelper.txt in Resources */,
-				605A0B1018FEC6DB001EA057 /* hero_1_pao.xml in Resources */,
 				CE7BA0D118DFF72A00FD2DAE /* Icon-144.png in Resources */,
-				605A0B0918FEC669001EA057 /* hero_1_double_jump.png in Resources */,
 				CE7BA0CD18DFF72A00FD2DAE /* Default.png in Resources */,
 				CEBCE58018EBB7F400691E3B /* kalasprite.pshs in Resources */,
 				60C18A9218FD85D300AC2464 /* x_config.plist in Resources */,
