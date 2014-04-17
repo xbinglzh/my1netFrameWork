@@ -243,7 +243,6 @@
 		605A0B0E18FEC6DB001EA057 /* hero_1_pao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 605A0B0B18FEC6DB001EA057 /* hero_1_pao.plist */; };
 		605A0B0F18FEC6DB001EA057 /* hero_1_pao.png in Resources */ = {isa = PBXBuildFile; fileRef = 605A0B0C18FEC6DB001EA057 /* hero_1_pao.png */; };
 		605A0B1018FEC6DB001EA057 /* hero_1_pao.xml in Resources */ = {isa = PBXBuildFile; fileRef = 605A0B0D18FEC6DB001EA057 /* hero_1_pao.xml */; };
-		605A0B1F18FED19A001EA057 /* CCDictionary2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A0B1C18FED19A001EA057 /* CCDictionary2.cpp */; };
 		608ACBFF18F19AB6005BE5CA /* GameView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 608ACBFD18F19AB6005BE5CA /* GameView.cpp */; };
 		608ACC0718F19F5D005BE5CA /* level1.plhs in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0118F19F5D005BE5CA /* level1.plhs */; };
 		608ACC0818F19F5D005BE5CA /* level1pro.lhproject in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0218F19F5D005BE5CA /* level1pro.lhproject */; };
@@ -1026,8 +1025,6 @@
 		605A0B0B18FEC6DB001EA057 /* hero_1_pao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hero_1_pao.plist; sourceTree = "<group>"; };
 		605A0B0C18FEC6DB001EA057 /* hero_1_pao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_1_pao.png; sourceTree = "<group>"; };
 		605A0B0D18FEC6DB001EA057 /* hero_1_pao.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hero_1_pao.xml; sourceTree = "<group>"; };
-		605A0B1C18FED19A001EA057 /* CCDictionary2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCDictionary2.cpp; sourceTree = "<group>"; };
-		605A0B1D18FED19A001EA057 /* CCDictionary2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDictionary2.h; sourceTree = "<group>"; };
 		605A0B1E18FED19A001EA057 /* DoubleNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNumber.h; sourceTree = "<group>"; };
 		608ACBFD18F19AB6005BE5CA /* GameView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameView.cpp; sourceTree = "<group>"; };
 		608ACBFE18F19AB6005BE5CA /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
@@ -2292,8 +2289,6 @@
 		605A0B1B18FED19A001EA057 /* cocos2dxExt */ = {
 			isa = PBXGroup;
 			children = (
-				605A0B1C18FED19A001EA057 /* CCDictionary2.cpp */,
-				605A0B1D18FED19A001EA057 /* CCDictionary2.h */,
 				605A0B1E18FED19A001EA057 /* DoubleNumber.h */,
 			);
 			path = cocos2dxExt;
@@ -3401,7 +3396,6 @@
 				15A3D9AD1682F7F9002FB0C5 /* cpSpaceHash.c in Sources */,
 				CE7BA05418DFDA3400FD2DAE /* SPDataReaderHelper.cpp in Sources */,
 				15A3D9AE1682F7F9002FB0C5 /* cpSpaceQuery.c in Sources */,
-				605A0B1F18FED19A001EA057 /* CCDictionary2.cpp in Sources */,
 				15A3D9AF1682F7F9002FB0C5 /* cpSpaceStep.c in Sources */,
 				CE7BA04018DFDA3400FD2DAE /* SPShaderDisplayFactory.cpp in Sources */,
 				15A3D9B01682F7F9002FB0C5 /* cpSpatialIndex.c in Sources */,
