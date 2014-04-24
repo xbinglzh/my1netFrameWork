@@ -237,6 +237,8 @@
 		605A0B0218FEC4BF001EA057 /* xx_m_204601d.plist in Resources */ = {isa = PBXBuildFile; fileRef = 605A0AFC18FEC4BF001EA057 /* xx_m_204601d.plist */; };
 		605A0B0318FEC4BF001EA057 /* xx_m_204601d.png in Resources */ = {isa = PBXBuildFile; fileRef = 605A0AFD18FEC4BF001EA057 /* xx_m_204601d.png */; };
 		605A0B0418FEC4BF001EA057 /* xx_m_204601d.xml in Resources */ = {isa = PBXBuildFile; fileRef = 605A0AFE18FEC4BF001EA057 /* xx_m_204601d.xml */; };
+		6076719A19058010006AD9AD /* UiHomeView.ccb in Resources */ = {isa = PBXBuildFile; fileRef = 6076719919058010006AD9AD /* UiHomeView.ccb */; };
+		6076719C19058017006AD9AD /* UiHomeView.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 6076719B19058017006AD9AD /* UiHomeView.ccbi */; };
 		60776A051903573000A07AED /* back_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 607769E21903573000A07AED /* back_1.png */; };
 		60776A061903573000A07AED /* back_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 607769E31903573000A07AED /* back_2.png */; };
 		60776A071903573000A07AED /* back_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 607769E41903573000A07AED /* back_3.png */; };
@@ -271,6 +273,7 @@
 		60776A241903573000A07AED /* shu.png in Resources */ = {isa = PBXBuildFile; fileRef = 60776A031903573000A07AED /* shu.png */; };
 		60776A251903573000A07AED /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 60776A041903573000A07AED /* star.png */; };
 		60776A401903578400A07AED /* CCSpriteExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60776A3E1903578400A07AED /* CCSpriteExt.cpp */; };
+		60776A46190360A500A07AED /* UiHomeView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60776A44190360A500A07AED /* UiHomeView.cpp */; };
 		608ACBFF18F19AB6005BE5CA /* GameView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 608ACBFD18F19AB6005BE5CA /* GameView.cpp */; };
 		608ACC0718F19F5D005BE5CA /* level1.plhs in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0118F19F5D005BE5CA /* level1.plhs */; };
 		608ACC0818F19F5D005BE5CA /* level1pro.lhproject in Resources */ = {isa = PBXBuildFile; fileRef = 608ACC0218F19F5D005BE5CA /* level1pro.lhproject */; };
@@ -303,9 +306,7 @@
 		CE6C9B3F18E065D300B6711E /* fileLookup.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3718E065D300B6711E /* fileLookup.plist */; };
 		CE6C9B4018E065D300B6711E /* XXUiLoginViewBg.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3918E065D300B6711E /* XXUiLoginViewBg.plist */; };
 		CE6C9B4118E065D300B6711E /* XXUiLoginViewBg.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3A18E065D300B6711E /* XXUiLoginViewBg.png */; };
-		CE6C9B4218E065D300B6711E /* XXUiLoadingView.ccb in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3C18E065D300B6711E /* XXUiLoadingView.ccb */; };
 		CE6C9B4318E065D300B6711E /* ui.ccbproj in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3D18E065D300B6711E /* ui.ccbproj */; };
-		CE6C9B4418E065D300B6711E /* XXUiLoadingView.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = CE6C9B3E18E065D300B6711E /* XXUiLoadingView.ccbi */; };
 		CE73522118EC09E30059BAA1 /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE73521F18EC09E30059BAA1 /* GLES-Render.cpp */; };
 		CE7B9F9618DFD23800FD2DAE /* LayoutUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7B9F9418DFD23800FD2DAE /* LayoutUtil.cpp */; };
 		CE7B9FA818DFD2D400FD2DAE /* CCShaderEffectSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7B9FA318DFD2D400FD2DAE /* CCShaderEffectSprite.cpp */; };
@@ -1048,6 +1049,8 @@
 		605A0AFD18FEC4BF001EA057 /* xx_m_204601d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xx_m_204601d.png; sourceTree = "<group>"; };
 		605A0AFE18FEC4BF001EA057 /* xx_m_204601d.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = xx_m_204601d.xml; sourceTree = "<group>"; };
 		605A0B1E18FED19A001EA057 /* DoubleNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNumber.h; sourceTree = "<group>"; };
+		6076719919058010006AD9AD /* UiHomeView.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = UiHomeView.ccb; sourceTree = "<group>"; };
+		6076719B19058017006AD9AD /* UiHomeView.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = UiHomeView.ccbi; sourceTree = "<group>"; };
 		607769E21903573000A07AED /* back_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_1.png; sourceTree = "<group>"; };
 		607769E31903573000A07AED /* back_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_2.png; sourceTree = "<group>"; };
 		607769E41903573000A07AED /* back_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_3.png; sourceTree = "<group>"; };
@@ -1083,6 +1086,8 @@
 		60776A041903573000A07AED /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		60776A3E1903578400A07AED /* CCSpriteExt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSpriteExt.cpp; sourceTree = "<group>"; };
 		60776A3F1903578400A07AED /* CCSpriteExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpriteExt.h; sourceTree = "<group>"; };
+		60776A44190360A500A07AED /* UiHomeView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UiHomeView.cpp; sourceTree = "<group>"; };
+		60776A45190360A500A07AED /* UiHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiHomeView.h; sourceTree = "<group>"; };
 		608ACBFD18F19AB6005BE5CA /* GameView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameView.cpp; sourceTree = "<group>"; };
 		608ACBFE18F19AB6005BE5CA /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
 		608ACC0118F19F5D005BE5CA /* level1.plhs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1.plhs; sourceTree = "<group>"; };
@@ -1129,9 +1134,7 @@
 		CE6C9B3718E065D300B6711E /* fileLookup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fileLookup.plist; sourceTree = "<group>"; };
 		CE6C9B3918E065D300B6711E /* XXUiLoginViewBg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = XXUiLoginViewBg.plist; sourceTree = "<group>"; };
 		CE6C9B3A18E065D300B6711E /* XXUiLoginViewBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XXUiLoginViewBg.png; sourceTree = "<group>"; };
-		CE6C9B3C18E065D300B6711E /* XXUiLoadingView.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = XXUiLoadingView.ccb; sourceTree = "<group>"; };
 		CE6C9B3D18E065D300B6711E /* ui.ccbproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ui.ccbproj; sourceTree = "<group>"; };
-		CE6C9B3E18E065D300B6711E /* XXUiLoadingView.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = XXUiLoadingView.ccbi; sourceTree = "<group>"; };
 		CE6C9B4918E11C5B00B6711E /* FontStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontStyle.h; sourceTree = "<group>"; };
 		CE73521F18EC09E30059BAA1 /* GLES-Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "GLES-Render.cpp"; sourceTree = "<group>"; };
 		CE73522018EC09E30059BAA1 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
@@ -2482,6 +2485,8 @@
 		CE6C9B3218E05E2700B6711E /* UiView */ = {
 			isa = PBXGroup;
 			children = (
+				60776A44190360A500A07AED /* UiHomeView.cpp */,
+				60776A45190360A500A07AED /* UiHomeView.h */,
 				CE6C9B3318E05E4D00B6711E /* HelloView.cpp */,
 				CE6C9B3418E05E4D00B6711E /* HelloView.h */,
 				60926E4618E8747A00B9ABAE /* RollBgView.cpp */,
@@ -2497,11 +2502,11 @@
 		CE6C9B3618E065D300B6711E /* ui_layout */ = {
 			isa = PBXGroup;
 			children = (
+				6076719B19058017006AD9AD /* UiHomeView.ccbi */,
 				CE6C9B3718E065D300B6711E /* fileLookup.plist */,
 				CE6C9B3818E065D300B6711E /* resources-iphonehd */,
 				CE6C9B3B18E065D300B6711E /* source */,
 				CE6C9B3D18E065D300B6711E /* ui.ccbproj */,
-				CE6C9B3E18E065D300B6711E /* XXUiLoadingView.ccbi */,
 			);
 			path = ui_layout;
 			sourceTree = "<group>";
@@ -2544,7 +2549,7 @@
 		CE6C9B3B18E065D300B6711E /* source */ = {
 			isa = PBXGroup;
 			children = (
-				CE6C9B3C18E065D300B6711E /* XXUiLoadingView.ccb */,
+				6076719919058010006AD9AD /* UiHomeView.ccb */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -3325,7 +3330,6 @@
 				605A0B0018FEC4BF001EA057 /* xx_m_100041.png in Resources */,
 				605A0AF718FEC214001EA057 /* hero_1.png in Resources */,
 				CE6C9B4118E065D300B6711E /* XXUiLoginViewBg.png in Resources */,
-				CE6C9B4218E065D300B6711E /* XXUiLoadingView.ccb in Resources */,
 				60C18A8418FD718D00AC2464 /* fire1.png in Resources */,
 				CEBCE57F18EBB7F400691E3B /* kala_level.plhs in Resources */,
 				60776A141903573000A07AED /* kalasprite_kalaSheet-hd.png in Resources */,
@@ -3347,6 +3351,7 @@
 				60776A211903573000A07AED /* road_4.png in Resources */,
 				CE6C9B3F18E065D300B6711E /* fileLookup.plist in Resources */,
 				60776A131903573000A07AED /* kalasprite.pshs in Resources */,
+				6076719C19058017006AD9AD /* UiHomeView.ccbi in Resources */,
 				60776A161903573000A07AED /* level1.plhs in Resources */,
 				CE7BA04D18DFDA3400FD2DAE /* sconscript in Resources */,
 				60776A0D1903573000A07AED /* enemy.png in Resources */,
@@ -3354,6 +3359,7 @@
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				60776A061903573000A07AED /* back_2.png in Resources */,
 				CE7BA04818DFDA3400FD2DAE /* json_internalmap.inl in Resources */,
+				6076719A19058010006AD9AD /* UiHomeView.ccb in Resources */,
 				60C18A8518FD718D00AC2464 /* particle-fire.png in Resources */,
 				60C18A8318FD718D00AC2464 /* fire.png in Resources */,
 				608ACC0A18F19F5D005BE5CA /* levelbg1_UntitledSheet-hd.png in Resources */,
@@ -3365,7 +3371,6 @@
 				60776A0B1903573000A07AED /* backA.png in Resources */,
 				60776A1C1903573000A07AED /* newgameA.png in Resources */,
 				CEBCE58118EBB7F400691E3B /* kalasprite_kalaSheet-hd.png in Resources */,
-				CE6C9B4418E065D300B6711E /* XXUiLoadingView.ccbi in Resources */,
 				60C18A9418FD85EF00AC2464 /* x_anim.plist in Resources */,
 				60776A151903573000A07AED /* kalasprite_kalaSheet.png in Resources */,
 				605A0AFF18FEC4BF001EA057 /* xx_m_100041.plist in Resources */,
@@ -3511,6 +3516,7 @@
 				15A3D9A31682F7F9002FB0C5 /* cpArray.c in Sources */,
 				15A3D9A41682F7F9002FB0C5 /* cpBB.c in Sources */,
 				15A3D9A51682F7F9002FB0C5 /* cpBBTree.c in Sources */,
+				60776A46190360A500A07AED /* UiHomeView.cpp in Sources */,
 				15A3D9A61682F7F9002FB0C5 /* cpBody.c in Sources */,
 				15A3D9A71682F7F9002FB0C5 /* cpCollision.c in Sources */,
 				CE7BA02818DFDA3400FD2DAE /* SPAnimation.cpp in Sources */,
@@ -3756,6 +3762,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
+				GENERATE_MASTER_OBJECT_FILE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../CocosDenshion/include",
 					"\"$(SRCROOT)/../../../external/chipmunk/include/constraints\"",
@@ -3779,7 +3786,9 @@
 					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../../../external/libwebsockets/ios/lib\"",
 				);
-				OTHER_CFLAGS = "-O2";
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
+				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_NAME = motoGame;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -3808,6 +3817,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
+				GENERATE_MASTER_OBJECT_FILE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../CocosDenshion/include",
 					"\"$(SRCROOT)/../../../external/chipmunk/include/constraints\"",
@@ -3831,6 +3841,7 @@
 					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../../../external/libwebsockets/ios/lib\"",
 				);
+				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_NAME = motoGame;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

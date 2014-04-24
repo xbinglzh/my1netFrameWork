@@ -19,6 +19,11 @@ NS_CC_EXT_BEGIN
 #define CCB_SELECTORRESOLVER_CALLFUNC_GLUE(TARGET, SELECTORNAME, METHOD) if(pTarget == TARGET && strcmp(pSelectorName, SELECTORNAME) == 0) { \
     return callfuncN_selector(METHOD); \
 }
+
+#define CCB_SELECTORRESOLVER_CCMENUITEM_GLUE2(CLAZZ, METHOD) if(pTarget == this && strcmp(pSelectorName, #METHOD) == 0) { \
+return menu_selector(CLAZZ::METHOD); \
+}
+
 /**
  *  @js NA
  *  @lua NA

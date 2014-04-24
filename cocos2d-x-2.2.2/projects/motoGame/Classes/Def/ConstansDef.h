@@ -27,6 +27,7 @@ enum ESceneId {
     K_SCENE_LOGIN                   = 102,//登录
     K_SCENE_ROLLVIEW                = 103,//测试
     K_SCENE_GAMEVIEW                = 201,//游戏场景
+    K_SCENE_UIHOME                  = 104,// 开始
 };
 
 enum BodyTag {

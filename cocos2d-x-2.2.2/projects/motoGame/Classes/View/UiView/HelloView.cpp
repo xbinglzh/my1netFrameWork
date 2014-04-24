@@ -26,7 +26,7 @@ UiLoadingView::~UiLoadingView() {
 }
 
 UiLoadingView* UiLoadingView::createFromCCB(){
-    return (UiLoadingView *)loadClassFromCCBI("UiLoadingView",
+    return (UiLoadingView *)loadClassFromCCBI("XXUiLoadingView",
                                                 "XXUiLoadingView.ccbi",
                                                 UiLoadingViewLoader::loader(),
                                                 NULL);
@@ -53,6 +53,6 @@ SEL_CCControlHandler UiLoadingView::onResolveCCBCCControlSelector(CCObject * pTa
 }
 
 bool UiLoadingView::onAssignCCBMemberVariable(CCObject * pTarget, const char * pMemberVariableName,  CCNode * pNode){
-    CCB_MEMBERVARIABLEASSIGNER_GLUE2(CCSprite*, bgSprite);
+//    CCB_MEMBERVARIABLEASSIGNER_GLUE2(CCSprite*, bgSprite);
     return false;
 }

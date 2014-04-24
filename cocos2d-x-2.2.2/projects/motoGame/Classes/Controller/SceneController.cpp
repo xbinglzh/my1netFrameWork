@@ -10,10 +10,10 @@
 #include "HelloWorldScene.h"
 #include "RollBgView.h"
 #include "GameView.h"
+#include "UiHomeView.h"
+#include "HelloView.h"
 
 static SceneController* _sharedInstance=NULL;
-
-
 
 SceneController::SceneController() : _director(NULL), _currentSceneId(K_SCENE_UNKNOW) , _currentRunningSceneId(K_SCENE_UNKNOW){
     
@@ -90,6 +90,10 @@ void SceneController::switchSence(const ESceneId sceneId, cocos2d::CCObject* par
             break;
         case K_SCENE_GAMEVIEW:
             layer = GameView::create();
+            break;
+        case K_SCENE_UIHOME:
+//            layer = UiLoadingView::createFromCCB();
+            layer = UiHomeView::createFromCCB();
             break;
         default:
             CCAssert(false, "GameController::switchSence sceneId is invalid..");
