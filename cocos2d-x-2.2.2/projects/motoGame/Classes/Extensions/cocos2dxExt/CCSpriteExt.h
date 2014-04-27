@@ -13,12 +13,12 @@
 
 USING_NS_CC;
 
-class  CCSpriteExt : public CCSprite
-{
+class  CCSpriteExt : public CCSprite {
 public:
     CCSpriteExt();
     virtual ~CCSpriteExt();
     static CCSpriteExt* create(const char *pszFileName);
+    bool initWithFile(const char *pszFilename);
 private:
     static std::map<std::string, int32_t> _textureRefs;
 private:

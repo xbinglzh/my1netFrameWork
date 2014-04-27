@@ -91,64 +91,63 @@ const char* get0CharString(const int32_t number)
     return CCString::createWithFormat("%02d", number)->getCString();
 }
 
-std::string GameUtils::getTimeString(boost::posix_time::ptime& timestamp, const char* charT)
-{    
-    std::string ts = boost::gregorian::to_iso_extended_string_type<char>(timestamp.date());
-
-    if(!timestamp.time_of_day().is_special())
-    {
-        int h = timestamp.time_of_day().hours();
-        int m = timestamp.time_of_day().minutes();
-        int s = timestamp.time_of_day().seconds();
-
-        std::string hms = get0CharString(h);
-        hms = hms + ':' + get0CharString(m) + ':' + get0CharString(s);
-        
-        if (charT) 
-            return ts + *charT + hms;
-        else
-            return ts + ' ' + hms;
-        
-//        if (charT) 
-//            return ts + *charT + boost::posix_time::to_simple_string_type<char>(timestamp.time_of_day());
+//std::string GameUtils::getTimeString(boost::posix_time::ptime& timestamp, const char* charT)
+//{
+//    std::string ts = boost::gregorian::to_iso_extended_string_type<char>(timestamp.date());
+//
+//    if(!timestamp.time_of_day().is_special()) {
+//        int h = timestamp.time_of_day().hours();
+//        int m = timestamp.time_of_day().minutes();
+//        int s = timestamp.time_of_day().seconds();
+//
+//        std::string hms = get0CharString(h);
+//        hms = hms + ':' + get0CharString(m) + ':' + get0CharString(s);
+//
+//        if (charT)
+//            return ts + *charT + hms;
 //        else
-//            return ts + ' ' + boost::posix_time::to_simple_string_type<char>(timestamp.time_of_day());
-    }
-    else 
-        return ts;
-}
+//            return ts + ' ' + hms;
+//
+////        if (charT)
+////            return ts + *charT + boost::posix_time::to_simple_string_type<char>(timestamp.time_of_day());
+////        else
+////            return ts + ' ' + boost::posix_time::to_simple_string_type<char>(timestamp.time_of_day());
+//    } else {
+//        return ts;
+//    }
+//}
 
-std::string GameUtils::getTimeStringm(boost::posix_time::ptime& timestamp, const char* charT)
-{
-    std::string ts = boost::gregorian::to_iso_extended_string_type<char>(timestamp.date());
-    if(!timestamp.time_of_day().is_special()) {
-        int h = timestamp.time_of_day().hours();
-        std::string hm = GameUtils::GXCCStringMake(h)->getCString();
-        std::stringstream s;
-        if (charT) {
-            s << ts << charT << hm;
-            return s.str();
-        } else {
-            s << ts << " " << hm;
-            return s.str();
-        }
-    } else {
-        return ts;
-    }
-}
-
-std::string GameUtils::getTimeString(boost::gregorian::date& date, const char* charT)
-{
-    if (charT)
-    {
-        boost::gregorian::date::ymd_type ymd = date.year_month_day();
-        std::string ts = get0CharString(ymd.year);
-        ts = ts + *charT + get0CharString(ymd.month);
-        return ts + *charT + get0CharString(ymd.day);
-    }
-    else
-        return boost::gregorian::to_iso_extended_string_type<char>(date);
-}
+//std::string GameUtils::getTimeStringm(boost::posix_time::ptime& timestamp, const char* charT)
+//{
+//    std::string ts = boost::gregorian::to_iso_extended_string_type<char>(timestamp.date());
+//    if(!timestamp.time_of_day().is_special()) {
+//        int h = timestamp.time_of_day().hours();
+//        std::string hm = GameUtils::GXCCStringMake(h)->getCString();
+//        std::stringstream s;
+//        if (charT) {
+//            s << ts << charT << hm;
+//            return s.str();
+//        } else {
+//            s << ts << " " << hm;
+//            return s.str();
+//        }
+//    } else {
+//        return ts;
+//    }
+//}
+//
+//std::string GameUtils::getTimeString(boost::gregorian::date& date, const char* charT)
+//{
+//    if (charT)
+//    {
+//        boost::gregorian::date::ymd_type ymd = date.year_month_day();
+//        std::string ts = get0CharString(ymd.year);
+//        ts = ts + *charT + get0CharString(ymd.month);
+//        return ts + *charT + get0CharString(ymd.day);
+//    }
+//    else
+//        return boost::gregorian::to_iso_extended_string_type<char>(date);
+//}
 
 std::wstring GameUtils::UTF2Uni(const char* src, std::wstring &t)
 {
@@ -531,50 +530,49 @@ std::string GameUtils::base64_decode(std::string const& encoded_string) {
 }
 
 
-
-boost::posix_time::ptime GameUtils::ptime_from_epoch(const unsigned long long ms) {
-    boost::posix_time::ptime ptime_time(boost::gregorian::date(1970, 1, 1));
-    return ptime_time + boost::posix_time::milliseconds(ms);
-}
-
-boost::posix_time::ptime GameUtils::beijing_ptime_from_epoch(const unsigned long long ms) {
-    boost::posix_time::ptime ptime_time(ptime_from_epoch(ms));
-    return boost::date_time::local_adjustor<boost::posix_time::ptime, +8, boost::posix_time::no_dst>::utc_to_local(ptime_time);
-}
-
-boost::posix_time::ptime GameUtils::local_ptime_from_epoch(unsigned long long ms) {
-    time_t utcSecondsSinceEpoch = static_cast<time_t>(ms / 1000);
-    tm* localAsTm = localtime(&utcSecondsSinceEpoch);
-    return boost::posix_time::ptime(boost::gregorian::date(localAsTm->tm_year + 1900, 
-                                                           localAsTm->tm_mon + 1, 
-                                                           localAsTm->tm_mday), 
-                                    boost::posix_time::time_duration(localAsTm->tm_hour,
-                                                                     localAsTm->tm_min,
-                                                                     localAsTm->tm_sec));
-}
-
-std::string GameUtils::getLastTime(std::string time1,std::string time2)
-{
-    if(time1.length() == 0)
-        return time2;
-    if(time2.length() == 0)
-        return time1;
-    unsigned long long time_long1 = boost::lexical_cast<unsigned long long>(time1);
-    unsigned long long time_long2 = boost::lexical_cast<unsigned long long>(time2);
-    if(time_long1>time_long2)
-        return time1;
-    return time2;
-}
-
-int64_t GameUtils::local_epoch_time() {
-    using boost::posix_time::ptime;
-    using namespace boost::gregorian;
-    
-    boost::posix_time::ptime pt = boost::posix_time::microsec_clock::local_time();
-    boost::posix_time::ptime ptime_time(boost::gregorian::date(1970, 1, 1));
-    
-    return (pt - ptime_time).total_milliseconds();
-}
+//boost::posix_time::ptime GameUtils::ptime_from_epoch(const unsigned long long ms) {
+//    boost::posix_time::ptime ptime_time(boost::gregorian::date(1970, 1, 1));
+//    return ptime_time + boost::posix_time::milliseconds(ms);
+//}
+//
+//boost::posix_time::ptime GameUtils::beijing_ptime_from_epoch(const unsigned long long ms) {
+//    boost::posix_time::ptime ptime_time(ptime_from_epoch(ms));
+//    return boost::date_time::local_adjustor<boost::posix_time::ptime, +8, boost::posix_time::no_dst>::utc_to_local(ptime_time);
+//}
+//
+//boost::posix_time::ptime GameUtils::local_ptime_from_epoch(unsigned long long ms) {
+//    time_t utcSecondsSinceEpoch = static_cast<time_t>(ms / 1000);
+//    tm* localAsTm = localtime(&utcSecondsSinceEpoch);
+//    return boost::posix_time::ptime(boost::gregorian::date(localAsTm->tm_year + 1900, 
+//                                                           localAsTm->tm_mon + 1, 
+//                                                           localAsTm->tm_mday), 
+//                                    boost::posix_time::time_duration(localAsTm->tm_hour,
+//                                                                     localAsTm->tm_min,
+//                                                                     localAsTm->tm_sec));
+//}
+//
+//std::string GameUtils::getLastTime(std::string time1,std::string time2)
+//{
+//    if(time1.length() == 0)
+//        return time2;
+//    if(time2.length() == 0)
+//        return time1;
+//    unsigned long long time_long1 = boost::lexical_cast<unsigned long long>(time1);
+//    unsigned long long time_long2 = boost::lexical_cast<unsigned long long>(time2);
+//    if(time_long1>time_long2)
+//        return time1;
+//    return time2;
+//}
+//
+//int64_t GameUtils::local_epoch_time() {
+//    using boost::posix_time::ptime;
+//    using namespace boost::gregorian;
+//    
+//    boost::posix_time::ptime pt = boost::posix_time::microsec_clock::local_time();
+//    boost::posix_time::ptime ptime_time(boost::gregorian::date(1970, 1, 1));
+//    
+//    return (pt - ptime_time).total_milliseconds();
+//}
 
 
 std::string GameUtils::timeToString(const float secondsElapsed){
@@ -797,4 +795,3 @@ float GameUtils::UiInterfaceScale() {
     }
     return scale;
 }
-

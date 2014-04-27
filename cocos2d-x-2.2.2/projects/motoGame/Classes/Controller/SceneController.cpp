@@ -12,6 +12,7 @@
 #include "GameView.h"
 #include "UiHomeView.h"
 #include "HelloView.h"
+#include "BattleView.h"
 
 static SceneController* _sharedInstance=NULL;
 
@@ -95,6 +96,11 @@ void SceneController::switchSence(const ESceneId sceneId, cocos2d::CCObject* par
 //            layer = UiLoadingView::createFromCCB();
             layer = UiHomeView::createFromCCB();
             break;
+            
+        case K_SCENE_BATTLEVIEW:
+            layer = BattleView::create();
+            break;
+            
         default:
             CCAssert(false, "GameController::switchSence sceneId is invalid..");
 			break;

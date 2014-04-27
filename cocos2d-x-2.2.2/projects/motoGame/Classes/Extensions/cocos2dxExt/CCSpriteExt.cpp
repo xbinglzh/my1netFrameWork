@@ -7,8 +7,8 @@
 //
 
 #include "CCSpriteExt.h"
-
 std::map<std::string, int32_t> CCSpriteExt::_textureRefs;
+
 CCSpriteExt::CCSpriteExt(){
 
 }
@@ -26,17 +26,25 @@ CCSpriteExt::~CCSpriteExt(){
     }
 }
 
+bool CCSpriteExt::initWithFile(const char *pszFilename)
+{
+    if(CCSprite::initWithFile(pszFilename)) {
+        std::map<std::string, int32_t>::iterator iter =  _textureRefs.find(pszFilename);
+        if (iter != _textureRefs.end()) {
+            iter->second ++;
+        }else{
+            _textureRefs[pszFilename] = 1;
+        }
+        this->_texturefileName = pszFilename;
+        return true;
+    }
+    return false;
+}
+
 CCSpriteExt* CCSpriteExt::create(const char *pszFileName){
     CCSpriteExt *pobSprite = new CCSpriteExt();
     if (pobSprite && pobSprite->initWithFile(pszFileName))
     {
-        std::map<std::string, int32_t>::iterator iter =  _textureRefs.find(pszFileName);
-        if (iter != _textureRefs.end()) {
-            iter->second ++;
-        }else{
-            _textureRefs[pszFileName] = 1;
-        }
-        pobSprite->_texturefileName = pszFileName;
         pobSprite->autorelease();
         return pobSprite;
     }

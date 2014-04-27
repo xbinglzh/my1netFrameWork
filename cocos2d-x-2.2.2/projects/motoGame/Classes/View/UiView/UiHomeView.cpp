@@ -7,6 +7,7 @@
 //
 
 #include "UiHomeView.h"
+#include "SceneController.h"
 
 UiHomeView::UiHomeView() {
     
@@ -17,10 +18,8 @@ UiHomeView::~UiHomeView() {
 }
 
 UiHomeView* UiHomeView::createFromCCB() {
-    return (UiHomeView *)loadClassFromCCBI("UiHomeView",
-                                              "XXUiHomeView.ccbi",
-                                              UiHomeViewLoader::loader(),
-                                              NULL);
+    return (UiHomeView *)loadClassFromCCBI("UiHomeView","UiHomeView.ccbi",
+            UiHomeViewLoader::loader(), NULL);
 }
 
 bool UiHomeView::initWithCustom() {
@@ -50,5 +49,5 @@ bool UiHomeView::onAssignCCBMemberVariable(CCObject * pTarget, const char *pMemb
 }
 
 void UiHomeView::onNewGameCallBack() {
-    int i = 0;
+    SceneController::sharedInstance()->switchSence(K_SCENE_BATTLEVIEW );
 }

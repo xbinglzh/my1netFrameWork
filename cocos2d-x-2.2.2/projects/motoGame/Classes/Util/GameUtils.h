@@ -25,6 +25,7 @@ public:
 	static cocos2d::CCString * GXCCStringMake(int16_t value);
 	static cocos2d::CCString * GXCCStringMake(uint16_t value);
 	static cocos2d::CCString * GXCCStringMake(float value);
+    
     static const std::string StringMake(const uint32_t value);
     static const std::string StringMake(const int32_t value);
     static const std::string StringMake(const float value);
@@ -84,20 +85,21 @@ public:
     /**
      获取时间
      */
-    static std::string getTimeString(boost::posix_time::ptime &timestamp, const char* charT = NULL);
+//    static std::string getTimeString(boost::posix_time::ptime &timestamp, const char* charT = NULL);
     
     /**
      获取时间精确到分钟
      */
-    static std::string getTimeStringm(boost::posix_time::ptime &timestamp, const char* charT = NULL);
-    static std::string getTimeString(boost::gregorian::date& date, const char* charT = NULL);
-    
-    
-    static boost::posix_time::ptime ptime_from_epoch(unsigned long long ms);
-	static boost::posix_time::ptime local_ptime_from_epoch(unsigned long long ms);
-    static boost::posix_time::ptime beijing_ptime_from_epoch(unsigned long long ms);
-	static int64_t local_epoch_time();
-    static std::string getLastTime(std::string time1,std::string time2);
+//    static std::string getTimeStringm(boost::posix_time::ptime &timestamp, const char* charT = NULL);
+//    static std::string getTimeString(boost::gregorian::date& date, const char* charT = NULL);
+//    
+//    
+//    static boost::posix_time::ptime ptime_from_epoch(unsigned long long ms);
+//	static boost::posix_time::ptime local_ptime_from_epoch(unsigned long long ms);
+//    static boost::posix_time::ptime beijing_ptime_from_epoch(unsigned long long ms);
+//    
+//	static int64_t local_epoch_time();
+//    static std::string getLastTime(std::string time1,std::string time2);
     
     /*
      把时间秒数转化成 HH:MM:SS
@@ -122,6 +124,7 @@ public:
                                                         const std::string & tag = ",");
     static const std::vector<int32_t>  string2IntArray(const std::string & text,
                                                        const std::string & tag = ",");
+    
 	static const cocos2d::CCPoint string2Point(const std::string & text,const std::string & tag = ",");
 	static const cocos2d::CCSize  string2Size(const std::string & text,const std::string & tag= ",");
     static cocos2d::CCRect  string2Rect(const std::string & text,const std::string & tag= ",");
