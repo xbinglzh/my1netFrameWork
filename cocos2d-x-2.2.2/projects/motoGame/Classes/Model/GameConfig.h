@@ -60,6 +60,12 @@ public:
      */
     const std::string & getAppTargetOSVersion() const;
     
+public:
+    /**
+     获得对应Id的animation信息
+     */
+    cocos2d::CCDictionary * getAnimationById(const std::string & Id);
+    
 private:
     std::string 	_version;
 	std::string 	_build;
@@ -67,6 +73,10 @@ private:
     std::string 	_appid;
     std::string 	_appTargetOSVersion;
 	uint32_t		_simpleProperties;
+    
+    
+private: // Dict
+    cocos2d::CCDictionary        * _animationDict;
     
 };
 

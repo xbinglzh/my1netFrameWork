@@ -50,10 +50,19 @@ public:
 class AnimNode : public cocos2d::CCNodeRGBA, public AnimNodeDelegate, public AnimationDelegateExt {
 
 public:
+    enum EAnimNodeTypeId {
+		K_SPRITE_FILE  	  =0,//sprite
+        K_ARMATURE_FRAME  =1,//Armature spriteframe
+        K_SPRITE_FRAME    =2,//spriteframe
+	};
+    
+public:
     
 	AnimNode();
 	virtual ~AnimNode();
     CREATE_FUNC(AnimNode);
+    
+    static AnimNode* createAnim(cocos2d::CCDictionary * dict, AnimNodeDelegate * delegate);
     
     static AnimNode* createFlashAnimNode(const char* pngFile, const char* plistFile, const char* xmlFile,
                                          const char* runAnim, const char* skeleton);
@@ -94,6 +103,8 @@ protected:
     
     bool _autoRemoveOnFinish;
     float _animScale;
+    
+    EAnimNodeTypeId  _typeId;
 };
 
 #endif

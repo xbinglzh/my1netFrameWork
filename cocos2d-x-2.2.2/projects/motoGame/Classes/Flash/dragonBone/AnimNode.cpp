@@ -10,6 +10,7 @@
 #include "ArmatureAnim.h"
 #include "SPConstValue.h"
 #include "GameUtils.h"
+#include "KeyConfigDef.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -52,16 +53,44 @@ AnimNode::AnimNode():CCNodeRGBA()
 ,_animScale(1.0f)
 ,_currentCalll(NULL)
 ,_autoUpdateFrame(true)
+,_typeId(AnimNode::K_SPRITE_FILE)
 {
     setCascadeColorEnabled(true);
     setCascadeOpacityEnabled(true);
 }
 
 AnimNode::~AnimNode(){
-    unscheduleUpdate();
+    if(AnimNode::K_ARMATURE_FRAME == _typeId){
+        unscheduleUpdate();
+    }
     CC_SAFE_RELEASE_NULL(_currentCalll);
 	CC_SAFE_RELEASE_NULL(_animationManager);
 }
+
+AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *delegate) {
+    AnimNode * node = NULL;
+    CCDictionary * tmpDict = dict;
+    
+    if (tmpDict) {
+        CCString * strValue = (CCString *)tmpDict->objectForKey(KKeyType);
+        const uint32_t typeValue = strValue->uintValue();
+        strValue = (CCString *)tmpDict->objectForKey(KKeyFile);
+        CCString * scaleVal = (CCString *)tmpDict->objectForKey(KKeyScale);
+        CCString * flipXVal = (CCString *)tmpDict->objectForKey(KKeyFlipX);
+        
+        switch (typeValue) {
+            case AnimNode::K_SPRITE_FILE:
+                break;
+            case AnimNode::K_ARMATURE_FRAME:
+                break;
+            case AnimNode::K_SPRITE_FRAME:
+                break;
+        }
+        
+    }
+
+}
+
 
 AnimNode* AnimNode::createFlashAnimNode(const char* pngFile, const char* plistFile, const char* xmlFile,
                                         const char* runAnim, const char* skeleton) {
@@ -147,8 +176,9 @@ void AnimNode::updateAnimFrame(float dt){
 void  AnimNode::update(float dt){
     cocos2d::CCNodeRGBA::update(dt);
     
-    if(_autoUpdateFrame)
+    if(_autoUpdateFrame) {
         updateAnimFrame(dt);
+    }
 }
 
 const cocos2d::CCSize & AnimNode::getContentSize(){

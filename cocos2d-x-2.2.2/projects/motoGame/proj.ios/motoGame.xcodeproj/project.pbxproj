@@ -235,6 +235,7 @@
 		6000879D190971900086E0F2 /* battleLevel_1.plhs in Resources */ = {isa = PBXBuildFile; fileRef = 6000879C190971900086E0F2 /* battleLevel_1.plhs */; };
 		60307E7418EFB1FF00A0F8B7 /* Box2dUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60307E7218EFB1FF00A0F8B7 /* Box2dUtil.cpp */; };
 		60307E7618EFB9AB00A0F8B7 /* res_crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = 60307E7518EFB9AB00A0F8B7 /* res_crystal.png */; };
+		6048D0D9190EA04100418BBE /* HeroSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6048D0D7190EA04100418BBE /* HeroSprite.cpp */; };
 		605A0AF618FEC214001EA057 /* hero_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 605A0AF318FEC214001EA057 /* hero_1.plist */; };
 		605A0AF718FEC214001EA057 /* hero_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 605A0AF418FEC214001EA057 /* hero_1.png */; };
 		605A0AF818FEC214001EA057 /* hero_1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 605A0AF518FEC214001EA057 /* hero_1.xml */; };
@@ -1030,6 +1031,9 @@
 		60307E7218EFB1FF00A0F8B7 /* Box2dUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Box2dUtil.cpp; sourceTree = "<group>"; };
 		60307E7318EFB1FF00A0F8B7 /* Box2dUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2dUtil.h; sourceTree = "<group>"; };
 		60307E7518EFB9AB00A0F8B7 /* res_crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = res_crystal.png; sourceTree = "<group>"; };
+		6048D0D7190EA04100418BBE /* HeroSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeroSprite.cpp; sourceTree = "<group>"; };
+		6048D0D8190EA04100418BBE /* HeroSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroSprite.h; sourceTree = "<group>"; };
+		6048D0DE190EA31300418BBE /* KeyConfigDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyConfigDef.h; sourceTree = "<group>"; };
 		605A0AF318FEC214001EA057 /* hero_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hero_1.plist; sourceTree = "<group>"; };
 		605A0AF418FEC214001EA057 /* hero_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_1.png; sourceTree = "<group>"; };
 		605A0AF518FEC214001EA057 /* hero_1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hero_1.xml; sourceTree = "<group>"; };
@@ -1849,8 +1853,8 @@
 				CEBCE51418EABE5100691E3B /* Extensions */,
 				CE7B9F8E18DFD1F700FD2DAE /* Flash */,
 				CE7B9F8F18DFD1F700FD2DAE /* Localization */,
-				CE7B9F9018DFD1F700FD2DAE /* Model */,
 				CE7B9F9118DFD1F700FD2DAE /* Util */,
+				CE7B9F9018DFD1F700FD2DAE /* Model */,
 				CE7B9F9218DFD1F700FD2DAE /* View */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
@@ -2339,6 +2343,7 @@
 			children = (
 				60926E3518E7D5BD00B9ABAE /* ConstansDef.h */,
 				60926E3618E7D5BD00B9ABAE /* NotifyMessageDef.h */,
+				6048D0DE190EA31300418BBE /* KeyConfigDef.h */,
 			);
 			name = Def;
 			path = ../Classes/Def;
@@ -2381,6 +2386,8 @@
 		60C18A8918FD746600AC2464 /* object */ = {
 			isa = PBXGroup;
 			children = (
+				6048D0D7190EA04100418BBE /* HeroSprite.cpp */,
+				6048D0D8190EA04100418BBE /* HeroSprite.h */,
 				60C18A8D18FD749000AC2464 /* GameObject.cpp */,
 				60C18A8E18FD749000AC2464 /* GameObject.h */,
 			);
@@ -3570,6 +3577,7 @@
 				CE7BA02C18DFDA3400FD2DAE /* SPDisplayData.cpp in Sources */,
 				1A8F3B78175E05DA00049216 /* CCSkeletonAnimation.cpp in Sources */,
 				375BD5121868454E0024609E /* CCActionNode.cpp in Sources */,
+				6048D0D9190EA04100418BBE /* HeroSprite.cpp in Sources */,
 				CE7BA03618DFDA3400FD2DAE /* SPMovementBoneData.cpp in Sources */,
 				1A8F3B79175E05DA00049216 /* extension.cpp in Sources */,
 				CEBCE55218EABE5100691E3B /* LHContactListener.cpp in Sources */,
