@@ -76,6 +76,9 @@ public:
     void  setFrameITScale(const float value);
     void  updateAnimFrame(float dt);
     
+    const std::string& getDefaultAnimation()const;
+    void setDefaultAnimation(const std::string& value);
+    
 public:
     void  update(float dt);
     

@@ -11,6 +11,7 @@
 #include "SPConstValue.h"
 #include "GameUtils.h"
 #include "KeyConfigDef.h"
+#include "CCSpriteExt.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -79,16 +80,97 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
         CCString * flipXVal = (CCString *)tmpDict->objectForKey(KKeyFlipX);
         
         switch (typeValue) {
-            case AnimNode::K_SPRITE_FILE:
+            case AnimNode::K_SPRITE_FILE: {
+            
+                node = new AnimNode;
+                node->autorelease();
+                node->_typeId = AnimNode::K_SPRITE_FILE;
+                node->_animNode = CCSpriteExt::create(strValue->getCString());
+                
+                if(!node->_animNode){
+                    node->_animNode = CCSprite::create();
+                    CCLOG("CCSprite::create %s not found",strValue->getCString());
+                }
+                
+                node->addChild(node->_animNode);
+                node->setDefaultAnimation(strValue->m_sString);
+            }
                 break;
-            case AnimNode::K_ARMATURE_FRAME:
+            case AnimNode::K_ARMATURE_FRAME: {
+                node = new AnimNode;
+                node->autorelease();
+                node->_typeId = AnimNode::K_ARMATURE_FRAME;
+                ArmatureAnim * _animNode = ArmatureAnim::create();
+                _animNode->setAnimDelegateExt(node);
+                node->_animNode = _animNode;
+                node->setAnimNodeDelegate(delegate);
+                std::vector<sp::ImageInfo> list;
+                
+                sp::ImageInfo inf;
+                inf.imagePath = static_cast<CCString *>(tmpDict->objectForKey(KKeyImageTexture))->m_sString;
+                inf.plistPath = static_cast<CCString *>(tmpDict->objectForKey(KKeyImagePlist))->m_sString;
+                list.push_back(inf);
+                
+                CCString * armatureValue = (CCString *)tmpDict->objectForKey(KKeyskeleton);
+                CCString * defaulAnim = (CCString *)tmpDict->objectForKey(KKeyDefault);
+                
+                if (defaulAnim) {
+                    node->setDefaultAnimation(defaulAnim->m_sString);
+                }
+                
+                _animNode->load(armatureValue->m_sString,list,strValue->m_sString,1.0f);
+                node->addChild(_animNode);
+                
+                CCString * sizeVal = (CCString *)tmpDict->objectForKey(KKeySize);
+                if (_animNode && sizeVal) {
+                    CCSize size  = GameUtils::string2Size(sizeVal->m_sString);
+                    _animNode->setMaxContentSize(CCSizeMake(size.width, size.height));
+                }
+                
+                node->scheduleUpdate();
+            }
+                
                 break;
-            case AnimNode::K_SPRITE_FRAME:
+            case AnimNode::K_SPRITE_FRAME: {
+                node = new AnimNode;
+                node->autorelease();
+                node->_typeId = AnimNode::K_SPRITE_FRAME;
+                CCSpriteFrameCache * cache = CCSpriteFrameCache::sharedSpriteFrameCache();
+                CCSpriteFrame *pFrame = cache->spriteFrameByName(strValue->getCString());
+                if (!pFrame) {
+                    const std::string & imagePath = static_cast<CCString *>(tmpDict->objectForKey(KKeyImageTexture))->m_sString;
+                    const std::string & plistPath = static_cast<CCString *>(tmpDict->objectForKey(KKeyImagePlist))->m_sString;
+                    cache->addSpriteFramesWithFile(plistPath.c_str(), imagePath.c_str());
+                    pFrame = cache->spriteFrameByName(strValue->getCString());
+                }
+                node->_animNode = CCSprite::createWithSpriteFrame(pFrame);
+                node->addChild(node->_animNode);
+                node->setDefaultAnimation(strValue->m_sString);
+            }
+                break;
+                
+            default:
+                CCAssert(false, "AnimNode file type invalid....");
                 break;
         }
         
+        if (node) {
+            
+            if(node->_animNode){
+                node->_animNode->setAnchorPoint(CCPointZero);
+                
+                if (scaleVal) {
+                    node->_animScale = scaleVal->floatValue();
+                    node->_animNode->setScale(node->_animScale);
+                }
+                
+                if (flipXVal && flipXVal->boolValue()) {
+                    node->_animNode->setScaleX(node->_animNode->getScaleX() * -1);
+                }
+            }
+        }
     }
-
+	return node;
 }
 
 
@@ -186,6 +268,14 @@ const cocos2d::CCSize & AnimNode::getContentSize(){
         _animNode->getContentSize();
     }
     return CCNode::getContentSize();
+}
+
+const std::string& AnimNode::getDefaultAnimation()const{
+    return _defaultAnimation;
+}
+
+void AnimNode::setDefaultAnimation(const std::string& value){
+    _defaultAnimation = value;
 }
 
 /**

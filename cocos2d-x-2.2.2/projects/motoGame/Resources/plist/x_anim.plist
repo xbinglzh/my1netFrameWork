@@ -17,7 +17,7 @@
 		<key>file</key>
 		<string>hero_1.xml</string>
 		<key>flipx</key>
-		<string>1</string>
+		<string>0</string>
 		<key>hp_bar_pos</key>
 		<string>0,0</string>
 		<key>id</key>
@@ -31,7 +31,7 @@
 		<key>position_offset</key>
 		<string>0,0</string>
 		<key>scale</key>
-		<string>1</string>
+		<string>0.5f</string>
 		<key>size</key>
 		<string>20,60</string>
 		<key>skeleton</key>

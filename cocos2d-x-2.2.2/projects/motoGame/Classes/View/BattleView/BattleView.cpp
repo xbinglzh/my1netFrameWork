@@ -13,6 +13,7 @@
 #include "CCSpriteExt.h"
 #include "AnimNode.h"
 #include "Box2dUtil.h"
+#include "HeroSprite.h"
 
 #define IsOpenBox2dDebugDraw false
 const int TagBgView = BASE_TAG + 1;
@@ -39,18 +40,13 @@ bool BattleView::init() {
     
     GameBgRollView* bgView = GameBgRollView::create();
     this->addChild(bgView, 0, TagBgView);
-//    bgView->setVisible(false);
     
     initPhysicalWorld();
     
-    AnimNode* hero = AnimNode::createFlashAnimNode("hero_1.png", "hero_1.plist", "hero_1.xml", "play", "hero_1");
-    hero->setScale(0.5f);
-    hero->runAnimation("play");
-    hero->setContentSize(CCSizeMake(139, 264));
+    HeroSprite* hero = HeroSprite::create();
+    hero->changeHeroState(HeroSprite::HERO_BROKE_JUMP);
     this->addChild(hero, 10001, 0);
-    //    hero->setPosition(ccp(100, 100));
-    
-    LayoutUtil::layoutParentBottomLeft(hero, 100, 100);
+    hero->setPosition(ccp(100, 100));
     
     if (IsOpenBox2dDebugDraw) {
         Box2dUtil::openDebugBox2dDraw(_physicsWorld);
