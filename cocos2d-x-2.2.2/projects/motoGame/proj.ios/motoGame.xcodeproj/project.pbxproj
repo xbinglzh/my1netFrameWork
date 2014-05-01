@@ -285,6 +285,13 @@
 		60C18A8F18FD749000AC2464 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C18A8D18FD749000AC2464 /* GameObject.cpp */; };
 		60C18A9218FD85D300AC2464 /* x_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A9118FD85D300AC2464 /* x_config.plist */; };
 		60C18A9418FD85EF00AC2464 /* x_anim.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A9318FD85EF00AC2464 /* x_anim.plist */; };
+		60F342CB1911DEB000DD70E5 /* BattleUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60F342C91911DEB000DD70E5 /* BattleUI.cpp */; };
+		60F342E61911E6A800DD70E5 /* bar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 60F342E21911E6A800DD70E5 /* bar_bg.png */; };
+		60F342E71911E6A800DD70E5 /* bar_fg.png in Resources */ = {isa = PBXBuildFile; fileRef = 60F342E31911E6A800DD70E5 /* bar_fg.png */; };
+		60F342E81911E6A800DD70E5 /* BlueBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 60F342E41911E6A800DD70E5 /* BlueBar.png */; };
+		60F342E91911E6A800DD70E5 /* RedBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 60F342E51911E6A800DD70E5 /* RedBar.png */; };
+		60F342EB1911E98B00DD70E5 /* BattleUI.ccb in Resources */ = {isa = PBXBuildFile; fileRef = 60F342EA1911E98B00DD70E5 /* BattleUI.ccb */; };
+		60F342ED1911E99500DD70E5 /* BattleUI.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 60F342EC1911E99500DD70E5 /* BattleUI.ccbi */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -1097,6 +1104,14 @@
 		60C18A8E18FD749000AC2464 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		60C18A9118FD85D300AC2464 /* x_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = x_config.plist; sourceTree = "<group>"; };
 		60C18A9318FD85EF00AC2464 /* x_anim.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = x_anim.plist; sourceTree = "<group>"; };
+		60F342C91911DEB000DD70E5 /* BattleUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleUI.cpp; sourceTree = "<group>"; };
+		60F342CA1911DEB000DD70E5 /* BattleUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleUI.h; sourceTree = "<group>"; };
+		60F342E21911E6A800DD70E5 /* bar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_bg.png; sourceTree = "<group>"; };
+		60F342E31911E6A800DD70E5 /* bar_fg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_fg.png; sourceTree = "<group>"; };
+		60F342E41911E6A800DD70E5 /* BlueBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueBar.png; sourceTree = "<group>"; };
+		60F342E51911E6A800DD70E5 /* RedBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedBar.png; sourceTree = "<group>"; };
+		60F342EA1911E98B00DD70E5 /* BattleUI.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BattleUI.ccb; sourceTree = "<group>"; };
+		60F342EC1911E99500DD70E5 /* BattleUI.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BattleUI.ccbi; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -2317,6 +2332,8 @@
 			children = (
 				60BB17A6190CC5F8001C92A2 /* BattleView.cpp */,
 				60BB17A7190CC5F8001C92A2 /* BattleView.h */,
+				60F342C91911DEB000DD70E5 /* BattleUI.cpp */,
+				60F342CA1911DEB000DD70E5 /* BattleUI.h */,
 			);
 			path = BattleView;
 			sourceTree = "<group>";
@@ -2403,6 +2420,17 @@
 			path = plist;
 			sourceTree = "<group>";
 		};
+		60F342E11911E57800DD70E5 /* resources-normal */ = {
+			isa = PBXGroup;
+			children = (
+				60F342E21911E6A800DD70E5 /* bar_bg.png */,
+				60F342E31911E6A800DD70E5 /* bar_fg.png */,
+				60F342E41911E6A800DD70E5 /* BlueBar.png */,
+				60F342E51911E6A800DD70E5 /* RedBar.png */,
+			);
+			path = "resources-normal";
+			sourceTree = "<group>";
+		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -2448,11 +2476,13 @@
 		CE6C9B3618E065D300B6711E /* ui_layout */ = {
 			isa = PBXGroup;
 			children = (
-				6076719B19058017006AD9AD /* UiHomeView.ccbi */,
-				CE6C9B3718E065D300B6711E /* fileLookup.plist */,
 				CE6C9B3818E065D300B6711E /* resources-iphonehd */,
+				60F342E11911E57800DD70E5 /* resources-normal */,
+				CE6C9B3718E065D300B6711E /* fileLookup.plist */,
 				CE6C9B3B18E065D300B6711E /* source */,
 				CE6C9B3D18E065D300B6711E /* ui.ccbproj */,
+				60F342EC1911E99500DD70E5 /* BattleUI.ccbi */,
+				6076719B19058017006AD9AD /* UiHomeView.ccbi */,
 			);
 			path = ui_layout;
 			sourceTree = "<group>";
@@ -2493,6 +2523,7 @@
 		CE6C9B3B18E065D300B6711E /* source */ = {
 			isa = PBXGroup;
 			children = (
+				60F342EA1911E98B00DD70E5 /* BattleUI.ccb */,
 				6076719919058010006AD9AD /* UiHomeView.ccb */,
 			);
 			path = source;
@@ -3303,23 +3334,29 @@
 				6076719A19058010006AD9AD /* UiHomeView.ccb in Resources */,
 				60C18A8518FD718D00AC2464 /* particle-fire.png in Resources */,
 				60C18A8318FD718D00AC2464 /* fire.png in Resources */,
+				60F342EB1911E98B00DD70E5 /* BattleUI.ccb in Resources */,
 				60776A1F1903573000A07AED /* road_2.png in Resources */,
 				60776A221903573000A07AED /* road_5.png in Resources */,
 				6000879819096F5F0086E0F2 /* gameElement_gameView-hd.png in Resources */,
+				60F342E91911E6A800DD70E5 /* RedBar.png in Resources */,
 				60776A0E1903573000A07AED /* fps_images.png in Resources */,
+				60F342E71911E6A800DD70E5 /* bar_fg.png in Resources */,
 				60776A0B1903573000A07AED /* backA.png in Resources */,
 				6000878E190960C90086E0F2 /* number.png in Resources */,
 				60776A1C1903573000A07AED /* newgameA.png in Resources */,
 				60C18A9418FD85EF00AC2464 /* x_anim.plist in Resources */,
 				605A0AFF18FEC4BF001EA057 /* xx_m_100041.plist in Resources */,
+				60F342ED1911E99500DD70E5 /* BattleUI.ccbi in Resources */,
 				60776A071903573000A07AED /* back_3.png in Resources */,
 				60776A251903573000A07AED /* star.png in Resources */,
 				CE7BA0D418DFF72A00FD2DAE /* Icon-72.png in Resources */,
 				60776A1E1903573000A07AED /* road_1.png in Resources */,
+				60F342E81911E6A800DD70E5 /* BlueBar.png in Resources */,
 				60776A0C1903573000A07AED /* backB.png in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				6000879A19096F5F0086E0F2 /* gameElement_gameView.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
+				60F342E61911E6A800DD70E5 /* bar_bg.png in Resources */,
 				60926E4518E8571100B9ABAE /* bg.jpg in Resources */,
 				605A0AF618FEC214001EA057 /* hero_1.plist in Resources */,
 				605A0B0418FEC4BF001EA057 /* xx_m_204601d.xml in Resources */,
@@ -3493,6 +3530,7 @@
 				15A3DA3E1682F826002FB0C5 /* CCLayerGradientLoader.cpp in Sources */,
 				CE7BA05518DFDA3400FD2DAE /* SPTransformHelp.cpp in Sources */,
 				15A3DA3F1682F826002FB0C5 /* CCLayerLoader.cpp in Sources */,
+				60F342CB1911DEB000DD70E5 /* BattleUI.cpp in Sources */,
 				15A3DA401682F826002FB0C5 /* CCMenuItemImageLoader.cpp in Sources */,
 				375BD5101868454E0024609E /* CCActionFrameEasing.cpp in Sources */,
 				15A3DA411682F826002FB0C5 /* CCMenuItemLoader.cpp in Sources */,

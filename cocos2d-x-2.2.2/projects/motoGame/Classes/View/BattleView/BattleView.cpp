@@ -14,6 +14,7 @@
 #include "AnimNode.h"
 #include "Box2dUtil.h"
 #include "HeroSprite.h"
+#include "BattleUI.h"
 
 #define IsOpenBox2dDebugDraw false
 const int TagBgView = BASE_TAG + 1;
@@ -32,6 +33,8 @@ bool BattleView::init() {
         return false;
     }
     
+    initBattleUi();
+    
     CCSpriteExt* bg = CCSpriteExt::create("back_1.png");
     bg->setScaleX(this->getContentSize().width / bg->getContentSize().width );
     bg->setScaleY(this->getContentSize().height / bg->getContentSize().height);
@@ -44,7 +47,7 @@ bool BattleView::init() {
     initPhysicalWorld();
     
     HeroSprite* hero = HeroSprite::create();
-    hero->changeHeroState(HeroSprite::HERO_BROKE_JUMP);
+    hero->changeHeroState(HeroSprite::HERO_RUN);
     this->addChild(hero, 10001, 0);
     hero->setPosition(ccp(100, 100));
     
@@ -57,6 +60,11 @@ bool BattleView::init() {
     }
     
     return true;
+}
+
+void BattleView::initBattleUi() {
+    _battleUI = BattleUI::createFromCCB();
+    this->addChild(_battleUI, BASE_TAG* 2);
 }
 
 void BattleView::initPhysicalWorld() {

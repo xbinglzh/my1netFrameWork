@@ -13,6 +13,8 @@
 #include "RootUiLayer.h"
 #include "LevelHelperLoader.h"
 
+class BattleUI;
+
 USING_NS_CC;
 
 class BattleView : public CCLayer {
@@ -29,6 +31,7 @@ public:
     ~BattleView();
     
     virtual bool init();
+    virtual void initBattleUi();
     virtual void initPhysicalWorld();
     virtual void update(float dt);
     virtual void draw();
@@ -46,7 +49,7 @@ private:
     
 private:
     GameState _curGameState;
-    
+    BattleUI* _battleUI;
 };
 
 

@@ -93,7 +93,6 @@ void SceneController::switchSence(const ESceneId sceneId, cocos2d::CCObject* par
             layer = GameView::create();
             break;
         case K_SCENE_UIHOME:
-//            layer = UiLoadingView::createFromCCB();
             layer = UiHomeView::createFromCCB();
             break;
             
