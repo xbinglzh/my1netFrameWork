@@ -33,7 +33,7 @@
 		<key>scale</key>
 		<string>0.5f</string>
 		<key>size</key>
-		<string>20,60</string>
+		<string>50,80</string>
 		<key>skeleton</key>
 		<string>hero_1</string>
 		<key>type</key>

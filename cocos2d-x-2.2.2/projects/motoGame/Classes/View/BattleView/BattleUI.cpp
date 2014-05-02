@@ -61,6 +61,19 @@ bool BattleUI::onAssignCCBMemberVariable(CCObject * pTarget, const char * pMembe
     return false;
 }
 
+void BattleUI::registerWithTouchDispatcher() {
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, getTouchPriority(), false);
+}
+
+bool BattleUI::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+    
+    
+    return CCLayer::ccTouchBegan(pTouch, pEvent);
+}
+
+void BattleUI::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+    CCLayer::ccTouchEnded(pTouch, pEvent);
+}
 
 
 

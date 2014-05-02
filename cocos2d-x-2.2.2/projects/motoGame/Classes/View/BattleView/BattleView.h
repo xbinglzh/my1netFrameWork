@@ -14,6 +14,7 @@
 #include "LevelHelperLoader.h"
 
 class BattleUI;
+class HeroSprite;
 
 USING_NS_CC;
 
@@ -46,10 +47,12 @@ protected:
 private:
     b2World* _physicsWorld;
     LevelHelperLoader* _levelHelperLoader;
+    LHLayer* _lhLayer;
     
 private:
     GameState _curGameState;
     BattleUI* _battleUI;
+    HeroSprite* _hero;
 };
 
 

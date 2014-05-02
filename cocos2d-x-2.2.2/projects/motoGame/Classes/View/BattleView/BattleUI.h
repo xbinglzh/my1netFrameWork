@@ -39,6 +39,11 @@ protected:
 protected:
     virtual bool initWithCustom();
     
+protected:
+    virtual void registerWithTouchDispatcher(void);
+    virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
+    virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
+    
 private:
     CCNode* _powerNode;
     CCNode* _scoreNode;

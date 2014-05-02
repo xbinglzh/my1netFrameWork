@@ -33,15 +33,20 @@ public:
     HeroSprite();
     ~HeroSprite();
     virtual bool init();
+    virtual void initPhysical(b2World* physicsWorld, LevelHelperLoader* levelHelperLoader);
     static HeroSprite* create();
     
-    void changeHeroState(HeroState state);
+    void jump();
+    void runDefault();
     
+private:
+    void exertImpulseToHero();
+    void changeHeroState(HeroState state);
+    void appendLinearImpulse(b2Vec2 desiredVel);
 private:
     HeroState   _curHeroState;
     AnimNode*   _animNode;
-    
-    
+    b2Body*     _heroBody;
     
 };
 

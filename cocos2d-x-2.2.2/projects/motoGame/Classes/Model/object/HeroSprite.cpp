@@ -9,6 +9,8 @@
 #include "HeroSprite.h"
 #include "GameConfig.h"
 #include "LayoutUtil.h"
+#include "LevelHelperLoader.h"
+#include "Box2dUtil.h"
 
 const std::string HERO_ANIM_ID = "100001#display";
 const int         HERO_TAG_ID  =  100001;
@@ -47,8 +49,52 @@ bool HeroSprite::init() {
     return true;
 }
 
+void HeroSprite::initPhysical(b2World* physicsWorld, LevelHelperLoader* levelHelperLoader) {
+    this->setTag(LH_TAG_HERO);
+    
+    b2Filter filter;
+    filter.maskBits = 14;
+    filter.categoryBits = 16;
+    filter.groupIndex = 0;
+    
+    b2FixtureDef fixtureDef;
+    fixtureDef.density = 1000.0f;
+    fixtureDef.isSensor = false;
+    fixtureDef.friction = 0.0f;
+    fixtureDef.restitution = 0.7f;
+    fixtureDef.filter = filter;
+    
+    CCLOG("HeroSprite w :%f,h : %f", this->getContentSize().width, this->getContentSize().height);
+    
+    b2PolygonShape polygon;
+    b2Vec2 vec2 = levelHelperLoader->pixelToMeters(ccp(this->getContentSize().width, this->getContentSize().height));
+    polygon.SetAsBox(vec2.x, vec2.y);
+    fixtureDef.shape = &polygon;
+    
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_dynamicBody;
+    bodyDef.linearVelocity = b2Vec2(1, 0);
+    bodyDef.position = levelHelperLoader->pointsToMeters(this->getPosition());
+    bodyDef.userData = this;
+    bodyDef.fixedRotation = true;
+    
+    if (physicsWorld && levelHelperLoader) {
+        _heroBody = physicsWorld->CreateBody(&bodyDef);
+        _heroBody->CreateFixture(&fixtureDef);
+    }
+    
+}
+
+void HeroSprite::appendLinearImpulse(b2Vec2 desiredVel) {
+    b2Vec2 vel = _heroBody->GetLinearVelocity();
+    float m = _heroBody->GetMass();
+    b2Vec2 velChange = desiredVel - vel;
+    b2Vec2 impluse = m * velChange;
+    _heroBody->ApplyLinearImpulse( impluse, _heroBody->GetWorldCenter() );
+}
+
 void HeroSprite::changeHeroState(HeroState state) {
-    if (_curHeroState == state) {
+    if (this->_curHeroState == state) {
         return;
     }
     
@@ -61,9 +107,11 @@ void HeroSprite::changeHeroState(HeroState state) {
             break;
         case HERO_JUMP:
             _animNode->runAnimation("play1");
+            this->appendLinearImpulse(b2Vec2(0, 5));
             break;
         case HERO_BROKE_JUMP:
             _animNode->runAnimation("play2");
+            this->appendLinearImpulse(b2Vec2(0, 15));
             break;
         case HERO_BROKE_RUN:
             break;
@@ -71,8 +119,21 @@ void HeroSprite::changeHeroState(HeroState state) {
             break;
     }
     
-    _curHeroState = state;
+    this->_curHeroState = state;
     
+}
+
+void HeroSprite::runDefault() {
+    changeHeroState(HERO_RUN);
+}
+
+void HeroSprite::jump() {
+    
+    if (_curHeroState == HERO_RUN) {
+        changeHeroState(HERO_JUMP);
+    }else if (_curHeroState == HERO_JUMP) {
+        changeHeroState(HERO_BROKE_JUMP);
+    }
     
 }
 

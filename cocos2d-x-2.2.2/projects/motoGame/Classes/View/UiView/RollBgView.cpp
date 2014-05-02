@@ -63,7 +63,7 @@ bool RollBgView::init() {
     this->addChild(coinSprite, 1000);
     LayoutUtil::layoutParentLeft(coinSprite, 100, 0);
     
-    coinSprite->setTag(COIN);
+    coinSprite->setTag(LH_TAG_STAR);
     
     b2Filter filter;
     filter.maskBits = 3;
@@ -137,7 +137,7 @@ void RollBgView::loadPhysicWorldWithLayer(const char* levelFile, CCLayer *layer)
     }
     
     _levelHelper->useLevelHelperCollisionHandling();//这个方法是必要的，否则碰撞将不会执行
-    _levelHelper->registerPreCollisionCallbackBetweenTagA(COIN, HERO, this,
+    _levelHelper->registerPreCollisionCallbackBetweenTagA(LH_TAG_STAR, LH_TAG_HERO, this,
                     callfuncO_selector(RollBgView::preCollisionBetweenHeroTreeAndCoin));
 }
 

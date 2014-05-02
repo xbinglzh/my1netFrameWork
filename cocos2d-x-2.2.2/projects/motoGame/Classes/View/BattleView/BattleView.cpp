@@ -16,9 +16,13 @@
 #include "HeroSprite.h"
 #include "BattleUI.h"
 
-#define IsOpenBox2dDebugDraw false
+#define IsOpenBox2dDebugDraw true
+
 const int TagBgView = BASE_TAG + 1;
 const int TagBg     = BASE_TAG + 2;
+const int TagHero   = BASE_TAG + 3;
+
+const float Gravity = -9.8f;
 
 BattleView::BattleView(){
     
@@ -32,6 +36,7 @@ bool BattleView::init() {
     if (!CCLayer::init()) {
         return false;
     }
+    this->setTouchEnabled(true);
     
     initBattleUi();
     
@@ -46,10 +51,13 @@ bool BattleView::init() {
     
     initPhysicalWorld();
     
-    HeroSprite* hero = HeroSprite::create();
-    hero->changeHeroState(HeroSprite::HERO_RUN);
-    this->addChild(hero, 10001, 0);
-    hero->setPosition(ccp(100, 100));
+    _hero = HeroSprite::create();
+    _hero->runDefault();
+    this->addChild(_hero, 10001, TagHero);
+    _hero->setPosition(ccp(120, 500));
+    _hero->initPhysical(_physicsWorld, _levelHelperLoader);
+    
+//    this->runAction(CCFollow::create(hero));
     
     if (IsOpenBox2dDebugDraw) {
         Box2dUtil::openDebugBox2dDraw(_physicsWorld);
@@ -59,6 +67,7 @@ bool BattleView::init() {
         this->getChildByTag(TagBgView)->setVisible(!IsOpenBox2dDebugDraw);
     }
     
+    this->scheduleUpdate();
     return true;
 }
 
@@ -68,7 +77,8 @@ void BattleView::initBattleUi() {
 }
 
 void BattleView::initPhysicalWorld() {
-    b2Vec2 gravity = b2Vec2(0, 9.8f);
+    b2Vec2 gravity = b2Vec2(0, Gravity);
+    
     _physicsWorld = new b2World(gravity);
     _physicsWorld->SetAllowSleeping(true);
     
@@ -76,13 +86,17 @@ void BattleView::initPhysicalWorld() {
     _levelHelperLoader->addObjectsToWorld(_physicsWorld, this);
     _levelHelperLoader->createPhysicBoundaries(_physicsWorld);
     _levelHelperLoader->createGravity(_physicsWorld);
-    
+
 }
 
 
 void BattleView::update(float dt) {
     CCLayer::update(dt);
+    _levelHelperLoader->update(dt);
     
+    if (_physicsWorld) {
+        Box2dUtil::updateBox2dWorldInLevelHelp(_physicsWorld, _levelHelperLoader, dt);
+    }
 }
 
 void BattleView::registerWithTouchDispatcher() {
@@ -90,12 +104,14 @@ void BattleView::registerWithTouchDispatcher() {
 }
 
 bool BattleView::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
-    CCLayer::ccTouchBegan(pTouch, pEvent);
+    
+//    HeroSprite* hero = (HeroSprite*) this->getChildByTag(TagHero);
+    _hero->jump();
+    
     return true;
 }
 
 void BattleView::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
-    CCLayer::ccTouchEnded(pTouch, pEvent);
     
 }
 

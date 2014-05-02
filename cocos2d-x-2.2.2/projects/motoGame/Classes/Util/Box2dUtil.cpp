@@ -73,7 +73,7 @@ void Box2dUtil::openDebugBox2dDraw(b2World *b2World) {
     
 	uint32 flags = 0;
 	flags += b2Draw::e_shapeBit;//形状
-    //	flags += b2Draw::e_jointBit;//关节
+    flags += b2Draw::e_jointBit;//关节
     //	flags += b2Draw::e_aabbBit;//AABB块
     //	flags += b2Draw::e_pairBit;
     //    flags += b2Draw::e_centerOfMassBit;//物体质心

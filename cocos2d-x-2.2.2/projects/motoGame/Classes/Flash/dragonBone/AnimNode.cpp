@@ -124,7 +124,8 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
                 CCString * sizeVal = (CCString *)tmpDict->objectForKey(KKeySize);
                 if (_animNode && sizeVal) {
                     CCSize size  = GameUtils::string2Size(sizeVal->m_sString);
-                    _animNode->setMaxContentSize(CCSizeMake(size.width, size.height));
+//                    _animNode->setMaxContentSize(CCSizeMake(size.width, size.height));
+                    _animNode->setContentSize(CCSizeMake(size.width, size.height));
                 }
                 
                 node->scheduleUpdate();
@@ -167,6 +168,8 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
                 if (flipXVal && flipXVal->boolValue()) {
                     node->_animNode->setScaleX(node->_animNode->getScaleX() * -1);
                 }
+                
+                node->setContentSize(node->_animNode->getContentSize());
             }
         }
     }
