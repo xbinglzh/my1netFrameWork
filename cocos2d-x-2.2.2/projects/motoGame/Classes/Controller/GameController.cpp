@@ -94,4 +94,7 @@ void GameController::makeHeroObtainStar() {
     _gameModel->appendEnergyUnit();
 }
 
+void GameController::makeHeroFallFloor() {
+    CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyMakeHeroFallFloorMessage);
+}
 

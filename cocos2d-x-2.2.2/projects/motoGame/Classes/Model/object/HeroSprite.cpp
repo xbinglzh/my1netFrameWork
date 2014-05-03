@@ -48,7 +48,8 @@ bool HeroSprite::init() {
     this->setContentSize(_animNode->getContentSize());
     LayoutUtil::layoutParentCenter(_animNode);
     
-    CCNotificationCenter::sharedNotificationCenter()->addObserver(this, callfuncO_selector(HeroSprite::jump), KNotifyMakeHeroJumpMessage, NULL);
+    CCNotificationCenter::sharedNotificationCenter()->addObserver(this, callfuncO_selector(HeroSprite::onNotifyHeroJump), KNotifyMakeHeroJumpMessage, NULL);
+    CCNotificationCenter::sharedNotificationCenter()->addObserver(this, callfuncO_selector(HeroSprite::onNotifyHeroFallFloor), KNotifyMakeHeroFallFloorMessage, NULL);
     
     return true;
 }
@@ -67,7 +68,7 @@ void HeroSprite::initPhysical(b2World* physicsWorld, LevelHelperLoader* levelHel
     fixtureDef.density = 1000.0f;
     fixtureDef.isSensor = false;
     fixtureDef.friction = 0.0f;
-    fixtureDef.restitution = 0.7f;
+    fixtureDef.restitution = 0.0f;
     fixtureDef.filter = filter;
     
     b2PolygonShape polygon;
@@ -95,7 +96,7 @@ void HeroSprite::appendLinearImpulse(b2Vec2 desiredVel) {
     float m = _heroBody->GetMass();
     b2Vec2 velChange = desiredVel - vel;
     b2Vec2 impluse = m * velChange;
-    _heroBody->ApplyLinearImpulse( impluse, _heroBody->GetWorldCenter() );
+    _heroBody->ApplyLinearImpulse(impluse, _heroBody->GetWorldCenter());
 }
 
 void HeroSprite::changeHeroState(HeroState state) {
@@ -109,6 +110,7 @@ void HeroSprite::changeHeroState(HeroState state) {
             break;
         case HERO_RUN:
             _animNode->runAnimation("play");
+            this->appendLinearImpulse(b2Vec2(0, 0));
             break;
         case HERO_JUMP:
             _animNode->runAnimation("play1");
@@ -116,7 +118,7 @@ void HeroSprite::changeHeroState(HeroState state) {
             break;
         case HERO_BROKE_JUMP:
             _animNode->runAnimation("play2");
-            this->appendLinearImpulse(b2Vec2(0, 15));
+            this->appendLinearImpulse(b2Vec2(0, 8));
             break;
         case HERO_BROKE_RUN:
             break;
@@ -132,7 +134,7 @@ void HeroSprite::runDefault() {
     changeHeroState(HERO_RUN);
 }
 
-void HeroSprite::jump() {
+void HeroSprite::onNotifyHeroJump(CCObject* pSender) {
     
     if (_curHeroState == HERO_RUN) {
         changeHeroState(HERO_JUMP);
@@ -140,5 +142,9 @@ void HeroSprite::jump() {
         changeHeroState(HERO_BROKE_JUMP);
     }
     
+}
+
+void HeroSprite::onNotifyHeroFallFloor(cocos2d::CCObject *pSender) {
+    changeHeroState(HERO_RUN);
 }
 

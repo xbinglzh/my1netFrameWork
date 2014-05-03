@@ -17,7 +17,7 @@
 #include "BattleUI.h"
 #include "GameController.h"
 
-#define IsOpenBox2dDebugDraw true
+#define IsOpenBox2dDebugDraw false
 
 const int TagBgView = BASE_TAG + 1;
 const int TagBg     = BASE_TAG + 2;
@@ -54,11 +54,10 @@ bool BattleView::init() {
     initPhysicalWorld();
     
     HeroSprite* hero = HeroSprite::create();
-    hero->runDefault();
     this->addChild(hero, 10001, TagHero);
-    hero->setPosition(ccp(120, 500));
+    hero->setPosition(ccp(300, 500));
     hero->initPhysical(_physicsWorld, _levelHelperLoader);
-    
+    hero->runDefault();
 //    this->runAction(CCFollow::create(hero));
     
     if (IsOpenBox2dDebugDraw) {
@@ -94,8 +93,10 @@ void BattleView::initPhysicalWorld() {
     
     _levelHelperLoader->registerBeginOrEndCollisionCallbackBetweenTagA(LH_TAG_STAR, LH_TAG_HERO, this,
                         callfuncO_selector(BattleView::postCollisionBetweenHeroAndCoin));
-    _levelHelperLoader->registerPostCollisionCallbackBetweenTagA(LH_TAG_FLOOR, LH_TAG_HERO, this,
-                        callfuncO_selector(BattleView::postCollisionBetweenHeroAndFloor));
+    
+    _levelHelperLoader->registerPostCollisionCallbackBetweenTagA(LH_TAG_FLOOR, LH_TAG_HERO, this,callfuncO_selector(BattleView::postCollisionBetweenHeroAndFloor));
+    
+    _levelHelperLoader->registerPostCollisionCallbackBetweenTagA(LH_TAG_TREE, LH_TAG_HERO, this, callfuncO_selector(BattleView::postCollisionBetweenHeroAndTree));
 
 }
 
@@ -144,5 +145,16 @@ void BattleView::postCollisionBetweenHeroAndCoin(LHContactInfo *contact) {
 }
 
 void BattleView::postCollisionBetweenHeroAndFloor(LHContactInfo *contact) {
-    
+
+    const b2ContactImpulse* impulse = contact->impulse;
+    if (impulse && impulse->normalImpulses[0] > 1000) {
+        _gameController->makeHeroFallFloor();
+    }
+}
+
+void BattleView::postCollisionBetweenHeroAndTree(LHContactInfo *contact) {
+    const b2ContactImpulse* impulse = contact->impulse;
+    if (impulse && impulse->normalImpulses[0] > 1000) {
+        _gameController->makeHeroFallFloor();
+    }
 }

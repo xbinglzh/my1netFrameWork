@@ -36,13 +36,15 @@ public:
     virtual void initPhysical(b2World* physicsWorld, LevelHelperLoader* levelHelperLoader);
     static HeroSprite* create();
     
-    void jump();
+    void onNotifyHeroJump(CCObject* pSender);
+    void onNotifyHeroFallFloor(CCObject* pSender);
     void runDefault();
     
 private:
     void exertImpulseToHero();
     void changeHeroState(HeroState state);
     void appendLinearImpulse(b2Vec2 desiredVel);
+    
 private:
     HeroState   _curHeroState;
     AnimNode*   _animNode;

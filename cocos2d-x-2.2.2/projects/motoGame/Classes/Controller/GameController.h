@@ -51,7 +51,7 @@ public:
 public:// hero
     void makeHeroJump();
     void makeHeroObtainStar();
-    
+    void makeHeroFallFloor();
 private:
     bool                   _updateStoped;
     GameModel*             _gameModel;

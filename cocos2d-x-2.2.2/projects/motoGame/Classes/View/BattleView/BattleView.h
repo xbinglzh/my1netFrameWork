@@ -41,6 +41,8 @@ protected:
 private:
     void postCollisionBetweenHeroAndCoin(LHContactInfo* contact);
     void postCollisionBetweenHeroAndFloor(LHContactInfo* contact);
+    void postCollisionBetweenHeroAndTree(LHContactInfo* contact);
+    
 private:
     b2World* _physicsWorld;
     LevelHelperLoader* _levelHelperLoader;

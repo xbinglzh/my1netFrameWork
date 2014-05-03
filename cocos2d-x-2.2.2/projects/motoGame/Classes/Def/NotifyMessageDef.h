@@ -18,7 +18,8 @@
 #define KNotifyPauseBattleMessage     "notifyPauseBattleMessage"
 
 
-#define KNotifyMakeHeroJumpMessage    "notifyMakeHeroJumpMessage"
+#define KNotifyMakeHeroJumpMessage       "notifyMakeHeroJumpMessage"
+#define KNotifyMakeHeroFallFloorMessage  "notifyMakeHeroFallFloorMessage"
 
 #define KNotifyEnergyChangeMessage    "notifyEnergyChangeMessage"
 
