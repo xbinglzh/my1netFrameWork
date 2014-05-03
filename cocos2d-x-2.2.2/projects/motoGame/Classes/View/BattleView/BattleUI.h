@@ -15,6 +15,7 @@
 
 class CCScale9ProgressBar;
 class CCSpriteExt;
+class LabelView;
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -53,6 +54,8 @@ private:
     
     CCScale9Sprite* _powerBg;
     CCScale9ProgressBar* _powerBar;
+    
+    LabelView* _scoreLable;
 };
 
 CREATE_NEW_INHERIT_CCLAYERLOADER_CLASS(BattleUI);

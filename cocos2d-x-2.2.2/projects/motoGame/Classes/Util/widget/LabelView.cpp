@@ -11,7 +11,8 @@
 #include "UiUtils.h"
 #include "GameConfig.h"
 #include "FontStyle.h"
-//#include "CCLabelTTFStroke.h"
+#include "ConstansDef.h"
+#include "CCLabelTTFStroke.h"
 
 LabelView::LabelView()
 : _labelBMFont(NULL)
@@ -287,5 +288,3 @@ LabelView* createLabelTTFItem(CCNode * parent,
                               const bool resetAll) {
     return createLabelInParentLeftCenter(parent, string, styleId,resetAll);
 }
-
-NS_N2S_END

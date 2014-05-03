@@ -10,6 +10,8 @@
 #define iLostCity_FontStyle_h
 #include "cocos2d.h"
 
+USING_NS_CC;
+
 class FontStyle {
 public:
     std::string _font;

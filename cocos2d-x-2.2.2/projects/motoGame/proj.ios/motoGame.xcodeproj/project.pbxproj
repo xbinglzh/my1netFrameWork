@@ -287,6 +287,9 @@
 		60DEA55519148F010096E14F /* ParticleEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA55119148F010096E14F /* ParticleEffect.cpp */; };
 		60DEA55619148F010096E14F /* SmallSoybeanParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA55319148F010096E14F /* SmallSoybeanParticle.cpp */; };
 		60DEA55C191496BA0096E14F /* GameModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA55A191496BA0096E14F /* GameModel.cpp */; };
+		60DEA55F191518DE0096E14F /* LabelView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA55D191518DE0096E14F /* LabelView.cpp */; };
+		60DEA5611915196F0096E14F /* x_fontstyle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60DEA5601915196F0096E14F /* x_fontstyle.plist */; };
+		60DEA56419151BA10096E14F /* CCLabelTTFStroke.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA56219151BA10096E14F /* CCLabelTTFStroke.cpp */; };
 		60F342CB1911DEB000DD70E5 /* BattleUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60F342C91911DEB000DD70E5 /* BattleUI.cpp */; };
 		60F342E61911E6A800DD70E5 /* bar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 60F342E21911E6A800DD70E5 /* bar_bg.png */; };
 		60F342E71911E6A800DD70E5 /* bar_fg.png in Resources */ = {isa = PBXBuildFile; fileRef = 60F342E31911E6A800DD70E5 /* bar_fg.png */; };
@@ -1110,6 +1113,12 @@
 		60DEA55419148F010096E14F /* SmallSoybeanParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallSoybeanParticle.h; sourceTree = "<group>"; };
 		60DEA55A191496BA0096E14F /* GameModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameModel.cpp; sourceTree = "<group>"; };
 		60DEA55B191496BA0096E14F /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
+		60DEA55D191518DE0096E14F /* LabelView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LabelView.cpp; sourceTree = "<group>"; };
+		60DEA55E191518DE0096E14F /* LabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelView.h; sourceTree = "<group>"; };
+		60DEA5601915196F0096E14F /* x_fontstyle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = x_fontstyle.plist; sourceTree = "<group>"; };
+		60DEA56219151BA10096E14F /* CCLabelTTFStroke.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCLabelTTFStroke.cpp; sourceTree = "<group>"; };
+		60DEA56319151BA10096E14F /* CCLabelTTFStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLabelTTFStroke.h; sourceTree = "<group>"; };
+		60DEA56619151CF70096E14F /* FontStylesDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontStylesDef.h; sourceTree = "<group>"; };
 		60F342C91911DEB000DD70E5 /* BattleUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleUI.cpp; sourceTree = "<group>"; };
 		60F342CA1911DEB000DD70E5 /* BattleUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleUI.h; sourceTree = "<group>"; };
 		60F342E21911E6A800DD70E5 /* bar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_bg.png; sourceTree = "<group>"; };
@@ -2367,6 +2376,7 @@
 				60926E3518E7D5BD00B9ABAE /* ConstansDef.h */,
 				60926E3618E7D5BD00B9ABAE /* NotifyMessageDef.h */,
 				6048D0DE190EA31300418BBE /* KeyConfigDef.h */,
+				60DEA56619151CF70096E14F /* FontStylesDef.h */,
 			);
 			name = Def;
 			path = ../Classes/Def;
@@ -2411,6 +2421,7 @@
 		60C18A9018FD859800AC2464 /* plist */ = {
 			isa = PBXGroup;
 			children = (
+				60DEA5601915196F0096E14F /* x_fontstyle.plist */,
 				60C18A9118FD85D300AC2464 /* x_config.plist */,
 				60C18A9318FD85EF00AC2464 /* x_anim.plist */,
 			);
@@ -2661,6 +2672,10 @@
 		CE7B9FAA18DFD54500FD2DAE /* widget */ = {
 			isa = PBXGroup;
 			children = (
+				60DEA56219151BA10096E14F /* CCLabelTTFStroke.cpp */,
+				60DEA56319151BA10096E14F /* CCLabelTTFStroke.h */,
+				60DEA55D191518DE0096E14F /* LabelView.cpp */,
+				60DEA55E191518DE0096E14F /* LabelView.h */,
 				CE6C9B4918E11C5B00B6711E /* FontStyle.h */,
 				CE7B9FAB18DFD54500FD2DAE /* CCScale9ProgressBar.cpp */,
 				CE7B9FAC18DFD54500FD2DAE /* CCScale9ProgressBar.h */,
@@ -3319,6 +3334,7 @@
 				60C18A8418FD718D00AC2464 /* fire1.png in Resources */,
 				60C18A8218FD718D00AC2464 /* fire.plist in Resources */,
 				60776A051903573000A07AED /* back_1.png in Resources */,
+				60DEA5611915196F0096E14F /* x_fontstyle.plist in Resources */,
 				605A0AF818FEC214001EA057 /* hero_1.xml in Resources */,
 				CE7BA0CE18DFF72A00FD2DAE /* Default@2x.png in Resources */,
 				60776A081903573000A07AED /* back_4.png in Resources */,
@@ -3413,6 +3429,7 @@
 				15A3D90A1682F7D5002FB0C5 /* b2PolygonShape.cpp in Sources */,
 				15A3D90B1682F7D5002FB0C5 /* b2BlockAllocator.cpp in Sources */,
 				CE6C9B2818E0552600B6711E /* RootUiLayer.cpp in Sources */,
+				60DEA55F191518DE0096E14F /* LabelView.cpp in Sources */,
 				15A3D90C1682F7D5002FB0C5 /* b2Draw.cpp in Sources */,
 				375BD4C61868411B0024609E /* TriggerObj.cpp in Sources */,
 				375BD4C31868411B0024609E /* ObjectFactory.cpp in Sources */,
@@ -3433,6 +3450,7 @@
 				15A3D9171682F7D5002FB0C5 /* b2ChainAndCircleContact.cpp in Sources */,
 				CEBCE55418EABE5100691E3B /* LHCustomSpriteMgr.cpp in Sources */,
 				15A3D9181682F7D5002FB0C5 /* b2ChainAndPolygonContact.cpp in Sources */,
+				60DEA56419151BA10096E14F /* CCLabelTTFStroke.cpp in Sources */,
 				375BD5111868454E0024609E /* CCActionManager.cpp in Sources */,
 				15A3D9191682F7D5002FB0C5 /* b2CircleContact.cpp in Sources */,
 				608ACBFF18F19AB6005BE5CA /* GameView.cpp in Sources */,

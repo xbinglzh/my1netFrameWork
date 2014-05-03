@@ -10,6 +10,7 @@
 #define __motoGame__GameConfig__
 
 #include "cocos2d.h"
+#include "FontStyle.h"
 
 USING_NS_CC;
 
@@ -65,6 +66,10 @@ public:
      获得对应Id的animation信息
      */
     cocos2d::CCDictionary * getAnimationById(const std::string & Id);
+    /**
+     获得对应Id的字体样式{颜色，字体名，大小}
+     */
+	const FontStyle getFontStyleById(const std::string & Id);
     
 private:
     std::string 	_version;
@@ -76,7 +81,8 @@ private:
     
     
 private: // Dict
-    cocos2d::CCDictionary        * _animationDict;
+    cocos2d::CCDictionary*        _animationDict;
+    cocos2d::CCDictionary*        _textFontStyleDict;
     
 };
 

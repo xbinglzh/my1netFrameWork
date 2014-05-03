@@ -19,7 +19,9 @@
 #define KKeyskeleton                  "skeleton"
 #define KKeyDefault                   "default"
 #define KKeySize                      "size"
-
+#define KKeyFont                      "font"
+#define KKeyColor                     "color"
+#define KKeyStrokeColor               "stroke_color" //描边字边框颜色
 
 
 #endif /* defined(__motoGame__KeyConfigDef__) */

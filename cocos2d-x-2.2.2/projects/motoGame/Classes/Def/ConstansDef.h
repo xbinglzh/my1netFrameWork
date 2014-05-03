@@ -43,4 +43,13 @@ enum BodyTag {
     K_BodyTag_Tree        = 2,
 };
 
+/**
+ 字体样式Id
+ **/
+enum EFontType {
+    K_FONT_LABEL_TTF = 1,   //普通CCLabelTTF
+    K_FONT_LABEL_BM,        //CCLabelBMFont
+    K_FONT_LABEL_TTF_STROKE,    //描边字体
+};
+
 #endif

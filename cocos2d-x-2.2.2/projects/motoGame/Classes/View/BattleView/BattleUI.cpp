@@ -12,9 +12,10 @@
 #include "CCSpriteExt.h"
 #include "NotifyMessageDef.h"
 #include "GameModel.h"
+#include "LabelView.h"
+#include "FontStylesDef.h"
 
-
-BattleUI::BattleUI() : _powerNode(NULL), _scoreNode(NULL), _powerBar(NULL), _powerBg(NULL){
+BattleUI::BattleUI() : _powerNode(NULL), _scoreNode(NULL), _powerBar(NULL), _powerBg(NULL), _scoreLable(NULL){
     
 }
 
@@ -48,6 +49,10 @@ bool BattleUI::initWithCustom() {
     LayoutUtil::layoutParentCenter(_powerBg);
     
     _powerBar->setVisibleRatio(GameModel::sharedInstance()->getEnergyRatio());
+    
+    _scoreLable = LabelView::createWithFontStyle("分数", kFontSytle_24_WHITE_BLACK, _scoreNode->getContentSize());
+    _scoreNode->addChild(_scoreLable);
+    LayoutUtil::layoutParentCenter(_scoreLable);
     
     return true;
 }

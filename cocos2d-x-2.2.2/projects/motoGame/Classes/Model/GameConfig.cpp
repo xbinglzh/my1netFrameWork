@@ -7,17 +7,19 @@
 //
 
 #include "GameConfig.h"
-
-
+#include "KeyConfigDef.h"
+#include "ConstansDef.h"
+#include "UiUtils.h"
 
 static GameConfig * _configSharedInstance=NULL;
 
-GameConfig::GameConfig() : _animationDict(NULL) {
+GameConfig::GameConfig() : _animationDict(NULL), _textFontStyleDict(NULL){
     
 }
 
 GameConfig::~GameConfig() {
     CC_SAFE_RELEASE_NULL(_animationDict);
+    CC_SAFE_RELEASE_NULL(_textFontStyleDict);
 }
 
 GameConfig * GameConfig::sharedInstance(){
@@ -40,6 +42,10 @@ bool GameConfig::init() {
     _animationDict = CCDictionary::createWithContentsOfFile("x_anim.plist");
     _animationDict->retain();
     
+    CC_SAFE_RELEASE_NULL(_textFontStyleDict);
+    _textFontStyleDict = CCDictionary::createWithContentsOfFile("x_fontstyle.plist");
+    _textFontStyleDict->retain();
+    
     return true;
 }
 
@@ -59,4 +65,39 @@ cocos2d::CCDictionary * GameConfig::getAnimationById(const std::string & Id){
         return static_cast<CCDictionary * >(_animationDict->objectForKey(Id));
     }
     return NULL;
+}
+
+/**
+ 获得对应Id的字体样式{颜色，字体名，大小}
+ */
+
+const FontStyle GameConfig::getFontStyleById(const std::string & Id){
+    FontStyle fontstyle;
+    
+    if (_textFontStyleDict) {
+		CCDictionary * dict =  static_cast<CCDictionary * >(_textFontStyleDict->objectForKey(Id));
+		fontstyle._font = static_cast<CCString * >(dict->objectForKey(KKeyFont))->m_sString;
+		fontstyle._size = static_cast<CCString * >(dict->objectForKey(KKeySize))->intValue();
+        
+        const std::string &type = static_cast<CCString *>(dict->objectForKey(KKeyType))->m_sString;
+        fontstyle._type = atoi(type.c_str());
+        
+        if (fontstyle._type != K_FONT_LABEL_BM) {
+            const std::string & colorstring = static_cast<CCString * >(dict->objectForKey(KKeyColor))->m_sString;
+            fontstyle._color.r = UiUtils::hexToR(colorstring);
+            fontstyle._color.g = UiUtils::hexToG(colorstring);
+            fontstyle._color.b = UiUtils::hexToB(colorstring);
+        }
+        if (fontstyle._type == K_FONT_LABEL_TTF_STROKE) {
+            CCString *str = static_cast<CCString * >(dict->objectForKey(KKeyStrokeColor));
+            if (str) {
+                const std::string &strokeColorstring = str->getCString();
+                fontstyle._stroke_color = ccc3(UiUtils::hexToR(strokeColorstring),
+                                               UiUtils::hexToG(strokeColorstring),
+                                               UiUtils::hexToB(strokeColorstring));
+            }
+        }
+    }
+    
+    return fontstyle;
 }
