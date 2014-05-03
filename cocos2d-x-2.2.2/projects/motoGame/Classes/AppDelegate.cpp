@@ -8,6 +8,7 @@
 #include "NotifyMessageDef.h"
 #include <boost/bind.hpp>
 #include "AppLauncher.h"
+#include "ConstansDef.h"
 
 USING_NS_CC;
 
@@ -26,7 +27,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     pDirector->setOpenGLView(glView);
     pDirector->setProjection(kCCDirectorProjection2D);
-    pDirector->setAnimationInterval(1.0 / 60);
+//    pDirector->setAnimationInterval(1.0 / 60);
+    pDirector->setAnimationInterval(GAME_INTERVAL);
     
     // 计算最接近的屏幕尺寸的设计分辨率
     const CCSize &screenSize = glView->getFrameSize();

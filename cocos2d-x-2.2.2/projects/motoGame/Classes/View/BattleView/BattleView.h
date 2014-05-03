@@ -15,17 +15,11 @@
 
 class BattleUI;
 class HeroSprite;
+class GameController;
 
 USING_NS_CC;
 
 class BattleView : public CCLayer {
-    
-public:
-    enum GameState {
-        StartGame,
-        PauseGame,
-        ExitGame,
-    };
     
 public:
     BattleView();
@@ -50,9 +44,10 @@ private:
     LHLayer* _lhLayer;
     
 private:
-    GameState _curGameState;
     BattleUI* _battleUI;
     HeroSprite* _hero;
+    
+    GameController* _gameController;
 };
 
 

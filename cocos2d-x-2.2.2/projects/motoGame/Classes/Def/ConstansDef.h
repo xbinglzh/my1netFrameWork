@@ -12,6 +12,8 @@
 #define PTM_RATIO 32.0f
 #define BASE_TAG  1000
 
+#define GAME_INTERVAL  1.0f/60.f
+
 enum EUserState {
     K_User_State_Disable = -1,  //停用
     K_User_State_Normal = 0,    //正常

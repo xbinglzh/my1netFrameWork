@@ -15,6 +15,7 @@
 #include "Box2dUtil.h"
 #include "HeroSprite.h"
 #include "BattleUI.h"
+#include "GameController.h"
 
 #define IsOpenBox2dDebugDraw true
 
@@ -24,7 +25,7 @@ const int TagHero   = BASE_TAG + 3;
 
 const float Gravity = -9.8f;
 
-BattleView::BattleView(){
+BattleView::BattleView() :_battleUI(NULL), _hero(NULL), _gameController(NULL) {
     
 }
 
@@ -37,6 +38,7 @@ bool BattleView::init() {
         return false;
     }
     this->setTouchEnabled(true);
+    _gameController = GameController::sharedInstance();
     
     initBattleUi();
     

@@ -276,15 +276,17 @@
 		60926E4518E8571100B9ABAE /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60926E4418E8571100B9ABAE /* bg.jpg */; };
 		60926E4818E8747A00B9ABAE /* RollBgView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60926E4618E8747A00B9ABAE /* RollBgView.cpp */; };
 		60BB17A8190CC5F8001C92A2 /* BattleView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60BB17A6190CC5F8001C92A2 /* BattleView.cpp */; };
-		60C18A7C18FD6CD900AC2464 /* SmallSoybeanParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C18A7A18FD6CD900AC2464 /* SmallSoybeanParticle.cpp */; };
 		60C18A8218FD718D00AC2464 /* fire.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A7E18FD718D00AC2464 /* fire.plist */; };
 		60C18A8318FD718D00AC2464 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A7F18FD718D00AC2464 /* fire.png */; };
 		60C18A8418FD718D00AC2464 /* fire1.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A8018FD718D00AC2464 /* fire1.png */; };
 		60C18A8518FD718D00AC2464 /* particle-fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A8118FD718D00AC2464 /* particle-fire.png */; };
-		60C18A8818FD729E00AC2464 /* ParticleEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C18A8618FD729E00AC2464 /* ParticleEffect.cpp */; };
 		60C18A8F18FD749000AC2464 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C18A8D18FD749000AC2464 /* GameObject.cpp */; };
 		60C18A9218FD85D300AC2464 /* x_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A9118FD85D300AC2464 /* x_config.plist */; };
 		60C18A9418FD85EF00AC2464 /* x_anim.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A9318FD85EF00AC2464 /* x_anim.plist */; };
+		60DEA53A19148C680096E14F /* GameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA53819148C680096E14F /* GameController.cpp */; };
+		60DEA55519148F010096E14F /* ParticleEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA55119148F010096E14F /* ParticleEffect.cpp */; };
+		60DEA55619148F010096E14F /* SmallSoybeanParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA55319148F010096E14F /* SmallSoybeanParticle.cpp */; };
+		60DEA55C191496BA0096E14F /* GameModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA55A191496BA0096E14F /* GameModel.cpp */; };
 		60F342CB1911DEB000DD70E5 /* BattleUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60F342C91911DEB000DD70E5 /* BattleUI.cpp */; };
 		60F342E61911E6A800DD70E5 /* bar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 60F342E21911E6A800DD70E5 /* bar_bg.png */; };
 		60F342E71911E6A800DD70E5 /* bar_fg.png in Resources */ = {isa = PBXBuildFile; fileRef = 60F342E31911E6A800DD70E5 /* bar_fg.png */; };
@@ -1092,18 +1094,22 @@
 		60926E4718E8747A00B9ABAE /* RollBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollBgView.h; sourceTree = "<group>"; };
 		60BB17A6190CC5F8001C92A2 /* BattleView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleView.cpp; sourceTree = "<group>"; };
 		60BB17A7190CC5F8001C92A2 /* BattleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleView.h; sourceTree = "<group>"; };
-		60C18A7A18FD6CD900AC2464 /* SmallSoybeanParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SmallSoybeanParticle.cpp; sourceTree = "<group>"; };
-		60C18A7B18FD6CD900AC2464 /* SmallSoybeanParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallSoybeanParticle.h; sourceTree = "<group>"; };
 		60C18A7E18FD718D00AC2464 /* fire.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fire.plist; sourceTree = "<group>"; };
 		60C18A7F18FD718D00AC2464 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		60C18A8018FD718D00AC2464 /* fire1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire1.png; sourceTree = "<group>"; };
 		60C18A8118FD718D00AC2464 /* particle-fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "particle-fire.png"; sourceTree = "<group>"; };
-		60C18A8618FD729E00AC2464 /* ParticleEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleEffect.cpp; sourceTree = "<group>"; };
-		60C18A8718FD729E00AC2464 /* ParticleEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEffect.h; sourceTree = "<group>"; };
 		60C18A8D18FD749000AC2464 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
 		60C18A8E18FD749000AC2464 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		60C18A9118FD85D300AC2464 /* x_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = x_config.plist; sourceTree = "<group>"; };
 		60C18A9318FD85EF00AC2464 /* x_anim.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = x_anim.plist; sourceTree = "<group>"; };
+		60DEA53819148C680096E14F /* GameController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameController.cpp; sourceTree = "<group>"; };
+		60DEA53919148C680096E14F /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		60DEA55119148F010096E14F /* ParticleEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleEffect.cpp; sourceTree = "<group>"; };
+		60DEA55219148F010096E14F /* ParticleEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEffect.h; sourceTree = "<group>"; };
+		60DEA55319148F010096E14F /* SmallSoybeanParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SmallSoybeanParticle.cpp; sourceTree = "<group>"; };
+		60DEA55419148F010096E14F /* SmallSoybeanParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallSoybeanParticle.h; sourceTree = "<group>"; };
+		60DEA55A191496BA0096E14F /* GameModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameModel.cpp; sourceTree = "<group>"; };
+		60DEA55B191496BA0096E14F /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
 		60F342C91911DEB000DD70E5 /* BattleUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleUI.cpp; sourceTree = "<group>"; };
 		60F342CA1911DEB000DD70E5 /* BattleUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleUI.h; sourceTree = "<group>"; };
 		60F342E21911E6A800DD70E5 /* bar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_bg.png; sourceTree = "<group>"; };
@@ -2373,20 +2379,11 @@
 				60926E3F18E7EB6E00B9ABAE /* AppLauncher.h */,
 				60926E3B18E7D70500B9ABAE /* SceneController.cpp */,
 				60926E3C18E7D70500B9ABAE /* SceneController.h */,
+				60DEA53819148C680096E14F /* GameController.cpp */,
+				60DEA53919148C680096E14F /* GameController.h */,
 			);
 			name = Controller;
 			path = ../Classes/Controller;
-			sourceTree = "<group>";
-		};
-		60C18A7018FD6C3800AC2464 /* Particles */ = {
-			isa = PBXGroup;
-			children = (
-				60C18A7A18FD6CD900AC2464 /* SmallSoybeanParticle.cpp */,
-				60C18A7B18FD6CD900AC2464 /* SmallSoybeanParticle.h */,
-				60C18A8618FD729E00AC2464 /* ParticleEffect.cpp */,
-				60C18A8718FD729E00AC2464 /* ParticleEffect.h */,
-			);
-			path = Particles;
 			sourceTree = "<group>";
 		};
 		60C18A7D18FD718D00AC2464 /* particle */ = {
@@ -2418,6 +2415,17 @@
 				60C18A9318FD85EF00AC2464 /* x_anim.plist */,
 			);
 			path = plist;
+			sourceTree = "<group>";
+		};
+		60DEA55019148F010096E14F /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				60DEA55119148F010096E14F /* ParticleEffect.cpp */,
+				60DEA55219148F010096E14F /* ParticleEffect.h */,
+				60DEA55319148F010096E14F /* SmallSoybeanParticle.cpp */,
+				60DEA55419148F010096E14F /* SmallSoybeanParticle.h */,
+			);
+			path = Particles;
 			sourceTree = "<group>";
 		};
 		60F342E11911E57800DD70E5 /* resources-normal */ = {
@@ -2583,10 +2591,11 @@
 			isa = PBXGroup;
 			children = (
 				60C18A8918FD746600AC2464 /* object */,
-				60C18A7018FD6C3800AC2464 /* Particles */,
 				CE73522718ED28770059BAA1 /* entity */,
 				CE6C9B2C18E0583D00B6711E /* GameConfig.cpp */,
 				CE6C9B2D18E0583D00B6711E /* GameConfig.h */,
+				60DEA55A191496BA0096E14F /* GameModel.cpp */,
+				60DEA55B191496BA0096E14F /* GameModel.h */,
 			);
 			name = Model;
 			path = ../Classes/Model;
@@ -2610,6 +2619,7 @@
 				CE7B9FAA18DFD54500FD2DAE /* widget */,
 				CE7B9FA018DFD2D400FD2DAE /* shader */,
 				CE7B9F9318DFD20E00FD2DAE /* layout */,
+				60DEA55019148F010096E14F /* Particles */,
 			);
 			name = Util;
 			path = ../Classes/Util;
@@ -3409,7 +3419,6 @@
 				15A3D90D1682F7D5002FB0C5 /* b2Math.cpp in Sources */,
 				15A3D90E1682F7D5002FB0C5 /* b2Settings.cpp in Sources */,
 				15A3D90F1682F7D5002FB0C5 /* b2StackAllocator.cpp in Sources */,
-				60C18A7C18FD6CD900AC2464 /* SmallSoybeanParticle.cpp in Sources */,
 				15A3D9101682F7D5002FB0C5 /* b2Timer.cpp in Sources */,
 				15A3D9111682F7D5002FB0C5 /* b2Body.cpp in Sources */,
 				15A3D9121682F7D5002FB0C5 /* b2ContactManager.cpp in Sources */,
@@ -3419,6 +3428,7 @@
 				CEBCE55518EABE5100691E3B /* LHCuttingEngineMgr.cpp in Sources */,
 				CE7BA02918DFDA3400FD2DAE /* SPProcessBase.cpp in Sources */,
 				15A3D9161682F7D5002FB0C5 /* b2WorldCallbacks.cpp in Sources */,
+				60DEA55C191496BA0096E14F /* GameModel.cpp in Sources */,
 				CEBCE55A18EABE5100691E3B /* LHParallaxNode.cpp in Sources */,
 				15A3D9171682F7D5002FB0C5 /* b2ChainAndCircleContact.cpp in Sources */,
 				CEBCE55418EABE5100691E3B /* LHCustomSpriteMgr.cpp in Sources */,
@@ -3451,6 +3461,7 @@
 				CE7BA05118DFDA3400FD2DAE /* SPArmatureDataManager.cpp in Sources */,
 				15A3D9261682F7D5002FB0C5 /* b2PulleyJoint.cpp in Sources */,
 				15A3D9271682F7D5002FB0C5 /* b2RevoluteJoint.cpp in Sources */,
+				60DEA53A19148C680096E14F /* GameController.cpp in Sources */,
 				CEBCE55618EABE5100691E3B /* LHFixture.cpp in Sources */,
 				15A3D9281682F7D5002FB0C5 /* b2RopeJoint.cpp in Sources */,
 				15A3D9291682F7D5002FB0C5 /* b2WeldJoint.cpp in Sources */,
@@ -3604,11 +3615,11 @@
 				1A8F3B70175E05DA00049216 /* AnimationStateData.cpp in Sources */,
 				1A8F3B71175E05DA00049216 /* Atlas.cpp in Sources */,
 				1A8F3B72175E05DA00049216 /* AtlasAttachmentLoader.cpp in Sources */,
+				60DEA55519148F010096E14F /* ParticleEffect.cpp in Sources */,
 				1A8F3B73175E05DA00049216 /* Attachment.cpp in Sources */,
 				1A8F3B74175E05DA00049216 /* AttachmentLoader.cpp in Sources */,
 				CE7BA03D18DFDA3400FD2DAE /* SPDisplayFactory.cpp in Sources */,
 				1A8F3B75175E05DA00049216 /* Bone.cpp in Sources */,
-				60C18A8818FD729E00AC2464 /* ParticleEffect.cpp in Sources */,
 				1A8F3B76175E05DA00049216 /* BoneData.cpp in Sources */,
 				CE7BA07418DFDD8E00FD2DAE /* tinyxmlerror.cpp in Sources */,
 				1A8F3B77175E05DA00049216 /* CCSkeleton.cpp in Sources */,
@@ -3663,6 +3674,7 @@
 				379BB9AD17F03F3700829B88 /* CCComAttribute.cpp in Sources */,
 				379BB9AE17F03F3700829B88 /* CCComAudio.cpp in Sources */,
 				CE7B9FAD18DFD54500FD2DAE /* CCScale9ProgressBar.cpp in Sources */,
+				60DEA55619148F010096E14F /* SmallSoybeanParticle.cpp in Sources */,
 				60C18A8F18FD749000AC2464 /* GameObject.cpp in Sources */,
 				CE7BA02718DFDA3400FD2DAE /* ArmatureAnim.cpp in Sources */,
 				379BB9AF17F03F3700829B88 /* CCComController.cpp in Sources */,
