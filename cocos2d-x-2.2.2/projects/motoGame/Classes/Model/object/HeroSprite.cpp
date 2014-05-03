@@ -50,6 +50,7 @@ bool HeroSprite::init() {
     
     CCNotificationCenter::sharedNotificationCenter()->addObserver(this, callfuncO_selector(HeroSprite::onNotifyHeroJump), KNotifyMakeHeroJumpMessage, NULL);
     CCNotificationCenter::sharedNotificationCenter()->addObserver(this, callfuncO_selector(HeroSprite::onNotifyHeroFallFloor), KNotifyMakeHeroFallFloorMessage, NULL);
+    CCNotificationCenter::sharedNotificationCenter()->addObserver(this, callfuncO_selector(HeroSprite::onNotifyHeroDead), KNotifyMakeHeroDieMessage, NULL);
     
     return true;
 }
@@ -124,6 +125,9 @@ void HeroSprite::changeHeroState(HeroState state) {
             break;
         case HERO_BROKE_RUN_JUMP:
             break;
+        case HERO_DEAD:
+            _animNode->stopAnimation();
+            break;
     }
     
     this->_curHeroState = state;
@@ -148,3 +152,6 @@ void HeroSprite::onNotifyHeroFallFloor(cocos2d::CCObject *pSender) {
     changeHeroState(HERO_RUN);
 }
 
+void HeroSprite::onNotifyHeroDead(cocos2d::CCObject *pSender) {
+    changeHeroState(HERO_DEAD);
+}

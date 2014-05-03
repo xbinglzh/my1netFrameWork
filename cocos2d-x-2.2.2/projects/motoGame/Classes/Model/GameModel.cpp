@@ -11,7 +11,7 @@
 
 static GameModel * _sharedInstance=NULL;
 
-GameModel::GameModel() :CCObject(), _gameConfig(NULL) ,_currentEnergy(0),_saveEnergyRatio(0){
+GameModel::GameModel() :CCObject(), _gameConfig(NULL) ,_currentEnergy(0),_saveEnergyRatio(0), _currentGameScore(0), _isUseEnergy(false),_saveGameScore(0){
     
 }
 
@@ -19,6 +19,9 @@ GameModel::~GameModel() {
     CCNotificationCenter::sharedNotificationCenter()->removeAllObservers(this);
     _currentEnergy = 0;
     _saveEnergyRatio = 0;
+    _currentGameScore = 0;
+    _saveGameScore = 0;
+    _isUseEnergy = false;
 }
 
 GameModel * GameModel::sharedInstance(void) {
@@ -42,12 +45,22 @@ bool GameModel::init(void) {
     return true;
 }
 
+
 void GameModel::update(float dt) {
+    
+    if (_isUseEnergy) {
+        _currentGameScore += 0.05f;
+    } else {
+        _currentGameScore += 0.01f;
+    }
+    
+    genScore();
     
 }
 
 void GameModel::clearUserData() {
-    
+    _currentGameScore = 0;
+    _saveGameScore = 0;
 }
 
 void GameModel::appendEnergyUnit() {
@@ -96,12 +109,29 @@ void GameModel::decreaseEnergy(float energy) {
 }
 
 void GameModel::startUseEnergy() {
-    CCDirector::sharedDirector()->getScheduler()->scheduleSelector(schedule_selector(GameModel::updateEnergy), this, 0.01, false);
+    _isUseEnergy = true;
+    CCDirector::sharedDirector()->getScheduler()->scheduleSelector(schedule_selector(GameModel::updateEnergy), this, 0.1, false);
 }
 void GameModel::stopUseEnergy(){
+    _isUseEnergy = false;
     CCDirector::sharedDirector()->getScheduler()->unscheduleSelector(schedule_selector(GameModel::updateEnergy), this);
 }
 
 void GameModel::updateEnergy() {
     decreaseEnergyUnit();
 }
+
+float GameModel::getGameScore() {
+    return _saveGameScore;
+}
+
+void GameModel::genScore() {
+    if (_currentGameScore == _saveGameScore) {
+        return;
+    }
+    
+    this->_currentGameScore = _saveGameScore;
+    CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyGameScoreChangeMessage);
+}
+
+

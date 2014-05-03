@@ -102,6 +102,6 @@ void GameController::makeHeroFallFloor() {
 
 void GameController::makeHeroDie() {
     CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyMakeHeroDieMessage);
-    _gameModel->stopUseEnergy();
+    this->pauseBattle();
 }
 

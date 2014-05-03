@@ -46,7 +46,7 @@ protected:
     
 private:
     void onNotifyEnergyValueChangeMessage(CCObject* pSender);
-    
+    void onNotifyGameScoreChangeMessage(CCObject* pSender);
 private:
     CCNode* _powerNode;
     CCNode* _scoreNode;

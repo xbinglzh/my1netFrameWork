@@ -26,4 +26,6 @@
 #define KNotifyEnergyFullMessage      "notifyEnergyFullMessage"
 #define KNotifyEnergyEmptyMessage     "notifyEnergyEmptyMessage"
 
+#define KNotifyGameScoreChangeMessage "notifyGameScoreChangeMessage"
+
 #endif /* defined(__motoGame__NotifyMessageDef__) */

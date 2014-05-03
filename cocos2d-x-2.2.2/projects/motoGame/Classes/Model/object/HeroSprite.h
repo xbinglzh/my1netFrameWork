@@ -26,7 +26,9 @@ public:
         
         HERO_BROKE_JUMP,
         HERO_BROKE_RUN,
-        HERO_BROKE_RUN_JUMP
+        HERO_BROKE_RUN_JUMP,
+        
+        HERO_DEAD,
     };
     
 public:
@@ -39,6 +41,7 @@ public:
     void onNotifyHeroJump(CCObject* pSender);
     void onNotifyHeroFallFloor(CCObject* pSender);
     void runDefault();
+    void onNotifyHeroDead(CCObject* pSender);
     
 private:
     void exertImpulseToHero();

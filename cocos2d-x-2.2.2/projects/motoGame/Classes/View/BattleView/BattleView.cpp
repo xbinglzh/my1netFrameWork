@@ -60,7 +60,6 @@ bool BattleView::init() {
     _rollView = GameBgRollView::create();
     this->addChild(_rollView, 0, TagBgView);
     
-    
     initPhysicalWorld();
     
     HeroSprite* hero = HeroSprite::create();
@@ -195,11 +194,11 @@ void BattleView::changeSceneState(SceneState state) {
             break;
         case startScene:
             _rollView->setMoveSpeed(2);
-            _gameParallaxLayer->setSpeed(70);
+            _gameParallaxLayer->setSpeed(7);
             break;
         case accelerateScene:
             _rollView->setMoveSpeed(4);
-            _gameParallaxLayer->setSpeed(140);
+            _gameParallaxLayer->setSpeed(15);
             break;
         case pauseScene:
             _rollView->setMoveSpeed(0);

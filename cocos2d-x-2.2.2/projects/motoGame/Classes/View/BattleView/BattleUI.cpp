@@ -13,6 +13,7 @@
 #include "NotifyMessageDef.h"
 #include "GameModel.h"
 
+
 BattleUI::BattleUI() : _powerNode(NULL), _scoreNode(NULL), _powerBar(NULL), _powerBg(NULL){
     
 }
@@ -20,6 +21,8 @@ BattleUI::BattleUI() : _powerNode(NULL), _scoreNode(NULL), _powerBar(NULL), _pow
 BattleUI::~BattleUI() {
     CC_SAFE_RELEASE_NULL(_powerNode);
     CC_SAFE_RELEASE_NULL(_scoreNode);
+    
+    CCNotificationCenter::sharedNotificationCenter()->removeAllObservers(this);
 }
 
 BattleUI* BattleUI::createFromCCB() {
@@ -30,6 +33,7 @@ BattleUI* BattleUI::createFromCCB() {
 bool BattleUI::initWithCustom() {
     RootUiLayer::initWithCustom();
     CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(BattleUI::onNotifyEnergyValueChangeMessage),KNotifyEnergyChangeMessage, NULL);
+    CCNotificationCenter::sharedNotificationCenter()->addObserver(this, callfuncO_selector(BattleUI::onNotifyGameScoreChangeMessage), KNotifyGameScoreChangeMessage, NULL);
     
     _powerBg = CCScale9Sprite::create("bar_bg.png");
     _powerBar = CCScale9ProgressBar::create("bar_fg.png");
@@ -82,5 +86,8 @@ void BattleUI::onNotifyEnergyValueChangeMessage(cocos2d::CCObject *pSender) {
     _powerBar->setVisibleRatio(GameModel::sharedInstance()->getEnergyRatio());
 }
 
+void BattleUI::onNotifyGameScoreChangeMessage(cocos2d::CCObject *pSender) {
+    
+}
 
 

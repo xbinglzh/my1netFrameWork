@@ -37,16 +37,23 @@ public:
     
     void startUseEnergy();
     void stopUseEnergy();
+    
+    float getGameScore();
 private:
     void genSaveEnergyRatio();
     void decreaseEnergyUnit();
     void decreaseEnergy(float energy);
     void updateEnergy();
     
+    void genScore();
 private:
     GameConfig* _gameConfig;
     float       _currentEnergy;
     float       _saveEnergyRatio;
+    bool        _isUseEnergy;
+    
+    float       _currentGameScore;
+    float       _saveGameScore;
 };
 
 #endif /* defined(__motoGame__GameModel__) */
