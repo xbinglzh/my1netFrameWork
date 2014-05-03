@@ -58,6 +58,10 @@ void GameModel::update(float dt) {
     
 }
 
+void GameModel::pauseModel() {
+    stopUseEnergy();
+}
+
 void GameModel::clearUserData() {
     _currentGameScore = 0;
     _saveGameScore = 0;

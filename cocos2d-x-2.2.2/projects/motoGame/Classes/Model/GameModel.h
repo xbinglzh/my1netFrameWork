@@ -30,20 +30,21 @@ public:
      */
 	void update(float dt);
     void clearUserData();
+    void pauseModel();
     
     void appendEnergyUnit();
     void appendEnergy(float energy);
-    float getEnergyRatio();
     
+    float getEnergyRatio();
+    float getGameScore();
+    
+private:
     void startUseEnergy();
     void stopUseEnergy();
-    
-    float getGameScore();
-private:
+    void updateEnergy();
     void genSaveEnergyRatio();
     void decreaseEnergyUnit();
     void decreaseEnergy(float energy);
-    void updateEnergy();
     
     void genScore();
 private:

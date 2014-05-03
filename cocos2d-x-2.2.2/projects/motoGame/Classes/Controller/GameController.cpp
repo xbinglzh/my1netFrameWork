@@ -58,6 +58,7 @@ void GameController::startBattle(void){
 
 void GameController::pauseBattle(void){
 	_updateStoped = true;
+    _gameModel->pauseModel();
 	_director->getScheduler()->unscheduleSelector(schedule_selector(GameController::update), this);
     CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyPauseBattleMessage);
 }
