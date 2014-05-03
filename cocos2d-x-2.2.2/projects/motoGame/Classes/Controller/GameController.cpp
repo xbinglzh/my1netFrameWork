@@ -84,3 +84,14 @@ const bool GameController::isBattleRunning(){
     return !_updateStoped;
 }
 
+/*---------------hero control-------------------*/
+
+void GameController::makeHeroJump() {
+    CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyMakeHeroJumpMessage);
+}
+
+void GameController::makeHeroObtainStar() {
+    _gameModel->appendEnergyUnit();
+}
+
+

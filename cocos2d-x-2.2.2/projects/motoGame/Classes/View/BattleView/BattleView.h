@@ -39,13 +39,15 @@ protected:
     virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
     
 private:
+    void postCollisionBetweenHeroAndCoin(LHContactInfo* contact);
+    void postCollisionBetweenHeroAndFloor(LHContactInfo* contact);
+private:
     b2World* _physicsWorld;
     LevelHelperLoader* _levelHelperLoader;
     LHLayer* _lhLayer;
     
 private:
     BattleUI* _battleUI;
-    HeroSprite* _hero;
     
     GameController* _gameController;
 };

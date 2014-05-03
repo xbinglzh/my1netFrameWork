@@ -17,4 +17,9 @@
 #define KNotifyStartBattleMessage     "notifyStartBattleMessage"
 #define KNotifyPauseBattleMessage     "notifyPauseBattleMessage"
 
+
+#define KNotifyMakeHeroJumpMessage    "notifyMakeHeroJumpMessage"
+
+#define KNotifyEnergyChangeMessage    "notifyEnergyChangeMessage"
+
 #endif /* defined(__motoGame__NotifyMessageDef__) */

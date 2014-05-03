@@ -7,15 +7,18 @@
 //
 
 #include "GameModel.h"
+#include "NotifyMessageDef.h"
 
 static GameModel * _sharedInstance=NULL;
 
-GameModel::GameModel() :CCObject(), _gameConfig(NULL) {
+GameModel::GameModel() :CCObject(), _gameConfig(NULL) ,_currentEnergy(0),_saveEnergyRatio(0){
     
 }
 
 GameModel::~GameModel() {
     CCNotificationCenter::sharedNotificationCenter()->removeAllObservers(this);
+    _currentEnergy = 0;
+    _saveEnergyRatio = 0;
 }
 
 GameModel * GameModel::sharedInstance(void) {
@@ -47,5 +50,24 @@ void GameModel::clearUserData() {
     
 }
 
+void GameModel::appendEnergyUnit() {
+    _currentEnergy += Energy_Unit;
+    genSaveEnergyRatio();
+}
 
+void GameModel::appendEnergy(float energyNum) {
+    _currentEnergy += energyNum;
+    genSaveEnergyRatio();
+}
 
+void GameModel::genSaveEnergyRatio() {
+    float ratio = _currentEnergy / Energy_Max;
+    if (ratio != _saveEnergyRatio) {
+        _saveEnergyRatio = ratio;
+        CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyEnergyChangeMessage);
+    }
+}
+
+float GameModel::getEnergyRatio() {
+    return _saveEnergyRatio;
+}

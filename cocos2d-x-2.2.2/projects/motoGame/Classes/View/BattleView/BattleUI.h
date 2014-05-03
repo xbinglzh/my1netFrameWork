@@ -45,6 +45,9 @@ protected:
     virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
     
 private:
+    void onNotifyEnergyValueChangeMessage(CCObject* pSender);
+    
+private:
     CCNode* _powerNode;
     CCNode* _scoreNode;
     

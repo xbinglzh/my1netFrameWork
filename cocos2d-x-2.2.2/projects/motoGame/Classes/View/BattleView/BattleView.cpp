@@ -25,7 +25,7 @@ const int TagHero   = BASE_TAG + 3;
 
 const float Gravity = -9.8f;
 
-BattleView::BattleView() :_battleUI(NULL), _hero(NULL), _gameController(NULL) {
+BattleView::BattleView() :_battleUI(NULL), _gameController(NULL) {
     
 }
 
@@ -53,11 +53,11 @@ bool BattleView::init() {
     
     initPhysicalWorld();
     
-    _hero = HeroSprite::create();
-    _hero->runDefault();
-    this->addChild(_hero, 10001, TagHero);
-    _hero->setPosition(ccp(120, 500));
-    _hero->initPhysical(_physicsWorld, _levelHelperLoader);
+    HeroSprite* hero = HeroSprite::create();
+    hero->runDefault();
+    this->addChild(hero, 10001, TagHero);
+    hero->setPosition(ccp(120, 500));
+    hero->initPhysical(_physicsWorld, _levelHelperLoader);
     
 //    this->runAction(CCFollow::create(hero));
     
@@ -88,6 +88,14 @@ void BattleView::initPhysicalWorld() {
     _levelHelperLoader->addObjectsToWorld(_physicsWorld, this);
     _levelHelperLoader->createPhysicBoundaries(_physicsWorld);
     _levelHelperLoader->createGravity(_physicsWorld);
+    
+    //碰撞检测
+    _levelHelperLoader->useLevelHelperCollisionHandling();
+    
+    _levelHelperLoader->registerBeginOrEndCollisionCallbackBetweenTagA(LH_TAG_STAR, LH_TAG_HERO, this,
+                        callfuncO_selector(BattleView::postCollisionBetweenHeroAndCoin));
+    _levelHelperLoader->registerPostCollisionCallbackBetweenTagA(LH_TAG_FLOOR, LH_TAG_HERO, this,
+                        callfuncO_selector(BattleView::postCollisionBetweenHeroAndFloor));
 
 }
 
@@ -107,8 +115,7 @@ void BattleView::registerWithTouchDispatcher() {
 
 bool BattleView::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
     
-//    HeroSprite* hero = (HeroSprite*) this->getChildByTag(TagHero);
-    _hero->jump();
+    _gameController->makeHeroJump();
     
     return true;
 }
@@ -124,4 +131,18 @@ void BattleView::draw() {
     _physicsWorld->DrawDebugData();
     kmGLPopMatrix();
     CHECK_GL_ERROR_DEBUG();
+}
+
+void BattleView::postCollisionBetweenHeroAndCoin(LHContactInfo *contact) {
+
+    b2Body* starBody = contact->bodyA;
+    CCSprite* star = (CCSprite*)starBody->GetUserData();
+    if (star->isVisible()) {
+        star->setVisible(false);
+        _gameController->makeHeroObtainStar();
+    }
+}
+
+void BattleView::postCollisionBetweenHeroAndFloor(LHContactInfo *contact) {
+    
 }

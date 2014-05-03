@@ -48,6 +48,10 @@ public:
     
     const bool isBattleRunning();
     
+public:// hero
+    void makeHeroJump();
+    void makeHeroObtainStar();
+    
 private:
     bool                   _updateStoped;
     GameModel*             _gameModel;

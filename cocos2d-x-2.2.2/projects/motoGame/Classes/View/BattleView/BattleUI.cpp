@@ -10,6 +10,8 @@
 #include "LayoutUtil.h"
 #include "CCScale9ProgressBar.h"
 #include "CCSpriteExt.h"
+#include "NotifyMessageDef.h"
+#include "GameModel.h"
 
 BattleUI::BattleUI() : _powerNode(NULL), _scoreNode(NULL), _powerBar(NULL), _powerBg(NULL){
     
@@ -27,6 +29,7 @@ BattleUI* BattleUI::createFromCCB() {
 
 bool BattleUI::initWithCustom() {
     RootUiLayer::initWithCustom();
+    CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(BattleUI::onNotifyEnergyValueChangeMessage),KNotifyEnergyChangeMessage, NULL);
     
     _powerBg = CCScale9Sprite::create("bar_bg.png");
     _powerBar = CCScale9ProgressBar::create("bar_fg.png");
@@ -40,7 +43,7 @@ bool BattleUI::initWithCustom() {
     _powerNode->addChild(_powerBg);
     LayoutUtil::layoutParentCenter(_powerBg);
     
-    _powerBar->setVisibleRatio(0.56f);
+    _powerBar->setVisibleRatio(GameModel::sharedInstance()->getEnergyRatio());
     
     return true;
 }
@@ -73,6 +76,10 @@ bool BattleUI::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) 
 
 void BattleUI::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
     CCLayer::ccTouchEnded(pTouch, pEvent);
+}
+
+void BattleUI::onNotifyEnergyValueChangeMessage(cocos2d::CCObject *pSender) {
+    _powerBar->setVisibleRatio(GameModel::sharedInstance()->getEnergyRatio());
 }
 
 

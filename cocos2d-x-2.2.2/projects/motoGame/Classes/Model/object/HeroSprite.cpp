@@ -11,6 +11,7 @@
 #include "LayoutUtil.h"
 #include "LevelHelperLoader.h"
 #include "Box2dUtil.h"
+#include "NotifyMessageDef.h"
 
 const std::string HERO_ANIM_ID = "100001#display";
 const int         HERO_TAG_ID  =  100001;
@@ -21,6 +22,7 @@ HeroSprite::HeroSprite() : _curHeroState(HERO_NULL), _animNode(NULL) {
 
 HeroSprite::~HeroSprite() {
     _curHeroState = HERO_NULL;
+    CCNotificationCenter::sharedNotificationCenter()->removeAllObservers(this);
 }
 
 HeroSprite* HeroSprite::create() {
@@ -46,11 +48,15 @@ bool HeroSprite::init() {
     this->setContentSize(_animNode->getContentSize());
     LayoutUtil::layoutParentCenter(_animNode);
     
+    CCNotificationCenter::sharedNotificationCenter()->addObserver(this, callfuncO_selector(HeroSprite::jump), KNotifyMakeHeroJumpMessage, NULL);
+    
     return true;
 }
 
 void HeroSprite::initPhysical(b2World* physicsWorld, LevelHelperLoader* levelHelperLoader) {
     this->setTag(LH_TAG_HERO);
+    
+    CCLOG("HeroSprite w :%f,h : %f", this->getContentSize().width, this->getContentSize().height);
     
     b2Filter filter;
     filter.maskBits = 14;
@@ -64,8 +70,6 @@ void HeroSprite::initPhysical(b2World* physicsWorld, LevelHelperLoader* levelHel
     fixtureDef.restitution = 0.7f;
     fixtureDef.filter = filter;
     
-    CCLOG("HeroSprite w :%f,h : %f", this->getContentSize().width, this->getContentSize().height);
-    
     b2PolygonShape polygon;
     b2Vec2 vec2 = levelHelperLoader->pixelToMeters(ccp(this->getContentSize().width, this->getContentSize().height));
     polygon.SetAsBox(vec2.x, vec2.y);
@@ -73,10 +77,11 @@ void HeroSprite::initPhysical(b2World* physicsWorld, LevelHelperLoader* levelHel
     
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
-    bodyDef.linearVelocity = b2Vec2(1, 0);
+    bodyDef.linearVelocity = b2Vec2(0, 0);
     bodyDef.position = levelHelperLoader->pointsToMeters(this->getPosition());
     bodyDef.userData = this;
     bodyDef.fixedRotation = true;
+    bodyDef.allowSleep = false;
     
     if (physicsWorld && levelHelperLoader) {
         _heroBody = physicsWorld->CreateBody(&bodyDef);

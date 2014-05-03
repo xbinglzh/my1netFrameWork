@@ -21448,8 +21448,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -21488,9 +21541,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -21523,8 +21576,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -21563,9 +21669,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -21598,8 +21704,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -21638,9 +21797,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -21673,8 +21832,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -21713,9 +21925,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -21748,8 +21960,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -21788,9 +22053,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -21823,8 +22088,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -21863,9 +22181,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -21898,8 +22216,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -21938,9 +22309,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -21973,8 +22344,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22013,9 +22437,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22048,8 +22472,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22088,9 +22565,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22123,8 +22600,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22163,9 +22693,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22198,8 +22728,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22238,9 +22821,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22273,8 +22856,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22313,9 +22949,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22348,8 +22984,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22388,9 +23077,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22423,8 +23112,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22463,9 +23205,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22498,8 +23240,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22538,9 +23333,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22573,8 +23368,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22613,9 +23461,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22648,8 +23496,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22688,9 +23589,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22723,8 +23624,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22763,9 +23717,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22798,8 +23752,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22838,9 +23845,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22873,8 +23880,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22913,9 +23973,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -22948,8 +24008,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -22988,9 +24101,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23023,8 +24136,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -23063,9 +24229,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23098,8 +24264,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -23138,9 +24357,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23173,8 +24392,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -23213,9 +24485,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23248,8 +24520,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -23288,9 +24613,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23323,8 +24648,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -23363,9 +24741,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23398,8 +24776,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -23438,9 +24869,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23473,8 +24904,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -23513,9 +24997,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23548,8 +25032,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -23588,9 +25125,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23623,8 +25160,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -23663,9 +25253,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23698,8 +25288,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -23738,9 +25381,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23773,8 +25416,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -23813,9 +25509,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23848,8 +25544,61 @@
 							<dict/>
 							<key>PhysicProperties</key>
 							<dict>
-								<key>HandledBySH</key>
+								<key>AngularDamping</key>
+								<real>0.0</real>
+								<key>AngularVelocity</key>
+								<real>0.0</real>
+								<key>CanSleep</key>
 								<true/>
+								<key>FixedRot</key>
+								<false/>
+								<key>GravityScale</key>
+								<real>1</real>
+								<key>HandledBySH</key>
+								<false/>
+								<key>IsBullet</key>
+								<false/>
+								<key>LinearDamping</key>
+								<real>0.0</real>
+								<key>LinearVelocity</key>
+								<string>{0, 0}</string>
+								<key>SH_ComplexShapes</key>
+								<array>
+									<dict>
+										<key>Category</key>
+										<integer>8</integer>
+										<key>Density</key>
+										<real>0.20000000298023224</real>
+										<key>Fixture</key>
+										<array>
+											<array/>
+										</array>
+										<key>Friction</key>
+										<real>0.20000000298023224</real>
+										<key>Group</key>
+										<integer>0</integer>
+										<key>IsCircle</key>
+										<true/>
+										<key>IsSensor</key>
+										<true/>
+										<key>LHHeight</key>
+										<real>17.75</real>
+										<key>LHShapePositionOffset</key>
+										<string>{0, 0}</string>
+										<key>LHWidth</key>
+										<real>18.25</real>
+										<key>Mask</key>
+										<integer>16</integer>
+										<key>Name</key>
+										<string>star</string>
+										<key>Restitution</key>
+										<real>0.20000000298023224</real>
+										<key>Tag</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>Type</key>
+								<integer>0</integer>
 							</dict>
 							<key>SHSceneName</key>
 							<string>gameElement.pshs</string>
@@ -23888,9 +25637,9 @@
 								<key>SpriteSize</key>
 								<string>{18.25, 17.75}</string>
 								<key>Tag</key>
-								<integer>0</integer>
+								<integer>3</integer>
 								<key>TagName</key>
-								<string>DEFAULT</string>
+								<string>STAR</string>
 								<key>TextureOffset</key>
 								<string>{0.25, -0}</string>
 								<key>UniqueName</key>
@@ -23958,7 +25707,7 @@
 			<key>Direction</key>
 			<integer>1</integer>
 			<key>Speed</key>
-			<real>0.0</real>
+			<real>30</real>
 			<key>Sprites</key>
 			<array>
 				<dict>
@@ -23968,6 +25717,14 @@
 					<real>0.0</real>
 					<key>SpriteName</key>
 					<string>road_1_2_1_1_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_19</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>
@@ -24047,6 +25804,14 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_2</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_1_2_1_1_1_2_1</string>
 				</dict>
 				<dict>
@@ -24055,7 +25820,23 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_30</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_1_1_1_2_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_8</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>
@@ -24143,7 +25924,23 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_22</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_3_9_1_1_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_25</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>
@@ -24160,6 +25957,14 @@
 					<real>0.0</real>
 					<key>SpriteName</key>
 					<string>road_1_2_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_28</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>
@@ -24207,6 +26012,14 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_3_9_1_1_1_1</string>
 				</dict>
 				<dict>
@@ -24247,6 +26060,14 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_3</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_5_1</string>
 				</dict>
 				<dict>
@@ -24256,6 +26077,14 @@
 					<real>0.0</real>
 					<key>SpriteName</key>
 					<string>road_2_22_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_9</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>
@@ -24303,6 +26132,14 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_11</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_2_15_1</string>
 				</dict>
 				<dict>
@@ -24327,6 +26164,14 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_14</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_2_27_1_1</string>
 				</dict>
 				<dict>
@@ -24344,6 +26189,14 @@
 					<real>0.0</real>
 					<key>SpriteName</key>
 					<string>road_3_28_1_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_17</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>
@@ -24487,6 +26340,22 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_31</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_4</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_2_28_1</string>
 				</dict>
 				<dict>
@@ -24567,6 +26436,14 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_20</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_3_9_1</string>
 				</dict>
 				<dict>
@@ -24591,6 +26468,22 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_23</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_26</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_3_7_1</string>
 				</dict>
 				<dict>
@@ -24608,6 +26501,14 @@
 					<real>0.0</real>
 					<key>SpriteName</key>
 					<string>road_2_10_1_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_29</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>
@@ -24775,7 +26676,31 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_5</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_4_1_1_2_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_12</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_15</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>
@@ -24792,6 +26717,14 @@
 					<real>0.0</real>
 					<key>SpriteName</key>
 					<string>road_3_13_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_18</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>
@@ -24927,7 +26860,23 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_32</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_3_17_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_6</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>
@@ -25071,6 +27020,14 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_21</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_3_29_1_1</string>
 				</dict>
 				<dict>
@@ -25080,6 +27037,22 @@
 					<real>0.0</real>
 					<key>SpriteName</key>
 					<string>road_3_22_1_1_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_24</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_27</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>
@@ -25119,6 +27092,14 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_5_8_1</string>
 				</dict>
 				<dict>
@@ -25136,6 +27117,14 @@
 					<real>0.0</real>
 					<key>SpriteName</key>
 					<string>road_5_2</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_7</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>
@@ -25191,7 +27180,31 @@
 					<key>RatioY</key>
 					<real>0.0</real>
 					<key>SpriteName</key>
+					<string>star_10</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
 					<string>road_3_23_1_1_1</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_13</string>
+				</dict>
+				<dict>
+					<key>RatioX</key>
+					<real>2</real>
+					<key>RatioY</key>
+					<real>0.0</real>
+					<key>SpriteName</key>
+					<string>star_16</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>

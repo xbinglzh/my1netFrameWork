@@ -11,6 +11,7 @@
 
 #include "cocos2d.h"
 #include "GameConfig.h"
+#include "ConstansDef.h"
 
 USING_NS_CC;
 
@@ -30,8 +31,17 @@ public:
 	void update(float dt);
     void clearUserData();
     
+    void appendEnergyUnit();
+    void appendEnergy(float energyNum);
+    float getEnergyRatio();
+    
+private:
+    void genSaveEnergyRatio();
+    
 private:
     GameConfig* _gameConfig;
+    float       _currentEnergy;
+    float       _saveEnergyRatio;
 };
 
-#endif /* defined(__motoGame__GameModel__) */
+#endif /* defined(__motoGame__GameModel__) */√
