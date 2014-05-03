@@ -96,6 +96,7 @@ void Box2dUtil::updateBox2dWorldInLevelHelp(b2World *b2World, LevelHelperLoader 
     
     while (timeAccumulator >= UPDATE_INTERVAL) {
         timeAccumulator -= UPDATE_INTERVAL;
+        
         b2World->Step(UPDATE_INTERVAL, velocityIterations, positionIterations);
         
         for (b2Body* body = b2World->GetBodyList(); body; body = body->GetNext()) {
@@ -105,6 +106,19 @@ void Box2dUtil::updateBox2dWorldInLevelHelp(b2World *b2World, LevelHelperLoader 
                 sprite->setRotation( -1 * CC_RADIANS_TO_DEGREES(body->GetAngle()));
             }
         }
+
     }
 
+}
+
+void Box2dUtil::destoryBody(b2World *b2World) {
+    std::list<b2Body*>::iterator it = _toDestroyBodyList.begin();
+    while(it != _toDestroyBodyList.end()) {
+        b2World->DestroyBody(*it);
+        it++;
+    }
+}
+
+void Box2dUtil::appendDestoryBody(b2Body *body) {
+    _toDestroyBodyList.push_back(body);
 }

@@ -31,6 +31,11 @@ public:
     
     static void updateBox2dWorldInLevelHelp(b2World *b2World, LevelHelperLoader *levelHelp, float dt);
     
+    void destoryBody(b2World *b2World);
+    void appendDestoryBody(b2Body* body); 
+    
+private:
+    std::list<b2Body *> _toDestroyBodyList;
 };
 
 #endif /* defined(__motoGame__Box2dUtil__) */

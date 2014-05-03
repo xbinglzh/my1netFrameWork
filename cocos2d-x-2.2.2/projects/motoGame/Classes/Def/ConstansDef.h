@@ -16,7 +16,7 @@
 
 #define Energy_Max            100.0f    //总能量
 #define Energy_Unit           10.0f     //一颗星星的步长
-#define Energy_Decrease_Unit  1.0f
+#define Energy_Decrease_Unit  2.0f
 
 enum EUserState {
     K_User_State_Disable = -1,  //停用

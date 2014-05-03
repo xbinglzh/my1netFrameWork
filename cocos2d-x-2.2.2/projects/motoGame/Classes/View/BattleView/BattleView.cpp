@@ -24,7 +24,7 @@ const int TagBgView = BASE_TAG + 1;
 const int TagBg     = BASE_TAG + 2;
 const int TagHero   = BASE_TAG + 3;
 
-const float Gravity = -9.8f;
+const float Gravity = -10.0f;
 
 BattleView::BattleView() :_battleUI(NULL), _gameController(NULL), _physicsWorld(NULL), _levelHelperLoader(NULL),_lhLayer(NULL),
 _gameParallaxLayer(NULL),_curSceneState(nullScene) {
@@ -154,11 +154,14 @@ void BattleView::draw() {
 void BattleView::postCollisionBetweenHeroAndCoin(LHContactInfo *contact) {
 
     b2Body* starBody = contact->bodyA;
-    CCSprite* star = (CCSprite*)starBody->GetUserData();
+    LHSprite* star = (LHSprite*)starBody->GetUserData();
+    
     if (star->isVisible()) {
         star->setVisible(false);
+        star->removeFromParent(); //TODO:xUanBing 将刚体删除
         _gameController->makeHeroObtainStar();
     }
+    
 }
 
 void BattleView::postCollisionBetweenHeroAndFloor(LHContactInfo *contact) {
@@ -194,11 +197,11 @@ void BattleView::changeSceneState(SceneState state) {
             break;
         case startScene:
             _rollView->setMoveSpeed(2);
-            _gameParallaxLayer->setSpeed(7);
+            _gameParallaxLayer->setSpeed(15);
             break;
         case accelerateScene:
             _rollView->setMoveSpeed(4);
-            _gameParallaxLayer->setSpeed(15);
+            _gameParallaxLayer->setSpeed(30);
             break;
         case pauseScene:
             _rollView->setMoveSpeed(0);
