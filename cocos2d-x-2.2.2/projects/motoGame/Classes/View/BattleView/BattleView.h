@@ -16,10 +16,19 @@
 class BattleUI;
 class HeroSprite;
 class GameController;
+class GameBgRollView;
 
 USING_NS_CC;
 
 class BattleView : public CCLayer {
+    
+public:
+    enum SceneState {
+        nullScene,
+        startScene,
+        accelerateScene,
+        pauseScene,
+    };
     
 public:
     BattleView();
@@ -42,16 +51,29 @@ private:
     void postCollisionBetweenHeroAndCoin(LHContactInfo* contact);
     void postCollisionBetweenHeroAndFloor(LHContactInfo* contact);
     void postCollisionBetweenHeroAndTree(LHContactInfo* contact);
+    void postCollisionBetweenHeroAndBottomBorder(LHContactInfo* contact);
+    
+private:
+    void onNotifyBattleStartMessage(CCObject* pSender);
+    void onNotifyBattlePauseMessage(CCObject* pSender);
+    void onNotifyEnergyFullMessage(CCObject* pSender);
+    void onNotifyEnergyEmptyMessage(CCObject* pSender);
+    
+private:
+    void changeSceneState(SceneState state);
     
 private:
     b2World* _physicsWorld;
     LevelHelperLoader* _levelHelperLoader;
     LHLayer* _lhLayer;
+    LHParallaxNode*  _gameParallaxLayer;
     
 private:
-    BattleUI* _battleUI;
-    
-    GameController* _gameController;
+    BattleUI*        _battleUI;
+    GameController*  _gameController;
+    GameBgRollView*  _rollView;
+private:
+    SceneState       _curSceneState;
 };
 
 

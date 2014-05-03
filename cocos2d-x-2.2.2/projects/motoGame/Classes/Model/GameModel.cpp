@@ -55,19 +55,53 @@ void GameModel::appendEnergyUnit() {
     genSaveEnergyRatio();
 }
 
-void GameModel::appendEnergy(float energyNum) {
-    _currentEnergy += energyNum;
+void GameModel::appendEnergy(float energy) {
+    _currentEnergy += energy;
     genSaveEnergyRatio();
 }
 
 void GameModel::genSaveEnergyRatio() {
+    if (_currentEnergy <= 0) {
+        _currentEnergy = 0;
+    }
+    
     float ratio = _currentEnergy / Energy_Max;
+    
     if (ratio != _saveEnergyRatio) {
         _saveEnergyRatio = ratio;
         CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyEnergyChangeMessage);
+    }
+    
+    if (ratio == 1) {
+        CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyEnergyFullMessage);
+        startUseEnergy();
+    }else if (ratio == 0) {
+        CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyEnergyEmptyMessage);
+        stopUseEnergy();
     }
 }
 
 float GameModel::getEnergyRatio() {
     return _saveEnergyRatio;
+}
+
+void GameModel::decreaseEnergyUnit() {
+    _currentEnergy -= Energy_Decrease_Unit;
+    genSaveEnergyRatio();
+}
+
+void GameModel::decreaseEnergy(float energy) {
+    _currentEnergy -= energy;
+    genSaveEnergyRatio();
+}
+
+void GameModel::startUseEnergy() {
+    CCDirector::sharedDirector()->getScheduler()->scheduleSelector(schedule_selector(GameModel::updateEnergy), this, 0.01, false);
+}
+void GameModel::stopUseEnergy(){
+    CCDirector::sharedDirector()->getScheduler()->unscheduleSelector(schedule_selector(GameModel::updateEnergy), this);
+}
+
+void GameModel::updateEnergy() {
+    decreaseEnergyUnit();
 }

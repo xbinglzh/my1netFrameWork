@@ -12,6 +12,7 @@
 #include "cocos2d.h"
 
 class GameModel;
+class SceneController;
 
 USING_NS_CC;
 
@@ -52,10 +53,12 @@ public:// hero
     void makeHeroJump();
     void makeHeroObtainStar();
     void makeHeroFallFloor();
+    void makeHeroDie();
 private:
     bool                   _updateStoped;
     GameModel*             _gameModel;
     CCDirector*            _director;
+    SceneController*       _sceneController;
 };
 
 #endif /* defined(__motoGame__GameController__) */

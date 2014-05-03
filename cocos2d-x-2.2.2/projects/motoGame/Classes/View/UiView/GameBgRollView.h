@@ -24,7 +24,10 @@ public:
     
     CREATE_FUNC(GameBgRollView);
     
+    void setMoveSpeed(float speed);
+    
 private:
+    float _moveSpeed;
     
 };
 

@@ -90,6 +90,7 @@
 		<string>TREE</string>
 		<string>STAR</string>
 		<string>HERO</string>
+		<string>BOTTOMBORDER</string>
 	</array>
 </dict>
 </plist>

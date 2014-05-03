@@ -8,6 +8,7 @@
 
 #include "UiHomeView.h"
 #include "SceneController.h"
+#include "GameController.h"
 
 UiHomeView::UiHomeView() {
     
@@ -49,5 +50,5 @@ bool UiHomeView::onAssignCCBMemberVariable(CCObject * pTarget, const char *pMemb
 }
 
 void UiHomeView::onNewGameCallBack() {
-    SceneController::sharedInstance()->switchSence(K_SCENE_BATTLEVIEW );
+    GameController::sharedInstance()->startBattle();
 }

@@ -60,7 +60,7 @@ void HeroSprite::initPhysical(b2World* physicsWorld, LevelHelperLoader* levelHel
     CCLOG("HeroSprite w :%f,h : %f", this->getContentSize().width, this->getContentSize().height);
     
     b2Filter filter;
-    filter.maskBits = 14;
+    filter.maskBits = 46;
     filter.categoryBits = 16;
     filter.groupIndex = 0;
     

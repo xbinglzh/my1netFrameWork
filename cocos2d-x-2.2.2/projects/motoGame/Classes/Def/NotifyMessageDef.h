@@ -20,7 +20,10 @@
 
 #define KNotifyMakeHeroJumpMessage       "notifyMakeHeroJumpMessage"
 #define KNotifyMakeHeroFallFloorMessage  "notifyMakeHeroFallFloorMessage"
+#define KNotifyMakeHeroDieMessage        "notifyMakeHeroDieMessage"
 
 #define KNotifyEnergyChangeMessage    "notifyEnergyChangeMessage"
+#define KNotifyEnergyFullMessage      "notifyEnergyFullMessage"
+#define KNotifyEnergyEmptyMessage     "notifyEnergyEmptyMessage"
 
 #endif /* defined(__motoGame__NotifyMessageDef__) */

@@ -65,11 +65,12 @@ using namespace cocos2d;
 
 enum LevelHelper_TAG 
 { 
-	DEFAULT_TAG 	= 0,
-    LH_TAG_FLOOR    = 1,
-    LH_TAG_TREE     = 2,
-    LH_TAG_STAR     = 3,
-    LH_TAG_HERO     = 4,
+	DEFAULT_TAG 	    = 0,
+    LH_TAG_FLOOR        = 1,
+    LH_TAG_TREE         = 2,
+    LH_TAG_STAR         = 3,
+    LH_TAG_HERO         = 4,
+    LH_TAG_BOTTOMBORDER = 5,
 };
 
 std::string stringFromInt(const int& i);

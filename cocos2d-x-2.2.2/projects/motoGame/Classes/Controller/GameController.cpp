@@ -11,6 +11,7 @@
 #include "KeyConfigDef.h"
 #include "ConstansDef.h"
 #include "NotifyMessageDef.h"
+#include "SceneController.h"
 
 static GameController * _sharedInstance=NULL;
 
@@ -51,6 +52,7 @@ void GameController::update(float dt){
 }
 
 void GameController::startBattle(void){
+    SceneController::sharedInstance()->switchSence(K_SCENE_BATTLEVIEW);
     resumeBattle();
 }
 
@@ -96,5 +98,10 @@ void GameController::makeHeroObtainStar() {
 
 void GameController::makeHeroFallFloor() {
     CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyMakeHeroFallFloorMessage);
+}
+
+void GameController::makeHeroDie() {
+    CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyMakeHeroDieMessage);
+    _gameModel->stopUseEnergy();
 }
 

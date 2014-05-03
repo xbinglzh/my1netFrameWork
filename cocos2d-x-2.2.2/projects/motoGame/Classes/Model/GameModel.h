@@ -32,11 +32,16 @@ public:
     void clearUserData();
     
     void appendEnergyUnit();
-    void appendEnergy(float energyNum);
+    void appendEnergy(float energy);
     float getEnergyRatio();
     
+    void startUseEnergy();
+    void stopUseEnergy();
 private:
     void genSaveEnergyRatio();
+    void decreaseEnergyUnit();
+    void decreaseEnergy(float energy);
+    void updateEnergy();
     
 private:
     GameConfig* _gameConfig;
@@ -44,4 +49,4 @@ private:
     float       _saveEnergyRatio;
 };
 
-#endif /* defined(__motoGame__GameModel__) */√
+#endif /* defined(__motoGame__GameModel__) */
