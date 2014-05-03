@@ -51,6 +51,8 @@ private:
 private:
     CCNode* _powerNode;
     CCNode* _scoreNode;
+    CCNode* _scoreNameNode;
+    CCNode* _scoreLableNode;
     
     CCScale9Sprite* _powerBg;
     CCScale9ProgressBar* _powerBar;

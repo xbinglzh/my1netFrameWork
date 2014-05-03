@@ -49,9 +49,9 @@ bool GameModel::init(void) {
 void GameModel::update(float dt) {
     
     if (_isUseEnergy) {
-        _currentGameScore += 0.05f;
+        _currentGameScore += 0.5f;
     } else {
-        _currentGameScore += 0.01f;
+        _currentGameScore += 0.1f;
     }
     
     genScore();
@@ -125,8 +125,8 @@ void GameModel::updateEnergy() {
     decreaseEnergyUnit();
 }
 
-float GameModel::getGameScore() {
-    return _saveGameScore;
+int GameModel::getGameScore() {
+    return (int)_saveGameScore;
 }
 
 void GameModel::genScore() {
@@ -134,7 +134,7 @@ void GameModel::genScore() {
         return;
     }
     
-    this->_currentGameScore = _saveGameScore;
+    this->_saveGameScore = _currentGameScore;
     CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyGameScoreChangeMessage);
 }
 

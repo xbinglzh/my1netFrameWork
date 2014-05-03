@@ -36,7 +36,7 @@ public:
     void appendEnergy(float energy);
     
     float getEnergyRatio();
-    float getGameScore();
+    int getGameScore();
     
 private:
     void startUseEnergy();

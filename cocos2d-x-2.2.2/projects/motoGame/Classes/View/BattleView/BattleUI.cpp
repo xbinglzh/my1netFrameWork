@@ -14,14 +14,17 @@
 #include "GameModel.h"
 #include "LabelView.h"
 #include "FontStylesDef.h"
+#include "GameUtils.h"
 
-BattleUI::BattleUI() : _powerNode(NULL), _scoreNode(NULL), _powerBar(NULL), _powerBg(NULL), _scoreLable(NULL){
+BattleUI::BattleUI() : _powerNode(NULL), _scoreNode(NULL), _powerBar(NULL), _powerBg(NULL), _scoreLable(NULL), _scoreNameNode(NULL), _scoreLableNode(NULL){
     
 }
 
 BattleUI::~BattleUI() {
     CC_SAFE_RELEASE_NULL(_powerNode);
     CC_SAFE_RELEASE_NULL(_scoreNode);
+    CC_SAFE_RELEASE_NULL(_scoreNameNode);
+    CC_SAFE_RELEASE_NULL(_scoreLableNode);
     
     CCNotificationCenter::sharedNotificationCenter()->removeAllObservers(this);
 }
@@ -50,8 +53,12 @@ bool BattleUI::initWithCustom() {
     
     _powerBar->setVisibleRatio(GameModel::sharedInstance()->getEnergyRatio());
     
-    _scoreLable = LabelView::createWithFontStyle("分数", kFontSytle_24_WHITE_BLACK, _scoreNode->getContentSize());
-    _scoreNode->addChild(_scoreLable);
+    LabelView* scoreNameLabel = LabelView::createWithFontStyle("分数", kFontSytle_45_WHITE_BLACK, _scoreNameNode->getContentSize());
+    _scoreNameNode->addChild(scoreNameLabel);
+    LayoutUtil::layoutParentCenter(scoreNameLabel);
+    
+    _scoreLable = LabelView::createWithFontStyle("0", kFontSytle_45_YELLOWE_BLACK, _scoreNameNode->getContentSize());
+    _scoreLableNode->addChild(_scoreLable);
     LayoutUtil::layoutParentCenter(_scoreLable);
     
     return true;
@@ -69,6 +76,8 @@ bool BattleUI::onAssignCCBMemberVariable(CCObject * pTarget, const char * pMembe
     
     CCB_MEMBERVARIABLEASSIGNER_GLUE2(CCNode*, powerNode);
     CCB_MEMBERVARIABLEASSIGNER_GLUE2(CCNode*, scoreNode);
+    CCB_MEMBERVARIABLEASSIGNER_GLUE2(CCNode*, scoreNameNode);
+    CCB_MEMBERVARIABLEASSIGNER_GLUE2(CCNode*, scoreLableNode);
     
     return false;
 }
@@ -92,7 +101,8 @@ void BattleUI::onNotifyEnergyValueChangeMessage(cocos2d::CCObject *pSender) {
 }
 
 void BattleUI::onNotifyGameScoreChangeMessage(cocos2d::CCObject *pSender) {
-    
+    float score = GameModel::sharedInstance()->getGameScore();
+    _scoreLable->setString(GameUtils::StringMake(score).c_str());
 }
 
 
