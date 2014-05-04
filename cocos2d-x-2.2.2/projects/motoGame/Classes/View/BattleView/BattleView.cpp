@@ -197,11 +197,11 @@ void BattleView::changeSceneState(SceneState state) {
             break;
         case startScene:
             _rollView->setMoveSpeed(2);
-            _gameParallaxLayer->setSpeed(15);
+            _gameParallaxLayer->setSpeed(20);
             break;
         case accelerateScene:
             _rollView->setMoveSpeed(4);
-            _gameParallaxLayer->setSpeed(30);
+            _gameParallaxLayer->setSpeed(40);
             break;
         case pauseScene:
             _rollView->setMoveSpeed(0);

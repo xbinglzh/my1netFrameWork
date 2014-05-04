@@ -12,6 +12,8 @@
 #include "ConstansDef.h"
 #include "NotifyMessageDef.h"
 #include "SceneController.h"
+#include "BattleResultView.h"
+#include "battle.h"
 
 static GameController * _sharedInstance=NULL;
 
@@ -81,6 +83,10 @@ void GameController::quitFromBattle() {
 //    } else {
 //        _SIController->reportBattleResult(1);
 //    }
+    
+    battle::Rewards reward;
+    reward.score = _gameModel->getGameScore();
+    BattleResultView::show(reward);
 }
 
 const bool GameController::isBattleRunning(){

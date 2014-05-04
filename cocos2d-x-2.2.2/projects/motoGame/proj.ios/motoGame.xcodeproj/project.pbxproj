@@ -233,6 +233,8 @@
 		6000879A19096F5F0086E0F2 /* gameElement_gameView.png in Resources */ = {isa = PBXBuildFile; fileRef = 6000879519096F5F0086E0F2 /* gameElement_gameView.png */; };
 		6000879B19096F5F0086E0F2 /* gameElement.pshs in Resources */ = {isa = PBXBuildFile; fileRef = 6000879619096F5F0086E0F2 /* gameElement.pshs */; };
 		6000879D190971900086E0F2 /* battleLevel_1.plhs in Resources */ = {isa = PBXBuildFile; fileRef = 6000879C190971900086E0F2 /* battleLevel_1.plhs */; };
+		602B9FF91916761400E7981B /* BattleResultView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602B9FF71916761400E7981B /* BattleResultView.cpp */; };
+		602B9FFE1916840200E7981B /* ModelDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602B9FFC1916840200E7981B /* ModelDialog.cpp */; };
 		60307E7418EFB1FF00A0F8B7 /* Box2dUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60307E7218EFB1FF00A0F8B7 /* Box2dUtil.cpp */; };
 		60307E7618EFB9AB00A0F8B7 /* res_crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = 60307E7518EFB9AB00A0F8B7 /* res_crystal.png */; };
 		6048D0D9190EA04100418BBE /* HeroSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6048D0D7190EA04100418BBE /* HeroSprite.cpp */; };
@@ -1040,6 +1042,11 @@
 		6000879519096F5F0086E0F2 /* gameElement_gameView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameElement_gameView.png; sourceTree = "<group>"; };
 		6000879619096F5F0086E0F2 /* gameElement.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gameElement.pshs; sourceTree = "<group>"; };
 		6000879C190971900086E0F2 /* battleLevel_1.plhs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = battleLevel_1.plhs; sourceTree = "<group>"; };
+		602B9FF71916761400E7981B /* BattleResultView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleResultView.cpp; sourceTree = "<group>"; };
+		602B9FF81916761400E7981B /* BattleResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleResultView.h; sourceTree = "<group>"; };
+		602B9FFB19167E5C00E7981B /* battle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = battle.h; sourceTree = "<group>"; };
+		602B9FFC1916840200E7981B /* ModelDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelDialog.cpp; sourceTree = "<group>"; };
+		602B9FFD1916840200E7981B /* ModelDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelDialog.h; sourceTree = "<group>"; };
 		60307E7218EFB1FF00A0F8B7 /* Box2dUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Box2dUtil.cpp; sourceTree = "<group>"; };
 		60307E7318EFB1FF00A0F8B7 /* Box2dUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2dUtil.h; sourceTree = "<group>"; };
 		60307E7518EFB9AB00A0F8B7 /* res_crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = res_crystal.png; sourceTree = "<group>"; };
@@ -2345,6 +2352,8 @@
 		6000877F190958F10086E0F2 /* BattleView */ = {
 			isa = PBXGroup;
 			children = (
+				602B9FF71916761400E7981B /* BattleResultView.cpp */,
+				602B9FF81916761400E7981B /* BattleResultView.h */,
 				60BB17A6190CC5F8001C92A2 /* BattleView.cpp */,
 				60BB17A7190CC5F8001C92A2 /* BattleView.h */,
 				60F342C91911DEB000DD70E5 /* BattleUI.cpp */,
@@ -2567,6 +2576,7 @@
 		CE73522718ED28770059BAA1 /* entity */ = {
 			isa = PBXGroup;
 			children = (
+				602B9FFB19167E5C00E7981B /* battle.h */,
 				CE73524318ED2A4A0059BAA1 /* role.h */,
 				CE73524418ED2A9E0059BAA1 /* hero.h */,
 			);
@@ -2672,6 +2682,8 @@
 		CE7B9FAA18DFD54500FD2DAE /* widget */ = {
 			isa = PBXGroup;
 			children = (
+				602B9FFC1916840200E7981B /* ModelDialog.cpp */,
+				602B9FFD1916840200E7981B /* ModelDialog.h */,
 				60DEA56219151BA10096E14F /* CCLabelTTFStroke.cpp */,
 				60DEA56319151BA10096E14F /* CCLabelTTFStroke.h */,
 				60DEA55D191518DE0096E14F /* LabelView.cpp */,
@@ -3605,6 +3617,7 @@
 				CE7BA03E18DFDA3400FD2DAE /* SPDisplayFactoryManager.cpp in Sources */,
 				CEBCE54F18EABE5100691E3B /* LHBatch.cpp in Sources */,
 				375BD5131868454E0024609E /* CCActionObject.cpp in Sources */,
+				602B9FF91916761400E7981B /* BattleResultView.cpp in Sources */,
 				CEBCE55F18EABE5100691E3B /* SHDocumentLoader.cpp in Sources */,
 				15A3DA5F1682F826002FB0C5 /* CCPhysicsSprite.cpp in Sources */,
 				15A3DAEB1682F8A6002FB0C5 /* CDAudioManager.m in Sources */,
@@ -3626,6 +3639,7 @@
 				CE7BA04218DFDA3400FD2DAE /* SPContourPoints.cpp in Sources */,
 				CE6C9B2B18E0565A00B6711E /* UiUtils.cpp in Sources */,
 				CE7BA02E18DFDA3400FD2DAE /* SPShaderDisplayData.cpp in Sources */,
+				602B9FFE1916840200E7981B /* ModelDialog.cpp in Sources */,
 				1AFCDA8216D4A25900906EA6 /* RootViewController.mm in Sources */,
 				1A8F3B6E175E05DA00049216 /* Animation.cpp in Sources */,
 				CE7BA04118DFDA3400FD2DAE /* SPSpriteDisplayFactory.cpp in Sources */,

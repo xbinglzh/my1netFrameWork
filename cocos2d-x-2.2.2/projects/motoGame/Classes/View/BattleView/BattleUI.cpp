@@ -53,11 +53,7 @@ bool BattleUI::initWithCustom() {
     
     _powerBar->setVisibleRatio(GameModel::sharedInstance()->getEnergyRatio());
     
-    LabelView* scoreNameLabel = LabelView::createWithFontStyle("分数", kFontSytle_45_WHITE, _scoreNameNode->getContentSize());
-    _scoreNameNode->addChild(scoreNameLabel);
-    LayoutUtil::layoutParentCenter(scoreNameLabel);
-    
-    _scoreLable = LabelView::createWithFontStyle("0", kFontSytle_45_YELLOW, _scoreNameNode->getContentSize());
+    _scoreLable = LabelView::createWithFontStyle("0", kFontSytle_45_YELLOWE_BLACK, _scoreNameNode->getContentSize());
     _scoreLableNode->addChild(_scoreLable);
     LayoutUtil::layoutParentCenter(_scoreLable);
     
