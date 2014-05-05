@@ -63,8 +63,14 @@ void GameModel::pauseModel() {
 }
 
 void GameModel::clearUserData() {
+    _currentEnergy = 0;
+    _saveEnergyRatio = 0;
     _currentGameScore = 0;
     _saveGameScore = 0;
+    _isUseEnergy = false;
+    
+    genScore();
+    genSaveEnergyRatio();
 }
 
 void GameModel::appendEnergyUnit() {

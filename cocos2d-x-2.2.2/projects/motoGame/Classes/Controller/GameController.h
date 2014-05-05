@@ -47,6 +47,8 @@ public:
      */
     void quitFromBattle();
     
+    void reStartBattle();
+    
     const bool isBattleRunning();
     
 public:// hero

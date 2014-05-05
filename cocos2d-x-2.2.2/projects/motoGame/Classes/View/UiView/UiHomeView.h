@@ -23,7 +23,7 @@ public:
     
 protected:
     virtual bool initWithCustom();
-    void onEnterTransitionDidFinish();
+//    void onEnterTransitionDidFinish();
     virtual SEL_MenuHandler onResolveCCBCCMenuItemSelector(CCObject * pTarget, const char * pSelectorName);
     
     virtual SEL_CCControlHandler onResolveCCBCCControlSelector(CCObject * pTarget, const char * pSelectorName);

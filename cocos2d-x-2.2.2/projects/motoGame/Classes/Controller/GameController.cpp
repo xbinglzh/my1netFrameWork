@@ -43,6 +43,7 @@ void GameController::purgeInstance(void){
 bool GameController::init(void) {
     _gameModel = GameModel::sharedInstance();
     _director  = CCDirector::sharedDirector();
+    _sceneController = SceneController::sharedInstance();
     
     return true;
 }
@@ -54,7 +55,7 @@ void GameController::update(float dt){
 }
 
 void GameController::startBattle(void){
-    SceneController::sharedInstance()->switchSence(K_SCENE_BATTLEVIEW);
+    _sceneController->switchSence(K_SCENE_BATTLEVIEW);
     resumeBattle();
 }
 
@@ -63,6 +64,10 @@ void GameController::pauseBattle(void){
     _gameModel->pauseModel();
 	_director->getScheduler()->unscheduleSelector(schedule_selector(GameController::update), this);
     CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyPauseBattleMessage);
+    
+    battle::Rewards reward;
+    reward.score = _gameModel->getGameScore();
+    BattleResultView::show(reward);
 }
 
 void GameController::resumeBattle(void){
@@ -87,6 +92,11 @@ void GameController::quitFromBattle() {
     battle::Rewards reward;
     reward.score = _gameModel->getGameScore();
     BattleResultView::show(reward);
+}
+
+void GameController::reStartBattle() {
+    _sceneController->switchSence(K_SCENE_UIHOME);
+    _gameModel->clearUserData();
 }
 
 const bool GameController::isBattleRunning(){

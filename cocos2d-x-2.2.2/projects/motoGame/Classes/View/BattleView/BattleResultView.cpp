@@ -11,8 +11,10 @@
 #include "FontStylesDef.h"
 #include "GameUtils.h"
 #include "ModelDialog.h"
+#include "GameController.h"
+#include "LayoutUtil.h"
 
-BattleResultView::BattleResultView() : _restartButton(NULL), _scoreNode(NULL) {
+BattleResultView::BattleResultView() : _restartButton(NULL), _scoreNode(NULL), _modelDlg(NULL){
     
 }
 
@@ -23,8 +25,9 @@ BattleResultView::~BattleResultView() {
 
 BattleResultView* BattleResultView::show(const battle::Rewards &reward, const BattleResultCallback& callback) {
     BattleResultView* resultView = BattleResultView::createFromCCB();
-    resultView->fillData(reward);
+    resultView->_battleReward = reward;
     resultView->setCallback(callback);
+    resultView->showDialog();
     
     return resultView;
 }
@@ -34,10 +37,28 @@ BattleResultView* BattleResultView::createFromCCB() {
                                          BattleResultViewLoader::loader(), NULL);
 }
 
+void BattleResultView::showDialog() {
+    if (!_modelDlg) {
+        _modelDlg = ModelDialog::create();
+        _modelDlg->addChild(this);
+        _modelDlg->show();
+    }
+}
+
+void BattleResultView::dismissDialog() {
+    if (_modelDlg) {
+        _modelDlg->dismiss();
+    }
+}
 
 bool BattleResultView::initWithCustom() {
+    RootUiLayer::initWithCustom();
     
-    _score= LabelView::createWithFontStyle("0", kFontSytle_45_YELLOWE_BLACK, _scoreNode->getContentSize());
+    _score= LabelView::createWithFontStyle("0" , kFontSytle_45_YELLOWE_BLACK, _scoreNode->getContentSize());
+    _scoreNode->addChild(_score);
+    LayoutUtil::layoutParentCenter(_score);
+    
+    fillData(_battleReward);
     
     return true;
 }
@@ -68,5 +89,7 @@ bool BattleResultView::onAssignCCBMemberVariable(cocos2d::CCObject *pTarget, con
 }
 
 void BattleResultView::onRestartButtonCallBack() {
+    this->dismissDialog();
+    GameController::sharedInstance()->reStartBattle();
     
 }

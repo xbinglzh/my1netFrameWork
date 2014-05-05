@@ -303,6 +303,8 @@
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		CE3F272B19178C160062CD00 /* BattleResultView.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = CE3F272A19178C160062CD00 /* BattleResultView.ccbi */; };
+		CE3F274219178C1D0062CD00 /* BattleResultView.ccb in Resources */ = {isa = PBXBuildFile; fileRef = CE3F274119178C1D0062CD00 /* BattleResultView.ccb */; };
 		CE6C9B2818E0552600B6711E /* RootUiLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE6C9B2618E0552600B6711E /* RootUiLayer.cpp */; };
 		CE6C9B2B18E0565A00B6711E /* UiUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE6C9B2918E0565A00B6711E /* UiUtils.cpp */; };
 		CE6C9B2E18E0583D00B6711E /* GameConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE6C9B2C18E0583D00B6711E /* GameConfig.cpp */; };
@@ -1138,6 +1140,8 @@
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CE3F272A19178C160062CD00 /* BattleResultView.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BattleResultView.ccbi; sourceTree = "<group>"; };
+		CE3F274119178C1D0062CD00 /* BattleResultView.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BattleResultView.ccb; sourceTree = "<group>"; };
 		CE6C9B2618E0552600B6711E /* RootUiLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RootUiLayer.cpp; sourceTree = "<group>"; };
 		CE6C9B2718E0552600B6711E /* RootUiLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootUiLayer.h; sourceTree = "<group>"; };
 		CE6C9B2918E0565A00B6711E /* UiUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UiUtils.cpp; sourceTree = "<group>"; };
@@ -2510,6 +2514,7 @@
 				CE6C9B3B18E065D300B6711E /* source */,
 				CE6C9B3D18E065D300B6711E /* ui.ccbproj */,
 				60F342EC1911E99500DD70E5 /* BattleUI.ccbi */,
+				CE3F272A19178C160062CD00 /* BattleResultView.ccbi */,
 				6076719B19058017006AD9AD /* UiHomeView.ccbi */,
 			);
 			path = ui_layout;
@@ -2551,6 +2556,7 @@
 		CE6C9B3B18E065D300B6711E /* source */ = {
 			isa = PBXGroup;
 			children = (
+				CE3F274119178C1D0062CD00 /* BattleResultView.ccb */,
 				60F342EA1911E98B00DD70E5 /* BattleUI.ccb */,
 				6076719919058010006AD9AD /* UiHomeView.ccb */,
 			);
@@ -3355,6 +3361,7 @@
 				CE7BA07318DFDD8E00FD2DAE /* tinyxml.suo in Resources */,
 				CE7BA0D318DFF72A00FD2DAE /* Icon-57.png in Resources */,
 				CE7BA04718DFDA3400FD2DAE /* json_internalarray.inl in Resources */,
+				CE3F272B19178C160062CD00 /* BattleResultView.ccbi in Resources */,
 				CE7BA0CC18DFF72A00FD2DAE /* Default-568h@2x.png in Resources */,
 				6000879B19096F5F0086E0F2 /* gameElement.pshs in Resources */,
 				60307E7618EFB9AB00A0F8B7 /* res_crystal.png in Resources */,
@@ -3412,6 +3419,7 @@
 				CE7BA0D118DFF72A00FD2DAE /* Icon-144.png in Resources */,
 				60776A0A1903573000A07AED /* back.png in Resources */,
 				CE7BA0CD18DFF72A00FD2DAE /* Default.png in Resources */,
+				CE3F274219178C1D0062CD00 /* BattleResultView.ccb in Resources */,
 				60C18A9218FD85D300AC2464 /* x_config.plist in Resources */,
 				60776A1D1903573000A07AED /* newgameB.png in Resources */,
 			);

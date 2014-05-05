@@ -13,6 +13,7 @@
 #include "UiHomeView.h"
 #include "HelloView.h"
 #include "BattleView.h"
+#include "BattleResultView.h"
 
 static SceneController* _sharedInstance=NULL;
 

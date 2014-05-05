@@ -14,6 +14,7 @@
 #include "battle.h"
 
 class LabelView;
+class ModelDialog;
 
 USING_NS_CC;
 
@@ -27,6 +28,7 @@ public:
     
     CREATE_FUNC(BattleResultView);
     
+    static BattleResultView* createFromCCB();
     static BattleResultView* show(const battle::Rewards& reward, const BattleResultCallback& callback = NULL);
     
 protected:
@@ -38,19 +40,25 @@ protected:
     virtual bool onAssignCCBMemberVariable(CCObject * pTarget, const char * pMemberVariableName,  CCNode * pNode);
     
 private:
-    static BattleResultView* createFromCCB();
+    
     void   fillData(const battle::Rewards& rewards);
     void setCallback(const BattleResultCallback& callback){_callback = callback;}
+    
+    void showDialog();
+    void dismissDialog();
     
 private:
     void onRestartButtonCallBack();
     
 private:
     BattleResultCallback  _callback;
+    battle::Rewards       _battleReward;
     
     CCNode*      _scoreNode;
     CCMenuItem*  _restartButton;
     LabelView*   _score;
+    
+    ModelDialog*    _modelDlg;
     
 };
 

@@ -29,9 +29,9 @@ bool UiHomeView::initWithCustom() {
     return true;
 }
 
-void UiHomeView::onEnterTransitionDidFinish(){
-    RootUiLayerWithNetwork::onEnterTransitionDidFinish();
-}
+//void UiHomeView::onEnterTransitionDidFinish(){
+//    RootUiLayerWithNetwork::onEnterTransitionDidFinish();
+//}
 
 SEL_MenuHandler UiHomeView::onResolveCCBCCMenuItemSelector(CCObject * pTarget, const char * pSelectorName) {
     
