@@ -24,7 +24,7 @@
 			<key>MaxSheetSize</key>
 			<integer>4096</integer>
 			<key>NpotSize</key>
-			<string>{500, 488}</string>
+			<string>{1016, 504}</string>
 			<key>Padding</key>
 			<integer>8</integer>
 			<key>PixelFormat</key>
@@ -41,51 +41,6 @@
 			<dict>
 				<key>back_2</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va2gEAAAAAAQQMAAAADsUaE0YkTxlrVxQ
-					9QyAVlvJxSFoVOxIhruVDH6lx4JcTAMAAAUA
-					AAABAQAAVXNlcnMAAAAIAAAAAQEAAHhVYW5C
-					aW5nCQAAAAEBAABEb2N1bWVudHMAAAAJAAAA
-					AQEAAERldmVsb3BlcgAAAAYAAAABAQAAR2l0
-					aHViAAAPAAAAAQEAAG15MW5ldEZyYW1lV29y
-					awAPAAAAAQEAAGNvY29zMmQteC0yLjIuMgAI
-					AAAAAQEAAHByb2plY3RzCAAAAAEBAABtb3Rv
-					R2FtZQkAAAABAQAAUmVzb3VyY2VzAAAACQAA
-					AAEBAAB1aV9sYXlvdXQAAAASAAAAAQEAAHJl
-					c291cmNlcy1pcGhvbmVoZAAACgAAAAEBAABi
-					YWNrXzIucG5nAAA0AAAAAQYAAAQAAAAUAAAA
-					JAAAADgAAABMAAAAXAAAAHQAAACMAAAAnAAA
-					AKwAAADAAAAA1AAAAPAAAAAIAAAABAMAAGYQ
-					AgAAAAAACAAAAAQDAACH9wQAAAAAAAgAAAAE
-					AwAAiPcEAAAAAAAIAAAABAMAAOTNEAAAAAAA
-					CAAAAAQDAACrzDUAAAAAAAgAAAAEAwAAZC3k
-					AAAAAAAIAAAABAMAAMED5QAAAAAACAAAAAQD
-					AADuSuUAAAAAAAgAAAAEAwAA70rlAAAAAAAI
-					AAAABAMAAKxL5QAAAAAACAAAAAQDAADCS+UA
-					AAAAAAgAAAAEAwAAxUvlAAAAAAAIAAAABAMA
-					AIvtQAEAAAAANAAAAAEGAABAAQAAUAEAAGAB
-					AABwAQAAgAEAAJABAACgAQAAsAEAAMABAADQ
-					AQAA4AEAAPABAAAAAgAACAAAAAAEAABBth3Z
-					JgAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
-					AAAAAAAAAAAAAAAAAAEFAAAEAAAAAwMAAAIA
-					AAAEAAAAAwMAAAEAAAAIAAAABAMAAAsAAAAA
-					AAAABAAAAAMDAAD1AQAABgAAAAEBAABtYWNw
-					cm8AAAgAAAAEAwAAAICBPXQAAAAIAAAAAAQA
-					AEG4H/7pAAAAJAAAAAEBAABDOUM4MDYzOS1F
-					ODk0LTNDMkUtQUYyNi1FMkU2OTdCQkY5NDkY
-					AAAAAQIAAIEAAAABAAgA7xcAAAEACAAAAAAA
-					AAAAAAEAAAABAQAALwAAAAQAAAADAwAAAAgA
-					KOQAAAD+////AQAAAAAAAAASAAAABBAAAAQB
-					AAAAAAAABRAAABACAAAAAAAAEBAAAFwCAAAA
-					AAAAQBAAAEwCAAAAAAAAVBAAAIQCAAAAAAAA
-					VRAAAJACAAAAAAAAVhAAAHwCAAAAAAAAAiAA
-					ADQDAAAAAAAAECAAALgCAAAAAAAAESAAAOgC
-					AAAAAAAAEiAAAMgCAAAAAAAAEyAAANgCAAAA
-					AAAAICAAABQDAAAAAAAAMCAAAHwCAAAAAAAA
-					AcAAAJwCAAAAAAAAEcAAABQAAAAAAAAAEsAA
-					AKwCAAAAAAAAENAAAEADAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1259,7 +1214,7 @@
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/xUanBing/Documents/Developer/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/back_2.png</string>
+						<string>/Users/user/Documents/Develop/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/back_2.png</string>
 						<key>OriginalImage_RelativePath</key>
 						<string>../back_2.png/</string>
 						<key>OriginalRect</key>
@@ -1286,74 +1241,6 @@
 				</dict>
 				<key>back_3</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va8wGAAAAAAQQMAAAAFfRBMDDJ7ch9fej
-					bgQWjUsgGVJF1UfDhDy8AalZqFzgpAUAAE8C
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM3
-					MzUzNDYyMzQzMjY0Mzc2NjM1MzQzOTYzNjYz
-					MTY2NjEzMDM4NjY2MzM1NjYzOTM5MzQzMTM2
-					MzY2MjM0NjMzOTY0MzUzNDM0NjYzMzYyM0Iz
-					MDMwMzAzMDMwMzAzMDMwM0IzMDMwMzAzMDMw
-					MzAzMDMwM0IzMDMwMzAzMDMwMzAzMDMwMzAz
-					MDMwMzAzMDMwMzIzMDNCNjM2RjZEMkU2MTcw
-					NzA2QzY1MkU2MTcwNzAyRDczNjE2RTY0NjI2
-					Rjc4MkU3MjY1NjE2NDJENzc3MjY5NzQ2NTNC
-					MzAzMDMwMzAzMDMwMzAzMTNCMzAzMTMwMzAz
-					MDMwMzAzMzNCMzAzMDMwMzAzMDMwMzAzMDMw
-					MzEzNDMwNjU2NDM4NjMzQjJGNzU3MzY1NzI3
-					MzJGNzg3NTYxNkU2MjY5NkU2NzJGNjQ2RjYz
-					NzU2RDY1NkU3NDczMkY2NDY1NzY2NTZDNkY3
-					MDY1NzIyRjY3Njk3NDY4NzU2MjJGNkQ3OTMx
-					NkU2NTc0NjY3MjYxNkQ2NTc3NkY3MjZCMkY2
-					MzZGNjM2RjczMzI2NDJENzgyRDMyMkUzMjJF
-					MzIyRjcwNzI2RjZBNjU2Mzc0NzMyRjZENkY3
-					NDZGNjc2MTZENjUyRjcyNjU3MzZGNzU3MjYz
-					NjU3MzJGNzU2OTVGNkM2MTc5NkY3NTc0MkY3
-					MjY1NzM2Rjc1NzI2MzY1NzMyRDY5NzA2ODZG
-					NkU2NTY4NjQyRjYyNjE2MzZCNUYzMzJFNzA2
-					RTY3AAUAAAABAQAAVXNlcnMAAAAIAAAAAQEA
-					AHhVYW5CaW5nCQAAAAEBAABEb2N1bWVudHMA
-					AAAJAAAAAQEAAERldmVsb3BlcgAAAAYAAAAB
-					AQAAR2l0aHViAAAPAAAAAQEAAG15MW5ldEZy
-					YW1lV29yawAPAAAAAQEAAGNvY29zMmQteC0y
-					LjIuMgAIAAAAAQEAAHByb2plY3RzCAAAAAEB
-					AABtb3RvR2FtZQkAAAABAQAAUmVzb3VyY2Vz
-					AAAACQAAAAEBAAB1aV9sYXlvdXQAAAASAAAA
-					AQEAAHJlc291cmNlcy1pcGhvbmVoZAAACgAA
-					AAEBAABiYWNrXzMucG5nAAA0AAAAAQYAAFwC
-					AABsAgAAfAIAAJACAACkAgAAtAIAAMwCAADk
-					AgAA9AIAAAQDAAAYAwAALAMAAEgDAAAIAAAA
-					BAMAAGYQAgAAAAAACAAAAAQDAACH9wQAAAAA
-					AAgAAAAEAwAAiPcEAAAAAAAIAAAABAMAAOTN
-					EAAAAAAACAAAAAQDAACrzDUAAAAAAAgAAAAE
-					AwAAZC3kAAAAAAAIAAAABAMAAMED5QAAAAAA
-					CAAAAAQDAADuSuUAAAAAAAgAAAAEAwAA70rl
-					AAAAAAAIAAAABAMAAKxL5QAAAAAACAAAAAQD
-					AADCS+UAAAAAAAgAAAAEAwAAxUvlAAAAAAAI
-					AAAABAMAAIztQAEAAAAANAAAAAEGAACYAwAA
-					qAMAALgDAADIAwAA2AMAAOgDAAD4AwAACAQA
-					ABgEAAAoBAAAOAQAAEgEAABYBAAACAAAAAAE
-					AABBth3a+gAAABgAAAABAgAAAQAAAAAAAAAP
-					AAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAEAAAA
-					AwMAAAIAAAAEAAAAAwMAAAEAAAAIAAAABAMA
-					AAsAAAAAAAAABAAAAAMDAAD1AQAABgAAAAEB
-					AABtYWNwcm8AAAgAAAAEAwAAAICBPXQAAAAI
-					AAAAAAQAAEG4H/7pAAAAJAAAAAEBAABDOUM4
-					MDYzOS1FODk0LTNDMkUtQUYyNi1FMkU2OTdC
-					QkY5NDkYAAAAAQIAAIEAAAABAAgA7xcAAAEA
-					CAAAAAAAAAAAAAEAAAABAQAALwAAAAQAAAAD
-					AwAAAAgAKPAAAAD+////AQAAAAAAAAATAAAA
-					BBAAAFwDAAAAAAAABRAAAGgEAAAAAAAAEBAA
-					ALQEAAAAAAAAQBAAAKQEAAAAAAAAVBAAANwE
-					AAAAAAAAVRAAAOgEAAAAAAAAVhAAANQEAAAA
-					AAAAAhEAAAQAAAAAAAAAAiAAAIwFAAAAAAAA
-					ECAAABAFAAAAAAAAESAAAEAFAAAAAAAAEiAA
-					ACAFAAAAAAAAEyAAADAFAAAAAAAAICAAAGwF
-					AAAAAAAAMCAAANQEAAAAAAAAAcAAAPQEAAAA
-					AAAAEcAAAGwCAAAAAAAAEsAAAAQFAAAAAAAA
-					ENAAAJgFAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1465,9 +1352,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{60, 106}, {16, 16}}</string>
+						<string>{{2, 110}, {16, 16}}</string>
 						<key>Frame-HD</key>
-						<string>{{240, 424}, {64, 64}}</string>
+						<string>{{8, 440}, {64, 64}}</string>
 						<key>Image</key>
 						<string>gameElement_gameView.png</string>
 						<key>Image-HD</key>
@@ -1485,7 +1372,7 @@
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/xUanBing/Documents/Developer/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/back_3.png</string>
+						<string>/Users/user/Documents/Develop/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/back_3.png</string>
 						<key>OriginalImage_RelativePath</key>
 						<string>../back_3.png/</string>
 						<key>OriginalRect</key>
@@ -1493,7 +1380,7 @@
 						<key>OriginalSize</key>
 						<string>{64, 64}</string>
 						<key>Position</key>
-						<string>{240, 424}</string>
+						<string>{8, 440}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -1512,74 +1399,6 @@
 				</dict>
 				<key>enemy</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va8wGAAAAAAQQMAAAAJgIeaRKcAPG4Krb
-					iawCc+ZmAhWwC08sjXVx2L1cHOXFpAUAAE0C
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM3
-					MzUzNTM0NjUzMzYyMzgzMTMxNjE2NDYxMzE2
-					MTYzMzkzNDMxMzc2MzYzNjE2NjM5NjUzMjMy
-					MzgzODMyNjYzNDMxMzYzMDY0MzczOTYyM0Iz
-					MDMwMzAzMDMwMzAzMDMwM0IzMDMwMzAzMDMw
-					MzAzMDMwM0IzMDMwMzAzMDMwMzAzMDMwMzAz
-					MDMwMzAzMDMwMzIzMDNCNjM2RjZEMkU2MTcw
-					NzA2QzY1MkU2MTcwNzAyRDczNjE2RTY0NjI2
-					Rjc4MkU3MjY1NjE2NDJENzc3MjY5NzQ2NTNC
-					MzAzMDMwMzAzMDMwMzAzMTNCMzAzMTMwMzAz
-					MDMwMzAzMzNCMzAzMDMwMzAzMDMwMzAzMDMw
-					MzEzNDMwNjU2NDYyNjEzQjJGNzU3MzY1NzI3
-					MzJGNzg3NTYxNkU2MjY5NkU2NzJGNjQ2RjYz
-					NzU2RDY1NkU3NDczMkY2NDY1NzY2NTZDNkY3
-					MDY1NzIyRjY3Njk3NDY4NzU2MjJGNkQ3OTMx
-					NkU2NTc0NjY3MjYxNkQ2NTc3NkY3MjZCMkY2
-					MzZGNjM2RjczMzI2NDJENzgyRDMyMkUzMjJF
-					MzIyRjcwNzI2RjZBNjU2Mzc0NzMyRjZENkY3
-					NDZGNjc2MTZENjUyRjcyNjU3MzZGNzU3MjYz
-					NjU3MzJGNzU2OTVGNkM2MTc5NkY3NTc0MkY3
-					MjY1NzM2Rjc1NzI2MzY1NzMyRDY5NzA2ODZG
-					NkU2NTY4NjQyRjY1NkU2NTZENzkyRTcwNkU2
-					NwAAAAUAAAABAQAAVXNlcnMAAAAIAAAAAQEA
-					AHhVYW5CaW5nCQAAAAEBAABEb2N1bWVudHMA
-					AAAJAAAAAQEAAERldmVsb3BlcgAAAAYAAAAB
-					AQAAR2l0aHViAAAPAAAAAQEAAG15MW5ldEZy
-					YW1lV29yawAPAAAAAQEAAGNvY29zMmQteC0y
-					LjIuMgAIAAAAAQEAAHByb2plY3RzCAAAAAEB
-					AABtb3RvR2FtZQkAAAABAQAAUmVzb3VyY2Vz
-					AAAACQAAAAEBAAB1aV9sYXlvdXQAAAASAAAA
-					AQEAAHJlc291cmNlcy1pcGhvbmVoZAAACQAA
-					AAEBAABlbmVteS5wbmcAAAA0AAAAAQYAAFwC
-					AABsAgAAfAIAAJACAACkAgAAtAIAAMwCAADk
-					AgAA9AIAAAQDAAAYAwAALAMAAEgDAAAIAAAA
-					BAMAAGYQAgAAAAAACAAAAAQDAACH9wQAAAAA
-					AAgAAAAEAwAAiPcEAAAAAAAIAAAABAMAAOTN
-					EAAAAAAACAAAAAQDAACrzDUAAAAAAAgAAAAE
-					AwAAZC3kAAAAAAAIAAAABAMAAMED5QAAAAAA
-					CAAAAAQDAADuSuUAAAAAAAgAAAAEAwAA70rl
-					AAAAAAAIAAAABAMAAKxL5QAAAAAACAAAAAQD
-					AADCS+UAAAAAAAgAAAAEAwAAxUvlAAAAAAAI
-					AAAABAMAALrtQAEAAAAANAAAAAEGAACYAwAA
-					qAMAALgDAADIAwAA2AMAAOgDAAD4AwAACAQA
-					ABgEAAAoBAAAOAQAAEgEAABYBAAACAAAAAAE
-					AABBth3dugAAABgAAAABAgAAAQAAAAAAAAAP
-					AAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAEAAAA
-					AwMAAAIAAAAEAAAAAwMAAAEAAAAIAAAABAMA
-					AAsAAAAAAAAABAAAAAMDAAD1AQAABgAAAAEB
-					AABtYWNwcm8AAAgAAAAEAwAAAICBPXQAAAAI
-					AAAAAAQAAEG4H/7pAAAAJAAAAAEBAABDOUM4
-					MDYzOS1FODk0LTNDMkUtQUYyNi1FMkU2OTdC
-					QkY5NDkYAAAAAQIAAIEAAAABAAgA7xcAAAEA
-					CAAAAAAAAAAAAAEAAAABAQAALwAAAAQAAAAD
-					AwAAAAgAKPAAAAD+////AQAAAAAAAAATAAAA
-					BBAAAFwDAAAAAAAABRAAAGgEAAAAAAAAEBAA
-					ALQEAAAAAAAAQBAAAKQEAAAAAAAAVBAAANwE
-					AAAAAAAAVRAAAOgEAAAAAAAAVhAAANQEAAAA
-					AAAAAhEAAAQAAAAAAAAAAiAAAIwFAAAAAAAA
-					ECAAABAFAAAAAAAAESAAAEAFAAAAAAAAEiAA
-					ACAFAAAAAAAAEyAAADAFAAAAAAAAICAAAGwF
-					AAAAAAAAMCAAANQEAAAAAAAAAcAAAPQEAAAA
-					AAAAEcAAAGwCAAAAAAAAEsAAAAQFAAAAAAAA
-					ENAAAJgFAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1614,10 +1433,388 @@
 								<key>Fixture</key>
 								<array>
 									<array>
-										<string>{-15.75, -18.625}</string>
-										<string>{15.75, -18.625}</string>
-										<string>{15.75, 18.625}</string>
-										<string>{-15.75, 18.625}</string>
+										<string>{3.5, 15.875}</string>
+										<string>{4.25, 16.625}</string>
+										<string>{3, 16.625}</string>
+										<string>{-2.5, 16.375}</string>
+									</array>
+									<array>
+										<string>{-13, -15.375}</string>
+										<string>{-12.25, -15.625}</string>
+										<string>{-12.5, -15.125}</string>
+										<string>{-13, -14.875}</string>
+									</array>
+									<array>
+										<string>{10, 9.875}</string>
+										<string>{9, 10.875}</string>
+										<string>{9, 9.625}</string>
+									</array>
+									<array>
+										<string>{-3, 16.125}</string>
+										<string>{-3.75, 16.625}</string>
+										<string>{-3.5, 15.125}</string>
+										<string>{3.5, 9.375}</string>
+									</array>
+									<array>
+										<string>{-12.5, -1.125}</string>
+										<string>{-13.75, -0.625}</string>
+										<string>{-13.5, -1.625}</string>
+									</array>
+									<array>
+										<string>{12.5, -9.125}</string>
+										<string>{13.75, -8.875}</string>
+										<string>{13.25, -8.375}</string>
+									</array>
+									<array>
+										<string>{-0.5, 17.875}</string>
+										<string>{-1.75, 18.625}</string>
+										<string>{-1.75, 18.375}</string>
+										<string>{-1.5, 17.375}</string>
+									</array>
+									<array>
+										<string>{14.25, 1.875}</string>
+										<string>{15.25, 2.375}</string>
+										<string>{14.25, 3.125}</string>
+										<string>{6.25, 5.375}</string>
+										<string>{6, 4.375}</string>
+										<string>{6, 1.125}</string>
+									</array>
+									<array>
+										<string>{-12.5, -14.625}</string>
+										<string>{-13, -14.875}</string>
+										<string>{-12.5, -15.125}</string>
+										<string>{-12.25, -14.875}</string>
+									</array>
+									<array>
+										<string>{-11, -15.625}</string>
+										<string>{-11.25, -16.125}</string>
+										<string>{-10.75, -16.125}</string>
+									</array>
+									<array>
+										<string>{12.75, 9.625}</string>
+										<string>{13, 10.125}</string>
+										<string>{12.25, 10.125}</string>
+										<string>{11.75, 9.625}</string>
+									</array>
+									<array>
+										<string>{-7, -3.875}</string>
+										<string>{-7.25, -3.125}</string>
+										<string>{-7.75, -3.625}</string>
+									</array>
+									<array>
+										<string>{14.25, 5.625}</string>
+										<string>{15, 6.125}</string>
+										<string>{14.25, 6.625}</string>
+										<string>{8.75, 9.375}</string>
+										<string>{6.75, 7.875}</string>
+										<string>{6.25, 6.875}</string>
+										<string>{6.25, 5.375}</string>
+									</array>
+									<array>
+										<string>{-5, 11.125}</string>
+										<string>{-6, 11.375}</string>
+										<string>{-6, 10.875}</string>
+										<string>{-4.75, 9.625}</string>
+									</array>
+									<array>
+										<string>{-5.25, 4.625}</string>
+										<string>{-6.25, 4.875}</string>
+										<string>{-6.25, 4.375}</string>
+										<string>{-5.25, 3.625}</string>
+									</array>
+									<array>
+										<string>{-8.25, -3.375}</string>
+										<string>{-14.75, -5.625}</string>
+										<string>{-15.5, -6.125}</string>
+										<string>{-14.75, -6.875}</string>
+										<string>{-7.75, -3.625}</string>
+									</array>
+									<array>
+										<string>{14.75, -2.625}</string>
+										<string>{15.5, -2.375}</string>
+										<string>{14.5, -0.625}</string>
+										<string>{6, 1.125}</string>
+									</array>
+									<array>
+										<string>{-14.75, -2.875}</string>
+										<string>{-15.25, -2.875}</string>
+										<string>{-14.75, -5.625}</string>
+									</array>
+									<array>
+										<string>{-9, -1.875}</string>
+										<string>{-8.75, -1.625}</string>
+										<string>{-9, -0.875}</string>
+										<string>{-10.25, -1.375}</string>
+										<string>{-14.75, -5.625}</string>
+									</array>
+									<array>
+										<string>{7.75, -12.125}</string>
+										<string>{9, -12.625}</string>
+										<string>{9.5, -11.125}</string>
+										<string>{5.5, 0.875}</string>
+									</array>
+									<array>
+										<string>{7.75, -16.875}</string>
+										<string>{8.25, -16.625}</string>
+										<string>{8.75, -14.875}</string>
+										<string>{8.5, -13.625}</string>
+										<string>{7.5, -13.875}</string>
+										<string>{3.25, -17.125}</string>
+									</array>
+									<array>
+										<string>{4, 13.375}</string>
+										<string>{4.5, 13.625}</string>
+										<string>{4.25, 14.125}</string>
+										<string>{-2.5, 16.375}</string>
+									</array>
+									<array>
+										<string>{4, 2.375}</string>
+										<string>{-6.5, -0.875}</string>
+										<string>{-7.25, -1.375}</string>
+										<string>{-6.75, -2.375}</string>
+										<string>{5.5, 0.875}</string>
+									</array>
+									<array>
+										<string>{8.75, 9.375}</string>
+										<string>{8.25, 9.625}</string>
+										<string>{6.75, 7.875}</string>
+									</array>
+									<array>
+										<string>{-15.75, -9.875}</string>
+										<string>{-15.75, -10.375}</string>
+										<string>{-14.75, -10.625}</string>
+										<string>{-14.75, -9.375}</string>
+									</array>
+									<array>
+										<string>{4, 2.375}</string>
+										<string>{5, 2.625}</string>
+										<string>{5, 3.125}</string>
+										<string>{4, 3.625}</string>
+										<string>{-4.75, 5.125}</string>
+										<string>{-5.25, 4.625}</string>
+										<string>{-5.25, 3.625}</string>
+									</array>
+									<array>
+										<string>{-15, -11.375}</string>
+										<string>{-15, -11.875}</string>
+										<string>{-14.25, -12.125}</string>
+										<string>{-14.5, -11.125}</string>
+									</array>
+									<array>
+										<string>{0.75, -17.125}</string>
+										<string>{1.25, -18.375}</string>
+										<string>{2, -18.375}</string>
+										<string>{2.25, -17.625}</string>
+										<string>{5.5, 0.875}</string>
+									</array>
+									<array>
+										<string>{6.25, 5.375}</string>
+										<string>{5.5, 5.125}</string>
+										<string>{5.5, 4.625}</string>
+										<string>{6, 4.375}</string>
+									</array>
+									<array>
+										<string>{3.25, -17.125}</string>
+										<string>{7.5, -13.875}</string>
+										<string>{7.25, -13.625}</string>
+									</array>
+									<array>
+										<string>{4.25, 14.125}</string>
+										<string>{4.5, 14.875}</string>
+										<string>{3.5, 15.875}</string>
+										<string>{-2.5, 16.375}</string>
+									</array>
+									<array>
+										<string>{3.5, 5.625}</string>
+										<string>{-4.5, 6.375}</string>
+										<string>{-5.25, 5.875}</string>
+										<string>{-5.25, 5.375}</string>
+										<string>{-4.75, 5.125}</string>
+										<string>{4, 3.625}</string>
+									</array>
+									<array>
+										<string>{3.5, 6.375}</string>
+										<string>{4, 6.625}</string>
+										<string>{4, 7.125}</string>
+										<string>{3.5, 7.375}</string>
+										<string>{-4.5, 7.125}</string>
+										<string>{-4.5, 6.375}</string>
+									</array>
+									<array>
+										<string>{3.5, 7.375}</string>
+										<string>{4, 7.625}</string>
+										<string>{4, 8.125}</string>
+										<string>{3.5, 8.375}</string>
+										<string>{-4.5, 7.125}</string>
+									</array>
+									<array>
+										<string>{-10.75, -16.125}</string>
+										<string>{-9.75, -17.125}</string>
+										<string>{-8.75, -16.875}</string>
+										<string>{-7, -3.875}</string>
+										<string>{-11, -15.625}</string>
+									</array>
+									<array>
+										<string>{-5.75, 3.125}</string>
+										<string>{-7.25, 3.125}</string>
+										<string>{-8, 2.625}</string>
+										<string>{-8.5, 1.625}</string>
+										<string>{-8.25, -0.125}</string>
+										<string>{-6.5, -0.875}</string>
+										<string>{4, 2.375}</string>
+									</array>
+									<array>
+										<string>{14.25, 6.625}</string>
+										<string>{14.25, 7.375}</string>
+										<string>{12.75, 9.625}</string>
+										<string>{11.75, 9.625}</string>
+										<string>{8.75, 9.375}</string>
+									</array>
+									<array>
+										<string>{-4.75, 11.375}</string>
+										<string>{-5, 11.125}</string>
+										<string>{-4.75, 9.625}</string>
+										<string>{3.5, 9.375}</string>
+									</array>
+									<array>
+										<string>{3.5, 9.375}</string>
+										<string>{-4.75, 9.625}</string>
+										<string>{-5, 7.625}</string>
+										<string>{-4.5, 7.125}</string>
+										<string>{3.5, 8.375}</string>
+									</array>
+									<array>
+										<string>{3.25, -17.125}</string>
+										<string>{7.25, -13.625}</string>
+										<string>{7.25, -12.625}</string>
+										<string>{5.5, 0.875}</string>
+										<string>{2.25, -17.625}</string>
+									</array>
+									<array>
+										<string>{3, 16.625}</string>
+										<string>{1, 18.125}</string>
+										<string>{-0.5, 17.875}</string>
+										<string>{-1.5, 17.375}</string>
+										<string>{-2.5, 16.375}</string>
+									</array>
+									<array>
+										<string>{3.5, 9.375}</string>
+										<string>{4.25, 11.875}</string>
+										<string>{4, 13.375}</string>
+										<string>{-2.5, 16.375}</string>
+										<string>{-3, 16.125}</string>
+									</array>
+									<array>
+										<string>{3.5, 9.375}</string>
+										<string>{-3.5, 15.125}</string>
+										<string>{-4.75, 11.375}</string>
+									</array>
+									<array>
+										<string>{3.5, 5.625}</string>
+										<string>{3.5, 6.375}</string>
+										<string>{-4.5, 6.375}</string>
+									</array>
+									<array>
+										<string>{4, 2.375}</string>
+										<string>{-5.25, 3.625}</string>
+										<string>{-5.75, 3.125}</string>
+									</array>
+									<array>
+										<string>{5.5, 0.875}</string>
+										<string>{-6.75, -2.375}</string>
+										<string>{-6.75, -3.625}</string>
+										<string>{0.75, -17.125}</string>
+									</array>
+									<array>
+										<string>{-11, -0.875}</string>
+										<string>{-12.5, -1.125}</string>
+										<string>{-13.5, -1.625}</string>
+										<string>{-14.75, -2.875}</string>
+										<string>{-14.75, -5.625}</string>
+										<string>{-10.25, -1.375}</string>
+									</array>
+									<array>
+										<string>{-8.25, -3.375}</string>
+										<string>{-9, -1.875}</string>
+										<string>{-14.75, -5.625}</string>
+									</array>
+									<array>
+										<string>{-7.75, -3.625}</string>
+										<string>{-14.75, -6.875}</string>
+										<string>{-15, -7.875}</string>
+										<string>{-14.75, -9.375}</string>
+										<string>{-7, -3.875}</string>
+									</array>
+									<array>
+										<string>{-7, -3.875}</string>
+										<string>{-14.75, -9.375}</string>
+										<string>{-14.75, -10.625}</string>
+										<string>{-14.5, -11.125}</string>
+									</array>
+									<array>
+										<string>{-7, -3.875}</string>
+										<string>{-14.5, -11.125}</string>
+										<string>{-14.25, -12.125}</string>
+										<string>{-13, -14.375}</string>
+										<string>{-12.5, -14.625}</string>
+									</array>
+									<array>
+										<string>{-7, -3.875}</string>
+										<string>{-12.5, -14.625}</string>
+										<string>{-12.25, -14.875}</string>
+										<string>{-11.5, -15.125}</string>
+									</array>
+									<array>
+										<string>{-7, -3.875}</string>
+										<string>{-11.5, -15.125}</string>
+										<string>{-11, -15.625}</string>
+									</array>
+									<array>
+										<string>{-7, -3.875}</string>
+										<string>{-8.75, -16.875}</string>
+										<string>{0.75, -17.125}</string>
+										<string>{-6.75, -3.625}</string>
+									</array>
+									<array>
+										<string>{5.5, 0.875}</string>
+										<string>{7.25, -12.625}</string>
+										<string>{7.75, -12.125}</string>
+									</array>
+									<array>
+										<string>{5.5, 0.875}</string>
+										<string>{9.5, -11.125}</string>
+										<string>{11.25, -10.375}</string>
+										<string>{12.5, -9.125}</string>
+									</array>
+									<array>
+										<string>{5.5, 0.875}</string>
+										<string>{12.5, -9.125}</string>
+										<string>{13.25, -8.375}</string>
+										<string>{13.25, -7.625}</string>
+									</array>
+									<array>
+										<string>{6, 1.125}</string>
+										<string>{5.5, 0.875}</string>
+										<string>{13.25, -7.625}</string>
+										<string>{14.5, -5.125}</string>
+										<string>{14.75, -2.625}</string>
+									</array>
+									<array>
+										<string>{6, 1.125}</string>
+										<string>{14.5, -0.625}</string>
+										<string>{14.25, 1.875}</string>
+									</array>
+									<array>
+										<string>{6.25, 5.375}</string>
+										<string>{14.25, 3.125}</string>
+										<string>{14.5, 4.875}</string>
+										<string>{14.25, 5.625}</string>
+									</array>
+									<array>
+										<string>{8.75, 9.375}</string>
+										<string>{11.75, 9.625}</string>
+										<string>{10, 9.875}</string>
+										<string>{9, 9.625}</string>
 									</array>
 								</array>
 								<key>Friction</key>
@@ -1625,21 +1822,21 @@
 								<key>Group</key>
 								<integer>0</integer>
 								<key>Height</key>
-								<real>149</real>
+								<real>0.0</real>
 								<key>HolesPoints</key>
 								<array/>
 								<key>IsCircle</key>
 								<false/>
 								<key>IsRectangle</key>
-								<true/>
+								<false/>
 								<key>IsSensor</key>
 								<false/>
 								<key>LHHeight</key>
-								<real>37.25</real>
+								<real>0.0</real>
 								<key>LHShapePositionOffset</key>
 								<string>{-15.75, -18.625}</string>
 								<key>LHWidth</key>
-								<real>31.5</real>
+								<real>0.0</real>
 								<key>Mask</key>
 								<integer>65535</integer>
 								<key>Name</key>
@@ -1648,17 +1845,155 @@
 								<real>0.20000000298023224</real>
 								<key>ShapePoints</key>
 								<array>
-									<string>{0, 0}</string>
-									<string>{126, 0}</string>
-									<string>{126, 149}</string>
-									<string>{0, 149}</string>
+									<string>{-0.99999999999999656, 56}</string>
+									<string>{-4.9999999999999964, 57}</string>
+									<string>{-8.9999999999999964, 53}</string>
+									<string>{-9.9999999999999964, 51}</string>
+									<string>{-7.9999999999999973, 48}</string>
+									<string>{-13.999999999999996, 49}</string>
+									<string>{-28.999999999999996, 44}</string>
+									<string>{-29.999999999999996, 43}</string>
+									<string>{-28.999999999999996, 39}</string>
+									<string>{-30.999999999999996, 39}</string>
+									<string>{-36, 44}</string>
+									<string>{-44, 43}</string>
+									<string>{-46, 45}</string>
+									<string>{-49, 45}</string>
+									<string>{-51, 42}</string>
+									<string>{-53, 42}</string>
+									<string>{-54, 44}</string>
+									<string>{-56, 42}</string>
+									<string>{-55, 38}</string>
+									<string>{-57, 38}</string>
+									<string>{-60, 42.000000000000007}</string>
+									<string>{-62, 40.000000000000007}</string>
+									<string>{-62, 34.000000000000007}</string>
+									<string>{-64, 31.000000000000004}</string>
+									<string>{-68, 29.000000000000004}</string>
+									<string>{-75, 30.000000000000004}</string>
+									<string>{-78, 37.000000000000007}</string>
+									<string>{-80, 34.000000000000007}</string>
+									<string>{-84, 36.000000000000007}</string>
+									<string>{-89, 36.000000000000007}</string>
+									<string>{-90, 35.000000000000007}</string>
+									<string>{-87, 34.000000000000007}</string>
+									<string>{-89, 32.000000000000007}</string>
+									<string>{-88, 30.000000000000007}</string>
+									<string>{-82, 27.000000000000004}</string>
+									<string>{-81, 28.000000000000004}</string>
+									<string>{-78, 27.000000000000004}</string>
+									<string>{-80, 22.000000000000004}</string>
+									<string>{-78, 19.000000000000004}</string>
+									<string>{-79, 13.000000000000005}</string>
+									<string>{-77, 8.0000000000000053}</string>
+									<string>{-81, 9.0000000000000053}</string>
+									<string>{-86, 4.0000000000000053}</string>
+									<string>{-86, 2.0000000000000053}</string>
+									<string>{-97, 4.0000000000000062}</string>
+									<string>{-99, 1.000000000000006}</string>
+									<string>{-102, 4.0000000000000062}</string>
+									<string>{-106, 3.0000000000000067}</string>
+									<string>{-112, 4.0000000000000071}</string>
+									<string>{-114, 6.9804867551399129e-15}</string>
+									<string>{-116, 7.1029514350546488e-15}</string>
+									<string>{-117, 4.0000000000000071}</string>
+									<string>{-119, 5.0000000000000071}</string>
+									<string>{-120, 3.0000000000000075}</string>
+									<string>{-122, 3.0000000000000075}</string>
+									<string>{-123, 6.0000000000000071}</string>
+									<string>{-132, 11.000000000000009}</string>
+									<string>{-133, 13.000000000000009}</string>
+									<string>{-134, 11.000000000000009}</string>
+									<string>{-136, 11.000000000000009}</string>
+									<string>{-137, 14.000000000000009}</string>
+									<string>{-135, 13.000000000000009}</string>
+									<string>{-134, 14.000000000000009}</string>
+									<string>{-135, 17.000000000000007}</string>
+									<string>{-137, 19.000000000000007}</string>
+									<string>{-139, 18.000000000000007}</string>
+									<string>{-139, 20.000000000000007}</string>
+									<string>{-143, 24.000000000000007}</string>
+									<string>{-142, 28.000000000000007}</string>
+									<string>{-143, 66.000000000000014}</string>
+									<string>{-148, 68.000000000000014}</string>
+									<string>{-148, 71.000000000000014}</string>
+									<string>{-145, 72.000000000000014}</string>
+									<string>{-143, 76.000000000000014}</string>
+									<string>{-142, 94.000000000000014}</string>
+									<string>{-141, 96.000000000000014}</string>
+									<string>{-134, 98.000000000000014}</string>
+									<string>{-129, 97.000000000000014}</string>
+									<string>{-130, 93.000000000000014}</string>
+									<string>{-129, 92.000000000000014}</string>
+									<string>{-125, 92.000000000000014}</string>
+									<string>{-123, 94.000000000000014}</string>
+									<string>{-125, 99.000000000000014}</string>
+									<string>{-119, 101.00000000000001}</string>
+									<string>{-116, 108}</string>
+									<string>{-111, 113}</string>
+									<string>{-109.99999999999999, 118}</string>
+									<string>{-108, 116}</string>
+									<string>{-105, 116}</string>
+									<string>{-94.999999999999986, 121}</string>
+									<string>{-84.999999999999986, 122}</string>
+									<string>{-83.999999999999986, 125}</string>
+									<string>{-76.999999999999986, 121}</string>
+									<string>{-66.999999999999986, 120}</string>
+									<string>{-64.999999999999986, 124}</string>
+									<string>{-61.999999999999993, 120}</string>
+									<string>{-54.999999999999993, 121}</string>
+									<string>{-51.999999999999993, 120}</string>
+									<string>{-49.999999999999993, 123}</string>
+									<string>{-47.999999999999993, 120}</string>
+									<string>{-44.999999999999993, 120}</string>
+									<string>{-35.999999999999993, 114}</string>
+									<string>{-33.999999999999993, 115}</string>
+									<string>{-33.999999999999993, 112}</string>
+									<string>{-35.999999999999993, 110}</string>
+									<string>{-34.999999999999993, 103}</string>
+									<string>{-30.999999999999993, 99}</string>
+									<string>{-35.999999999999993, 99}</string>
+									<string>{-36.999999999999993, 98}</string>
+									<string>{-35.999999999999993, 96}</string>
+									<string>{-42.999999999999993, 90}</string>
+									<string>{-46.999999999999993, 88}</string>
+									<string>{-52.999999999999993, 88}</string>
+									<string>{-53.999999999999993, 85}</string>
+									<string>{-55.999999999999993, 85}</string>
+									<string>{-56.999999999999993, 87}</string>
+									<string>{-70, 87}</string>
+									<string>{-71, 85}</string>
+									<string>{-65, 79}</string>
+									<string>{-63.999999999999993, 83}</string>
+									<string>{-61.999999999999993, 83}</string>
+									<string>{-59.999999999999993, 79}</string>
+									<string>{-51.999999999999993, 77}</string>
+									<string>{-48.999999999999993, 77}</string>
+									<string>{-47.999999999999993, 79}</string>
+									<string>{-45.999999999999993, 79}</string>
+									<string>{-44.999999999999993, 77}</string>
+									<string>{-43.999999999999993, 79}</string>
+									<string>{-41.999999999999993, 79}</string>
+									<string>{-40.999999999999993, 77}</string>
+									<string>{-36.999999999999993, 77}</string>
+									<string>{-26.999999999999996, 80}</string>
+									<string>{-20.999999999999996, 79}</string>
+									<string>{-19.999999999999996, 81}</string>
+									<string>{-17.999999999999996, 80}</string>
+									<string>{-14.999999999999995, 81}</string>
+									<string>{-10.999999999999995, 77}</string>
+									<string>{-7.9999999999999947, 80}</string>
+									<string>{-7.9999999999999956, 75}</string>
+									<string>{-1.999999999999996, 67}</string>
+									<string>{-2.9999999999999964, 61}</string>
+									<string>{3.4290110376125889e-15, 56}</string>
 								</array>
 								<key>ShapePositionOffset</key>
 								<string>{0, 0}</string>
 								<key>Tag</key>
 								<integer>0</integer>
 								<key>Width</key>
-								<real>126</real>
+								<real>0.0</real>
 							</dict>
 						</array>
 						<key>Type</key>
@@ -1691,9 +2026,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{2, 70}, {31.5, 37.75}}</string>
+						<string>{{186, 2}, {31.5, 37.75}}</string>
 						<key>Frame-HD</key>
-						<string>{{8, 280}, {126, 149}}</string>
+						<string>{{744, 8}, {126, 149}}</string>
 						<key>Image</key>
 						<string>gameElement_gameView.png</string>
 						<key>Image-HD</key>
@@ -1703,7 +2038,7 @@
 						<key>IsDrawable</key>
 						<true/>
 						<key>IsRotated</key>
-						<false/>
+						<true/>
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
@@ -1711,7 +2046,7 @@
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/xUanBing/Documents/Developer/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/enemy.png</string>
+						<string>/Users/user/Documents/Develop/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/enemy.png</string>
 						<key>OriginalImage_RelativePath</key>
 						<string>../enemy.png/</string>
 						<key>OriginalRect</key>
@@ -1719,7 +2054,7 @@
 						<key>OriginalSize</key>
 						<string>{126, 149}</string>
 						<key>Position</key>
-						<string>{8, 280}</string>
+						<string>{744, 8}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -1738,74 +2073,6 @@
 				</dict>
 				<key>road_1</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va8wGAAAAAAQQMAAAAHh07VOhnGxQ8ZEm
-					2DfnLId5KBr2jummj8rLqedGr3FgpAUAAE8C
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTMy
-					MzUzMjMxMzQ2NjMxNjY2NDMzMzgzMDYxNjY2
-					MzM4MzczMzM2MzIzNzM4NjEzNTMyNjU2MTM1
-					MzA2MjY1MzAzMDY1MzkzOTY1Mzg2MTY2M0Iz
-					MDMwMzAzMDMwMzAzMDMwM0IzMDMwMzAzMDMw
-					MzAzMDMwM0IzMDMwMzAzMDMwMzAzMDMwMzAz
-					MDMwMzAzMDMwMzIzMDNCNjM2RjZEMkU2MTcw
-					NzA2QzY1MkU2MTcwNzAyRDczNjE2RTY0NjI2
-					Rjc4MkU3MjY1NjE2NDJENzc3MjY5NzQ2NTNC
-					MzAzMDMwMzAzMDMwMzAzMTNCMzAzMTMwMzAz
-					MDMwMzAzMzNCMzAzMDMwMzAzMDMwMzAzMDMw
-					MzEzNDMwNjU2NDMxNjQzQjJGNzU3MzY1NzI3
-					MzJGNzg3NTYxNkU2MjY5NkU2NzJGNjQ2RjYz
-					NzU2RDY1NkU3NDczMkY2NDY1NzY2NTZDNkY3
-					MDY1NzIyRjY3Njk3NDY4NzU2MjJGNkQ3OTMx
-					NkU2NTc0NjY3MjYxNkQ2NTc3NkY3MjZCMkY2
-					MzZGNjM2RjczMzI2NDJENzgyRDMyMkUzMjJF
-					MzIyRjcwNzI2RjZBNjU2Mzc0NzMyRjZENkY3
-					NDZGNjc2MTZENjUyRjcyNjU3MzZGNzU3MjYz
-					NjU3MzJGNzU2OTVGNkM2MTc5NkY3NTc0MkY3
-					MjY1NzM2Rjc1NzI2MzY1NzMyRDY5NzA2ODZG
-					NkU2NTY4NjQyRjcyNkY2MTY0NUYzMTJFNzA2
-					RTY3AAUAAAABAQAAVXNlcnMAAAAIAAAAAQEA
-					AHhVYW5CaW5nCQAAAAEBAABEb2N1bWVudHMA
-					AAAJAAAAAQEAAERldmVsb3BlcgAAAAYAAAAB
-					AQAAR2l0aHViAAAPAAAAAQEAAG15MW5ldEZy
-					YW1lV29yawAPAAAAAQEAAGNvY29zMmQteC0y
-					LjIuMgAIAAAAAQEAAHByb2plY3RzCAAAAAEB
-					AABtb3RvR2FtZQkAAAABAQAAUmVzb3VyY2Vz
-					AAAACQAAAAEBAAB1aV9sYXlvdXQAAAASAAAA
-					AQEAAHJlc291cmNlcy1pcGhvbmVoZAAACgAA
-					AAEBAAByb2FkXzEucG5nAAA0AAAAAQYAAFwC
-					AABsAgAAfAIAAJACAACkAgAAtAIAAMwCAADk
-					AgAA9AIAAAQDAAAYAwAALAMAAEgDAAAIAAAA
-					BAMAAGYQAgAAAAAACAAAAAQDAACH9wQAAAAA
-					AAgAAAAEAwAAiPcEAAAAAAAIAAAABAMAAOTN
-					EAAAAAAACAAAAAQDAACrzDUAAAAAAAgAAAAE
-					AwAAZC3kAAAAAAAIAAAABAMAAMED5QAAAAAA
-					CAAAAAQDAADuSuUAAAAAAAgAAAAEAwAA70rl
-					AAAAAAAIAAAABAMAAKxL5QAAAAAACAAAAAQD
-					AADCS+UAAAAAAAgAAAAEAwAAxUvlAAAAAAAI
-					AAAABAMAAB3tQAEAAAAANAAAAAEGAACYAwAA
-					qAMAALgDAADIAwAA2AMAAOgDAAD4AwAACAQA
-					ABgEAAAoBAAAOAQAAEgEAABYBAAACAAAAAAE
-					AABBth3Q3AAAABgAAAABAgAAAQAAAAAAAAAP
-					AAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAEAAAA
-					AwMAAAIAAAAEAAAAAwMAAAEAAAAIAAAABAMA
-					AAsAAAAAAAAABAAAAAMDAAD1AQAABgAAAAEB
-					AABtYWNwcm8AAAgAAAAEAwAAAICBPXQAAAAI
-					AAAAAAQAAEG4H/7pAAAAJAAAAAEBAABDOUM4
-					MDYzOS1FODk0LTNDMkUtQUYyNi1FMkU2OTdC
-					QkY5NDkYAAAAAQIAAIEAAAABAAgA7xcAAAEA
-					CAAAAAAAAAAAAAEAAAABAQAALwAAAAQAAAAD
-					AwAAAAgAKPAAAAD+////AQAAAAAAAAATAAAA
-					BBAAAFwDAAAAAAAABRAAAGgEAAAAAAAAEBAA
-					ALQEAAAAAAAAQBAAAKQEAAAAAAAAVBAAANwE
-					AAAAAAAAVRAAAOgEAAAAAAAAVhAAANQEAAAA
-					AAAAAhEAAAQAAAAAAAAAAiAAAIwFAAAAAAAA
-					ECAAABAFAAAAAAAAESAAAEAFAAAAAAAAEiAA
-					ACAFAAAAAAAAEyAAADAFAAAAAAAAICAAAGwF
-					AAAAAAAAMCAAANQEAAAAAAAAAcAAAPQEAAAA
-					AAAAEcAAAGwCAAAAAAAAEsAAAAQFAAAAAAAA
-					ENAAAJgFAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -1829,66 +2096,9 @@
 						<key>LinearVelocity</key>
 						<string>{0, 0}</string>
 						<key>SH_ComplexShapes</key>
-						<array>
-							<dict>
-								<key>Angle</key>
-								<integer>0</integer>
-								<key>Category</key>
-								<integer>1</integer>
-								<key>Density</key>
-								<real>0.20000000298023224</real>
-								<key>Fixture</key>
-								<array>
-									<array>
-										<string>{-13.5, -15.75}</string>
-										<string>{13.5, -15.75}</string>
-										<string>{13.5, 15.75}</string>
-										<string>{-13.5, 15.75}</string>
-									</array>
-								</array>
-								<key>Friction</key>
-								<real>0.20000000298023224</real>
-								<key>Group</key>
-								<integer>0</integer>
-								<key>Height</key>
-								<real>126</real>
-								<key>HolesPoints</key>
-								<array/>
-								<key>IsCircle</key>
-								<false/>
-								<key>IsRectangle</key>
-								<true/>
-								<key>IsSensor</key>
-								<false/>
-								<key>LHHeight</key>
-								<real>31.5</real>
-								<key>LHShapePositionOffset</key>
-								<string>{-13.5, -15.75}</string>
-								<key>LHWidth</key>
-								<real>27</real>
-								<key>Mask</key>
-								<integer>65535</integer>
-								<key>Name</key>
-								<string>UntitledFixture</string>
-								<key>Restitution</key>
-								<real>0.20000000298023224</real>
-								<key>ShapePoints</key>
-								<array>
-									<string>{0, 0}</string>
-									<string>{108, 0}</string>
-									<string>{108, 126}</string>
-									<string>{0, 126}</string>
-								</array>
-								<key>ShapePositionOffset</key>
-								<string>{0, 0}</string>
-								<key>Tag</key>
-								<integer>0</integer>
-								<key>Width</key>
-								<real>108</real>
-							</dict>
-						</array>
+						<array/>
 						<key>Type</key>
-						<integer>0</integer>
+						<integer>3</integer>
 					</dict>
 					<key>SHSheetName</key>
 					<string>gameView</string>
@@ -1917,9 +2127,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{74, 69}, {27, 31.5}}</string>
+						<string>{{219, 74}, {27, 31.5}}</string>
 						<key>Frame-HD</key>
-						<string>{{296, 276}, {108, 126}}</string>
+						<string>{{876, 296}, {108, 126}}</string>
 						<key>Image</key>
 						<string>gameElement_gameView.png</string>
 						<key>Image-HD</key>
@@ -1929,7 +2139,7 @@
 						<key>IsDrawable</key>
 						<true/>
 						<key>IsRotated</key>
-						<false/>
+						<true/>
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
@@ -1937,7 +2147,7 @@
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/xUanBing/Documents/Developer/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/road_1.png</string>
+						<string>/Users/user/Documents/Develop/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/road_1.png</string>
 						<key>OriginalImage_RelativePath</key>
 						<string>../road_1.png/</string>
 						<key>OriginalRect</key>
@@ -1945,7 +2155,7 @@
 						<key>OriginalSize</key>
 						<string>{108, 126}</string>
 						<key>Position</key>
-						<string>{296, 276}</string>
+						<string>{876, 296}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -1964,74 +2174,6 @@
 				</dict>
 				<key>road_2</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va8wGAAAAAAQQMAAAANUrxgoZc3xtqf+o
-					tWKWu39Fba2ZIkyb5QhE1yRiVByGpAUAAE8C
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM2
-					MzQ2NTM1MzM2NjYxMzY2MzM0NjQzNTM0MzI2
-					NjMxMzUzMTYxMzEzOTM1MzEzMjMyMzI2NjM3
-					MzgzOTM2MzUzMjMyNjQzMzMyMzEzOTM0M0Iz
-					MDMwMzAzMDMwMzAzMDMwM0IzMDMwMzAzMDMw
-					MzAzMDMwM0IzMDMwMzAzMDMwMzAzMDMwMzAz
-					MDMwMzAzMDMwMzIzMDNCNjM2RjZEMkU2MTcw
-					NzA2QzY1MkU2MTcwNzAyRDczNjE2RTY0NjI2
-					Rjc4MkU3MjY1NjE2NDJENzc3MjY5NzQ2NTNC
-					MzAzMDMwMzAzMDMwMzAzMTNCMzAzMTMwMzAz
-					MDMwMzAzMzNCMzAzMDMwMzAzMDMwMzAzMDMw
-					MzEzNDMwNjU2NDMxNjUzQjJGNzU3MzY1NzI3
-					MzJGNzg3NTYxNkU2MjY5NkU2NzJGNjQ2RjYz
-					NzU2RDY1NkU3NDczMkY2NDY1NzY2NTZDNkY3
-					MDY1NzIyRjY3Njk3NDY4NzU2MjJGNkQ3OTMx
-					NkU2NTc0NjY3MjYxNkQ2NTc3NkY3MjZCMkY2
-					MzZGNjM2RjczMzI2NDJENzgyRDMyMkUzMjJF
-					MzIyRjcwNzI2RjZBNjU2Mzc0NzMyRjZENkY3
-					NDZGNjc2MTZENjUyRjcyNjU3MzZGNzU3MjYz
-					NjU3MzJGNzU2OTVGNkM2MTc5NkY3NTc0MkY3
-					MjY1NzM2Rjc1NzI2MzY1NzMyRDY5NzA2ODZG
-					NkU2NTY4NjQyRjcyNkY2MTY0NUYzMjJFNzA2
-					RTY3AAUAAAABAQAAVXNlcnMAAAAIAAAAAQEA
-					AHhVYW5CaW5nCQAAAAEBAABEb2N1bWVudHMA
-					AAAJAAAAAQEAAERldmVsb3BlcgAAAAYAAAAB
-					AQAAR2l0aHViAAAPAAAAAQEAAG15MW5ldEZy
-					YW1lV29yawAPAAAAAQEAAGNvY29zMmQteC0y
-					LjIuMgAIAAAAAQEAAHByb2plY3RzCAAAAAEB
-					AABtb3RvR2FtZQkAAAABAQAAUmVzb3VyY2Vz
-					AAAACQAAAAEBAAB1aV9sYXlvdXQAAAASAAAA
-					AQEAAHJlc291cmNlcy1pcGhvbmVoZAAACgAA
-					AAEBAAByb2FkXzIucG5nAAA0AAAAAQYAAFwC
-					AABsAgAAfAIAAJACAACkAgAAtAIAAMwCAADk
-					AgAA9AIAAAQDAAAYAwAALAMAAEgDAAAIAAAA
-					BAMAAGYQAgAAAAAACAAAAAQDAACH9wQAAAAA
-					AAgAAAAEAwAAiPcEAAAAAAAIAAAABAMAAOTN
-					EAAAAAAACAAAAAQDAACrzDUAAAAAAAgAAAAE
-					AwAAZC3kAAAAAAAIAAAABAMAAMED5QAAAAAA
-					CAAAAAQDAADuSuUAAAAAAAgAAAAEAwAA70rl
-					AAAAAAAIAAAABAMAAKxL5QAAAAAACAAAAAQD
-					AADCS+UAAAAAAAgAAAAEAwAAxUvlAAAAAAAI
-					AAAABAMAAB7tQAEAAAAANAAAAAEGAACYAwAA
-					qAMAALgDAADIAwAA2AMAAOgDAAD4AwAACAQA
-					ABgEAAAoBAAAOAQAAEgEAABYBAAACAAAAAAE
-					AABBth3QlgAAABgAAAABAgAAAQAAAAAAAAAP
-					AAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAEAAAA
-					AwMAAAIAAAAEAAAAAwMAAAEAAAAIAAAABAMA
-					AAsAAAAAAAAABAAAAAMDAAD1AQAABgAAAAEB
-					AABtYWNwcm8AAAgAAAAEAwAAAICBPXQAAAAI
-					AAAAAAQAAEG4H/7pAAAAJAAAAAEBAABDOUM4
-					MDYzOS1FODk0LTNDMkUtQUYyNi1FMkU2OTdC
-					QkY5NDkYAAAAAQIAAIEAAAABAAgA7xcAAAEA
-					CAAAAAAAAAAAAAEAAAABAQAALwAAAAQAAAAD
-					AwAAAAgAKPAAAAD+////AQAAAAAAAAATAAAA
-					BBAAAFwDAAAAAAAABRAAAGgEAAAAAAAAEBAA
-					ALQEAAAAAAAAQBAAAKQEAAAAAAAAVBAAANwE
-					AAAAAAAAVRAAAOgEAAAAAAAAVhAAANQEAAAA
-					AAAAAhEAAAQAAAAAAAAAAiAAAIwFAAAAAAAA
-					ECAAABAFAAAAAAAAESAAAEAFAAAAAAAAEiAA
-					ACAFAAAAAAAAEyAAADAFAAAAAAAAICAAAGwF
-					AAAAAAAAMCAAANQEAAAAAAAAAcAAAPQEAAAA
-					AAAAEcAAAGwCAAAAAAAAEsAAAAQFAAAAAAAA
-					ENAAAJgFAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2055,66 +2197,9 @@
 						<key>LinearVelocity</key>
 						<string>{0, 0}</string>
 						<key>SH_ComplexShapes</key>
-						<array>
-							<dict>
-								<key>Angle</key>
-								<integer>0</integer>
-								<key>Category</key>
-								<integer>1</integer>
-								<key>Density</key>
-								<real>0.20000000298023224</real>
-								<key>Fixture</key>
-								<array>
-									<array>
-										<string>{-16, -15.75}</string>
-										<string>{15.999999999999996, -15.75}</string>
-										<string>{16, 15.75}</string>
-										<string>{-16, 15.75}</string>
-									</array>
-								</array>
-								<key>Friction</key>
-								<real>0.20000000298023224</real>
-								<key>Group</key>
-								<integer>0</integer>
-								<key>Height</key>
-								<real>126</real>
-								<key>HolesPoints</key>
-								<array/>
-								<key>IsCircle</key>
-								<false/>
-								<key>IsRectangle</key>
-								<true/>
-								<key>IsSensor</key>
-								<false/>
-								<key>LHHeight</key>
-								<real>31.5</real>
-								<key>LHShapePositionOffset</key>
-								<string>{-16, -15.75}</string>
-								<key>LHWidth</key>
-								<real>32</real>
-								<key>Mask</key>
-								<integer>65535</integer>
-								<key>Name</key>
-								<string>UntitledFixture</string>
-								<key>Restitution</key>
-								<real>0.20000000298023224</real>
-								<key>ShapePoints</key>
-								<array>
-									<string>{0, 0}</string>
-									<string>{7.1054273576010019e-15, 128}</string>
-									<string>{-125.99999999999999, 128}</string>
-									<string>{-126, 7.1054273576010019e-15}</string>
-								</array>
-								<key>ShapePositionOffset</key>
-								<string>{0, 0}</string>
-								<key>Tag</key>
-								<integer>0</integer>
-								<key>Width</key>
-								<real>128</real>
-							</dict>
-						</array>
+						<array/>
 						<key>Type</key>
-						<integer>0</integer>
+						<integer>3</integer>
 					</dict>
 					<key>SHSheetName</key>
 					<string>gameView</string>
@@ -2143,9 +2228,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{60, 2}, {32, 31.5}}</string>
+						<string>{{222, 38}, {32, 31.5}}</string>
 						<key>Frame-HD</key>
-						<string>{{240, 8}, {128, 126}}</string>
+						<string>{{888, 152}, {128, 126}}</string>
 						<key>Image</key>
 						<string>gameElement_gameView.png</string>
 						<key>Image-HD</key>
@@ -2155,7 +2240,7 @@
 						<key>IsDrawable</key>
 						<true/>
 						<key>IsRotated</key>
-						<true/>
+						<false/>
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
@@ -2163,7 +2248,7 @@
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/xUanBing/Documents/Developer/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/road_2.png</string>
+						<string>/Users/user/Documents/Develop/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/road_2.png</string>
 						<key>OriginalImage_RelativePath</key>
 						<string>../road_2.png/</string>
 						<key>OriginalRect</key>
@@ -2171,7 +2256,7 @@
 						<key>OriginalSize</key>
 						<string>{128, 126}</string>
 						<key>Position</key>
-						<string>{240, 8}</string>
+						<string>{888, 152}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -2190,74 +2275,6 @@
 				</dict>
 				<key>road_3</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va8wGAAAAAAQQMAAAAM3VdBmWuXnBfDHE
-					ISzSpClOm3sv2aFeqxd/o6m2SlxmpAUAAE8C
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTYx
-					NjI2MzMwNjYzNzY2NjYzMjMyMzkzODYyMzY2
-					MTY1MzUzNzMwNjQzOTM4MzM2NTYzNjMzMjMw
-					MzE2NjMxMzYzNjY0MzczMjYzNjQ2NDM3M0Iz
-					MDMwMzAzMDMwMzAzMDMwM0IzMDMwMzAzMDMw
-					MzAzMDMwM0IzMDMwMzAzMDMwMzAzMDMwMzAz
-					MDMwMzAzMDMwMzIzMDNCNjM2RjZEMkU2MTcw
-					NzA2QzY1MkU2MTcwNzAyRDczNjE2RTY0NjI2
-					Rjc4MkU3MjY1NjE2NDJENzc3MjY5NzQ2NTNC
-					MzAzMDMwMzAzMDMwMzAzMTNCMzAzMTMwMzAz
-					MDMwMzAzMzNCMzAzMDMwMzAzMDMwMzAzMDMw
-					MzEzNDMwNjU2NDMxNjYzQjJGNzU3MzY1NzI3
-					MzJGNzg3NTYxNkU2MjY5NkU2NzJGNjQ2RjYz
-					NzU2RDY1NkU3NDczMkY2NDY1NzY2NTZDNkY3
-					MDY1NzIyRjY3Njk3NDY4NzU2MjJGNkQ3OTMx
-					NkU2NTc0NjY3MjYxNkQ2NTc3NkY3MjZCMkY2
-					MzZGNjM2RjczMzI2NDJENzgyRDMyMkUzMjJF
-					MzIyRjcwNzI2RjZBNjU2Mzc0NzMyRjZENkY3
-					NDZGNjc2MTZENjUyRjcyNjU3MzZGNzU3MjYz
-					NjU3MzJGNzU2OTVGNkM2MTc5NkY3NTc0MkY3
-					MjY1NzM2Rjc1NzI2MzY1NzMyRDY5NzA2ODZG
-					NkU2NTY4NjQyRjcyNkY2MTY0NUYzMzJFNzA2
-					RTY3AAUAAAABAQAAVXNlcnMAAAAIAAAAAQEA
-					AHhVYW5CaW5nCQAAAAEBAABEb2N1bWVudHMA
-					AAAJAAAAAQEAAERldmVsb3BlcgAAAAYAAAAB
-					AQAAR2l0aHViAAAPAAAAAQEAAG15MW5ldEZy
-					YW1lV29yawAPAAAAAQEAAGNvY29zMmQteC0y
-					LjIuMgAIAAAAAQEAAHByb2plY3RzCAAAAAEB
-					AABtb3RvR2FtZQkAAAABAQAAUmVzb3VyY2Vz
-					AAAACQAAAAEBAAB1aV9sYXlvdXQAAAASAAAA
-					AQEAAHJlc291cmNlcy1pcGhvbmVoZAAACgAA
-					AAEBAAByb2FkXzMucG5nAAA0AAAAAQYAAFwC
-					AABsAgAAfAIAAJACAACkAgAAtAIAAMwCAADk
-					AgAA9AIAAAQDAAAYAwAALAMAAEgDAAAIAAAA
-					BAMAAGYQAgAAAAAACAAAAAQDAACH9wQAAAAA
-					AAgAAAAEAwAAiPcEAAAAAAAIAAAABAMAAOTN
-					EAAAAAAACAAAAAQDAACrzDUAAAAAAAgAAAAE
-					AwAAZC3kAAAAAAAIAAAABAMAAMED5QAAAAAA
-					CAAAAAQDAADuSuUAAAAAAAgAAAAEAwAA70rl
-					AAAAAAAIAAAABAMAAKxL5QAAAAAACAAAAAQD
-					AADCS+UAAAAAAAgAAAAEAwAAxUvlAAAAAAAI
-					AAAABAMAAB/tQAEAAAAANAAAAAEGAACYAwAA
-					qAMAALgDAADIAwAA2AMAAOgDAAD4AwAACAQA
-					ABgEAAAoBAAAOAQAAEgEAABYBAAACAAAAAAE
-					AABBth3Q+AAAABgAAAABAgAAAQAAAAAAAAAP
-					AAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAEAAAA
-					AwMAAAIAAAAEAAAAAwMAAAEAAAAIAAAABAMA
-					AAsAAAAAAAAABAAAAAMDAAD1AQAABgAAAAEB
-					AABtYWNwcm8AAAgAAAAEAwAAAICBPXQAAAAI
-					AAAAAAQAAEG4H/7pAAAAJAAAAAEBAABDOUM4
-					MDYzOS1FODk0LTNDMkUtQUYyNi1FMkU2OTdC
-					QkY5NDkYAAAAAQIAAIEAAAABAAgA7xcAAAEA
-					CAAAAAAAAAAAAAEAAAABAQAALwAAAAQAAAAD
-					AwAAAAgAKPAAAAD+////AQAAAAAAAAATAAAA
-					BBAAAFwDAAAAAAAABRAAAGgEAAAAAAAAEBAA
-					ALQEAAAAAAAAQBAAAKQEAAAAAAAAVBAAANwE
-					AAAAAAAAVRAAAOgEAAAAAAAAVhAAANQEAAAA
-					AAAAAhEAAAQAAAAAAAAAAiAAAIwFAAAAAAAA
-					ECAAABAFAAAAAAAAESAAAEAFAAAAAAAAEiAA
-					ACAFAAAAAAAAEyAAADAFAAAAAAAAICAAAGwF
-					AAAAAAAAMCAAANQEAAAAAAAAAcAAAPQEAAAA
-					AAAAEcAAAGwCAAAAAAAAEsAAAAQFAAAAAAAA
-					ENAAAJgFAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2281,66 +2298,9 @@
 						<key>LinearVelocity</key>
 						<string>{0, 0}</string>
 						<key>SH_ComplexShapes</key>
-						<array>
-							<dict>
-								<key>Angle</key>
-								<integer>0</integer>
-								<key>Category</key>
-								<integer>1</integer>
-								<key>Density</key>
-								<real>0.20000000298023224</real>
-								<key>Fixture</key>
-								<array>
-									<array>
-										<string>{-16, -16}</string>
-										<string>{16, -16}</string>
-										<string>{16, 16}</string>
-										<string>{-16, 16}</string>
-									</array>
-								</array>
-								<key>Friction</key>
-								<real>0.20000000298023224</real>
-								<key>Group</key>
-								<integer>0</integer>
-								<key>Height</key>
-								<real>128</real>
-								<key>HolesPoints</key>
-								<array/>
-								<key>IsCircle</key>
-								<false/>
-								<key>IsRectangle</key>
-								<true/>
-								<key>IsSensor</key>
-								<false/>
-								<key>LHHeight</key>
-								<real>32</real>
-								<key>LHShapePositionOffset</key>
-								<string>{-16, -16}</string>
-								<key>LHWidth</key>
-								<real>32</real>
-								<key>Mask</key>
-								<integer>65535</integer>
-								<key>Name</key>
-								<string>UntitledFixture</string>
-								<key>Restitution</key>
-								<real>0.20000000298023224</real>
-								<key>ShapePoints</key>
-								<array>
-									<string>{0, 0}</string>
-									<string>{128, 0}</string>
-									<string>{128, 128}</string>
-									<string>{0, 128}</string>
-								</array>
-								<key>ShapePositionOffset</key>
-								<string>{0, 0}</string>
-								<key>Tag</key>
-								<integer>0</integer>
-								<key>Width</key>
-								<real>128</real>
-							</dict>
-						</array>
+						<array/>
 						<key>Type</key>
-						<integer>0</integer>
+						<integer>3</integer>
 					</dict>
 					<key>SHSheetName</key>
 					<string>gameView</string>
@@ -2369,9 +2329,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{38, 70}, {32, 32}}</string>
+						<string>{{186, 38}, {32, 32}}</string>
 						<key>Frame-HD</key>
-						<string>{{152, 280}, {128, 128}}</string>
+						<string>{{744, 152}, {128, 128}}</string>
 						<key>Image</key>
 						<string>gameElement_gameView.png</string>
 						<key>Image-HD</key>
@@ -2389,7 +2349,7 @@
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/xUanBing/Documents/Developer/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/road_3.png</string>
+						<string>/Users/user/Documents/Develop/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/road_3.png</string>
 						<key>OriginalImage_RelativePath</key>
 						<string>../road_3.png/</string>
 						<key>OriginalRect</key>
@@ -2397,7 +2357,7 @@
 						<key>OriginalSize</key>
 						<string>{128, 128}</string>
 						<key>Position</key>
-						<string>{152, 280}</string>
+						<string>{744, 152}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -2416,74 +2376,6 @@
 				</dict>
 				<key>road_4</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va8wGAAAAAAQQMAAAAFpTm/urZpklccMl
-					rbjSyCSn6mxZB082qkBc+mLnBJaHpAUAAE8C
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTMy
-					MzkzNjY2MzU2NDM0NjEzNTM3MzAzMjM1NjY2
-					NjMxMzUzMzM5MzkzMzYxNjQ2MjY1MzUzNDY2
-					NjIzNDMwNjYzMTYyNjUzMDY1NjM2NDYyM0Iz
-					MDMwMzAzMDMwMzAzMDMwM0IzMDMwMzAzMDMw
-					MzAzMDMwM0IzMDMwMzAzMDMwMzAzMDMwMzAz
-					MDMwMzAzMDMwMzIzMDNCNjM2RjZEMkU2MTcw
-					NzA2QzY1MkU2MTcwNzAyRDczNjE2RTY0NjI2
-					Rjc4MkU3MjY1NjE2NDJENzc3MjY5NzQ2NTNC
-					MzAzMDMwMzAzMDMwMzAzMTNCMzAzMTMwMzAz
-					MDMwMzAzMzNCMzAzMDMwMzAzMDMwMzAzMDMw
-					MzEzNDMwNjU2NDMyMzAzQjJGNzU3MzY1NzI3
-					MzJGNzg3NTYxNkU2MjY5NkU2NzJGNjQ2RjYz
-					NzU2RDY1NkU3NDczMkY2NDY1NzY2NTZDNkY3
-					MDY1NzIyRjY3Njk3NDY4NzU2MjJGNkQ3OTMx
-					NkU2NTc0NjY3MjYxNkQ2NTc3NkY3MjZCMkY2
-					MzZGNjM2RjczMzI2NDJENzgyRDMyMkUzMjJF
-					MzIyRjcwNzI2RjZBNjU2Mzc0NzMyRjZENkY3
-					NDZGNjc2MTZENjUyRjcyNjU3MzZGNzU3MjYz
-					NjU3MzJGNzU2OTVGNkM2MTc5NkY3NTc0MkY3
-					MjY1NzM2Rjc1NzI2MzY1NzMyRDY5NzA2ODZG
-					NkU2NTY4NjQyRjcyNkY2MTY0NUYzNDJFNzA2
-					RTY3AAUAAAABAQAAVXNlcnMAAAAIAAAAAQEA
-					AHhVYW5CaW5nCQAAAAEBAABEb2N1bWVudHMA
-					AAAJAAAAAQEAAERldmVsb3BlcgAAAAYAAAAB
-					AQAAR2l0aHViAAAPAAAAAQEAAG15MW5ldEZy
-					YW1lV29yawAPAAAAAQEAAGNvY29zMmQteC0y
-					LjIuMgAIAAAAAQEAAHByb2plY3RzCAAAAAEB
-					AABtb3RvR2FtZQkAAAABAQAAUmVzb3VyY2Vz
-					AAAACQAAAAEBAAB1aV9sYXlvdXQAAAASAAAA
-					AQEAAHJlc291cmNlcy1pcGhvbmVoZAAACgAA
-					AAEBAAByb2FkXzQucG5nAAA0AAAAAQYAAFwC
-					AABsAgAAfAIAAJACAACkAgAAtAIAAMwCAADk
-					AgAA9AIAAAQDAAAYAwAALAMAAEgDAAAIAAAA
-					BAMAAGYQAgAAAAAACAAAAAQDAACH9wQAAAAA
-					AAgAAAAEAwAAiPcEAAAAAAAIAAAABAMAAOTN
-					EAAAAAAACAAAAAQDAACrzDUAAAAAAAgAAAAE
-					AwAAZC3kAAAAAAAIAAAABAMAAMED5QAAAAAA
-					CAAAAAQDAADuSuUAAAAAAAgAAAAEAwAA70rl
-					AAAAAAAIAAAABAMAAKxL5QAAAAAACAAAAAQD
-					AADCS+UAAAAAAAgAAAAEAwAAxUvlAAAAAAAI
-					AAAABAMAACDtQAEAAAAANAAAAAEGAACYAwAA
-					qAMAALgDAADIAwAA2AMAAOgDAAD4AwAACAQA
-					ABgEAAAoBAAAOAQAAEgEAABYBAAACAAAAAAE
-					AABBth3RFgAAABgAAAABAgAAAQAAAAAAAAAP
-					AAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAEAAAA
-					AwMAAAIAAAAEAAAAAwMAAAEAAAAIAAAABAMA
-					AAsAAAAAAAAABAAAAAMDAAD1AQAABgAAAAEB
-					AABtYWNwcm8AAAgAAAAEAwAAAICBPXQAAAAI
-					AAAAAAQAAEG4H/7pAAAAJAAAAAEBAABDOUM4
-					MDYzOS1FODk0LTNDMkUtQUYyNi1FMkU2OTdC
-					QkY5NDkYAAAAAQIAAIEAAAABAAgA7xcAAAEA
-					CAAAAAAAAAAAAAEAAAABAQAALwAAAAQAAAAD
-					AwAAAAgAKPAAAAD+////AQAAAAAAAAATAAAA
-					BBAAAFwDAAAAAAAABRAAAGgEAAAAAAAAEBAA
-					ALQEAAAAAAAAQBAAAKQEAAAAAAAAVBAAANwE
-					AAAAAAAAVRAAAOgEAAAAAAAAVhAAANQEAAAA
-					AAAAAhEAAAQAAAAAAAAAAiAAAIwFAAAAAAAA
-					ECAAABAFAAAAAAAAESAAAEAFAAAAAAAAEiAA
-					ACAFAAAAAAAAEyAAADAFAAAAAAAAICAAAGwF
-					AAAAAAAAMCAAANQEAAAAAAAAAcAAAPQEAAAA
-					AAAAEcAAAGwCAAAAAAAAEsAAAAQFAAAAAAAA
-					ENAAAJgFAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2507,66 +2399,9 @@
 						<key>LinearVelocity</key>
 						<string>{0, 0}</string>
 						<key>SH_ComplexShapes</key>
-						<array>
-							<dict>
-								<key>Angle</key>
-								<integer>0</integer>
-								<key>Category</key>
-								<integer>1</integer>
-								<key>Density</key>
-								<real>0.20000000298023224</real>
-								<key>Fixture</key>
-								<array>
-									<array>
-										<string>{-13.5, -16}</string>
-										<string>{13.5, -16}</string>
-										<string>{13.5, 16}</string>
-										<string>{-13.5, 16}</string>
-									</array>
-								</array>
-								<key>Friction</key>
-								<real>0.20000000298023224</real>
-								<key>Group</key>
-								<integer>0</integer>
-								<key>Height</key>
-								<real>128</real>
-								<key>HolesPoints</key>
-								<array/>
-								<key>IsCircle</key>
-								<false/>
-								<key>IsRectangle</key>
-								<true/>
-								<key>IsSensor</key>
-								<false/>
-								<key>LHHeight</key>
-								<real>32</real>
-								<key>LHShapePositionOffset</key>
-								<string>{-13.5, -16}</string>
-								<key>LHWidth</key>
-								<real>27</real>
-								<key>Mask</key>
-								<integer>65535</integer>
-								<key>Name</key>
-								<string>UntitledFixture</string>
-								<key>Restitution</key>
-								<real>0.20000000298023224</real>
-								<key>ShapePoints</key>
-								<array>
-									<string>{0, 0}</string>
-									<string>{0, 108}</string>
-									<string>{-128, 108.00000000000001}</string>
-									<string>{-128, 7.1054273576010019e-15}</string>
-								</array>
-								<key>ShapePositionOffset</key>
-								<string>{0, 0}</string>
-								<key>Tag</key>
-								<integer>0</integer>
-								<key>Width</key>
-								<real>108</real>
-							</dict>
-						</array>
+						<array/>
 						<key>Type</key>
-						<integer>0</integer>
+						<integer>3</integer>
 					</dict>
 					<key>SHSheetName</key>
 					<string>gameView</string>
@@ -2595,9 +2430,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{60, 38}, {27, 32}}</string>
+						<string>{{227, 2}, {27, 32}}</string>
 						<key>Frame-HD</key>
-						<string>{{240, 152}, {108, 128}}</string>
+						<string>{{908, 8}, {108, 128}}</string>
 						<key>Image</key>
 						<string>gameElement_gameView.png</string>
 						<key>Image-HD</key>
@@ -2607,7 +2442,7 @@
 						<key>IsDrawable</key>
 						<true/>
 						<key>IsRotated</key>
-						<true/>
+						<false/>
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
@@ -2615,7 +2450,7 @@
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/xUanBing/Documents/Developer/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/road_4.png</string>
+						<string>/Users/user/Documents/Develop/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/road_4.png</string>
 						<key>OriginalImage_RelativePath</key>
 						<string>../road_4.png/</string>
 						<key>OriginalRect</key>
@@ -2623,7 +2458,7 @@
 						<key>OriginalSize</key>
 						<string>{108, 128}</string>
 						<key>Position</key>
-						<string>{240, 152}</string>
+						<string>{908, 8}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -2642,74 +2477,6 @@
 				</dict>
 				<key>road_5</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va8wGAAAAAAQQMAAAAM+cM5vUA0wcK+Ko
-					3IQjuxPwtAyikPTxODukw4q0uNiIpAUAAE8C
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTMw
-					NjQzODMxMzE2NTM4NjU2NDYzNjMzNDM1Mzc2
-					NjM0Mzc2NTMzNjE2MjMwMzQzNTY2NjU2MzM3
-					Mzk2MTYyMzQzNzMxMzMzODM5NjMzODY0M0Iz
-					MDMwMzAzMDMwMzAzMDMwM0IzMDMwMzAzMDMw
-					MzAzMDMwM0IzMDMwMzAzMDMwMzAzMDMwMzAz
-					MDMwMzAzMDMwMzIzMDNCNjM2RjZEMkU2MTcw
-					NzA2QzY1MkU2MTcwNzAyRDczNjE2RTY0NjI2
-					Rjc4MkU3MjY1NjE2NDJENzc3MjY5NzQ2NTNC
-					MzAzMDMwMzAzMDMwMzAzMTNCMzAzMTMwMzAz
-					MDMwMzAzMzNCMzAzMDMwMzAzMDMwMzAzMDMw
-					MzEzNDMwNjU2NDMyMzEzQjJGNzU3MzY1NzI3
-					MzJGNzg3NTYxNkU2MjY5NkU2NzJGNjQ2RjYz
-					NzU2RDY1NkU3NDczMkY2NDY1NzY2NTZDNkY3
-					MDY1NzIyRjY3Njk3NDY4NzU2MjJGNkQ3OTMx
-					NkU2NTc0NjY3MjYxNkQ2NTc3NkY3MjZCMkY2
-					MzZGNjM2RjczMzI2NDJENzgyRDMyMkUzMjJF
-					MzIyRjcwNzI2RjZBNjU2Mzc0NzMyRjZENkY3
-					NDZGNjc2MTZENjUyRjcyNjU3MzZGNzU3MjYz
-					NjU3MzJGNzU2OTVGNkM2MTc5NkY3NTc0MkY3
-					MjY1NzM2Rjc1NzI2MzY1NzMyRDY5NzA2ODZG
-					NkU2NTY4NjQyRjcyNkY2MTY0NUYzNTJFNzA2
-					RTY3AAUAAAABAQAAVXNlcnMAAAAIAAAAAQEA
-					AHhVYW5CaW5nCQAAAAEBAABEb2N1bWVudHMA
-					AAAJAAAAAQEAAERldmVsb3BlcgAAAAYAAAAB
-					AQAAR2l0aHViAAAPAAAAAQEAAG15MW5ldEZy
-					YW1lV29yawAPAAAAAQEAAGNvY29zMmQteC0y
-					LjIuMgAIAAAAAQEAAHByb2plY3RzCAAAAAEB
-					AABtb3RvR2FtZQkAAAABAQAAUmVzb3VyY2Vz
-					AAAACQAAAAEBAAB1aV9sYXlvdXQAAAASAAAA
-					AQEAAHJlc291cmNlcy1pcGhvbmVoZAAACgAA
-					AAEBAAByb2FkXzUucG5nAAA0AAAAAQYAAFwC
-					AABsAgAAfAIAAJACAACkAgAAtAIAAMwCAADk
-					AgAA9AIAAAQDAAAYAwAALAMAAEgDAAAIAAAA
-					BAMAAGYQAgAAAAAACAAAAAQDAACH9wQAAAAA
-					AAgAAAAEAwAAiPcEAAAAAAAIAAAABAMAAOTN
-					EAAAAAAACAAAAAQDAACrzDUAAAAAAAgAAAAE
-					AwAAZC3kAAAAAAAIAAAABAMAAMED5QAAAAAA
-					CAAAAAQDAADuSuUAAAAAAAgAAAAEAwAA70rl
-					AAAAAAAIAAAABAMAAKxL5QAAAAAACAAAAAQD
-					AADCS+UAAAAAAAgAAAAEAwAAxUvlAAAAAAAI
-					AAAABAMAACHtQAEAAAAANAAAAAEGAACYAwAA
-					qAMAALgDAADIAwAA2AMAAOgDAAD4AwAACAQA
-					ABgEAAAoBAAAOAQAAEgEAABYBAAACAAAAAAE
-					AABBth3ZDAAAABgAAAABAgAAAQAAAAAAAAAP
-					AAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAEAAAA
-					AwMAAAIAAAAEAAAAAwMAAAEAAAAIAAAABAMA
-					AAsAAAAAAAAABAAAAAMDAAD1AQAABgAAAAEB
-					AABtYWNwcm8AAAgAAAAEAwAAAICBPXQAAAAI
-					AAAAAAQAAEG4H/7pAAAAJAAAAAEBAABDOUM4
-					MDYzOS1FODk0LTNDMkUtQUYyNi1FMkU2OTdC
-					QkY5NDkYAAAAAQIAAIEAAAABAAgA7xcAAAEA
-					CAAAAAAAAAAAAAEAAAABAQAALwAAAAQAAAAD
-					AwAAAAgAKPAAAAD+////AQAAAAAAAAATAAAA
-					BBAAAFwDAAAAAAAABRAAAGgEAAAAAAAAEBAA
-					ALQEAAAAAAAAQBAAAKQEAAAAAAAAVBAAANwE
-					AAAAAAAAVRAAAOgEAAAAAAAAVhAAANQEAAAA
-					AAAAAhEAAAQAAAAAAAAAAiAAAIwFAAAAAAAA
-					ECAAABAFAAAAAAAAESAAAEAFAAAAAAAAEiAA
-					ACAFAAAAAAAAEyAAADAFAAAAAAAAICAAAGwF
-					AAAAAAAAMCAAANQEAAAAAAAAAcAAAPQEAAAA
-					AAAAEcAAAGwCAAAAAAAAEsAAAAQFAAAAAAAA
-					ENAAAJgFAAAAAAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2821,9 +2588,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{95, 2}, {32, 29.75}}</string>
+						<string>{{186, 74}, {32, 29.75}}</string>
 						<key>Frame-HD</key>
-						<string>{{380, 8}, {128, 117}}</string>
+						<string>{{744, 296}, {128, 117}}</string>
 						<key>Image</key>
 						<string>gameElement_gameView.png</string>
 						<key>Image-HD</key>
@@ -2841,7 +2608,7 @@
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/xUanBing/Documents/Developer/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/road_5.png</string>
+						<string>/Users/user/Documents/Develop/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/road_5.png</string>
 						<key>OriginalImage_RelativePath</key>
 						<string>../road_5.png/</string>
 						<key>OriginalRect</key>
@@ -2849,7 +2616,7 @@
 						<key>OriginalSize</key>
 						<string>{128, 117}</string>
 						<key>Position</key>
-						<string>{380, 8}</string>
+						<string>{744, 296}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -2868,74 +2635,6 @@
 				</dict>
 				<key>star</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va8QGAAAAAAQQMAAAAB8K/T4C6AQHcXUc
-					7xGw2nn6ievpr9G+wY3pGoVJ/fSenAUAAEsC
-					AAABAQAAYXBwbGVzZWN1cml0eXNjb3BlPTM5
-					NjE2NTM3NjQzMjMyMzAzNDM0NjQ2MTMxMzE2
-					NDMxMzAzMjYzNjQ2NTYyMzkzMzM1NjIzNzY2
-					NjIzMTYxNjUzOTM0MzkzMDMxMzAzMjMyM0Iz
-					MDMwMzAzMDMwMzAzMDMwM0IzMDMwMzAzMDMw
-					MzAzMDMwM0IzMDMwMzAzMDMwMzAzMDMwMzAz
-					MDMwMzAzMDMwMzIzMDNCNjM2RjZEMkU2MTcw
-					NzA2QzY1MkU2MTcwNzAyRDczNjE2RTY0NjI2
-					Rjc4MkU3MjY1NjE2NDJENzc3MjY5NzQ2NTNC
-					MzAzMDMwMzAzMDMwMzAzMTNCMzAzMTMwMzAz
-					MDMwMzAzMjNCMzAzMDMwMzAzMDMwMzAzMDMw
-					MzEzNDMwNjU2NTMwNjUzQjJGNzU3MzY1NzI3
-					MzJGNzg3NTYxNkU2MjY5NkU2NzJGNjQ2RjYz
-					NzU2RDY1NkU3NDczMkY2NDY1NzY2NTZDNkY3
-					MDY1NzIyRjY3Njk3NDY4NzU2MjJGNkQ3OTMx
-					NkU2NTc0NjY3MjYxNkQ2NTc3NkY3MjZCMkY2
-					MzZGNjM2RjczMzI2NDJENzgyRDMyMkUzMjJF
-					MzIyRjcwNzI2RjZBNjU2Mzc0NzMyRjZENkY3
-					NDZGNjc2MTZENjUyRjcyNjU3MzZGNzU3MjYz
-					NjU3MzJGNzU2OTVGNkM2MTc5NkY3NTc0MkY3
-					MjY1NzM2Rjc1NzI2MzY1NzMyRDY5NzA2ODZG
-					NkU2NTY4NjQyRjczNzQ2MTcyMkU3MDZFNjcA
-					BQAAAAEBAABVc2VycwAAAAgAAAABAQAAeFVh
-					bkJpbmcJAAAAAQEAAERvY3VtZW50cwAAAAkA
-					AAABAQAARGV2ZWxvcGVyAAAABgAAAAEBAABH
-					aXRodWIAAA8AAAABAQAAbXkxbmV0RnJhbWVX
-					b3JrAA8AAAABAQAAY29jb3MyZC14LTIuMi4y
-					AAgAAAABAQAAcHJvamVjdHMIAAAAAQEAAG1v
-					dG9HYW1lCQAAAAEBAABSZXNvdXJjZXMAAAAJ
-					AAAAAQEAAHVpX2xheW91dAAAABIAAAABAQAA
-					cmVzb3VyY2VzLWlwaG9uZWhkAAAIAAAAAQEA
-					AHN0YXIucG5nNAAAAAEGAABYAgAAaAIAAHgC
-					AACMAgAAoAIAALACAADIAgAA4AIAAPACAAAA
-					AwAAFAMAACgDAABEAwAACAAAAAQDAABmEAIA
-					AAAAAAgAAAAEAwAAh/cEAAAAAAAIAAAABAMA
-					AIj3BAAAAAAACAAAAAQDAADkzRAAAAAAAAgA
-					AAAEAwAAq8w1AAAAAAAIAAAABAMAAGQt5AAA
-					AAAACAAAAAQDAADBA+UAAAAAAAgAAAAEAwAA
-					7krlAAAAAAAIAAAABAMAAO9K5QAAAAAACAAA
-					AAQDAACsS+UAAAAAAAgAAAAEAwAAwkvlAAAA
-					AAAIAAAABAMAAMVL5QAAAAAACAAAAAQDAAAO
-					7kABAAAAADQAAAABBgAAkAMAAKADAACwAwAA
-					wAMAANADAADgAwAA8AMAAAAEAAAQBAAAIAQA
-					ADAEAABABAAAUAQAAAgAAAAABAAAQbYd1PAA
-					AAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAA
-					AAAAAAAAAAAAAAABBQAABAAAAAMDAAACAAAA
-					BAAAAAMDAAABAAAACAAAAAQDAAALAAAAAAAA
-					AAQAAAADAwAA9QEAAAYAAAABAQAAbWFjcHJv
-					AAAIAAAABAMAAACAgT10AAAACAAAAAAEAABB
-					uB/+6QAAACQAAAABAQAAQzlDODA2MzktRTg5
-					NC0zQzJFLUFGMjYtRTJFNjk3QkJGOTQ5GAAA
-					AAECAACBAAAAAQAIAO8XAAABAAgAAAAAAAAA
-					AAABAAAAAQEAAC8AAAAEAAAAAwMAAAAIACjw
-					AAAA/v///wEAAAAAAAAAEwAAAAQQAABUAwAA
-					AAAAAAUQAABgBAAAAAAAABAQAACsBAAAAAAA
-					AEAQAACcBAAAAAAAAFQQAADUBAAAAAAAAFUQ
-					AADgBAAAAAAAAFYQAADMBAAAAAAAAAIRAAAE
-					AAAAAAAAAAIgAACEBQAAAAAAABAgAAAIBQAA
-					AAAAABEgAAA4BQAAAAAAABIgAAAYBQAAAAAA
-					ABMgAAAoBQAAAAAAACAgAABkBQAAAAAAADAg
-					AADMBAAAAAAAAAHAAADsBAAAAAAAABHAAABo
-					AgAAAAAAABLAAAD8BAAAAAAAABDQAACQBQAA
-					AAAAAA==
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -2984,7 +2683,7 @@
 								<key>IsRectangle</key>
 								<false/>
 								<key>IsSensor</key>
-								<true/>
+								<false/>
 								<key>LHHeight</key>
 								<real>17.75</real>
 								<key>LHShapePositionOffset</key>
@@ -2994,7 +2693,7 @@
 								<key>Mask</key>
 								<integer>65535</integer>
 								<key>Name</key>
-								<string>star</string>
+								<string>UntitledFixture</string>
 								<key>Restitution</key>
 								<real>0.20000000298023224</real>
 								<key>ShapePoints</key>
@@ -3037,9 +2736,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{38, 106}, {18.75, 17.75}}</string>
+						<string>{{219, 105}, {18.75, 17.75}}</string>
 						<key>Frame-HD</key>
-						<string>{{152, 424}, {73, 71}}</string>
+						<string>{{876, 420}, {73, 71}}</string>
 						<key>Image</key>
 						<string>gameElement_gameView.png</string>
 						<key>Image-HD</key>
@@ -3057,7 +2756,7 @@
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/xUanBing/Documents/Developer/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/star.png</string>
+						<string>/Users/user/Documents/Develop/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/star.png</string>
 						<key>OriginalImage_RelativePath</key>
 						<string>../star.png/</string>
 						<key>OriginalRect</key>
@@ -3065,7 +2764,7 @@
 						<key>OriginalSize</key>
 						<string>{73, 71}</string>
 						<key>Position</key>
-						<string>{152, 424}</string>
+						<string>{876, 420}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -3082,9 +2781,212 @@
 						<integer>0</integer>
 					</dict>
 				</dict>
+				<key>zhijia_4</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9va2gEAAAAAAQQMAAAADI45u6/Dc1ja7yH
+					jCcWirtDBp81oFWWku1giTOOCq8MTAMAAAUA
+					AAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIJ
+					AAAAAQEAAERvY3VtZW50cwAAAAcAAAABAQAA
+					RGV2ZWxvcAAGAAAAAQEAAEdpdGh1YgAADwAA
+					AAEBAABteTFuZXRGcmFtZVdvcmsADwAAAAEB
+					AABjb2NvczJkLXgtMi4yLjIACAAAAAEBAABw
+					cm9qZWN0cwgAAAABAQAAbW90b0dhbWUJAAAA
+					AQEAAFJlc291cmNlcwAAAAkAAAABAQAAdWlf
+					bGF5b3V0AAAAEgAAAAEBAAByZXNvdXJjZXMt
+					aXBob25laGQAAAwAAAABAQAAemhpamlhXzQu
+					cG5nNAAAAAEGAAAEAAAAFAAAACAAAAA0AAAA
+					RAAAAFQAAABsAAAAhAAAAJQAAACkAAAAuAAA
+					AMwAAADoAAAACAAAAAQDAAC7EgIAAAAAAAgA
+					AAAEAwAAb/kEAAAAAAAIAAAABAMAAHD5BAAA
+					AAAACAAAAAQDAABtmBIAAAAAAAgAAAAEAwAA
+					/7wTAQAAAAAIAAAABAMAAKOEcQIAAAAACAAA
+					AAQDAABJ5HECAAAAAAgAAAAEAwAAk1ByAgAA
+					AAAIAAAABAMAAJRQcgIAAAAACAAAAAQDAACs
+					UXICAAAAAAgAAAAEAwAA0VFyAgAAAAAIAAAA
+					BAMAANRRcgIAAAAACAAAAAQDAADBwH8CAAAA
+					ADQAAAABBgAAOAEAAEgBAABYAQAAaAEAAHgB
+					AACIAQAAmAEAAKgBAAC4AQAAyAEAANgBAADo
+					AQAA+AEAAAgAAAAABAAAQbjqVBUAAAAYAAAA
+					AQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAA
+					AAAAAAABBQAABAAAAAMDAAACAAAABAAAAAMD
+					AAABAAAACAAAAAQDAAALAAAAAAAAAAQAAAAD
+					AwAA9QEAAA0AAAABAQAASGFja2ludG9zaCBI
+					RAAAAAgAAAAEAwAAAMBk2UUAAAAIAAAAAAQA
+					AEG35EfXAAAAJAAAAAEBAAAyRjYyMjM5Mi01
+					MUQxLTNCOTMtOURCNi01MTlBNjlCN0E0MEEY
+					AAAAAQIAAIEAAAABAAgA7z8AAAEACAAAAAAA
+					AAAAAAEAAAABAQAALwAAAAQAAAADAwAAAAgA
+					KOQAAAD+////AQAAAAAAAAASAAAABBAAAPwA
+					AAAAAAAABRAAAAgCAAAAAAAAEBAAAFQCAAAA
+					AAAAQBAAAEQCAAAAAAAAVBAAAHwCAAAAAAAA
+					VRAAAIgCAAAAAAAAVhAAAHQCAAAAAAAAAiAA
+					ADQDAAAAAAAAECAAALACAAAAAAAAESAAAOgC
+					AAAAAAAAEiAAAMgCAAAAAAAAEyAAANgCAAAA
+					AAAAICAAABQDAAAAAAAAMCAAAHQCAAAAAAAA
+					AcAAAJQCAAAAAAAAEcAAABQAAAAAAAAAEsAA
+					AKQCAAAAAAAAENAAAEADAAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-89.75, -5}</string>
+										<string>{89.75, -5}</string>
+										<string>{89.75, 5}</string>
+										<string>{-89.75, 5}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>40</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>10</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-89.75, -5}</string>
+								<key>LHWidth</key>
+								<real>179.5</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{718, 0}</string>
+									<string>{718, 40}</string>
+									<string>{0, 40}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>718</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>gameView</string>
+					<key>SHSpriteName</key>
+					<string>zhijia_4</string>
+					<key>SheetImage</key>
+					<string>gameElement_gameView.png</string>
+					<key>SheetImage-HD</key>
+					<string>gameElement_gameView-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 70}, {179.5, 10}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 280}, {718, 40}}</string>
+						<key>Image</key>
+						<string>gameElement_gameView.png</string>
+						<key>Image-HD</key>
+						<string>gameElement_gameView-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>zhijia_4</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/user/Documents/Develop/Github/my1netFrameWork/cocos2d-x-2.2.2/projects/motoGame/Resources/ui_layout/resources-iphonehd/zhijia_4.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../zhijia_4.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {718, 40}}</string>
+						<key>OriginalSize</key>
+						<string>{718, 40}</string>
+						<key>Position</key>
+						<string>{8, 280}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{179.5, 10}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
 			</dict>
 			<key>Size</key>
-			<string>{512, 512}</string>
+			<string>{1024, 512}</string>
 			<key>Trim</key>
 			<true/>
 			<key>ZOrder</key>
@@ -3120,27 +3022,27 @@
 	</dict>
 	<key>SceneFolderSandboxBookmark</key>
 	<data>
-	Ym9vaywEAAAAAAQQMAAAAPrXdtqRnCO/6t2XrUKK6IRGIOV7215wmpndh6iKGWVyNAMA
-	AAUAAAABAQAAVXNlcnMAAAAIAAAAAQEAAHhVYW5CaW5nCQAAAAEBAABEb2N1bWVudHMA
-	AAAJAAAAAQEAAERldmVsb3BlcgAAAAYAAAABAQAAR2l0aHViAAAPAAAAAQEAAG15MW5l
-	dEZyYW1lV29yawAPAAAAAQEAAGNvY29zMmQteC0yLjIuMgAIAAAAAQEAAHByb2plY3Rz
-	CAAAAAEBAABtb3RvR2FtZQkAAAABAQAAUmVzb3VyY2VzAAAACQAAAAEBAAB1aV9sYXlv
-	dXQAAAASAAAAAQEAAHJlc291cmNlcy1pcGhvbmVoZAAACgAAAAEBAABscFJlc291cnNl
-	AAA0AAAAAQYAAAQAAAAUAAAAJAAAADgAAABMAAAAXAAAAHQAAACMAAAAnAAAAKwAAADA
-	AAAA1AAAAPAAAAAIAAAABAMAAGYQAgAAAAAACAAAAAQDAACH9wQAAAAAAAgAAAAEAwAA
-	iPcEAAAAAAAIAAAABAMAAOTNEAAAAAAACAAAAAQDAACrzDUAAAAAAAgAAAAEAwAAZC3k
-	AAAAAAAIAAAABAMAAMED5QAAAAAACAAAAAQDAADuSuUAAAAAAAgAAAAEAwAA70rlAAAA
-	AAAIAAAABAMAAKxL5QAAAAAACAAAAAQDAADCS+UAAAAAAAgAAAAEAwAAxUvlAAAAAAAI
-	AAAABAMAANi69AAAAAAANAAAAAEGAABAAQAAUAEAAGABAABwAQAAgAEAAJABAACgAQAA
-	sAEAAMABAADQAQAA4AEAAPABAAAAAgAACAAAAAAEAABBuOw1GQAAABgAAAABAgAAAgAA
-	AAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAALAAAAAAAAAAQAAAADAwAA9QEAAAYA
-	AAABAQAAbWFjcHJvAAAIAAAABAMAAACAgT10AAAACAAAAAAEAABBuB/+6QAAACQAAAAB
-	AQAAQzlDODA2MzktRTg5NC0zQzJFLUFGMjYtRTJFNjk3QkJGOTQ5GAAAAAECAACBAAAA
-	AQAIAO8XAAABAAgAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAAQAAAADAwAAAAgA
-	KMAAAAD+////AQAAAAAAAAAPAAAABBAAAAQBAAAAAAAABRAAABACAAAAAAAAEBAAAFwC
-	AAAAAAAAQBAAAEwCAAAAAAAAAiAAABQDAAAAAAAAECAAAJgCAAAAAAAAESAAAMgCAAAA
+	Ym9vaywEAAAAAAQQMAAAALY8/F3Va+tjobuzFMz/DUBjLnq4Wl5Tmcw9dMh8XH3GNAMA
+	AAUAAAABAQAAVXNlcnMAAAAEAAAAAQEAAHVzZXIJAAAAAQEAAERvY3VtZW50cwAAAAcA
+	AAABAQAARGV2ZWxvcAAGAAAAAQEAAEdpdGh1YgAADwAAAAEBAABteTFuZXRGcmFtZVdv
+	cmsADwAAAAEBAABjb2NvczJkLXgtMi4yLjIACAAAAAEBAABwcm9qZWN0cwgAAAABAQAA
+	bW90b0dhbWUJAAAAAQEAAFJlc291cmNlcwAAAAkAAAABAQAAdWlfbGF5b3V0AAAAEgAA
+	AAEBAAByZXNvdXJjZXMtaXBob25laGQAAAoAAAABAQAAbHBSZXNvdXJzZQAANAAAAAEG
+	AAAEAAAAFAAAACAAAAA0AAAARAAAAFQAAABsAAAAhAAAAJQAAACkAAAAuAAAAMwAAADo
+	AAAACAAAAAQDAAC7EgIAAAAAAAgAAAAEAwAAb/kEAAAAAAAIAAAABAMAAHD5BAAAAAAA
+	CAAAAAQDAABtmBIAAAAAAAgAAAAEAwAA/7wTAQAAAAAIAAAABAMAAKOEcQIAAAAACAAA
+	AAQDAABJ5HECAAAAAAgAAAAEAwAAk1ByAgAAAAAIAAAABAMAAJRQcgIAAAAACAAAAAQD
+	AACsUXICAAAAAAgAAAAEAwAA0VFyAgAAAAAIAAAABAMAANRRcgIAAAAACAAAAAQDAADj
+	UXICAAAAADQAAAABBgAAOAEAAEgBAABYAQAAaAEAAHgBAACIAQAAmAEAAKgBAAC4AQAA
+	yAEAANgBAADoAQAA+AEAAAgAAAAABAAAQbkOIJQAAAAYAAAAAQIAAAIAAAAAAAAADwAA
+	AAAAAAAAAAAAAAAAAAgAAAAEAwAACwAAAAAAAAAEAAAAAwMAAPUBAAANAAAAAQEAAEhh
+	Y2tpbnRvc2ggSEQAAAAIAAAABAMAAADAZNlFAAAACAAAAAAEAABBt+RH1wAAACQAAAAB
+	AQAAMkY2MjIzOTItNTFEMS0zQjkzLTlEQjYtNTE5QTY5QjdBNDBBGAAAAAECAACBAAAA
+	AQAIAO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAAQAAAADAwAAAAgA
+	KMAAAAD+////AQAAAAAAAAAPAAAABBAAAPwAAAAAAAAABRAAAAgCAAAAAAAAEBAAAFQC
+	AAAAAAAAQBAAAEQCAAAAAAAAAiAAABQDAAAAAAAAECAAAJACAAAAAAAAESAAAMgCAAAA
 	AAAAEiAAAKgCAAAAAAAAEyAAALgCAAAAAAAAICAAAPQCAAAAAAAAMCAAACADAAAAAAAA
-	AcAAAHwCAAAAAAAAEcAAABQAAAAAAAAAEsAAAIwCAAAAAAAAENAAACgDAAAAAAAA
+	AcAAAHQCAAAAAAAAEcAAABQAAAAAAAAAEsAAAIQCAAAAAAAAENAAACgDAAAAAAAA
 	</data>
 	<key>Version</key>
 	<string>1.8.224</string>
