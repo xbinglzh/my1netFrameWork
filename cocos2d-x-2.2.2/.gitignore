@@ -110,5 +110,8 @@ tools/tojs/userconf.ini
 # ... userconf.ini generated if running from tools/jenkins_scripts/mac/android/
 tools/jenkins_scripts/mac/android/userconf.ini
 
+#use boost libs
+!boost_1_44_0/libs/
+
 # CTags
 tags

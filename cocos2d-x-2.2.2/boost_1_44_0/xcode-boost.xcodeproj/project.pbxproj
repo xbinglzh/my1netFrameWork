@@ -2576,7 +2576,6 @@
 				PRODUCT_NAME = boost_all;
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "arm64 armv7 armv7s";
-				WARNING_CFLAGS = "-Wno-inline";
 			};
 			name = Debug;
 		};
@@ -2589,7 +2588,6 @@
 				PRODUCT_NAME = boost_all;
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "arm64 armv7 armv7s";
-				WARNING_CFLAGS = "-Wno-inline";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -3241,10 +3239,7 @@
 				);
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				WARNING_CFLAGS = (
-					"-Wno-inline",
-					"-wall",
-				);
+				WARNING_CFLAGS = "-Wno-inline";
 			};
 			name = Debug;
 		};
@@ -3272,10 +3267,7 @@
 				);
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				WARNING_CFLAGS = (
-					"-Wno-inline",
-					"-wall",
-				);
+				WARNING_CFLAGS = "-Wno-inline";
 			};
 			name = Release;
 		};
