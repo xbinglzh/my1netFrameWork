@@ -7,6 +7,7 @@
 //
 
 #include "SceneController.h"
+#include "WelcomeView.h"
 
 static SceneController* _sharedInstance=NULL;
 
@@ -77,7 +78,7 @@ void SceneController::switchSence(const ESceneId sceneId, cocos2d::CCObject* par
 	
 	switch (sceneId) {
         case K_SCENE_WELCOME: {
-//            layer = HelloWorld::create();
+            layer = WelcomeView::createFromCCB();
             break;
 		}
         case K_SCENE_ROLLVIEW:
