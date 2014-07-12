@@ -9,11 +9,10 @@
 #include "UiUtils.h"
 #include "GameUtils.h"
 
-
 #include <stdlib.h>
-//#include <hash_map.h>
+#include <hash_map.h>
 
-#include <boost/regex.hpp>
+//#include <boost/regex.hpp>
 
 USING_NS_CC;
 
@@ -114,44 +113,44 @@ cocos2d::CCPoint UiUtils::getUIConstantPointById(const std::string & Id) {
 /*
  *一代的正则表达式判断用户名密码是否合法
  */
-bool UiUtils::isNameCurrect(const std::string text) {
-    boost::regex pattern("[～＾“”｢」＿／∙＠＄≪≫€﹤﹥｛｝％［］＊＋＝（），。：；！？¥、=]*");
-    boost::regex pattern1("[0-9a-zA-Z]");
-    for (int i = 0; i < text.length(); i++) {
-        unsigned char ch = (unsigned char)text.at(i);
-        if (ch < 127) {
-            std::string str = text.substr(i,1);
-            if(!boost::regex_match(str, pattern1)) {
-                return  true;
-            }
-        } else if(ch >= 127 ){
-            std::string str = text.substr(i,3);
-            if(boost::regex_match(str, pattern)) {
-                return true;
-            } else {
-                i = i + 2;
-            }
-        }
-    }
-    return false;
-}
-
-bool UiUtils::isPasswordCurrect(const std::string psw) {
-    boost::regex pattern("[～＾“”｢」＿／∙＠＄≪≫€﹤﹥｛｝％［］＊＋＝（），。：；！？¥、=]*");
-    boost::regex pattern1("[0-9a-zA-Z]");
-    for (int i = 0; i < psw.length(); i++) {
-        unsigned char ch = (unsigned char)psw.at(i);
-        if (ch < 127) {
-            std::string str = psw.substr(i,1);
-            if(!boost::regex_match(str, pattern1)) {
-                return  true;
-            }
-        } else if(ch >= 127 ){
-            return true;
-        }
-    }
-    return false;
-}
+//bool UiUtils::isNameCurrect(const std::string text) {
+//    boost::regex pattern("[～＾“”｢」＿／∙＠＄≪≫€﹤﹥｛｝％［］＊＋＝（），。：；！？¥、=]*");
+//    boost::regex pattern1("[0-9a-zA-Z]");
+//    for (int i = 0; i < text.length(); i++) {
+//        unsigned char ch = (unsigned char)text.at(i);
+//        if (ch < 127) {
+//            std::string str = text.substr(i,1);
+//            if(!boost::regex_match(str, pattern1)) {
+//                return  true;
+//            }
+//        } else if(ch >= 127 ){
+//            std::string str = text.substr(i,3);
+//            if(boost::regex_match(str, pattern)) {
+//                return true;
+//            } else {
+//                i = i + 2;
+//            }
+//        }
+//    }
+//    return false;
+//}
+//
+//bool UiUtils::isPasswordCurrect(const std::string psw) {
+//    boost::regex pattern("[～＾“”｢」＿／∙＠＄≪≫€﹤﹥｛｝％［］＊＋＝（），。：；！？¥、=]*");
+//    boost::regex pattern1("[0-9a-zA-Z]");
+//    for (int i = 0; i < psw.length(); i++) {
+//        unsigned char ch = (unsigned char)psw.at(i);
+//        if (ch < 127) {
+//            std::string str = psw.substr(i,1);
+//            if(!boost::regex_match(str, pattern1)) {
+//                return  true;
+//            }
+//        } else if(ch >= 127 ){
+//            return true;
+//        }
+//    }
+//    return false;
+//}
 
 const int UiUtils::stringLength(const std::string &str) {
     int en = 0;     //英文

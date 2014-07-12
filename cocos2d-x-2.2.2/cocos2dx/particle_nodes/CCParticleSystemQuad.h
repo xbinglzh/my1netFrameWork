@@ -67,7 +67,7 @@ public:
      * @js ctor
      */
     CCParticleSystemQuad();
-    /**
+    /**Ô
      * @js NA
      * @lua NA
      */

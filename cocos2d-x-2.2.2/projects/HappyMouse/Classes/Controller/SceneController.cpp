@@ -7,13 +7,6 @@
 //
 
 #include "SceneController.h"
-#include "HelloWorldScene.h"
-#include "RollBgView.h"
-#include "GameView.h"
-#include "UiHomeView.h"
-#include "HelloView.h"
-#include "BattleView.h"
-#include "BattleResultView.h"
 
 static SceneController* _sharedInstance=NULL;
 
@@ -84,21 +77,21 @@ void SceneController::switchSence(const ESceneId sceneId, cocos2d::CCObject* par
 	
 	switch (sceneId) {
         case K_SCENE_WELCOME: {
-            layer = HelloWorld::create();
+//            layer = HelloWorld::create();
             break;
 		}
         case K_SCENE_ROLLVIEW:
-            layer = RollBgView::create();
+//            layer = RollBgView::create();
             break;
         case K_SCENE_GAMEVIEW:
-            layer = GameView::create();
+//            layer = GameView::create();
             break;
         case K_SCENE_UIHOME:
-            layer = UiHomeView::createFromCCB();
+//            layer = UiHomeView::createFromCCB();
             break;
             
         case K_SCENE_BATTLEVIEW:
-            layer = BattleView::create();
+//            layer = BattleView::create();
             break;
             
         default:

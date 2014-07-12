@@ -1,5 +1,4 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
 
 USING_NS_CC;
 
@@ -18,8 +17,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setOpenGLView(pEGLView);
     pDirector->setDisplayStats(true);
     pDirector->setAnimationInterval(1.0 / 60);
-    CCScene *pScene = HelloWorld::scene();
-    pDirector->runWithScene(pScene);
+    
+//    CCScene *pScene = HelloWorld::scene();
+//    pDirector->runWithScene(pScene);
 
     return true;
 }

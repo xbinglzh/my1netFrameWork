@@ -52,8 +52,8 @@ public:
     /*
      *一代的正则表达式判断用户名密码是否合法
      */
-    static bool isNameCurrect(const std::string str);
-    static bool isPasswordCurrect(const std::string psw);
+//    static bool isNameCurrect(const std::string str);
+//    static bool isPasswordCurrect(const std::string psw);
     
     /**
      *  1个中文2个长度
