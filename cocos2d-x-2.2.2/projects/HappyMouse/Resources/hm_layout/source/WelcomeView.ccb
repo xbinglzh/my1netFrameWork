@@ -96,7 +96,7 @@
 						<string>SpriteFrame</string>
 						<key>value</key>
 						<array>
-							<string></string>
+							<string>welcome.plist</string>
 							<string>hm_welcome_bg.png</string>
 						</array>
 					</dict>
@@ -200,7 +200,7 @@
 								<string>SpriteFrame</string>
 								<key>value</key>
 								<array>
-									<string></string>
+									<string>welcome.plist</string>
 									<string>hm_start_button_up.png</string>
 								</array>
 							</dict>
@@ -211,7 +211,7 @@
 								<string>SpriteFrame</string>
 								<key>value</key>
 								<array>
-									<string></string>
+									<string>welcome.plist</string>
 									<string>hm_start_button_down.png</string>
 								</array>
 							</dict>
@@ -468,7 +468,7 @@
 			<key>scale</key>
 			<real>1</real>
 			<key>width</key>
-			<integer>1136</integer>
+			<integer>1138</integer>
 		</dict>
 	</array>
 	<key>sequences</key>

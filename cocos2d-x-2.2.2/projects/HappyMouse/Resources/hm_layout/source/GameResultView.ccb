@@ -97,8 +97,8 @@
 								<string>SpriteFrame</string>
 								<key>value</key>
 								<array>
-									<string></string>
-									<string>result/result_win_bg.png</string>
+									<string>result.plist</string>
+									<string>result_win_bg.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -108,9 +108,9 @@
 								<string>Size</string>
 								<key>value</key>
 								<array>
-									<real>742</real>
-									<real>400</real>
-									<integer>0</integer>
+									<real>65.316902160644531</real>
+									<real>62.5</real>
+									<integer>1</integer>
 								</array>
 							</dict>
 							<dict>
@@ -322,8 +322,8 @@
 								<string>SpriteFrame</string>
 								<key>value</key>
 								<array>
-									<string></string>
-									<string>result/result_win.png</string>
+									<string>result.plist</string>
+									<string>result_win.png</string>
 								</array>
 							</dict>
 						</array>
@@ -402,8 +402,8 @@
 								<string>SpriteFrame</string>
 								<key>value</key>
 								<array>
-									<string></string>
-									<string>result/result_win0.png</string>
+									<string>result.plist</string>
+									<string>result_win0.png</string>
 								</array>
 							</dict>
 						</array>
@@ -482,8 +482,8 @@
 								<string>SpriteFrame</string>
 								<key>value</key>
 								<array>
-									<string></string>
-									<string>result/new_result.png</string>
+									<string>result.plist</string>
+									<string>new_result.png</string>
 								</array>
 							</dict>
 						</array>
@@ -716,8 +716,8 @@
 								<string>SpriteFrame</string>
 								<key>value</key>
 								<array>
-									<string></string>
-									<string>result/result_lose_bg.png</string>
+									<string>result.plist</string>
+									<string>result_lose_bg.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -727,9 +727,9 @@
 								<string>Size</string>
 								<key>value</key>
 								<array>
-									<real>742</real>
-									<real>400</real>
-									<integer>0</integer>
+									<real>65.316902160644531</real>
+									<real>62.5</real>
+									<integer>1</integer>
 								</array>
 							</dict>
 							<dict>
@@ -941,8 +941,8 @@
 								<string>SpriteFrame</string>
 								<key>value</key>
 								<array>
-									<string></string>
-									<string>result/result_lose.png</string>
+									<string>result.plist</string>
+									<string>result_lose.png</string>
 								</array>
 							</dict>
 						</array>
@@ -1021,8 +1021,8 @@
 								<string>SpriteFrame</string>
 								<key>value</key>
 								<array>
-									<string></string>
-									<string>result/result_win0.png</string>
+									<string>result.plist</string>
+									<string>result_win0.png</string>
 								</array>
 							</dict>
 						</array>
@@ -1101,8 +1101,8 @@
 								<string>SpriteFrame</string>
 								<key>value</key>
 								<array>
-									<string></string>
-									<string>result/new_result.png</string>
+									<string>result.plist</string>
+									<string>new_result.png</string>
 								</array>
 							</dict>
 						</array>
@@ -1303,8 +1303,8 @@
 				<string>Point</string>
 				<key>value</key>
 				<array>
-					<real>0.5</real>
-					<real>0.5</real>
+					<real>0.0</real>
+					<real>0.0</real>
 				</array>
 			</dict>
 			<dict>
@@ -1394,7 +1394,7 @@
 			<key>scale</key>
 			<real>1</real>
 			<key>width</key>
-			<integer>1136</integer>
+			<integer>1138</integer>
 		</dict>
 	</array>
 	<key>sequences</key>

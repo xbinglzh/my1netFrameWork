@@ -142,6 +142,8 @@ bool CCDirector::init(void)
     m_pobOpenGLView = NULL;
 
     m_fContentScaleFactor = 1.0f;
+    m_fContentScaleX = 1.0f;
+    m_fContentScaleY = 1.0f;
 
     // scheduler
     m_pScheduler = new CCScheduler();
@@ -949,6 +951,25 @@ void CCDirector::setContentScaleFactor(float scaleFactor)
         m_fContentScaleFactor = scaleFactor;
         createStatsLabel();
     }
+}
+
+void CCDirector::setContentScaleFactorFromSize()
+{
+    CCSize screenSize = m_pobOpenGLView->getFrameSize();
+    CCRect rect = m_pobOpenGLView->getViewPortRect();
+    float scaleX = screenSize.width/rect.size.width;
+    float scaleY = screenSize.height/rect.size.height ;
+    m_fContentScaleX = m_fContentScaleY = MIN(scaleX, scaleY);
+}
+
+float CCDirector::getContentScaleX()
+{
+    return m_fContentScaleX;
+}
+
+float CCDirector::getContentScaleY()
+{
+    return m_fContentScaleY;
 }
 
 CCNode* CCDirector::getNotificationNode() 

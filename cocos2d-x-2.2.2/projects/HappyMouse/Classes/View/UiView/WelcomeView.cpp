@@ -28,7 +28,7 @@ WelcomeView* WelcomeView::createFromCCB() {
 }
 
 bool WelcomeView::initWithCustom() {
-//    _view = GameResultView::createFromCCB();
+    _view = GameResultView::createFromCCB();
     
     return true;
 }

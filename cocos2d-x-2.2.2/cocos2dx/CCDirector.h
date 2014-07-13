@@ -324,6 +324,10 @@ public:
     */
     void setContentScaleFactor(float scaleFactor);
     float getContentScaleFactor(void);
+    
+    void setContentScaleFactorFromSize();
+    float getContentScaleX();
+    float getContentScaleY();
 
 public:
     /** CCScheduler associated with this director
@@ -429,6 +433,10 @@ protected:
     
     /* content scale factor */
     float    m_fContentScaleFactor;
+    
+    /* */
+    float    m_fContentScaleX;
+    float    m_fContentScaleY;
 
     /* store the fps string */
     char *m_pszFPS;
