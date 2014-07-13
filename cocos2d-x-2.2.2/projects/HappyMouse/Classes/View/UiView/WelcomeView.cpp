@@ -9,16 +9,17 @@
 #include "WelcomeView.h"
 #include "LayoutUtil.h"
 #include "LabelView.h"
+#include "GameResultView.h"
 
 USING_NS_CC;
 
-WelcomeView::WelcomeView() : _startBtn(NULL) {
+WelcomeView::WelcomeView() : _startBtn(NULL),_view(NULL) {
     
 }
 
 WelcomeView::~WelcomeView() {
     CC_SAFE_RELEASE_NULL(_startBtn);
-    
+    CC_SAFE_RELEASE_NULL(_view);
 }
 
 WelcomeView* WelcomeView::createFromCCB() {
@@ -27,13 +28,13 @@ WelcomeView* WelcomeView::createFromCCB() {
 }
 
 bool WelcomeView::initWithCustom() {
-    
+//    _view = GameResultView::createFromCCB();
     
     return true;
 }
 
 void WelcomeView::onStartBtnClickCallBack() {
-    
+    _view->show();
 }
 
 

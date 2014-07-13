@@ -12,6 +12,8 @@
 #include "cocos2d.h"
 #include "RootUiLayer.h"
 
+class GameResultView;
+
 class WelcomeView : public RootUiLayer {
     
 public:
@@ -31,7 +33,8 @@ private:
     void onStartBtnClickCallBack();
     
 private:
-    CCMenuItem* _startBtn;
+    GameResultView*  _view;
+    CCMenuItem*      _startBtn;
 };
 
 CREATE_NEW_INHERIT_CCLAYERLOADER_CLASS(WelcomeView);

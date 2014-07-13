@@ -41,9 +41,13 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     ccfilePath.push_back("hm_anim");
     ccfilePath.push_back("hm_layout");
-    ccfilePath.push_back("ui_layout/resources-iphonehd");
-    ccfilePath.push_back("ui_layout/resources-normal");
-    ccfilePath.push_back("ui_layout/resources-release");
+    ccfilePath.push_back("hm_layout/resources-iphonehd");
+    ccfilePath.push_back("hm_layout/resources-iphonehd/dialog");
+    ccfilePath.push_back("hm_layout/resources-iphonehd/level_up_new");
+    ccfilePath.push_back("hm_layout/resources-iphonehd/result");
+    ccfilePath.push_back("hm_layout/resources-normal");
+    ccfilePath.push_back("hm_layout/resources-normal/level_pack");
+    ccfilePath.push_back("hm_layout/resources-release");
     ccfilePath.push_back("hm_map");
     ccfilePath.push_back("hm_map/pit");
     ccfilePath.push_back("hm_particle");
