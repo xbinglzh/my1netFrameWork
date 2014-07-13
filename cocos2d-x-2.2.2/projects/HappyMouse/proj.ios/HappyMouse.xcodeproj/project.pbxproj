@@ -223,6 +223,12 @@
 		379BB9D417F03F3700829B88 /* SceneReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99317F03F3700829B88 /* SceneReader.cpp */; };
 		46513EB1187BFBA200B5ABE1 /* UITouchGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46513EAF187BFBA200B5ABE1 /* UITouchGroup.cpp */; };
 		60131EE11971A83A001FF441 /* WelcomeView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60131EDF1971A83A001FF441 /* WelcomeView.cpp */; };
+		60131EE719720947001FF441 /* GameBattleView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60131EE519720947001FF441 /* GameBattleView.cpp */; };
+		60131EED19720B2E001FF441 /* GameResultView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60131EEB19720B2E001FF441 /* GameResultView.cpp */; };
+		60131EF319720CD7001FF441 /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60131EEF19720CD7001FF441 /* bg.mp3 */; };
+		60131EF419720CD7001FF441 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60131EF019720CD7001FF441 /* click.mp3 */; };
+		60131EF519720CD7001FF441 /* eat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 60131EF119720CD7001FF441 /* eat.wav */; };
+		60131EF619720CD7001FF441 /* gameover.wav in Resources */ = {isa = PBXBuildFile; fileRef = 60131EF219720CD7001FF441 /* gameover.wav */; };
 		606E2C1C19718CCA00422E68 /* AppLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606E2AF819718CCA00422E68 /* AppLauncher.cpp */; };
 		606E2C1D19718CCA00422E68 /* GameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606E2AFA19718CCA00422E68 /* GameController.cpp */; };
 		606E2C1E19718CCA00422E68 /* SceneController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606E2AFC19718CCA00422E68 /* SceneController.cpp */; };
@@ -974,6 +980,14 @@
 		46513EB0187BFBA200B5ABE1 /* UITouchGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITouchGroup.h; sourceTree = "<group>"; };
 		60131EDF1971A83A001FF441 /* WelcomeView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WelcomeView.cpp; sourceTree = "<group>"; };
 		60131EE01971A83A001FF441 /* WelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeView.h; sourceTree = "<group>"; };
+		60131EE519720947001FF441 /* GameBattleView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameBattleView.cpp; sourceTree = "<group>"; };
+		60131EE619720947001FF441 /* GameBattleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBattleView.h; sourceTree = "<group>"; };
+		60131EEB19720B2E001FF441 /* GameResultView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameResultView.cpp; sourceTree = "<group>"; };
+		60131EEC19720B2E001FF441 /* GameResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResultView.h; sourceTree = "<group>"; };
+		60131EEF19720CD7001FF441 /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg.mp3; sourceTree = "<group>"; };
+		60131EF019720CD7001FF441 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+		60131EF119720CD7001FF441 /* eat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = eat.wav; sourceTree = "<group>"; };
+		60131EF219720CD7001FF441 /* gameover.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameover.wav; sourceTree = "<group>"; };
 		606E2AF819718CCA00422E68 /* AppLauncher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppLauncher.cpp; sourceTree = "<group>"; };
 		606E2AF919718CCA00422E68 /* AppLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppLauncher.h; sourceTree = "<group>"; };
 		606E2AFA19718CCA00422E68 /* GameController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameController.cpp; sourceTree = "<group>"; };
@@ -2221,6 +2235,17 @@
 			path = CocoStudio;
 			sourceTree = "<group>";
 		};
+		60131EEE19720CD7001FF441 /* hm_audio */ = {
+			isa = PBXGroup;
+			children = (
+				60131EEF19720CD7001FF441 /* bg.mp3 */,
+				60131EF019720CD7001FF441 /* click.mp3 */,
+				60131EF119720CD7001FF441 /* eat.wav */,
+				60131EF219720CD7001FF441 /* gameover.wav */,
+			);
+			path = hm_audio;
+			sourceTree = "<group>";
+		};
 		606E2AF719718CCA00422E68 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -2751,6 +2776,10 @@
 		606E2C0719718CCA00422E68 /* BattleView */ = {
 			isa = PBXGroup;
 			children = (
+				60131EE519720947001FF441 /* GameBattleView.cpp */,
+				60131EE619720947001FF441 /* GameBattleView.h */,
+				60131EEB19720B2E001FF441 /* GameResultView.cpp */,
+				60131EEC19720B2E001FF441 /* GameResultView.h */,
 			);
 			path = BattleView;
 			sourceTree = "<group>";
@@ -2938,6 +2967,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				60131EEE19720CD7001FF441 /* hm_audio */,
 				606E2CD31971982100422E68 /* app */,
 				606E2CD41971982100422E68 /* fonts */,
 				606E2CD71971982100422E68 /* hm_anim */,
@@ -3190,13 +3220,17 @@
 				606E2C7B19718CCA00422E68 /* tinyxml.suo in Resources */,
 				606E2D051971982100422E68 /* xmap_back_grass.png in Resources */,
 				606E2D1A19719D4F00422E68 /* hm_welcome_bg.png in Resources */,
+				60131EF319720CD7001FF441 /* bg.mp3 in Resources */,
+				60131EF419720CD7001FF441 /* click.mp3 in Resources */,
 				606E2D071971982100422E68 /* xmap_back_sea.png in Resources */,
 				606E2C5B19718CCA00422E68 /* json_internalmap.inl in Resources */,
 				606E2CF41971982100422E68 /* arial.ttf in Resources */,
 				606E2D061971982100422E68 /* xmap_back_magma.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				606E2D1919719D4F00422E68 /* hm_ui.ccbproj in Resources */,
+				60131EF519720CD7001FF441 /* eat.wav in Resources */,
 				606E2D031971982100422E68 /* xmap_back_desert.png in Resources */,
+				60131EF619720CD7001FF441 /* gameover.wav in Resources */,
 				606E2D1B19719D4F00422E68 /* hm_blue_bar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3214,6 +3248,7 @@
 				606E2C3A19718CCA00422E68 /* ArmatureAnim.cpp in Sources */,
 				15A3D9021682F7D5002FB0C5 /* b2CollidePolygon.cpp in Sources */,
 				15A3D9031682F7D5002FB0C5 /* b2Collision.cpp in Sources */,
+				60131EED19720B2E001FF441 /* GameResultView.cpp in Sources */,
 				15A3D9041682F7D5002FB0C5 /* b2Distance.cpp in Sources */,
 				15A3D9051682F7D5002FB0C5 /* b2DynamicTree.cpp in Sources */,
 				606E2C2E19718CCA00422E68 /* LHLayer.cpp in Sources */,
@@ -3412,6 +3447,7 @@
 				606E2C2919718CCA00422E68 /* LHContactNode.cpp in Sources */,
 				15A3DAED1682F8A6002FB0C5 /* CocosDenshion.m in Sources */,
 				15A3DAEE1682F8A6002FB0C5 /* SimpleAudioEngine.mm in Sources */,
+				60131EE719720947001FF441 /* GameBattleView.cpp in Sources */,
 				15A3DAEF1682F8A6002FB0C5 /* SimpleAudioEngine_objc.m in Sources */,
 				606E2C3219718CCA00422E68 /* LHSettings.cpp in Sources */,
 				606E2C6B19718CCA00422E68 /* GameConfig.cpp in Sources */,
