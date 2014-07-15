@@ -39,7 +39,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     std::vector<std::string> ccfilePath;
     
     ccfilePath.push_back("anim");
-    ccfilePath.push_back("xx_battle_ui");
+    ccfilePath.push_back("map");
+    ccfilePath.push_back("map/pit");
+    ccfilePath.push_back("particle");
     ccfilePath.push_back("ui_layout");
     ccfilePath.push_back("ui_layout/resources-iphonehd");
     ccfilePath.push_back("ui_layout/resources-normal");

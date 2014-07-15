@@ -66,7 +66,7 @@ void GameView::initPhysicalWorld() {
     CCLOG("effect w : %f, h : %f", effect->getContentSize().width, effect->getContentSize().height);
     this->addChild(effect, 10000, 10000);
     
-    AnimNode* hero = AnimNode::createFlashAnimNode("hero_1.png", "hero_1.plist", "hero_1.xml", "play", "hero_1");
+    AnimNode* hero = AnimNode::createFlashAnimNode("xx_monster_1001.png", "xx_monster_1001.plist", "xx_monster_1001.xml", "walk", "xx_monster_1001");
     
     
 //    AnimNode* hero = AnimNode::createFlashAnimNode("xx_m_100041.png", "xx_m_100041.plist", "xx_m_100041.xml",

@@ -332,6 +332,7 @@
 		60C3B7141974E32700BC4293 /* WelcomeView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B7121974E32700BC4293 /* WelcomeView.cpp */; };
 		60C3B7341974EA7700BC4293 /* audio in Resources */ = {isa = PBXBuildFile; fileRef = 60C3B7321974EA7700BC4293 /* audio */; };
 		60C3B7351974EA7700BC4293 /* map in Resources */ = {isa = PBXBuildFile; fileRef = 60C3B7331974EA7700BC4293 /* map */; };
+		60C3B76F1974F94200BC4293 /* GameView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B76D1974F94200BC4293 /* GameView.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -1197,6 +1198,8 @@
 		60C3B7131974E32700BC4293 /* WelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeView.h; sourceTree = "<group>"; };
 		60C3B7321974EA7700BC4293 /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = audio; sourceTree = "<group>"; };
 		60C3B7331974EA7700BC4293 /* map */ = {isa = PBXFileReference; lastKnownFileType = folder; path = map; sourceTree = "<group>"; };
+		60C3B76D1974F94200BC4293 /* GameView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameView.cpp; sourceTree = "<group>"; };
+		60C3B76E1974F94200BC4293 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -2758,6 +2761,8 @@
 		60C3B70E1974E2B700BC4293 /* uiView */ = {
 			isa = PBXGroup;
 			children = (
+				60C3B76D1974F94200BC4293 /* GameView.cpp */,
+				60C3B76E1974F94200BC4293 /* GameView.h */,
 				60C3B7121974E32700BC4293 /* WelcomeView.cpp */,
 				60C3B7131974E32700BC4293 /* WelcomeView.h */,
 			);
@@ -3139,6 +3144,7 @@
 				15A3D9AF1682F7F9002FB0C5 /* cpSpaceStep.c in Sources */,
 				15A3D9B01682F7F9002FB0C5 /* cpSpatialIndex.c in Sources */,
 				15A3D9B11682F7F9002FB0C5 /* cpSweep1D.c in Sources */,
+				60C3B76F1974F94200BC4293 /* GameView.cpp in Sources */,
 				15A3D9B21682F7F9002FB0C5 /* cpVect.c in Sources */,
 				15A3DA311682F826002FB0C5 /* CCBAnimationManager.cpp in Sources */,
 				15A3DA321682F826002FB0C5 /* CCBFileLoader.cpp in Sources */,
@@ -3388,7 +3394,7 @@
 					"/Users/xUanBing/Documents/Developer/Github/my1netFrameWork/cocos2d-x-2.2.2/cocos2dx/platform/third_party/ios/libraries",
 					"/Users/xUanBing/Documents/Developer/Github/my1netFrameWork/cocos2d-x-2.2.2/external/libwebsockets/ios/lib",
 				);
-				OTHER_CFLAGS = "-O2";
+				OTHER_CFLAGS = "-O0";
 				PRODUCT_NAME = HappyMouse;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

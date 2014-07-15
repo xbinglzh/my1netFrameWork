@@ -8,6 +8,8 @@
 
 #include "SceneController.h"
 #include "WelcomeView.h"
+#include "GameView.h"
+#include "LayoutUtil.h"
 
 static SceneController* _sharedInstance=NULL;
 
@@ -78,10 +80,13 @@ void SceneController::switchSence(const ESceneId sceneId, cocos2d::CCObject* par
 	
 	switch (sceneId) {
             
-        case K_SCENE_WELCOME: {
+        case K_SCENE_WELCOME:
             layer = WelcomeView::createFromCCB();
             break;
-		}
+            
+        case K_SCENE_GAMEVIEW:
+            layer = GameView::create();
+            break;
             
         default:
             CCAssert(false, "GameController::switchSence sceneId is invalid..");
@@ -89,9 +94,13 @@ void SceneController::switchSence(const ESceneId sceneId, cocos2d::CCObject* par
 	}
     
 	if (layer) {
+        
         CCScene * pScene = CCScene::create();
+        pScene->setAnchorPoint(CCPointZero);
         pScene->setTag(sceneId);
         pScene->addChild(layer);
+        LayoutUtil::layoutParentCenter(layer);
+        
         //bool isR = pScene->isRunning();
         if (_director->getRunningScene()) {
             if (option == SwitchOptionPush) {

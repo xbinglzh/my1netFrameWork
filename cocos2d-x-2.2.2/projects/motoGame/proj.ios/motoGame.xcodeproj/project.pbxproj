@@ -285,6 +285,9 @@
 		60C18A8F18FD749000AC2464 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C18A8D18FD749000AC2464 /* GameObject.cpp */; };
 		60C18A9218FD85D300AC2464 /* x_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A9118FD85D300AC2464 /* x_config.plist */; };
 		60C18A9418FD85EF00AC2464 /* x_anim.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C18A9318FD85EF00AC2464 /* x_anim.plist */; };
+		60C3B73B1974F6FC00BC4293 /* xx_monster_1001.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C3B7381974F6FC00BC4293 /* xx_monster_1001.plist */; };
+		60C3B73C1974F6FC00BC4293 /* xx_monster_1001.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C3B7391974F6FC00BC4293 /* xx_monster_1001.png */; };
+		60C3B73D1974F6FC00BC4293 /* xx_monster_1001.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60C3B73A1974F6FC00BC4293 /* xx_monster_1001.xml */; };
 		60DEA53A19148C680096E14F /* GameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA53819148C680096E14F /* GameController.cpp */; };
 		60DEA55519148F010096E14F /* ParticleEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA55119148F010096E14F /* ParticleEffect.cpp */; };
 		60DEA55619148F010096E14F /* SmallSoybeanParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA55319148F010096E14F /* SmallSoybeanParticle.cpp */; };
@@ -1114,6 +1117,9 @@
 		60C18A8E18FD749000AC2464 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		60C18A9118FD85D300AC2464 /* x_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = x_config.plist; sourceTree = "<group>"; };
 		60C18A9318FD85EF00AC2464 /* x_anim.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = x_anim.plist; sourceTree = "<group>"; };
+		60C3B7381974F6FC00BC4293 /* xx_monster_1001.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = xx_monster_1001.plist; sourceTree = "<group>"; };
+		60C3B7391974F6FC00BC4293 /* xx_monster_1001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xx_monster_1001.png; sourceTree = "<group>"; };
+		60C3B73A1974F6FC00BC4293 /* xx_monster_1001.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = xx_monster_1001.xml; sourceTree = "<group>"; };
 		60DEA53819148C680096E14F /* GameController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameController.cpp; sourceTree = "<group>"; };
 		60DEA53919148C680096E14F /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
 		60DEA55119148F010096E14F /* ParticleEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleEffect.cpp; sourceTree = "<group>"; };
@@ -3004,6 +3010,9 @@
 		CE7BA0D618DFF76E00FD2DAE /* anim */ = {
 			isa = PBXGroup;
 			children = (
+				60C3B7381974F6FC00BC4293 /* xx_monster_1001.plist */,
+				60C3B7391974F6FC00BC4293 /* xx_monster_1001.png */,
+				60C3B73A1974F6FC00BC4293 /* xx_monster_1001.xml */,
 				605A0AF918FEC4BF001EA057 /* xx_m_100041.plist */,
 				605A0AFA18FEC4BF001EA057 /* xx_m_100041.png */,
 				605A0AFB18FEC4BF001EA057 /* xx_m_100041.xml */,
@@ -3353,6 +3362,7 @@
 				60C18A8218FD718D00AC2464 /* fire.plist in Resources */,
 				60776A051903573000A07AED /* back_1.png in Resources */,
 				60DEA5611915196F0096E14F /* x_fontstyle.plist in Resources */,
+				60C3B73D1974F6FC00BC4293 /* xx_monster_1001.xml in Resources */,
 				605A0AF818FEC214001EA057 /* hero_1.xml in Resources */,
 				CE7BA0CE18DFF72A00FD2DAE /* Default@2x.png in Resources */,
 				60776A081903573000A07AED /* back_4.png in Resources */,
@@ -3375,6 +3385,7 @@
 				6000879919096F5F0086E0F2 /* gameElement_gameView-ipadhd.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				60776A061903573000A07AED /* back_2.png in Resources */,
+				60C3B73C1974F6FC00BC4293 /* xx_monster_1001.png in Resources */,
 				CE7BA04818DFDA3400FD2DAE /* json_internalmap.inl in Resources */,
 				6076719A19058010006AD9AD /* UiHomeView.ccb in Resources */,
 				60C18A8518FD718D00AC2464 /* particle-fire.png in Resources */,
@@ -3414,6 +3425,7 @@
 				CE7BA0D518DFF72A00FD2DAE /* Icon-76.png in Resources */,
 				605A0B0218FEC4BF001EA057 /* xx_m_204601d.plist in Resources */,
 				60776A201903573000A07AED /* road_3.png in Resources */,
+				60C3B73B1974F6FC00BC4293 /* xx_monster_1001.plist in Resources */,
 				CE6C9B4318E065D300B6711E /* ui.ccbproj in Resources */,
 				CEBCE54D18EABE5100691E3B /* LICENSE_LevelHelper.txt in Resources */,
 				CE7BA0D118DFF72A00FD2DAE /* Icon-144.png in Resources */,
