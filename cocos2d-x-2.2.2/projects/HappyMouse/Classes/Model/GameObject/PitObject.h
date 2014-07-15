@@ -9,6 +9,22 @@
 #ifndef __HappyMouse__PitObject__
 #define __HappyMouse__PitObject__
 
-#include <iostream>
+#include "cocos2d.h"
+
+USING_NS_CC;
+
+class PitObject : public CCNodeRGBA {
+    
+public:
+    PitObject();
+    ~PitObject();
+    static PitObject* create();
+    
+protected:
+    bool init();
+    
+private:
+    
+};
 
 #endif /* defined(__HappyMouse__PitObject__) */
