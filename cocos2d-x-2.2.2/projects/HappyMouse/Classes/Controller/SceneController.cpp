@@ -156,7 +156,7 @@ void SceneController::switchBgMusic(const ESceneId sceneId){
     if(_bgMusicId == -1){
         if(sceneId == K_SCENE_GAMEVIEW ){
             _bgMusicId = K_AudioEffect_BackGroundMusic;
-            AudioManager::sharedInstance()->playAudioById(_bgMusicId);
+            AudioManager::sharedInstance()->playAudioById(_bgMusicId, true);
         }
     }
 }
