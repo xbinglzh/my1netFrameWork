@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>100001#display</key>
+	<dict>
+		<key>atk_pos</key>
+		<string>0,0</string>
+		<key>be_atk_pos</key>
+		<string>0,0</string>
+		<key>center_pos</key>
+		<string>0,0</string>
+		<key>default</key>
+		<string>play</string>
+		<key>desc</key>
+		<string>人物1</string>
+		<key>file</key>
+		<string>hero_1.xml</string>
+		<key>flipx</key>
+		<string>0</string>
+		<key>hp_bar_pos</key>
+		<string>0,0</string>
+		<key>id</key>
+		<string>100001#display</string>
+		<key>image_plist</key>
+		<string>hero_1.plist</string>
+		<key>image_texture</key>
+		<string>hero_1.png</string>
+		<key>maskfile</key>
+		<string>0</string>
+		<key>position_offset</key>
+		<string>0,0</string>
+		<key>scale</key>
+		<string>0.5f</string>
+		<key>size</key>
+		<string>50,80</string>
+		<key>skeleton</key>
+		<string>hero_1</string>
+		<key>type</key>
+		<string>1</string>
+	</dict>
+</dict>
+</plist>

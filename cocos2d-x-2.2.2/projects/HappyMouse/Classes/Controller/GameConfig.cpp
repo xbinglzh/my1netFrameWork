@@ -39,13 +39,13 @@ void GameConfig::purgeInstance() {
 
 bool GameConfig::init() {
     
-//    CC_SAFE_RELEASE_NULL(_animationDict);
-//    _animationDict = CCDictionary::createWithContentsOfFile("x_anim.plist");
-//    _animationDict->retain();
-//    
-//    CC_SAFE_RELEASE_NULL(_textFontStyleDict);
-//    _textFontStyleDict = CCDictionary::createWithContentsOfFile("x_fontstyle.plist");
-//    _textFontStyleDict->retain();
+    CC_SAFE_RELEASE_NULL(_animationDict);
+    _animationDict = CCDictionary::createWithContentsOfFile("x_anim.plist");
+    _animationDict->retain();
+    
+    CC_SAFE_RELEASE_NULL(_textFontStyleDict);
+    _textFontStyleDict = CCDictionary::createWithContentsOfFile("x_fontstyle.plist");
+    _textFontStyleDict->retain();
     
     return true;
 }

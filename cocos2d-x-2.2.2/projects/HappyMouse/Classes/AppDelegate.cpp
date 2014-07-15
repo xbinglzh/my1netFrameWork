@@ -38,6 +38,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // 设置资源加载路径
     std::vector<std::string> ccfilePath;
     
+    ccfilePath.push_back("audio");
     ccfilePath.push_back("anim");
     ccfilePath.push_back("map");
     ccfilePath.push_back("map/pit");
@@ -46,6 +47,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     ccfilePath.push_back("ui_layout");
     ccfilePath.push_back("ui_layout/resources-iphonehd");
     ccfilePath.push_back("ui_layout/resources-normal");
+    ccfilePath.push_back("plist");
+    ccfilePath.push_back("fonts");
     
     CCFileUtils::sharedFileUtils()->setSearchPaths(ccfilePath);
     
