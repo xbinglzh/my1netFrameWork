@@ -28,10 +28,18 @@ public:
 private:
     void displayWelcomeView();
     
- 
+    /**
+     * 资源加载
+     */
+    void startLoadResources();
+    void didFinishedLoadResources();
+    
 private:
     const boost::function<void ()> finishedCallback_;
-
+    
+private:
+    bool _isResourceReady;
+    
 };
 
 #endif

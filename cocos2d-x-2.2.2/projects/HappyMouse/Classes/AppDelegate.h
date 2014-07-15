@@ -20,6 +20,7 @@ public:
     
 private:
     void didFinishedLauchApp();
+    void initAudioManager();
     
 private:
     boost::scoped_ptr<AppLauncher> _launcher;

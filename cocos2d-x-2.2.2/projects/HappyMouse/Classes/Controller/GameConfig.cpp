@@ -13,13 +13,19 @@
 
 static GameConfig * _configSharedInstance=NULL;
 
-GameConfig::GameConfig() : _animationDict(NULL), _textFontStyleDict(NULL), _pitNumCount(9){
+GameConfig::GameConfig() :
+_animationDict(NULL),
+_textFontStyleDict(NULL),
+_audioDict(NULL),
+_pitNumCount(9) {
     
 }
 
 GameConfig::~GameConfig() {
     CC_SAFE_RELEASE_NULL(_animationDict);
     CC_SAFE_RELEASE_NULL(_textFontStyleDict);
+    CC_SAFE_RELEASE_NULL(_audioDict);
+    
     _pitNumCount = 9;
 }
 
@@ -46,6 +52,10 @@ bool GameConfig::init() {
     CC_SAFE_RELEASE_NULL(_textFontStyleDict);
     _textFontStyleDict = CCDictionary::createWithContentsOfFile("x_fontstyle.plist");
     _textFontStyleDict->retain();
+    
+    CC_SAFE_RELEASE_NULL(_audioDict);
+    _audioDict = CCDictionary::createWithContentsOfFile("x_audio.plist");
+    _audioDict->retain();
     
     return true;
 }
@@ -105,4 +115,24 @@ const FontStyle GameConfig::getFontStyleById(const std::string & Id){
 
 uint32_t GameConfig::getPitNumCount() {
     return _pitNumCount;
+}
+
+/**
+ 获得对应id的音乐文件名
+ */
+const std::string  GameConfig::getMusicFileById(const std::string & id){
+    if (_audioDict) {
+        CCDictionary * audio = static_cast<CCDictionary * >(_audioDict->objectForKey(id));
+        if (audio) {
+            return static_cast<CCString * >(audio->objectForKey(KKeyAudio))->m_sString;
+        }
+    }
+    return "";
+}
+
+cocos2d::CCDictionary * GameConfig::getMusicFileInfoById(const std::string & id){
+    if (_audioDict) {
+        return static_cast<CCDictionary * >(_audioDict->objectForKey(id));
+    }
+    return NULL;
 }

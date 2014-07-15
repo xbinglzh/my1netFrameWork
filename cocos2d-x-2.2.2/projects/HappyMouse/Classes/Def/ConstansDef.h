@@ -52,4 +52,13 @@ enum EFontType {
     K_FONT_LABEL_TTF_STROKE,    //描边字体
 };
 
+enum EUIAudioEffectId {
+    
+    K_AudioEffect_BackGroundMusic       = 950001,//	背景音乐
+    K_AudioEffect_click                 = 950002,//	点击音效
+    K_AudioEffect_eat                   = 950003,//	吃掉音效
+    K_AudioEffect_GameOver              = 950004,//	游戏结束
+    
+};
+
 #endif

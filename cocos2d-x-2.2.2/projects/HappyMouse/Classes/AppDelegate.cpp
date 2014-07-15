@@ -7,6 +7,8 @@
 #include <boost/bind.hpp>
 #include "AppLauncher.h"
 #include "ConstansDef.h"
+#include "AudioManager.h"
+#include "KeyConfigDef.h"
 
 USING_NS_CC;
 
@@ -15,7 +17,9 @@ AppDelegate::AppDelegate() {
 }
 
 AppDelegate::~AppDelegate() {
+    
     sp::ArmatureDataManager::sharedArmatureDataManager()->removeAll();
+    AudioManager::sharedInstance()->purgeInstance();
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
@@ -65,18 +69,43 @@ void AppDelegate::applicationDidEnterBackground() {
     
     CCDirector::sharedDirector()->stopAnimation();
     cocos2d::CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyApplicationDidEnterBackgroundMessage, NULL);
+    
+    AudioManager::sharedInstance()->pause();
 }
 
 void AppDelegate::applicationWillEnterForeground() {
     CCDirector::sharedDirector()->startAnimation();
     cocos2d::CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyApplicationWillEnterForegroundMessage, NULL);
+    
+    AudioManager::sharedInstance()->resume();
+    initAudioManager();
 }
 
 void AppDelegate::applicationDidBecomeActive() {
 	cocos2d::CCDirector::sharedDirector()->resume();
  	cocos2d::CCNotificationCenter::sharedNotificationCenter()->postNotification(KNotifyApplicationResumeMessage);
+    
+    AudioManager::sharedInstance()->resume();
+    initAudioManager();
 }
 
 void AppDelegate::didFinishedLauchApp() {
     _launcher.reset();
+}
+
+void AppDelegate::initAudioManager() {
+    AudioManager * audioManager = AudioManager::sharedInstance();
+    CCUserDefault * gUserDefault = CCUserDefault::sharedUserDefault();
+    const bool audioEffectStatusClosed = gUserDefault->getBoolForKey(KStrAudioEffectStatusClosed);
+    const bool bgMusicStatusClosed = gUserDefault->getBoolForKey(KStrBgMusicStatusClosed);
+    if (!bgMusicStatusClosed) {
+        audioManager->openBackgroundMusic();
+    } else {
+        audioManager->closedBackgroundMusic();
+    }
+    if (!audioEffectStatusClosed) {
+        audioManager->openEffectMusic();
+    } else{
+        audioManager->closedEffectMusic();
+    }
 }

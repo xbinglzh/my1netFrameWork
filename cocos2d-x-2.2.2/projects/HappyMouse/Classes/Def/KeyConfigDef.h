@@ -23,5 +23,27 @@
 #define KKeyColor                     "color"
 #define KKeyStrokeColor               "stroke_color" //描边字边框颜色
 
+#define KKeyParam                     "param"
+#define KKeyX                         "x"
+#define KKeyY                         "y"
+#define KKeySize                      "size"
+#define KKeyColor                     "color"
+#define KKeyScale                     "scale"
+#define KKeyFlipX                     "flipx"
+#define KKeyFont                      "font"
+#define KKeyStrokeColor               "stroke_color" //描边字边框颜色
+#define KKeyMonster                   "monster"
+#define KKeyGeneral                   "general"
+#define KKeyMonsterSendInterval       "monster_send_interval"
+#define KKeyImage                     "image"
+#define KKeyPlist                     "plist"
+#define KKeyAudio                     "audio"
+#define KKeyId                        "id"
+#define KKeyRoleCardId                "role_card_id"
+
+//Setting Key
+#define KStrAudioEffectStatusClosed   "AudioEffectStatusClosed"
+#define KStrBgMusicStatusClosed       "BgMusicStatusClosed"
+
 
 #endif /* defined(__motoGame__KeyConfigDef__) */

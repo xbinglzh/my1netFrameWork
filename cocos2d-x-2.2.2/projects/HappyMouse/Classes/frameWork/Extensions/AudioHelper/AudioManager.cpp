@@ -7,6 +7,9 @@
 //
 
 #include "AudioManager.h"
+#include "GameConfig.h"
+#include "ConstansDef.h"
+#include "KeyConfigDef.h"
 
 #if 0
 
@@ -341,5 +344,32 @@ void AudioManager::resume() {
     }
     
 }
+
+void AudioManager::playAudioById(const int32_t id,const bool repeat /*= false*/){
+    if(id > 0){
+        AudioManager * gAudioManager = AudioManager::sharedInstance();
+        const float effectsVolume = gAudioManager->getEffectsVolume();
+        CCLOG("effectsVolume = %f",effectsVolume);
+        GameConfig *   gConfig = GameConfig::sharedInstance();
+        std::stringstream audioString;
+        audioString << id;
+        
+        CCDictionary * dict = gConfig->getMusicFileInfoById(audioString.str());
+        
+        if (dict) {
+            CCString * type = (CCString *)dict->objectForKey(KKeyType);
+            CCString * file = (CCString *)dict->objectForKey(KKeyAudio);
+            if(file && type){
+                if (type->intValue() == 2) {
+                    gAudioManager->unloadBgMusicFile();
+                    gAudioManager->playBackgroundMusic(file->getCString());
+                }else{
+                    int ret = gAudioManager->playEffect(file->getCString(),repeat);
+                }
+            }
+        }
+    }
+}
+
 
 #endif

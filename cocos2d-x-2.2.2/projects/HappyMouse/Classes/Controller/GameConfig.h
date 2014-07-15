@@ -61,6 +61,12 @@ public:
      */
     const std::string & getAppTargetOSVersion() const;
     
+    /**
+     获得对应id的音乐文件名
+     */
+	const std::string getMusicFileById(const std::string & id);
+    cocos2d::CCDictionary * getMusicFileInfoById(const std::string & id);
+    
 public:
     /**
      获得对应Id的animation信息
@@ -89,6 +95,8 @@ private:
 private: // Dict
     cocos2d::CCDictionary*        _animationDict;
     cocos2d::CCDictionary*        _textFontStyleDict;
+    cocos2d::CCDictionary*        _audioDict;
+
     
 };
 

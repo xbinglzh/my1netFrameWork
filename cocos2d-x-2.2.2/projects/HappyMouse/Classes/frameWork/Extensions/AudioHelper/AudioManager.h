@@ -140,6 +140,8 @@ public:
      */
     void unloadBgMusicFile();
     
+    void playAudioById(const int32_t id,const bool repeat = false/*= false*/);
+    
 private:
     /*
      预先加载背景音乐

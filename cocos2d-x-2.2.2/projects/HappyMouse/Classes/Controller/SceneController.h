@@ -42,7 +42,8 @@ public:
     
     
     const bool backToScene();
-    void backToRootScene();
+    void backToRootScene(); 
+    void switchBgMusic(const ESceneId sceneId);
     
 protected:
     virtual void updateProjection(void);
@@ -54,6 +55,7 @@ private:
     ESceneId        _currentRunningSceneId;
     
     std::deque<int32_t> _sceneQueue;
+    int32_t             _bgMusicId;
 };
 
 #endif /* defined(__motoGame__SceneController__) */

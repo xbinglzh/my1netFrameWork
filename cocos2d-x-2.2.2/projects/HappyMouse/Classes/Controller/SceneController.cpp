@@ -10,10 +10,16 @@
 #include "WelcomeView.h"
 #include "GameView.h"
 #include "LayoutUtil.h"
+#include "ConstansDef.h"
+#include "AudioManager.h"
 
 static SceneController* _sharedInstance=NULL;
 
-SceneController::SceneController() : _director(NULL), _currentSceneId(K_SCENE_UNKNOW) , _currentRunningSceneId(K_SCENE_UNKNOW){
+SceneController::SceneController() :
+_director(NULL),
+_currentSceneId(K_SCENE_UNKNOW) ,
+_currentRunningSceneId(K_SCENE_UNKNOW),
+_bgMusicId(-1) {
     
 }
 
@@ -114,6 +120,7 @@ void SceneController::switchSence(const ESceneId sceneId, cocos2d::CCObject* par
             _director->runWithScene(pScene);
         }
         
+        switchBgMusic(sceneId);
         CCLOG("sceneID : %d", sceneId);
 	}
 }
@@ -139,5 +146,17 @@ void SceneController::backToRootScene() {
         _currentSceneId = (ESceneId)(*_sceneQueue.end());
         _sceneQueue.clear();
         _director->popToRootScene();
+    }
+}
+
+#pragma mark controll music
+void SceneController::switchBgMusic(const ESceneId sceneId){
+    //背景音乐切换
+    
+    if(_bgMusicId == -1){
+        if(sceneId == K_SCENE_GAMEVIEW ){
+            _bgMusicId = K_AudioEffect_BackGroundMusic;
+            AudioManager::sharedInstance()->playAudioById(_bgMusicId);
+        }
     }
 }
