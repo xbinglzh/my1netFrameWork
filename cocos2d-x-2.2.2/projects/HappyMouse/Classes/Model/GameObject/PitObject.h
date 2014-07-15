@@ -13,6 +13,8 @@
 
 USING_NS_CC;
 
+class CCSpriteExt;
+
 class PitObject : public CCNodeRGBA {
     
 public:
@@ -24,6 +26,7 @@ protected:
     bool init();
     
 private:
+    
     
 };
 

@@ -13,13 +13,14 @@
 
 static GameConfig * _configSharedInstance=NULL;
 
-GameConfig::GameConfig() : _animationDict(NULL), _textFontStyleDict(NULL){
+GameConfig::GameConfig() : _animationDict(NULL), _textFontStyleDict(NULL), _pitNumCount(9){
     
 }
 
 GameConfig::~GameConfig() {
     CC_SAFE_RELEASE_NULL(_animationDict);
     CC_SAFE_RELEASE_NULL(_textFontStyleDict);
+    _pitNumCount = 9;
 }
 
 GameConfig * GameConfig::sharedInstance(){
@@ -38,13 +39,13 @@ void GameConfig::purgeInstance() {
 
 bool GameConfig::init() {
     
-    CC_SAFE_RELEASE_NULL(_animationDict);
-    _animationDict = CCDictionary::createWithContentsOfFile("x_anim.plist");
-    _animationDict->retain();
-    
-    CC_SAFE_RELEASE_NULL(_textFontStyleDict);
-    _textFontStyleDict = CCDictionary::createWithContentsOfFile("x_fontstyle.plist");
-    _textFontStyleDict->retain();
+//    CC_SAFE_RELEASE_NULL(_animationDict);
+//    _animationDict = CCDictionary::createWithContentsOfFile("x_anim.plist");
+//    _animationDict->retain();
+//    
+//    CC_SAFE_RELEASE_NULL(_textFontStyleDict);
+//    _textFontStyleDict = CCDictionary::createWithContentsOfFile("x_fontstyle.plist");
+//    _textFontStyleDict->retain();
     
     return true;
 }
@@ -100,4 +101,8 @@ const FontStyle GameConfig::getFontStyleById(const std::string & Id){
     }
     
     return fontstyle;
+}
+
+uint32_t GameConfig::getPitNumCount() {
+    return _pitNumCount;
 }

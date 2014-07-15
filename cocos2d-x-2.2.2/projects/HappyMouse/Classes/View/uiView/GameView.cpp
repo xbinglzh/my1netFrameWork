@@ -9,11 +9,11 @@
 #include "GameView.h"
 #include "CCSpriteExt.h"
 #include "LayoutUtil.h"
+#include "GameController.h"
+#include "GameConfig.h"
 
 #define Pit_Node_Tag    1001
 #define Mouse_Node_Tag  1002
-
-#define PitNumCount     9
 
 #define PitBaseTag      2000
 #define MouseBaseTag    3000
@@ -66,6 +66,8 @@ bool GameView::init() {
     LayoutUtil::layoutParentCenter(_pitNode, 100, 0);
     LayoutUtil::layoutParentCenter(_mouseNode);
     
+    this->scheduleUpdate();
+    
     return true;
 }
 
@@ -73,7 +75,7 @@ void GameView::initPitData() {
     float pitWidth  = 0;
     float pitHeight = 0;
     
-    for (int i = 0; i < PitNumCount; i++) {
+    for (int i = 0; i < GameConfig::sharedInstance()->getPitNumCount(); i++) {
         CCSpriteExt* pit = CCSpriteExt::create("grass_pit.png");
         _pitNode->addChild(pit, 1, PitBaseTag + i);
         
@@ -84,7 +86,7 @@ void GameView::initPitData() {
     
     _pitNode->setContentSize(CCSizeMake(3 * (pitWidth + PaddingWidth), 3 * (PaddingHeight + pitHeight)));
 
-    for (int i = 0; i < PitNumCount; i++) {
+    for (int i = 0; i < GameConfig::sharedInstance()->getPitNumCount(); i++) {
         LayoutUtil::layoutParentTopLeft(_pitNode->getChildByTag(PitBaseTag + i), (pitWidth+PaddingWidth)*(i % 3), -1 *(pitHeight + PaddingHeight) * (i / 3));
     }
     
@@ -93,12 +95,16 @@ void GameView::initPitData() {
 
 void GameView::initMouseData() {
     
-    for (int i = 0; i < PitNumCount; i++) {
+    for (int i = 0; i < GameConfig::sharedInstance()->getPitNumCount(); i++) {
         CCSpriteExt* mouse = CCSpriteExt::create("mouse1.png");
         _pitNode->addChild(mouse, 2, MouseBaseTag + i);
         
         LayoutUtil::layoutCenter(mouse, _pitNode->getChildByTag(PitBaseTag + i), 0, 50);
     }
+}
+
+void GameView::update(float dt) {
+    GameController::getInstance()->update(dt);
 }
 
 bool GameView::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent) {

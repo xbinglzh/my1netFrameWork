@@ -29,6 +29,8 @@ public:
     virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent);
     
+    void update(float dt);
+    
 private:
     void initPitData();
     void initMouseData();

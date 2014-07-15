@@ -71,6 +71,9 @@ public:
      */
 	const FontStyle getFontStyleById(const std::string & Id);
     
+public:
+    uint32_t getPitNumCount();
+    
 private:
     std::string 	_version;
 	std::string 	_build;
@@ -78,6 +81,9 @@ private:
     std::string 	_appid;
     std::string 	_appTargetOSVersion;
 	uint32_t		_simpleProperties;
+    
+    //逻辑Config
+    uint32_t        _pitNumCount;
     
     
 private: // Dict
