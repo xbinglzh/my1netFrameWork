@@ -330,6 +330,8 @@
 		60C3B7091974D5DB00BC4293 /* AppLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B7071974D5DB00BC4293 /* AppLauncher.cpp */; };
 		60C3B70C1974D64200BC4293 /* SceneController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B70A1974D64200BC4293 /* SceneController.cpp */; };
 		60C3B7141974E32700BC4293 /* WelcomeView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B7121974E32700BC4293 /* WelcomeView.cpp */; };
+		60C3B7341974EA7700BC4293 /* audio in Resources */ = {isa = PBXBuildFile; fileRef = 60C3B7321974EA7700BC4293 /* audio */; };
+		60C3B7351974EA7700BC4293 /* map in Resources */ = {isa = PBXBuildFile; fileRef = 60C3B7331974EA7700BC4293 /* map */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -1193,6 +1195,8 @@
 		60C3B70B1974D64200BC4293 /* SceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneController.h; sourceTree = "<group>"; };
 		60C3B7121974E32700BC4293 /* WelcomeView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WelcomeView.cpp; sourceTree = "<group>"; };
 		60C3B7131974E32700BC4293 /* WelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeView.h; sourceTree = "<group>"; };
+		60C3B7321974EA7700BC4293 /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = audio; sourceTree = "<group>"; };
+		60C3B7331974EA7700BC4293 /* map */ = {isa = PBXFileReference; lastKnownFileType = folder; path = map; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -2763,6 +2767,8 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				60C3B7321974EA7700BC4293 /* audio */,
+				60C3B7331974EA7700BC4293 /* map */,
 				605A8AD21974C54B0086F702 /* anim */,
 				605A8AD31974C54B0086F702 /* app */,
 				605A8AD41974C54B0086F702 /* fonts */,
@@ -3003,6 +3009,8 @@
 				605A8A751974C51A0086F702 /* LICENSE_LevelHelper.txt in Resources */,
 				605A8ADC1974C54B0086F702 /* plist in Resources */,
 				605A8AC91974C51A0086F702 /* tinyxml.suo in Resources */,
+				60C3B7351974EA7700BC4293 /* map in Resources */,
+				60C3B7341974EA7700BC4293 /* audio in Resources */,
 				605A8AAD1974C51A0086F702 /* json_internalmap.inl in Resources */,
 				605A8AD81974C54B0086F702 /* anim in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
