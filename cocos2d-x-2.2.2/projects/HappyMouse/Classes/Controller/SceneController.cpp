@@ -99,7 +99,7 @@ void SceneController::switchSence(const ESceneId sceneId, cocos2d::CCObject* par
         pScene->setAnchorPoint(CCPointZero);
         pScene->setTag(sceneId);
         pScene->addChild(layer);
-        LayoutUtil::layoutParentCenter(layer);
+        LayoutUtil::layoutParentBottomLeft(layer);
         
         //bool isR = pScene->isRunning();
         if (_director->getRunningScene()) {

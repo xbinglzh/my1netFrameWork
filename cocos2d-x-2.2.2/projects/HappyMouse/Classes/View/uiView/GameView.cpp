@@ -10,7 +10,18 @@
 #include "CCSpriteExt.h"
 #include "LayoutUtil.h"
 
-GameView::GameView() : _bg(NULL) {
+#define Pit_Node_Tag    1001
+#define Mouse_Node_Tag  1002
+
+#define PitNumCount     9
+
+#define PitBaseTag      2000
+#define MouseBaseTag    3000
+
+#define PaddingWidth    80
+#define PaddingHeight   20
+
+GameView::GameView() : _bg(NULL), _pitNode(NULL), _mouseNode(NULL) {
     
 }
 
@@ -32,13 +43,62 @@ GameView* GameView::create() {
 }
 
 bool GameView::init() {
-    this->setAnchorPoint(CCPointZero);
-    CCSprite* bg = CCSprite::create("xmap_back_grass.png");
-    this->addChild(bg);
-//    LayoutUtil::layoutParentBottom(_bg);
     
+    this->setContentSize(CCSizeMake(CCDirector::sharedDirector()->getOpenGLView()->getFrameSize().width, CCDirector::sharedDirector()->getOpenGLView()->getFrameSize().height));
+    this->setAnchorPoint(CCPointZero);
+    
+    _bg = CCSpriteExt::create("xmap_back_grass.png");
+    _bg->setScaleX(this->getContentSize().width / _bg->getContentSize().width);
+    _bg->setScaleY(this->getContentSize().height / _bg->getContentSize().height);
+    
+    this->addChild(_bg);
+    _bg->setAnchorPoint(CCPointZero);
+    LayoutUtil::layoutParentBottom(_bg);
+    
+    _pitNode = CCNode::create();
+    this->addChild(_pitNode, 2, Pit_Node_Tag);
+    
+    _mouseNode = CCNode::create();
+    this->addChild(_mouseNode, 3, Mouse_Node_Tag);
+    
+    initPitData();
+    
+    LayoutUtil::layoutParentCenter(_pitNode, 100, 0);
+    LayoutUtil::layoutParentCenter(_mouseNode);
     
     return true;
+}
+
+void GameView::initPitData() {
+    float pitWidth  = 0;
+    float pitHeight = 0;
+    
+    for (int i = 0; i < PitNumCount; i++) {
+        CCSpriteExt* pit = CCSpriteExt::create("grass_pit.png");
+        _pitNode->addChild(pit, 1, PitBaseTag + i);
+        
+        pitWidth = pit->getContentSize().width + PaddingWidth;
+        pitHeight = pit->getContentSize().height +PaddingHeight;
+        
+    }
+    
+    _pitNode->setContentSize(CCSizeMake(3 * (pitWidth + PaddingWidth), 3 * (PaddingHeight + pitHeight)));
+
+    for (int i = 0; i < PitNumCount; i++) {
+        LayoutUtil::layoutParentTopLeft(_pitNode->getChildByTag(PitBaseTag + i), (pitWidth+PaddingWidth)*(i % 3), -1 *(pitHeight + PaddingHeight) * (i / 3));
+    }
+    
+    initMouseData();
+}
+
+void GameView::initMouseData() {
+    
+    for (int i = 0; i < PitNumCount; i++) {
+        CCSpriteExt* mouse = CCSpriteExt::create("mouse1.png");
+        _pitNode->addChild(mouse, 2, MouseBaseTag + i);
+        
+        LayoutUtil::layoutCenter(mouse, _pitNode->getChildByTag(PitBaseTag + i), 0, 50);
+    }
 }
 
 bool GameView::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent) {

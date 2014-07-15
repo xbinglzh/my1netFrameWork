@@ -41,6 +41,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     ccfilePath.push_back("anim");
     ccfilePath.push_back("map");
     ccfilePath.push_back("map/pit");
+    ccfilePath.push_back("map/mouse");
     ccfilePath.push_back("particle");
     ccfilePath.push_back("ui_layout");
     ccfilePath.push_back("ui_layout/resources-iphonehd");

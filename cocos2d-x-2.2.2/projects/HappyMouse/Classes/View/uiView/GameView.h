@@ -30,7 +30,13 @@ public:
     virtual void ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent);
     
 private:
+    void initPitData();
+    void initMouseData();
+    
+private:
     CCSpriteExt* _bg;
+    CCNode*      _pitNode;
+    CCNode*      _mouseNode;
     
 };
 
