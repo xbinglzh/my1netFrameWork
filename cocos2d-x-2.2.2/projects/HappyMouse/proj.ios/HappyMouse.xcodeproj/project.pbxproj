@@ -331,6 +331,8 @@
 		60C3B6FD1974CE5100BC4293 /* libboost_regex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 605A8B0F1974C8DB0086F702 /* libboost_regex.a */; };
 		60C3B7001974CF1E00BC4293 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C3B6FF1974CF1E00BC4293 /* libcurl.a */; };
 		60C3B7061974CFC200BC4293 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C3B7051974CF9200BC4293 /* libwebsockets.a */; };
+		60C3B7091974D5DB00BC4293 /* AppLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B7071974D5DB00BC4293 /* AppLauncher.cpp */; };
+		60C3B70C1974D64200BC4293 /* SceneController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B70A1974D64200BC4293 /* SceneController.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -1193,6 +1195,10 @@
 		60C3B6FF1974CF1E00BC4293 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		60C3B7031974CF9200BC4293 /* libwebsockets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libwebsockets.h; sourceTree = "<group>"; };
 		60C3B7051974CF9200BC4293 /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebsockets.a; sourceTree = "<group>"; };
+		60C3B7071974D5DB00BC4293 /* AppLauncher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppLauncher.cpp; sourceTree = "<group>"; };
+		60C3B7081974D5DB00BC4293 /* AppLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppLauncher.h; sourceTree = "<group>"; };
+		60C3B70A1974D64200BC4293 /* SceneController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneController.cpp; sourceTree = "<group>"; };
+		60C3B70B1974D64200BC4293 /* SceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneController.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -2186,6 +2192,10 @@
 		605A89741974C5190086F702 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				60C3B70A1974D64200BC4293 /* SceneController.cpp */,
+				60C3B70B1974D64200BC4293 /* SceneController.h */,
+				60C3B7071974D5DB00BC4293 /* AppLauncher.cpp */,
+				60C3B7081974D5DB00BC4293 /* AppLauncher.h */,
 				60C3B6E31974CC8300BC4293 /* GameConfig.cpp */,
 				60C3B6E41974CC8300BC4293 /* GameConfig.h */,
 			);
@@ -3038,6 +3048,7 @@
 				15A3D90F1682F7D5002FB0C5 /* b2StackAllocator.cpp in Sources */,
 				605A8ACA1974C51A0086F702 /* tinyxmlerror.cpp in Sources */,
 				605A8A8F1974C51A0086F702 /* SPTween.cpp in Sources */,
+				60C3B70C1974D64200BC4293 /* SceneController.cpp in Sources */,
 				15A3D9101682F7D5002FB0C5 /* b2Timer.cpp in Sources */,
 				15A3D9111682F7D5002FB0C5 /* b2Body.cpp in Sources */,
 				15A3D9121682F7D5002FB0C5 /* b2ContactManager.cpp in Sources */,
@@ -3114,6 +3125,7 @@
 				15A3D9A81682F7F9002FB0C5 /* cpHashSet.c in Sources */,
 				15A3D9A91682F7F9002FB0C5 /* cpPolyShape.c in Sources */,
 				15A3D9AA1682F7F9002FB0C5 /* cpShape.c in Sources */,
+				60C3B7091974D5DB00BC4293 /* AppLauncher.cpp in Sources */,
 				605A8ACE1974C51A0086F702 /* CCScale9ProgressBar.cpp in Sources */,
 				15A3D9AB1682F7F9002FB0C5 /* cpSpace.c in Sources */,
 				15A3D9AC1682F7F9002FB0C5 /* cpSpaceComponent.c in Sources */,
