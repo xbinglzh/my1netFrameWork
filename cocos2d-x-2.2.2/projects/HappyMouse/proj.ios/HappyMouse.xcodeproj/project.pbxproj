@@ -336,6 +336,7 @@
 		60C3B77B197516AC00BC4293 /* MouseObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B777197516AC00BC4293 /* MouseObject.cpp */; };
 		60C3B77C197516AC00BC4293 /* PitObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B779197516AC00BC4293 /* PitObject.cpp */; };
 		60C3B78219751F7100BC4293 /* GameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B78019751F7100BC4293 /* GameController.cpp */; };
+		60C3B786197529B100BC4293 /* AudioManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B784197529B100BC4293 /* AudioManager.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -1209,6 +1210,8 @@
 		60C3B77A197516AC00BC4293 /* PitObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PitObject.h; sourceTree = "<group>"; };
 		60C3B78019751F7100BC4293 /* GameController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameController.cpp; sourceTree = "<group>"; };
 		60C3B78119751F7100BC4293 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		60C3B784197529B100BC4293 /* AudioManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioManager.cpp; sourceTree = "<group>"; };
+		60C3B785197529B100BC4293 /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -2239,6 +2242,7 @@
 		605A89771974C5190086F702 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				60C3B783197529B100BC4293 /* AudioHelper */,
 				605A89781974C5190086F702 /* AnimationExt */,
 				605A89791974C5190086F702 /* cocos2dxExt */,
 				605A897D1974C5190086F702 /* GLESRender */,
@@ -2792,6 +2796,15 @@
 			path = GameObject;
 			sourceTree = "<group>";
 		};
+		60C3B783197529B100BC4293 /* AudioHelper */ = {
+			isa = PBXGroup;
+			children = (
+				60C3B784197529B100BC4293 /* AudioManager.cpp */,
+				60C3B785197529B100BC4293 /* AudioManager.h */,
+			);
+			path = AudioHelper;
+			sourceTree = "<group>";
+		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -3067,6 +3080,7 @@
 				15A3D9061682F7D5002FB0C5 /* b2TimeOfImpact.cpp in Sources */,
 				15A3D9071682F7D5002FB0C5 /* b2ChainShape.cpp in Sources */,
 				15A3D9081682F7D5002FB0C5 /* b2CircleShape.cpp in Sources */,
+				60C3B786197529B100BC4293 /* AudioManager.cpp in Sources */,
 				15A3D9091682F7D5002FB0C5 /* b2EdgeShape.cpp in Sources */,
 				15A3D90A1682F7D5002FB0C5 /* b2PolygonShape.cpp in Sources */,
 				605A8AA81974C51A0086F702 /* SPContourSprite.cpp in Sources */,

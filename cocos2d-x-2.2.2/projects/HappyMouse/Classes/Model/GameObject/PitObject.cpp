@@ -8,6 +8,7 @@
 
 #include "PitObject.h"
 #include "CCScale9ProgressBar.h"
+#include "CCSpriteExt.h"
 
 PitObject::PitObject() {
     
