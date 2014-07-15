@@ -7,8 +7,12 @@
 //
 
 #include "MouseObject.h"
+#include "AnimNode.h"
+#include "CCSpriteExt.h"
+#include "CCScale9ProgressBar.h"
+#include "LayoutUtil.h"
 
-MouseObject::MouseObject() {
+MouseObject::MouseObject() : _animNode(NULL), _sprite(NULL), _hpBar(NULL) {
     
 }
 
@@ -30,5 +34,12 @@ MouseObject* MouseObject::create() {
 }
 
 bool MouseObject::init() {
+    
+    _sprite = CCSpriteExt::create("mouse1.png");
+    this->setContentSize(_sprite->getContentSize());
+    this->addChild(_sprite);
+    LayoutUtil::layoutParentCenter(_sprite);
+    
+    
     return true;
 }

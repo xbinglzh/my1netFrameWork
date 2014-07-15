@@ -12,6 +12,9 @@
 #include "GameController.h"
 #include "GameConfig.h"
 
+#include "PitObject.h"
+#include "MouseObject.h"
+
 #define Pit_Node_Tag    1001
 #define Mouse_Node_Tag  1002
 
@@ -19,7 +22,7 @@
 #define MouseBaseTag    3000
 
 #define PaddingWidth    80
-#define PaddingHeight   20
+#define PaddingHeight   30
 
 GameView::GameView() : _bg(NULL), _pitNode(NULL), _mouseNode(NULL) {
     
@@ -63,7 +66,7 @@ bool GameView::init() {
     
     initPitData();
     
-    LayoutUtil::layoutParentCenter(_pitNode, 100, 0);
+    LayoutUtil::layoutParentCenter(_pitNode, 100, -30);
     LayoutUtil::layoutParentCenter(_mouseNode);
     
     this->scheduleUpdate();
@@ -76,7 +79,12 @@ void GameView::initPitData() {
     float pitHeight = 0;
     
     for (int i = 0; i < GameConfig::sharedInstance()->getPitNumCount(); i++) {
-        CCSpriteExt* pit = CCSpriteExt::create("grass_pit.png");
+//        CCSpriteExt* pit = CCSpriteExt::create("grass_pit.png");
+        
+        PitObject* pit = PitObject::create();
+        MouseObject* mouse = MouseObject::create();
+        pit->addNodeToContent(mouse);
+        
         _pitNode->addChild(pit, 1, PitBaseTag + i);
         
         pitWidth = pit->getContentSize().width + PaddingWidth;
@@ -90,7 +98,6 @@ void GameView::initPitData() {
         LayoutUtil::layoutParentTopLeft(_pitNode->getChildByTag(PitBaseTag + i), (pitWidth+PaddingWidth)*(i % 3), -1 *(pitHeight + PaddingHeight) * (i / 3));
     }
     
-    initMouseData();
 }
 
 void GameView::initMouseData() {

@@ -13,6 +13,10 @@
 
 USING_NS_CC;
 
+class AnimNode;
+class CCSpriteExt;
+class CCScale9ProgressBar;
+
 class MouseObject : public CCNodeRGBA {
     
 public:
@@ -25,6 +29,9 @@ protected:
     bool init();
     
 private:
+    AnimNode*             _animNode;
+    CCSpriteExt*          _sprite;
+    CCScale9ProgressBar*  _hpBar;
     
 };
 

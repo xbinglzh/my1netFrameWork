@@ -22,11 +22,14 @@ public:
     ~PitObject();
     static PitObject* create();
     
+public:
+     void addNodeToContent(CCNode* node);
+    
 protected:
     bool init();
-    
+   
 private:
-    
+    CCSpriteExt* _pit;
     
 };
 
