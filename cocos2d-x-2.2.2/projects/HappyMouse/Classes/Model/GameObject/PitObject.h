@@ -20,16 +20,25 @@ class PitObject : public CCNodeRGBA {
 public:
     PitObject();
     ~PitObject();
-    static PitObject* create();
+    static PitObject* create(int _pitId);
     
 public:
-     void addNodeToContent(CCNode* node);
+    void addNodeToContent(CCNode* node);
+    
+    void ariseMouse();
+    void dropMouse();
     
 protected:
-    bool init();
-   
+    bool init(int _pitId);
+    
 private:
+    void judgePopMouse(CCObject* pSender);
+    void resetAriseFlag();
+private:
+    int          _pitId;
+    
     CCSpriteExt* _pit;
+    bool         _isArise;
     
 };
 

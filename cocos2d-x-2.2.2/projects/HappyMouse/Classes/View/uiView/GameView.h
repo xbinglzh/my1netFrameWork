@@ -30,10 +30,10 @@ public:
     virtual void ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent);
     
     void update(float dt);
+    void updateMousePop();
     
 private:
     void initPitData();
-    void initMouseData();
     
 private:
     CCSpriteExt* _bg;

@@ -29,7 +29,8 @@ GameView::GameView() : _bg(NULL), _pitNode(NULL), _mouseNode(NULL) {
 }
 
 GameView::~GameView() {
-    
+    this->unscheduleUpdate();
+    this->unschedule(schedule_selector(GameView::updateMousePop));
 }
 
 GameView* GameView::create() {
@@ -70,6 +71,7 @@ bool GameView::init() {
     LayoutUtil::layoutParentCenter(_mouseNode);
     
     this->scheduleUpdate();
+    this->schedule(schedule_selector(GameView::updateMousePop), 0.5);
     
     return true;
 }
@@ -79,9 +81,8 @@ void GameView::initPitData() {
     float pitHeight = 0;
     
     for (int i = 0; i < GameConfig::sharedInstance()->getPitNumCount(); i++) {
-//        CCSpriteExt* pit = CCSpriteExt::create("grass_pit.png");
         
-        PitObject* pit = PitObject::create();
+        PitObject* pit = PitObject::create(i);
         MouseObject* mouse = MouseObject::create();
         pit->addNodeToContent(mouse);
         
@@ -100,18 +101,12 @@ void GameView::initPitData() {
     
 }
 
-void GameView::initMouseData() {
-    
-    for (int i = 0; i < GameConfig::sharedInstance()->getPitNumCount(); i++) {
-        CCSpriteExt* mouse = CCSpriteExt::create("mouse1.png");
-        _pitNode->addChild(mouse, 2, MouseBaseTag + i);
-        
-        LayoutUtil::layoutCenter(mouse, _pitNode->getChildByTag(PitBaseTag + i), 0, 50);
-    }
-}
-
 void GameView::update(float dt) {
     GameController::getInstance()->update(dt);
+}
+
+void GameView::updateMousePop() {
+    GameController::getInstance()->notifyRandomMouses();
 }
 
 bool GameView::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent) {

@@ -28,4 +28,7 @@
 
 #define KNotifyGameScoreChangeMessage "notifyGameScoreChangeMessage"
 
+//---
+#define KNotifyMousePop               "notifyMousePop"
+
 #endif /* defined(__motoGame__NotifyMessageDef__) */

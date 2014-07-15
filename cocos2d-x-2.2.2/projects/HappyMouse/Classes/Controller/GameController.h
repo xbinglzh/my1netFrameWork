@@ -28,11 +28,17 @@ public:
      * 逻辑主循环
      */
     void update(float dt);
+    void notifyRandomMouses();
     
 protected:
     
 private:
-    int genRandomMouseIndex();
+    bool    isIdInRandomVector(int currentId);
+    int     genRandomMouseIndex();
+    void    genRandomMouseIds();
+    
+private:
+    std::vector<int> _randomVector;
 };
 
 #endif /* defined(__HappyMouse__GameController__) */
