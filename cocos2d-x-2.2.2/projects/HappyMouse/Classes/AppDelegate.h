@@ -2,36 +2,27 @@
 #define  _APP_DELEGATE_H_
 
 #include "cocos2d.h"
+#include <boost/scoped_ptr.hpp>
 
-/**
-@brief    The cocos2d Application.
+class AppLauncher;
 
-The reason for implement as private inheritance is to hide some interface call by CCDirector.
-*/
-class  AppDelegate : private cocos2d::CCApplication
-{
+class  AppDelegate : private cocos2d::CCApplication {
+    
 public:
     AppDelegate();
+    
     virtual ~AppDelegate();
 
-    /**
-    @brief    Implement CCDirector and CCScene init code here.
-    @return true    Initialize success, app continue.
-    @return false   Initialize failed, app terminate.
-    */
     virtual bool applicationDidFinishLaunching();
-
-    /**
-    @brief  The function be called when the application enter background
-    @param  the pointer of the application
-    */
     virtual void applicationDidEnterBackground();
-
-    /**
-    @brief  The function be called when the application enter foreground
-    @param  the pointer of the application
-    */
     virtual void applicationWillEnterForeground();
+    virtual void applicationDidBecomeActive();
+    
+private:
+    void didFinishedLauchApp();
+    
+private:
+    boost::scoped_ptr<AppLauncher> _launcher;
 };
 
 #endif // _APP_DELEGATE_H_
