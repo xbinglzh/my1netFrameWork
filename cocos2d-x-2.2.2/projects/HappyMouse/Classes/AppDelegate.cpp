@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
+
 #include "SceneController.h"
 #include "SPDataReaderHelper.h"
 #include "SPArmatureDataManager.h"
