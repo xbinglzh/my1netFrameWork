@@ -14,6 +14,7 @@
 USING_NS_CC;
 
 class CCSpriteExt;
+class MouseObject;
 
 class PitObject : public CCNodeRGBA {
     
@@ -23,11 +24,6 @@ public:
     static PitObject* create(int _pitId);
     
 public:
-    void addNodeToContent(CCNode* node);
-    
-    void ariseMouse();
-    void dropMouse();
-    
     bool strikenMouse(CCTouch* pTouch);
     
 protected:
@@ -35,13 +31,13 @@ protected:
     
 private:
     void judgePopMouse(CCObject* pSender);
-    void resetAriseFlag();
     
 private:
     int          _pitId;
     
     CCSpriteExt* _pit;
-    bool         _isArise;
+
+    MouseObject* _mouse;
     
 };
 

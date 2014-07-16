@@ -66,8 +66,11 @@ enum EUIAudioEffectId {
 enum MouseState {
     
     MouseNormal,
+    MouseArise,
+    MouseDealy,
+    MouseDrop,
     MouseStriken,
-    MouseDead
+    MouseDead,
     
 };
 

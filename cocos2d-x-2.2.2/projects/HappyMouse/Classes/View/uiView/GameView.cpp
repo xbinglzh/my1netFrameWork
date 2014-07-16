@@ -85,8 +85,6 @@ void GameView::initPitData() {
     for (int i = 0; i < GameConfig::sharedInstance()->getPitNumCount(); i++) {
         
         PitObject* pit = PitObject::create(i);
-        MouseObject* mouse = MouseObject::create();
-        pit->addNodeToContent(mouse);
         
         _pitNode->addChild(pit, 1, PitBaseTag + i);
         

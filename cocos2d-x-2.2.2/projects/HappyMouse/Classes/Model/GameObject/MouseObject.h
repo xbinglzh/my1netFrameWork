@@ -25,18 +25,27 @@ public:
     ~MouseObject();
     static MouseObject* create();
     
-    MouseState  getCurrentState();
-    void        changeMouseState(MouseState targetState);
+    int     getCurrentState();
+    void    changeMouseState(CCInteger* targetState);
+    bool    strikenMouse(cocos2d::CCTouch *pTouch);
     
 protected:
     bool init();
     
 private:
+    void ariseMouse();
+    void delayMouse();
+    void dropMouse();
+    
+private:
+    CCNode*               _contentNode;
     AnimNode*             _animNode;
     CCSpriteExt*          _sprite;
     CCScale9ProgressBar*  _hpBar;
     
-    MouseState            _curState;
+    int            _curState;
+    bool                  _isArise;
+    
 };
 
 
