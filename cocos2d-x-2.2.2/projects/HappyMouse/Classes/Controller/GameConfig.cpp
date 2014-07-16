@@ -11,6 +11,7 @@
 #include "ConstansDef.h"
 #include "UiUtils.h"
 
+
 static GameConfig * _configSharedInstance=NULL;
 
 GameConfig::GameConfig() :

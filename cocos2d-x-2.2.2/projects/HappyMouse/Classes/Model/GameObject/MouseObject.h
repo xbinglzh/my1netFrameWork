@@ -36,10 +36,11 @@ private:
     void ariseMouse();
     void delayMouse();
     void dropMouse();
+    void dizzyMouse();
     
 private:
     CCNode*               _contentNode;
-    AnimNode*             _animNode;
+    AnimNode*             _dizzyAnim;
     CCSpriteExt*          _sprite;
     CCScale9ProgressBar*  _hpBar;
     

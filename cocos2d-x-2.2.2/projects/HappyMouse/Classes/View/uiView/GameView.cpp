@@ -22,7 +22,7 @@
 #define MouseBaseTag    3000
 
 #define PaddingWidth    80
-#define PaddingHeight   30
+#define PaddingHeight   40
 
 GameView::GameView() : _bg(NULL), _pitNode(NULL), _mouseNode(NULL) {
     

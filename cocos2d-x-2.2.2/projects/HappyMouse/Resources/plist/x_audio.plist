@@ -7,24 +7,24 @@
 		<key>audio</key>
 		<string>950001.mp3</string>
 		<key>desc</key>
-		<string>所有的按钮点击</string>
+		<string>背景音乐</string>
 		<key>id</key>
 		<string>950001</string>
 		<key>name_bak</key>
-		<string>点击</string>
+		<string>背景音乐</string>
 		<key>type</key>
-		<string>1</string>
+		<string>2</string>
 	</dict>
 	<key>950002</key>
 	<dict>
 		<key>audio</key>
 		<string>950002.mp3</string>
 		<key>desc</key>
-		<string>战斗胜利</string>
+		<string>点击</string>
 		<key>id</key>
 		<string>950002</string>
 		<key>name_bak</key>
-		<string>战斗胜利</string>
+		<string>点击</string>
 		<key>type</key>
 		<string>1</string>
 	</dict>

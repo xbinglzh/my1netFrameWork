@@ -1,6 +1,6 @@
 <skeleton frameRate="24" name="912009(&#26197;&#30505;)" version="1.4">
  <armatures>
-  <armature name="x_skill_912009">
+  <armature name="100002#skill">
    <b alpha="60" blue="100" cX="1" cY="1" green="100" kX="0" kY="0" name="&#22270;&#23618; 1" red="100" x="0" y="-113" z="0">
     <d name="x_skill_912009_mc01" />
     <d name="x_skill_912009_mc02" />
@@ -13,7 +13,7 @@
   </armature>
  </armatures>
  <animations>
-  <animation name="x_skill_912009">
+  <animation name="100002#skill">
    <mov dr="14" drTW="14" lp="1" name="happening" to="6" twE="NaN">
     <b dl="0" name="&#22270;&#23618; 1" sc="1">
      <f alpha="60" blue="100" cX="1" cY="1" dI="0" dr="2" green="100" kX="0" kY="0" red="100" x="0" y="-113" z="0" />

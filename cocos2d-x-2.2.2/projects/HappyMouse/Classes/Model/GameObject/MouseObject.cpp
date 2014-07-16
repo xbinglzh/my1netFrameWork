@@ -11,9 +11,10 @@
 #include "CCSpriteExt.h"
 #include "CCScale9ProgressBar.h"
 #include "LayoutUtil.h"
+#include "AudioManager.h"
 
 MouseObject::MouseObject() :
-_animNode(NULL),
+_dizzyAnim(NULL),
 _sprite(NULL),
 _hpBar(NULL) ,
 _curState(MouseNormal),
@@ -43,6 +44,11 @@ bool MouseObject::init() {
     _contentNode = CCNode::create();
     _sprite = CCSpriteExt::create("mouse1.png");
     
+    _dizzyAnim = AnimNode::createFlashAnimNode("100002#skill.png", "100002#skill.plist", "100002#skill.xml",
+                                              "happening", "100002#skill");
+    _dizzyAnim->runAnimation("happening");
+    
+    
     _contentNode->setContentSize(_sprite->getContentSize());
     this->setContentSize(_contentNode->getContentSize());
     
@@ -51,8 +57,8 @@ bool MouseObject::init() {
     CCPoint point[4] = {
         ccp(0,0),
         ccp(_contentNode->getContentSize().width, 0),
-        ccp(_contentNode->getContentSize().width, _contentNode->getContentSize().height),
-        ccp(0, _contentNode->getContentSize().height)
+        ccp(_contentNode->getContentSize().width, _contentNode->getContentSize().height + 50),
+        ccp(0, _contentNode->getContentSize().height + 50)
     };
     
     shap->drawPolygon(point, 4, ccc4f(255, 255, 255, 255), 2, ccc4f(255, 255, 255, 255));
@@ -64,6 +70,10 @@ bool MouseObject::init() {
     
     _contentNode->addChild(_sprite);
     LayoutUtil::layoutParentBottom(_sprite);
+    
+    _contentNode->addChild(_dizzyAnim);
+    LayoutUtil::layoutTop(_dizzyAnim, _sprite, 0, -130);
+    _dizzyAnim->setVisible(false);
     
     cliper->addChild(_contentNode);
     LayoutUtil::layoutParentBottom(_contentNode, 0, -1 * _contentNode->getContentSize().height);
@@ -80,6 +90,8 @@ void MouseObject::changeMouseState(CCInteger* targetState) {
         return;
     }
     
+    CCLOG("changeState : current : %d -> target : %d", _curState, targetState->getValue());
+    
     switch (targetState->getValue()) {
             
         case MouseNormal:
@@ -89,6 +101,7 @@ void MouseObject::changeMouseState(CCInteger* targetState) {
             ariseMouse();
             break;
         case MouseDealy:
+            _dizzyAnim->setVisible(false);
             delayMouse();
             break;
         case MouseDrop:
@@ -98,7 +111,8 @@ void MouseObject::changeMouseState(CCInteger* targetState) {
             
             break;
         case MouseStriken:
-            
+            AudioManager::sharedInstance()->playAudioById(K_AudioEffect_click, false);
+            dizzyMouse();
             break;
     }
     
@@ -131,10 +145,24 @@ void MouseObject::delayMouse() {
 
 void MouseObject::dropMouse() {
     
-    CCMoveBy* ation_moveTo = CCMoveBy::create(0.5f, CCPointMake(0, -1 * _contentNode->getContentSize().height));
-    CCCallFuncO* action_call = CCCallFuncO::create(this, callfuncO_selector(MouseObject::changeMouseState), CCInteger::create(MouseNormal));
+    if (_curState == MouseStriken) {
+        return;
+    }
     
+    CCMoveBy* ation_moveTo = CCMoveBy::create(0.3f, CCPointMake(0, -1 * _contentNode->getContentSize().height));
+    CCCallFuncO* action_call = CCCallFuncO::create(this, callfuncO_selector(MouseObject::changeMouseState), CCInteger::create(MouseNormal));
+        
     _contentNode->runAction(CCSequence::create(ation_moveTo, action_call, NULL));
+    
+}
+
+void MouseObject::dizzyMouse() {
+    _dizzyAnim->setVisible(true);
+    
+    CCDelayTime* action_delay = CCDelayTime::create(1.0f);
+    CCCallFuncO* action_call = CCCallFuncO::create(this, callfuncO_selector(MouseObject::changeMouseState), CCInteger::create(MouseDealy));
+    
+    _contentNode->runAction(CCSequence::create(action_delay, action_call, NULL));
 }
 
 bool MouseObject::strikenMouse(cocos2d::CCTouch *pTouch) {
@@ -153,4 +181,5 @@ bool MouseObject::strikenMouse(cocos2d::CCTouch *pTouch) {
     
     return false;
 }
+
 
