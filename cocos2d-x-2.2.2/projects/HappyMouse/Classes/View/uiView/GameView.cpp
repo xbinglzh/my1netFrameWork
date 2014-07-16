@@ -48,7 +48,7 @@ GameView* GameView::create() {
 
 bool GameView::init() {
     
-    this->setContentSize(CCSizeMake(CCDirector::sharedDirector()->getOpenGLView()->getFrameSize().width, CCDirector::sharedDirector()->getOpenGLView()->getFrameSize().height));
+    this->setContentSize(CCSizeMake(CCDirector::sharedDirector()->getOpenGLView()->getDesignResolutionSize().width, CCDirector::sharedDirector()->getOpenGLView()->getDesignResolutionSize().height));
     this->setAnchorPoint(CCPointZero);
     
     _bg = CCSpriteExt::create("xmap_back_grass.png");

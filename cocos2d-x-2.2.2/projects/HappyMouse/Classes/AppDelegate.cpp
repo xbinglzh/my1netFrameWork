@@ -26,18 +26,18 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     CCDirector *pDirector = CCDirector::sharedDirector();
     CCEGLView *glView = CCEGLView::sharedOpenGLView();
-    
+
     pDirector->setOpenGLView(glView);
     pDirector->setProjection(kCCDirectorProjection2D);
     pDirector->setAnimationInterval(GAME_INTERVAL);
     
     // 计算最接近的屏幕尺寸的设计分辨率
-    const CCSize &screenSize = glView->getFrameSize();
-    const float screenRatio = screenSize.width / screenSize.height;
-    const float offset_960_640 = fabsf(screenRatio - (960.0f / 640.0f));
-    const float offset_1066_640 = fabsf(screenRatio - (1066.0f / 640.0f));
-    const float offset_1138_640 = fabsf(screenRatio - (1138.0f / 640.0f));
-    const float miniOffset = fminf(offset_1138_640, fminf(offset_960_640, offset_1066_640));
+//    const CCSize &screenSize = glView->getFrameSize();
+//    const float screenRatio = screenSize.width / screenSize.height;
+//    const float offset_960_640 = fabsf(screenRatio - (960.0f / 640.0f));
+//    const float offset_1066_640 = fabsf(screenRatio - (1066.0f / 640.0f));
+//    const float offset_1138_640 = fabsf(screenRatio - (1138.0f / 640.0f));
+//    const float miniOffset = fminf(offset_1138_640, fminf(offset_960_640, offset_1066_640));
     
     // 设置资源加载路径
     std::vector<std::string> ccfilePath;
@@ -55,6 +55,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     ccfilePath.push_back("fonts");
     
     CCFileUtils::sharedFileUtils()->setSearchPaths(ccfilePath);
+    
+    glView->setDesignResolutionSize(1138, 640, kResolutionFixedWidth);
+//    pDirector->setContentScaleFactorFromSize();
     
     // 启动游戏
     _launcher.reset(new AppLauncher(boost::bind(&AppDelegate::didFinishedLauchApp, this)));
@@ -109,3 +112,4 @@ void AppDelegate::initAudioManager() {
         audioManager->closedEffectMusic();
     }
 }
+
