@@ -43,3 +43,28 @@ bool MouseObject::init() {
     
     return true;
 }
+
+void MouseObject::changeMouseState(MouseState targetState) {
+    
+    if (_curState == targetState) {
+        return;
+    }
+    
+    switch (targetState) {
+        case MouseNormal:
+            
+            break;
+        case MouseDead:
+            
+            break;
+        case MouseStriken:
+            
+            break;
+    }
+    
+    this->_curState = targetState;
+}
+
+MouseState MouseObject::getCurrentState() {
+    return _curState;
+}

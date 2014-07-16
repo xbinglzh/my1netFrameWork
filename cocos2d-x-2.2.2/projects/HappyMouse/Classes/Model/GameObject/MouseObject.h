@@ -10,6 +10,7 @@
 #define __HappyMouse__MouseObject__
 
 #include "cocos2d.h"
+#include "ConstansDef.h"
 
 USING_NS_CC;
 
@@ -20,18 +21,12 @@ class CCScale9ProgressBar;
 class MouseObject : public CCNodeRGBA {
     
 public:
-    enum MouseState {
-        
-        MouseNormal,
-        MouseStriken,
-        MouseDead
-        
-    };
-    
-public:
     MouseObject();
     ~MouseObject();
     static MouseObject* create();
+    
+    MouseState  getCurrentState();
+    void        changeMouseState(MouseState targetState);
     
 protected:
     bool init();
@@ -40,6 +35,7 @@ private:
     AnimNode*             _animNode;
     CCSpriteExt*          _sprite;
     CCScale9ProgressBar*  _hpBar;
+    
     MouseState            _curState;
 };
 

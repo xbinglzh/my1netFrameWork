@@ -28,7 +28,7 @@ public:
     void ariseMouse();
     void dropMouse();
     
-    bool isHitMouse(CCTouch* pTouch);
+    bool strikenMouse(CCTouch* pTouch);
     
 protected:
     bool init(int _pitId);

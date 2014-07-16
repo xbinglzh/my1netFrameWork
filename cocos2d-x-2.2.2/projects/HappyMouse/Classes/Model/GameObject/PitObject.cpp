@@ -123,13 +123,15 @@ void PitObject::ariseMouse() {
     targetNode->runAction(CCSequence::create(CCSequence::create(ation_moveTo,action_delay,action_call,NULL),NULL));
 }
 
-bool PitObject::isHitMouse(cocos2d::CCTouch *pTouch) {
+bool PitObject::strikenMouse(cocos2d::CCTouch *pTouch) {
     
     CCNode* midNode = this->getChildByTag(MidNodeTag);
     CCPoint pt = midNode->convertToNodeSpace(pTouch->getLocation());
     CCNode* mouse = midNode->getChildByTag(MouseTag);
     
     if (mouse && mouse->boundingBox().containsPoint(pt)) {
+        //TODO: 打中
+        
         return true;
     }
     

@@ -61,4 +61,15 @@ enum EUIAudioEffectId {
     
 };
 
+//状态机状态设置
+
+enum MouseState {
+    
+    MouseNormal,
+    MouseStriken,
+    MouseDead
+    
+};
+
+
 #endif

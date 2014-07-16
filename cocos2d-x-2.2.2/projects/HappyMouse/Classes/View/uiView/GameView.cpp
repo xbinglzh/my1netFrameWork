@@ -117,7 +117,6 @@ void GameView::registerWithTouchDispatcher() {
 
 bool GameView::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent) {
 
-    
     return true;
 }
 
@@ -129,11 +128,7 @@ void GameView::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent) {
     
     for (int i = 0; i< _pitNode->getChildrenCount(); i++) {
         PitObject* pit = (PitObject*)_pitNode->getChildByTag(PitBaseTag + i);
-        
-        if (pit && pit->isHitMouse(pTouch)) {
-            //TODO:打中Mouse
-            
-        }
+        pit->strikenMouse(pTouch);
     }
 }
 
