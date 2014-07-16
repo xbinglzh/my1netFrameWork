@@ -28,12 +28,15 @@ public:
     void ariseMouse();
     void dropMouse();
     
+    bool isHitMouse(CCTouch* pTouch);
+    
 protected:
     bool init(int _pitId);
     
 private:
     void judgePopMouse(CCObject* pSender);
     void resetAriseFlag();
+    
 private:
     int          _pitId;
     

@@ -24,6 +24,7 @@ public:
     static GameView* create();
     virtual bool init();
     
+    virtual void registerWithTouchDispatcher(void);
     virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);

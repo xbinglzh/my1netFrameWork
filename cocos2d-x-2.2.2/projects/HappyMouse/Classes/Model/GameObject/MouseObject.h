@@ -20,7 +20,15 @@ class CCScale9ProgressBar;
 class MouseObject : public CCNodeRGBA {
     
 public:
+    enum MouseState {
+        
+        MouseNormal,
+        MouseStriken,
+        MouseDead
+        
+    };
     
+public:
     MouseObject();
     ~MouseObject();
     static MouseObject* create();
@@ -32,7 +40,7 @@ private:
     AnimNode*             _animNode;
     CCSpriteExt*          _sprite;
     CCScale9ProgressBar*  _hpBar;
-    
+    MouseState            _curState;
 };
 
 

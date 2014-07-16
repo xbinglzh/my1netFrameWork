@@ -12,7 +12,7 @@
 #include "CCScale9ProgressBar.h"
 #include "LayoutUtil.h"
 
-MouseObject::MouseObject() : _animNode(NULL), _sprite(NULL), _hpBar(NULL) {
+MouseObject::MouseObject() : _animNode(NULL), _sprite(NULL), _hpBar(NULL) , _curState(MouseNormal) {
     
 }
 

@@ -332,6 +332,7 @@
 		6094F5701976617400614051 /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5661976617400614051 /* Icon-57.png */; };
 		6094F5711976617400614051 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5671976617400614051 /* Icon-72.png */; };
 		6094F5721976617400614051 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5681976617400614051 /* Icon-76.png */; };
+		6094F57619767A8D00614051 /* x_monster.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6094F57519767A8D00614051 /* x_monster.plist */; };
 		60C3B6E51974CC8300BC4293 /* GameConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B6E31974CC8300BC4293 /* GameConfig.cpp */; };
 		60C3B6FD1974CE5100BC4293 /* libboost_regex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 605A8B0F1974C8DB0086F702 /* libboost_regex.a */; };
 		60C3B7001974CF1E00BC4293 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C3B6FF1974CF1E00BC4293 /* libcurl.a */; };
@@ -1208,6 +1209,7 @@
 		6094F5661976617400614051 /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
 		6094F5671976617400614051 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		6094F5681976617400614051 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		6094F57519767A8D00614051 /* x_monster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = x_monster.plist; path = ../Resources/plist/x_monster.plist; sourceTree = "<group>"; };
 		60C3B6E31974CC8300BC4293 /* GameConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameConfig.cpp; sourceTree = "<group>"; };
 		60C3B6E41974CC8300BC4293 /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		60C3B6FF1974CF1E00BC4293 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
@@ -1876,6 +1878,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				6094F57519767A8D00614051 /* x_monster.plist */,
 				605A8AE21974C8DA0086F702 /* xcode-boost.xcodeproj */,
 				15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */,
 				15A3D8871682F7D5002FB0C5 /* Box2D */,
@@ -3102,6 +3105,7 @@
 				605A8AC91974C51A0086F702 /* tinyxml.suo in Resources */,
 				6094F56B1976617400614051 /* Default@2x.png in Resources */,
 				6094F56D1976617400614051 /* Icon-120.png in Resources */,
+				6094F57619767A8D00614051 /* x_monster.plist in Resources */,
 				6094F5691976617400614051 /* Default-568h@2x.png in Resources */,
 				60C3B7351974EA7700BC4293 /* map in Resources */,
 				60C3B7341974EA7700BC4293 /* audio in Resources */,
