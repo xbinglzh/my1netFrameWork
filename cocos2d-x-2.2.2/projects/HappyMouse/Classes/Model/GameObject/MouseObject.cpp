@@ -17,7 +17,8 @@ _animNode(NULL),
 _sprite(NULL),
 _hpBar(NULL) ,
 _curState(MouseNormal),
-_contentNode(NULL) {
+_contentNode(NULL),
+_hp(100) {
     
 }
 
@@ -110,6 +111,10 @@ int MouseObject::getCurrentState() {
 
 void MouseObject::ariseMouse() {
     
+    if (_curState != MouseNormal) {
+        return;
+    }
+    
     CCMoveBy* ation_moveTo = CCMoveBy::create(0.3f, CCPointMake(0, _contentNode->getContentSize().height));
     CCCallFuncO* action_call = CCCallFuncO::create(this, callfuncO_selector(MouseObject::changeMouseState), CCInteger::create(MouseDealy));
     
@@ -118,6 +123,7 @@ void MouseObject::ariseMouse() {
 }
 
 void MouseObject::delayMouse() {
+    
     CCDelayTime* action_delay = CCDelayTime::create(0.5f);
     CCCallFuncO* action_call = CCCallFuncO::create(this, callfuncO_selector(MouseObject::changeMouseState), CCInteger::create(MouseDrop));
     _contentNode->runAction(CCSequence::create(action_delay, action_call, NULL));

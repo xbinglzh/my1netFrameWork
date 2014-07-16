@@ -44,7 +44,7 @@ private:
     CCScale9ProgressBar*  _hpBar;
     
     int            _curState;
-    bool                  _isArise;
+    int            _hp;
     
 };
 
