@@ -788,10 +788,10 @@ void GameUtils::changeOpacity(CCNode* node,GLubyte opacity){
 
 float GameUtils::UiInterfaceScale() {
     float scale = 1.0f;
-    if(CCApplication::sharedApplication()->isIpad()) {
-        if( CC_CONTENT_SCALE_FACTOR() == 1 ) {
-            scale = 2.0f;
-        }
-    }
+//    if(CCApplication::sharedApplication()->isIpad()) {
+//        if( CC_CONTENT_SCALE_FACTOR() == 1 ) {
+//            scale = 2.0f;
+//        }
+//    }
     return scale;
 }
