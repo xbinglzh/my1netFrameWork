@@ -14,6 +14,9 @@
 
 USING_NS_CC;
 
+class State;
+class StateMachine;
+
 class AnimNode;
 class CCSpriteExt;
 class CCScale9ProgressBar;
@@ -43,6 +46,7 @@ private:
     AnimNode*             _dizzyAnim;
     CCSpriteExt*          _sprite;
     CCScale9ProgressBar*  _hpBar;
+    StateMachine*         _stateMachine;
     
     int            _curState;
     int            _hp;

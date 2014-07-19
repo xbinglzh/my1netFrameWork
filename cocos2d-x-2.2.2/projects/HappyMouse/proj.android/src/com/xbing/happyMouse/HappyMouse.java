@@ -43,6 +43,6 @@ public class HappyMouse extends Cocos2dxActivity{
     }
 
     static {
-        System.loadLibrary("cocos2dcpp");
+        System.loadLibrary("happymouse");
     }     
 }

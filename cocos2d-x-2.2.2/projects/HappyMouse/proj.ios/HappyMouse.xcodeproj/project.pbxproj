@@ -323,6 +323,8 @@
 		60C3B78219751F7100BC4293 /* GameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B78019751F7100BC4293 /* GameController.cpp */; };
 		60C3B786197529B100BC4293 /* AudioManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B784197529B100BC4293 /* AudioManager.cpp */; };
 		60C3B78A197533C200BC4293 /* ResourceLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B788197533C200BC4293 /* ResourceLoader.cpp */; };
+		60DE689B197A9D8400038A9F /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DE6899197A9D8400038A9F /* StateMachine.cpp */; };
+		60DE68A3197AB45900038A9F /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DE68A1197AB45900038A9F /* GameObject.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -1158,6 +1160,12 @@
 		60C3B785197529B100BC4293 /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
 		60C3B788197533C200BC4293 /* ResourceLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceLoader.cpp; sourceTree = "<group>"; };
 		60C3B789197533C200BC4293 /* ResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceLoader.h; sourceTree = "<group>"; };
+		60DE6897197A9D1100038A9F /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		60DE6899197A9D8400038A9F /* StateMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateMachine.cpp; sourceTree = "<group>"; };
+		60DE689A197A9D8400038A9F /* StateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachine.h; sourceTree = "<group>"; };
+		60DE689D197A9E8C00038A9F /* StateDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateDef.h; sourceTree = "<group>"; };
+		60DE68A1197AB45900038A9F /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		60DE68A2197AB45900038A9F /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -2166,6 +2174,7 @@
 		605A89751974C5190086F702 /* Def */ = {
 			isa = PBXGroup;
 			children = (
+				60DE689D197A9E8C00038A9F /* StateDef.h */,
 				605A8B241974CA4A0086F702 /* ConstansDef.h */,
 				605A8B251974CA4A0086F702 /* FontStylesDef.h */,
 				605A8B261974CA4A0086F702 /* KeyConfigDef.h */,
@@ -2559,6 +2568,7 @@
 		605A8A6C1974C51A0086F702 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				60DE6880197A9CFF00038A9F /* GameState */,
 				60C3B7701975167800BC4293 /* GameObject */,
 			);
 			name = Model;
@@ -2669,6 +2679,8 @@
 		60C3B7701975167800BC4293 /* GameObject */ = {
 			isa = PBXGroup;
 			children = (
+				60DE68A1197AB45900038A9F /* GameObject.cpp */,
+				60DE68A2197AB45900038A9F /* GameObject.h */,
 				60C3B777197516AC00BC4293 /* MouseObject.cpp */,
 				60C3B778197516AC00BC4293 /* MouseObject.h */,
 				60C3B779197516AC00BC4293 /* PitObject.cpp */,
@@ -2693,6 +2705,16 @@
 				60C3B789197533C200BC4293 /* ResourceLoader.h */,
 			);
 			path = ResourceExt;
+			sourceTree = "<group>";
+		};
+		60DE6880197A9CFF00038A9F /* GameState */ = {
+			isa = PBXGroup;
+			children = (
+				60DE6897197A9D1100038A9F /* State.h */,
+				60DE6899197A9D8400038A9F /* StateMachine.cpp */,
+				60DE689A197A9D8400038A9F /* StateMachine.h */,
+			);
+			path = GameState;
 			sourceTree = "<group>";
 		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
@@ -2968,6 +2990,7 @@
 				15A3D8FF1682F7D5002FB0C5 /* b2BroadPhase.cpp in Sources */,
 				15A3D9001682F7D5002FB0C5 /* b2CollideCircle.cpp in Sources */,
 				15A3D9011682F7D5002FB0C5 /* b2CollideEdge.cpp in Sources */,
+				60DE689B197A9D8400038A9F /* StateMachine.cpp in Sources */,
 				15A3D9021682F7D5002FB0C5 /* b2CollidePolygon.cpp in Sources */,
 				15A3D9031682F7D5002FB0C5 /* b2Collision.cpp in Sources */,
 				605A8A941974C51A0086F702 /* SPSpriteDisplayData.cpp in Sources */,
@@ -3103,6 +3126,7 @@
 				15A3DA431682F826002FB0C5 /* CCNodeLoader.cpp in Sources */,
 				15A3DA441682F826002FB0C5 /* CCNodeLoaderLibrary.cpp in Sources */,
 				15A3DA451682F826002FB0C5 /* CCParticleSystemQuadLoader.cpp in Sources */,
+				60DE68A3197AB45900038A9F /* GameObject.cpp in Sources */,
 				605A8AB31974C51A0086F702 /* SPContentJsonDictionary.cpp in Sources */,
 				15A3DA461682F826002FB0C5 /* CCScale9SpriteLoader.cpp in Sources */,
 				15A3DA471682F826002FB0C5 /* CCScrollViewLoader.cpp in Sources */,

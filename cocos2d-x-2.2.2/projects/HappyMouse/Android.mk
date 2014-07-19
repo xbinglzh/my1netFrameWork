@@ -4,6 +4,10 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
+LOCAL_CPPFLAGS += -fexceptions
+
+LOCAL_CPPFLAGS += -DCRYPTOPP_DISABLE_ASM -DCRYPTOPP_DISABLE_SSE2 -DCRYPTOPP_ENABLE_NAMESPACE_WEAK=1
+
 LOCAL_MODULE := cocos_happymouse_common
 
 LOCAL_MODULE_FILENAME := libhappymousecommon
