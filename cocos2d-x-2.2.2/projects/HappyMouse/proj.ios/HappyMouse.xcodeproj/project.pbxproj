@@ -327,6 +327,7 @@
 		60E61CDA197E09CF0097963B /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E61CD8197E09CF0097963B /* GameState.cpp */; };
 		60E61CF2197E0B990097963B /* GameEventParams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E61CF0197E0B990097963B /* GameEventParams.cpp */; };
 		60E61CF9197E0C6A0097963B /* MovingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E61CF7197E0C6A0097963B /* MovingState.cpp */; };
+		60E61D02197E6D6E0097963B /* AnimUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E61D00197E6D6E0097963B /* AnimUtils.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -1174,6 +1175,8 @@
 		60E61CF7197E0C6A0097963B /* MovingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovingState.cpp; sourceTree = "<group>"; };
 		60E61CF8197E0C6A0097963B /* MovingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingState.h; sourceTree = "<group>"; };
 		60E61CFC197E0DB50097963B /* GameEventDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameEventDef.h; sourceTree = "<group>"; };
+		60E61D00197E6D6E0097963B /* AnimUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimUtils.cpp; sourceTree = "<group>"; };
+		60E61D01197E6D6E0097963B /* AnimUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimUtils.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -2454,19 +2457,21 @@
 		605A8A2E1974C51A0086F702 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				605A8A311974C51A0086F702 /* GameUtils.cpp */,
-				605A8A321974C51A0086F702 /* GameUtils.h */,
-				605A8A331974C51A0086F702 /* HMD5.cpp */,
-				605A8A341974C51A0086F702 /* HMD5.h */,
 				605A8A351974C51A0086F702 /* layout */,
 				605A8A381974C51A0086F702 /* Particles */,
 				605A8A3D1974C51A0086F702 /* rapidjson */,
 				605A8A4E1974C51A0086F702 /* resourse */,
 				605A8A511974C51A0086F702 /* shader */,
 				605A8A581974C51A0086F702 /* tinyxml */,
+				605A8A621974C51A0086F702 /* widget */,
 				605A8A601974C51A0086F702 /* UiUtils.cpp */,
 				605A8A611974C51A0086F702 /* UiUtils.h */,
-				605A8A621974C51A0086F702 /* widget */,
+				60E61D00197E6D6E0097963B /* AnimUtils.cpp */,
+				60E61D01197E6D6E0097963B /* AnimUtils.h */,
+				605A8A311974C51A0086F702 /* GameUtils.cpp */,
+				605A8A321974C51A0086F702 /* GameUtils.h */,
+				605A8A331974C51A0086F702 /* HMD5.cpp */,
+				605A8A341974C51A0086F702 /* HMD5.h */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -3257,6 +3262,7 @@
 				605A8AA61974C51A0086F702 /* SPSpriteDisplayFactory.cpp in Sources */,
 				379BB9A917F03F3700829B88 /* CCSpriteFrameCacheHelper.cpp in Sources */,
 				605A8ACD1974C51A0086F702 /* CCLabelTTFStroke.cpp in Sources */,
+				60E61D02197E6D6E0097963B /* AnimUtils.cpp in Sources */,
 				379BB9AA17F03F3700829B88 /* CCTransformHelp.cpp in Sources */,
 				379BB9AB17F03F3700829B88 /* CCTweenFunction.cpp in Sources */,
 				60E61CF9197E0C6A0097963B /* MovingState.cpp in Sources */,

@@ -51,9 +51,9 @@ class AnimNode : public cocos2d::CCNodeRGBA, public AnimNodeDelegate, public Ani
 
 public:
     enum EAnimNodeTypeId {
-		K_SPRITE_FILE  	  =0,//sprite
-        K_ARMATURE_FRAME  =1,//Armature spriteframe
-        K_SPRITE_FRAME    =2,//spriteframe
+		K_SPRITE_FILE  	  = 1,//sprite
+        K_ARMATURE_FRAME  = 2,//Armature spriteframe
+        K_SPRITE_FRAME    = 3,//spriteframe
 	};
     
 public:

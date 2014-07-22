@@ -1,0 +1,263 @@
+<skeleton frameRate="24" name="song_tian_er" version="1.4">
+ <armatures>
+  <armature name="xx_m_204201d">
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="-0.74" kY="-0.74" name="song_tian_tian_MC_15" red="100" x="-6.95" y="-25.8" z="0">
+    <d name="song_tian_er_MC-song_tian_er_MC_15" />
+   </b>
+   <b alpha="100" blue="100" cX="0.66" cY="0.62" green="100" kX="-1.91" kY="-0.01" name="song_tian_tian_MC_17" red="100" x="-7.4" y="-14.4" z="1">
+    <d name="song_tian_er_MC-song_tian_er_MC_17" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="71.93" kY="66.74" name="song_tian_tian_MC_19" red="100" x="-3.2" y="-7.25" z="2">
+    <d name="song_tian_er_MC-song_tian_er_MC_19" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="0" kY="0" name="song_tian_tian_MC_09" red="100" x="-0.55" y="-40.2" z="3">
+    <d name="song_tian_er_MC-song_tian_er_MC_09" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="0" kY="0" name="song_tian_tian_MC_08" red="100" x="-20.95" y="-40.2" z="4">
+    <d name="song_tian_er_MC-song_tian_er_MC_08" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="-29.5" kY="-29.5" name="song_tian_tian_MC_11" red="100" x="-15.2" y="-34.85" z="5">
+    <d name="song_tian_er_MC-song_tian_er_MC_11" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="-23.92" kY="-23.92" name="song_tian_tian_MC_150" red="100" x="-2.75" y="-23.75" z="6">
+    <d name="song_tian_er_MC-song_tian_er_MC_15" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="-29.85" kY="-34.69" name="song_tian_tian_MC_170" red="100" x="1.55" y="-12.5" z="7">
+    <d name="song_tian_er_MC-song_tian_er_MC_17" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="-13.98" kY="-13.98" name="song_tian_tian_MC_18" red="100" x="2.55" y="-5.35" z="8">
+    <d name="song_tian_er_MC-song_tian_er_MC_18" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="15.15" kY="10.44" name="song_tian_tian_MC_12" red="100" x="5.4" y="-41.05" z="9">
+    <d name="song_tian_er_MC-song_tian_er_MC_12" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="0" kY="0" name="song_tian_tian_MC_07" red="100" x="-8.85" y="-42.5" z="10">
+    <d name="song_tian_er_MC-song_tian_er_MC_07" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="0" kY="0" name="song_tian_tian_MC_00" red="100" x="-31.4" y="-74.6" z="11">
+    <d name="song_tian_er_MC-song_tian_er_MC_00" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="0" kY="0" name="song_tian_tian_MC_01" red="100" x="-23.7" y="-66.5" z="12">
+    <d name="song_tian_er_MC-song_tian_er_MC_01" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="0" kY="0" name="song_tian_tian_MC_05" red="100" x="20.15" y="-79.75" z="13">
+    <d name="song_tian_er_MC-song_tian_er_MC_05" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="0" kY="0" name="song_tian_tian_MC_02" red="100" x="-27.95" y="-97.3" z="14">
+    <d name="song_tian_er_MC-song_tian_er_MC_02" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="0" kY="0" name="song_tian_tian_MC_03" red="100" x="12.15" y="-62.35" z="15">
+    <d name="song_tian_er_MC-song_tian_er_MC_03" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="0" kY="0" name="song_tian_tian_MC_04" red="100" x="15.55" y="-83.3" z="16">
+    <d name="song_tian_er_MC-song_tian_er_MC_04" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="0" kY="0" name="song_tian_tian_MC_06" red="100" x="-4.25" y="-97.55" z="17">
+    <d name="song_tian_er_MC-song_tian_er_MC_06" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="-82.77" kY="-82.77" name="song_tian_tian_MC_14" red="100" x="7.25" y="-21.85" z="18">
+    <d name="song_tian_er_MC-song_tian_er_MC_14" />
+   </b>
+   <b alpha="100" blue="100" cX="0.68" cY="0.68" green="100" kX="55.2" kY="53.48" name="song_tian_tian_MC_13" red="100" x="8.85" y="-32.85" z="19">
+    <d name="song_tian_er_MC-song_tian_er_MC_13" />
+   </b>
+   <b alpha="100" blue="100" cX="1" cY="1" green="100" kX="0" kY="0" name="&#22270;&#23618; 3" red="100" x="-43.2" y="-59.05" z="0">
+    <d name="song_tian_er_MC-song_tian_er_MC_22" />
+   </b>
+   <b alpha="100" blue="51" cX="1" cY="1" green="51" kX="0" kY="0" name="&#22270;&#23618; 4" red="51" x="-34.85" y="-95.5" z="0">
+    <d name="song_tian_er_MC-song_tian_er_MC_23" />
+   </b>
+   <b alpha="100" blue="100" cX="1" cY="1" green="100" kX="0" kY="0" name="&#22270;&#23618; 2" red="100" x="-31.4" y="-97.55" z="0">
+    <d name="song_tian_er_MC-song_tian_er_MC_30" />
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="xx_m_204201d">
+   <mov dr="24" drTW="24" lp="1" name="walk" to="6" twE="NaN">
+    <b dl="0" name="song_tian_tian_MC_15" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="-0.74" kY="-0.74" red="100" twE="0" x="-6.95" y="-25.8" z="0" />
+     <f alpha="100" blue="100" cX="0.67" cY="0.68" dI="0" dr="6" green="100" kX="-8.86" kY="-0.74" red="100" twE="0" x="-8.4" y="-25.95" z="0" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-34.76" kY="-29.21" red="100" twE="0" x="-10.8" y="-22.75" z="0" />
+     <f alpha="100" blue="100" cX="0.67" cY="0.68" dI="0" dr="6" green="100" kX="6.44" kY="14.56" red="100" twE="0" x="-6.1" y="-27.55" z="0" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="-0.74" kY="-0.74" red="100" twE="0" x="-6.95" y="-25.8" z="0" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_17" sc="1">
+     <f alpha="100" blue="100" cX="0.66" cY="0.62" dI="0" dr="5" green="100" kX="-1.91" kY="-0.01" red="100" twE="0" x="-7.4" y="-14.4" z="1" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.63" dI="0" dr="4" green="100" kX="-10.4" kY="-0.01" red="100" twE="0" x="-7.2" y="-14.15" z="1" />
+     <f alpha="100" blue="100" cX="0.67" cY="0.61" dI="0" dr="2" green="100" kX="-29.83" kY="-19.3" red="100" twE="0" x="-5.55" y="-13.3" z="1" />
+     <f alpha="100" blue="100" cX="0.67" cY="0.6" dI="0" dr="6" green="100" kX="-39.6" kY="-29.03" red="100" twE="0" x="-4.5" y="-12.7" z="1" />
+     <f alpha="100" blue="100" cX="0.67" cY="0.56" dI="0" dr="6" green="100" kX="-56.07" kY="-47.19" red="100" twE="0" x="-6.8" y="-12.05" z="1" />
+     <f alpha="100" blue="100" cX="0.66" cY="0.62" dI="0" dr="1" green="100" kX="-1.91" kY="-0.01" red="100" twE="0" x="-7.4" y="-14.4" z="1" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_19" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="71.93" kY="66.74" red="100" twE="0" x="-3.2" y="-7.25" z="2" />
+     <f alpha="100" blue="100" cX="0.71" cY="0.65" dI="0" dr="4" green="100" kX="71.11" kY="62.5" red="100" twE="0" x="-1.95" y="-6.95" z="2" />
+     <f alpha="100" blue="100" cX="0.69" cY="0.67" dI="0" dr="2" green="100" kX="72.05" kY="67.64" red="100" twE="0" x="3.25" y="-7.2" z="2" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="53.76" kY="53.76" red="100" twE="0" x="4.1" y="-8.95" z="2" />
+     <f alpha="100" blue="100" cX="0.72" cY="0.65" dI="0" dr="6" green="100" kX="21.42" kY="10.5" red="100" twE="0" x="1.1" y="-11.4" z="2" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="71.93" kY="66.74" red="100" twE="0" x="-3.2" y="-7.25" z="2" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_09" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="0" kY="0" red="100" twE="0" x="-0.55" y="-40.2" z="3" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-4.24" kY="-4.24" red="100" twE="0" x="-0.55" y="-40.85" z="3" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-0.55" y="-40.2" z="3" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-4.24" kY="-4.24" red="100" twE="0" x="-0.55" y="-40.85" z="3" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="-0.55" y="-40.2" z="3" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_08" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="0" kY="0" red="100" twE="0" x="-20.95" y="-40.2" z="4" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="3.28" kY="3.28" red="100" twE="0" x="-20.85" y="-42.05" z="4" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-20.95" y="-40.2" z="4" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="3.28" kY="3.28" red="100" twE="0" x="-20.85" y="-42.05" z="4" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="-20.95" y="-40.2" z="4" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_11" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="-29.5" kY="-29.5" red="100" twE="0" x="-15.2" y="-34.85" z="5" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-19.29" kY="-19.29" red="100" twE="0" x="-16.15" y="-37.5" z="5" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-16" y="-40.3" z="5" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-19.29" kY="-19.29" red="100" twE="0" x="-16.15" y="-37.5" z="5" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="-29.5" kY="-29.5" red="100" twE="0" x="-15.2" y="-34.85" z="5" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_150" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="-23.92" kY="-23.92" red="100" twE="0" x="-2.75" y="-23.75" z="6" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="14.79" kY="14.79" red="100" twE="0" x="1.1" y="-27.2" z="6" />
+     <f alpha="100" blue="100" cX="0.69" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="0.55" y="-26.8" z="6" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-6.4" kY="0" red="100" twE="0" x="-0.15" y="-26.8" z="6" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="-23.92" kY="-23.92" red="100" twE="0" x="-2.75" y="-23.75" z="6" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_170" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="-29.85" kY="-34.69" red="100" twE="0" x="1.55" y="-12.5" z="7" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-49.85" kY="-54.69" red="100" twE="0" x="-1.95" y="-12.6" z="7" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-0.1" y="-15.1" z="7" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-6.4" kY="0" red="100" twE="0" x="0.55" y="-15.1" z="7" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="-29.85" kY="-34.69" red="100" twE="0" x="1.55" y="-12.5" z="7" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_18" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="-13.98" kY="-13.98" red="100" twE="0" x="2.55" y="-5.35" z="8" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-38.95" kY="-38.95" red="100" twE="0" x="0.5" y="-6.9" z="8" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-3.5" y="-6.15" z="8" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-1.75" y="-6.25" z="8" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="-13.98" kY="-13.98" red="100" twE="0" x="2.55" y="-5.35" z="8" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_12" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="15.15" kY="10.44" red="100" twE="0" x="5.4" y="-41.05" z="9" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="8.2" kY="8.2" red="100" twE="0" x="5.35" y="-41.65" z="9" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="5.05" y="-40.9" z="9" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="8.2" kY="8.2" red="100" twE="0" x="5.35" y="-41.65" z="9" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="15.15" kY="10.44" red="100" twE="0" x="5.4" y="-41.05" z="9" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_07" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="0" kY="0" red="100" twE="0" x="-8.85" y="-42.5" z="10" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-8.85" y="-43.15" z="10" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-8.85" y="-42.5" z="10" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-8.85" y="-43.15" z="10" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="-8.85" y="-42.5" z="10" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_00" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="0" kY="0" red="100" twE="0" x="-31.4" y="-74.6" z="11" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-4.48" kY="-4.48" red="100" twE="0" x="-31.35" y="-74.2" z="11" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-31.4" y="-74.6" z="11" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-4.48" kY="-4.48" red="100" twE="0" x="-31.35" y="-74.2" z="11" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="-31.4" y="-74.6" z="11" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_01" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="0" kY="0" red="100" twE="0" x="-23.7" y="-66.5" z="12" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-1.54" kY="0" red="100" twE="0" x="-23.7" y="-67.15" z="12" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-23.7" y="-66.5" z="12" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-1.54" kY="0" red="100" twE="0" x="-23.7" y="-67.15" z="12" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="-23.7" y="-66.5" z="12" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_05" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="0" kY="0" red="100" twE="0" x="20.15" y="-79.75" z="13" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="2.97" kY="2.97" red="100" twE="0" x="20.15" y="-80.4" z="13" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="20.15" y="-79.75" z="13" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="2.97" kY="2.97" red="100" twE="0" x="20.15" y="-80.4" z="13" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="20.15" y="-79.75" z="13" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_02" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="0" kY="0" red="100" twE="0" x="-27.95" y="-97.3" z="14" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-27.95" y="-97.95" z="14" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-27.95" y="-97.3" z="14" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-27.95" y="-97.95" z="14" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="-27.95" y="-97.3" z="14" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_03" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="0" kY="0" red="100" twE="0" x="12.15" y="-62.35" z="15" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="2.1" kY="0" red="100" twE="0" x="12.15" y="-63.05" z="15" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="12.15" y="-62.35" z="15" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="2.1" kY="0" red="100" twE="0" x="12.15" y="-63.05" z="15" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="12.15" y="-62.35" z="15" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_04" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="0" kY="0" red="100" twE="0" x="15.55" y="-83.3" z="16" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="15.55" y="-83.95" z="16" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="15.55" y="-83.3" z="16" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="15.55" y="-83.95" z="16" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="15.55" y="-83.3" z="16" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_06" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="0" kY="0" red="100" twE="0" x="-4.25" y="-97.55" z="17" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-4.25" y="-97.55" z="17" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-4.25" y="-97.55" z="17" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="-4.25" y="-97.55" z="17" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="0" kY="0" red="100" twE="0" x="-4.25" y="-97.55" z="17" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_14" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="-82.77" kY="-82.77" red="100" twE="0" x="7.25" y="-21.85" z="18" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-101.49" kY="-101.49" red="100" twE="0" x="11.55" y="-22.5" z="18" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-109.81" kY="-109.81" red="100" twE="0" x="16.9" y="-24.5" z="18" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="-101.49" kY="-101.49" red="100" twE="0" x="11.55" y="-22.5" z="18" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="-82.77" kY="-82.77" red="100" twE="0" x="7.25" y="-21.85" z="18" />
+    </b>
+    <b dl="0" name="song_tian_tian_MC_13" sc="1">
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="5" green="100" kX="55.2" kY="53.48" red="100" twE="0" x="8.85" y="-32.85" z="19" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="36.48" kY="34.76" red="100" twE="0" x="9.6" y="-33.35" z="19" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="0" kY="0" red="100" twE="0" x="9.6" y="-32.15" z="19" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="6" green="100" kX="36.48" kY="34.76" red="100" twE="0" x="9.6" y="-33.35" z="19" />
+     <f alpha="100" blue="100" cX="0.68" cY="0.68" dI="0" dr="1" green="100" kX="55.2" kY="53.48" red="100" twE="0" x="8.85" y="-32.85" z="19" />
+    </b>
+   </mov>
+   <mov dr="17" drTW="17" lp="0" name="die" to="6" twE="NaN">
+    <b dl="0" name="&#22270;&#23618; 3" sc="1">
+     <f alpha="100" blue="100" cX="1" cY="1" dI="0" dr="1" green="100" kX="0" kY="0" red="100" x="-43.2" y="-59.05" z="0" />
+     <f alpha="100" blue="100" cX="1" cY="1" dI="0" dr="15" green="100" kX="0" kY="0" red="100" twE="0" x="-43.2" y="-59.05" z="0" />
+     <f alpha="0" blue="100" cX="1" cY="1" dI="0" dr="1" green="100" kX="0" kY="0" red="100" x="-43.2" y="-59.05" z="0" />
+    </b>
+   </mov>
+   <mov dr="4" drTW="4" lp="0" name="injured" to="6" twE="NaN">
+    <b dl="0" name="&#22270;&#23618; 4" sc="1">
+     <f alpha="100" blue="51" cX="1" cY="1" dI="0" dr="4" green="51" kX="0" kY="0" red="51" x="-34.85" y="-95.5" z="0" />
+    </b>
+   </mov>
+   <mov dr="2" drTW="10" lp="1" name="normal" to="6" twE="2">
+    <b dl="0" name="&#22270;&#23618; 2" sc="1">
+     <f alpha="100" blue="100" cX="1" cY="1" dI="0" dr="2" green="100" kX="0" kY="0" red="100" x="-31.4" y="-97.55" z="0" />
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas height="256" name="song_tian_er" width="256">
+  <SubTexture height="98" name="song_tian_er_MC-song_tian_er_MC_30" pX="0" pY="0" width="68" x="74" y="0" />
+  <SubTexture height="96" name="song_tian_er_MC-song_tian_er_MC_23" pX="0.45" pY="0.45" width="72" x="0" y="0" />
+  <SubTexture height="70" name="song_tian_er_MC-song_tian_er_MC_22" pX="0.45" pY="0.45" width="87" x="144" y="0" />
+  <SubTexture height="16" name="song_tian_er_MC-song_tian_er_MC_13" pX="0" pY="0" width="14" x="0" y="143" />
+  <SubTexture height="38" name="song_tian_er_MC-song_tian_er_MC_14" pX="0" pY="0" width="28" x="102" y="100" />
+  <SubTexture height="16" name="song_tian_er_MC-song_tian_er_MC_06" pX="0" pY="0" width="14" x="16" y="143" />
+  <SubTexture height="30" name="song_tian_er_MC-song_tian_er_MC_04" pX="0" pY="0" width="19" x="118" y="140" />
+  <SubTexture height="44" name="song_tian_er_MC-song_tian_er_MC_03" pX="0" pY="0" width="14" x="102" y="140" />
+  <SubTexture height="73" name="song_tian_er_MC-song_tian_er_MC_02" pX="0" pY="-14.2" width="79" x="144" y="72" />
+  <SubTexture height="42" name="song_tian_er_MC-song_tian_er_MC_05" pX="0" pY="0" width="25" x="42" y="98" />
+  <SubTexture height="52" name="song_tian_er_MC-song_tian_er_MC_01" pX="0" pY="0" width="15" x="233" y="0" />
+  <SubTexture height="41" name="song_tian_er_MC-song_tian_er_MC_00" pX="0" pY="0" width="21" x="233" y="54" />
+  <SubTexture height="43" name="song_tian_er_MC-song_tian_er_MC_07" pX="0" pY="0" width="27" x="225" y="97" />
+  <SubTexture height="18" name="song_tian_er_MC-song_tian_er_MC_12" pX="0" pY="0" width="14" x="240" y="142" />
+  <SubTexture height="10" name="song_tian_er_MC-song_tian_er_MC_18" pX="0" pY="0" width="11" x="154" y="147" />
+  <SubTexture height="29" name="song_tian_er_MC-song_tian_er_MC_11" pX="0" pY="0" width="19" x="42" y="142" />
+  <SubTexture height="49" name="song_tian_er_MC-song_tian_er_MC_08" pX="0" pY="0" width="31" x="69" y="100" />
+  <SubTexture height="43" name="song_tian_er_MC-song_tian_er_MC_09" pX="0" pY="0" width="40" x="0" y="98" />
+  <SubTexture height="14" name="song_tian_er_MC-song_tian_er_MC_19" pX="2.7" pY="0" width="13" x="139" y="147" />
+  <SubTexture height="15" name="song_tian_er_MC-song_tian_er_MC_17" pX="0.45" pY="0" width="9" x="132" y="100" />
+  <SubTexture height="22" name="song_tian_er_MC-song_tian_er_MC_15" pX="-0.1" pY="0" width="13" x="225" y="142" />
+ </TextureAtlas>
+</skeleton>

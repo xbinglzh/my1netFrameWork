@@ -122,9 +122,9 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
                 node->addChild(_animNode);
                 
                 CCString * sizeVal = (CCString *)tmpDict->objectForKey(KKeySize);
+                
                 if (_animNode && sizeVal) {
                     CCSize size  = GameUtils::string2Size(sizeVal->m_sString);
-//                    _animNode->setMaxContentSize(CCSizeMake(size.width, size.height));
                     _animNode->setContentSize(CCSizeMake(size.width, size.height));
                 }
                 

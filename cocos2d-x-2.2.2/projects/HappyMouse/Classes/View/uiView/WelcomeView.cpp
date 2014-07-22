@@ -9,7 +9,7 @@
 #include "WelcomeView.h"
 #include "AnimNode.h"
 #include "LayoutUtil.h"
-
+#include "AnimUtils.h"
 
 WelcomeView::WelcomeView() {
     
@@ -32,10 +32,12 @@ void WelcomeView::onEnterTransitionDidFinish() {
 
 bool WelcomeView::initWithCustom() {
     
-    AnimNode* hero = AnimNode::createFlashAnimNode( "xx_monster_1001.png", "xx_monster_1001.plist", "xx_monster_1001.xml",
-                                                   "walk", "xx_monster_1001");
+//    AnimNode* hero = AnimNode::createFlashAnimNode( "xx_monster_1001.png", "xx_monster_1001.plist", "xx_monster_1001.xml",
+//                                                   "walk", "xx_monster_1001");
+    
+    AnimNode* hero = AnimUtils::createAnimById("204201#display");
     hero->runAnimation("walk");
-    hero->setContentSize(CCSizeMake(139, 264));
+//    hero->setContentSize(CCSizeMake(139, 264));
     this->addChild(hero,1000);
     
     LayoutUtil::layoutParentCenter(hero);

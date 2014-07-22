@@ -76,5 +76,42 @@
 		<key>type</key>
 		<string>1</string>
 	</dict>
+	<key>204201#display</key>
+	<dict>
+		<key>atk_pos</key>
+		<string>0,40</string>
+		<key>be_atk_pos</key>
+		<string>0,40</string>
+		<key>center_pos</key>
+		<string>0,40</string>
+		<key>default</key>
+		<string>normal</string>
+		<key>desc</key>
+		<string>monsterxx_m_204201d.xml</string>
+		<key>file</key>
+		<string>xx_m_204201d.xml</string>
+		<key>flipx</key>
+		<string>1</string>
+		<key>hp_bar_pos</key>
+		<string>0,100</string>
+		<key>id</key>
+		<string>204201#display</string>
+		<key>image_plist</key>
+		<string>xx_m_204201d.plist</string>
+		<key>image_texture</key>
+		<string>xx_m_204201d.png</string>
+		<key>maskfile</key>
+		<string>0</string>
+		<key>position_offset</key>
+		<string>0,-10</string>
+		<key>scale</key>
+		<string>1</string>
+		<key>size</key>
+		<string>20,60</string>
+		<key>skeleton</key>
+		<string>xx_m_204201d</string>
+		<key>type</key>
+		<string>2</string>
+	</dict>
 </dict>
 </plist>
