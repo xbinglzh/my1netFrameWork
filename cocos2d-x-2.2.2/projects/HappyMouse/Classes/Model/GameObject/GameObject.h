@@ -14,10 +14,13 @@
 #include "State.h"
 #include "StateMachine.h"
 #include "AnimNode.h"
+#include "GameEventParams.h"
+#include <boost/function.hpp>
+#include <boost/variant.hpp>
 
 USING_NS_CC;
 
-class GameObject : public CCNodeRGBA {
+class GameObject : public CCNodeRGBA, public AnimNodeDelegate {
     
 public:
     /**
@@ -52,23 +55,66 @@ public: /* 设置基本属性 */
     void setLevel(const int32_t level);
     void setLastState(const uint32_t lastState);
     void setHurtType(const uint8_t hurtType);
+    void setHurt(const uint32_t hurt);
     
     void setHP(const uint32_t hp);
     void setFullHp(const uint32_t fullHp);
-    
-    void setHurt(const uint32_t hurt);
     void setSpeed(const float speed);
     
     void setBufferTop(const std::string bufferTop);
     void setBufferBottom(const std::string bufferBottom);
     
+    const uint32_t getId()const;
+    const uint8_t  getType()const;
+    const uint8_t  getRace()const;
+    const int32_t  getLevel()const;
+    const int32_t  getLastState() const;
+    const int8_t   getHurtType() const;
+    const int32_t  getHurt() const;
+    const int32_t  getHp() const;
+    const int32_t  getFullHp() const;
+    const float    getSpeed() const;
+    //buffer
+    const std::string getBufferTop() const;
+    const std::string getBufferBottom() const;
+
 public:
-    const bool runAnimation(const std::string & name,const float delay);
+    const bool runAnimation(const std::string & name = "",
+                            const float delay = 0.0f);
     void  stopAnimation();
     void  pauseAnimation();
     void  resumeAnimation();
     void  update(const float dt);
     
+public:
+    /**
+     动画节点加载完成
+     */
+	virtual void onNodeLoaded(cocos2d::CCNode * pNode,
+                              cocos2d::extension::CCNodeLoader * pNodeLoader);
+    /**
+     动画播放完成
+     */
+    virtual void notifyCompletedAnimationSequenceNamed(const char *name, const bool loopCompleted);
+    /**
+     动画播放换帧
+     */
+    virtual void animationSequenceFrameChanged(cocos2d::CCNode * animNode,
+                                               const char *animName,
+                                               const char *lastframeName,
+                                               const char *newframeName);
+    
+    static bool runStateAnimation(GameObject * obj,int stateId);
+    
+    //    static boost::shared_ptr<n2studio::network::Buffer> encode(GameObject * obj);
+    //    static GameObject * decode(const boost::shared_ptr<n2studio::network::Buffer> & buf);
+    
+public:
+    void changeState(const int32_t value);
+    /**
+     接收一个消息，交给状态机处理
+     */
+	void onMessage(GameEventParams * params);
 protected:
 	bool init();
     

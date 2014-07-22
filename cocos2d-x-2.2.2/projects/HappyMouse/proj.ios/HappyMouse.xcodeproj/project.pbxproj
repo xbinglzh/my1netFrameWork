@@ -307,7 +307,6 @@
 		6094F5701976617400614051 /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5661976617400614051 /* Icon-57.png */; };
 		6094F5711976617400614051 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5671976617400614051 /* Icon-72.png */; };
 		6094F5721976617400614051 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5681976617400614051 /* Icon-76.png */; };
-		60AE10181978097C00390CC7 /* x_monster.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60AE10171978097C00390CC7 /* x_monster.plist */; };
 		60C3B6E51974CC8300BC4293 /* GameConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B6E31974CC8300BC4293 /* GameConfig.cpp */; };
 		60C3B6FD1974CE5100BC4293 /* libboost_regex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 605A8B0F1974C8DB0086F702 /* libboost_regex.a */; };
 		60C3B7001974CF1E00BC4293 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C3B6FF1974CF1E00BC4293 /* libcurl.a */; };
@@ -325,6 +324,9 @@
 		60C3B78A197533C200BC4293 /* ResourceLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B788197533C200BC4293 /* ResourceLoader.cpp */; };
 		60DE689B197A9D8400038A9F /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DE6899197A9D8400038A9F /* StateMachine.cpp */; };
 		60DE68A3197AB45900038A9F /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DE68A1197AB45900038A9F /* GameObject.cpp */; };
+		60E61CDA197E09CF0097963B /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E61CD8197E09CF0097963B /* GameState.cpp */; };
+		60E61CF2197E0B990097963B /* GameEventParams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E61CF0197E0B990097963B /* GameEventParams.cpp */; };
+		60E61CF9197E0C6A0097963B /* MovingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E61CF7197E0C6A0097963B /* MovingState.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -1134,7 +1136,6 @@
 		6094F5661976617400614051 /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
 		6094F5671976617400614051 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		6094F5681976617400614051 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		60AE10171978097C00390CC7 /* x_monster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = x_monster.plist; path = ../Resources/plist/x_monster.plist; sourceTree = "<group>"; };
 		60C3B6E31974CC8300BC4293 /* GameConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameConfig.cpp; sourceTree = "<group>"; };
 		60C3B6E41974CC8300BC4293 /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		60C3B6FF1974CF1E00BC4293 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
@@ -1166,6 +1167,13 @@
 		60DE689D197A9E8C00038A9F /* StateDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateDef.h; sourceTree = "<group>"; };
 		60DE68A1197AB45900038A9F /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
 		60DE68A2197AB45900038A9F /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		60E61CD8197E09CF0097963B /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
+		60E61CD9197E09CF0097963B /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
+		60E61CF0197E0B990097963B /* GameEventParams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameEventParams.cpp; sourceTree = "<group>"; };
+		60E61CF1197E0B990097963B /* GameEventParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEventParams.h; sourceTree = "<group>"; };
+		60E61CF7197E0C6A0097963B /* MovingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovingState.cpp; sourceTree = "<group>"; };
+		60E61CF8197E0C6A0097963B /* MovingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingState.h; sourceTree = "<group>"; };
+		60E61CFC197E0DB50097963B /* GameEventDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameEventDef.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -1809,7 +1817,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				60AE10171978097C00390CC7 /* x_monster.plist */,
 				605A8AE21974C8DA0086F702 /* xcode-boost.xcodeproj */,
 				15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */,
 				15A3D8871682F7D5002FB0C5 /* Box2D */,
@@ -2179,6 +2186,7 @@
 				605A8B251974CA4A0086F702 /* FontStylesDef.h */,
 				605A8B261974CA4A0086F702 /* KeyConfigDef.h */,
 				605A8B271974CA4A0086F702 /* NotifyMessageDef.h */,
+				60E61CFC197E0DB50097963B /* GameEventDef.h */,
 			);
 			name = Def;
 			path = ../Classes/Def;
@@ -2710,11 +2718,25 @@
 		60DE6880197A9CFF00038A9F /* GameState */ = {
 			isa = PBXGroup;
 			children = (
+				60E61CF3197E0C470097963B /* AIState */,
 				60DE6897197A9D1100038A9F /* State.h */,
 				60DE6899197A9D8400038A9F /* StateMachine.cpp */,
 				60DE689A197A9D8400038A9F /* StateMachine.h */,
+				60E61CD8197E09CF0097963B /* GameState.cpp */,
+				60E61CD9197E09CF0097963B /* GameState.h */,
+				60E61CF0197E0B990097963B /* GameEventParams.cpp */,
+				60E61CF1197E0B990097963B /* GameEventParams.h */,
 			);
 			path = GameState;
+			sourceTree = "<group>";
+		};
+		60E61CF3197E0C470097963B /* AIState */ = {
+			isa = PBXGroup;
+			children = (
+				60E61CF7197E0C6A0097963B /* MovingState.cpp */,
+				60E61CF8197E0C6A0097963B /* MovingState.h */,
+			);
+			path = AIState;
 			sourceTree = "<group>";
 		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
@@ -2965,7 +2987,6 @@
 				605A8AC91974C51A0086F702 /* tinyxml.suo in Resources */,
 				6094F56B1976617400614051 /* Default@2x.png in Resources */,
 				6094F56D1976617400614051 /* Icon-120.png in Resources */,
-				60AE10181978097C00390CC7 /* x_monster.plist in Resources */,
 				6094F5691976617400614051 /* Default-568h@2x.png in Resources */,
 				60C3B7351974EA7700BC4293 /* map in Resources */,
 				60C3B7341974EA7700BC4293 /* audio in Resources */,
@@ -3012,6 +3033,7 @@
 				605A8AC21974C51A0086F702 /* SmallSoybeanParticle.cpp in Sources */,
 				15A3D90D1682F7D5002FB0C5 /* b2Math.cpp in Sources */,
 				15A3D90E1682F7D5002FB0C5 /* b2Settings.cpp in Sources */,
+				60E61CDA197E09CF0097963B /* GameState.cpp in Sources */,
 				15A3D90F1682F7D5002FB0C5 /* b2StackAllocator.cpp in Sources */,
 				605A8ACA1974C51A0086F702 /* tinyxmlerror.cpp in Sources */,
 				605A8A8F1974C51A0086F702 /* SPTween.cpp in Sources */,
@@ -3155,6 +3177,7 @@
 				15A3DA571682F826002FB0C5 /* CCEditBoxImplIOS.mm in Sources */,
 				15A3DA591682F826002FB0C5 /* CCScrollView.cpp in Sources */,
 				15A3DA5A1682F826002FB0C5 /* CCSorting.cpp in Sources */,
+				60E61CF2197E0B990097963B /* GameEventParams.cpp in Sources */,
 				15A3DA5B1682F826002FB0C5 /* CCTableView.cpp in Sources */,
 				15A3DA5C1682F826002FB0C5 /* CCTableViewCell.cpp in Sources */,
 				15A3DA5D1682F826002FB0C5 /* HttpClient.cpp in Sources */,
@@ -3236,6 +3259,7 @@
 				605A8ACD1974C51A0086F702 /* CCLabelTTFStroke.cpp in Sources */,
 				379BB9AA17F03F3700829B88 /* CCTransformHelp.cpp in Sources */,
 				379BB9AB17F03F3700829B88 /* CCTweenFunction.cpp in Sources */,
+				60E61CF9197E0C6A0097963B /* MovingState.cpp in Sources */,
 				379BB9AC17F03F3700829B88 /* CCUtilMath.cpp in Sources */,
 				605A8AAE1974C51A0086F702 /* json_reader.cpp in Sources */,
 				379BB9AD17F03F3700829B88 /* CCComAttribute.cpp in Sources */,

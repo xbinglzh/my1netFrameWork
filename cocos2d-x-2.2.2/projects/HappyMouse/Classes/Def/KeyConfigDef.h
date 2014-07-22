@@ -44,6 +44,23 @@
 //Setting Key
 #define KStrAudioEffectStatusClosed   "AudioEffectStatusClosed"
 #define KStrBgMusicStatusClosed       "BgMusicStatusClosed"
+//Anim Key
+#define KKeyAction       "action"
+#define KKeyState        "state"
+#define KKeyAnimation    "animation"
+#define KKeyskeleton     "skeleton"
+#define KKeySpeed        "speed"
+#define KKeyAttackEffect "attack_effect"
+#define KKeyCurrentState "current_state"
+#define KKeyCurrentStateOld "current_state_old"
+#define KKeySkillNextState   "skill_next_state"
+#define KKeyLifespan     "lifespan"
+#define KKeyPieces       "pieces"
+#define KKeyPiecesCount  "pieces_count"
+#define KKeyEffect       "effect"
+#define KKeyReduceHPEffect       "reduce_hp_effect"
+#define KKeyDestoryEffect        "destory_effect"
+#define KKeyRewardRatio          "reward_ratio"
 
 
 #endif /* defined(__motoGame__KeyConfigDef__) */

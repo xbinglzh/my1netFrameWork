@@ -9,6 +9,8 @@
 #include "GameObject.h"
 #include "LayoutUtil.h"
 #include "CCScale9ProgressBar.h"
+#include "GameEventDef.h"
+#include "KeyConfigDef.h"
 
 GameObject::GameObject() :
 _bgNode(NULL),
@@ -102,6 +104,54 @@ void GameObject::setBufferBottom(const std::string bufferBottom) {
     _charactar._bufferBottom = bufferBottom;
 }
 
+const uint32_t GameObject::getId()const{
+	return _charactar._id;
+}
+
+const uint8_t GameObject::getType()const{
+	return _charactar._type;
+}
+
+const uint8_t GameObject::getRace()const{
+	return _charactar._race;
+}
+
+const int32_t GameObject::getLevel()const{
+	return _charactar._level;
+}
+
+const int32_t  GameObject::getLastState() const {
+    return _charactar._lastState;
+}
+
+const int8_t GameObject::getHurtType() const {
+    return _charactar._hurtType;
+}
+
+const int32_t GameObject::getHurt() const {
+    return _charactar._hurt;
+}
+
+const int32_t  GameObject::getHp() const {
+    return _charactar._hp;
+}
+
+const int32_t  GameObject::getFullHp() const {
+    return _charactar._fullHp;
+}
+
+const float GameObject::getSpeed() const {
+    return _charactar._speed;
+}
+
+const std::string GameObject::getBufferTop() const {
+    return _charactar._bufferTop;
+}
+
+const std::string GameObject::getBufferBottom() const {
+    return _charactar._bufferBottom;
+}
+
 //---------------- end Set Charactar Info-----------------------------
 
 const bool GameObject::runAnimation(const std::string & name,const float delay){
@@ -110,7 +160,6 @@ const bool GameObject::runAnimation(const std::string & name,const float delay){
 	}
     return false;
 }
-
 
 void GameObject::stopAnimation() {
 	if (_flashNode) {
@@ -139,4 +188,60 @@ void GameObject::update(const float dt){
         _stateMachine->update(this, dt);
     }
 }
+//-------------- 状态机 ---------------------
 
+void GameObject::changeState(const int32_t value) {
+	if (_stateMachine) {
+		_stateMachine->changeState(this, value);
+	}
+}
+
+void GameObject::onMessage(GameEventParams *params) {
+    if(_stateMachine) {
+        _stateMachine->onMessage(this, params);
+    }
+}
+//--------------------------------------------
+
+void GameObject::onNodeLoaded(CCNode * pNode, CCNodeLoader * pNodeLoader){
+	CCLOG("GameObject node onNodeLoaded~") ;
+}
+
+void GameObject::notifyCompletedAnimationSequenceNamed(const char *name, const bool loopCompleted){
+    onMessage(GameEventParams::create(K_EVENT_ANIMATION_FINISHED,this));
+}
+
+void GameObject::animationSequenceFrameChanged(cocos2d::CCNode * animNode,
+                                               const char *animName,
+                                               const char *lastframeName,
+                                               const char *newframeName){
+    
+    CCDictionary * dict = CCDictionary::create();
+    dict->setObject(CCString::create(animName), "anim");
+    dict->setObject(CCString::create(lastframeName), "lastframe");
+    dict->setObject(CCString::create(newframeName), "newframe");
+    onMessage(GameEventParams::create(K_EVENT_ANIMATION_FRAME_CHANGED,dict));
+    
+}
+
+bool GameObject::runStateAnimation(GameObject * obj,int stateId){
+    std::stringstream key;
+    key << stateId;
+    
+//    CCDictionary * dict = static_cast<CCDictionary *>(obj->getValue(KKeyState));
+//    if (dict) {
+//        dict = static_cast<CCDictionary *>(dict->objectForKey(key.str()));
+//        if (dict) {
+//            CCString * anim = static_cast<CCString *>(dict->objectForKey(KKeyAnimation));
+//            if (anim) {
+//                bool ret = obj->runAnimation(anim->m_sString);
+//                if (!ret) {
+//                    CCLOG("Warnning:%d runStateAnimation %d : %s failed",obj->getId(),obj->getState(),anim->getCString());
+//                }
+//                return ret;
+//            }
+//        }
+//    }
+    
+    return false;
+}

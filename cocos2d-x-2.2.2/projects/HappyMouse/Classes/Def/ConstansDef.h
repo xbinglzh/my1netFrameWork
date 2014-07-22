@@ -74,5 +74,8 @@ enum MouseState {
     
 };
 
+#define KSTATE_MOVING_ACTION_TAG (80001)
+#define KSTATE_ANIMATION_ACTION_TAG (80002)
+#define KSTATE_MOVE_TO_ACTION_TAG (80003)
 
 #endif
