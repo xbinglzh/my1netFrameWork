@@ -4,10 +4,6 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_CPPFLAGS += -fexceptions
-
-LOCAL_CPPFLAGS += -DCRYPTOPP_DISABLE_ASM -DCRYPTOPP_DISABLE_SSE2 -DCRYPTOPP_ENABLE_NAMESPACE_WEAK=1
-
 LOCAL_MODULE := cocos_happymouse_common
 
 LOCAL_MODULE_FILENAME := libhappymousecommon
@@ -17,10 +13,12 @@ LOCAL_SRC_FILES := \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPFrameData.cpp \
 Classes/frameWork/Util/shader/CCRGBSprite.cpp \
 Classes/frameWork/Util/shader/CCShaderEffectSprite.cpp \
+Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPMovementBoneData.cpp \
 Classes/frameWork/Extensions/LevelHelper/LevelHelperLoader.cpp \
 Classes/frameWork/Extensions/cocos2dxExt/CCSpriteExt.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/external_tool/Json/SPContentJsonDictionary.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPTextureData.cpp \
+Classes/Model/GameObject/GameObject.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHNode.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/utils/SPArmatureDataManager.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/external_tool/Json/lib_json/json_value.cpp \
@@ -48,7 +46,7 @@ Classes/frameWork/Extensions/LevelHelper/Nodes/LHCuttingEngineMgr.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/external_tool/Json/lib_json/json_writer.cpp \
 Classes/frameWork/Extensions/GLESRender/GLES-Render.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/utils/SPBatchNode.cpp \
-Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPMovementBoneData.cpp \
+Classes/frameWork/Flash/dragonBone/SPArmature/animation/SPAnimation.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPNode.cpp \
 Classes/frameWork/Flash/dragonBone/AnimNode.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHAnimationNode.cpp \
@@ -88,7 +86,7 @@ Classes/frameWork/Flash/dragonBone/SPArmature/external_tool/Json/lib_json/json_r
 Classes/frameWork/Flash/dragonBone/ArmatureAnim.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPJsonData.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHJoint.cpp \
-Classes/frameWork/Flash/dragonBone/SPArmature/animation/SPAnimation.cpp \
+Classes/Model/GameState/StateMachine.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/display/display_factory/SPDisplayFactory.cpp \
 Classes/frameWork/Util/widget/LabelView.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHParallaxNode.cpp \
@@ -152,6 +150,7 @@ LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH) \
                     $(LOCAL_PATH)/Classes/frameWork/Util/widget \
                     $(LOCAL_PATH)/Classes/Model \
                     $(LOCAL_PATH)/Classes/Model/GameObject \
+                    $(LOCAL_PATH)/Classes/Model/GameState \
                     $(LOCAL_PATH)/Classes/View \
                     $(LOCAL_PATH)/Classes/View/root \
                     $(LOCAL_PATH)/Classes/View/uiView \
@@ -193,6 +192,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH) \
                     $(LOCAL_PATH)/Classes/frameWork/Util/widget \
                     $(LOCAL_PATH)/Classes/Model \
                     $(LOCAL_PATH)/Classes/Model/GameObject \
+                    $(LOCAL_PATH)/Classes/Model/GameState \
                     $(LOCAL_PATH)/Classes/View \
                     $(LOCAL_PATH)/Classes/View/root \
                     $(LOCAL_PATH)/Classes/View/uiView \
@@ -210,9 +210,8 @@ LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)
 TARGET_CPU_ABI := armeabi
 LOCAL_ARM_MODE := arm
 
-include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_STATIC_LIBRARY)
 
-$(call import-module,projects/HappyMouse)
 $(call import-module,boost_1_44_0)
 $(call import-module,cocos2dx)
 $(call import-module,cocos2dx/platform/third_party/android/prebuilt/libcurl)
