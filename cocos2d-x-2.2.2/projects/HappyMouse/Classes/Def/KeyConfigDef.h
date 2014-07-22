@@ -124,5 +124,11 @@
 #define KStrEffectDict            "effect_dict"
 #define KStrEffectFromToColor     "from_to_color"
 
+//Map.plist
+#define KKeyMapBg                 "map_bg"
+#define KKeyMapPit                "map_pit"
+#define KKeyMapPic                "map_pic"
+
+
 
 #endif /* defined(__motoGame__KeyConfigDef__) */

@@ -25,22 +25,28 @@ public:
     virtual ~BattleLayer();
     virtual bool init();
     CREATE_FUNC(BattleLayer);
+    virtual void onEnter();
+    virtual void onExit();
     
 public:
     bool updateGroundMap(const char* fileName,const char* bgfileName);
 	inline GroundMap* getGroundMap(){return _groundMap;}
-	const cocos2d::CCPoint& getPositionFromGroundMap( const std::list<int>::iterator & posIndex);
-	virtual void onEnter();
-    virtual void onExit();
+//	const cocos2d::CCPoint& getPositionFromGroundMap( const std::list<int>::iterator & posIndex);
+    
+private:
+    CCLayerColor* genLayerColor(int zOrder, int layerTag);
 
 private:
     
     GameController *        _gameController;
     GameModel *             _gameModel;
     GroundMap*              _groundMap;
-
-    cocos2d::CCLayerColor*  _topLayer;
-    cocos2d::CCLayer*       _xpEffectLayer;
+    
+    CCLayerColor*           _bottomLayer;             //底层贴图
+    CCLayerColor*           _mapLayer;                //groundMap层
+    CCLayerColor*           _topLayer;                //游戏上层
+    CCLayerColor*           _xpEffectLayer;           //xp动画层
+    CCLayerColor*           _battleUiLayer;           //UI控制层
     
 //    XXBattleUI* _battleUI;
 };

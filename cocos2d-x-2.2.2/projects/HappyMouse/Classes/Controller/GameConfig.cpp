@@ -21,6 +21,7 @@ _textFontStyleDict(NULL),
 _audioDict(NULL),
 _stateGroupDict(NULL),
 _templateDict(NULL),
+_mapDict(NULL),
 _pitNumCount(9) {
     
 }
@@ -31,6 +32,7 @@ GameConfig::~GameConfig() {
     CC_SAFE_RELEASE_NULL(_audioDict);
     CC_SAFE_RELEASE_NULL(_stateGroupDict);
     CC_SAFE_RELEASE_NULL(_templateDict);
+    CC_SAFE_RELEASE_NULL(_mapDict);
     
     _pitNumCount = 9;
 }
@@ -74,6 +76,10 @@ void GameConfig::loadDynamicResoure(){
     CC_SAFE_RELEASE_NULL(_stateGroupDict);
     _stateGroupDict = CCDictionary::createWithContentsOfFile("x_state_group.plist");
     _stateGroupDict->retain();
+    
+    CC_SAFE_RELEASE_NULL(_mapDict);
+    _mapDict = CCDictionary::createWithContentsOfFile("x_map.plist");
+    _mapDict->retain();
 }
 
 int GameConfig::getScreenSize() {
@@ -100,6 +106,13 @@ cocos2d::CCDictionary * GameConfig::getStateGroupById(const std::string & key){
     }
     return NULL;
     
+}
+
+CCDictionary* GameConfig::getMapById(const std::string &Id) {
+    if (_mapDict) {
+        return static_cast<CCDictionary * >(_mapDict->objectForKey(Id));
+    }
+    return NULL;
 }
 
 CCDictionary * GameConfig::getTemplateValue(const int32_t Id){

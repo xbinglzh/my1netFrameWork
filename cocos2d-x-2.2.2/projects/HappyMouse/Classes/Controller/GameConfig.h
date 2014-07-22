@@ -76,6 +76,7 @@ public:
      */
     cocos2d::CCDictionary* getAnimationById(const std::string & Id);
     cocos2d::CCDictionary* getStateGroupById(const std::string & key);
+    cocos2d::CCDictionary* getMapById(const std::string& Id);
     cocos2d::CCDictionary* getTemplateValue(const int32_t Id);
     
     const uint32_t templateTypeOfId(const uint32_t id);
@@ -107,7 +108,8 @@ private: // Dict
     cocos2d::CCDictionary*        _stateGroupDict;
     
     cocos2d::CCDictionary*        _templateDict;
-
+    
+    cocos2d::CCDictionary*        _mapDict;
     
 };
 
