@@ -13,10 +13,11 @@
 #define KNotifyApplicationWillEnterForegroundMessage "application_will_enter_foreground_msg"  //程序从后台切换到前台发送
 #define KNotifyApplicationResumeMessage "application_resume_msg"                              //程序从后台切换到前台发送
 
-#define KNotifyLevelUpMessage         "notifyLevelUpMessage"
 #define KNotifyStartBattleMessage     "notifyStartBattleMessage"
 #define KNotifyPauseBattleMessage     "notifyPauseBattleMessage"
+#define KNotifyBattleResumeMessage   "notify_battle_resume_msg"
 
+#define KNotifyLevelUpMessage         "notifyLevelUpMessage"
 
 #define KNotifyMakeHeroJumpMessage       "notifyMakeHeroJumpMessage"
 #define KNotifyMakeHeroFallFloorMessage  "notifyMakeHeroFallFloorMessage"

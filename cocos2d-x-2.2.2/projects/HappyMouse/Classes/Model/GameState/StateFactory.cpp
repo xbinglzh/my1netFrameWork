@@ -41,7 +41,7 @@ StateFactory::~StateFactory(){
     
 }
 
-StateFactory * StateFactory::sharedInstance(){
+StateFactory * StateFactory::getInstance(){
     
 	if (! _stateFactorySharedInstance) {
         _stateFactorySharedInstance = new StateFactory();

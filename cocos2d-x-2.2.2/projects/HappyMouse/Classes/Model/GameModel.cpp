@@ -28,7 +28,7 @@ GameModel::~GameModel() {
     CC_SAFE_RELEASE_NULL(_gameObjectsDict);
 }
 
-GameModel * GameModel::sharedInstance(void) {
+GameModel * GameModel::getInstance(void) {
 	
 	if (!_sharedInstance) {
         _sharedInstance = new GameModel();
@@ -44,9 +44,9 @@ void GameModel::purgeInstance(void){
 
 bool GameModel::init(void){
     
-	_stateFactory = StateFactory::sharedInstance();
+	_stateFactory = StateFactory::getInstance();
 	_director = CCDirector::sharedDirector();
-	_gameConfig = GameConfig::sharedInstance();
+	_gameConfig = GameConfig::getInstance();
     _sharedAudioManager = AudioManager::sharedInstance();
     
     _gameObjectsDict = new CCDictionary();

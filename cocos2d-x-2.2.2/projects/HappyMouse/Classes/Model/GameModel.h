@@ -31,7 +31,7 @@ protected:
 	bool init(void);
     
 public:
-    static GameModel *sharedInstance(void);
+    static GameModel *getInstance(void);
     static void purgeInstance(void);
     
     /**

@@ -11,7 +11,7 @@
 
 AnimNode* AnimUtils::createAnimById(const char* animId) {
     
-    GameConfig* gConfig = GameConfig::sharedInstance();
+    GameConfig* gConfig = GameConfig::getInstance();
     CCDictionary* dict = gConfig->getAnimationById(animId);
     AnimNode* anim = AnimNode::createAnim(dict, NULL);
     

@@ -53,6 +53,6 @@ void AppLauncher::startLoadResources() {
 
 void AppLauncher::didFinishedLoadResources() {
     _isResourceReady = true;
-    GameConfig::sharedInstance()->loadDynamicResoure();
+    GameConfig::getInstance()->loadDynamicResoure();
 }
 

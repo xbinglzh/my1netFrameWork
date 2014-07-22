@@ -41,7 +41,7 @@ LabelView *LabelView::createWithFontStyle(const char *string, const char * style
                                 const CCSize& dimensions, CCTextAlignment hAlignment,
                                 CCVerticalTextAlignment vAlignment) {
     
-    FontStyle style = GameConfig::sharedInstance()->getFontStyleById(styleId);
+    FontStyle style = GameConfig::getInstance()->getFontStyleById(styleId);
     
     LabelView *pRet = new LabelView();
     if(pRet && pRet->initWithFontType((string ? string :""), (style._font).c_str(), style._size, style._type, dimensions, hAlignment, vAlignment, style._stroke_color)) {
@@ -111,7 +111,7 @@ bool LabelView::initWithString(const char *string, const char *fontName, float f
 }
 
 void LabelView::setFontStyleWithId(const char *styleId) {
-    FontStyle style = GameConfig::sharedInstance()->getFontStyleById(styleId);
+    FontStyle style = GameConfig::getInstance()->getFontStyleById(styleId);
     if (style._type != K_FONT_LABEL_BM) {
         setColor(style._color);
     }

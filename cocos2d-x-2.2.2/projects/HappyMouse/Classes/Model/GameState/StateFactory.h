@@ -21,7 +21,7 @@ protected:
 	bool init();
     
 public:
-    static StateFactory *sharedInstance();
+    static StateFactory *getInstance();
     static void purgeInstance();
     State * getStateByTypeId(const int32_t id);
     State * getAdditionStateById(const int32_t id);

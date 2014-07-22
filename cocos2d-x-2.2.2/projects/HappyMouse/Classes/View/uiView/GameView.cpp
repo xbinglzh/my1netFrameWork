@@ -82,7 +82,7 @@ void GameView::initPitData() {
     float pitWidth  = 0;
     float pitHeight = 0;
     
-    for (int i = 0; i < GameConfig::sharedInstance()->getPitNumCount(); i++) {
+    for (int i = 0; i < GameConfig::getInstance()->getPitNumCount(); i++) {
         
         PitObject* pit = PitObject::create(i);
         
@@ -95,7 +95,7 @@ void GameView::initPitData() {
     
     _pitNode->setContentSize(CCSizeMake(3 * (pitWidth + PaddingWidth), 3 * (PaddingHeight + pitHeight)));
 
-    for (int i = 0; i < GameConfig::sharedInstance()->getPitNumCount(); i++) {
+    for (int i = 0; i < GameConfig::getInstance()->getPitNumCount(); i++) {
         LayoutUtil::layoutParentTopLeft(_pitNode->getChildByTag(PitBaseTag + i), (pitWidth+PaddingWidth)*(i % 3), -1 *(pitHeight + PaddingHeight) * (i / 3));
     }
     

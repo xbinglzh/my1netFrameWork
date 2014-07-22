@@ -8,6 +8,7 @@
 
 #include "GroundMap.h"
 #include "LayoutUtil.h"
+#include "NotifyMessageDef.h"
 
 #define Base_Layer_Tag            1001
 #define Adorn_Bottom_Layer_Tag    1002
@@ -42,9 +43,17 @@ _guideLayer(NULL),
 _grayLayer(NULL),
 _mapId(-1) {
     
+    CCNotificationCenter * nc = CCNotificationCenter::sharedNotificationCenter();
+    nc->addObserver(this, callfuncO_selector(GroundMap::pauseBattle), KNotifyPauseBattleMessage, NULL);
+    nc->addObserver(this, callfuncO_selector(GroundMap::resumeBattle), KNotifyBattleResumeMessage, NULL);
+    
 }
 
 GroundMap::~GroundMap() {
+    
+    CCNotificationCenter * nc = CCNotificationCenter::sharedNotificationCenter();
+    nc->removeObserver(this, KNotifyPauseBattleMessage);
+    nc->removeObserver(this, KNotifyBattleResumeMessage);
     
 }
 

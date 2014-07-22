@@ -350,7 +350,7 @@ void AudioManager::playAudioById(const int32_t id,const bool repeat /*= false*/)
         AudioManager * gAudioManager = AudioManager::sharedInstance();
         const float effectsVolume = gAudioManager->getEffectsVolume();
         CCLOG("effectsVolume = %f",effectsVolume);
-        GameConfig *   gConfig = GameConfig::sharedInstance();
+        GameConfig *   gConfig = GameConfig::getInstance();
         std::stringstream audioString;
         audioString << id;
         

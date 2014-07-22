@@ -22,7 +22,7 @@ protected:
 	bool init();
     
 public:
-    static GameConfig *sharedInstance();
+    static GameConfig *getInstance();
     static void purgeInstance();
     
 public:

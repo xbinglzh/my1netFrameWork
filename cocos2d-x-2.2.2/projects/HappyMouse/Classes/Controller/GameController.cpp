@@ -54,11 +54,11 @@ void GameController::notifyRandomMouses() {
 
 int GameController::genRandomMouseIndex() {
     
-    if (_randomVector.size() == GameConfig::sharedInstance()->getPitNumCount()) {
+    if (_randomVector.size() == GameConfig::getInstance()->getPitNumCount()) {
         _randomVector.clear();
     }
     
-    int randomId = rand() % GameConfig::sharedInstance()->getPitNumCount();
+    int randomId = rand() % GameConfig::getInstance()->getPitNumCount();
     
     if (isIdInRandomVector(randomId)) {
         return genRandomMouseIndex();

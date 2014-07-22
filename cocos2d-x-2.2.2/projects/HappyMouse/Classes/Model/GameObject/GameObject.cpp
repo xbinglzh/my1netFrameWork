@@ -98,7 +98,7 @@ bool GameObject::initWithDictionary(CCDictionary * dict){
     CC_SAFE_RELEASE_NULL(_properties);
     _properties = new CCDictionary();
     
-    GameConfig * gConfig = GameConfig::sharedInstance();
+    GameConfig * gConfig = GameConfig::getInstance();
     CCString * str = static_cast<CCString *>(dict->objectForKey(KKeyType));
     
     if (str) {
@@ -294,7 +294,7 @@ void GameObject::setFrameITScale(const float value){
 
 void GameObject::initDisplay() {
     
-    GameConfig * gConfig = GameConfig::sharedInstance();
+    GameConfig * gConfig = GameConfig::getInstance();
     CCString * display = static_cast<CCString *>(this->getValue(KKeyDisplay));
     CCDictionary * tmpDict = static_cast<CCDictionary *>(gConfig->getAnimationById(display->m_sString));
     
@@ -326,13 +326,13 @@ void GameObject::onMessage(GameEventParams *params) {
 
 void GameObject::initStateMachine(){
     
-    GameConfig * gConfig = GameConfig::sharedInstance();
+    GameConfig * gConfig = GameConfig::getInstance();
     CCString * stateId = static_cast<CCString *>(this->getValue(KKeyState));
     CCDictionary * states = dynamic_cast<CCDictionary *>(gConfig->getStateGroupById(stateId->m_sString));
     CCAssert(states != NULL, "GameObject::initStateMachine");
     this->setValue(KKeyState, states);
     
-    StateFactory * stateFactory = StateFactory::sharedInstance();
+    StateFactory * stateFactory = StateFactory::getInstance();
     
     if (states) {
         
@@ -355,7 +355,7 @@ void GameObject::initStateMachine(){
 }
 
 void GameObject::addState(const int32_t stateTypeId ,const int32_t stateId){
-    State * state = StateFactory::sharedInstance()->getStateByTypeId(stateId);
+    State * state = StateFactory::getInstance()->getStateByTypeId(stateId);
     
     if(state){
         _stateMachine->addState(stateTypeId,state);

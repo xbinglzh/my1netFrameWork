@@ -35,7 +35,7 @@ GameConfig::~GameConfig() {
     _pitNumCount = 9;
 }
 
-GameConfig * GameConfig::sharedInstance(){
+GameConfig * GameConfig::getInstance(){
 	
 	if (!_configSharedInstance) {
         _configSharedInstance = new GameConfig();
