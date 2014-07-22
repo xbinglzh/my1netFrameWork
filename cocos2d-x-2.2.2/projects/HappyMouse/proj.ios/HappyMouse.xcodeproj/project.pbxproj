@@ -220,6 +220,9 @@
 		379BB9D317F03F3700829B88 /* GUIReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99117F03F3700829B88 /* GUIReader.cpp */; };
 		379BB9D417F03F3700829B88 /* SceneReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99317F03F3700829B88 /* SceneReader.cpp */; };
 		46513EB1187BFBA200B5ABE1 /* UITouchGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46513EAF187BFBA200B5ABE1 /* UITouchGroup.cpp */; };
+		601AF2F0197E992E009A5257 /* StateFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601AF2EE197E992E009A5257 /* StateFactory.cpp */; };
+		601AF2F3197E9981009A5257 /* DisplayState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601AF2F1197E9981009A5257 /* DisplayState.cpp */; };
+		601AF2F9197EA94B009A5257 /* GameModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601AF2F7197EA94B009A5257 /* GameModel.cpp */; };
 		605A8A711974C51A0086F702 /* CCSpriteExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897A1974C5190086F702 /* CCSpriteExt.cpp */; };
 		605A8A721974C51A0086F702 /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897E1974C5190086F702 /* GLES-Render.cpp */; };
 		605A8A8B1974C51A0086F702 /* AnimNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A89B91974C5190086F702 /* AnimNode.cpp */; };
@@ -952,6 +955,13 @@
 		379BB99417F03F3700829B88 /* SceneReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneReader.h; sourceTree = "<group>"; };
 		46513EAF187BFBA200B5ABE1 /* UITouchGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITouchGroup.cpp; sourceTree = "<group>"; };
 		46513EB0187BFBA200B5ABE1 /* UITouchGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITouchGroup.h; sourceTree = "<group>"; };
+		601AF2EA197E9652009A5257 /* GameAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameAction.h; sourceTree = "<group>"; };
+		601AF2EE197E992E009A5257 /* StateFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateFactory.cpp; sourceTree = "<group>"; };
+		601AF2EF197E992E009A5257 /* StateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateFactory.h; sourceTree = "<group>"; };
+		601AF2F1197E9981009A5257 /* DisplayState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayState.cpp; sourceTree = "<group>"; };
+		601AF2F2197E9981009A5257 /* DisplayState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayState.h; sourceTree = "<group>"; };
+		601AF2F7197EA94B009A5257 /* GameModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameModel.cpp; sourceTree = "<group>"; };
+		601AF2F8197EA94B009A5257 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
 		605A897A1974C5190086F702 /* CCSpriteExt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSpriteExt.cpp; sourceTree = "<group>"; };
 		605A897B1974C5190086F702 /* CCSpriteExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpriteExt.h; sourceTree = "<group>"; };
 		605A897C1974C5190086F702 /* DoubleNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNumber.h; sourceTree = "<group>"; };
@@ -2165,6 +2175,14 @@
 			path = CocoStudio;
 			sourceTree = "<group>";
 		};
+		601AF2D3197E961C009A5257 /* GameAction */ = {
+			isa = PBXGroup;
+			children = (
+				601AF2EA197E9652009A5257 /* GameAction.h */,
+			);
+			path = GameAction;
+			sourceTree = "<group>";
+		};
 		605A89741974C5190086F702 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -2581,6 +2599,9 @@
 		605A8A6C1974C51A0086F702 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				601AF2F7197EA94B009A5257 /* GameModel.cpp */,
+				601AF2F8197EA94B009A5257 /* GameModel.h */,
+				601AF2D3197E961C009A5257 /* GameAction */,
 				60DE6880197A9CFF00038A9F /* GameState */,
 				60C3B7701975167800BC4293 /* GameObject */,
 			);
@@ -2731,6 +2752,8 @@
 				60E61CD9197E09CF0097963B /* GameState.h */,
 				60E61CF0197E0B990097963B /* GameEventParams.cpp */,
 				60E61CF1197E0B990097963B /* GameEventParams.h */,
+				601AF2EE197E992E009A5257 /* StateFactory.cpp */,
+				601AF2EF197E992E009A5257 /* StateFactory.h */,
 			);
 			path = GameState;
 			sourceTree = "<group>";
@@ -2740,6 +2763,8 @@
 			children = (
 				60E61CF7197E0C6A0097963B /* MovingState.cpp */,
 				60E61CF8197E0C6A0097963B /* MovingState.h */,
+				601AF2F1197E9981009A5257 /* DisplayState.cpp */,
+				601AF2F2197E9981009A5257 /* DisplayState.h */,
 			);
 			path = AIState;
 			sourceTree = "<group>";
@@ -3030,10 +3055,12 @@
 				60C3B786197529B100BC4293 /* AudioManager.cpp in Sources */,
 				15A3D9091682F7D5002FB0C5 /* b2EdgeShape.cpp in Sources */,
 				15A3D90A1682F7D5002FB0C5 /* b2PolygonShape.cpp in Sources */,
+				601AF2F9197EA94B009A5257 /* GameModel.cpp in Sources */,
 				605A8AA81974C51A0086F702 /* SPContourSprite.cpp in Sources */,
 				15A3D90B1682F7D5002FB0C5 /* b2BlockAllocator.cpp in Sources */,
 				15A3D90C1682F7D5002FB0C5 /* b2Draw.cpp in Sources */,
 				375BD4C61868411B0024609E /* TriggerObj.cpp in Sources */,
+				601AF2F3197E9981009A5257 /* DisplayState.cpp in Sources */,
 				375BD4C31868411B0024609E /* ObjectFactory.cpp in Sources */,
 				605A8AC21974C51A0086F702 /* SmallSoybeanParticle.cpp in Sources */,
 				15A3D90D1682F7D5002FB0C5 /* b2Math.cpp in Sources */,
@@ -3239,6 +3266,7 @@
 				605A8AC31974C51A0086F702 /* ResourceManager.cpp in Sources */,
 				1AB87035175E0A84005D39BF /* WebSocket.cpp in Sources */,
 				375BD4C51868411B0024609E /* TriggerMng.cpp in Sources */,
+				601AF2F0197E992E009A5257 /* StateFactory.cpp in Sources */,
 				1A9CE8781765A12C000E3062 /* AssetsManager.cpp in Sources */,
 				60C3B78A197533C200BC4293 /* ResourceLoader.cpp in Sources */,
 				605A8AD01974C51A0086F702 /* ModelDialog.cpp in Sources */,

@@ -37,10 +37,23 @@ enum ESceneId {
     K_SCENE_BATTLEVIEW              = 105,
 };
 
-enum BodyTag {
-    K_BodyTag_Default     = 0,
-    K_BodyTag_Hero        = 1,
-    K_BodyTag_Tree        = 2,
+/**
+ 游戏对象类型
+ */
+enum EGameObjectTypeId {
+    
+    K_TYPE_UNKNOWN                  = 0,
+    K_TYPE_MONSTER                  = 1,//怪（军符中的兵）
+    K_TYPE_CARD                     = 2,//卡片（即塔，或者是将领）
+    K_TYPE_ROLE_CARD                = 3,//ROLE卡片（终点塔）
+    K_TYPE_COMPONENT                = 5,//组件（武器,能量核心之类的）
+    K_TYPE_OTHER                    = 6,//其它
+    K_TYPE_PROP                     = 7,//道具（碎片，掉落物等）
+    
+    K_TYPE_OTHER_BULLET             = 600,//子弹
+    K_TYPE_OTHER_TOWER_BULLET       = 620,//子弹
+    K_TYPE_OTHER_DROP               = 610,//掉落
+    
 };
 
 /**

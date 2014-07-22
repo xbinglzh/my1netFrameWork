@@ -11,12 +11,21 @@
 #include "CCScale9ProgressBar.h"
 #include "GameEventDef.h"
 #include "KeyConfigDef.h"
+#include "GameConfig.h"
+#include "StateFactory.h"
+
+#define Bg_Node_Tag        100001
+#define Mid_Node_Tag       100002
+#define Fg_Node_Tag        100003
+#define Flash_Node_Tag     100004
 
 GameObject::GameObject() :
 _bgNode(NULL),
 _fgNode(NULL),
+_midNode(NULL),
 _flashNode(NULL),
-_stateMachine(NULL) {
+_stateMachine(NULL),
+_properties(NULL) {
     
     _charactar._id = 0;
     _charactar._type = 0;
@@ -32,7 +41,10 @@ _stateMachine(NULL) {
 }
 
 GameObject::~GameObject() {
-     CC_SAFE_DELETE(_stateMachine);
+    
+    CC_SAFE_DELETE(_stateMachine);
+    CC_SAFE_RELEASE_NULL(_properties);
+    
 }
 
 GameObject* GameObject::create(const uint32_t id) {
@@ -51,7 +63,79 @@ GameObject* GameObject::create(const uint32_t id) {
 
 bool GameObject::init() {
     _stateMachine = new StateMachine();
+    
+    _bgNode = CCNode::create();
+    _midNode = CCNode::create();
+    _fgNode = CCNode::create();
+    
+    _bgNode->setAnchorPoint(CCPointZero);
+    _midNode->setAnchorPoint(CCPointZero);
+    _fgNode->setAnchorPoint(CCPointZero);
+    
+    this->addChild(_bgNode, 1, Bg_Node_Tag);
+    this->addChild(_midNode, 2, Mid_Node_Tag);
+    this->addChild(_fgNode, 3, Fg_Node_Tag);
+    
     return true;
+}
+
+GameObject * GameObject::create(CCDictionary * dict,const uint32_t id) {
+	GameObject * pRet = new GameObject();
+    if (pRet) {
+        pRet->setId(id);
+        if (pRet->init() && pRet->initWithDictionary(dict))
+        {
+            pRet->autorelease();
+            return pRet;
+        }
+        CC_SAFE_DELETE(pRet);
+    }
+	return NULL;
+}
+
+bool GameObject::initWithDictionary(CCDictionary * dict){
+
+    CC_SAFE_RELEASE_NULL(_properties);
+    _properties = new CCDictionary();
+    
+    GameConfig * gConfig = GameConfig::sharedInstance();
+    CCString * str = static_cast<CCString *>(dict->objectForKey(KKeyType));
+    
+    if (str) {
+//        CCDictionary * templateDict = gConfig->getBaseTemplateValue(str->intValue());
+
+    }
+    
+    str = static_cast<CCString *>(dict->objectForKey(KKeyId));
+    _charactar._id = str->uintValue();
+    
+    return true;
+}
+
+void GameObject::complete(){
+//    this->initActions();
+    this->initDisplay();
+    this->initStateMachine();
+//    this->initSkills();
+    
+    setObjContentSize();
+}
+
+CCNode* GameObject::getBgNode() {
+    return _bgNode;
+}
+
+CCNode* GameObject::getMidNode() {
+    return _midNode;
+}
+
+CCNode* GameObject::getFgNode() {
+    return _fgNode;
+}
+
+void GameObject::setObjContentSize() {
+    CCSize flashSize = _flashNode->getContentSize();
+    this->setContentSize(flashSize);
 }
 
 //---------------------- 设置基本属性信息 ------------------------/
@@ -152,6 +236,17 @@ const std::string GameObject::getBufferBottom() const {
     return _charactar._bufferBottom;
 }
 
+void GameObject::setValue(const std::string & key,CCObject * value){
+	CCAssert(value != NULL, "GameObject::setValue-->value is invalid!!!");
+    _properties->setObject(value, key);
+}
+
+CCObject * GameObject::getValue(const std::string & key){
+    if(_properties)
+        return _properties->objectForKey(key);
+	return NULL;
+}
+
 //---------------- end Set Charactar Info-----------------------------
 
 const bool GameObject::runAnimation(const std::string & name,const float delay){
@@ -188,6 +283,33 @@ void GameObject::update(const float dt){
         _stateMachine->update(this, dt);
     }
 }
+
+void GameObject::setFrameITScale(const float value){
+    if (_flashNode) {
+        _flashNode->setFrameITScale(value);
+    }
+}
+
+//-------------- display ------------------
+
+void GameObject::initDisplay() {
+    
+    GameConfig * gConfig = GameConfig::sharedInstance();
+    CCString * display = static_cast<CCString *>(this->getValue(KKeyDisplay));
+    CCDictionary * tmpDict = static_cast<CCDictionary *>(gConfig->getAnimationById(display->m_sString));
+    
+    if (tmpDict) {
+        if(_flashNode)
+            _flashNode->removeFromParentAndCleanup(true);
+        _flashNode = AnimNode::createAnim(tmpDict,this);
+        
+        if (_flashNode) {
+            _flashNode->setAutoUpdateFrame(false);
+            _midNode->addChild(_flashNode);
+        }
+    }
+}
+
 //-------------- 状态机 ---------------------
 
 void GameObject::changeState(const int32_t value) {
@@ -201,6 +323,45 @@ void GameObject::onMessage(GameEventParams *params) {
         _stateMachine->onMessage(this, params);
     }
 }
+
+void GameObject::initStateMachine(){
+    
+    GameConfig * gConfig = GameConfig::sharedInstance();
+    CCString * stateId = static_cast<CCString *>(this->getValue(KKeyState));
+    CCDictionary * states = dynamic_cast<CCDictionary *>(gConfig->getStateGroupById(stateId->m_sString));
+    CCAssert(states != NULL, "GameObject::initStateMachine");
+    this->setValue(KKeyState, states);
+    
+    StateFactory * stateFactory = StateFactory::sharedInstance();
+    
+    if (states) {
+        
+        CCDictElement * pDictElement = NULL;
+        CCDICT_FOREACH(states, pDictElement){
+            
+            std::string key = pDictElement->getStrKey();
+            CCDictionary * callbackDict = static_cast<CCDictionary *>(pDictElement->getObject());
+            
+            if (callbackDict) {
+                CCString * idStr = (CCString *)callbackDict->objectForKey(KKeyId);
+                State * state = stateFactory->getStateByTypeId(idStr->intValue());
+                
+                if(state){
+                    _stateMachine->addState(atoi(key.c_str()),state);
+                }
+            }
+        }
+    }
+}
+
+void GameObject::addState(const int32_t stateTypeId ,const int32_t stateId){
+    State * state = StateFactory::sharedInstance()->getStateByTypeId(stateId);
+    
+    if(state){
+        _stateMachine->addState(stateTypeId,state);
+    }
+}
+
 //--------------------------------------------
 
 void GameObject::onNodeLoaded(CCNode * pNode, CCNodeLoader * pNodeLoader){
@@ -244,4 +405,17 @@ bool GameObject::runStateAnimation(GameObject * obj,int stateId){
 //    }
     
     return false;
+}
+
+//-----------------------------
+
+void GameObject::doCallFunc(cocos2d::CCObject * data){
+    CCDictionary * dict = static_cast<CCDictionary *>(data);
+    CCString * eventId = static_cast<CCString *>(dict->objectForKey(KDoCallFuncActId));
+//    this->doAction(eventId->m_sString,dict);
+}
+
+void GameObject::doAutoremoveCallFunc(cocos2d::CCObject * node){
+    CCNode * pNode = static_cast<CCNode *>(node);
+    pNode->removeFromParentAndCleanup(true);
 }

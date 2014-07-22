@@ -10,14 +10,17 @@
 #include "KeyConfigDef.h"
 #include "ConstansDef.h"
 #include "UiUtils.h"
+#include "GameEventDef.h"
 
 
-static GameConfig * _configSharedInstance=NULL;
+static GameConfig * _configSharedInstance = NULL;
 
 GameConfig::GameConfig() :
 _animationDict(NULL),
 _textFontStyleDict(NULL),
 _audioDict(NULL),
+_stateGroupDict(NULL),
+_templateDict(NULL),
 _pitNumCount(9) {
     
 }
@@ -26,6 +29,8 @@ GameConfig::~GameConfig() {
     CC_SAFE_RELEASE_NULL(_animationDict);
     CC_SAFE_RELEASE_NULL(_textFontStyleDict);
     CC_SAFE_RELEASE_NULL(_audioDict);
+    CC_SAFE_RELEASE_NULL(_stateGroupDict);
+    CC_SAFE_RELEASE_NULL(_templateDict);
     
     _pitNumCount = 9;
 }
@@ -46,10 +51,6 @@ void GameConfig::purgeInstance() {
 
 bool GameConfig::init() {
     
-    CC_SAFE_RELEASE_NULL(_animationDict);
-    _animationDict = CCDictionary::createWithContentsOfFile("x_anim.plist");
-    _animationDict->retain();
-    
     CC_SAFE_RELEASE_NULL(_textFontStyleDict);
     _textFontStyleDict = CCDictionary::createWithContentsOfFile("x_fontstyle.plist");
     _textFontStyleDict->retain();
@@ -58,7 +59,21 @@ bool GameConfig::init() {
     _audioDict = CCDictionary::createWithContentsOfFile("x_audio.plist");
     _audioDict->retain();
     
+    CC_SAFE_RELEASE_NULL(_templateDict);
+    _templateDict = new CCDictionary;
+    _templateDict->setObject(CCDictionary::createWithContentsOfFile("x_monster.plist"), K_TYPE_MONSTER);
+    
     return true;
+}
+
+void GameConfig::loadDynamicResoure(){
+    CC_SAFE_RELEASE_NULL(_animationDict);
+    _animationDict = CCDictionary::createWithContentsOfFile("x_anim.plist");
+    _animationDict->retain();
+    
+    CC_SAFE_RELEASE_NULL(_stateGroupDict);
+    _stateGroupDict = CCDictionary::createWithContentsOfFile("x_state_group.plist");
+    _stateGroupDict->retain();
 }
 
 int GameConfig::getScreenSize() {
@@ -77,6 +92,33 @@ cocos2d::CCDictionary * GameConfig::getAnimationById(const std::string & Id){
         return static_cast<CCDictionary * >(_animationDict->objectForKey(Id));
     }
     return NULL;
+}
+
+cocos2d::CCDictionary * GameConfig::getStateGroupById(const std::string & key){
+    if (_stateGroupDict) {
+        return static_cast<CCDictionary * >(_stateGroupDict->objectForKey(key));
+    }
+    return NULL;
+    
+}
+
+CCDictionary * GameConfig::getTemplateValue(const int32_t Id){
+    if (_templateDict) {
+        std::stringstream key;
+        key << Id;
+
+        CCDictionary * tmpDict = static_cast<CCDictionary * >(_templateDict->objectForKey(GameConfig::templateTypeOfId(Id)));
+        
+        if(tmpDict) {
+            return static_cast<CCDictionary * >(tmpDict->objectForKey(key.str()));
+        }
+        
+    }
+    return NULL;
+}
+
+const uint32_t GameConfig::templateTypeOfId(const uint32_t id) {
+    return (id / 100000);
 }
 
 /**

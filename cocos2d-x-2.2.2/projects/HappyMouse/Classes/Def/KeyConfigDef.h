@@ -44,6 +44,7 @@
 //Setting Key
 #define KStrAudioEffectStatusClosed   "AudioEffectStatusClosed"
 #define KStrBgMusicStatusClosed       "BgMusicStatusClosed"
+
 //Anim Key
 #define KKeyAction       "action"
 #define KKeyState        "state"
@@ -61,6 +62,67 @@
 #define KKeyReduceHPEffect       "reduce_hp_effect"
 #define KKeyDestoryEffect        "destory_effect"
 #define KKeyRewardRatio          "reward_ratio"
+
+
+#define KKeySkillHurtAdd      "skill_hurt_add" //伤害加成
+#define KKeyHurt         "hurt"     //攻击基础伤害
+#define KKeyHurtStep     "hurt_step"//攻击成长参数(领兵)
+#define KKeyHurtType          "hurt_type"//攻击类型
+#define KKeySkillHurt          "skill_hurt"//攻击类型
+#define KKeyIgnoreImmuneSkill      "KKeyIgnoreImmuneSkill"//攻击类型
+#define KKeyAtkTargetSize          "atk_target_size"//攻击目标数量
+#define KKeyKillIntercept          "KKeyKillIntercept"
+#define KKeyIntercept          "KKeyIntercept"
+#define KKeyLevel        "level"
+#define KKeyMaxLevel     "max_level"
+#define KKeyNextLevelId  "next_level_id"
+#define KKeyName                "name"
+#define KKeyCardLimit           "cardUseLimit"
+#define KKeyNameImage           "name_image"
+#define KKeyTitleDisplayType       "title_display_type"
+#define KKeySkillTitleDisplay      "skill_title_display"
+#define KKeyDesc         "desc"
+#define KKeyRace         "race"
+#define KKeyRarity       "rarity"
+#define KKeyAttackCT     "attack_ct"
+#define KKeyAttackRange  "attack_range"
+#define KKeyRecoverCT    "recover_ct"
+#define KKeyRecoverHP    "recover_hp"
+#define KKeyFile         "file"
+#define KKeyMaskFile     "maskfile"
+
+#define KKeyDisplay      "display"
+#define KKeyDisplayBg      "display_bg"
+
+#define KDoCallFuncActId      "ACT_ID"
+#define KDoCallFuncParams     "ACT_Params"
+#define KActDestoryDef        "act_destory_default"
+#define KActAttackDef         "act_attack_default"
+#define KActAttackSlingDef     "act_attack_sling"
+#define KActAttackSkillDef    "act_attack_skill"
+#define KActAttackStormLikeDef   "act_attack_strom_like"
+#define KActAttackBodyDef           "act_attack_body"
+#define kActAttackPoisonDef     "act_attack_poison"   //剧毒攻击
+
+#define KActAttackMartyrdom   "act_attack_martyrdom"
+#define KActAttackContact     "act_attack_contact"
+
+
+#define KActOnArrived         "act_arrived"
+#define KActOnArrivedDef      "act_arrived_default"
+#define KKeyActMoveToFinishedDef        "act_move_to_finished_default"
+
+#define KActRevenge                         "act_revenge"
+#define KActOnMsgDef                        "act_on_msg_default"
+#define KKeyActOnRotateFinishedDef          "act_on_rotate_default"
+
+#define KStrEffectBlinkOpacity    "blink_opacity"
+#define KStrEffectToOpacity       "to_opacity"
+#define KStrEffectBlinkColor      "blink_color"
+#define KStrEffectToColor         "to_color"
+#define KStrEffectDefaultRGBA     "def_rgba"
+#define KStrEffectDict            "effect_dict"
+#define KStrEffectFromToColor     "from_to_color"
 
 
 #endif /* defined(__motoGame__KeyConfigDef__) */

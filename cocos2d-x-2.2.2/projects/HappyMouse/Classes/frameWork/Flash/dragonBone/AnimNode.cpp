@@ -100,6 +100,7 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
                 node = new AnimNode;
                 node->autorelease();
                 node->_typeId = AnimNode::K_ARMATURE_FRAME;
+                
                 ArmatureAnim * _animNode = ArmatureAnim::create();
                 _animNode->setAnimDelegateExt(node);
                 node->_animNode = _animNode;
@@ -118,7 +119,7 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
                     node->setDefaultAnimation(defaulAnim->m_sString);
                 }
                 
-                _animNode->load(armatureValue->m_sString,list,strValue->m_sString,1.0f);
+                _animNode->load(armatureValue->m_sString,list,strValue->m_sString, 1.0f);
                 node->addChild(_animNode);
                 
                 CCString * sizeVal = (CCString *)tmpDict->objectForKey(KKeySize);

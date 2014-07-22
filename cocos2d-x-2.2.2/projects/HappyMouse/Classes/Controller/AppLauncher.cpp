@@ -13,6 +13,7 @@
 #include "cocos2d.h"
 #include "SceneController.h"
 #include "ResourceLoader.h"
+#include "GameConfig.h"
 
 USING_NS_CC;
 
@@ -37,7 +38,7 @@ void AppLauncher::startup() {
  * 显示欢迎页
  */
 void AppLauncher::displayWelcomeView() {
-    SceneController::sharedInstance()->switchSence(K_SCENE_WELCOME);
+    SceneController::sharedInstance()->switchSence(K_SCENE_GAMEVIEW);
 }
 
 void AppLauncher::startLoadResources() {
@@ -52,5 +53,6 @@ void AppLauncher::startLoadResources() {
 
 void AppLauncher::didFinishedLoadResources() {
     _isResourceReady = true;
+    GameConfig::sharedInstance()->loadDynamicResoure();
 }
 

@@ -26,6 +26,9 @@ public:
     static void purgeInstance();
     
 public:
+    void loadDynamicResoure();
+    
+public:
     /**
      * 当前屏幕尺寸
      */
@@ -71,7 +74,11 @@ public:
     /**
      获得对应Id的animation信息
      */
-    cocos2d::CCDictionary * getAnimationById(const std::string & Id);
+    cocos2d::CCDictionary* getAnimationById(const std::string & Id);
+    cocos2d::CCDictionary* getStateGroupById(const std::string & key);
+    cocos2d::CCDictionary* getTemplateValue(const int32_t Id);
+    
+    const uint32_t templateTypeOfId(const uint32_t id);
     /**
      获得对应Id的字体样式{颜色，字体名，大小}
      */
@@ -93,9 +100,13 @@ private:
     
     
 private: // Dict
-    cocos2d::CCDictionary*        _animationDict;
     cocos2d::CCDictionary*        _textFontStyleDict;
     cocos2d::CCDictionary*        _audioDict;
+    
+    cocos2d::CCDictionary*        _animationDict;
+    cocos2d::CCDictionary*        _stateGroupDict;
+    
+    cocos2d::CCDictionary*        _templateDict;
 
     
 };

@@ -105,7 +105,7 @@
 		<key>position_offset</key>
 		<string>0,-10</string>
 		<key>scale</key>
-		<string>1</string>
+		<string>2.0</string>
 		<key>size</key>
 		<string>20,60</string>
 		<key>skeleton</key>

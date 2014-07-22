@@ -47,6 +47,11 @@ public:
 	GameObject();
 	virtual ~GameObject();
 	static GameObject * create(const uint32_t id);
+    static GameObject * create(CCDictionary * dict,const uint32_t id);
+    
+protected:
+	bool init();
+    bool initWithDictionary(cocos2d::CCDictionary * dict);
     
 public: /* 设置基本属性 */
     void setId(const uint32_t value);
@@ -85,7 +90,7 @@ public:
     void  pauseAnimation();
     void  resumeAnimation();
     void  update(const float dt);
-    
+    void  setFrameITScale(const float value);
 public:
     /**
      动画节点加载完成
@@ -110,21 +115,43 @@ public:
     //    static GameObject * decode(const boost::shared_ptr<n2studio::network::Buffer> & buf);
     
 public:
+    void initDisplay();
+    
+public: /*状态机*/
     void changeState(const int32_t value);
     /**
      接收一个消息，交给状态机处理
      */
 	void onMessage(GameEventParams * params);
-protected:
-	bool init();
+    void initStateMachine();
+    void addState(const int32_t stateTypeId ,const int32_t stateId);
+    
+public:
+    void setValue(const std::string & key,CCObject * value);
+    CCObject* getValue(const std::string & key);
+    
+public:
+    void doCallFunc(cocos2d::CCObject * data);
+    void doAutoremoveCallFunc(cocos2d::CCObject * node);
+    
+public:
+    void complete();
+    CCNode* getFgNode();
+    CCNode* getMidNode();
+    CCNode* getBgNode();
+    void    setObjContentSize();
     
 private:
     
     CCNode*                       _bgNode;
     CCNode*                       _fgNode;
+    CCNode*                       _midNode;
+    
     AnimNode*                     _flashNode;
     StateMachine*                 _stateMachine;
     GameCharactar                 _charactar;
+    cocos2d::CCDictionary*        _properties;
+    
 };
 
 #endif /* defined(__HappyMouse__GameObject__) */
