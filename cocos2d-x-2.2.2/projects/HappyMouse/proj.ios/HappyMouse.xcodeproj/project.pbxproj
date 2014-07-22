@@ -223,6 +223,7 @@
 		601AF2F0197E992E009A5257 /* StateFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601AF2EE197E992E009A5257 /* StateFactory.cpp */; };
 		601AF2F3197E9981009A5257 /* DisplayState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601AF2F1197E9981009A5257 /* DisplayState.cpp */; };
 		601AF2F9197EA94B009A5257 /* GameModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601AF2F7197EA94B009A5257 /* GameModel.cpp */; };
+		601AF300197EC054009A5257 /* GroundMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601AF2FE197EC054009A5257 /* GroundMap.cpp */; };
 		605A8A711974C51A0086F702 /* CCSpriteExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897A1974C5190086F702 /* CCSpriteExt.cpp */; };
 		605A8A721974C51A0086F702 /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897E1974C5190086F702 /* GLES-Render.cpp */; };
 		605A8A8B1974C51A0086F702 /* AnimNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A89B91974C5190086F702 /* AnimNode.cpp */; };
@@ -962,6 +963,8 @@
 		601AF2F2197E9981009A5257 /* DisplayState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayState.h; sourceTree = "<group>"; };
 		601AF2F7197EA94B009A5257 /* GameModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameModel.cpp; sourceTree = "<group>"; };
 		601AF2F8197EA94B009A5257 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
+		601AF2FE197EC054009A5257 /* GroundMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroundMap.cpp; sourceTree = "<group>"; };
+		601AF2FF197EC054009A5257 /* GroundMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroundMap.h; sourceTree = "<group>"; };
 		605A897A1974C5190086F702 /* CCSpriteExt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSpriteExt.cpp; sourceTree = "<group>"; };
 		605A897B1974C5190086F702 /* CCSpriteExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpriteExt.h; sourceTree = "<group>"; };
 		605A897C1974C5190086F702 /* DoubleNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNumber.h; sourceTree = "<group>"; };
@@ -1714,6 +1717,7 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				601AF2FA197EB815009A5257 /* Map */,
 				605A89741974C5190086F702 /* Controller */,
 				605A89751974C5190086F702 /* Def */,
 				605A89761974C5190086F702 /* frameWork */,
@@ -2181,6 +2185,16 @@
 				601AF2EA197E9652009A5257 /* GameAction.h */,
 			);
 			path = GameAction;
+			sourceTree = "<group>";
+		};
+		601AF2FA197EB815009A5257 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				601AF2FE197EC054009A5257 /* GroundMap.cpp */,
+				601AF2FF197EC054009A5257 /* GroundMap.h */,
+			);
+			name = Map;
+			path = ../Classes/Map;
 			sourceTree = "<group>";
 		};
 		605A89741974C5190086F702 /* Controller */ = {
@@ -3140,6 +3154,7 @@
 				15A3D9A81682F7F9002FB0C5 /* cpHashSet.c in Sources */,
 				15A3D9A91682F7F9002FB0C5 /* cpPolyShape.c in Sources */,
 				15A3D9AA1682F7F9002FB0C5 /* cpShape.c in Sources */,
+				601AF300197EC054009A5257 /* GroundMap.cpp in Sources */,
 				60C3B7091974D5DB00BC4293 /* AppLauncher.cpp in Sources */,
 				605A8ACE1974C51A0086F702 /* CCScale9ProgressBar.cpp in Sources */,
 				15A3D9AB1682F7F9002FB0C5 /* cpSpace.c in Sources */,
