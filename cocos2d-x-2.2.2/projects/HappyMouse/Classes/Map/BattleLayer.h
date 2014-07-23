@@ -18,7 +18,7 @@
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-class BattleLayer : public cocos2d::extension::CCScrollView {
+class BattleLayer : public CCLayer {
     
 public:
     BattleLayer();

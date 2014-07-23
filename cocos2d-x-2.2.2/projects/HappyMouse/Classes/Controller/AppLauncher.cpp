@@ -14,6 +14,7 @@
 #include "SceneController.h"
 #include "ResourceLoader.h"
 #include "GameConfig.h"
+#include "GameController.h"
 
 USING_NS_CC;
 
@@ -38,7 +39,10 @@ void AppLauncher::startup() {
  * 显示欢迎页
  */
 void AppLauncher::displayWelcomeView() {
-    SceneController::getInstance()->switchSence(K_SCENE_GAMEVIEW);
+//    SceneController::getInstance()->switchSence(K_SCENE_BATTLEVIEW);
+    
+    GameController::getInstance()->switchToBattleSence(K_BATTLE_ZONE_PVE_STAGE, 800001);
+    
 }
 
 void AppLauncher::startLoadResources() {
