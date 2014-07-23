@@ -96,7 +96,6 @@ void BattleLayer::updateMapPit(BattleInfo &battleInfo) {
     CCLayer* groundMap_gameLayer = _groundMap->getGroundMapLayerByTag(GroundMap_Game_Layer_Tag);
     float gridWidth = groundMap_gameLayer->getContentSize().width / MapXGridNum;
     float gridHeight = groundMap_gameLayer->getContentSize().height / MapYGridNum;
-    CCLOG("w: %f, h: %f", gridWidth, gridHeight);
     
     CCDictionary* mapDataDict = battleInfo.getMapDataDict();
     CCDictElement * dataElement = NULL;
