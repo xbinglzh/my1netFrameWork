@@ -16,6 +16,7 @@ _director(NULL),
 _gameConfig(NULL),
 _stateFactory(NULL),
 _sharedAudioManager(NULL),
+_battleLayer(NULL),
 _gameObjectsDict(NULL) {
     
 }
@@ -137,6 +138,18 @@ cocos2d::CCSet * GameModel::findGameObjectsInBattle(const int32_t gid){
 
 void GameModel::putGameObject(GameObject* batteObj) {
 
+}
+
+void GameModel::loadMap(const std::string& mapId) {
+    CCDictionary* mapDict = static_cast<CCDictionary * >(_gameConfig->getMapById(mapId));
+    CCString * map_bg = static_cast<CCString * >(mapDict->objectForKey(KKeyMapBg));
+    CCString * map_pit = static_cast<CCString * >(mapDict->objectForKey(KKeyMapPic));
+    
+    _battleLayer->updateGroundMap(map_bg->getCString(),map_pit->getCString());
+}
+
+BattleLayer* GameModel::getBattleLayer() {
+    return _battleLayer;
 }
 
 

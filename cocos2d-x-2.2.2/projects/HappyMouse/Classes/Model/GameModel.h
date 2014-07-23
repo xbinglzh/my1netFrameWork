@@ -20,6 +20,7 @@
 #include "GameConfig.h"
 #include "StateFactory.h"
 #include "AudioManager.h"
+#include "BattleLayer.h"
 
 USING_NS_CC;
 
@@ -117,7 +118,7 @@ public: /* Map */
     /**
      布置基地
      */
-    void loadMap(const int32_t Id);
+    void loadMap(const std::string& mapId);
     /**
      获得某个兵当前在地图上的位置
      */
@@ -128,6 +129,9 @@ public: /* Map */
      获得当前地图
      */
 //    GroundMap* getGroundMap();
+    
+public:
+    BattleLayer                  * getBattleLayer();
     
 protected:
     /**
@@ -140,6 +144,7 @@ private:
 	GameConfig                   * _gameConfig;
     StateFactory                 * _stateFactory;
     AudioManager                 * _sharedAudioManager;
+    BattleLayer                  * _battleLayer;
     
     cocos2d::CCDictionary        * _gameObjectsDict;
     

@@ -69,8 +69,7 @@ void BattleLayer::onExit() {
     
 }
 
-bool BattleLayer::updateGroundMap(const char *fileName, const char *bgfileName) {
-    
+bool BattleLayer::updateGroundMap(const char* mapBg,const char* mapPic) {
     
     
     return true;

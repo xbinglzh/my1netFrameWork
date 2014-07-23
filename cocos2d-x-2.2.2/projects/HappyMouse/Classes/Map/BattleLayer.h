@@ -29,7 +29,7 @@ public:
     virtual void onExit();
     
 public:
-    bool updateGroundMap(const char* fileName,const char* bgfileName);
+    bool updateGroundMap(const char* mapBg,const char* mapPic);
 	inline GroundMap* getGroundMap(){return _groundMap;}
 //	const cocos2d::CCPoint& getPositionFromGroundMap( const std::list<int>::iterator & posIndex);
     
