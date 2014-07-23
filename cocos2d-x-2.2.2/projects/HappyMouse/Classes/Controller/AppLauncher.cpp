@@ -38,7 +38,7 @@ void AppLauncher::startup() {
  * 显示欢迎页
  */
 void AppLauncher::displayWelcomeView() {
-    SceneController::sharedInstance()->switchSence(K_SCENE_GAMEVIEW);
+    SceneController::getInstance()->switchSence(K_SCENE_GAMEVIEW);
 }
 
 void AppLauncher::startLoadResources() {

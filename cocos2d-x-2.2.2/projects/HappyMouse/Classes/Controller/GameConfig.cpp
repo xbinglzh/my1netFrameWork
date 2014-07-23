@@ -11,7 +11,7 @@
 #include "ConstansDef.h"
 #include "UiUtils.h"
 #include "GameEventDef.h"
-
+#include "GameUtils.h"
 
 static GameConfig * _configSharedInstance = NULL;
 
@@ -22,6 +22,7 @@ _audioDict(NULL),
 _stateGroupDict(NULL),
 _templateDict(NULL),
 _mapDict(NULL),
+_stageDict(NULL),
 _pitNumCount(9) {
     
 }
@@ -33,6 +34,7 @@ GameConfig::~GameConfig() {
     CC_SAFE_RELEASE_NULL(_stateGroupDict);
     CC_SAFE_RELEASE_NULL(_templateDict);
     CC_SAFE_RELEASE_NULL(_mapDict);
+    CC_SAFE_RELEASE_NULL(_stageDict);
     
     _pitNumCount = 9;
 }
@@ -80,6 +82,12 @@ void GameConfig::loadDynamicResoure(){
     CC_SAFE_RELEASE_NULL(_mapDict);
     _mapDict = CCDictionary::createWithContentsOfFile("x_map.plist");
     _mapDict->retain();
+    
+    CC_SAFE_RELEASE_NULL(_stageDict);
+    _stageDict = CCDictionary::create();
+    _stageDict->retain();
+    _stageDict->setObject(CCDictionary::createWithContentsOfFile("x_pve_stage.plist"), K_BATTLE_ZONE_PVE_STAGE);
+    
 }
 
 int GameConfig::getScreenSize() {
@@ -111,6 +119,19 @@ cocos2d::CCDictionary * GameConfig::getStateGroupById(const std::string & key){
 CCDictionary* GameConfig::getMapById(const std::string &Id) {
     if (_mapDict) {
         return static_cast<CCDictionary * >(_mapDict->objectForKey(Id));
+    }
+    return NULL;
+}
+
+/**
+ 获得对应levelId关卡信息
+ */
+CCDictionary * GameConfig::getStageConfig(const int32_t typeKey, const uint32_t Id) {
+    if (_stageDict) {
+        CCDictionary * dict = static_cast<CCDictionary * >(_stageDict->objectForKey(typeKey));
+        if (dict) {
+            return static_cast<CCDictionary * >(dict->objectForKey(GameUtils::StringMake(Id)));
+        }
     }
     return NULL;
 }

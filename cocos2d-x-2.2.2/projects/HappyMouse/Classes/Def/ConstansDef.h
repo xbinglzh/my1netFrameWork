@@ -31,7 +31,7 @@ enum ESceneId {
     K_SCENE_UNKNOW                  = 0,
     K_SCENE_WELCOME                 = 101,//欢迎
     K_SCENE_LOGIN                   = 102,//登录
-    K_SCENE_ROLLVIEW                = 103,//测试
+
     K_SCENE_GAMEVIEW                = 201,//游戏场景
     K_SCENE_UIHOME                  = 104,// 开始
     K_SCENE_BATTLEVIEW              = 105,
@@ -53,6 +53,15 @@ enum EGameObjectTypeId {
     K_TYPE_OTHER_BULLET             = 600,//子弹
     K_TYPE_OTHER_TOWER_BULLET       = 620,//子弹
     K_TYPE_OTHER_DROP               = 610,//掉落
+    
+};
+
+/**
+ Battle Stage
+ */
+enum EBattleZone {
+    K_BATTLE_ZONE_EMPTY = 0,            /*setting*/
+    K_BATTLE_ZONE_PVE_STAGE = 1,
     
 };
 

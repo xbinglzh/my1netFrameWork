@@ -30,7 +30,10 @@ public:
     void update(float dt);
     void notifyRandomMouses();
     
-protected:
+public:
+    void  switchToBattleSence(const int32_t battleZoneId,
+                              const int32_t stageId,
+                              const int32_t chipId = -1);
     
 private:
     bool    isIdInRandomVector(int currentId);

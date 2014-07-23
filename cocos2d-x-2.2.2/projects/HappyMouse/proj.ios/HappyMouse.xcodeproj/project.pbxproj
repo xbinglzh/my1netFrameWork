@@ -301,7 +301,6 @@
 		605A8ADB1974C54B0086F702 /* particle in Resources */ = {isa = PBXBuildFile; fileRef = 605A8AD51974C54B0086F702 /* particle */; };
 		605A8ADC1974C54B0086F702 /* plist in Resources */ = {isa = PBXBuildFile; fileRef = 605A8AD61974C54B0086F702 /* plist */; };
 		605A8ADD1974C54B0086F702 /* ui_layout in Resources */ = {isa = PBXBuildFile; fileRef = 605A8AD71974C54B0086F702 /* ui_layout */; };
-		606646CE197F1D06005BBACC /* BattleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606646CC197F1D06005BBACC /* BattleLayer.cpp */; };
 		6094F5691976617400614051 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F55F1976617400614051 /* Default-568h@2x.png */; };
 		6094F56A1976617400614051 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5601976617400614051 /* Default.png */; };
 		6094F56B1976617400614051 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5611976617400614051 /* Default@2x.png */; };
@@ -312,6 +311,7 @@
 		6094F5701976617400614051 /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5661976617400614051 /* Icon-57.png */; };
 		6094F5711976617400614051 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5671976617400614051 /* Icon-72.png */; };
 		6094F5721976617400614051 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5681976617400614051 /* Icon-76.png */; };
+		60C24E60197F5C7A008BE554 /* BattleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C24E5E197F5C7A008BE554 /* BattleLayer.cpp */; };
 		60C3B6E51974CC8300BC4293 /* GameConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B6E31974CC8300BC4293 /* GameConfig.cpp */; };
 		60C3B6FD1974CE5100BC4293 /* libboost_regex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 605A8B0F1974C8DB0086F702 /* libboost_regex.a */; };
 		60C3B7001974CF1E00BC4293 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C3B6FF1974CF1E00BC4293 /* libcurl.a */; };
@@ -1141,8 +1141,6 @@
 		605A8B251974CA4A0086F702 /* FontStylesDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontStylesDef.h; sourceTree = "<group>"; };
 		605A8B261974CA4A0086F702 /* KeyConfigDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyConfigDef.h; sourceTree = "<group>"; };
 		605A8B271974CA4A0086F702 /* NotifyMessageDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyMessageDef.h; sourceTree = "<group>"; };
-		606646CC197F1D06005BBACC /* BattleLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleLayer.cpp; sourceTree = "<group>"; };
-		606646CD197F1D06005BBACC /* BattleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleLayer.h; sourceTree = "<group>"; };
 		6094F55F1976617400614051 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6094F5601976617400614051 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6094F5611976617400614051 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -1153,6 +1151,8 @@
 		6094F5661976617400614051 /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
 		6094F5671976617400614051 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		6094F5681976617400614051 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		60C24E5E197F5C7A008BE554 /* BattleLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleLayer.cpp; sourceTree = "<group>"; };
+		60C24E5F197F5C7A008BE554 /* BattleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleLayer.h; sourceTree = "<group>"; };
 		60C3B6E31974CC8300BC4293 /* GameConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameConfig.cpp; sourceTree = "<group>"; };
 		60C3B6E41974CC8300BC4293 /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		60C3B6FF1974CF1E00BC4293 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
@@ -2193,8 +2193,8 @@
 		601AF2FA197EB815009A5257 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				606646CC197F1D06005BBACC /* BattleLayer.cpp */,
-				606646CD197F1D06005BBACC /* BattleLayer.h */,
+				60C24E5E197F5C7A008BE554 /* BattleLayer.cpp */,
+				60C24E5F197F5C7A008BE554 /* BattleLayer.h */,
 				601AF2FE197EC054009A5257 /* GroundMap.cpp */,
 				601AF2FF197EC054009A5257 /* GroundMap.h */,
 			);
@@ -3082,7 +3082,7 @@
 				601AF2F3197E9981009A5257 /* DisplayState.cpp in Sources */,
 				375BD4C31868411B0024609E /* ObjectFactory.cpp in Sources */,
 				605A8AC21974C51A0086F702 /* SmallSoybeanParticle.cpp in Sources */,
-				606646CE197F1D06005BBACC /* BattleLayer.cpp in Sources */,
+				60C24E60197F5C7A008BE554 /* BattleLayer.cpp in Sources */,
 				15A3D90D1682F7D5002FB0C5 /* b2Math.cpp in Sources */,
 				15A3D90E1682F7D5002FB0C5 /* b2Settings.cpp in Sources */,
 				60E61CDA197E09CF0097963B /* GameState.cpp in Sources */,

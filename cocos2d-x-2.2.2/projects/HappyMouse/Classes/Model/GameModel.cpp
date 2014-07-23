@@ -8,8 +8,9 @@
 
 #include "GameModel.h"
 #include "ResourceLoader.h"
+#include "BattleLayer.h"
 
-static GameModel * _sharedInstance=NULL;
+static GameModel * _sharedInstance = NULL;
 
 GameModel::GameModel() : CCObject(),
 _director(NULL),
@@ -87,6 +88,10 @@ GameObject * GameModel::generateById(const uint32_t pid){
 	return (gdict ? GameObject::create(gdict, pid) : NULL);
 }
 
+void GameModel::clearCache() {
+    
+}
+
 void GameModel::clearGameObjects() {
     //清理所有的对象
 	CCDictElement * pDictElement = NULL;
@@ -151,5 +156,7 @@ void GameModel::loadMap(const std::string& mapId) {
 BattleLayer* GameModel::getBattleLayer() {
     return _battleLayer;
 }
+
+
 
 

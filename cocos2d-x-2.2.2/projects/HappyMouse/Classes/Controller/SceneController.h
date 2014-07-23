@@ -11,7 +11,7 @@
 
 #include "cocos2d.h"
 #include "ConstansDef.h"
-
+#include "GameModel.h"
 #include <deque>
 
 USING_NS_CC;
@@ -23,13 +23,14 @@ protected:
 	virtual ~SceneController();
     
 public:
-    static SceneController *sharedInstance(void);
+    static SceneController *getInstance(void);
     static void purgeInstance(void);
 	bool init(void);
     
     void clearUserView();
     
 public:
+    
     enum SwitchOption {
         SwitchOptionRoot = 0,       /* 替换Root */
         SwitchOptionPush = 1,       /* 压入 */
@@ -45,6 +46,8 @@ public:
     void backToRootScene(); 
     void switchBgMusic(const ESceneId sceneId);
     
+    ESceneId getCurrentSceneId();
+    
 protected:
     virtual void updateProjection(void);
     virtual void updateScene(cocos2d::CCScene* scene);
@@ -53,7 +56,7 @@ private:
     cocos2d::CCDirector* _director;
     ESceneId        _currentSceneId;
     ESceneId        _currentRunningSceneId;
-    
+    GameModel*      _gameModel;
     std::deque<int32_t> _sceneQueue;
     int32_t             _bgMusicId;
 };

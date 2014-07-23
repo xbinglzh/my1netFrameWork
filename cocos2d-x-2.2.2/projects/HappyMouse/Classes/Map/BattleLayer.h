@@ -39,7 +39,7 @@ private:
 private:
     
     GameController *        _gameController;
-    GameModel *             _gameModel;
+//    GameModel*              _gameModel;
     GroundMap*              _groundMap;
     
     CCLayerColor*           _bottomLayer;             //底层贴图
@@ -49,6 +49,7 @@ private:
     CCLayerColor*           _battleUiLayer;           //UI控制层
     
 //    XXBattleUI* _battleUI;
+    
 };
 
 #endif /* defined(__HappyMouse__BattleLayer__) */

@@ -9,6 +9,11 @@
 #include "GameController.h"
 #include "GameConfig.h"
 #include "NotifyMessageDef.h"
+#include "ConstansDef.h"
+#include "SceneController.h"
+#include "GameUtils.h"
+#include "KeyConfigDef.h"
+
 
 static GameController* _sharedInstance = NULL;
 
@@ -87,4 +92,19 @@ void GameController::genRandomMouseIds() {
     for (int i = 0; i < 4; i++) {
         _randomVector.push_back(genRandomMouseIndex());
     }
+}
+
+void GameController::switchToBattleSence(const int32_t battleZoneId,
+                                         const int32_t stageId,
+                                         const int32_t chipId) {
+    
+    CCDictionary * dict = CCDictionary::create();
+    dict->setObject(GameUtils::GXCCStringMake(battleZoneId), KStrBattleZoneId);
+    dict->setObject(GameUtils::GXCCStringMake(stageId), KStrBattleId);
+
+    ESceneId currentScene = SceneController::getInstance()->getCurrentSceneId();
+    
+    SceneController::getInstance()->switchSence(K_SCENE_BATTLEVIEW, dict,
+                currentScene != K_SCENE_BATTLEVIEW ? SceneController::SwitchOptionPush : SceneController::SwitchOptionReplace);
+    
 }

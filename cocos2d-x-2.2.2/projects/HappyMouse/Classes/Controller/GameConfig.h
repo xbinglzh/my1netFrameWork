@@ -78,6 +78,8 @@ public:
     cocos2d::CCDictionary* getStateGroupById(const std::string & key);
     cocos2d::CCDictionary* getMapById(const std::string& Id);
     cocos2d::CCDictionary* getTemplateValue(const int32_t Id);
+
+    CCDictionary* getStageConfig(const int32_t typeKey, const uint32_t Id);
     
     const uint32_t templateTypeOfId(const uint32_t id);
     /**
@@ -101,15 +103,16 @@ private:
     
     
 private: // Dict
-    cocos2d::CCDictionary*        _textFontStyleDict;
-    cocos2d::CCDictionary*        _audioDict;
+    CCDictionary*        _textFontStyleDict;
+    CCDictionary*        _audioDict;
     
-    cocos2d::CCDictionary*        _animationDict;
-    cocos2d::CCDictionary*        _stateGroupDict;
+    CCDictionary*        _animationDict;
+    CCDictionary*        _stateGroupDict;
     
-    cocos2d::CCDictionary*        _templateDict;
+    CCDictionary*        _templateDict;
     
-    cocos2d::CCDictionary*        _mapDict;
+    CCDictionary*        _mapDict;
+    CCDictionary*        _stageDict;
     
 };
 

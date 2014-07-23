@@ -12,6 +12,7 @@
 #include "LayoutUtil.h"
 #include "ConstansDef.h"
 #include "AudioManager.h"
+#include "BattleLayer.h"
 
 static SceneController* _sharedInstance=NULL;
 
@@ -19,6 +20,7 @@ SceneController::SceneController() :
 _director(NULL),
 _currentSceneId(K_SCENE_UNKNOW) ,
 _currentRunningSceneId(K_SCENE_UNKNOW),
+_gameModel(NULL),
 _bgMusicId(-1) {
     
 }
@@ -27,7 +29,7 @@ SceneController::~SceneController() {
     
 }
 
-SceneController* SceneController::sharedInstance(void){
+SceneController* SceneController::getInstance(void) {
 	
 	if (!_sharedInstance)
     {
@@ -45,6 +47,7 @@ void SceneController::purgeInstance(void){
 bool SceneController::init(void) {
     _director = CCDirector::sharedDirector();
     CCDirector::sharedDirector()->setDelegate(this);
+    _gameModel = GameModel::getInstance();
     
     return true;
 }
@@ -85,13 +88,34 @@ void SceneController::switchSence(const ESceneId sceneId, cocos2d::CCObject* par
     }
 	
 	switch (sceneId) {
+        case K_SCENE_UNKNOW:
+            
+            break;
             
         case K_SCENE_WELCOME:
             layer = WelcomeView::createFromCCB();
             break;
+        case K_SCENE_LOGIN:
+            break;
+            
+        case K_SCENE_UIHOME:
+            break;
             
         case K_SCENE_GAMEVIEW:
             layer = GameView::create();
+            break;
+        
+        case K_SCENE_BATTLEVIEW: {
+            CCDictionary * dict = static_cast<CCDictionary *>(param);
+            CCString * battleZoneId = static_cast<CCString *>(dict->objectForKey(KStrBattleZoneId));
+            CCString * stageId = static_cast<CCString *>(dict->objectForKey(KStrBattleId));
+            int32_t levelStageId = stageId ? stageId->intValue() : -1;
+            
+            layer = BattleLayer::create();
+            _gameModel->clearCache();
+            _gameModel->resetBattlelayer(layer);
+            
+        }
             break;
             
         default:
@@ -159,4 +183,8 @@ void SceneController::switchBgMusic(const ESceneId sceneId){
             AudioManager::sharedInstance()->playAudioById(_bgMusicId, true);
         }
     }
+}
+
+ESceneId SceneController::getCurrentSceneId() {
+    return _currentSceneId;
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>800001</key>
+	<dict>
+		<key>defensive_martrix</key>
+		<string>0</string>
+		<key>desc</key>
+		<string>800001#desc</string>
+		<key>difficulty</key>
+		<string>0.1</string>
+		<key>id</key>
+		<string>800001</string>
+		<key>index</key>
+		<string>1</string>
+		<key>map</key>
+		<string>920001</string>
+		<key>name</key>
+		<string>800001#name</string>
+		<key>reward</key>
+		<string>981001</string>
+		<key>story</key>
+		<string>-1</string>
+		<key>suit_level</key>
+		<string>1</string>
+		<key>troop</key>
+		<string>960001</string>
+		<key>troop_waves</key>
+		<string>3</string>
+		<key>type</key>
+		<string>2</string>
+	</dict>
+</dict>
+</plist>

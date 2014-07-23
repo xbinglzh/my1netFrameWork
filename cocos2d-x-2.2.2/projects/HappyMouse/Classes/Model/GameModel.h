@@ -20,11 +20,12 @@
 #include "GameConfig.h"
 #include "StateFactory.h"
 #include "AudioManager.h"
-#include "BattleLayer.h"
 
 USING_NS_CC;
 
-class GameModel : public cocos2d::CCObject {
+class BattleLayer;
+
+class GameModel : public CCObject {
 
 protected:
 	GameModel();
@@ -131,7 +132,7 @@ public: /* Map */
 //    GroundMap* getGroundMap();
     
 public:
-    BattleLayer                  * getBattleLayer();
+    BattleLayer*     getBattleLayer();
     
 protected:
     /**

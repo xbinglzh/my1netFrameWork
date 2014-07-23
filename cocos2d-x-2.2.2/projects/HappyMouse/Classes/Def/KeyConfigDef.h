@@ -124,6 +124,9 @@
 #define KStrEffectDict            "effect_dict"
 #define KStrEffectFromToColor     "from_to_color"
 
+#define KStrBattleId              "battleId"
+#define KStrBattleZoneId          "battle_zone"
+
 //Map.plist
 #define KKeyMapBg                 "map_bg"
 #define KKeyMapPit                "map_pit"

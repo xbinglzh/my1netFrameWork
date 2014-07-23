@@ -29,7 +29,6 @@ enum LayerZOrder {
 
 BattleLayer::BattleLayer() :
 _gameController(NULL),
-_gameModel(NULL),
 _bottomLayer(NULL),
 _battleUiLayer(NULL),
 _xpEffectLayer(NULL),
@@ -49,7 +48,6 @@ bool BattleLayer::init() {
     this->setAnchorPoint(CCPointZero);
     
     _gameController = GameController::getInstance();
-    _gameModel = GameModel::getInstance();
     
     _bottomLayer = genLayerColor(BottomLayerZorder, Bottom_Layer_Tag);
     _mapLayer = genLayerColor(MapLayerZorder, Map_Layer_Tag);
