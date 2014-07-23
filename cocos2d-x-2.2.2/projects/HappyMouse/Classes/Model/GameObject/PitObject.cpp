@@ -33,10 +33,10 @@ PitObject::~PitObject() {
     CCNotificationCenter::sharedNotificationCenter()->removeObserver(this, KNotifyMousePop);
 }
 
-PitObject* PitObject::create(int pitId) {
+PitObject* PitObject::create(int pitId,const char* pitImg) {
     PitObject* obj = new PitObject();
     
-    if (obj && obj->init(pitId)) {
+    if (obj && obj->init(pitId, pitImg)) {
         obj->autorelease();
         return obj;
     } else {
@@ -46,19 +46,19 @@ PitObject* PitObject::create(int pitId) {
     
 }
 
-bool PitObject::init(int pitId) {
-    
+bool PitObject::init(int pitId,const char* pitImg) {
+
     this->_pitId = pitId;
     
-    _pit = CCSpriteExt::create("grass_pit.png");
+    _pit = CCSpriteExt::create(pitImg);
     this->setContentSize(_pit->getContentSize());
     this->addChild(_pit);
     LayoutUtil::layoutParentBottom(_pit);
     
-    _mouse = MouseObject::create();
-    this->addChild(_mouse, 1, MouseTag);
-    
-    LayoutUtil::layoutParentBottom(_mouse, 0, 30);
+//    _mouse = MouseObject::create();
+//    this->addChild(_mouse, 1, MouseTag);
+//    
+//    LayoutUtil::layoutParentBottom(_mouse, 0, 30);
     
     return true;
 }

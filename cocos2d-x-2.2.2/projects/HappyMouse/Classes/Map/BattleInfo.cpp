@@ -21,7 +21,10 @@ _totalWaves(-1),
 _currentWaves(-1),
 _currentTroopId(-1),
 _currentMonsterId(-1),
-_pveStageDict(NULL) {
+
+_pveStageDict(NULL),
+_mapDataDict(NULL),
+_mapDict(NULL) {
     
 }
 
@@ -40,19 +43,23 @@ void BattleInfo::reset() {
 }
 
 void BattleInfo::initWithConfig(int32_t battleZoneId, int32_t stageId) {
+    
     _pveStageDict = GameConfig::getInstance()->getStageConfig(battleZoneId, stageId);
+    
+    CCString* mapId = static_cast<CCString*> (_pveStageDict ->objectForKey(KKeyMap));
+    _mapDict = GameConfig::getInstance()->getMapById(mapId->getCString());
+    
+    CCString* mapDataId = static_cast<CCString*>(_mapDict->objectForKey(KKeyMapData));
+    _mapDataDict = GameConfig::getInstance()->getMapDataById(mapDataId->getCString());
+    
 }
 
-CCString* BattleInfo::getPveStateValueByKey(const std::string &key) {
-    CCString* mapId = static_cast<CCString*> (_pveStageDict ->objectForKey(KKeyMap));
-    
-    if (mapId) {
-        CCDictionary* mapDict = GameConfig::getInstance()->getMapById(mapId->getCString());
-        CCString* value = static_cast<CCString*> (mapDict->objectForKey(key));
-        return value;
-    }
-    
-    return NULL;
+CCDictionary* BattleInfo::getMapDict() {
+    return _mapDict;
+}
+
+CCDictionary* BattleInfo::getMapDataDict() {
+    return _mapDataDict;
 }
 
 

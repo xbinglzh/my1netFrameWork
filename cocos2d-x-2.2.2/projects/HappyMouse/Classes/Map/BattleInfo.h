@@ -23,8 +23,11 @@ public:
     
 public:
     //Map Plist
-    void setPveMapDict(cocos2d::CCDictionary* pveMapDict);
-    cocos2d::CCString* getPveStateValueByKey(const std::string & key);
+//    void setPveMapDict(cocos2d::CCDictionary* pveMapDict);
+//    cocos2d::CCString* getPveStageValueByKey(const std::string & key);
+    
+    cocos2d::CCDictionary*   getMapDict();
+    cocos2d::CCDictionary*   getMapDataDict();
     
 private:
     int32_t                       _battleZone;                      //关卡类型
@@ -38,6 +41,8 @@ private:
     int32_t                       _currentMonsterId;
     
     cocos2d::CCDictionary*        _pveStageDict;
+    cocos2d::CCDictionary*        _mapDict;
+    cocos2d::CCDictionary*        _mapDataDict;
     
 };
 

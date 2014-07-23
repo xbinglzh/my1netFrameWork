@@ -84,7 +84,7 @@ void GameView::initPitData() {
     
     for (int i = 0; i < GameConfig::getInstance()->getPitNumCount(); i++) {
         
-        PitObject* pit = PitObject::create(i);
+        PitObject* pit = PitObject::create(i, "grass_pit.png");
         
         _pitNode->addChild(pit, 1, PitBaseTag + i);
         

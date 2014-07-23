@@ -21,13 +21,13 @@ class PitObject : public CCNodeRGBA {
 public:
     PitObject();
     ~PitObject();
-    static PitObject* create(int _pitId);
+    static PitObject* create(int pitId,const char* pitImg);
     
 public:
     bool strikenMouse(CCTouch* pTouch);
     
 protected:
-    bool init(int _pitId);
+    bool init(int pitId,const char* pitImg);
     
 private:
     void judgePopMouse(CCObject* pSender);

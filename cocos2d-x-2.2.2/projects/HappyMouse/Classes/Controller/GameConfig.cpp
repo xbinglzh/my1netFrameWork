@@ -23,6 +23,8 @@ _stateGroupDict(NULL),
 _templateDict(NULL),
 _mapDict(NULL),
 _stageDict(NULL),
+_mapDataDict(NULL),
+_mapPitDict(NULL),
 _pitNumCount(9) {
     
 }
@@ -33,8 +35,11 @@ GameConfig::~GameConfig() {
     CC_SAFE_RELEASE_NULL(_audioDict);
     CC_SAFE_RELEASE_NULL(_stateGroupDict);
     CC_SAFE_RELEASE_NULL(_templateDict);
-    CC_SAFE_RELEASE_NULL(_mapDict);
+    
     CC_SAFE_RELEASE_NULL(_stageDict);
+    CC_SAFE_RELEASE_NULL(_mapDict);
+    CC_SAFE_RELEASE_NULL(_mapDataDict);
+    CC_SAFE_RELEASE_NULL(_mapPitDict);
     
     _pitNumCount = 9;
 }
@@ -67,10 +72,12 @@ bool GameConfig::init() {
     _templateDict = new CCDictionary;
     _templateDict->setObject(CCDictionary::createWithContentsOfFile("x_monster.plist"), K_TYPE_MONSTER);
     
+    
     return true;
 }
 
 void GameConfig::loadDynamicResoure(){
+    
     CC_SAFE_RELEASE_NULL(_animationDict);
     _animationDict = CCDictionary::createWithContentsOfFile("x_anim.plist");
     _animationDict->retain();
@@ -79,14 +86,22 @@ void GameConfig::loadDynamicResoure(){
     _stateGroupDict = CCDictionary::createWithContentsOfFile("x_state_group.plist");
     _stateGroupDict->retain();
     
+    CC_SAFE_RELEASE_NULL(_stageDict);
+    _stageDict = CCDictionary::create();
+    _stageDict->setObject(CCDictionary::createWithContentsOfFile("x_pve_stage.plist"), K_BATTLE_ZONE_PVE_STAGE);
+    _stageDict->retain();
+    
     CC_SAFE_RELEASE_NULL(_mapDict);
     _mapDict = CCDictionary::createWithContentsOfFile("x_map.plist");
     _mapDict->retain();
     
-    CC_SAFE_RELEASE_NULL(_stageDict);
-    _stageDict = CCDictionary::create();
-    _stageDict->retain();
-    _stageDict->setObject(CCDictionary::createWithContentsOfFile("x_pve_stage.plist"), K_BATTLE_ZONE_PVE_STAGE);
+    CC_SAFE_RELEASE_NULL(_mapDataDict);
+    _mapDataDict = CCDictionary::createWithContentsOfFile("x_map_data.plist");
+    _mapDataDict->retain();
+    
+    CC_SAFE_RELEASE_NULL(_mapPitDict);
+    _mapPitDict = CCDictionary::createWithContentsOfFile("x_map_pit.plist");
+    _mapPitDict->retain();
     
 }
 
@@ -119,6 +134,20 @@ cocos2d::CCDictionary * GameConfig::getStateGroupById(const std::string & key){
 CCDictionary* GameConfig::getMapById(const std::string &Id) {
     if (_mapDict) {
         return static_cast<CCDictionary * >(_mapDict->objectForKey(Id));
+    }
+    return NULL;
+}
+
+CCDictionary* GameConfig::getMapDataById(const std::string &Id) {
+    if (_mapDataDict) {
+        return static_cast<CCDictionary*>(_mapDataDict->objectForKey(Id));
+    }
+    return NULL;
+}
+
+CCDictionary* GameConfig::getMapPitById(const std::string &Id) {
+    if (_mapPitDict) {
+        return static_cast<CCDictionary*>(_mapPitDict->objectForKey(Id));
     }
     return NULL;
 }

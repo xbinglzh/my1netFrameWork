@@ -6,12 +6,12 @@
 	<dict>
 		<key>map_bg</key>
 		<string>xmap_back_grass.png</string>
-		<key>map_pit</key>
-		<string>500001</string>
 		<key>id</key>
 		<string>920001</string>
 		<key>map_pic</key>
 		<string>-1</string>
+		<key>map_data</key>
+		<string>400001</string>
 	</dict>
 </dict>
 </plist>

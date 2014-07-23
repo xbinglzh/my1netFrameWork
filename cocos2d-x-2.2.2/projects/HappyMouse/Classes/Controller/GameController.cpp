@@ -118,11 +118,7 @@ void GameController::resetBattleLayer(BattleLayer *battleLayer, cocos2d::CCDicti
     
     updateBattleInfo(battleZoneId->intValue(), stageId->intValue());
     
-    CCString* mapBg = GameModel::getInstance()->getBattleInfo().getPveStateValueByKey(KKeyMapBg);
-    CCString* mapPit = GameModel::getInstance()->getBattleInfo().getPveStateValueByKey(KKeyMapPit);
-    
-    battleLayer->updateGroundMap(mapBg->getCString(), mapPit->getCString());
-    
+    battleLayer->updateGroundMap(GameModel::getInstance()->getBattleInfo());
 }
 
 void GameController::updateBattleInfo(const int32_t battleZoneId,const int32_t stageId){

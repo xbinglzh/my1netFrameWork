@@ -152,7 +152,7 @@ void GameModel::loadMap(const std::string& mapId) {
     CCString * map_bg = static_cast<CCString * >(mapDict->objectForKey(KKeyMapBg));
     CCString * map_pit = static_cast<CCString * >(mapDict->objectForKey(KKeyMapPic));
     
-    _battleLayer->updateGroundMap(map_bg->getCString(),map_pit->getCString());
+    _battleLayer->updateGroundMap(GameModel::getInstance()->getBattleInfo());
 }
 
 BattleLayer* GameModel::getBattleLayer() {

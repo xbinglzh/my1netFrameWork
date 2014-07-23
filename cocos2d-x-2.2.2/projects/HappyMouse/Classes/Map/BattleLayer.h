@@ -30,12 +30,16 @@ public:
     virtual void onExit();
     
 public:
-    bool updateGroundMap(const char* mapBg,const char* mapPic);
+    bool updateGroundMap(BattleInfo& battleInfo);
 	inline GroundMap* getGroundMap(){return _groundMap;}
 //	const cocos2d::CCPoint& getPositionFromGroundMap( const std::list<int>::iterator & posIndex);
     
 private:
     CCLayerColor* genLayerColor(int zOrder, int layerTag);
+    
+    void updateMapBg(BattleInfo& battleInfo);
+    void updateMapPit(BattleInfo& battleInfo);
+//    char* genPitImg(const std::string &Id);
 
 private:
     
@@ -47,6 +51,8 @@ private:
     CCLayerColor*           _topLayer;                //游戏上层
     CCLayerColor*           _xpEffectLayer;           //xp动画层
     CCLayerColor*           _battleUiLayer;           //UI控制层
+    
+    
     
 //    XXBattleUI* _battleUI;
     

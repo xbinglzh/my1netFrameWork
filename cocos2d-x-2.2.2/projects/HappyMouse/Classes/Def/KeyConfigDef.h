@@ -129,14 +129,19 @@
 
 //Map.plist
 #define KKeyMapBg                 "map_bg"
-#define KKeyMapPit                "map_pit"
 #define KKeyMapPic                "map_pic"
+#define KKeyMapData               "map_data"
 
 //x_pve_stage.plist
 #define KKeyMap                   "map"
 #define KKeyDifficulty            "difficulty"
 #define KKeyTroop                 "troop"
 #define KKeyTroopWaves            "troop_waves"
+
+//x_map_pit.plist
+#define KKeyPitImg                "pit_img"
+
+
 
 
 
