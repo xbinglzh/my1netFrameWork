@@ -18,7 +18,7 @@ StateFactory::StateFactory(){
 }
 
 StateFactory::~StateFactory(){
-    std::map<int32_t,State*>::iterator iter =  _stateMap.begin();
+    std::map<int, State*>::iterator iter =  _stateMap.begin();
     
     State * state = NULL;
     for (; iter != _stateMap.end(); iter++) {
@@ -29,7 +29,7 @@ StateFactory::~StateFactory(){
     }
 	_stateMap.clear();
     
-    std::map<int32_t,State*>::iterator siter =  _skillStateMap.begin();
+    std::map<int, State*>::iterator siter =  _skillStateMap.begin();
     State * skillState = NULL;
     for (; siter != _skillStateMap.end(); siter++) {
         skillState = (*siter).second;
@@ -59,13 +59,14 @@ void StateFactory::purgeInstance(){
 }
 
 bool StateFactory::init(){
+    
 	return true;
 }
 
-State * StateFactory::getStateByTypeId(const int32_t id){
+State * StateFactory::getStateByTypeId(const int stateType){
     State * state = NULL;
     
-    std::map<int32_t,State * >::iterator iter = _stateMap.find(id);
+    std::map<int, State * >::iterator iter = _stateMap.find(stateType);
     
     if (iter != _stateMap.end()) {
         
@@ -73,7 +74,7 @@ State * StateFactory::getStateByTypeId(const int32_t id){
         
     } else {
         
-        switch (id) {
+        switch (stateType) {
                 //-----------------------------------
                 //Normal State
                 //-----------------------------------
@@ -90,8 +91,8 @@ State * StateFactory::getStateByTypeId(const int32_t id){
         }
         
         if (state) {
-            _stateMap[id] = state;
-            _stateMap[id]->setStateId(id);
+            _stateMap[stateType] = state;
+            _stateMap[stateType]->setStateId(stateType);
         }
         
     }

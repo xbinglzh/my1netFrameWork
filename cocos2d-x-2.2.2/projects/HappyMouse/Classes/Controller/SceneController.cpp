@@ -174,7 +174,7 @@ void SceneController::switchBgMusic(const ESceneId sceneId){
     //背景音乐切换
     
     if(_bgMusicId == -1){
-        if(sceneId == K_SCENE_BATTLEVIEW ){
+        if(sceneId == K_SCENE_BATTLEVIEW || sceneId  == K_SCENE_GAMEVIEW){
             _bgMusicId = K_AudioEffect_BackGroundMusic;
             AudioManager::sharedInstance()->playAudioById(_bgMusicId, true);
         }

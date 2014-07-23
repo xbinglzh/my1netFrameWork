@@ -55,10 +55,10 @@ bool PitObject::init(int pitId,const char* pitImg) {
     this->addChild(_pit);
     LayoutUtil::layoutParentBottom(_pit);
     
-//    _mouse = MouseObject::create();
-//    this->addChild(_mouse, 1, MouseTag);
-//    
-//    LayoutUtil::layoutParentBottom(_mouse, 0, 30);
+    _mouse = MouseObject::create();
+    this->addChild(_mouse, 1, MouseTag);
+    
+    LayoutUtil::layoutParentBottom(_mouse, 0, 30);
     
     return true;
 }

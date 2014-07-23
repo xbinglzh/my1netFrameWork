@@ -23,12 +23,12 @@ protected:
 public:
     static StateFactory *getInstance();
     static void purgeInstance();
-    State * getStateByTypeId(const int32_t id);
-    State * getAdditionStateById(const int32_t id);
+    State * getStateByTypeId(const int stateType);
+//    State * getAdditionStateById(const int stateId );
     
 private:
-	std::map<int32_t,State* > 	_stateMap;
-    std::map<int32_t,State* > 	_skillStateMap;
+	std::map<int, State* > 	_stateMap;
+    std::map<int, State* > 	_skillStateMap;
     
 };
 
