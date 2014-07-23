@@ -132,6 +132,12 @@
 #define KKeyMapPit                "map_pit"
 #define KKeyMapPic                "map_pic"
 
+//x_pve_stage.plist
+#define KKeyMap                   "map"
+#define KKeyDifficulty            "difficulty"
+#define KKeyTroop                 "troop"
+#define KKeyTroopWaves            "troop_waves"
+
 
 
 #endif /* defined(__motoGame__KeyConfigDef__) */

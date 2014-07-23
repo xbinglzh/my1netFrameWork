@@ -62,8 +62,9 @@ void GameModel::update(float dt) {
     
 }
 
-void GameModel::resetBattlelayer(cocos2d::CCLayer* battlelayer) {
-
+void GameModel::resetBattlelayer(BattleLayer* battlelayer) {
+    _battleLayer = static_cast<BattleLayer *>(battlelayer);
+    
 }
 
 void GameModel::addChildToGroundMap(CCNode *child, int zOrder, int tag){
@@ -89,6 +90,7 @@ GameObject * GameModel::generateById(const uint32_t pid){
 }
 
 void GameModel::clearCache() {
+    _battleInfo.reset();
     
 }
 
@@ -155,6 +157,10 @@ void GameModel::loadMap(const std::string& mapId) {
 
 BattleLayer* GameModel::getBattleLayer() {
     return _battleLayer;
+}
+
+BattleInfo& GameModel::getBattleInfo() {
+    return _battleInfo;
 }
 
 

@@ -9,15 +9,7 @@
 #include "GroundMap.h"
 #include "LayoutUtil.h"
 #include "NotifyMessageDef.h"
-
-#define Base_Layer_Tag            1001
-#define Adorn_Bottom_Layer_Tag    1002
-#define Game_Layer_Tag            1003
-#define Drops_Layer_Tag           1004
-#define Npc_Layer_Tag             1005
-#define Adorn_Top_Layer_Tag       1006
-#define Guide_Layer_Tag           1007
-#define Gray_Layer_Tag            1008
+#include "ConstansDef.h"
 
 enum LayerZOrder {
     
@@ -57,11 +49,11 @@ GroundMap::~GroundMap() {
     
 }
 
-GroundMap* GroundMap::create(const char *fileName) {
+GroundMap* GroundMap::create() {
     
     GroundMap* self = new GroundMap();
     
-    if (self && self->initWithFile(fileName)) {
+    if (self && self->initWithFile()) {
         self->autorelease();
         return self;
     }
@@ -70,18 +62,18 @@ GroundMap* GroundMap::create(const char *fileName) {
     return NULL;
 }
 
-bool GroundMap::initWithFile(const char *fileName) {
+bool GroundMap::initWithFile() {
     this->setContentSize(CCSizeMake(CCDirector::sharedDirector()->getOpenGLView()->getDesignResolutionSize().width, CCDirector::sharedDirector()->getOpenGLView()->getDesignResolutionSize().height));
     this->setAnchorPoint(CCPointZero);
     
-    _baseLayer = genLayerColor(BaseLayerZorder, Base_Layer_Tag);
-    _adornBottomLayer = genLayerColor(AdornBottomLayerZorder, Adorn_Bottom_Layer_Tag);
-    _gameLayer = genLayerColor(GameLayerZorder, Game_Layer_Tag);
-    _dropsLayer = genLayerColor(DropsLayerZorder, Drops_Layer_Tag);
-    _npcLayer = genLayerColor(NpcLayerZorder, Npc_Layer_Tag);
-    _adornTopLayer = genLayerColor(AdornTopLayerZorder, Adorn_Top_Layer_Tag);
-    _guideLayer = genLayerColor(GuideLayerZorder, Guide_Layer_Tag);
-    _grayLayer = genLayerColor(GrayLayerZorder, Gray_Layer_Tag);
+    _baseLayer = genLayerColor(BaseLayerZorder, GroundMap_Base_Layer_Tag);
+    _adornBottomLayer = genLayerColor(AdornBottomLayerZorder, GroundMap_Adorn_Bottom_Layer_Tag);
+    _gameLayer = genLayerColor(GameLayerZorder, GroundMap_Game_Layer_Tag);
+    _dropsLayer = genLayerColor(DropsLayerZorder, GroundMap_Drops_Layer_Tag);
+    _npcLayer = genLayerColor(NpcLayerZorder, GroundMap_Npc_Layer_Tag);
+    _adornTopLayer = genLayerColor(AdornTopLayerZorder, GroundMap_Adorn_Top_Layer_Tag);
+    _guideLayer = genLayerColor(GuideLayerZorder, GroundMap_Guide_Layer_Tag);
+    _grayLayer = genLayerColor(GrayLayerZorder, GroundMap_Gray_Layer_Tag);
     
     return true;
 }
@@ -141,4 +133,7 @@ int GroundMap::getMapId() const {
     return _mapId;
 }
 
+CCLayerColor* GroundMap::getGroundMapLayerByTag(int tag) {
+    return (CCLayerColor*)this->getChildByTag(tag);
+}
 

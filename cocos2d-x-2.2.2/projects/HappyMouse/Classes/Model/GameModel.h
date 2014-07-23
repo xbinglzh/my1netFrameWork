@@ -20,6 +20,7 @@
 #include "GameConfig.h"
 #include "StateFactory.h"
 #include "AudioManager.h"
+#include "BattleInfo.h"
 
 USING_NS_CC;
 
@@ -45,7 +46,7 @@ public: /*战斗部分*/
     /**
      重置战斗场景
      */
-	void resetBattlelayer(cocos2d::CCLayer * battlelayer);
+	void resetBattlelayer(BattleLayer * battlelayer);
     
     void addChildToGroundMap(cocos2d::CCNode *child, int zOrder = 0,
                              int tag = -1);
@@ -133,7 +134,7 @@ public: /* Map */
     
 public:
     BattleLayer*     getBattleLayer();
-    
+    BattleInfo&      getBattleInfo();
 protected:
     /**
      关卡加载资源成功
@@ -146,6 +147,7 @@ private:
     StateFactory                 * _stateFactory;
     AudioManager                 * _sharedAudioManager;
     BattleLayer                  * _battleLayer;
+    BattleInfo                   _battleInfo;
     
     cocos2d::CCDictionary        * _gameObjectsDict;
     

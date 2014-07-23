@@ -20,10 +20,10 @@ public:
     virtual ~GroundMap();
     
 public:
-    static GroundMap* create(const char* fileName);
+    static GroundMap* create();
     
 public:
-    bool initWithFile(const char* fileName);
+    bool initWithFile();
     
 public:
     void pauseBattle();
@@ -33,6 +33,7 @@ public:
 public:
     void setMapId(int MapId);
     int  getMapId() const;
+    CCLayerColor* getGroundMapLayerByTag(int tag);
     
 private:
     CCLayerColor* genLayerColor(int zOrder, int layerTag);

@@ -10,6 +10,7 @@
 #include "SPArmatureDataManager.h"
 #include "LayoutUtil.h"
 #include "CCSpriteExt.h"
+#include "GameController.h"
 
 #define Bottom_Layer_Tag          100001
 #define Map_Layer_Tag             100002
@@ -55,6 +56,9 @@ bool BattleLayer::init() {
     _xpEffectLayer = genLayerColor(XpEffectLayerZorder, XpEffect_Layer_Tag);
     _battleUiLayer = genLayerColor(BattleUiLayerZorder, BattleUi_Layer_Tag);
     
+    _groundMap = GroundMap::create();
+    _mapLayer ->addChild(_groundMap);
+    LayoutUtil::layoutParentBottom(_groundMap);
     
     return true;
 }
@@ -68,7 +72,13 @@ void BattleLayer::onExit() {
 }
 
 bool BattleLayer::updateGroundMap(const char* mapBg,const char* mapPic) {
+    CCLayer* groundMap_baseLayer = _groundMap->getGroundMapLayerByTag(GroundMap_Base_Layer_Tag);
     
+    CCSpriteExt* bgSprite = CCSpriteExt::create(mapBg);
+    bgSprite->setScaleX(groundMap_baseLayer->getContentSize().width / bgSprite->getContentSize().width);
+    bgSprite->setScaleY(groundMap_baseLayer->getContentSize().height / bgSprite->getContentSize().height);
+    groundMap_baseLayer->addChild(bgSprite);
+    LayoutUtil::layoutParentBottom(bgSprite);
     
     return true;
 }

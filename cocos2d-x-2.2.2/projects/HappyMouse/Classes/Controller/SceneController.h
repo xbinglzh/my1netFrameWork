@@ -11,7 +11,6 @@
 
 #include "cocos2d.h"
 #include "ConstansDef.h"
-#include "GameModel.h"
 #include <deque>
 
 USING_NS_CC;
@@ -56,7 +55,6 @@ private:
     cocos2d::CCDirector* _director;
     ESceneId        _currentSceneId;
     ESceneId        _currentRunningSceneId;
-    GameModel*      _gameModel;
     std::deque<int32_t> _sceneQueue;
     int32_t             _bgMusicId;
 };

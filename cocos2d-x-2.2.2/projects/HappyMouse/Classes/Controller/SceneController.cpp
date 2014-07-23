@@ -13,6 +13,7 @@
 #include "ConstansDef.h"
 #include "AudioManager.h"
 #include "BattleLayer.h"
+#include "GameController.h"
 
 static SceneController* _sharedInstance=NULL;
 
@@ -20,7 +21,6 @@ SceneController::SceneController() :
 _director(NULL),
 _currentSceneId(K_SCENE_UNKNOW) ,
 _currentRunningSceneId(K_SCENE_UNKNOW),
-_gameModel(NULL),
 _bgMusicId(-1) {
     
 }
@@ -47,7 +47,6 @@ void SceneController::purgeInstance(void){
 bool SceneController::init(void) {
     _director = CCDirector::sharedDirector();
     CCDirector::sharedDirector()->setDelegate(this);
-    _gameModel = GameModel::getInstance();
     
     return true;
 }
@@ -107,13 +106,10 @@ void SceneController::switchSence(const ESceneId sceneId, cocos2d::CCObject* par
         
         case K_SCENE_BATTLEVIEW: {
             CCDictionary * dict = static_cast<CCDictionary *>(param);
-            CCString * battleZoneId = static_cast<CCString *>(dict->objectForKey(KStrBattleZoneId));
-            CCString * stageId = static_cast<CCString *>(dict->objectForKey(KStrBattleId));
-            int32_t levelStageId = stageId ? stageId->intValue() : -1;
-            
             layer = BattleLayer::create();
-            _gameModel->clearCache();
-            _gameModel->resetBattlelayer(layer);
+            
+            GameController::getInstance()->resetBattleLayer((BattleLayer*)layer, dict);
+            
             
         }
             break;

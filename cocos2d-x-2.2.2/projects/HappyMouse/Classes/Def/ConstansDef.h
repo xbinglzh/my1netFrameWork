@@ -100,4 +100,15 @@ enum MouseState {
 #define KSTATE_ANIMATION_ACTION_TAG (80002)
 #define KSTATE_MOVE_TO_ACTION_TAG (80003)
 
+//------------ GroundMap Tag Define --------------
+#define GroundMap_Base_Layer_Tag            1001
+#define GroundMap_Adorn_Bottom_Layer_Tag    1002
+#define GroundMap_Game_Layer_Tag            1003
+#define GroundMap_Drops_Layer_Tag           1004
+#define GroundMap_Npc_Layer_Tag             1005
+#define GroundMap_Adorn_Top_Layer_Tag       1006
+#define GroundMap_Guide_Layer_Tag           1007
+#define GroundMap_Gray_Layer_Tag            1008
+//------------ END GroundMap Tag Define -----------
+
 #endif

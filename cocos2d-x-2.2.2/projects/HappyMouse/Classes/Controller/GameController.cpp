@@ -13,7 +13,7 @@
 #include "SceneController.h"
 #include "GameUtils.h"
 #include "KeyConfigDef.h"
-
+#include "GameModel.h"
 
 static GameController* _sharedInstance = NULL;
 
@@ -108,3 +108,28 @@ void GameController::switchToBattleSence(const int32_t battleZoneId,
                 currentScene != K_SCENE_BATTLEVIEW ? SceneController::SwitchOptionPush : SceneController::SwitchOptionReplace);
     
 }
+
+void GameController::resetBattleLayer(BattleLayer *battleLayer, cocos2d::CCDictionary *dict) {
+    CCString * battleZoneId = static_cast<CCString *>(dict->objectForKey(KStrBattleZoneId));
+    CCString * stageId = static_cast<CCString *>(dict->objectForKey(KStrBattleId));
+    
+    GameModel::getInstance()->clearCache();
+    GameModel::getInstance()->resetBattlelayer(battleLayer);
+    
+    updateBattleInfo(battleZoneId->intValue(), stageId->intValue());
+    
+    CCString* mapBg = GameModel::getInstance()->getBattleInfo().getPveStateValueByKey(KKeyMapBg);
+    CCString* mapPit = GameModel::getInstance()->getBattleInfo().getPveStateValueByKey(KKeyMapPit);
+    
+    battleLayer->updateGroundMap(mapBg->getCString(), mapPit->getCString());
+    
+}
+
+void GameController::updateBattleInfo(const int32_t battleZoneId,const int32_t stageId){
+    BattleInfo& battleInfo = GameModel::getInstance()->getBattleInfo();
+    battleInfo.initWithConfig(battleZoneId, stageId);
+}
+
+
+
+

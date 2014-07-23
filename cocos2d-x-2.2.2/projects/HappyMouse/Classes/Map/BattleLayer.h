@@ -13,10 +13,11 @@
 #include "cocos-ext.h"
 #include "GroundMap.h"
 #include "GameModel.h"
-#include "GameController.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
+
+class GameController;
 
 class BattleLayer : public CCLayer {
     
@@ -38,8 +39,7 @@ private:
 
 private:
     
-    GameController *        _gameController;
-//    GameModel*              _gameModel;
+    GameController*        _gameController;
     GroundMap*              _groundMap;
     
     CCLayerColor*           _bottomLayer;             //底层贴图

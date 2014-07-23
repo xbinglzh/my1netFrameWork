@@ -312,6 +312,7 @@
 		6094F5711976617400614051 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5671976617400614051 /* Icon-72.png */; };
 		6094F5721976617400614051 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5681976617400614051 /* Icon-76.png */; };
 		60C24E60197F5C7A008BE554 /* BattleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C24E5E197F5C7A008BE554 /* BattleLayer.cpp */; };
+		60C24E63197F82C6008BE554 /* BattleInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C24E61197F82C6008BE554 /* BattleInfo.cpp */; };
 		60C3B6E51974CC8300BC4293 /* GameConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60C3B6E31974CC8300BC4293 /* GameConfig.cpp */; };
 		60C3B6FD1974CE5100BC4293 /* libboost_regex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 605A8B0F1974C8DB0086F702 /* libboost_regex.a */; };
 		60C3B7001974CF1E00BC4293 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C3B6FF1974CF1E00BC4293 /* libcurl.a */; };
@@ -1153,6 +1154,8 @@
 		6094F5681976617400614051 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
 		60C24E5E197F5C7A008BE554 /* BattleLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleLayer.cpp; sourceTree = "<group>"; };
 		60C24E5F197F5C7A008BE554 /* BattleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleLayer.h; sourceTree = "<group>"; };
+		60C24E61197F82C6008BE554 /* BattleInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleInfo.cpp; sourceTree = "<group>"; };
+		60C24E62197F82C6008BE554 /* BattleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleInfo.h; sourceTree = "<group>"; };
 		60C3B6E31974CC8300BC4293 /* GameConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameConfig.cpp; sourceTree = "<group>"; };
 		60C3B6E41974CC8300BC4293 /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		60C3B6FF1974CF1E00BC4293 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
@@ -2197,6 +2200,8 @@
 				60C24E5F197F5C7A008BE554 /* BattleLayer.h */,
 				601AF2FE197EC054009A5257 /* GroundMap.cpp */,
 				601AF2FF197EC054009A5257 /* GroundMap.h */,
+				60C24E61197F82C6008BE554 /* BattleInfo.cpp */,
+				60C24E62197F82C6008BE554 /* BattleInfo.h */,
 			);
 			name = Map;
 			path = ../Classes/Map;
@@ -3226,6 +3231,7 @@
 				15A3DA541682F826002FB0C5 /* CCScale9Sprite.cpp in Sources */,
 				60C3B7141974E32700BC4293 /* WelcomeView.cpp in Sources */,
 				605A8A9D1974C51A0086F702 /* SPMovementFrameData.cpp in Sources */,
+				60C24E63197F82C6008BE554 /* BattleInfo.cpp in Sources */,
 				15A3DA551682F826002FB0C5 /* CCEditBox.cpp in Sources */,
 				15A3DA571682F826002FB0C5 /* CCEditBoxImplIOS.mm in Sources */,
 				15A3DA591682F826002FB0C5 /* CCScrollView.cpp in Sources */,

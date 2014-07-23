@@ -10,6 +10,7 @@
 #define __HappyMouse__GameController__
 
 #include "cocos2d.h"
+#include "BattleLayer.h"
 
 USING_NS_CC;
 
@@ -34,6 +35,10 @@ public:
     void  switchToBattleSence(const int32_t battleZoneId,
                               const int32_t stageId,
                               const int32_t chipId = -1);
+    
+    void resetBattleLayer(BattleLayer* battleLayer, CCDictionary * dict);
+    
+    void updateBattleInfo(const int32_t battleZoneId,const int32_t stageId);
     
 private:
     bool    isIdInRandomVector(int currentId);
