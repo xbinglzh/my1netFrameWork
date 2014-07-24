@@ -30,6 +30,8 @@
 		<string>3</string>
 		<key>type</key>
 		<string>2</string>
+		<key>attack_team</key>
+		<string>960001</string>
 	</dict>
 </dict>
 </plist>

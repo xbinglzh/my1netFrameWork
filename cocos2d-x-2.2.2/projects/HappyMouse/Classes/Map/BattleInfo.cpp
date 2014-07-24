@@ -24,12 +24,16 @@ _currentMonsterId(-1),
 
 _pveStageDict(NULL),
 _mapDataDict(NULL),
-_mapDict(NULL) {
+_mapDict(NULL),
+_attackTeamDict(NULL) {
     
 }
 
 BattleInfo::~BattleInfo() {
-    
+    CC_SAFE_RELEASE_NULL(_pveStageDict);
+    CC_SAFE_RELEASE_NULL(_mapDataDict);
+    CC_SAFE_RELEASE_NULL(_mapDict);
+    CC_SAFE_RELEASE_NULL(_attackTeamDict);
 }
 
 void BattleInfo::reset() {
@@ -52,6 +56,9 @@ void BattleInfo::initWithConfig(int32_t battleZoneId, int32_t stageId) {
     CCString* mapDataId = static_cast<CCString*>(_mapDict->objectForKey(KKeyMapData));
     _mapDataDict = GameConfig::getInstance()->getMapDataById(mapDataId->getCString());
     
+    CCString* attackTeam = static_cast<CCString*>(_pveStageDict->objectForKey(KKeyAttackTeam));
+    _attackTeamDict = GameConfig::getInstance()->getAttackTeamById(attackTeam->getCString());
+    
 }
 
 CCDictionary* BattleInfo::getMapDict() {
@@ -60,6 +67,10 @@ CCDictionary* BattleInfo::getMapDict() {
 
 CCDictionary* BattleInfo::getMapDataDict() {
     return _mapDataDict;
+}
+
+CCDictionary* BattleInfo::getAttackTeamDict() {
+    return _attackTeamDict;
 }
 
 

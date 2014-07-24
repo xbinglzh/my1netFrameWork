@@ -25,6 +25,8 @@ _mapDict(NULL),
 _stageDict(NULL),
 _mapDataDict(NULL),
 _mapPitDict(NULL),
+_attackTeamDict(NULL),
+_troopDict(NULL),
 _pitNumCount(9) {
     
 }
@@ -40,6 +42,9 @@ GameConfig::~GameConfig() {
     CC_SAFE_RELEASE_NULL(_mapDict);
     CC_SAFE_RELEASE_NULL(_mapDataDict);
     CC_SAFE_RELEASE_NULL(_mapPitDict);
+    
+    CC_SAFE_RELEASE_NULL(_attackTeamDict);
+    CC_SAFE_RELEASE_NULL(_troopDict);
     
     _pitNumCount = 9;
 }
@@ -103,6 +108,14 @@ void GameConfig::loadDynamicResoure(){
     _mapPitDict = CCDictionary::createWithContentsOfFile("x_map_pit.plist");
     _mapPitDict->retain();
     
+    CC_SAFE_RELEASE_NULL(_attackTeamDict);
+    _attackTeamDict = CCDictionary::createWithContentsOfFile("x_attacking_team.plist");
+    _attackTeamDict->retain();
+    
+    CC_SAFE_RELEASE_NULL(_troopDict);
+    _troopDict = CCDictionary::createWithContentsOfFile("x_troop.plist");
+    _troopDict->retain();
+    
 }
 
 int GameConfig::getScreenSize() {
@@ -162,6 +175,26 @@ CCDictionary * GameConfig::getStageConfig(const int32_t typeKey, const uint32_t 
             return static_cast<CCDictionary * >(dict->objectForKey(GameUtils::StringMake(Id)));
         }
     }
+    return NULL;
+}
+
+//Attack Team Info
+
+CCDictionary* GameConfig::getAttackTeamById(const std::string &Id) {
+    
+    if (_attackTeamDict) {
+        return static_cast<CCDictionary*>(_attackTeamDict->objectForKey(Id));
+    }
+    
+    return NULL;
+}
+
+CCDictionary* GameConfig::getTroopById(const std::string &Id) {
+    
+    if (_troopDict) {
+        return static_cast<CCDictionary*>(_troopDict->objectForKey(Id));
+    }
+    
     return NULL;
 }
 

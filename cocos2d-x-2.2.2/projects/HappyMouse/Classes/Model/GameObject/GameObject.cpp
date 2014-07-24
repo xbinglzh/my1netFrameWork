@@ -94,28 +94,14 @@ GameObject * GameObject::create(CCDictionary * dict,const uint32_t id) {
 }
 
 bool GameObject::initWithDictionary(CCDictionary * dict){
-
-    CC_SAFE_RELEASE_NULL(_properties);
-    _properties = new CCDictionary();
-    
-    GameConfig * gConfig = GameConfig::getInstance();
-    CCString * str = static_cast<CCString *>(dict->objectForKey(KKeyType));
-    
-    if (str) {
-//        CCDictionary * templateDict = gConfig->getBaseTemplateValue(str->intValue());
-
-    }
-    
-    str = static_cast<CCString *>(dict->objectForKey(KKeyId));
-    _charactar._id = str->uintValue();
     
     return true;
 }
 
 void GameObject::complete(){
 //    this->initActions();
-    this->initDisplay();
-    this->initStateMachine();
+//    this->initDisplay();
+//    this->initStateMachine();
 //    this->initSkills();
     
     setObjContentSize();
@@ -292,11 +278,9 @@ void GameObject::setFrameITScale(const float value){
 
 //-------------- display ------------------
 
-void GameObject::initDisplay() {
+void GameObject::initDisplay(const char* animId) {
     
-    GameConfig * gConfig = GameConfig::getInstance();
-    CCString * display = static_cast<CCString *>(this->getValue(KKeyDisplay));
-    CCDictionary * tmpDict = static_cast<CCDictionary *>(gConfig->getAnimationById(display->m_sString));
+    CCDictionary * tmpDict = static_cast<CCDictionary *>(GameConfig::getInstance()->getAnimationById(animId));
     
     if (tmpDict) {
         if(_flashNode)

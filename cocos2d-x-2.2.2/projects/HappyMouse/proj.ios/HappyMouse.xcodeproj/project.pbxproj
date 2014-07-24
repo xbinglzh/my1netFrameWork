@@ -301,6 +301,7 @@
 		605A8ADB1974C54B0086F702 /* particle in Resources */ = {isa = PBXBuildFile; fileRef = 605A8AD51974C54B0086F702 /* particle */; };
 		605A8ADC1974C54B0086F702 /* plist in Resources */ = {isa = PBXBuildFile; fileRef = 605A8AD61974C54B0086F702 /* plist */; };
 		605A8ADD1974C54B0086F702 /* ui_layout in Resources */ = {isa = PBXBuildFile; fileRef = 605A8AD71974C54B0086F702 /* ui_layout */; };
+		606907271981357A00DE6B18 /* MonsterObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606907251981357A00DE6B18 /* MonsterObject.cpp */; };
 		6094F5691976617400614051 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F55F1976617400614051 /* Default-568h@2x.png */; };
 		6094F56A1976617400614051 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5601976617400614051 /* Default.png */; };
 		6094F56B1976617400614051 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6094F5611976617400614051 /* Default@2x.png */; };
@@ -1142,6 +1143,8 @@
 		605A8B251974CA4A0086F702 /* FontStylesDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontStylesDef.h; sourceTree = "<group>"; };
 		605A8B261974CA4A0086F702 /* KeyConfigDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyConfigDef.h; sourceTree = "<group>"; };
 		605A8B271974CA4A0086F702 /* NotifyMessageDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyMessageDef.h; sourceTree = "<group>"; };
+		606907251981357A00DE6B18 /* MonsterObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MonsterObject.cpp; sourceTree = "<group>"; };
+		606907261981357A00DE6B18 /* MonsterObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonsterObject.h; sourceTree = "<group>"; };
 		6094F55F1976617400614051 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6094F5601976617400614051 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6094F5611976617400614051 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -2737,6 +2740,8 @@
 		60C3B7701975167800BC4293 /* GameObject */ = {
 			isa = PBXGroup;
 			children = (
+				606907251981357A00DE6B18 /* MonsterObject.cpp */,
+				606907261981357A00DE6B18 /* MonsterObject.h */,
 				60DE68A1197AB45900038A9F /* GameObject.cpp */,
 				60DE68A2197AB45900038A9F /* GameObject.h */,
 				60C3B777197516AC00BC4293 /* MouseObject.cpp */,
@@ -3121,6 +3126,7 @@
 				605A8AC61974C51A0086F702 /* ShaderManager.cpp in Sources */,
 				15A3D9211682F7D5002FB0C5 /* b2FrictionJoint.cpp in Sources */,
 				605A8AB61974C51A0086F702 /* SPArmatureDataManager.cpp in Sources */,
+				606907271981357A00DE6B18 /* MonsterObject.cpp in Sources */,
 				15A3D9221682F7D5002FB0C5 /* b2GearJoint.cpp in Sources */,
 				15A3D9231682F7D5002FB0C5 /* b2Joint.cpp in Sources */,
 				15A3D9241682F7D5002FB0C5 /* b2MouseJoint.cpp in Sources */,

@@ -50,8 +50,8 @@ public:
     static GameObject * create(CCDictionary * dict,const uint32_t id);
     
 protected:
-	bool init();
-    bool initWithDictionary(cocos2d::CCDictionary * dict);
+	virtual bool init();
+    virtual bool initWithDictionary(cocos2d::CCDictionary * dict);
     
 public: /* 设置基本属性 */
     void setId(const uint32_t value);
@@ -115,7 +115,7 @@ public:
     //    static GameObject * decode(const boost::shared_ptr<n2studio::network::Buffer> & buf);
     
 public:
-    void initDisplay();
+    void initDisplay(const char* animId);
     
 public: /*状态机*/
     void changeState(const int32_t value);

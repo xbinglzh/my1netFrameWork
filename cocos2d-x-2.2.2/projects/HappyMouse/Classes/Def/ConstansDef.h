@@ -111,4 +111,7 @@ enum MouseState {
 #define GroundMap_Gray_Layer_Tag            1008
 //------------ END GroundMap Tag Define -----------
 
+//----------- Monster in Pit Tag Define -----------
+#define MouseTag        100
+
 #endif

@@ -91,7 +91,6 @@
 #define KKeyFile         "file"
 #define KKeyMaskFile     "maskfile"
 
-#define KKeyDisplay      "display"
 #define KKeyDisplayBg      "display_bg"
 
 #define KDoCallFuncActId      "ACT_ID"
@@ -127,21 +126,50 @@
 #define KStrBattleId              "battleId"
 #define KStrBattleZoneId          "battle_zone"
 
-//Map.plist
-#define KKeyMapBg                 "map_bg"
-#define KKeyMapPic                "map_pic"
-#define KKeyMapData               "map_data"
-
 //x_pve_stage.plist
 #define KKeyMap                   "map"
 #define KKeyDifficulty            "difficulty"
 #define KKeyTroop                 "troop"
 #define KKeyTroopWaves            "troop_waves"
+#define KKeyAttackTeam            "attack_team"
+
+//Map.plist
+#define KKeyMapBg                 "map_bg"
+#define KKeyMapPic                "map_pic"
+#define KKeyMapData               "map_data"
 
 //x_map_pit.plist
 #define KKeyPitImg                "pit_img"
 
+//x_attacking_team.plist
+#define KKeyTroop_1               "troop_1"
+#define KKeyTroop_1_difficulty    "troop_1_difficulty"
+#define KKeyTroop_2               "troop_2"
+#define KKeyTroop_2_difficulty    "troop_2_difficulty"
+#define KKeyTroop_3               "troop_3"
+#define KKeyTroop_3_difficulty    "troop_3_difficulty"
+#define KKeyTroop_4               "troop_4"
+#define KKeyTroop_4_difficulty    "troop_4_difficulty"
+#define KKeyTroop_intervals       "troop_intervals"
+#define KKeyTroop_max_size        "troop_max_size"
 
+//x_troop.plist
+#define KKeyMonster_1_id          "monster_1_id"
+#define KKeyMonster_1_num         "monster_1_num"
+#define KKeyMonster_2_id          "monster_2_id"
+#define KKeyMonster_2_num         "monster_2_num"
+#define KKeyMonster_3_id          "monster_3_id"
+#define KKeyMonster_3_num         "monster_3_num"
+#define KKeyMonster_4_id          "monster_4_id"
+#define KKeyMonster_4_num         "monster_4_num"
+#define KKeyMonster_5_id          "monster_5_id"
+#define KKeyMonster_5_num         "monster_5_num"
+#define KKeyMonsterCount          "monster_count"
+
+//x_monster
+#define KKeyHp                    "hp"
+#define KKeyHurt                  "hurt"
+#define KKeyDisplay               "display"
 
 
 

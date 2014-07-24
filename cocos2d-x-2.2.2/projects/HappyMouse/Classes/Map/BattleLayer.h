@@ -18,6 +18,8 @@ USING_NS_CC;
 USING_NS_CC_EXT;
 
 class GameController;
+class MonsterObject;
+class PitObject;
 
 class BattleLayer : public CCLayer {
     
@@ -28,6 +30,7 @@ public:
     CREATE_FUNC(BattleLayer);
     virtual void onEnter();
     virtual void onExit();
+    virtual void update(float dt);
     
 public:
     bool updateGroundMap(BattleInfo& battleInfo);
@@ -35,11 +38,18 @@ public:
 //	const cocos2d::CCPoint& getPositionFromGroundMap( const std::list<int>::iterator & posIndex);
     
 private:
+    void updateGameMonster();
+    
+private:
     CCLayerColor* genLayerColor(int zOrder, int layerTag);
     
     void updateMapBg(BattleInfo& battleInfo);
     void updateMapPit(BattleInfo& battleInfo);
-//    char* genPitImg(const std::string &Id);
+    void updateAttackTeam(BattleInfo& battleInfo);
+    void updateMonsterTroop(CCDictionary* troopDict);
+    
+    MonsterObject* genRandomMonster();
+    PitObject*     genRandomPit();
 
 private:
     
@@ -52,6 +62,7 @@ private:
     CCLayerColor*           _xpEffectLayer;           //xp动画层
     CCLayerColor*           _battleUiLayer;           //UI控制层
     
+    std::vector<MonsterObject*> _monsterVector;
     
     
 //    XXBattleUI* _battleUI;

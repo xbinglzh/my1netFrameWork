@@ -83,6 +83,12 @@ public:
 
     CCDictionary* getStageConfig(const int32_t typeKey, const uint32_t Id);
     
+    /**
+     * 获取Attack Team Info
+     */
+    CCDictionary*          getAttackTeamById(const std::string& Id);
+    CCDictionary*          getTroopById(const std::string& Id);
+    
     const uint32_t templateTypeOfId(const uint32_t id);
     /**
      获得对应Id的字体样式{颜色，字体名，大小}
@@ -113,10 +119,15 @@ private: // Dict
     
     CCDictionary*        _templateDict;
     
+    //Map cfg
     CCDictionary*        _stageDict;
     CCDictionary*        _mapDict;
     CCDictionary*        _mapDataDict;
     CCDictionary*        _mapPitDict;
+    
+    //Attack Team cfg
+    CCDictionary*        _attackTeamDict;
+    CCDictionary*        _troopDict;
     
 };
 

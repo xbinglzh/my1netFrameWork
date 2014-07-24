@@ -13,6 +13,9 @@
 #include "GameController.h"
 #include "PitObject.h"
 #include "ConstansDef.h"
+#include "GameController.h"
+#include "GameUtils.h"
+#include "MonsterObject.h"
 
 #define Bottom_Layer_Tag          100001
 #define Map_Layer_Tag             100002
@@ -44,6 +47,14 @@ _mapLayer(NULL) {
 BattleLayer::~BattleLayer() {
     removeAllChildrenWithCleanup(true);
     sp::ArmatureDataManager::sharedArmatureDataManager()->removeUnusedAnimations();
+    
+//    for (int i = 0; i < _monsterVector.size(); i++) {
+//        MonsterObject* obj = _monsterVector.at(i);
+//        
+//    }
+    
+    _monsterVector.clear();
+    
 }
 
 bool BattleLayer::init() {
@@ -62,6 +73,9 @@ bool BattleLayer::init() {
     _mapLayer ->addChild(_groundMap);
     LayoutUtil::layoutParentBottom(_groundMap);
     
+    CCDirector::sharedDirector()->getScheduler()->scheduleUpdateForTarget(this, 0, false);
+    CCDirector::sharedDirector()->getScheduler()->scheduleSelector(schedule_selector(BattleLayer::updateGameMonster),this, 0.5,kCCRepeatForever, 5.0f, false);
+    
     return true;
 }
 
@@ -73,9 +87,19 @@ void BattleLayer::onExit() {
     
 }
 
+void BattleLayer::update(float dt) {
+    
+    GameController::getInstance()->update(dt);
+    
+}
+
 bool BattleLayer::updateGroundMap(BattleInfo& battleInfo) {
+    //Map ---
     updateMapBg(battleInfo);
     updateMapPit(battleInfo);
+    //Attack Team --
+    updateAttackTeam(battleInfo);
+    
     
     return true;
 }
@@ -107,7 +131,7 @@ void BattleLayer::updateMapPit(BattleInfo &battleInfo) {
         CCString* value = static_cast<CCString*>(dataElement->getObject());
         size_t startPos = std::string::npos;
         
-        CCLOG("key : %s, value %s",key.c_str(), value->getCString());
+//        CCLOG("key : %s, value %s",key.c_str(), value->getCString());
         
         std::string srcString = key;
         srcString = srcString.substr(1,(srcString.length() - 1));
@@ -139,4 +163,81 @@ CCLayerColor* BattleLayer::genLayerColor(int zOrder, int layerTag) {
     
     return layer;
 }
+
+void BattleLayer::updateAttackTeam(BattleInfo &battleInfo) {
+    CCDictionary* attackTeam = battleInfo.getAttackTeamDict();
+    CCString* troopMaxSize = static_cast<CCString*>(attackTeam->objectForKey(KKeyTroop_max_size));
+    
+    std::stringstream sstmTroop;
+    std::stringstream sstmTroopDifficulty;
+
+    
+    for (int i = 0; i < troopMaxSize->intValue(); i++) {
+        sstmTroop << "troop_" << i + 1;
+        sstmTroopDifficulty << "troop_" << i + 1 <<"_difficulty" ;
+        
+        std::string keyTroop = sstmTroop.str();
+        std::string keyTroopDifficulty = sstmTroopDifficulty.str();
+        
+        CCString* troopId = static_cast<CCString*>(attackTeam->objectForKey(keyTroop));
+//        CCString* troopDifficulty = static_cast<CCString*>(attackTeam->objectForKey(keyTroopDifficulty));//难度系数
+        
+        CCDictionary* troop = GameConfig::getInstance()->getTroopById(troopId->getCString());
+        updateMonsterTroop(troop);
+    }
+}
+
+void BattleLayer::updateMonsterTroop(cocos2d::CCDictionary *troopDict) {
+    
+    std::stringstream sstmMonsterId;
+    std::stringstream sstmMonsterNum;
+    
+    CCString* monsterCount = static_cast<CCString*>(troopDict->objectForKey(KKeyMonsterCount));
+    
+    for (int j = 0; j < monsterCount->intValue(); j++) {
+        sstmMonsterId << "monster_" << j + 1 << "_id";
+        sstmMonsterNum<<"monster_" << j + 1 << "_num";
+        
+        std::string monsterId = sstmMonsterId.str();
+        std::string monsterNum = sstmMonsterNum.str();
+        
+        CCString* monsterValue = static_cast<CCString*>(troopDict->objectForKey(monsterId.c_str()));
+        CCString* monsterNumValue = static_cast<CCString*>(troopDict->objectForKey(monsterNum.c_str()));
+        
+        CCLOG("monsterId : %s, monsterNum : %s", monsterValue->getCString(), monsterNumValue->getCString());
+        CCDictionary* monsterDict = GameConfig::getInstance()->getTemplateValue(monsterValue->intValue());
+        
+        for (int k = 0; k < monsterNumValue->intValue(); k++) {
+            MonsterObject* monsterObj = MonsterObject::create(monsterDict);
+            _monsterVector.push_back(monsterObj);
+            
+        }
+    }
+
+}
+
+MonsterObject* BattleLayer::genRandomMonster() {
+    MonsterObject* monsterObj = _monsterVector.at(rand() % _monsterVector.size());
+    return monsterObj;
+}
+
+PitObject* BattleLayer::genRandomPit() {
+    CCLayer* groundMap_gameLayer = _groundMap->getGroundMapLayerByTag(GroundMap_Game_Layer_Tag);
+    int randomTag = rand() % groundMap_gameLayer->getChildrenCount();
+    PitObject* pitObj = (PitObject*)groundMap_gameLayer->getChildByTag(randomTag);
+    return pitObj;
+}
+
+void BattleLayer::updateGameMonster() {
+    PitObject* pit = genRandomPit();
+    pit->removeChildByTag(MouseTag);
+    
+    MonsterObject* monster = genRandomMonster();
+    
+    pit->addChild(monster, 1, MouseTag);
+//    LayoutUtil::layoutParentCenter(monster);
+}
+
+
+
 

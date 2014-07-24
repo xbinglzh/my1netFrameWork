@@ -12,6 +12,7 @@
 #include "LayoutUtil.h"
 #include "NotifyMessageDef.h"
 #include "MouseObject.h"
+#include "ConstansDef.h"
 
 
 #define TopPitOrder     1
@@ -21,8 +22,6 @@
 #define TopPitTag       1
 #define MidNodeTag      3
 #define BottomPitTag    5
-
-#define MouseTag        100
 
 
 PitObject::PitObject() : _pit(NULL), _mouse(NULL){
@@ -55,10 +54,9 @@ bool PitObject::init(int pitId,const char* pitImg) {
     this->addChild(_pit);
     LayoutUtil::layoutParentBottom(_pit);
     
-    _mouse = MouseObject::create();
-    this->addChild(_mouse, 1, MouseTag);
-    
-    LayoutUtil::layoutParentBottom(_mouse, 0, 30);
+//    _mouse = MouseObject::create();
+//    this->addChild(_mouse, 1, MouseTag);
+//    LayoutUtil::layoutParentBottom(_mouse, 0, 30);
     
     return true;
 }

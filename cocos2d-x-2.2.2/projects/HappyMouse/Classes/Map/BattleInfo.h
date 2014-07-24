@@ -28,6 +28,7 @@ public:
     
     cocos2d::CCDictionary*   getMapDict();
     cocos2d::CCDictionary*   getMapDataDict();
+    cocos2d::CCDictionary*   getAttackTeamDict();
     
 private:
     int32_t                       _battleZone;                      //关卡类型
@@ -43,6 +44,7 @@ private:
     cocos2d::CCDictionary*        _pveStageDict;
     cocos2d::CCDictionary*        _mapDict;
     cocos2d::CCDictionary*        _mapDataDict;
+    cocos2d::CCDictionary*        _attackTeamDict;
     
 };
 
