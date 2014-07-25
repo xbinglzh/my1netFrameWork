@@ -53,6 +53,11 @@ bool MonsterObject::initWithDictionary(cocos2d::CCDictionary *dict) {
     this->setId(_monsterDetail._id);
     this->initDisplay(_monsterDetail._display.c_str());
     this->runAnimation("walk", 0.1f);
+    
+    CCString* stateGroupId = static_cast<CCString*>(dict->objectForKey(KKeyState));
+    this->initStateMachine(stateGroupId->m_sString);
+    
+    
     this->complete();
     
     return true;

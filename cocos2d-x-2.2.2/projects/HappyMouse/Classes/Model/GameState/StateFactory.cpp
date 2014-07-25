@@ -7,9 +7,15 @@
 //
 
 #include "StateFactory.h"
+#include "GameEventDef.h"
+#include "StateDef.h"
+
 #include "MovingState.h"
 #include "DisplayState.h"
-#include "GameEventDef.h"
+#include "IdleState.h"
+#include "AttackingState.h"
+#include "BeInjuredState.h"
+#include "ToDisactiveState.h"
 
 static StateFactory * _stateFactorySharedInstance = NULL;
 
@@ -82,8 +88,24 @@ State * StateFactory::getStateByTypeId(const int stateType){
                 state = new DisplayState();
                 break;
                 
+            case KIdleState:
+                state = new IdleState();
+                break;
+                
             case KMovingState:
                 state = new MovingState();
+                break;
+                
+            case KAttackingState:
+                state = new AttackingState();
+                break;
+                
+            case KBeInjuredState:
+                state = new BeInjuredState();
+                break;
+                
+            case KToDisactiveState:
+                state = new ToDisactiveState();
                 break;
                 
             default:

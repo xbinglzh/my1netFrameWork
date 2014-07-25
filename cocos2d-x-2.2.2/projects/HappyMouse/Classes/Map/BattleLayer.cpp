@@ -103,9 +103,6 @@ bool BattleLayer::updateGroundMap(BattleInfo& battleInfo) {
     initMapBg(battleInfo);
     initMapPit(battleInfo);
     
-    //Attack Team --
-//    initAttackTeam(battleInfo);
-    
     return true;
 }
 
@@ -181,7 +178,7 @@ MonsterObject* BattleLayer::genRandomMonster(CCSet* monsterSet) {
     
     int randomIndex = rand() % monsterSet->count();
     
-    CCSetIterator iter; int j =0;
+    CCSetIterator iter; int j = 0;
     
     for (iter = monsterSet->begin(); iter != monsterSet->end(); ++iter) {
         MonsterObject* mObj = (MonsterObject *)(*iter);
@@ -198,7 +195,6 @@ MonsterObject* BattleLayer::genRandomMonster(CCSet* monsterSet) {
     }
     
     return randomMObj;
-    
 }
 
 

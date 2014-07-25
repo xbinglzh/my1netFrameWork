@@ -124,7 +124,7 @@ public: /*状态机*/
      接收一个消息，交给状态机处理
      */
 	void onMessage(GameEventParams * params);
-    void initStateMachine();
+    void initStateMachine(std::string& stateGroupId);
     void addState(const int32_t stateTypeId ,const int32_t stateId);
     
 public:

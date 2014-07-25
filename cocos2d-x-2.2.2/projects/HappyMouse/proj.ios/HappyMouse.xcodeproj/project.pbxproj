@@ -224,6 +224,10 @@
 		601AF2F3197E9981009A5257 /* DisplayState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601AF2F1197E9981009A5257 /* DisplayState.cpp */; };
 		601AF2F9197EA94B009A5257 /* GameModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601AF2F7197EA94B009A5257 /* GameModel.cpp */; };
 		601AF300197EC054009A5257 /* GroundMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601AF2FE197EC054009A5257 /* GroundMap.cpp */; };
+		603860D01982BC2700BA8314 /* IdleState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860CE1982BC2700BA8314 /* IdleState.cpp */; };
+		603860D31982BCE700BA8314 /* AttackingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860D11982BCE700BA8314 /* AttackingState.cpp */; };
+		603860D91982BE0600BA8314 /* BeInjuredState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860D71982BE0600BA8314 /* BeInjuredState.cpp */; };
+		603860DF1982BEC100BA8314 /* ToDisactiveState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860DD1982BEC100BA8314 /* ToDisactiveState.cpp */; };
 		605A8A711974C51A0086F702 /* CCSpriteExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897A1974C5190086F702 /* CCSpriteExt.cpp */; };
 		605A8A721974C51A0086F702 /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897E1974C5190086F702 /* GLES-Render.cpp */; };
 		605A8A8B1974C51A0086F702 /* AnimNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A89B91974C5190086F702 /* AnimNode.cpp */; };
@@ -968,6 +972,14 @@
 		601AF2F8197EA94B009A5257 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
 		601AF2FE197EC054009A5257 /* GroundMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroundMap.cpp; sourceTree = "<group>"; };
 		601AF2FF197EC054009A5257 /* GroundMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroundMap.h; sourceTree = "<group>"; };
+		603860CE1982BC2700BA8314 /* IdleState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IdleState.cpp; sourceTree = "<group>"; };
+		603860CF1982BC2700BA8314 /* IdleState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdleState.h; sourceTree = "<group>"; };
+		603860D11982BCE700BA8314 /* AttackingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AttackingState.cpp; sourceTree = "<group>"; };
+		603860D21982BCE700BA8314 /* AttackingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackingState.h; sourceTree = "<group>"; };
+		603860D71982BE0600BA8314 /* BeInjuredState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BeInjuredState.cpp; sourceTree = "<group>"; };
+		603860D81982BE0600BA8314 /* BeInjuredState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeInjuredState.h; sourceTree = "<group>"; };
+		603860DD1982BEC100BA8314 /* ToDisactiveState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToDisactiveState.cpp; sourceTree = "<group>"; };
+		603860DE1982BEC100BA8314 /* ToDisactiveState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDisactiveState.h; sourceTree = "<group>"; };
 		605A897A1974C5190086F702 /* CCSpriteExt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSpriteExt.cpp; sourceTree = "<group>"; };
 		605A897B1974C5190086F702 /* CCSpriteExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpriteExt.h; sourceTree = "<group>"; };
 		605A897C1974C5190086F702 /* DoubleNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNumber.h; sourceTree = "<group>"; };
@@ -2790,10 +2802,18 @@
 		60E61CF3197E0C470097963B /* AIState */ = {
 			isa = PBXGroup;
 			children = (
+				603860DD1982BEC100BA8314 /* ToDisactiveState.cpp */,
+				603860DE1982BEC100BA8314 /* ToDisactiveState.h */,
+				603860D71982BE0600BA8314 /* BeInjuredState.cpp */,
+				603860D81982BE0600BA8314 /* BeInjuredState.h */,
+				603860CE1982BC2700BA8314 /* IdleState.cpp */,
+				603860CF1982BC2700BA8314 /* IdleState.h */,
 				60E61CF7197E0C6A0097963B /* MovingState.cpp */,
 				60E61CF8197E0C6A0097963B /* MovingState.h */,
 				601AF2F1197E9981009A5257 /* DisplayState.cpp */,
 				601AF2F2197E9981009A5257 /* DisplayState.h */,
+				603860D11982BCE700BA8314 /* AttackingState.cpp */,
+				603860D21982BCE700BA8314 /* AttackingState.h */,
 			);
 			path = AIState;
 			sourceTree = "<group>";
@@ -3090,6 +3110,7 @@
 				15A3D90C1682F7D5002FB0C5 /* b2Draw.cpp in Sources */,
 				375BD4C61868411B0024609E /* TriggerObj.cpp in Sources */,
 				601AF2F3197E9981009A5257 /* DisplayState.cpp in Sources */,
+				603860D01982BC2700BA8314 /* IdleState.cpp in Sources */,
 				375BD4C31868411B0024609E /* ObjectFactory.cpp in Sources */,
 				605A8AC21974C51A0086F702 /* SmallSoybeanParticle.cpp in Sources */,
 				60C24E60197F5C7A008BE554 /* BattleLayer.cpp in Sources */,
@@ -3148,6 +3169,7 @@
 				605A8A9E1974C51A0086F702 /* SPNode.cpp in Sources */,
 				15A3D9991682F7F9002FB0C5 /* cpDampedSpring.c in Sources */,
 				15A3D99A1682F7F9002FB0C5 /* cpGearJoint.c in Sources */,
+				603860D91982BE0600BA8314 /* BeInjuredState.cpp in Sources */,
 				15A3D99B1682F7F9002FB0C5 /* cpGrooveJoint.c in Sources */,
 				605A8A8D1974C51A0086F702 /* SPAnimation.cpp in Sources */,
 				605A8AC81974C51A0086F702 /* tinyxml.cpp in Sources */,
@@ -3262,8 +3284,10 @@
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				1AC3624916D4A1E8000847F2 /* AppController.mm in Sources */,
 				605A8ABE1974C51A0086F702 /* GameUtils.cpp in Sources */,
+				603860DF1982BEC100BA8314 /* ToDisactiveState.cpp in Sources */,
 				605A8A9A1974C51A0086F702 /* SPJsonData.cpp in Sources */,
 				1AC3624B16D4A1E8000847F2 /* main.m in Sources */,
+				603860D31982BCE700BA8314 /* AttackingState.cpp in Sources */,
 				1AFCDA8216D4A25900906EA6 /* RootViewController.mm in Sources */,
 				605A8AC71974C51A0086F702 /* tinystr.cpp in Sources */,
 				605A8AB41974C51A0086F702 /* SPArmature.cpp in Sources */,

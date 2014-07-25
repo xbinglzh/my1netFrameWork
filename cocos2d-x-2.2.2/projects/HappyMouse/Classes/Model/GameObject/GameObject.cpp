@@ -63,7 +63,9 @@ GameObject* GameObject::create(const uint32_t id) {
 }
 
 bool GameObject::init() {
+    
     _stateMachine = new StateMachine();
+    _properties = new CCDictionary();
     
     _bgNode = CCNode::create();
     _midNode = CCNode::create();
@@ -102,7 +104,6 @@ bool GameObject::initWithDictionary(CCDictionary * dict){
 void GameObject::complete(){
 //    this->initActions();
 //    this->initDisplay();
-//    this->initStateMachine();
 //    this->initSkills();
     
     setObjContentSize();
@@ -316,16 +317,15 @@ void GameObject::onMessage(GameEventParams *params) {
     }
 }
 
-void GameObject::initStateMachine(){
+void GameObject::initStateMachine(std::string& stateGroupId){
     
-    GameConfig * gConfig = GameConfig::getInstance();
-    CCString * stateId = static_cast<CCString *>(this->getValue(KKeyState));
-    CCDictionary * states = dynamic_cast<CCDictionary *>(gConfig->getStateGroupById(stateId->m_sString));
+    CCDictionary * states = dynamic_cast<CCDictionary *>(GameConfig::getInstance()->getStateGroupById(stateGroupId));
     CCAssert(states != NULL, "GameObject::initStateMachine");
+    
     this->setValue(KKeyState, states);
-    
+
     StateFactory * stateFactory = StateFactory::getInstance();
-    
+
     if (states) {
         
         CCDictElement * pDictElement = NULL;
