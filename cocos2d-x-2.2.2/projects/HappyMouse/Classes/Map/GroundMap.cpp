@@ -78,6 +78,7 @@ bool GroundMap::initWithFile() {
     return true;
 }
 
+
 void GroundMap::pauseBattle() {
     changeLayerChildState(_gameLayer, true);
     changeLayerChildState(_dropsLayer, true);

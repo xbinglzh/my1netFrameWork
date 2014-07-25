@@ -29,7 +29,7 @@ public:
     void pauseBattle();
     void resumeBattle();
     void changeLayerChildState(CCNode* parent,bool isPause);
-    
+
 public:
     void setMapId(int MapId);
     int  getMapId() const;

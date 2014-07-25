@@ -273,9 +273,9 @@ void GameObject::resumeAnimation() {
 }
 
 void GameObject::update(const float dt){
-    if (_flashNode) {
-        _flashNode->updateAnimFrame(dt);
-    }
+//    if (_flashNode) {
+//        _flashNode->updateAnimFrame(dt);
+//    }
     
     if (_stateMachine) {
         _stateMachine->update(this, dt);
@@ -381,20 +381,22 @@ bool GameObject::runStateAnimation(GameObject * obj,int stateId){
     std::stringstream key;
     key << stateId;
     
-//    CCDictionary * dict = static_cast<CCDictionary *>(obj->getValue(KKeyState));
-//    if (dict) {
-//        dict = static_cast<CCDictionary *>(dict->objectForKey(key.str()));
-//        if (dict) {
-//            CCString * anim = static_cast<CCString *>(dict->objectForKey(KKeyAnimation));
-//            if (anim) {
-//                bool ret = obj->runAnimation(anim->m_sString);
-//                if (!ret) {
-//                    CCLOG("Warnning:%d runStateAnimation %d : %s failed",obj->getId(),obj->getState(),anim->getCString());
-//                }
-//                return ret;
-//            }
-//        }
-//    }
+    CCDictionary * dict = static_cast<CCDictionary *>(obj->getValue(KKeyState));
+    if (dict) {
+        dict = static_cast<CCDictionary *>(dict->objectForKey(key.str()));
+        if (dict) {
+            CCString * anim = static_cast<CCString *>(dict->objectForKey(KKeyAnimation));
+            if (anim) {
+                bool ret = obj->runAnimation(anim->m_sString);
+                
+                if (!ret) {
+                    CCLOG("Warnning:%d runStateAnimation %d : %s failed",obj->getId(), stateId, anim->getCString());
+                }
+                
+                return ret;
+            }
+        }
+    }
     
     return false;
 }

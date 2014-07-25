@@ -14,7 +14,7 @@
 
 void DisplayState::onEnterCallback(GameObject * obj){
 	//播放动画
-    runStateAnimation(obj,K_STATE_DISPLAY);
+    runStateAnimation(obj, K_STATE_DISPLAY);
     CCLOG("[%d]-[%d] DisplayState::onEnter", obj->getId(), ((int)this));
 }
 

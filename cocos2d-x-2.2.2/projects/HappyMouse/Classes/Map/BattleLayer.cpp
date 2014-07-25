@@ -96,6 +96,7 @@ void BattleLayer::onExit() {
 void BattleLayer::update(float dt) {
     
     GameController::getInstance()->update(dt);
+    
 }
 
 bool BattleLayer::updateGroundMap(BattleInfo& battleInfo) {
@@ -234,6 +235,7 @@ void BattleLayer::updateGameMonster() {
         MonsterObject* monster = genRandomMonster(trropMonster);
         
         if (monster) {
+            monster->changeState(K_STATE_MOVING);
             pit->addChild(monster, 1, MouseTag);
             monster->setIsAddParent(true);
             LayoutUtil::layoutParentCenter(monster);
