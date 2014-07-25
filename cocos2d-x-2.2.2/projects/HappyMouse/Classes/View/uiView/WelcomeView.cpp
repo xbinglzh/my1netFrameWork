@@ -7,7 +7,6 @@
 //
 
 #include "WelcomeView.h"
-#include "AnimNode.h"
 #include "LayoutUtil.h"
 #include "AnimUtils.h"
 

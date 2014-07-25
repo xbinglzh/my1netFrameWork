@@ -14,6 +14,7 @@
 #include "GameUtils.h"
 #include "KeyConfigDef.h"
 #include "GameModel.h"
+#include "MonsterObject.h"
 
 static GameController* _sharedInstance = NULL;
 
@@ -48,6 +49,7 @@ bool GameController::init() {
 
 void GameController::update(float dt) {
     //TODO: 处理业务逻辑
+    GameModel::getInstance()->update(dt);
 }
 
 void GameController::notifyRandomMouses() {
@@ -119,6 +121,8 @@ void GameController::resetBattleLayer(BattleLayer *battleLayer, cocos2d::CCDicti
     updateBattleInfo(battleZoneId->intValue(), stageId->intValue());
     
     battleLayer->updateGroundMap(GameModel::getInstance()->getBattleInfo());
+    
+    updateAttackTeam();
 }
 
 void GameController::updateBattleInfo(const int32_t battleZoneId,const int32_t stageId){
@@ -126,6 +130,60 @@ void GameController::updateBattleInfo(const int32_t battleZoneId,const int32_t s
     battleInfo.initWithConfig(battleZoneId, stageId);
 }
 
+void GameController::updateAttackTeam() {
+    BattleInfo& battleInfo = GameModel::getInstance()->getBattleInfo();
+    
+    CCDictionary* attackTeam = battleInfo.getAttackTeamDict();
+    CCString* troopMaxSize = static_cast<CCString*>(attackTeam->objectForKey(KKeyTroop_max_size));
+    
+    std::stringstream sstmTroop;
+    std::stringstream sstmTroopDifficulty;
+    
+    
+    for (int i = 0; i < troopMaxSize->intValue(); i++) {
+        sstmTroop << "troop_" << i + 1;
+        sstmTroopDifficulty << "troop_" << i + 1 <<"_difficulty" ;
+        
+        std::string keyTroop = sstmTroop.str();
+        std::string keyTroopDifficulty = sstmTroopDifficulty.str();
+        
+        CCString* troopId = static_cast<CCString*>(attackTeam->objectForKey(keyTroop));
+        //        CCString* troopDifficulty = static_cast<CCString*>(attackTeam->objectForKey(keyTroopDifficulty));//难度系数
+        
+        CCDictionary* troop = GameConfig::getInstance()->getTroopById(troopId->getCString());
+        updateMonsterTroop(troop);
+    }
+    
+}
+
+void GameController::updateMonsterTroop(cocos2d::CCDictionary *troopDict) {
+    std::stringstream sstmMonsterId;
+    std::stringstream sstmMonsterNum;
+    
+    CCString* monsterCount = static_cast<CCString*>(troopDict->objectForKey(KKeyMonsterCount));
+    CCString* troopId = static_cast<CCString*>(troopDict->objectForKey(KKeyId));
+    
+    for (int j = 0; j < monsterCount->intValue(); j++) {
+        sstmMonsterId << "monster_" << j + 1 << "_id";
+        sstmMonsterNum<<"monster_" << j + 1 << "_num";
+        
+        std::string monsterId = sstmMonsterId.str();
+        std::string monsterNum = sstmMonsterNum.str();
+        
+        CCString* monsterValue = static_cast<CCString*>(troopDict->objectForKey(monsterId.c_str()));
+        CCString* monsterNumValue = static_cast<CCString*>(troopDict->objectForKey(monsterNum.c_str()));
+        
+        CCLOG("monsterId : %s, monsterNum : %s", monsterValue->getCString(), monsterNumValue->getCString());
+        CCDictionary* monsterDict = GameConfig::getInstance()->getTemplateValue(monsterValue->intValue());
+        
+        for (int k = 0; k < monsterNumValue->intValue(); k++) {
+            MonsterObject* monsterObj = MonsterObject::create(monsterDict);
+            GameModel::getInstance()->addMonsterToTroop(monsterObj, troopId->intValue());
+        }
+        
+    }
+
+}
 
 
 

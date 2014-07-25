@@ -97,8 +97,8 @@ public: /* GameObject */
     /**
      添加一个游戏对象到战斗场景,返回加入到那个set
      */
-    cocos2d::CCSet * addGameObjectToBattle(GameObject * obj);
-    cocos2d::CCSet * findGameObjectsInBattle(const int32_t gid);
+    cocos2d::CCSet * addMonsterToTroop(GameObject * obj, int troopId);
+    cocos2d::CCSet * findMonsterInTroop(const int troopId);
     
     /**
      从战斗场景去除一个节点
@@ -149,7 +149,7 @@ private:
     BattleLayer                  * _battleLayer;
     BattleInfo                   _battleInfo;
     
-    cocos2d::CCDictionary        * _gameObjectsDict;
+    cocos2d::CCDictionary        *_troopMonsterDict;
     
 };
 

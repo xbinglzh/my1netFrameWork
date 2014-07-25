@@ -13,6 +13,7 @@
 #include "KeyConfigDef.h"
 #include "GameConfig.h"
 #include "StateFactory.h"
+#include "AnimUtils.h"
 
 #define Bg_Node_Tag        100001
 #define Mid_Node_Tag       100002
@@ -121,7 +122,17 @@ CCNode* GameObject::getFgNode() {
 
 void GameObject::setObjContentSize() {
     CCSize flashSize = _flashNode->getContentSize();
+    
+    _fgNode->setContentSize(flashSize);
+    _midNode->setContentSize(flashSize);
+    _bgNode->setContentSize(flashSize);
     this->setContentSize(flashSize);
+    
+    LayoutUtil::layoutParentCenter(_flashNode);
+    
+    LayoutUtil::layoutParentCenter(_fgNode);
+    LayoutUtil::layoutParentCenter(_midNode);
+    LayoutUtil::layoutParentCenter(_bgNode);
 }
 
 //---------------------- 设置基本属性信息 ------------------------/
@@ -280,17 +291,14 @@ void GameObject::setFrameITScale(const float value){
 
 void GameObject::initDisplay(const char* animId) {
     
-    CCDictionary * tmpDict = static_cast<CCDictionary *>(GameConfig::getInstance()->getAnimationById(animId));
+    if (_flashNode) {
+        _flashNode->removeFromParentAndCleanup(true);
+    }
     
-    if (tmpDict) {
-        if(_flashNode)
-            _flashNode->removeFromParentAndCleanup(true);
-        _flashNode = AnimNode::createAnim(tmpDict,this);
-        
-        if (_flashNode) {
-            _flashNode->setAutoUpdateFrame(false);
-            _midNode->addChild(_flashNode);
-        }
+    _flashNode = AnimUtils::createAnimById(animId);
+    
+    if (_flashNode) {
+        _midNode->addChild(_flashNode);
     }
 }
 

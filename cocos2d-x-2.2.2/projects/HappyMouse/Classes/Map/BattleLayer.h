@@ -20,6 +20,7 @@ USING_NS_CC_EXT;
 class GameController;
 class MonsterObject;
 class PitObject;
+class AnimNode;
 
 class BattleLayer : public CCLayer {
     
@@ -37,18 +38,19 @@ public:
 	inline GroundMap* getGroundMap(){return _groundMap;}
 //	const cocos2d::CCPoint& getPositionFromGroundMap( const std::list<int>::iterator & posIndex);
     
+    
+    
 private:
     void updateGameMonster();
+    void startTroop(const int trropId);
     
 private:
     CCLayerColor* genLayerColor(int zOrder, int layerTag);
     
-    void updateMapBg(BattleInfo& battleInfo);
-    void updateMapPit(BattleInfo& battleInfo);
-    void updateAttackTeam(BattleInfo& battleInfo);
-    void updateMonsterTroop(CCDictionary* troopDict);
+    void initMapBg(BattleInfo& battleInfo);
+    void initMapPit(BattleInfo& battleInfo);
     
-    MonsterObject* genRandomMonster();
+    MonsterObject* genRandomMonster(CCSet* monsterSet);
     PitObject*     genRandomPit();
 
 private:
@@ -62,8 +64,9 @@ private:
     CCLayerColor*           _xpEffectLayer;           //xp动画层
     CCLayerColor*           _battleUiLayer;           //UI控制层
     
-    std::vector<MonsterObject*> _monsterVector;
+//    std::vector<MonsterObject*> _monsterVector;
     
+    CCArray*              _monsterArray;
     
 //    XXBattleUI* _battleUI;
     

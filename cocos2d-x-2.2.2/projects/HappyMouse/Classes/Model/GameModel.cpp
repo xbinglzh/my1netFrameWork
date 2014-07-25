@@ -18,7 +18,7 @@ _gameConfig(NULL),
 _stateFactory(NULL),
 _sharedAudioManager(NULL),
 _battleLayer(NULL),
-_gameObjectsDict(NULL) {
+_troopMonsterDict(NULL) {
     
 }
 
@@ -27,7 +27,7 @@ GameModel::~GameModel() {
     _stateFactory = NULL;
     StateFactory::purgeInstance();
     
-    CC_SAFE_RELEASE_NULL(_gameObjectsDict);
+    CC_SAFE_RELEASE_NULL(_troopMonsterDict);
 }
 
 GameModel * GameModel::getInstance(void) {
@@ -51,7 +51,7 @@ bool GameModel::init(void){
 	_gameConfig = GameConfig::getInstance();
     _sharedAudioManager = AudioManager::sharedInstance();
     
-    _gameObjectsDict = new CCDictionary();
+    _troopMonsterDict = new CCDictionary();
     
     return true;
 }
@@ -98,7 +98,7 @@ void GameModel::clearGameObjects() {
     //清理所有的对象
 	CCDictElement * pDictElement = NULL;
     
-	CCDICT_FOREACH(_gameObjectsDict, pDictElement){
+	CCDICT_FOREACH(_troopMonsterDict, pDictElement){
 		CCSet * set = (CCSet*)pDictElement->getObject();
 		CCSetIterator iter;
 		for (iter = set->begin(); iter != set->end(); ++iter)
@@ -111,35 +111,27 @@ void GameModel::clearGameObjects() {
 		}
 	}
     
-	_gameObjectsDict->removeAllObjects();
+	_troopMonsterDict->removeAllObjects();
 }
 
-CCSet * GameModel::addGameObjectToBattle(GameObject * obj)
-{
-	CCSet * set = (CCSet*)_gameObjectsDict->objectForKey(obj->getId());
+CCSet * GameModel::addMonsterToTroop(GameObject * obj, int troopId) {
+    
+	CCSet * set = (CCSet*)_troopMonsterDict->objectForKey(troopId);
     
 	if (!set) {
 		set = new CCSet();
-		_gameObjectsDict->setObject(set, obj->getId());
+		_troopMonsterDict->setObject(set, troopId);
 		CC_SAFE_RELEASE(set);
 	}
     
 	set->addObject(obj);
-    
-//    const int typeId = obj->getTypeId();
-//    if (GameObjectExt::isBattleSyncObject(typeId)){
-//        battle::BattleStartObjs startObj;
-//        startObj.id = obj->getId();
-//        startObj.hp = obj->getFullHp();
-//        startObj.type = GameObjectExt::rtypeOfGameObject(obj);
-//        _battleResultInfo.startObjInfo.push_back(startObj);
-//    }
+
     
     return set;
 }
 
-cocos2d::CCSet * GameModel::findGameObjectsInBattle(const int32_t gid){
-    CCSet * ret = (CCSet * )_gameObjectsDict->objectForKey(gid);
+cocos2d::CCSet * GameModel::findMonsterInTroop(const int troopId){
+    CCSet * ret = (CCSet * )_troopMonsterDict->objectForKey(troopId);
     return ret;
 }
 
@@ -148,9 +140,6 @@ void GameModel::putGameObject(GameObject* batteObj) {
 }
 
 void GameModel::loadMap(const std::string& mapId) {
-    CCDictionary* mapDict = static_cast<CCDictionary * >(_gameConfig->getMapById(mapId));
-    CCString * map_bg = static_cast<CCString * >(mapDict->objectForKey(KKeyMapBg));
-    CCString * map_pit = static_cast<CCString * >(mapDict->objectForKey(KKeyMapPic));
     
     _battleLayer->updateGroundMap(GameModel::getInstance()->getBattleInfo());
 }

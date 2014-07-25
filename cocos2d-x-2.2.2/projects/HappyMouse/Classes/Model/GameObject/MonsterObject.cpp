@@ -9,7 +9,7 @@
 #include "MonsterObject.h"
 #include "KeyConfigDef.h"
 
-MonsterObject::MonsterObject() : GameObject() {
+MonsterObject::MonsterObject() : GameObject(), _isAddParent(false) {
     
     _monsterDetail._id = -1;
     _monsterDetail._hp = -1;
@@ -20,7 +20,7 @@ MonsterObject::MonsterObject() : GameObject() {
 }
 
 MonsterObject::~MonsterObject() {
-    
+    _isAddParent = false;
 }
 
 MonsterObject* MonsterObject::create(cocos2d::CCDictionary *dict) {
@@ -50,8 +50,9 @@ bool MonsterObject::initWithDictionary(cocos2d::CCDictionary *dict) {
     _monsterDetail._display = displayStr->getCString();
     _monsterDetail._speed = speedStr->intValue();
     
+    this->setId(_monsterDetail._id);
     this->initDisplay(_monsterDetail._display.c_str());
-    
+    this->runAnimation("walk", 0.1f);
     this->complete();
     
     return true;
@@ -60,5 +61,13 @@ bool MonsterObject::initWithDictionary(cocos2d::CCDictionary *dict) {
 MonsterObject::MonsterDetail& MonsterObject::getMonsterDetail() {
     
     return _monsterDetail;
+}
+
+void MonsterObject::setIsAddParent(bool isAdd) {
+    this->_isAddParent = isAdd;
+}
+
+bool MonsterObject::isAddParent() {
+    return _isAddParent;
 }
 

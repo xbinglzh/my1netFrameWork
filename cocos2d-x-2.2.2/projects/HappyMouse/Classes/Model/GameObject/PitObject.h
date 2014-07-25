@@ -25,6 +25,8 @@ public:
     
 public:
     bool strikenMouse(CCTouch* pTouch);
+    bool isAddMonster();
+    void setIsAddMonster(bool isAddMonster);
     
 protected:
     bool init(int pitId,const char* pitImg);
@@ -38,7 +40,7 @@ private:
     CCSpriteExt* _pit;
 
     MouseObject* _mouse;
-    
+    bool         _isAddMonster;
 };
 
 #endif /* defined(__HappyMouse__PitObject__) */

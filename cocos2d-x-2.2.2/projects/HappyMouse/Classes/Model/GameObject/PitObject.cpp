@@ -24,12 +24,13 @@
 #define BottomPitTag    5
 
 
-PitObject::PitObject() : _pit(NULL), _mouse(NULL){
+PitObject::PitObject() : _pit(NULL), _mouse(NULL), _isAddMonster(false) {
     CCNotificationCenter::sharedNotificationCenter()->addObserver(this, callfuncO_selector(PitObject::judgePopMouse), KNotifyMousePop, NULL);
 }
 
 PitObject::~PitObject() {
     CCNotificationCenter::sharedNotificationCenter()->removeObserver(this, KNotifyMousePop);
+    _isAddMonster = false;
 }
 
 PitObject* PitObject::create(int pitId,const char* pitImg) {
@@ -71,6 +72,14 @@ void PitObject::judgePopMouse(cocos2d::CCObject *pSender) {
 
 bool PitObject::strikenMouse(cocos2d::CCTouch *pTouch) {
     return _mouse->strikenMouse(pTouch);
+}
+
+bool PitObject::isAddMonster() {
+    return _isAddMonster;
+}
+
+void PitObject::setIsAddMonster(bool isAddMonster) {
+    this->_isAddMonster = isAddMonster;
 }
 
 

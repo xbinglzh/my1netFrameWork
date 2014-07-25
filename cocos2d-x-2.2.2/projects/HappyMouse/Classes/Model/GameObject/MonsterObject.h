@@ -24,7 +24,7 @@ public:
         int            _hurt;
         std::string    _display;
         int            _speed;
-        
+
     };
     
 public:
@@ -35,8 +35,11 @@ public:
     bool initWithDictionary(CCDictionary * dict);
     MonsterDetail& getMonsterDetail() ;
     
+    void setIsAddParent(bool isAdd);
+    bool isAddParent();
 private:
     MonsterDetail _monsterDetail;
+    bool          _isAddParent;
 };
 
 #endif /* defined(__HappyMouse__MonsterObject__) */

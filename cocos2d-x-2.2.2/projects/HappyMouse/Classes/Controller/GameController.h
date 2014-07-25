@@ -40,10 +40,13 @@ public:
     
     void updateBattleInfo(const int32_t battleZoneId,const int32_t stageId);
     
+    void updateAttackTeam();
+    
 private:
     bool    isIdInRandomVector(int currentId);
     int     genRandomMouseIndex();
     void    genRandomMouseIds();
+    void    updateMonsterTroop(CCDictionary* troopDict);
     
 private:
     std::vector<int> _randomVector;

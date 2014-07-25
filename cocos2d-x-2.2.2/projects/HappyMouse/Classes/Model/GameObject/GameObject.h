@@ -91,6 +91,7 @@ public:
     void  resumeAnimation();
     void  update(const float dt);
     void  setFrameITScale(const float value);
+    
 public:
     /**
      动画节点加载完成

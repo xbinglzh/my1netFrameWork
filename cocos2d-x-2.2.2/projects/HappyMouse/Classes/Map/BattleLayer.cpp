@@ -16,12 +16,13 @@
 #include "GameController.h"
 #include "GameUtils.h"
 #include "MonsterObject.h"
+#include "AnimUtils.h"
 
-#define Bottom_Layer_Tag          100001
-#define Map_Layer_Tag             100002
-#define Top_Layer_Tag             100003
-#define XpEffect_Layer_Tag        100004
-#define BattleUi_Layer_Tag        100005
+#define Bottom_Layer_Tag          1001
+#define Map_Layer_Tag             1002
+#define Top_Layer_Tag             1003
+#define XpEffect_Layer_Tag        1004
+#define BattleUi_Layer_Tag        1005
 
 enum LayerZOrder {
     
@@ -40,21 +41,22 @@ _battleUiLayer(NULL),
 _xpEffectLayer(NULL),
 _topLayer(NULL),
 _groundMap(NULL),
-_mapLayer(NULL) {
+_mapLayer(NULL) ,
+_monsterArray(NULL) {
     
 }
 
 BattleLayer::~BattleLayer() {
     removeAllChildrenWithCleanup(true);
     sp::ArmatureDataManager::sharedArmatureDataManager()->removeUnusedAnimations();
+
+    CCObject * obj = NULL;
     
-//    for (int i = 0; i < _monsterVector.size(); i++) {
-//        MonsterObject* obj = _monsterVector.at(i);
-//        
-//    }
+    CCARRAY_FOREACH(_monsterArray, obj){
+        CC_SAFE_RELEASE_NULL(obj);
+    }
     
-    _monsterVector.clear();
-    
+    _monsterArray->release() ;
 }
 
 bool BattleLayer::init() {
@@ -62,6 +64,9 @@ bool BattleLayer::init() {
     this->setAnchorPoint(CCPointZero);
     
     _gameController = GameController::getInstance();
+    
+    _monsterArray = CCArray::create();
+    _monsterArray->retain();
     
     _bottomLayer = genLayerColor(BottomLayerZorder, Bottom_Layer_Tag);
     _mapLayer = genLayerColor(MapLayerZorder, Map_Layer_Tag);
@@ -73,38 +78,38 @@ bool BattleLayer::init() {
     _mapLayer ->addChild(_groundMap);
     LayoutUtil::layoutParentBottom(_groundMap);
     
-    CCDirector::sharedDirector()->getScheduler()->scheduleUpdateForTarget(this, 0, false);
+    this->scheduleUpdate();
+    
     CCDirector::sharedDirector()->getScheduler()->scheduleSelector(schedule_selector(BattleLayer::updateGameMonster),this, 0.5,kCCRepeatForever, 5.0f, false);
     
     return true;
 }
 
 void BattleLayer::onEnter() {
-    
+    CCLayer::onEnter();
 }
 
 void BattleLayer::onExit() {
-    
+    CCLayer::onEnter();
 }
 
 void BattleLayer::update(float dt) {
     
     GameController::getInstance()->update(dt);
-    
 }
 
 bool BattleLayer::updateGroundMap(BattleInfo& battleInfo) {
     //Map ---
-    updateMapBg(battleInfo);
-    updateMapPit(battleInfo);
-    //Attack Team --
-    updateAttackTeam(battleInfo);
+    initMapBg(battleInfo);
+    initMapPit(battleInfo);
     
+    //Attack Team --
+//    initAttackTeam(battleInfo);
     
     return true;
 }
 
-void BattleLayer::updateMapBg(BattleInfo &battleInfo) {
+void BattleLayer::initMapBg(BattleInfo &battleInfo) {
     CCLayer* groundMap_baseLayer = _groundMap->getGroundMapLayerByTag(GroundMap_Base_Layer_Tag);
     
     const char* mapBg = static_cast<CCString*>(battleInfo.getMapDict()->objectForKey(KKeyMapBg))->getCString();
@@ -116,7 +121,7 @@ void BattleLayer::updateMapBg(BattleInfo &battleInfo) {
     LayoutUtil::layoutParentBottom(bgSprite);
 }
 
-void BattleLayer::updateMapPit(BattleInfo &battleInfo) {
+void BattleLayer::initMapPit(BattleInfo &battleInfo) {
     CCLayer* groundMap_gameLayer = _groundMap->getGroundMapLayerByTag(GroundMap_Game_Layer_Tag);
     float gridWidth = groundMap_gameLayer->getContentSize().width / MapXGridNum;
     float gridHeight = groundMap_gameLayer->getContentSize().height / MapYGridNum;
@@ -164,78 +169,81 @@ CCLayerColor* BattleLayer::genLayerColor(int zOrder, int layerTag) {
     return layer;
 }
 
-void BattleLayer::updateAttackTeam(BattleInfo &battleInfo) {
-    CCDictionary* attackTeam = battleInfo.getAttackTeamDict();
-    CCString* troopMaxSize = static_cast<CCString*>(attackTeam->objectForKey(KKeyTroop_max_size));
+//------------------------ start Troop -------------------------
+void BattleLayer::startTroop(const int trropId) {
+    CCSet* trropMonster = GameModel::getInstance()->findMonsterInTroop(trropId);
     
-    std::stringstream sstmTroop;
-    std::stringstream sstmTroopDifficulty;
-
-    
-    for (int i = 0; i < troopMaxSize->intValue(); i++) {
-        sstmTroop << "troop_" << i + 1;
-        sstmTroopDifficulty << "troop_" << i + 1 <<"_difficulty" ;
-        
-        std::string keyTroop = sstmTroop.str();
-        std::string keyTroopDifficulty = sstmTroopDifficulty.str();
-        
-        CCString* troopId = static_cast<CCString*>(attackTeam->objectForKey(keyTroop));
-//        CCString* troopDifficulty = static_cast<CCString*>(attackTeam->objectForKey(keyTroopDifficulty));//难度系数
-        
-        CCDictionary* troop = GameConfig::getInstance()->getTroopById(troopId->getCString());
-        updateMonsterTroop(troop);
-    }
 }
 
-void BattleLayer::updateMonsterTroop(cocos2d::CCDictionary *troopDict) {
+MonsterObject* BattleLayer::genRandomMonster(CCSet* monsterSet) {
     
-    std::stringstream sstmMonsterId;
-    std::stringstream sstmMonsterNum;
+    MonsterObject* randomMObj = NULL;
     
-    CCString* monsterCount = static_cast<CCString*>(troopDict->objectForKey(KKeyMonsterCount));
+    int randomIndex = rand() % monsterSet->count();
     
-    for (int j = 0; j < monsterCount->intValue(); j++) {
-        sstmMonsterId << "monster_" << j + 1 << "_id";
-        sstmMonsterNum<<"monster_" << j + 1 << "_num";
+    CCSetIterator iter; int j =0;
+    
+    for (iter = monsterSet->begin(); iter != monsterSet->end(); ++iter) {
+        MonsterObject* mObj = (MonsterObject *)(*iter);
         
-        std::string monsterId = sstmMonsterId.str();
-        std::string monsterNum = sstmMonsterNum.str();
-        
-        CCString* monsterValue = static_cast<CCString*>(troopDict->objectForKey(monsterId.c_str()));
-        CCString* monsterNumValue = static_cast<CCString*>(troopDict->objectForKey(monsterNum.c_str()));
-        
-        CCLOG("monsterId : %s, monsterNum : %s", monsterValue->getCString(), monsterNumValue->getCString());
-        CCDictionary* monsterDict = GameConfig::getInstance()->getTemplateValue(monsterValue->intValue());
-        
-        for (int k = 0; k < monsterNumValue->intValue(); k++) {
-            MonsterObject* monsterObj = MonsterObject::create(monsterDict);
-            _monsterVector.push_back(monsterObj);
-            
+        if (j == randomIndex) {
+            randomMObj = mObj;
         }
+        
+        j++;
     }
-
+    
+    if ( !randomMObj || randomMObj->getMonsterDetail()._hp == 0 || randomMObj->isAddParent()) {
+        return genRandomMonster(monsterSet);
+    }
+    
+    return randomMObj;
+    
 }
 
-MonsterObject* BattleLayer::genRandomMonster() {
-    MonsterObject* monsterObj = _monsterVector.at(rand() % _monsterVector.size());
-    return monsterObj;
-}
+
+int randomCount;
 
 PitObject* BattleLayer::genRandomPit() {
     CCLayer* groundMap_gameLayer = _groundMap->getGroundMapLayerByTag(GroundMap_Game_Layer_Tag);
     int randomTag = rand() % groundMap_gameLayer->getChildrenCount();
     PitObject* pitObj = (PitObject*)groundMap_gameLayer->getChildByTag(randomTag);
+    
+    if (randomCount <= 0) {
+        return NULL;
+    }
+    
+    if (pitObj && pitObj->isAddMonster()) {
+        randomCount--;
+        return genRandomPit();
+    }
+    
     return pitObj;
 }
 
 void BattleLayer::updateGameMonster() {
+    randomCount = 3;
     PitObject* pit = genRandomPit();
-    pit->removeChildByTag(MouseTag);
     
-    MonsterObject* monster = genRandomMonster();
-    
-    pit->addChild(monster, 1, MouseTag);
-//    LayoutUtil::layoutParentCenter(monster);
+    if (pit) {
+        MonsterObject* addMonster =(MonsterObject*) pit->getChildByTag(MouseTag);
+        
+        if(addMonster)
+            addMonster->setIsAddParent(false);
+        
+        pit->removeChildByTag(MouseTag, false);
+        
+        CCSet* trropMonster = GameModel::getInstance()->findMonsterInTroop(950001);
+        
+        MonsterObject* monster = genRandomMonster(trropMonster);
+        
+        if (monster) {
+            pit->addChild(monster, 1, MouseTag);
+            monster->setIsAddParent(true);
+            LayoutUtil::layoutParentCenter(monster);
+        }
+    }
+
 }
 
 
