@@ -15,7 +15,12 @@
 void IdleState::onEnterCallback(GameObject * obj){
 	//播放动画
     runStateAnimation(obj,K_STATE_IDLE);
-    CCLOG("[%d]-[%d] IdleState::onEnter", obj->getId(), ((int)this));
+//    CCLOG("[%d]-[%d] IdleState::onEnter", obj->getId(), ((int)this));
+    
+    CCDelayTime* time = CCDelayTime::create(0.5f);
+    CCCallFuncO* callFun = CCCallFuncO::create(this, callfuncO_selector(IdleState::changeToMoveDown), obj);
+    obj->getMidNode()->runAction(CCSequence::create(time, callFun, NULL));
+    
 }
 
 bool IdleState::onMessageCallback(GameObject * obj,const GameEventParams * params){
@@ -40,3 +45,6 @@ bool IdleState::onMessageCallback(GameObject * obj,const GameEventParams * param
     return false;
 }
 
+void IdleState::changeToMoveDown(GameObject* obj) {
+    obj->changeState(K_STATE_MOVING_DOWN);
+}

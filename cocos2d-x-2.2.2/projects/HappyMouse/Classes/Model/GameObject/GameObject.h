@@ -37,9 +37,10 @@ public:
         uint32_t           _fullHp;     //角色全满时的血量
         uint32_t           _hurt;       //当前伤害力
         float              _speed;
-
-        std::string              _bufferTop;      //buffer
-        std::string              _bufferBottom;
+        
+        std::string        _display;
+        std::string        _bufferTop;      //buffer
+        std::string        _bufferBottom;
     };
 
     
@@ -116,7 +117,7 @@ public:
     //    static GameObject * decode(const boost::shared_ptr<n2studio::network::Buffer> & buf);
     
 public:
-    void initDisplay(const char* animId);
+    void initDisplay();
     
 public: /*状态机*/
 
@@ -163,6 +164,9 @@ public:
 public:
     void initHpBar();
     
+protected:
+    GameCharactar                 _charactar;
+    
 private:
     
     CCNode*                       _bgNode;
@@ -171,7 +175,6 @@ private:
     
     AnimNode*                     _flashNode;
     StateMachine*                 _stateMachine;
-    GameCharactar                 _charactar;
     cocos2d::CCDictionary*        _properties;
     
 };

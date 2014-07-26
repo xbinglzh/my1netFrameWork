@@ -11,6 +11,7 @@
 #include "StateDef.h"
 
 #include "MovingUpState.h"
+#include "MovingDownState.h"
 #include "DisplayState.h"
 #include "IdleState.h"
 #include "AttackingState.h"
@@ -97,6 +98,10 @@ State * StateFactory::getStateByTypeId(const int stateType){
                 
             case KMovingUpState:
                 state = new MovingUpState();
+                break;
+                
+            case KMovingDownState:
+                state = new MovingDownState();
                 break;
                 
             case KAttackingState:

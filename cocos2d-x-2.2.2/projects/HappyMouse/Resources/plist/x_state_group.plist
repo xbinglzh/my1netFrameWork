@@ -28,7 +28,7 @@
 		<key>4</key>
 		<dict>
 			<key>animation</key>
-			<string>normal</string>
+			<string>walk</string>
 			<key>id</key>
 			<string>40000</string>
 		</dict>

@@ -35,7 +35,7 @@ bool WelcomeView::initWithCustom() {
 //                                                   "walk", "xx_monster_1001");
     
     AnimNode* hero = AnimUtils::createAnimById("204201#display",NULL);
-    hero->runAnimation("walk");
+    hero->runAnimation("injured");
 //    hero->setContentSize(CCSizeMake(139, 264));
     this->addChild(hero,1000);
     

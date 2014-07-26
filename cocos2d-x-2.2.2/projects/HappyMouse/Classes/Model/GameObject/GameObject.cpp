@@ -36,6 +36,7 @@ _properties(NULL) {
     _charactar._lastState = 0;
     _charactar._bufferBottom = "-1";
     _charactar._bufferTop = "-1";
+    _charactar._display = "-1";
     
 }
 
@@ -72,7 +73,6 @@ bool GameObject::init() {
     _bgNode->setAnchorPoint(CCPointZero);
     _midNode->setAnchorPoint(CCPointZero);
     _fgNode->setAnchorPoint(CCPointZero);
-    
     
     this->addChild(_bgNode, 1, Bg_Node_Tag);
     this->addChild(_midNode, 2, Mid_Node_Tag);
@@ -132,7 +132,7 @@ void GameObject::setObjContentSize(const CCSize size) {
     LayoutUtil::layoutParentCenter(_midNode);
     LayoutUtil::layoutParentCenter(_bgNode);
 
-    LayoutUtil::layoutParentLeft(_flashNode, size.width / 2, 0 );
+    LayoutUtil::layoutParentBottom(_flashNode);
     
 }
 
@@ -319,13 +319,13 @@ void GameObject::setFrameITScale(const float value){
 
 //-------------- display ------------------
 
-void GameObject::initDisplay(const char* animId) {
+void GameObject::initDisplay() {
     
     if (_flashNode) {
         _flashNode->removeFromParentAndCleanup(true);
     }
     
-    _flashNode = AnimUtils::createAnimById(animId, this);
+    _flashNode = AnimUtils::createAnimById(_charactar._display.c_str(), this);
     
     if (_flashNode) {
         _midNode->addChild(_flashNode);

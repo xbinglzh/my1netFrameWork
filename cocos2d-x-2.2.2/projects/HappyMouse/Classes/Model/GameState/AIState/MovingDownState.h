@@ -15,7 +15,7 @@
 
 class GameObject;
 
-class MovingDownState:public GameState {
+class MovingDownState : public GameState, public cocos2d::CCObject {
     
 public:
     virtual void onEnterCallback(GameObject* obj);
@@ -23,6 +23,8 @@ public:
     virtual void updateCallback(GameObject* obj,const float dt);
     virtual bool onMessageCallback(GameObject* obj,const GameEventParams* params);
     
+private:
+    void changeToDisplay(GameObject* obj);
 };
 
 #endif /* defined(__HappyMouse__MovingDownState__) */

@@ -171,6 +171,27 @@
 #define KKeyHurt                  "hurt"
 #define KKeyDisplay               "display"
 
+//Duration Action
+#define KKeyPrepareSkillDuration             "prepare_skill_duration"
+#define KKeyDoSkillDuration             "do_skill_duration"
+#define KKeyDestoryDuration             "destory_duration"
+#define KKeyBeInjureDuration            "be_injure_duration"
+#define KKeyArrivedDuration            "arrived_duration"
+
+//Act 
+#define KKeyActDestory             "act_destory"
+#define KKeyActAttack              "act_attack"
+#define KKeyActSkillAttack          "act_skill_attack"
+#define KKeyActSkillAttackEnable    "act_skill_attack_enbale"
+#define KKeyActSAttack              "act_s_attack"
+#define KKeyActOnMsg               "act_on_msg"
+#define KKeyActOnRotateFinished    "act_on_msg_rotate"
+#define KKeyActMoveToFinished      "act_move_to_finished"
+#define KKeyDropInterval      "drop_interval"
+#define KKeyBackgroundImage     "bg_img"
+#define KKeyRoleDialogInterval      "role_dialog_interval"
+#define KKeyAntiAir                 "anti_air"
+
 
 
 #endif /* defined(__motoGame__KeyConfigDef__) */

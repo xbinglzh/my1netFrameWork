@@ -10,12 +10,16 @@
 #define __HappyMouse__DisplayState__
 
 #include "GameState.h"
+#include "cocos2d.h"
 
-class DisplayState : public GameState {
+class DisplayState : public GameState, public cocos2d::CCObject {
     
 public:
     virtual void onEnterCallback(GameObject * obj);
     virtual bool onMessageCallback(GameObject * obj,const GameEventParams * params);
+    
+private:
+    void changeToMoveUp(GameObject* obj);
     
 };
 

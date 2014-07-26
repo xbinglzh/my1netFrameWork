@@ -10,6 +10,8 @@
 #include "GameEventParams.h"
 #include "GameObject.h"
 #include "ConstansDef.h"
+#include "KeyConfigDef.h"
+#include "GameEventDef.h"
 
 //-------------------------------
 //角色（卡牌和兵）类的状态
@@ -71,15 +73,15 @@ bool GameState::runStateAnimation(GameObject * obj,int stateId){
 }
 
 void GameState::runStateAnimWithCallback(GameObject * obj,int stateId,const char * durationKey){
-//    CCFloat * durationVal = (CCFloat *)obj->getValue(durationKey);
-//    if(!this->runStateAnimation(obj,stateId)){
-//        CCDictionary * dict = CCDictionary::create();
-//        dict->setObject(CCString::create(KKeyActOnMsg), KDoCallFuncActId);
-//        GameEventParams *  p = GameEventParams::create(K_EVENT_ANIMATION_FINISHED,obj);
-//        dict->setObject(p, KDoCallFuncParams);
-//        CCSequence * seq = CCSequence::create(CCDelayTime::create(durationVal ? durationVal->getValue() : 0.01f),
-//                                              CCCallFuncO::create(obj,callfuncO_selector(GameObject::doCallFunc),dict), NULL);
-//        seq->setTag(KSTATE_ANIMATION_ACTION_TAG);
-//        obj->runAction(seq);
-//    }
+    CCFloat * durationVal = (CCFloat *)obj->getValue(durationKey);
+    if(!this->runStateAnimation(obj,stateId)){
+        CCDictionary * dict = CCDictionary::create();
+        dict->setObject(CCString::create(KKeyActOnMsg), KDoCallFuncActId);
+        GameEventParams *  p = GameEventParams::create(K_EVENT_ANIMATION_FINISHED,obj);
+        dict->setObject(p, KDoCallFuncParams);
+        CCSequence * seq = CCSequence::create(CCDelayTime::create(durationVal ? durationVal->getValue() : 0.01f),
+                                              CCCallFuncO::create(obj,callfuncO_selector(GameObject::doCallFunc),dict), NULL);
+        seq->setTag(KSTATE_ANIMATION_ACTION_TAG);
+        obj->runAction(seq);
+    }
 }

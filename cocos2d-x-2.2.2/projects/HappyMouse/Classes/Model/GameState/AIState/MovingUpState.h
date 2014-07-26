@@ -15,7 +15,7 @@
 
 class GameObject;
 
-class MovingUpState:public GameState {
+class MovingUpState:public GameState , public CCObject {
     
 public:
     virtual void onEnterCallback(GameObject* obj);
@@ -24,7 +24,7 @@ public:
     virtual bool onMessageCallback(GameObject* obj,const GameEventParams* params);
     
 private:
-    void changeToMoveDown();
+    void changeToIdleState(GameObject* obj);
     
 };
 

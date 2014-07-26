@@ -13,12 +13,6 @@
 
 MonsterObject::MonsterObject() : GameObject(), _isAddParent(false) {
     
-    _monsterDetail._id = -1;
-    _monsterDetail._hp = -1;
-    _monsterDetail._hurt = -1;
-    _monsterDetail._display = "-1";
-    _monsterDetail._speed = -1;
-    
 }
 
 MonsterObject::~MonsterObject() {
@@ -52,14 +46,14 @@ bool MonsterObject::initWithDictionary(cocos2d::CCDictionary *dict) {
     CCString* displayStr = static_cast<CCString*>(dict->objectForKey(KKeyDisplay));
     CCString* speedStr = static_cast<CCString*>(dict->objectForKey(KKeySpeed));
     
-    _monsterDetail._id = idStr->intValue();
-    _monsterDetail._hp = hpStr->intValue();
-    _monsterDetail._hurt = hurtStr->intValue();
-    _monsterDetail._display = displayStr->getCString();
-    _monsterDetail._speed = speedStr->intValue();
+    _charactar._id = idStr->intValue();
+    _charactar._hp = hpStr->intValue();
+    _charactar._fullHp = hpStr->intValue();
+    _charactar._hurt = hurtStr->intValue();
+    _charactar._speed = speedStr->intValue();
+    _charactar._display = displayStr->getCString();
     
-    this->setId(_monsterDetail._id);
-    this->initDisplay(_monsterDetail._display.c_str());
+    this->initDisplay();
     
     CCString* stateGroupId = static_cast<CCString*>(dict->objectForKey(KKeyState));
     this->initStateMachine(stateGroupId->m_sString);
@@ -68,6 +62,8 @@ bool MonsterObject::initWithDictionary(cocos2d::CCDictionary *dict) {
     this->complete();
     
     makeMidNodeInClipNode();
+    
+    this->changeState(K_STATE_DISPLAY);
     
     return true;
 }
@@ -95,6 +91,7 @@ void MonsterObject::makeMidNodeInClipNode() {
     cliper->setContentSize(midNode->getContentSize());
     
     cliper->addChild(midNode);
+    
     LayoutUtil::layoutParentBottom(midNode, 0, -1 * (midNode->getContentSize().height + 10 ));
     
     this->addChild(cliper, 2, Mid_Node_Tag);
@@ -105,11 +102,6 @@ CCNode* MonsterObject::getMoveNode() {
     return this->getChildByTag(Mid_Node_Tag);
 }
 
-MonsterObject::MonsterDetail& MonsterObject::getMonsterDetail() {
-    
-    return _monsterDetail;
-}
-
 void MonsterObject::setIsAddParent(bool isAdd) {
     this->_isAddParent = isAdd;
 }
@@ -118,15 +110,9 @@ bool MonsterObject::isAddParent() {
     return _isAddParent;
 }
 
-void MonsterObject::delayToMoveState() {
-    if (this->getCurrentState() == K_STATE_DISPLAY) {
-        CCDelayTime* delay = CCDelayTime::create(3);
-        CCCallFuncN* function = CCCallFuncN::create(this, callfuncN_selector(MonsterObject::changeStateToMove));
-        this->runAction(CCSequence::create(delay, function, NULL));
-    }
+void MonsterObject::changeStateToMove() {
+    changeState(K_STATE_MOVING_UP);
 }
 
-void MonsterObject::changeStateToMove() {
-    changeState(K_STATE_BE_INJURED);
-}
+
 

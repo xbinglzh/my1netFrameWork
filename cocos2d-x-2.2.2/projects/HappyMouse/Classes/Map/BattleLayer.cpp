@@ -179,10 +179,11 @@ MonsterObject* BattleLayer::genRandomMonster(CCSet* monsterSet) {
     
     for (iter = monsterSet->begin(); iter != monsterSet->end(); ++iter) {
         MonsterObject* mObj = (MonsterObject *)(*iter);
-        if (mObj && !mObj->isAddParent() && mObj->getCurrentState() != K_STATE_MOVING_UP
-            && mObj->getMonsterDetail()._hp != 0) {
+        
+        if (mObj && !mObj->isAddParent() && mObj->getCurrentState() == K_STATE_DISPLAY) {
             randomArray->addObject(mObj);
         }
+        
     }
     
     if (randomArray->count() <= 0) {
@@ -198,6 +199,9 @@ int randomCount;
 PitObject* BattleLayer::genRandomPit() {
     CCLayer* groundMap_gameLayer = _groundMap->getGroundMapLayerByTag(GroundMap_Game_Layer_Tag);
     int randomTag = rand() % groundMap_gameLayer->getChildrenCount();
+    
+    CCLOG("random pit tag : %d", randomTag);
+    
     PitObject* pitObj = (PitObject*)groundMap_gameLayer->getChildByTag(randomTag);
     
     if (randomCount <= 0) {
@@ -219,21 +223,31 @@ void BattleLayer::updateGameMonster() {
     if (pit) {
         MonsterObject* addMonster =(MonsterObject*) pit->getChildByTag(MouseTag);
         
-        if(addMonster)
+        if (addMonster == NULL) {
+            CCSet* trropMonster = GameModel::getInstance()->findMonsterInTroop(950001);
+            MonsterObject* monster = genRandomMonster(trropMonster);
+            
+            if (monster) {
+                pit->addChild(monster, 1, MouseTag);
+                monster->setIsAddParent(true);
+                
+                LayoutUtil::layoutParentBottom(monster, 0, 30);
+            }
+        } else if (addMonster && addMonster->getCurrentState() == K_STATE_DISPLAY) {
+            
+            CCSet* trropMonster = GameModel::getInstance()->findMonsterInTroop(950001);
+            MonsterObject* monster = genRandomMonster(trropMonster);
+        
+            pit->removeChildByTag(MouseTag, false);
             addMonster->setIsAddParent(false);
-        
-        pit->removeChildByTag(MouseTag, false);
-        
-        CCSet* trropMonster = GameModel::getInstance()->findMonsterInTroop(950001);
-        
-        MonsterObject* monster = genRandomMonster(trropMonster);
-        
-        if (monster) {
-            monster->changeState(K_STATE_DISPLAY);
-            monster->delayToMoveState();
-            pit->addChild(monster, 1, MouseTag);
-            monster->setIsAddParent(true);
-            LayoutUtil::layoutParentBottom(monster, 0, 30);
+            
+            if (monster) {
+                pit->addChild(monster, 1, MouseTag);
+                monster->setIsAddParent(true);
+                
+                LayoutUtil::layoutParentBottom(monster, 0, 30);
+            }
+            
         }
     }
 
