@@ -70,6 +70,9 @@ bool StateFactory::init(){
 }
 
 State * StateFactory::getStateByTypeId(const int stateType){
+    
+    CCLOG("StateFactory::getStateByTypeId %d .", stateType);
+    
     State * state = NULL;
     
     std::map<int, State * >::iterator iter = _stateMap.find(stateType);
@@ -92,7 +95,7 @@ State * StateFactory::getStateByTypeId(const int stateType){
                 state = new IdleState();
                 break;
                 
-            case K_STATE_MOVING_UP:
+            case KMovingUpState:
                 state = new MovingUpState();
                 break;
                 
@@ -109,6 +112,7 @@ State * StateFactory::getStateByTypeId(const int stateType){
                 break;
                 
             default:
+                CCLOG("StateFactory::getStateByTypeId Un Find ID %d .", stateType);
                 break;
         }
         

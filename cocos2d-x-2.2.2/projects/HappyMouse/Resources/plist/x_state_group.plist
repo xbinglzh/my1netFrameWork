@@ -9,7 +9,7 @@
 			<key>animation</key>
 			<string>dead</string>
 			<key>id</key>
-			<string>10003</string>
+			<string>10000</string>
 		</dict>
 		<key>2</key>
 		<dict>
@@ -51,7 +51,7 @@
 			<key>animation</key>
 			<string>arrived</string>
 			<key>id</key>
-			<string>70001</string>
+			<string>70000</string>
 		</dict>
 		<key>8</key>
 		<dict>

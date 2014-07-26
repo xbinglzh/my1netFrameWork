@@ -133,7 +133,7 @@ void StateMachine::changeState(const void* g, const int32_t id) {
         }
     }
     else {
-        CCLOG("[0x%x]change state: invalid state = %d",this,id);
+        CCLOG("Error [0x%x]change state: invalid state = %d",this, id);
     }
 }
 
