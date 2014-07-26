@@ -14,11 +14,9 @@
 #include "GameConfig.h"
 #include "StateFactory.h"
 #include "AnimUtils.h"
+#include "ConstansDef.h"
 
-#define Bg_Node_Tag        100001
-#define Mid_Node_Tag       100002
-#define Fg_Node_Tag        100003
-#define Flash_Node_Tag     100004
+
 
 GameObject::GameObject() :
 _bgNode(NULL),
@@ -75,6 +73,7 @@ bool GameObject::init() {
     _midNode->setAnchorPoint(CCPointZero);
     _fgNode->setAnchorPoint(CCPointZero);
     
+    
     this->addChild(_bgNode, 1, Bg_Node_Tag);
     this->addChild(_midNode, 2, Mid_Node_Tag);
     this->addChild(_fgNode, 3, Fg_Node_Tag);
@@ -105,8 +104,9 @@ void GameObject::complete(){
 //    this->initActions();
 //    this->initDisplay();
 //    this->initSkills();
-    
-    setObjContentSize();
+
+    setObjContentSize(_flashNode->getContentSize());
+    this->initHpBar();
 }
 
 CCNode* GameObject::getBgNode() {
@@ -121,19 +121,48 @@ CCNode* GameObject::getFgNode() {
     return _fgNode;
 }
 
-void GameObject::setObjContentSize() {
-    CCSize flashSize = _flashNode->getContentSize();
+void GameObject::setObjContentSize(const CCSize size) {
     
-    _fgNode->setContentSize(flashSize);
-    _midNode->setContentSize(flashSize);
-    _bgNode->setContentSize(flashSize);
-    this->setContentSize(flashSize);
-    
-    LayoutUtil::layoutParentCenter(_flashNode);
-    
+    _fgNode->setContentSize(size);
+    _midNode->setContentSize(size);
+    _bgNode->setContentSize(size);
+    this->setContentSize(size);
+
     LayoutUtil::layoutParentCenter(_fgNode);
     LayoutUtil::layoutParentCenter(_midNode);
     LayoutUtil::layoutParentCenter(_bgNode);
+
+    LayoutUtil::layoutParentLeft(_flashNode, size.width / 2, 0 );
+    
+}
+
+void GameObject::initHpBar() {
+    
+    CCScale9Sprite* hpBg;
+    CCScale9ProgressBar* hpBar;
+    
+    hpBg = CCScale9Sprite::create("battleBarBg.png");
+    hpBar = CCScale9ProgressBar::create("battleBarFg.png");
+    
+    hpBar->setAnchorPoint(CCPointZero);
+    
+    hpBg->setContentSize(CCSizeMake(_midNode->getContentSize().width, hpBg->getContentSize().height));
+    hpBar->setContentSize(CCSizeMake(_midNode->getContentSize().width - 10, hpBar->getContentSize().height));
+    
+    hpBar->setVisibleRatio(1.0f);
+    
+    _midNode->addChild(hpBg);
+    _midNode->addChild(hpBar,1, HP_Bar_Tag);
+    
+    if (_flashNode) {
+        
+        CCSize newSzie = CCSizeMake(this->getContentSize().width,
+                                    this->getContentSize().height + 20 + hpBg->getContentSize().height);
+        setObjContentSize(newSzie);
+        
+        LayoutUtil::layoutParentTop(hpBg);
+        LayoutUtil::layoutCenter(hpBar, hpBg);
+    }
 }
 
 //---------------------- 设置基本属性信息 ------------------------/

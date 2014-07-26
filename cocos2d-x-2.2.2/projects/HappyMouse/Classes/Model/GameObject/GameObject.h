@@ -140,7 +140,10 @@ public:
     CCNode* getFgNode();
     CCNode* getMidNode();
     CCNode* getBgNode();
-    void    setObjContentSize();
+    void    setObjContentSize(const CCSize size);
+    
+public:
+    void initHpBar();
     
 private:
     

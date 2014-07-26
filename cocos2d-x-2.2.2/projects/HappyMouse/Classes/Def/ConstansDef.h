@@ -114,4 +114,16 @@ enum MouseState {
 //----------- Monster in Pit Tag Define -----------
 #define MouseTag        100
 
+//------------ State Action Tag Define ------------
+#define KSTATE_MOVING_ACTION_TAG (80001)
+#define KSTATE_ANIMATION_ACTION_TAG (80002)
+#define KSTATE_MOVE_TO_ACTION_TAG (80003)
+
+//------------ GameObject Node Tag Define ----------
+#define Bg_Node_Tag        100001
+#define Mid_Node_Tag       100002
+#define Fg_Node_Tag        100003
+#define Flash_Node_Tag     100004
+#define HP_Bar_Tag         100005
+
 #endif

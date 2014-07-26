@@ -32,11 +32,16 @@ public:
     ~MonsterObject();
     
     static MonsterObject* create(CCDictionary * dict);
+    bool init();
     bool initWithDictionary(CCDictionary * dict);
     MonsterDetail& getMonsterDetail() ;
     
     void setIsAddParent(bool isAdd);
     bool isAddParent();
+    
+private:
+    void makeMidNodeInClipNode();
+    
 private:
     MonsterDetail _monsterDetail;
     bool          _isAddParent;

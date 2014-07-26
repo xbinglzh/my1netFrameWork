@@ -98,10 +98,12 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
                 break;
             case AnimNode::K_ARMATURE_FRAME: {
                 node = new AnimNode;
+                node->setAnchorPoint(CCPointZero);
                 node->autorelease();
                 node->_typeId = AnimNode::K_ARMATURE_FRAME;
                 
                 ArmatureAnim * _animNode = ArmatureAnim::create();
+                _animNode->setAnchorPoint(CCPointZero);
                 _animNode->setAnimDelegateExt(node);
                 node->_animNode = _animNode;
                 node->setAnimNodeDelegate(delegate);
@@ -122,11 +124,13 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
                 _animNode->load(armatureValue->m_sString,list,strValue->m_sString, 1.0f);
                 node->addChild(_animNode);
                 
-                CCString * sizeVal = (CCString *)tmpDict->objectForKey(KKeySize);
+                CCString* sizeVal = (CCString *)tmpDict->objectForKey(KKeySize);
+                CCString* scaleVal = (CCString*) tmpDict->objectForKey(KKeyScale);
                 
-                if (_animNode && sizeVal) {
+                if (_animNode && sizeVal && scaleVal) {
                     CCSize size  = GameUtils::string2Size(sizeVal->m_sString);
-                    _animNode->setContentSize(CCSizeMake(size.width, size.height));
+                    _animNode->setContentSize(CCSizeMake(size.width * scaleVal->floatValue(),
+                                                         size.height * scaleVal->floatValue()));
                 }
                 
                 node->scheduleUpdate();
