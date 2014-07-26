@@ -148,11 +148,11 @@ void BattleLayer::initMapPit(BattleInfo &battleInfo) {
         CCString* pitImg = static_cast<CCString*>(GameConfig::getInstance()->getMapPitById(value->getCString())->objectForKey(KKeyPitImg));
         
         PitObject* pit = PitObject::create(pitId, pitImg->getCString());
-        pitId ++;
         
         groundMap_gameLayer->addChild(pit, 10, pitId);
         LayoutUtil::layoutParentTopLeft(pit, x * gridWidth, -1 * y * gridHeight);
         
+        pitId ++;
     }
     
 }
