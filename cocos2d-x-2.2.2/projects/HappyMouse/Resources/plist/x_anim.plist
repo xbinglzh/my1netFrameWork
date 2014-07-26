@@ -39,7 +39,7 @@
 		<key>type</key>
 		<string>3</string>
 	</dict>
-	<key>100002#skill</key>
+	<key>100002#display</key>
 	<dict>
 		<key>atk_pos</key>
 		<string>0,0</string>
@@ -48,31 +48,31 @@
 		<key>center_pos</key>
 		<string>0,0</string>
 		<key>default</key>
-		<string>happening</string>
+		<string>walk</string>
 		<key>desc</key>
-		<string>晕眩</string>
+		<string>人物1</string>
 		<key>file</key>
-		<string>100002#skill.xml</string>
+		<string>xx_m_203401d.xml</string>
 		<key>flipx</key>
 		<string>0</string>
 		<key>hp_bar_pos</key>
 		<string>0,0</string>
 		<key>id</key>
-		<string>100002#skill</string>
+		<string>100002#display</string>
 		<key>image_plist</key>
-		<string>100002#skill.plist</string>
+		<string>xx_m_203401d.plist</string>
 		<key>image_texture</key>
-		<string>100002#skill.png</string>
+		<string>xx_m_203401d.png</string>
 		<key>maskfile</key>
 		<string>0</string>
 		<key>position_offset</key>
 		<string>0,0</string>
 		<key>scale</key>
-		<string>1.0f</string>
+		<string>1.2</string>
 		<key>size</key>
-		<string>74,40</string>
+		<string>100,105</string>
 		<key>skeleton</key>
-		<string>100002#skill</string>
+		<string>xx_m_203401d</string>
 		<key>type</key>
 		<string>3</string>
 	</dict>

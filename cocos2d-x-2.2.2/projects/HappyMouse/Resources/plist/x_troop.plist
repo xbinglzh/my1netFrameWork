@@ -11,9 +11,9 @@
 		<key>monster_1_num</key>
 		<string>5</string>
 		<key>monster_2_id</key>
-		<string>-1</string>
+		<string>100002</string>
 		<key>monster_2_num</key>
-		<string>-1</string>
+		<string>5</string>
 		<key>monster_3_id</key>
 		<string>-1</string>
 		<key>monster_3_num</key>
@@ -27,7 +27,7 @@
 		<key>monster_5_num</key>
 		<string>-1</string>
 		<key>monster_count</key>
-		<string>1</string>
+		<string>2</string>
 	</dict>
 </dict>
 </plist>

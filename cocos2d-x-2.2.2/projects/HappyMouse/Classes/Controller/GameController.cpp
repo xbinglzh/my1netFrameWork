@@ -157,13 +157,14 @@ void GameController::updateAttackTeam() {
 }
 
 void GameController::updateMonsterTroop(cocos2d::CCDictionary *troopDict) {
-    std::stringstream sstmMonsterId;
-    std::stringstream sstmMonsterNum;
-    
+
     CCString* monsterCount = static_cast<CCString*>(troopDict->objectForKey(KKeyMonsterCount));
     CCString* troopId = static_cast<CCString*>(troopDict->objectForKey(KKeyId));
     
     for (int j = 0; j < monsterCount->intValue(); j++) {
+        std::stringstream sstmMonsterId;
+        std::stringstream sstmMonsterNum;
+        
         sstmMonsterId << "monster_" << j + 1 << "_id";
         sstmMonsterNum<<"monster_" << j + 1 << "_num";
         
