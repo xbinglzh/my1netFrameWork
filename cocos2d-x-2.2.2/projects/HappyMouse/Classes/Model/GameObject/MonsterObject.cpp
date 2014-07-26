@@ -95,10 +95,14 @@ void MonsterObject::makeMidNodeInClipNode() {
     cliper->setContentSize(midNode->getContentSize());
     
     cliper->addChild(midNode);
-    LayoutUtil::layoutParentBottom(midNode);
+    LayoutUtil::layoutParentBottom(midNode, 0, -1 * (midNode->getContentSize().height + 10 ));
     
     this->addChild(cliper, 2, Mid_Node_Tag);
-    LayoutUtil::layoutParentCenter(cliper);
+    LayoutUtil::layoutParentBottom(cliper);
+}
+
+CCNode* MonsterObject::getMoveNode() {
+    return this->getChildByTag(Mid_Node_Tag);
 }
 
 MonsterObject::MonsterDetail& MonsterObject::getMonsterDetail() {

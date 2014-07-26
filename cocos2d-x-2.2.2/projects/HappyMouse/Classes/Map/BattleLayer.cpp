@@ -233,7 +233,7 @@ void BattleLayer::updateGameMonster() {
             monster->delayToMoveState();
             pit->addChild(monster, 1, MouseTag);
             monster->setIsAddParent(true);
-            LayoutUtil::layoutParentCenter(monster);
+            LayoutUtil::layoutParentBottom(monster, 0, 30);
         }
     }
 

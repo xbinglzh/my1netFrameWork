@@ -41,6 +41,8 @@ public:
     
     void delayToMoveState();
     
+    CCNode* getMoveNode();
+    
 private:
     void makeMidNodeInClipNode();
     void changeStateToMove();

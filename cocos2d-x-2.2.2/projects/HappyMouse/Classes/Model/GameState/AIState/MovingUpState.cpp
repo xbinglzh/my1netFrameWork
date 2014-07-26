@@ -16,7 +16,7 @@ void MovingUpState::onEnterCallback(GameObject * obj) {
 	runStateAnimation(obj,K_STATE_MOVING_UP);
     
     CCMoveBy* ation_moveTo = CCMoveBy::create(0.3f, CCPointMake(0, obj->getContentSize().height));
-    obj->runAction(CCSequence::create(ation_moveTo, NULL));
+    obj->getMidNode()->runAction(CCSequence::create(ation_moveTo, NULL));
 }
 
 void MovingUpState::onExitCallback(GameObject * obj) {
