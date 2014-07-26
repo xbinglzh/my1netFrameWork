@@ -127,6 +127,6 @@ void MonsterObject::delayToMoveState() {
 }
 
 void MonsterObject::changeStateToMove() {
-    changeState(K_STATE_MOVING_UP);
+    changeState(K_STATE_BE_INJURED);
 }
 

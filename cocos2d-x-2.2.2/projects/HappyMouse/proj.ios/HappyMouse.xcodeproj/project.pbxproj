@@ -228,6 +228,9 @@
 		603860D31982BCE700BA8314 /* AttackingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860D11982BCE700BA8314 /* AttackingState.cpp */; };
 		603860D91982BE0600BA8314 /* BeInjuredState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860D71982BE0600BA8314 /* BeInjuredState.cpp */; };
 		603860DF1982BEC100BA8314 /* ToDisactiveState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860DD1982BEC100BA8314 /* ToDisactiveState.cpp */; };
+		603860E5198377CC00BA8314 /* MovingDownState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860E3198377CC00BA8314 /* MovingDownState.cpp */; };
+		603860EE198380EA00BA8314 /* CharactarHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860EC198380EA00BA8314 /* CharactarHandler.cpp */; };
+		603860F11983821700BA8314 /* GameTarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860EF1983821700BA8314 /* GameTarget.cpp */; };
 		605A8A711974C51A0086F702 /* CCSpriteExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897A1974C5190086F702 /* CCSpriteExt.cpp */; };
 		605A8A721974C51A0086F702 /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897E1974C5190086F702 /* GLES-Render.cpp */; };
 		605A8A8B1974C51A0086F702 /* AnimNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A89B91974C5190086F702 /* AnimNode.cpp */; };
@@ -980,6 +983,12 @@
 		603860D81982BE0600BA8314 /* BeInjuredState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeInjuredState.h; sourceTree = "<group>"; };
 		603860DD1982BEC100BA8314 /* ToDisactiveState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToDisactiveState.cpp; sourceTree = "<group>"; };
 		603860DE1982BEC100BA8314 /* ToDisactiveState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDisactiveState.h; sourceTree = "<group>"; };
+		603860E3198377CC00BA8314 /* MovingDownState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovingDownState.cpp; sourceTree = "<group>"; };
+		603860E4198377CC00BA8314 /* MovingDownState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingDownState.h; sourceTree = "<group>"; };
+		603860EC198380EA00BA8314 /* CharactarHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharactarHandler.cpp; sourceTree = "<group>"; };
+		603860ED198380EA00BA8314 /* CharactarHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharactarHandler.h; sourceTree = "<group>"; };
+		603860EF1983821700BA8314 /* GameTarget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTarget.cpp; sourceTree = "<group>"; };
+		603860F01983821700BA8314 /* GameTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTarget.h; sourceTree = "<group>"; };
 		605A897A1974C5190086F702 /* CCSpriteExt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSpriteExt.cpp; sourceTree = "<group>"; };
 		605A897B1974C5190086F702 /* CCSpriteExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpriteExt.h; sourceTree = "<group>"; };
 		605A897C1974C5190086F702 /* DoubleNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNumber.h; sourceTree = "<group>"; };
@@ -2638,6 +2647,8 @@
 		605A8A6C1974C51A0086F702 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				603860EC198380EA00BA8314 /* CharactarHandler.cpp */,
+				603860ED198380EA00BA8314 /* CharactarHandler.h */,
 				601AF2F7197EA94B009A5257 /* GameModel.cpp */,
 				601AF2F8197EA94B009A5257 /* GameModel.h */,
 				601AF2D3197E961C009A5257 /* GameAction */,
@@ -2760,6 +2771,8 @@
 				60C3B778197516AC00BC4293 /* MouseObject.h */,
 				60C3B779197516AC00BC4293 /* PitObject.cpp */,
 				60C3B77A197516AC00BC4293 /* PitObject.h */,
+				603860EF1983821700BA8314 /* GameTarget.cpp */,
+				603860F01983821700BA8314 /* GameTarget.h */,
 			);
 			path = GameObject;
 			sourceTree = "<group>";
@@ -2802,6 +2815,8 @@
 		60E61CF3197E0C470097963B /* AIState */ = {
 			isa = PBXGroup;
 			children = (
+				603860E3198377CC00BA8314 /* MovingDownState.cpp */,
+				603860E4198377CC00BA8314 /* MovingDownState.h */,
 				603860DD1982BEC100BA8314 /* ToDisactiveState.cpp */,
 				603860DE1982BEC100BA8314 /* ToDisactiveState.h */,
 				603860D71982BE0600BA8314 /* BeInjuredState.cpp */,
@@ -3131,11 +3146,13 @@
 				15A3D9161682F7D5002FB0C5 /* b2WorldCallbacks.cpp in Sources */,
 				605A8A8B1974C51A0086F702 /* AnimNode.cpp in Sources */,
 				15A3D9171682F7D5002FB0C5 /* b2ChainAndCircleContact.cpp in Sources */,
+				603860EE198380EA00BA8314 /* CharactarHandler.cpp in Sources */,
 				15A3D9181682F7D5002FB0C5 /* b2ChainAndPolygonContact.cpp in Sources */,
 				375BD5111868454E0024609E /* CCActionManager.cpp in Sources */,
 				15A3D9191682F7D5002FB0C5 /* b2CircleContact.cpp in Sources */,
 				15A3D91A1682F7D5002FB0C5 /* b2Contact.cpp in Sources */,
 				605A8AD11974C51A0086F702 /* RootUiLayer.cpp in Sources */,
+				603860E5198377CC00BA8314 /* MovingDownState.cpp in Sources */,
 				15A3D91B1682F7D5002FB0C5 /* b2ContactSolver.cpp in Sources */,
 				15A3D91C1682F7D5002FB0C5 /* b2EdgeAndCircleContact.cpp in Sources */,
 				15A3D91D1682F7D5002FB0C5 /* b2EdgeAndPolygonContact.cpp in Sources */,
@@ -3174,6 +3191,7 @@
 				605A8A8D1974C51A0086F702 /* SPAnimation.cpp in Sources */,
 				605A8AC81974C51A0086F702 /* tinyxml.cpp in Sources */,
 				15A3D99C1682F7F9002FB0C5 /* cpPinJoint.c in Sources */,
+				603860F11983821700BA8314 /* GameTarget.cpp in Sources */,
 				15A3D99D1682F7F9002FB0C5 /* cpPivotJoint.c in Sources */,
 				605A8AA91974C51A0086F702 /* SPDecorativeDisplay.cpp in Sources */,
 				15A3D99E1682F7F9002FB0C5 /* cpRatchetJoint.c in Sources */,
