@@ -34,7 +34,7 @@ bool WelcomeView::initWithCustom() {
 //    AnimNode* hero = AnimNode::createFlashAnimNode( "xx_monster_1001.png", "xx_monster_1001.plist", "xx_monster_1001.xml",
 //                                                   "walk", "xx_monster_1001");
     
-    AnimNode* hero = AnimUtils::createAnimById("204201#display");
+    AnimNode* hero = AnimUtils::createAnimById("204201#display",NULL);
     hero->runAnimation("walk");
 //    hero->setContentSize(CCSizeMake(139, 264));
     this->addChild(hero,1000);

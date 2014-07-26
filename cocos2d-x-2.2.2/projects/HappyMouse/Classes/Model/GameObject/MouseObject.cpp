@@ -12,6 +12,7 @@
 #include "CCScale9ProgressBar.h"
 #include "LayoutUtil.h"
 #include "AudioManager.h"
+#include "AnimUtils.h"
 
 MouseObject::MouseObject() :
 _dizzyAnim(NULL),
@@ -44,8 +45,7 @@ bool MouseObject::init() {
     _contentNode = CCNode::create();
     _sprite = CCSpriteExt::create("mouse1.png");
     
-    _dizzyAnim = AnimNode::createFlashAnimNode("100002#skill.png", "100002#skill.plist", "100002#skill.xml",
-                                              "happening", "100002#skill");
+    _dizzyAnim = AnimUtils::createAnimById("100002#skill",NULL);
     _dizzyAnim->runAnimation("happening");
     
     

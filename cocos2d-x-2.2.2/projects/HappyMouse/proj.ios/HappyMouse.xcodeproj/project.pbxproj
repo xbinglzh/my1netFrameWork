@@ -992,6 +992,7 @@
 		603860F01983821700BA8314 /* GameTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTarget.h; sourceTree = "<group>"; };
 		603860F21983834E00BA8314 /* DistanceItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DistanceItem.cpp; sourceTree = "<group>"; };
 		603860F31983834E00BA8314 /* DistanceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceItem.h; sourceTree = "<group>"; };
+		603860F6198389A100BA8314 /* SkillDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillDef.h; sourceTree = "<group>"; };
 		605A897A1974C5190086F702 /* CCSpriteExt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSpriteExt.cpp; sourceTree = "<group>"; };
 		605A897B1974C5190086F702 /* CCSpriteExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpriteExt.h; sourceTree = "<group>"; };
 		605A897C1974C5190086F702 /* DoubleNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNumber.h; sourceTree = "<group>"; };
@@ -2259,6 +2260,7 @@
 				605A8B261974CA4A0086F702 /* KeyConfigDef.h */,
 				605A8B271974CA4A0086F702 /* NotifyMessageDef.h */,
 				60E61CFC197E0DB50097963B /* GameEventDef.h */,
+				603860F6198389A100BA8314 /* SkillDef.h */,
 			);
 			name = Def;
 			path = ../Classes/Def;

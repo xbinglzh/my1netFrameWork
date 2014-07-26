@@ -9,11 +9,11 @@
 #include "AnimUtils.h"
 #include "GameConfig.h"
 
-AnimNode* AnimUtils::createAnimById(const char* animId) {
+AnimNode* AnimUtils::createAnimById(const char* animId, AnimNodeDelegate * delegate) {
     
     GameConfig* gConfig = GameConfig::getInstance();
     CCDictionary* dict = gConfig->getAnimationById(animId);
-    AnimNode* anim = AnimNode::createAnim(dict, NULL);
+    AnimNode* anim = AnimNode::createAnim(dict, delegate);
     
     if (anim) {
         return anim;

@@ -15,7 +15,7 @@
 #include "StateFactory.h"
 #include "AnimUtils.h"
 #include "ConstansDef.h"
-
+#include "SkillDef.h"
 
 
 GameObject::GameObject() :
@@ -302,9 +302,9 @@ void GameObject::resumeAnimation() {
 }
 
 void GameObject::update(const float dt){
-//    if (_flashNode) {
-//        _flashNode->updateAnimFrame(dt);
-//    }
+    if (_flashNode) {
+        _flashNode->updateAnimFrame(dt);
+    }
     
     if (_stateMachine) {
         _stateMachine->update(this, dt);
@@ -325,7 +325,7 @@ void GameObject::initDisplay(const char* animId) {
         _flashNode->removeFromParentAndCleanup(true);
     }
     
-    _flashNode = AnimUtils::createAnimById(animId);
+    _flashNode = AnimUtils::createAnimById(animId, this);
     
     if (_flashNode) {
         _midNode->addChild(_flashNode);
@@ -386,6 +386,41 @@ void GameObject::addState(const int32_t stateTypeId ,const int32_t stateId){
         _stateMachine->addState(stateTypeId,state);
     }
 }
+
+void GameObject::addAdditionState(const int32_t stateId,bool resetIfExsit /*= false*/){
+    if(_stateMachine){
+        
+        if(KSkill_Min <= stateId && stateId <= KSkill_Max){                            //技能导致状态变化
+//            State * s = _stateMachine->findAdditionState(stateId);
+//            if (!s) {
+//                s = StateFactory::getInstance()->getAdditionStateById(stateId);
+//                if(s) _stateMachine->addState(stateId, s,true, this);
+//            }else{
+//                SkillState * ss = (SkillState *)s;
+//                ss->resetSkillState(this);
+//            }
+        }else{
+            if (!_stateMachine->findAdditionState(stateId)) {
+                State * s = _stateMachine->findState(stateId);
+                if(s) _stateMachine->addState(stateId, s,true, this);
+            }
+        }
+    }
+}
+
+void GameObject::removeAdditionState(const int32_t stateId){
+    if(_stateMachine){
+        _stateMachine->removeState(stateId,true,this);
+    }
+}
+
+bool GameObject::haveAdditionState(const int32_t stateId){
+    if(_stateMachine && _stateMachine->findAdditionState(stateId)){
+        return true;
+    }
+    return false;
+}
+
 
 //--------------------------------------------
 

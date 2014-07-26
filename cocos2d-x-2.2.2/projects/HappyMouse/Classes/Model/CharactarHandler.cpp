@@ -21,11 +21,35 @@ bool CharactarHandler::doAddHP(GameObject * target, const int hpAdd) {
 void CharactarHandler::doHurt(GameObject * source, GameObject * target,
                               const GameSkillHurtInfo &hurtInfo) {
     
+    if (target->getHp() > 0) {
+        
+        int32_t hurtVal = hurtInfo._hurt;
+        target->setHP(((target->getHp() > hurtVal) ? target->getHp() - hurtVal : 0));
+        
+    }
+    
+//    target->addAdditionState(K_STATE_BE_INJURED);
+    
+    //判定死亡
+//    if(target->getHP() <= 0){
+//        CCBool * intercept = CCBool::create(false);
+//        dict->setObject(intercept, KKeyKillIntercept);
+//        nc->postNotification(KNotifyGameCharactarKillToDie,
+//                             GameSkillAction::SkillMsg::create(KNotifyGameCharactarKillToDie, dict));
+//        if (!intercept->getValue()) {
+//            doKill(source,target);
+//        }
+//        
+//    }else{
+//        nc->postNotification(KNotifyGameCharactarHPReduced,
+//                             GameSkillAction::SkillMsg::create(KNotifyGameCharactarHPReduced, dict));
+//    }
+    
 }
 
 void CharactarHandler::doHurt(GameObject * target,
                               const GameSkillHurtInfo &hurtInfo) {
-    
+    doHurt(NULL, target, hurtInfo);
 }
 
 cocos2d::CCSet* CharactarHandler::findGameObjectInAtkRange(GameObject * self, cocos2d::CCSet *targetSet,

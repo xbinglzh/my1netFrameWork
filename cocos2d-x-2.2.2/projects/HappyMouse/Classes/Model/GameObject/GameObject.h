@@ -130,6 +130,21 @@ public: /*状态机*/
     void initStateMachine(std::string& stateGroupId);
     void addState(const int32_t stateTypeId ,const int32_t stateId);
     
+    /**
+     给对象附加一个状态
+     */
+    void addAdditionState(const int32_t stateId, bool resetIfExsit = false);
+    
+    /**
+     解除附加在对象上的一个状态
+     */
+    void removeAdditionState(const int32_t stateId);
+    
+    /**
+     判断是不是在对象上的附加一个状态
+     */
+    bool haveAdditionState(const int32_t stateId);
+    
 public:
     void setValue(const std::string & key,CCObject * value);
     CCObject* getValue(const std::string & key);

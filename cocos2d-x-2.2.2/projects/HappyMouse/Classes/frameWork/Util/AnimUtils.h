@@ -17,7 +17,7 @@ USING_NS_CC;
 class AnimUtils {
     
 public:
-    static AnimNode* createAnimById(const char* animId);
+    static AnimNode* createAnimById(const char* animId, AnimNodeDelegate * delegate);
     
 };
 

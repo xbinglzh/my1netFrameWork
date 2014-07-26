@@ -12,6 +12,7 @@
 #include "GameUtils.h"
 #include "KeyConfigDef.h"
 #include "CCSpriteExt.h"
+#include "SPConstValue.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -45,16 +46,18 @@ void AnimNodeDelegate::animationSequenceFrameChanged(cocos2d::CCNode * animNode,
                                                      const char *newframeName){
 }
 
+#pragma mark-
 #pragma mark AnimNode
+
 AnimNode::AnimNode():CCNodeRGBA()
 ,_animationManager(NULL)
 ,_animNodeDelegate(NULL)
+,_typeId(AnimNode::K_SPRITE_FILE)
 ,_animNode(NULL)
 ,_autoRemoveOnFinish(false)
 ,_animScale(1.0f)
 ,_currentCalll(NULL)
 ,_autoUpdateFrame(true)
-,_typeId(AnimNode::K_SPRITE_FILE)
 {
     setCascadeColorEnabled(true);
     setCascadeOpacityEnabled(true);
@@ -68,7 +71,8 @@ AnimNode::~AnimNode(){
 	CC_SAFE_RELEASE_NULL(_animationManager);
 }
 
-AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *delegate) {
+AnimNode * AnimNode::createAnim(CCDictionary * dict,
+                                AnimNodeDelegate * delegate){
     AnimNode * node = NULL;
     CCDictionary * tmpDict = dict;
     
@@ -80,8 +84,26 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
         CCString * flipXVal = (CCString *)tmpDict->objectForKey(KKeyFlipX);
         
         switch (typeValue) {
-            case AnimNode::K_SPRITE_FILE: {
-            
+            case AnimNode::K_SPRITE_FRAME:
+            {
+                node = new AnimNode;
+                node->autorelease();
+                node->_typeId = AnimNode::K_SPRITE_FRAME;
+                CCSpriteFrameCache * cache = CCSpriteFrameCache::sharedSpriteFrameCache();
+                CCSpriteFrame *pFrame = cache->spriteFrameByName(strValue->getCString());
+                if (!pFrame) {
+                    const std::string & imagePath = static_cast<CCString *>(tmpDict->objectForKey(KKeyImageTexture))->m_sString;
+                    const std::string & plistPath = static_cast<CCString *>(tmpDict->objectForKey(KKeyImagePlist))->m_sString;
+                    cache->addSpriteFramesWithFile(plistPath.c_str(), imagePath.c_str());
+                    pFrame = cache->spriteFrameByName(strValue->getCString());
+                }
+                node->_animNode = CCSprite::createWithSpriteFrame(pFrame);
+                node->addChild(node->_animNode);
+                node->setDefaultAnimation(strValue->m_sString);
+            }
+                break;
+            case AnimNode::K_SPRITE_FILE:
+            {
                 node = new AnimNode;
                 node->autorelease();
                 node->_typeId = AnimNode::K_SPRITE_FILE;
@@ -96,14 +118,44 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
                 node->setDefaultAnimation(strValue->m_sString);
             }
                 break;
-            case AnimNode::K_ARMATURE_FRAME: {
+            case AnimNode::K_CCBI_FILE:
+            {
+                //动画加载
+                cocos2d::extension::CCBAnimationManager *_animationManager = NULL;;
+                std::string ccbifile = strValue->getCString();
+                CCNodeLoaderLibrary *ccNodeLoaderLibrary = CCNodeLoaderLibrary::newDefaultCCNodeLoaderLibrary();
+                ccNodeLoaderLibrary->registerCCNodeLoader("AnimNode",AnimNodeLoader::loader());
+                CCBReader * ccBReader = new CCBReader(ccNodeLoaderLibrary);
+                _animationManager = ccBReader->getAnimationManager();
+                node = dynamic_cast<AnimNode *>(ccBReader->readNodeGraphFromFile(ccbifile.c_str()));
+                node->setAnchorPoint(ccp(0.5, 0.5));
+                node->ignoreAnchorPointForPosition(false);
+                CCAssert(node != NULL, "AnimNode file class type must set be AnimNode!");
+                _animationManager->setDelegate(node);
+                //                node->retain(); // FIXME:(hhy) 这里会不会引起内存泄漏？
+                node->_typeId = AnimNode::K_CCBI_FILE;
+                node->_animationManager = _animationManager;
+                node->_animationManager->retain();
+                node->setAnimNodeDelegate(delegate);
+                
+                CC_SAFE_RELEASE_NULL(ccBReader);
+                CCArray* sequences = node->_animationManager->getSequences();
+                CCString * defaulAnim = (CCString *)tmpDict->objectForKey(KKeyDefault);
+                if (defaulAnim) {
+                    node->setDefaultAnimation(defaulAnim->m_sString);
+                }
+                else if(sequences && sequences->count() > 0){
+                    node->setDefaultAnimation(((CCBSequence *) sequences->objectAtIndex(0))->getName());
+                }
+                //               node->autorelease();
+            }
+                break;
+            case AnimNode::K_ARMATURE_FRAME:
+            {
                 node = new AnimNode;
-                node->setAnchorPoint(CCPointZero);
                 node->autorelease();
                 node->_typeId = AnimNode::K_ARMATURE_FRAME;
-                
                 ArmatureAnim * _animNode = ArmatureAnim::create();
-                _animNode->setAnchorPoint(CCPointZero);
                 _animNode->setAnimDelegateExt(node);
                 node->_animNode = _animNode;
                 node->setAnimNodeDelegate(delegate);
@@ -121,37 +173,17 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
                     node->setDefaultAnimation(defaulAnim->m_sString);
                 }
                 
-                _animNode->load(armatureValue->m_sString,list,strValue->m_sString, 1.0f);
+                _animNode->load(armatureValue->m_sString,list,strValue->m_sString,1.0f);
                 node->addChild(_animNode);
                 
-                CCString* sizeVal = (CCString *)tmpDict->objectForKey(KKeySize);
-                CCString* scaleVal = (CCString*) tmpDict->objectForKey(KKeyScale);
-                
-                if (_animNode && sizeVal && scaleVal) {
+                CCString * sizeVal = (CCString *)tmpDict->objectForKey(KKeySize);
+                if (_animNode && sizeVal) {
                     CCSize size  = GameUtils::string2Size(sizeVal->m_sString);
-                    _animNode->setContentSize(CCSizeMake(size.width * scaleVal->floatValue(),
-                                                         size.height * scaleVal->floatValue()));
+                    _animNode->setMaxContentSize(CCSizeMake(size.width, size.height));
                 }
+                
                 
                 node->scheduleUpdate();
-            }
-                
-                break;
-            case AnimNode::K_SPRITE_FRAME: {
-                node = new AnimNode;
-                node->autorelease();
-                node->_typeId = AnimNode::K_SPRITE_FRAME;
-                CCSpriteFrameCache * cache = CCSpriteFrameCache::sharedSpriteFrameCache();
-                CCSpriteFrame *pFrame = cache->spriteFrameByName(strValue->getCString());
-                if (!pFrame) {
-                    const std::string & imagePath = static_cast<CCString *>(tmpDict->objectForKey(KKeyImageTexture))->m_sString;
-                    const std::string & plistPath = static_cast<CCString *>(tmpDict->objectForKey(KKeyImagePlist))->m_sString;
-                    cache->addSpriteFramesWithFile(plistPath.c_str(), imagePath.c_str());
-                    pFrame = cache->spriteFrameByName(strValue->getCString());
-                }
-                node->_animNode = CCSprite::createWithSpriteFrame(pFrame);
-                node->addChild(node->_animNode);
-                node->setDefaultAnimation(strValue->m_sString);
             }
                 break;
                 
@@ -163,7 +195,8 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
         if (node) {
             
             if(node->_animNode){
-                node->_animNode->setAnchorPoint(CCPointZero);
+                
+                node->_animNode->setAnchorPoint(CCPoint(0.5, 0.5));
                 
                 if (scaleVal) {
                     node->_animScale = scaleVal->floatValue();
@@ -173,36 +206,10 @@ AnimNode* AnimNode::createAnim(cocos2d::CCDictionary *dict, AnimNodeDelegate *de
                 if (flipXVal && flipXVal->boolValue()) {
                     node->_animNode->setScaleX(node->_animNode->getScaleX() * -1);
                 }
-                
-                node->setContentSize(node->_animNode->getContentSize());
             }
         }
     }
 	return node;
-}
-
-
-AnimNode* AnimNode::createFlashAnimNode(const char* pngFile, const char* plistFile, const char* xmlFile,
-                                        const char* runAnim, const char* skeleton) {
-    AnimNode * node = new AnimNode;
-    node->autorelease();
-    
-    ArmatureAnim * _animNode = ArmatureAnim::create();
-    _animNode->setAnimDelegateExt(node);
-    node->_animNode = _animNode;
-    
-    std::vector<sp::ImageInfo> list;
-    sp::ImageInfo inf;
-    inf.imagePath = pngFile;
-    inf.plistPath = plistFile;
-    list.push_back(inf);
-    
-    _animNode->load(skeleton, list, xmlFile, 1.0f);
-    node->addChild(_animNode);
-    
-    node->scheduleUpdate();
-    
-    return node;
 }
 
 void AnimNode::scaleAnim(float scale){
@@ -214,6 +221,14 @@ void AnimNode::scaleAnim(float scale){
     _animNode->setScaleX(_animNode->getScaleX() * scaleVal);
 }
 
+const std::string  & AnimNode::getDefaultAnimation()const{
+    return _defaultAnimation;
+}
+
+void AnimNode::setDefaultAnimation(const std::string  & value){
+    _defaultAnimation = value;
+}
+
 void AnimNode::setAutoRemoveOnFinish(const bool autoRemoveOnFinish){
     _autoRemoveOnFinish = autoRemoveOnFinish;
 }
@@ -222,90 +237,149 @@ void AnimNode::setAutoRemoveOnFinish(const bool autoRemoveOnFinish){
 const bool  AnimNode::runAnimation(const std::string & name,
                                    const float delay,
                                    cocos2d::CCCallFuncO * calll){
-
-    _currentFrame = name;
-    _currentFrame.append("_0_0");
-    ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
-    
-    if (name.length() == 0) {
-        if(_defaultAnimation.length() > 0){
+	if (_animationManager) {
+        if (name.length() == 0) {
+            if(_defaultAnimation.length() > 0)
+                _animationManager->runAnimationsForSequenceNamedTweenDuration(_defaultAnimation.c_str(), delay);
+        }
+		else _animationManager->runAnimationsForSequenceNamedTweenDuration(name.c_str(), delay);
+        return true;
+	}
+    else if(_typeId == AnimNode::K_ARMATURE_FRAME){
+        _currentFrame = name;
+        _currentFrame.append("_0_0");
+        ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
+        if (name.length() == 0) {
+            if(_defaultAnimation.length() > 0){
+                this->setCurrentCalll(calll);
+                return anim->runAnimation(_defaultAnimation);
+            }
+        }
+        else{
             this->setCurrentCalll(calll);
-            return anim->runAnimation(_defaultAnimation);
+            return anim->runAnimation(name);
         }
     }
-    else{
-        this->setCurrentCalll(calll);
-        return anim->runAnimation(name);
-    }
-    
     return false;
 }
 
 
 void AnimNode::stopAnimation(){
-    
-    ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
-    anim->stopAnimation();
+	if (_typeId == AnimNode::K_CCBI_FILE) {
+        _animNode->stopAllActions();
+    }
+    else if (_typeId == AnimNode::K_ARMATURE_FRAME) {
+        ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
+        anim->stopAnimation();
+    }
     
 }
 
 void AnimNode::resumeAnimation(){
-    ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
-    anim->resumeAnimation();
+	if (_typeId == AnimNode::K_CCBI_FILE) {
+        
+    }
+    else if (_typeId == AnimNode::K_ARMATURE_FRAME) {
+        ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
+        anim->resumeAnimation();
+    }
+    
 }
 
 void AnimNode::pauseAnimation(){
-    ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
-    anim->pauseAnimation();
+	if (_typeId == AnimNode::K_CCBI_FILE) {
+        _animNode->stopAllActions();
+    }
+    else if (_typeId == AnimNode::K_ARMATURE_FRAME) {
+        ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
+        anim->pauseAnimation();
+    }
 }
 
 void AnimNode::updateAnimFrame(float dt){
-    _animNode->update(dt);
+    if (_typeId == AnimNode::K_ARMATURE_FRAME){
+        ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
+        _animNode->update(dt);
+    }
 }
 
 void  AnimNode::update(float dt){
     cocos2d::CCNodeRGBA::update(dt);
-    
-    if(_autoUpdateFrame) {
-        updateAnimFrame(dt);
-    }
+    if(_autoUpdateFrame) updateAnimFrame(dt);
 }
 
 const cocos2d::CCSize & AnimNode::getContentSize(){
     if (_animNode) {
-        _animNode->getContentSize();
+        return ((_typeId == AnimNode::K_ARMATURE_FRAME) ? static_cast<ArmatureAnim * >(_animNode)->getMaxContentSize() :_animNode->getContentSize());
     }
     return CCNode::getContentSize();
-}
-
-const std::string& AnimNode::getDefaultAnimation()const{
-    return _defaultAnimation;
-}
-
-void AnimNode::setDefaultAnimation(const std::string& value){
-    _defaultAnimation = value;
 }
 
 /**
  设置frameITScale
  */
 void AnimNode::setFrameITScale(const float value){
-    if (_animNode) {
+    if (_animNode && (_typeId == AnimNode::K_ARMATURE_FRAME) ) {
         (static_cast<ArmatureAnim * >(_animNode))->setFrameITScale(value);
     }
 }
 
+#pragma mark-
+#pragma mark AnimNode CCBSelectorResolver
+SEL_MenuHandler AnimNode::onResolveCCBCCMenuItemSelector(CCObject * pTarget,  const char* pSelectorName){
+	if (_animNodeDelegate) {
+        return _animNodeDelegate->onResolveCCBCCMenuItemSelector(pTarget,pSelectorName);
+    }
+	return NULL;
+	
+}
+
+SEL_CCControlHandler AnimNode::onResolveCCBCCControlSelector(CCObject * pTarget, const char* pSelectorName){
+    if (_animNodeDelegate) {
+        return _animNodeDelegate->onResolveCCBCCControlSelector(pTarget,pSelectorName);
+    }
+	return NULL;
+}
+
+#pragma mark-
+#pragma mark AnimNode CCBMemberVariableAssigner
+bool AnimNode::onAssignCCBMemberVariable(CCObject * pTarget, const char*  pMemberVariableName, CCNode * pNode){
+    if (_animNodeDelegate) {
+        return _animNodeDelegate->onAssignCCBMemberVariable(pTarget,pMemberVariableName,pNode);
+    }
+	return false;
+}
+
+#pragma mark-
+#pragma mark AnimNode CCBNodeLoaderListener
+void AnimNode::onNodeLoaded(CCNode * pNode, CCNodeLoader * pNodeLoader){
+    if (_animNodeDelegate) {
+        _animNodeDelegate->onNodeLoaded(pNode,pNodeLoader);
+    }
+}
+
+#pragma mark-
+#pragma mark AnimNode CCBAnimationManagerDelegate
+void AnimNode::completedAnimationSequenceNamed(const char *name){
+    if (_animNodeDelegate) {
+        _animNodeDelegate->notifyCompletedAnimationSequenceNamed(name,false);
+        if (_autoRemoveOnFinish) {
+            this->stopAnimation();
+            this->removeFromParentAndCleanup(true);
+        }
+    }
+}
+
+#pragma mark-
 #pragma mark AnimNode AnimationDelegateExt
 void AnimNode::onAnimationEvent(void * animation, const char * eventType, const char * movementID){
     std::string even =  eventType;
     if ((_animNodeDelegate || _currentCalll) && _animNode == animation) {
         ArmatureAnim * anim = static_cast<ArmatureAnim * >(_animNode);
-        
         bool completed = even.compare(sp::COMPLETE) == 0;
         bool loopCompleted = even.compare(sp::LOOP_COMPLETE) == 0;
-        
         if (completed || loopCompleted) {
-
+            
             if(_animNodeDelegate){
                 _animNodeDelegate->notifyCompletedAnimationSequenceNamed(movementID,loopCompleted);
             }

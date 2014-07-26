@@ -37,7 +37,7 @@
 		<key>skeleton</key>
 		<string>hero_1</string>
 		<key>type</key>
-		<string>1</string>
+		<string>3</string>
 	</dict>
 	<key>100002#skill</key>
 	<dict>
@@ -74,7 +74,7 @@
 		<key>skeleton</key>
 		<string>100002#skill</string>
 		<key>type</key>
-		<string>1</string>
+		<string>3</string>
 	</dict>
 	<key>204201#display</key>
 	<dict>
@@ -111,7 +111,7 @@
 		<key>skeleton</key>
 		<string>xx_m_204201d</string>
 		<key>type</key>
-		<string>2</string>
+		<string>3</string>
 	</dict>
 </dict>
 </plist>
