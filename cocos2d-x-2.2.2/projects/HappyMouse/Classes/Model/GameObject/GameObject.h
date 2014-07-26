@@ -119,6 +119,9 @@ public:
     void initDisplay(const char* animId);
     
 public: /*状态机*/
+
+	const int32_t getCurrentState();
+    
     void changeState(const int32_t value);
     /**
      接收一个消息，交给状态机处理

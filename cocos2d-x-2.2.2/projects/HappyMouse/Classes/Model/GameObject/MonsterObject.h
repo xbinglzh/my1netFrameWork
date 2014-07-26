@@ -39,8 +39,11 @@ public:
     void setIsAddParent(bool isAdd);
     bool isAddParent();
     
+    void delayToMoveState();
+    
 private:
     void makeMidNodeInClipNode();
+    void changeStateToMove();
     
 private:
     MonsterDetail _monsterDetail;

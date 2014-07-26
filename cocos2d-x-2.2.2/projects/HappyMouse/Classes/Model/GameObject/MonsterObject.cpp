@@ -114,3 +114,15 @@ bool MonsterObject::isAddParent() {
     return _isAddParent;
 }
 
+void MonsterObject::delayToMoveState() {
+    if (this->getCurrentState() == K_STATE_DISPLAY) {
+        CCDelayTime* delay = CCDelayTime::create(3);
+        CCCallFuncN* function = CCCallFuncN::create(this, callfuncN_selector(MonsterObject::changeStateToMove));
+        this->runAction(CCSequence::create(delay, function, NULL));
+    }
+}
+
+void MonsterObject::changeStateToMove() {
+    changeState(K_STATE_MOVING_UP);
+}
+

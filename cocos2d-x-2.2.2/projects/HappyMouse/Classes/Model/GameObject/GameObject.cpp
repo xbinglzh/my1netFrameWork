@@ -334,6 +334,10 @@ void GameObject::initDisplay(const char* animId) {
 
 //-------------- 状态机 ---------------------
 
+const int32_t GameObject::getCurrentState() {
+    return _stateMachine ? _stateMachine->getCurrentStateId() : -1;
+}
+
 void GameObject::changeState(const int32_t value) {
 	if (_stateMachine) {
 		_stateMachine->changeState(this, value);

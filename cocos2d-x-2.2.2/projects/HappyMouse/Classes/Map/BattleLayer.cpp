@@ -80,7 +80,7 @@ bool BattleLayer::init() {
     
     this->scheduleUpdate();
     
-    CCDirector::sharedDirector()->getScheduler()->scheduleSelector(schedule_selector(BattleLayer::updateGameMonster),this, 0.5,kCCRepeatForever, 5.0f, false);
+    CCDirector::sharedDirector()->getScheduler()->scheduleSelector(schedule_selector(BattleLayer::updateGameMonster),this, 1.0,kCCRepeatForever, 5.0f, false);
     
     return true;
 }
@@ -174,28 +174,22 @@ void BattleLayer::startTroop(const int trropId) {
 }
 
 MonsterObject* BattleLayer::genRandomMonster(CCSet* monsterSet) {
-    
-    MonsterObject* randomMObj = NULL;
-    
-    int randomIndex = rand() % monsterSet->count();
-    
-    CCSetIterator iter; int j = 0;
+    CCArray* randomArray = CCArray::create();
+    CCSetIterator iter;
     
     for (iter = monsterSet->begin(); iter != monsterSet->end(); ++iter) {
         MonsterObject* mObj = (MonsterObject *)(*iter);
-        
-        if (j == randomIndex) {
-            randomMObj = mObj;
+        if (mObj && !mObj->isAddParent() && mObj->getCurrentState() != K_STATE_MOVING_UP
+            && mObj->getMonsterDetail()._hp != 0) {
+            randomArray->addObject(mObj);
         }
-        
-        j++;
     }
     
-    if ( !randomMObj || randomMObj->getMonsterDetail()._hp == 0 || randomMObj->isAddParent()) {
-        return genRandomMonster(monsterSet);
+    if (randomArray->count() <= 0) {
+        return NULL;
     }
     
-    return randomMObj;
+    return (MonsterObject*)randomArray->randomObject();
 }
 
 
@@ -235,7 +229,8 @@ void BattleLayer::updateGameMonster() {
         MonsterObject* monster = genRandomMonster(trropMonster);
         
         if (monster) {
-            monster->changeState(K_STATE_MOVING);
+            monster->changeState(K_STATE_DISPLAY);
+            monster->delayToMoveState();
             pit->addChild(monster, 1, MouseTag);
             monster->setIsAddParent(true);
             LayoutUtil::layoutParentCenter(monster);

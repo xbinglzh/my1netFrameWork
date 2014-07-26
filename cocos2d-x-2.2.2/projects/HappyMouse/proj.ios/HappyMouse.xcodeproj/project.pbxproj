@@ -337,7 +337,7 @@
 		60DE68A3197AB45900038A9F /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60DE68A1197AB45900038A9F /* GameObject.cpp */; };
 		60E61CDA197E09CF0097963B /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E61CD8197E09CF0097963B /* GameState.cpp */; };
 		60E61CF2197E0B990097963B /* GameEventParams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E61CF0197E0B990097963B /* GameEventParams.cpp */; };
-		60E61CF9197E0C6A0097963B /* MovingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E61CF7197E0C6A0097963B /* MovingState.cpp */; };
+		60E61CF9197E0C6A0097963B /* MovingUpState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E61CF7197E0C6A0097963B /* MovingUpState.cpp */; };
 		60E61D02197E6D6E0097963B /* AnimUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E61D00197E6D6E0097963B /* AnimUtils.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
@@ -1206,8 +1206,8 @@
 		60E61CD9197E09CF0097963B /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
 		60E61CF0197E0B990097963B /* GameEventParams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameEventParams.cpp; sourceTree = "<group>"; };
 		60E61CF1197E0B990097963B /* GameEventParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEventParams.h; sourceTree = "<group>"; };
-		60E61CF7197E0C6A0097963B /* MovingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovingState.cpp; sourceTree = "<group>"; };
-		60E61CF8197E0C6A0097963B /* MovingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingState.h; sourceTree = "<group>"; };
+		60E61CF7197E0C6A0097963B /* MovingUpState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovingUpState.cpp; sourceTree = "<group>"; };
+		60E61CF8197E0C6A0097963B /* MovingUpState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingUpState.h; sourceTree = "<group>"; };
 		60E61CFC197E0DB50097963B /* GameEventDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameEventDef.h; sourceTree = "<group>"; };
 		60E61D00197E6D6E0097963B /* AnimUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimUtils.cpp; sourceTree = "<group>"; };
 		60E61D01197E6D6E0097963B /* AnimUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimUtils.h; sourceTree = "<group>"; };
@@ -2808,8 +2808,8 @@
 				603860D81982BE0600BA8314 /* BeInjuredState.h */,
 				603860CE1982BC2700BA8314 /* IdleState.cpp */,
 				603860CF1982BC2700BA8314 /* IdleState.h */,
-				60E61CF7197E0C6A0097963B /* MovingState.cpp */,
-				60E61CF8197E0C6A0097963B /* MovingState.h */,
+				60E61CF7197E0C6A0097963B /* MovingUpState.cpp */,
+				60E61CF8197E0C6A0097963B /* MovingUpState.h */,
 				601AF2F1197E9981009A5257 /* DisplayState.cpp */,
 				601AF2F2197E9981009A5257 /* DisplayState.h */,
 				603860D11982BCE700BA8314 /* AttackingState.cpp */,
@@ -3350,7 +3350,7 @@
 				60E61D02197E6D6E0097963B /* AnimUtils.cpp in Sources */,
 				379BB9AA17F03F3700829B88 /* CCTransformHelp.cpp in Sources */,
 				379BB9AB17F03F3700829B88 /* CCTweenFunction.cpp in Sources */,
-				60E61CF9197E0C6A0097963B /* MovingState.cpp in Sources */,
+				60E61CF9197E0C6A0097963B /* MovingUpState.cpp in Sources */,
 				379BB9AC17F03F3700829B88 /* CCUtilMath.cpp in Sources */,
 				605A8AAE1974C51A0086F702 /* json_reader.cpp in Sources */,
 				379BB9AD17F03F3700829B88 /* CCComAttribute.cpp in Sources */,

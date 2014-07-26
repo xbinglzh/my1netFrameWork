@@ -10,7 +10,7 @@
 #include "GameEventDef.h"
 #include "StateDef.h"
 
-#include "MovingState.h"
+#include "MovingUpState.h"
 #include "DisplayState.h"
 #include "IdleState.h"
 #include "AttackingState.h"
@@ -92,8 +92,8 @@ State * StateFactory::getStateByTypeId(const int stateType){
                 state = new IdleState();
                 break;
                 
-            case KMovingState:
-                state = new MovingState();
+            case K_STATE_MOVING_UP:
+                state = new MovingUpState();
                 break;
                 
             case KAttackingState:

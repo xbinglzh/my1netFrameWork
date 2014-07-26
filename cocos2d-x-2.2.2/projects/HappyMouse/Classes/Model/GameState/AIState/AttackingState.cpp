@@ -15,12 +15,12 @@ void AttackingState::onEnterCallback(GameObject * obj){
 }
 
 void AttackingState::onExitCallback(GameObject * obj){
-    MovingState::onExitCallback(obj);
+    GameState::onExitCallback(obj);
 }
 
 void AttackingState::updateCallback(GameObject * obj,const float dt){
     //移动
-    MovingState::updateCallback(obj, dt);
+    GameState::updateCallback(obj, dt);
 }
 
 bool AttackingState::onMessageCallback(GameObject * obj,const GameEventParams * params){
