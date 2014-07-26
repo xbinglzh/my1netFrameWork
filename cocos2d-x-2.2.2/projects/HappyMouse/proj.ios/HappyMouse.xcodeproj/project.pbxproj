@@ -231,6 +231,7 @@
 		603860E5198377CC00BA8314 /* MovingDownState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860E3198377CC00BA8314 /* MovingDownState.cpp */; };
 		603860EE198380EA00BA8314 /* CharactarHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860EC198380EA00BA8314 /* CharactarHandler.cpp */; };
 		603860F11983821700BA8314 /* GameTarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860EF1983821700BA8314 /* GameTarget.cpp */; };
+		603860F41983834E00BA8314 /* DistanceItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860F21983834E00BA8314 /* DistanceItem.cpp */; };
 		605A8A711974C51A0086F702 /* CCSpriteExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897A1974C5190086F702 /* CCSpriteExt.cpp */; };
 		605A8A721974C51A0086F702 /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897E1974C5190086F702 /* GLES-Render.cpp */; };
 		605A8A8B1974C51A0086F702 /* AnimNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A89B91974C5190086F702 /* AnimNode.cpp */; };
@@ -989,6 +990,8 @@
 		603860ED198380EA00BA8314 /* CharactarHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharactarHandler.h; sourceTree = "<group>"; };
 		603860EF1983821700BA8314 /* GameTarget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTarget.cpp; sourceTree = "<group>"; };
 		603860F01983821700BA8314 /* GameTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTarget.h; sourceTree = "<group>"; };
+		603860F21983834E00BA8314 /* DistanceItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DistanceItem.cpp; sourceTree = "<group>"; };
+		603860F31983834E00BA8314 /* DistanceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceItem.h; sourceTree = "<group>"; };
 		605A897A1974C5190086F702 /* CCSpriteExt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSpriteExt.cpp; sourceTree = "<group>"; };
 		605A897B1974C5190086F702 /* CCSpriteExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpriteExt.h; sourceTree = "<group>"; };
 		605A897C1974C5190086F702 /* DoubleNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNumber.h; sourceTree = "<group>"; };
@@ -2773,6 +2776,8 @@
 				60C3B77A197516AC00BC4293 /* PitObject.h */,
 				603860EF1983821700BA8314 /* GameTarget.cpp */,
 				603860F01983821700BA8314 /* GameTarget.h */,
+				603860F21983834E00BA8314 /* DistanceItem.cpp */,
+				603860F31983834E00BA8314 /* DistanceItem.h */,
 			);
 			path = GameObject;
 			sourceTree = "<group>";
@@ -3203,6 +3208,7 @@
 				15A3D9A31682F7F9002FB0C5 /* cpArray.c in Sources */,
 				605A8A911974C51A0086F702 /* SPDisplayData.cpp in Sources */,
 				15A3D9A41682F7F9002FB0C5 /* cpBB.c in Sources */,
+				603860F41983834E00BA8314 /* DistanceItem.cpp in Sources */,
 				15A3D9A51682F7F9002FB0C5 /* cpBBTree.c in Sources */,
 				605A8AAF1974C51A0086F702 /* json_value.cpp in Sources */,
 				15A3D9A61682F7F9002FB0C5 /* cpBody.c in Sources */,
