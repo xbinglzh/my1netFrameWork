@@ -121,8 +121,10 @@ void GameController::resetBattleLayer(BattleLayer *battleLayer, cocos2d::CCDicti
     updateBattleInfo(battleZoneId->intValue(), stageId->intValue());
     
     battleLayer->updateGroundMap(GameModel::getInstance()->getBattleInfo());
-    
     updateAttackTeam();
+    
+    //出兵
+    battleLayer->startBattleSendTroop(950001);
 }
 
 void GameController::updateBattleInfo(const int32_t battleZoneId,const int32_t stageId){

@@ -167,6 +167,10 @@ void GameObject::initHpBar() {
 
 //---------------------- 设置基本属性信息 ------------------------/
 
+GameObject::GameCharactar& GameObject::getGameCharactar() {
+    return _charactar;
+}
+
 void GameObject::setId(const uint32_t value) {
 	_charactar._id = value;
 }
@@ -193,6 +197,14 @@ void GameObject::setHurtType(const uint8_t hurtType) {
 
 void GameObject::setHP(const uint32_t hp) {
     _charactar._hp = hp;
+    
+    CCScale9ProgressBar* hpBar =(CCScale9ProgressBar*) _midNode->getChildByTag(HP_Bar_Tag);
+    
+    if (hpBar) {
+        float ratio =(float) _charactar._hp / _charactar._fullHp;
+        hpBar->setVisibleRatio(ratio);
+    }
+    
 }
 
 void GameObject::setFullHp(const uint32_t fullHp) {

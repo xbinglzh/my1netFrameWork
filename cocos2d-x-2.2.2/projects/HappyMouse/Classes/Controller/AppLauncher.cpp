@@ -39,9 +39,9 @@ void AppLauncher::startup() {
  * 显示欢迎页
  */
 void AppLauncher::displayWelcomeView() {
-    SceneController::getInstance()->switchSence(K_SCENE_WELCOME);
+//    SceneController::getInstance()->switchSence(K_SCENE_WELCOME);
     
-//    GameController::getInstance()->switchToBattleSence(K_BATTLE_ZONE_PVE_STAGE, 800001);
+    GameController::getInstance()->switchToBattleSence(K_BATTLE_ZONE_PVE_STAGE, 800001);
     
 }
 

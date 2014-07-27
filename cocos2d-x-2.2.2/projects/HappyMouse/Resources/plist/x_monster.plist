@@ -23,7 +23,7 @@
 		<key>drop_material</key>
 		<string>15</string>
 		<key>hp</key>
-		<string>742</string>
+		<string>60</string>
 		<key>hurt</key>
 		<string>4</string>
 		<key>id</key>
@@ -58,6 +58,8 @@
 		<string>200000</string>
 		<key>type</key>
 		<string>100001</string>
+		<key>be_injure_duration</key>
+		<string>1.0</string>
 	</dict>
 	<key>100002</key>
 	<dict>
@@ -80,7 +82,7 @@
 		<key>drop_material</key>
 		<string>15</string>
 		<key>hp</key>
-		<string>742</string>
+		<string>100</string>
 		<key>hurt</key>
 		<string>10</string>
 		<key>id</key>
@@ -115,6 +117,8 @@
 		<string>200000</string>
 		<key>type</key>
 		<string>100002</string>
+		<key>be_injure_duration</key>
+		<string>1.5</string>
 	</dict>
 </dict>
 </plist>

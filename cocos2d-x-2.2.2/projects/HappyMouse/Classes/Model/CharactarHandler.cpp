@@ -28,7 +28,7 @@ void CharactarHandler::doHurt(GameObject * source, GameObject * target,
         
     }
     
-//    target->addAdditionState(K_STATE_BE_INJURED);
+    target->addAdditionState(K_STATE_BE_INJURED);
     
     //判定死亡
 //    if(target->getHP() <= 0){

@@ -26,7 +26,7 @@ public:
     /**
      游戏角色对象的基本信息
      */
-    struct GameCharactar{
+    struct GameCharactar {
         uint32_t           _id;         //角色ID
         uint8_t            _type;       //类型(例如所属于的卡牌组)
         uint8_t            _race;       //种族
@@ -37,6 +37,7 @@ public:
         uint32_t           _fullHp;     //角色全满时的血量
         uint32_t           _hurt;       //当前伤害力
         float              _speed;
+        float              _injureDuration;
         
         std::string        _display;
         std::string        _bufferTop;      //buffer
@@ -55,6 +56,9 @@ protected:
     virtual bool initWithDictionary(cocos2d::CCDictionary * dict);
     
 public: /* 设置基本属性 */
+    
+    GameCharactar& getGameCharactar();
+    
     void setId(const uint32_t value);
     void setType(const uint8_t type);
     void setRace(const uint8_t race);

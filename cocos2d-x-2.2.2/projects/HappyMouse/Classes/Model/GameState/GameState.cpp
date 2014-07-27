@@ -73,14 +73,22 @@ bool GameState::runStateAnimation(GameObject * obj,int stateId){
 }
 
 void GameState::runStateAnimWithCallback(GameObject * obj,int stateId,const char * durationKey){
-    CCFloat * durationVal = (CCFloat *)obj->getValue(durationKey);
+    
+    float durationVal = 0.01f;
+    
+    if (strcmp(durationKey, KKeyBeInjureDuration) == 0) {
+        durationVal = obj->getGameCharactar()._injureDuration;
+    }
+
     if(!this->runStateAnimation(obj,stateId)){
         CCDictionary * dict = CCDictionary::create();
         dict->setObject(CCString::create(KKeyActOnMsg), KDoCallFuncActId);
         GameEventParams *  p = GameEventParams::create(K_EVENT_ANIMATION_FINISHED,obj);
         dict->setObject(p, KDoCallFuncParams);
-        CCSequence * seq = CCSequence::create(CCDelayTime::create(durationVal ? durationVal->getValue() : 0.01f),
+        
+        CCSequence * seq = CCSequence::create(CCDelayTime::create(durationVal),
                                               CCCallFuncO::create(obj,callfuncO_selector(GameObject::doCallFunc),dict), NULL);
+        
         seq->setTag(KSTATE_ANIMATION_ACTION_TAG);
         obj->runAction(seq);
     }

@@ -79,7 +79,7 @@ void WelcomeView::testLablePngFont() {
     };
     
     std::vector<const char*> mm(map, map+sizeof(map)/sizeof(map[0]));
-    LablePngFont* mylabel = LablePngFont::create("score", 10, mm, .9f);
+    LablePngFont* mylabel = LablePngFont::create("score", 10, mm, 1.0f);
     mylabel->setString("50");
     mylabel->setScale(1.5f);
     

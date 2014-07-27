@@ -45,13 +45,15 @@ bool MonsterObject::initWithDictionary(cocos2d::CCDictionary *dict) {
     CCString* hurtStr = static_cast<CCString*>(dict->objectForKey(KKeyHurt));
     CCString* displayStr = static_cast<CCString*>(dict->objectForKey(KKeyDisplay));
     CCString* speedStr = static_cast<CCString*>(dict->objectForKey(KKeySpeed));
+    CCString* injureDuration = static_cast<CCString*>(dict->objectForKey(KKeyBeInjureDuration));
     
     _charactar._id = idStr->intValue();
     _charactar._hp = hpStr->intValue();
     _charactar._fullHp = hpStr->intValue();
     _charactar._hurt = hurtStr->intValue();
-    _charactar._speed = speedStr->intValue();
+    _charactar._speed = speedStr->floatValue();
     _charactar._display = displayStr->getCString();
+    _charactar._injureDuration = injureDuration->floatValue();
     
     this->initDisplay();
     

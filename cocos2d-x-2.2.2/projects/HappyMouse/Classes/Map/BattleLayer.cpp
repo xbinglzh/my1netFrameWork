@@ -17,6 +17,8 @@
 #include "GameUtils.h"
 #include "MonsterObject.h"
 #include "AnimUtils.h"
+#include "BattleUiView.h"
+#include "CharactarHandler.h"
 
 #define Bottom_Layer_Tag          1001
 #define Map_Layer_Tag             1002
@@ -42,7 +44,8 @@ _xpEffectLayer(NULL),
 _topLayer(NULL),
 _groundMap(NULL),
 _mapLayer(NULL) ,
-_monsterArray(NULL) {
+_battleUiView(NULL),
+_curTrropMonsterInBattle(NULL) {
     
 }
 
@@ -50,13 +53,7 @@ BattleLayer::~BattleLayer() {
     removeAllChildrenWithCleanup(true);
     sp::ArmatureDataManager::sharedArmatureDataManager()->removeUnusedAnimations();
 
-    CCObject * obj = NULL;
-    
-    CCARRAY_FOREACH(_monsterArray, obj){
-        CC_SAFE_RELEASE_NULL(obj);
-    }
-    
-    _monsterArray->release() ;
+
 }
 
 bool BattleLayer::init() {
@@ -64,9 +61,6 @@ bool BattleLayer::init() {
     this->setAnchorPoint(CCPointZero);
     
     _gameController = GameController::getInstance();
-    
-    _monsterArray = CCArray::create();
-    _monsterArray->retain();
     
     _bottomLayer = genLayerColor(BottomLayerZorder, Bottom_Layer_Tag);
     _mapLayer = genLayerColor(MapLayerZorder, Map_Layer_Tag);
@@ -78,9 +72,17 @@ bool BattleLayer::init() {
     _mapLayer ->addChild(_groundMap);
     LayoutUtil::layoutParentBottom(_groundMap);
     
+    _battleUiView = BattleUiView::createFromCCB();
+    _battleUiView->setContentSize(_battleUiLayer->getContentSize());
+    _battleUiLayer->addChild(_battleUiView);
+    LayoutUtil::layoutParentCenter(_battleUiView);
+    
+    
     this->scheduleUpdate();
     
     CCDirector::sharedDirector()->getScheduler()->scheduleSelector(schedule_selector(BattleLayer::updateGameMonster),this, 1.0,kCCRepeatForever, 5.0f, false);
+    
+    this->setTouchEnabled(true);
     
     return true;
 }
@@ -168,9 +170,12 @@ CCLayerColor* BattleLayer::genLayerColor(int zOrder, int layerTag) {
 }
 
 //------------------------ start Troop -------------------------
-void BattleLayer::startTroop(const int trropId) {
-    CCSet* trropMonster = GameModel::getInstance()->findMonsterInTroop(trropId);
-    
+void BattleLayer::startBattleSendTroop(const int trropId) {
+    _curTrropMonsterInBattle = GameModel::getInstance()->findMonsterInTroop(trropId);
+}
+
+CCSet* BattleLayer::getCurInBattleTroop() {
+    return _curTrropMonsterInBattle;
 }
 
 MonsterObject* BattleLayer::genRandomMonster(CCSet* monsterSet) {
@@ -224,8 +229,8 @@ void BattleLayer::updateGameMonster() {
         MonsterObject* addMonster =(MonsterObject*) pit->getChildByTag(MouseTag);
         
         if (addMonster == NULL) {
-            CCSet* trropMonster = GameModel::getInstance()->findMonsterInTroop(950001);
-            MonsterObject* monster = genRandomMonster(trropMonster);
+            
+            MonsterObject* monster = genRandomMonster(_curTrropMonsterInBattle);
             
             if (monster) {
                 pit->addChild(monster, 1, MouseTag);
@@ -235,8 +240,7 @@ void BattleLayer::updateGameMonster() {
             }
         } else if (addMonster && addMonster->getCurrentState() == K_STATE_DISPLAY) {
             
-            CCSet* trropMonster = GameModel::getInstance()->findMonsterInTroop(950001);
-            MonsterObject* monster = genRandomMonster(trropMonster);
+            MonsterObject* monster = genRandomMonster(_curTrropMonsterInBattle);
         
             pit->removeChildByTag(MouseTag, false);
             addMonster->setIsAddParent(false);
@@ -252,6 +256,43 @@ void BattleLayer::updateGameMonster() {
     }
 
 }
+
+void BattleLayer::registerWithTouchDispatcher() {
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, getTouchPriority(), false);
+}
+
+bool BattleLayer::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+    
+    CCSetIterator iter;
+    
+    for (iter = _curTrropMonsterInBattle->begin(); iter != _curTrropMonsterInBattle->end(); ++iter) {
+        MonsterObject* mObj = (MonsterObject *)(*iter);
+        
+        if (mObj && mObj->isAddParent() && mObj->getCurrentState() != K_STATE_DISPLAY) {
+            CharactarHandler::GameSkillHurtInfo hurtInfo;
+            hurtInfo._hurt = 10;
+            CharactarHandler::doHurt(NULL, mObj, hurtInfo);
+        }
+        
+    }
+
+    
+    return true;
+}
+
+void BattleLayer::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+    
+}
+
+void BattleLayer::ccTouchMoved(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+    
+}
+
+void BattleLayer::ccTouchCancelled(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+    
+}
+
+
 
 
 

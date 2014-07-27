@@ -9,15 +9,19 @@
 #include "ToDisactiveState.h"
 #include "StateDef.h"
 #include "GameEventDef.h"
+#include "KeyConfigDef.h"
+#include "GameObject.h"
 
 void ToDisactiveState::onEnterCallback(GameObject * obj){
+    runStateAnimWithCallback(obj, K_STATE_TO_DISACTIVE, KKeyDestoryDuration);
+    
 //    CCNotificationCenter * nc = CCNotificationCenter::sharedNotificationCenter();
     
 //    nc->postNotification(KNotifyGameObjectToDiactiveMessage, obj);
 //	//播放动画
 //    GameObjectExt::createCommonDeadAnim(obj);
-//    runStateAnimWithCallback(obj,K_STATE_TO_DISACTIVE,KKeyDestoryDuration);
-//    
+    
+//
 //    CCString * destoryEffect = (CCString *)obj->getValue(KKeyDestoryEffect);
 //    if(!destoryEffect){
 //        destoryEffect = (CCString *)GameConfig::sharedInstance()->getTemplateSubValue(obj->getId(), KKeyDestoryEffect);
@@ -42,28 +46,29 @@ void ToDisactiveState::onEnterCallback(GameObject * obj){
 }
 
 bool ToDisactiveState::onMessageCallback(GameObject * obj,const GameEventParams * params){
-//    if (params) {
-//        switch (params->getEvent()) {
-//            case K_EVENT_ANIMATION_FINISHED:
-//            {
-//                if(params->getData() == obj &&
-//                   K_STATE_DISACTIVE != obj->getState()){
-//                    gotoNextState(obj,K_STATE_DISACTIVE);
-//                    return true;
-//                }
-//            }
-//                break;
-//            default:
-//                break;
-//        }
-//    }
+    if (params) {
+        switch (params->getEvent()) {
+            case K_EVENT_ANIMATION_FINISHED:
+            {
+                if(params->getData() == obj && K_STATE_DISACTIVE != obj->getCurrentState()){
+                    gotoNextState(obj,K_STATE_DISACTIVE);
+                    return true;
+                }
+            }
+                break;
+            default:
+                break;
+        }
+    }
     return false;
 }
 
 void ToDisactiveState::gotoNextState(GameObject * obj,const int state)
 {
+    
+    CCInteger * nextState = CCInteger::create(K_STATE_DISACTIVE);
 //    CCNotificationCenter * nc = CCNotificationCenter::sharedNotificationCenter();
-//    CCInteger * nextState = CCInteger::create(K_STATE_DISACTIVE);
+ 
 //    CCDictionary * dict = CCDictionary::create();
 //    dict->setObject(nextState,KKeyCurrentState);
 //    dict->setObject(obj,KKeyTarget);
@@ -85,7 +90,7 @@ void ToDisactiveState::gotoNextState(GameObject * obj,const int state)
 //            }
 //        }
 //        
-//        obj->changeState(nextState->getValue());
+        obj->changeState(nextState->getValue());
 //    }
 }
 

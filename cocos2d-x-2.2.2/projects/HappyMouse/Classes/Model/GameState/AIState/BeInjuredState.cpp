@@ -23,10 +23,14 @@ bool BeInjuredState::onMessageCallback(GameObject* obj,const GameEventParams* pa
             case K_EVENT_ANIMATION_FINISHED:
             {
                 if(params->getData() == obj){
+                    
                     obj->removeAdditionState(K_STATE_BE_INJURED);
+                    
                     if(obj->getHp() == 0)
                         obj->changeState(K_STATE_TO_DISACTIVE);
+                    
                     runStateAnimation(obj,obj->getCurrentState());
+                    
                     return true;
                 }
             }
@@ -37,3 +41,4 @@ bool BeInjuredState::onMessageCallback(GameObject* obj,const GameEventParams* pa
     }
     return false;
 }
+

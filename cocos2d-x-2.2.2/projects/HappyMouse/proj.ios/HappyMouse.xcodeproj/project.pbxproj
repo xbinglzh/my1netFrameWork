@@ -234,6 +234,7 @@
 		603860F41983834E00BA8314 /* DistanceItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860F21983834E00BA8314 /* DistanceItem.cpp */; };
 		603860FA1984893C00BA8314 /* RGBAProtocolAdapterExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860F81984893C00BA8314 /* RGBAProtocolAdapterExt.cpp */; };
 		6038610019848C4F00BA8314 /* LablePngFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860FE19848C4F00BA8314 /* LablePngFont.cpp */; };
+		603861201984B40B00BA8314 /* BattleUiView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6038611E1984B40B00BA8314 /* BattleUiView.cpp */; };
 		605A8A711974C51A0086F702 /* CCSpriteExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897A1974C5190086F702 /* CCSpriteExt.cpp */; };
 		605A8A721974C51A0086F702 /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897E1974C5190086F702 /* GLES-Render.cpp */; };
 		605A8A8B1974C51A0086F702 /* AnimNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A89B91974C5190086F702 /* AnimNode.cpp */; };
@@ -999,6 +1000,8 @@
 		603860F91984893C00BA8314 /* RGBAProtocolAdapterExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGBAProtocolAdapterExt.h; sourceTree = "<group>"; };
 		603860FE19848C4F00BA8314 /* LablePngFont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LablePngFont.cpp; sourceTree = "<group>"; };
 		603860FF19848C4F00BA8314 /* LablePngFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LablePngFont.h; sourceTree = "<group>"; };
+		6038611E1984B40B00BA8314 /* BattleUiView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleUiView.cpp; sourceTree = "<group>"; };
+		6038611F1984B40B00BA8314 /* BattleUiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleUiView.h; sourceTree = "<group>"; };
 		605A897A1974C5190086F702 /* CCSpriteExt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSpriteExt.cpp; sourceTree = "<group>"; };
 		605A897B1974C5190086F702 /* CCSpriteExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpriteExt.h; sourceTree = "<group>"; };
 		605A897C1974C5190086F702 /* DoubleNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNumber.h; sourceTree = "<group>"; };
@@ -2767,6 +2770,8 @@
 		60C3B70E1974E2B700BC4293 /* uiView */ = {
 			isa = PBXGroup;
 			children = (
+				6038611E1984B40B00BA8314 /* BattleUiView.cpp */,
+				6038611F1984B40B00BA8314 /* BattleUiView.h */,
 				60C3B76D1974F94200BC4293 /* GameView.cpp */,
 				60C3B76E1974F94200BC4293 /* GameView.h */,
 				60C3B7121974E32700BC4293 /* WelcomeView.cpp */,
@@ -3314,6 +3319,7 @@
 				605A8ACB1974C51A0086F702 /* tinyxmlparser.cpp in Sources */,
 				15A3DAEC1682F8A6002FB0C5 /* CDOpenALSupport.m in Sources */,
 				605A8AC51974C51A0086F702 /* CCShaderEffectSprite.cpp in Sources */,
+				603861201984B40B00BA8314 /* BattleUiView.cpp in Sources */,
 				605A8A931974C51A0086F702 /* SPShaderDisplayData.cpp in Sources */,
 				15A3DAED1682F8A6002FB0C5 /* CocosDenshion.m in Sources */,
 				15A3DAEE1682F8A6002FB0C5 /* SimpleAudioEngine.mm in Sources */,

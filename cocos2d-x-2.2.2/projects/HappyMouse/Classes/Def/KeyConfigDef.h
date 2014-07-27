@@ -177,6 +177,7 @@
 #define KKeyDestoryDuration             "destory_duration"
 #define KKeyBeInjureDuration            "be_injure_duration"
 #define KKeyArrivedDuration            "arrived_duration"
+#define KKeyDestoryDuration             "destory_duration"
 
 //Act 
 #define KKeyActDestory             "act_destory"

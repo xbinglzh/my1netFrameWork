@@ -21,6 +21,7 @@ class GameController;
 class MonsterObject;
 class PitObject;
 class AnimNode;
+class BattleUiView;
 
 class BattleLayer : public CCLayer {
     
@@ -32,17 +33,19 @@ public:
     virtual void onEnter();
     virtual void onExit();
     virtual void update(float dt);
+
     
 public:
     bool updateGroundMap(BattleInfo& battleInfo);
 	inline GroundMap* getGroundMap(){return _groundMap;}
 //	const cocos2d::CCPoint& getPositionFromGroundMap( const std::list<int>::iterator & posIndex);
     
+    void startBattleSendTroop(const int trropId);
     
+    CCSet*  getCurInBattleTroop();
     
 private:
     void updateGameMonster();
-    void startTroop(const int trropId);
     
 private:
     CCLayerColor* genLayerColor(int zOrder, int layerTag);
@@ -52,23 +55,29 @@ private:
     
     MonsterObject* genRandomMonster(CCSet* monsterSet);
     PitObject*     genRandomPit();
+    
+private:  //*Touch*//
+    
+    virtual void registerWithTouchDispatcher(void);
+    virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
+    virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
+    virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
+    virtual void ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent);
+    
 
 private:
     
     GameController*        _gameController;
     GroundMap*              _groundMap;
+    BattleUiView*          _battleUiView;
     
     CCLayerColor*           _bottomLayer;             //底层贴图
     CCLayerColor*           _mapLayer;                //groundMap层
     CCLayerColor*           _topLayer;                //游戏上层
     CCLayerColor*           _xpEffectLayer;           //xp动画层
     CCLayerColor*           _battleUiLayer;           //UI控制层
-    
-//    std::vector<MonsterObject*> _monsterVector;
-    
-    CCArray*              _monsterArray;
-    
-//    XXBattleUI* _battleUI;
+
+    CCSet*                _curTrropMonsterInBattle;
     
 };
 

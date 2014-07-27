@@ -20,6 +20,7 @@ Classes/frameWork/Util/shader/CCShaderEffectSprite.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHSprite.cpp \
 Classes/frameWork/Extensions/LevelHelper/LevelHelperLoader.cpp \
 Classes/frameWork/Extensions/cocos2dxExt/CCSpriteExt.cpp \
+Classes/View/uiView/BattleUiView.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/external_tool/Json/SPContentJsonDictionary.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPTextureData.cpp \
 Classes/Model/GameObject/GameObject.cpp \
@@ -41,6 +42,7 @@ Classes/frameWork/Flash/dragonBone/SPArmature/animation/SPTween.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHPathNode.cpp \
 Classes/Controller/AppLauncher.cpp \
 Classes/frameWork/Util/GameUtils.cpp \
+Classes/frameWork/Util/widget/LablePngFont.cpp \
 Classes/frameWork/Util/shader/ShaderManager.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHContactInfo.cpp \
 Classes/frameWork/Util/Particles/SmallSoybeanParticle.cpp \
@@ -88,6 +90,7 @@ Classes/frameWork/Util/layout/LayoutUtil.cpp \
 Classes/frameWork/Util/UiUtils.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/display/display_factory/SPDisplayFactoryManager.cpp \
 Classes/Controller/GameController.cpp \
+Classes/frameWork/Util/widget/RGBAProtocolAdapterExt.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHSettings.cpp \
 Classes/frameWork/Util/Particles/ParticleEffect.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/SPBone.cpp \
