@@ -8,6 +8,8 @@
 
 #include "CharactarHandler.h"
 #include "DistanceItem.h"
+#include "AudioManager.h"
+#include "ConstansDef.h"
 
 const std::set<int> CharactarHandler::getActiveCharactarStates(const int type) {
     
@@ -30,7 +32,7 @@ void CharactarHandler::doHurt(GameObject * source, GameObject * target,
     
     target->addAdditionState(K_STATE_BE_INJURED);
     
-    //判定死亡
+//判定死亡
 //    if(target->getHP() <= 0){
 //        CCBool * intercept = CCBool::create(false);
 //        dict->setObject(intercept, KKeyKillIntercept);
@@ -44,6 +46,8 @@ void CharactarHandler::doHurt(GameObject * source, GameObject * target,
 //        nc->postNotification(KNotifyGameCharactarHPReduced,
 //                             GameSkillAction::SkillMsg::create(KNotifyGameCharactarHPReduced, dict));
 //    }
+    
+    AudioManager::sharedInstance()->playAudioById(K_AudioEffect_click, false);
     
 }
 

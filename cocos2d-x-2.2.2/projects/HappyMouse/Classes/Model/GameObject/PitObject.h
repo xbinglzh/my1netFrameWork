@@ -39,7 +39,6 @@ private:
     
     CCSpriteExt* _pit;
 
-    MouseObject* _mouse;
     bool         _isAddMonster;
 };
 

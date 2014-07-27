@@ -10,6 +10,7 @@
 #include "KeyConfigDef.h"
 #include "ConstansDef.h"
 #include "LayoutUtil.h"
+#include "CharactarHandler.h"
 
 MonsterObject::MonsterObject() : GameObject(), _isAddParent(false) {
     
@@ -116,5 +117,23 @@ void MonsterObject::changeStateToMove() {
     changeState(K_STATE_MOVING_UP);
 }
 
+bool MonsterObject::strikenMouse(cocos2d::CCTouch *pTouch) {
+    
+    if (_isAddParent) {
+        CCNode* midNode = this->getChildByTag(Mid_Node_Tag);
+        CCPoint pt = midNode->convertToNodeSpace(pTouch->getLocation());
+        
+        if (midNode->boundingBox().containsPoint(pt)) {
+            
+            CharactarHandler::GameSkillHurtInfo hurtinfo;
+            hurtinfo._hurt = 10;
+            CharactarHandler::doHurt(NULL, this, hurtinfo);
+            
+            return true;
+        }
+    }
+    
+    return false;
+}
 
 

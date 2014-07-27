@@ -28,6 +28,7 @@ public:
     bool isAddParent();
     
     CCNode* getMoveNode();
+    bool strikenMouse(cocos2d::CCTouch *pTouch);
     
 private:
     void makeMidNodeInClipNode();

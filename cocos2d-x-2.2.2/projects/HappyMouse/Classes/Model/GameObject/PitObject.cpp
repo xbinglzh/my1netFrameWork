@@ -11,8 +11,8 @@
 #include "CCSpriteExt.h"
 #include "LayoutUtil.h"
 #include "NotifyMessageDef.h"
-#include "MouseObject.h"
 #include "ConstansDef.h"
+#include "MonsterObject.h"
 
 
 #define TopPitOrder     1
@@ -24,7 +24,7 @@
 #define BottomPitTag    5
 
 
-PitObject::PitObject() : _pit(NULL), _mouse(NULL), _isAddMonster(false) {
+PitObject::PitObject() : _pit(NULL), _isAddMonster(false) {
     CCNotificationCenter::sharedNotificationCenter()->addObserver(this, callfuncO_selector(PitObject::judgePopMouse), KNotifyMousePop, NULL);
 }
 
@@ -55,23 +55,21 @@ bool PitObject::init(int pitId,const char* pitImg) {
     this->addChild(_pit);
     LayoutUtil::layoutParentBottom(_pit);
     
-//    _mouse = MouseObject::create();
-//    this->addChild(_mouse, 1, MouseTag);
-//    LayoutUtil::layoutParentBottom(_mouse, 0, 30);
-    
     return true;
 }
 
 void PitObject::judgePopMouse(cocos2d::CCObject *pSender) {
-    CCInteger* id = (CCInteger*)pSender;
     
-    if (id->getValue() == _pitId) {
-        _mouse->changeMouseState(CCInteger::create(MouseArise));
-    }
 }
 
 bool PitObject::strikenMouse(cocos2d::CCTouch *pTouch) {
-    return _mouse->strikenMouse(pTouch);
+    MonsterObject* mObj =(MonsterObject*) this->getChildByTag(MouseTag);
+    
+    if (!mObj) {
+        return false;
+    }
+    
+    return mObj->strikenMouse(pTouch);
 }
 
 bool PitObject::isAddMonster() {

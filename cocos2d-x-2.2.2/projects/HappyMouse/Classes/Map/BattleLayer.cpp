@@ -263,20 +263,14 @@ void BattleLayer::registerWithTouchDispatcher() {
 
 bool BattleLayer::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
     
-    CCSetIterator iter;
+    CCLayer* groundMap_gameLayer = _groundMap->getGroundMapLayerByTag(GroundMap_Game_Layer_Tag);
     
-    for (iter = _curTrropMonsterInBattle->begin(); iter != _curTrropMonsterInBattle->end(); ++iter) {
-        MonsterObject* mObj = (MonsterObject *)(*iter);
-        
-        if (mObj && mObj->isAddParent() && mObj->getCurrentState() != K_STATE_DISPLAY) {
-            CharactarHandler::GameSkillHurtInfo hurtInfo;
-            hurtInfo._hurt = 10;
-            CharactarHandler::doHurt(NULL, mObj, hurtInfo);
-        }
-        
+    for (int i = 0; i < groundMap_gameLayer->getChildrenCount(); i++) {
+        PitObject* pitObj = (PitObject*)groundMap_gameLayer->getChildByTag(i);
+        pitObj->strikenMouse(pTouch);
     }
-
     
+
     return true;
 }
 
