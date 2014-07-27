@@ -77,7 +77,10 @@ void GameState::runStateAnimWithCallback(GameObject * obj,int stateId,const char
     float durationVal = 0.01f;
     
     if (strcmp(durationKey, KKeyBeInjureDuration) == 0) {
-        durationVal = obj->getGameCharactar()._injureDuration;
+//        durationVal = obj->getGameCharactar()._injureDuration;
+        durationVal = 2.0f;
+    } else if (strcmp(durationKey, KKeyDestoryDuration) == 0) {
+        durationVal = 2.0f;
     }
 
     if(!this->runStateAnimation(obj,stateId)){

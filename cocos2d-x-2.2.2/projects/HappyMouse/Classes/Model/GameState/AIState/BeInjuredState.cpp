@@ -26,7 +26,7 @@ bool BeInjuredState::onMessageCallback(GameObject* obj,const GameEventParams* pa
                     
                     obj->removeAdditionState(K_STATE_BE_INJURED);
                     
-                    if(obj->getHp() == 0)
+                    if(obj->getHp() <= 0)
                         obj->changeState(K_STATE_TO_DISACTIVE);
                     
                     runStateAnimation(obj,obj->getCurrentState());

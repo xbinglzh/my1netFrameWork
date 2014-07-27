@@ -185,7 +185,7 @@ MonsterObject* BattleLayer::genRandomMonster(CCSet* monsterSet) {
     for (iter = monsterSet->begin(); iter != monsterSet->end(); ++iter) {
         MonsterObject* mObj = (MonsterObject *)(*iter);
         
-        if (mObj && !mObj->isAddParent() && mObj->getCurrentState() == K_STATE_DISPLAY) {
+        if (mObj && !mObj->isAddParent() && mObj->getHp() > 0 && mObj->getCurrentState() == K_STATE_DISPLAY) {
             randomArray->addObject(mObj);
         }
         

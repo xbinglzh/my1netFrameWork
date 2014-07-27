@@ -119,7 +119,7 @@ void MonsterObject::changeStateToMove() {
 
 bool MonsterObject::strikenMouse(cocos2d::CCTouch *pTouch) {
     
-    if (_isAddParent) {
+    if (_isAddParent && getCurrentState() == K_STATE_IDLE ) {
         CCNode* midNode = this->getChildByTag(Mid_Node_Tag);
         CCPoint pt = midNode->convertToNodeSpace(pTouch->getLocation());
         
