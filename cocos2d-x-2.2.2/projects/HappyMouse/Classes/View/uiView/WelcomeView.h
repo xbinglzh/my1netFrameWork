@@ -32,6 +32,9 @@ protected:
     virtual SEL_CCControlHandler onResolveCCBCCControlSelector(CCObject * pTarget, const char * pSelectorName);
     virtual bool onAssignCCBMemberVariable(CCObject * pTarget, const char * pMemberVariableName,  CCNode * pNode);
     
+private:
+    void testLablePngFont();
+    
 };
 
 CREATE_NEW_INHERIT_CCLAYERLOADER_CLASS(WelcomeView);

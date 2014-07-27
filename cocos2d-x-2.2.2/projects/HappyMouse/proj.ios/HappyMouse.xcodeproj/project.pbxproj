@@ -232,6 +232,8 @@
 		603860EE198380EA00BA8314 /* CharactarHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860EC198380EA00BA8314 /* CharactarHandler.cpp */; };
 		603860F11983821700BA8314 /* GameTarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860EF1983821700BA8314 /* GameTarget.cpp */; };
 		603860F41983834E00BA8314 /* DistanceItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860F21983834E00BA8314 /* DistanceItem.cpp */; };
+		603860FA1984893C00BA8314 /* RGBAProtocolAdapterExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860F81984893C00BA8314 /* RGBAProtocolAdapterExt.cpp */; };
+		6038610019848C4F00BA8314 /* LablePngFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 603860FE19848C4F00BA8314 /* LablePngFont.cpp */; };
 		605A8A711974C51A0086F702 /* CCSpriteExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897A1974C5190086F702 /* CCSpriteExt.cpp */; };
 		605A8A721974C51A0086F702 /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A897E1974C5190086F702 /* GLES-Render.cpp */; };
 		605A8A8B1974C51A0086F702 /* AnimNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A89B91974C5190086F702 /* AnimNode.cpp */; };
@@ -993,6 +995,10 @@
 		603860F21983834E00BA8314 /* DistanceItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DistanceItem.cpp; sourceTree = "<group>"; };
 		603860F31983834E00BA8314 /* DistanceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceItem.h; sourceTree = "<group>"; };
 		603860F6198389A100BA8314 /* SkillDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillDef.h; sourceTree = "<group>"; };
+		603860F81984893C00BA8314 /* RGBAProtocolAdapterExt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RGBAProtocolAdapterExt.cpp; sourceTree = "<group>"; };
+		603860F91984893C00BA8314 /* RGBAProtocolAdapterExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGBAProtocolAdapterExt.h; sourceTree = "<group>"; };
+		603860FE19848C4F00BA8314 /* LablePngFont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LablePngFont.cpp; sourceTree = "<group>"; };
+		603860FF19848C4F00BA8314 /* LablePngFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LablePngFont.h; sourceTree = "<group>"; };
 		605A897A1974C5190086F702 /* CCSpriteExt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSpriteExt.cpp; sourceTree = "<group>"; };
 		605A897B1974C5190086F702 /* CCSpriteExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpriteExt.h; sourceTree = "<group>"; };
 		605A897C1974C5190086F702 /* DoubleNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNumber.h; sourceTree = "<group>"; };
@@ -2636,6 +2642,10 @@
 		605A8A621974C51A0086F702 /* widget */ = {
 			isa = PBXGroup;
 			children = (
+				603860FE19848C4F00BA8314 /* LablePngFont.cpp */,
+				603860FF19848C4F00BA8314 /* LablePngFont.h */,
+				603860F81984893C00BA8314 /* RGBAProtocolAdapterExt.cpp */,
+				603860F91984893C00BA8314 /* RGBAProtocolAdapterExt.h */,
 				605A8A631974C51A0086F702 /* CCLabelTTFStroke.cpp */,
 				605A8A641974C51A0086F702 /* CCLabelTTFStroke.h */,
 				605A8A651974C51A0086F702 /* CCScale9ProgressBar.cpp */,
@@ -3158,6 +3168,7 @@
 				375BD5111868454E0024609E /* CCActionManager.cpp in Sources */,
 				15A3D9191682F7D5002FB0C5 /* b2CircleContact.cpp in Sources */,
 				15A3D91A1682F7D5002FB0C5 /* b2Contact.cpp in Sources */,
+				603860FA1984893C00BA8314 /* RGBAProtocolAdapterExt.cpp in Sources */,
 				605A8AD11974C51A0086F702 /* RootUiLayer.cpp in Sources */,
 				603860E5198377CC00BA8314 /* MovingDownState.cpp in Sources */,
 				15A3D91B1682F7D5002FB0C5 /* b2ContactSolver.cpp in Sources */,
@@ -3285,6 +3296,7 @@
 				15A3DA541682F826002FB0C5 /* CCScale9Sprite.cpp in Sources */,
 				60C3B7141974E32700BC4293 /* WelcomeView.cpp in Sources */,
 				605A8A9D1974C51A0086F702 /* SPMovementFrameData.cpp in Sources */,
+				6038610019848C4F00BA8314 /* LablePngFont.cpp in Sources */,
 				60C24E63197F82C6008BE554 /* BattleInfo.cpp in Sources */,
 				15A3DA551682F826002FB0C5 /* CCEditBox.cpp in Sources */,
 				15A3DA571682F826002FB0C5 /* CCEditBoxImplIOS.mm in Sources */,

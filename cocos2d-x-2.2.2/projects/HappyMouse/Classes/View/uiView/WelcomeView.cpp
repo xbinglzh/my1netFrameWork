@@ -9,6 +9,7 @@
 #include "WelcomeView.h"
 #include "LayoutUtil.h"
 #include "AnimUtils.h"
+#include "LablePngFont.h"
 
 WelcomeView::WelcomeView() {
     
@@ -41,6 +42,7 @@ bool WelcomeView::initWithCustom() {
     
     LayoutUtil::layoutParentCenter(hero);
     
+    testLablePngFont();
     
     return true;
 }
@@ -59,3 +61,29 @@ bool WelcomeView::onAssignCCBMemberVariable(CCObject * pTarget, const char * pMe
     //    CCB_MEMBERVARIABLEASSIGNER_GLUE2(CCSprite*, bgSprite);
     return false;
 }
+
+void WelcomeView::testLablePngFont() {
+    
+    const char* map[] = {
+        
+        "0", "score_0.png",
+        "1", "score_1.png",
+        "2", "score_2.png",
+        "3", "score_3.png",
+        "4", "score_4.png",
+        "5", "score_5.png",
+        "6", "score_6.png",
+        "7", "score_7.png",
+        "8", "score_8.png",
+        "9", "score_9.png"
+    };
+    
+    std::vector<const char*> mm(map, map+sizeof(map)/sizeof(map[0]));
+    LablePngFont* mylabel = LablePngFont::create("score", 10, mm, .9f);
+    mylabel->setString("50");
+    mylabel->setScale(1.5f);
+    
+    this->addChild(mylabel,10000, 10);
+    LayoutUtil::layoutParentCenter(mylabel);
+}
+

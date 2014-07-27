@@ -24,15 +24,19 @@ Classes/frameWork/Flash/dragonBone/SPArmature/external_tool/Json/SPContentJsonDi
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPTextureData.cpp \
 Classes/Model/GameObject/GameObject.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHNode.cpp \
-Classes/frameWork/Flash/dragonBone/SPArmature/utils/SPArmatureDataManager.cpp \
+Classes/Model/GameObject/DistanceItem.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/external_tool/Json/lib_json/json_value.cpp \
+Classes/View/root/RootUiLayer.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHBatch.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/display/SPDecorativeDisplay.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPMovementBoneData.cpp \
+Classes/Model/GameState/AIState/AttackingState.cpp \
+Classes/frameWork/Util/HMD5.cpp \
 Classes/Map/GroundMap.cpp \
 Classes/frameWork/Extensions/ResourceExt/ResourceLoader.cpp \
+Classes/frameWork/Flash/dragonBone/SPArmature/utils/SPArmatureDataManager.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHTouchMgr.cpp \
-Classes/frameWork/Extensions/LevelHelper/Nodes/LHFixture.cpp \
+Classes/Model/GameState/AIState/ToDisactiveState.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/animation/SPTween.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHPathNode.cpp \
 Classes/Controller/AppLauncher.cpp \
@@ -44,7 +48,7 @@ Classes/frameWork/Extensions/LevelHelper/Utilities/LHObject.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/utils/SPTransformHelp.cpp \
 Classes/frameWork/Util/widget/CCLabelTTFStroke.cpp \
 Classes/frameWork/Util/resourse/ResourceManager.cpp \
-Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPContourData.cpp \
+Classes/frameWork/Extensions/LevelHelper/Nodes/LHFixture.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/display/SPDisplayManager.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHContactListener.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/display_data/SPSpriteDisplayData.cpp \
@@ -52,11 +56,13 @@ Classes/frameWork/Extensions/LevelHelper/Nodes/LHCuttingEngineMgr.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/external_tool/Json/lib_json/json_writer.cpp \
 Classes/frameWork/Extensions/GLESRender/GLES-Render.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/utils/SPBatchNode.cpp \
+Classes/frameWork/Util/widget/ModelDialog.cpp \
 Classes/Model/GameState/GameState.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/animation/SPAnimation.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPNode.cpp \
 Classes/frameWork/Flash/dragonBone/AnimNode.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHAnimationNode.cpp \
+Classes/frameWork/Flash/dragonBone/SPArmature/display/display_factory/SPDisplayFactory.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPMovementData.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/utils/SPTweenFunction.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHLayer.cpp \
@@ -64,6 +70,7 @@ Classes/frameWork/Flash/dragonBone/SPArmature/display/SPContourPoints.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPBoneData.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHCustomSpriteMgr.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/display_data/SPShaderDisplayData.cpp \
+Classes/Model/GameState/AIState/BeInjuredState.cpp \
 Classes/frameWork/Util/tinyxml/tinyxml.cpp \
 Classes/View/uiView/GameView.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHBezier.cpp \
@@ -71,8 +78,9 @@ Classes/frameWork/Util/AnimUtils.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/display_data/SPParticleDisplayData.cpp \
 Classes/frameWork/Util/tinyxml/tinyxmlerror.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/display/SPShaderNode.cpp \
+Classes/Model/GameObject/MonsterObject.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/display_data/SPDisplayData.cpp \
-Classes/View/root/RootUiLayer.cpp \
+Classes/Model/GameState/AIState/MovingDownState.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/SHDocumentLoader.cpp \
 Classes/frameWork/Extensions/LevelHelper/Utilities/LHArray.cpp \
 Classes/frameWork/Util/widget/CCScale9ProgressBar.cpp \
@@ -95,21 +103,21 @@ Classes/frameWork/Flash/dragonBone/ArmatureAnim.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPJsonData.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHJoint.cpp \
 Classes/Model/GameState/StateMachine.cpp \
-Classes/frameWork/Flash/dragonBone/SPArmature/display/display_factory/SPDisplayFactory.cpp \
+Classes/Model/GameState/AIState/MovingUpState.cpp \
 Classes/frameWork/Util/widget/LabelView.cpp \
 Classes/frameWork/Extensions/LevelHelper/Nodes/LHParallaxNode.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/utils/SPUtilMath.cpp \
 Classes/Map/BattleInfo.cpp \
 Classes/AppDelegate.cpp \
-Classes/frameWork/Util/HMD5.cpp \
+Classes/Model/GameState/AIState/IdleState.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/display/display_factory/SPParticleDisplayFactory.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/display_data/SPArmatureDisplayData.cpp \
 Classes/frameWork/Extensions/LevelHelper/Utilities/LHDictionary.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPMovementFrameData.cpp \
 Classes/frameWork/Util/tinyxml/tinyxmlparser.cpp \
+Classes/Model/CharactarHandler.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/display/display_factory/SPArmatureDisplayFactory.cpp \
 Classes/Controller/SceneController.cpp \
-Classes/Model/GameState/AIState/MovingState.cpp \
 Classes/Model/GameState/AIState/DisplayState.cpp \
 Classes/Map/BattleLayer.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/display/CCTexture2DMutable.cpp \
@@ -117,7 +125,7 @@ Classes/frameWork/Extensions/LevelHelper/CustomClasses/TemporaryDummyClass.cpp \
 Classes/Controller/GameConfig.cpp \
 Classes/View/uiView/WelcomeView.cpp \
 Classes/Model/GameState/GameEventParams.cpp \
-Classes/frameWork/Util/widget/ModelDialog.cpp \
+Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPContourData.cpp \
 Classes/Model/GameState/StateFactory.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/utils/SPBatchNodeManager.cpp \
 Classes/Model/GameModel.cpp \
@@ -126,7 +134,8 @@ Classes/frameWork/Flash/dragonBone/SPArmature/datas/SPAnimationData.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/utils/SPDataReaderHelper.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/display/display_factory/SPShaderDisplayFactory.cpp \
 Classes/frameWork/Flash/dragonBone/SPArmature/display/display_factory/SPSpriteDisplayFactory.cpp \
-Classes/frameWork/Flash/dragonBone/SPArmature/SPArmature.cpp
+Classes/frameWork/Flash/dragonBone/SPArmature/SPArmature.cpp \
+Classes/Model/GameObject/GameTarget.cpp
 
 
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH) \
